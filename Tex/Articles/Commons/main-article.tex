@@ -1,0 +1,73 @@
+%===========================
+% COURS "CYBERDEF"
+% Fichier de structure des articles
+%===========================
+
+\documentclass[12pt,fleqn,twoside]{article} 
+
+\input{../Tex/template.inc/edx.article.cls.tex}
+\input{../Tex/template.inc/edx.packages.tex}
+\input{../Tex/template.inc/edx.command.tex}
+\input{../Tex/template.inc/edx.styles.tex}
+
+%-------------------------------------------------
+%	BIBLIOGRAPHY
+%-------------------------------------------------
+\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+\addbibresource{../tex/bibliography.bib} % BibTeX bibliography file
+\defbibheading{bibempty}{}
+
+%-------------------------------------------------
+
+\begin{document}
+
+%-------------------------------------------------
+%	COLORS & BORDERS
+%-------------------------------------------------
+\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
+\definecolor{color1}{RGB}{160,0,0} % Color of the article title and section
+\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
+
+%-------------------------------------------------
+%	ARTICLE INFORMATION
+%-------------------------------------------------
+
+\Abstract {\uabstract\input{../Tex/Articles/Commons/abstract-gen-article.tex} }
+\JournalInfo{\uJournalInfo} % Journal information
+\Archive{Notes de cours éditées le \today} % Additional notes (e.g. copyright, DOI, review/research article)
+\PaperTitle{\utitle} % Article title
+\Authors{\uauthor\textsuperscript{1,}\textsuperscript{2}*} % Authors
+\affiliation{\textsuperscript{1}\textit{\uproa}} % Author affiliation
+\affiliation{\textsuperscript{2}\textit{\uprob}} % Author affiliation
+\affiliation{*\textbf{email}: \umaila\ -- \umailb} % Corresponding author
+\Keywords{\ukeywords} % Keywords 
+\newcommand{\keywordname}{Mots clefs} % Defines the keywords heading name
+
+%-------------------------------------------------
+%	Old article
+%-------------------------------------------------
+
+\maketitle
+\begin{tikzpicture}[remember picture,overlay]\node at (current page.north west)[xshift=4cm, yshift=-4cm, text opacity=1.0]{\includegraphics[width=0.1\paperwidth]{../Tex/Pictures/shield-20.pdf}}; 
+\end{tikzpicture} 
+
+%-------------------------------------------------
+\ubody % MAIN BODY defined external
+%-------------------------------------------------
+
+\printbibliography
+
+
+\newpage
+
+\Ucontribute
+
+\newpage
+\tableofcontents 
+\listoffigures  
+%\listoftables
+
+
+
+
+\end{document}

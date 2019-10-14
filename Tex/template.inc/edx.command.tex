@@ -1,0 +1,117 @@
+%===========================
+% EDX COMMAND
+%===========================
+
+\newcommand\UKword[1]{\emph{#1}}
+\newcommand\Ucenter[1]{\begin{center}{#1}\end{center}}
+
+\newcommand\head[1]{\textbf{#1}}
+\newcommand\tb[1]{\textbf{#1}}
+\newcommand{\g}[1]{\og #1 \fg}
+\newcommand{\uload}[1] {\input{../Tex/#1}}
+\newcommand{\ucurcolor}{black}
+
+
+%-----------------------------------------------------
+%										 	\upspicture 
+%---------------------------------------------------
+\newcommand{\upspicture}[3]
+{
+\renewcommand{\ucurcolor}{#3}
+\resizebox{#2\textwidth}{!}{\input{#1}}
+}
+
+%-----------------------------------------------------
+%											\upicture 
+%---------------------------------------------------
+
+\newcommand{\upicture}[4]{
+\begin{figure}[] %h
+  \begin{center}
+	 \includegraphics[scale=#3]{#1.pdf}
+  \end{center}
+\caption{#2 \label{#4}}
+\end{figure}
+}
+
+%-----------------------------------------------------
+%											\updfimage 
+%---------------------------------------------------
+
+\newcommand{\updfimage}[3]
+{
+\begin{wrapfigure}{R}{#3\textwidth}
+  \begin{center}
+	 \resizebox{#3\textwidth}{!}{\includegraphics{#1.pdf}}
+  \end{center}
+\caption{#2}
+\end{wrapfigure}
+}
+
+
+
+%************************PACKAGE***
+
+\usepackage{tikz}% Required for drawing custom shapes
+\usetikzlibrary{shadows}
+
+
+%-----------------------------------------------------
+%											 		\rem 
+% insertion d'une remarque avec R
+%---------------------------------------------------
+\newcommand\rem[1]{%
+   \marginpar{%
+   \tikzpicture[baseline={(title.base)}]
+      \node[inner sep=5pt,text width=4cm,drop shadow={shadow yshift=-5pt,shadow xshift=5pt,ocre},fill=white] (box) {\vskip5pt \nointerlineskip #1};
+      \node[right=10pt,inner sep=0pt,outer sep=10pt] (title) at (box.north west) {\bfseries\color{ocre}Remarque};
+      \draw[draw=ocre,very thick](title.west)--(box.north west)--(box.south west)--(box.south east)--(box.north east)--(title.east);
+      \fill[ocre]([yshift=-10pt]box.north west)--+(-5pt,-5pt)--+(0pt,-10pt);
+   \endtikzpicture}%
+}
+%-----------------------------------------------------
+%											 \utikzimage 
+% insertion d'une image sur fichier tkz.tex
+%---------------------------------------------------
+
+\newcommand{\utikzimage}[3]
+{
+\begin{wrapfigure}{R}{#3\textwidth}
+  \begin{center}
+	 \resizebox{#3\textwidth}{!}{\input{#1.tkz.tex}}
+  \end{center}
+\caption{#2}
+\end{wrapfigure}
+}
+
+
+%************************PACKAGE***
+ \usepackage{fontawesome}
+  \usepackage{awesomebox}   
+%-----------------------------------------------------
+%											 \videobox 
+% Video BOX lien
+%----------------------------------------------------
+  
+%\newcommand{\videobox}[1]{%
+%\awesomebox{\faYoutubePlay}{\aweboxrulewidth}{url}{#1}}
+
+%-----------------------------------------------------
+%														\link 
+% Url et footnote du lien
+%-----------------------------------------------------
+  
+  \newcommand{\link}[2]
+  {
+  \href{#1}
+  {
+  #2~\raisebox{-0.2ex}{\faExternalLink}\footnote
+  	{
+ #1
+  	}
+  }
+  }
+  
+  
+  
+  
