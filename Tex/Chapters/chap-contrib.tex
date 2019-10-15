@@ -4,9 +4,29 @@
 
 L'ensemble des sources sont publiés sour GITHIUB, et vous pouvez contribuer en utilisant GITHUB pour participer à titre individuel. Vous devez disposer d'une compétence LATEX et d'un environnement LATEX et GIT sur votre poste de travail. L'édition peut se faire sur le GIT mais cela est déconseillé. Pour faciliter l'édition des documents pour des contributions, modifications limitées et rapides il est proposé d'utiliser OVERLEAF avec un compte générique ou en mode anonyme. Ces éléments vous sont fournis individuellement si vous souhaiter contribuer.
 
+\section{Architecture des projets LATEX}
+
+Les fichiers racines des projets de notes de cours sont dans le répertoire : \textbf{}{Builder} . 
+
+
+La syntaxe de ces fichiers est généralement \g{SEC101-Cx-title}. 
+
+Cx étant le numéro du chapitre du cours, et \g{title} le titre de la note.
+Afin d'uniformiser les notes de cours, une architecture standard est proposé. Chaque Note est un article au sens LATEX. Chaque article est configuré, dans un fichier\textbf{*.art.tex} qui définit le contenu de l'article. Le corps des documents est le répertoire \textbf{Chapters}. 
+Les images en PDF sont issues d'un fichier source (OpenDocument)
+
+\section{Utilisation de GITHUB}
+
+Veuillez vous référer au manuel d'usage de GITHUB.
+
+\section{Utilisation d'Overleaf}
+
+L'utilisation d'Overleaf sur le projet nécessite un peu d'habitude et de connaissance de l'outil. Pour accéder à la compilation du fichier LATEX du projet de notes correspondant il faut sélectionner le DOCUMENT PRINCIPAL dans le Menu d'overleaf. Le document principal se trouve dans le répertoire \textbf{Builder}.
+
+
+% Contributions Individuelles (éditer le fichier ci dessous)
+
 \input{../Tex/Contribute/contribs.tex}
-
-
 
 
 \subsection{Organisation du modèle contribution}
