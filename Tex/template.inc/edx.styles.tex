@@ -45,7 +45,7 @@
 %	COLOR
 %-----------------------------------------------------------------------
 
-\usepackage{xcolor} % Required for specifying colors by name
+%\usepackage{xcolor} % Required for specifying colors by name
 \definecolor{ocre}{RGB}{160,0,0}   
                  
 %-----------------------------------------------------------------------
@@ -97,7 +97,7 @@
 %-------------------------------------------------------------------------
 
   %% Couleurs
-  \usepackage{xcolor}
+ % \usepackage{xcolor}
   \definecolor{comments}{rgb}{0.7,0,0}    % rouge foncé
   \definecolor{link}{rgb}{0,0.4,0.6}      % ~RoyalBlue de dvips
   \definecolor{url}{rgb}{0.6,0,0}         % rouge-brun
@@ -363,7 +363,7 @@
 
 	\theoremstyle{ocrenumbox}
 		\newtheorem{theoremeT}[dummy]{Proposition}
-		\newtheorem{problem}{Problem}[section]
+		%\newtheorem{problem}{Problem}[section]
 		\newtheorem{exerciseT}{Outillage}[section]
 	\theoremstyle{blacknumex}
 		\newtheorem{exampleT}{Example}[section]
@@ -449,11 +449,11 @@ linewidth=4pt,
 innerbottommargin=5pt]{cBox}
 
 % Creates an environment for each type of theorem and assigns it a theorem text style from the "Theorem Styles" section above and a colored box from above
-\newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
+%\newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
 \newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{ocre}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}				  
-\newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}	
-\newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
-\newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}	
+%\newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}	
+%\newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
+%\newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}	
 \newenvironment{nota}{\begin{cBox}\begin{remarqueT}}{\end{remarqueT}\end{cBox}}	
 
 %----------------------------------------------------------------------------------------

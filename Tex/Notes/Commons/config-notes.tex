@@ -11,10 +11,14 @@
  %------------------------------------------
 \newcommand{\edoc}{e document\xspace}
 \newcommand{\ecours}{e cours} 
-\newcommand{\uJournalInfo}{Orange et CNAM Bretagne, Cybersécurité SEC101, eduf@ction}
+\newcommand{\uJournalInfo}{Orange et CNAM Bretagne, Cybersécurité SEC101, eduf@ction}
 
-
-\newcommand{\umainload}{\input{../Tex/Articles/Commons/main-article.tex}}
+%
+\ifdefined\PRZMODE 
+\newcommand{\umainload}{\input{../Tex/Notes/Commons/PRZ/main-beamer.tex}}
+\else
+\newcommand{\umainload}{\input{../Tex/Notes/Commons/DOC/main-article.tex}}
+\fi
 
 
 

@@ -1,32 +1,90 @@
+
+
+%
+%
+%\newenvironment{Pframe}[1]{\begin{frame}[fragile,environment=Pframe]<presentation>\frametitle{#1}}
+%{
+%\end{frame}
+%}
+%
+%
+%
+%\NewEnviron{Aframe}[1][]{%
+%\begin{frame}[fragile,environment=Aframe]
+%\mode<presentation>{\frametitle{#1}}
+%\BODY
+%\end{frame}
+%}
+
+%\makeatletter
+%\patchcmd\beamer@@tmpl@frametitle{\insertframetitle}{\insertsection-\insertframetitle}{}{}
+%\makeatother
+
 \section{Creative Common}
 
-Les notes de cours publiées sur GITHUB sont sous licences CC BY-NC-SA (Attribution - Pas d’Utilisation Commerciale - Partage dans les Mêmes Conditions)(Cf. \url{https://creativecommons.org/licenses/?lang=fr-FR}).
+\begin{frame}
+  \frametitle{Background information}
+
+  \begin{block}{Slides with \LaTeX}
+    Beamer offers a lot of functions to create nice slides using \LaTeX.
+  \end{block}
+
+  \begin{block}{The basis}
+    This style uses the following default styles:
+    \begin{itemize}
+      \item split
+      \item whale
+      \item rounded
+      \item orchid
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}<presentation>
+
+Participation au projet de notes de cours SEC101. Objectif est l'enrichissement des notes avec vos expériences et les éléments fournis chaque semestres contenant l'actualité et les évolutions du domaine.
+
+\end{frame}
+
+\begin{frame}
+
+	
+Les notes de cours publiées sur GITHUB sont sous licences CC BY-NC-SA (Attribution - Pas d’utilisation commerciale - Partage dans les mêmes conditions)(Cf. \url{https://creativecommons.org/licenses/?lang=fr-FR}).
 
 Cette licence permet aux autres de remixer, arranger, et adapter les documents de ce cours à des fins non commerciales tant que les auteurs sont portés au crédit de cette oeuvre et que les nouvelles œuvres sont diffusées selon les mêmes conditions.
 
+\end{frame}
+
 Toutes les notes de cours SEC101, ne sont pas disponibles sous cette licence. Seules celles accessibles sur GITHUB sont publiées sous cette licence. Pour l'instant seule l'introduction est publiée.
+
 
 \input{../Tex/Contribute/contrib-gen.tex}
 
 \subsection{Organisation de l'architecture de contribution}
 
-L'ensemble des sources sont publiés sour GITHUB, et vous pouvez contribuer en utilisant GITHUB pour participer à titre individuel. Vous devez disposer d'une compétence LATEX et d'un environnement LATEX et GIT sur votre poste de travail. L'édition peut se faire sur le GIT mais cela est déconseillé. Pour faciliter l'édition des documents pour des contributions, modifications limitées et rapides il est proposé d'utiliser OVERLEAF avec un compte générique ou en mode anonyme. Ces éléments vous sont fournis individuellement si vous souhaiter contribuer.
+L'ensemble des sources est publié sour GITHUB, et vous pouvez contribuer en utilisant GITHUB pour participer à titre individuel. Vous devez disposer d'une compétence LATEX et d'un environnement LATEX et GIT sur votre poste de travail. L'édition peut se faire sur le GIT mais cela est déconseillé. Pour faciliter l'édition des documents pour des contributions, modifications limitées et rapides il est proposé d'utiliser OVERLEAF avec un compte générique ou en mode anonyme. Ces éléments vous sont fournis individuellement si vous souhaiter contribuer via ce mode.
 
 \section{Architecture des projets LATEX}
 
-Les fichiers racines des projets de notes de cours sont dans le répertoire : \textbf{/Builder} . 
+\begin{frame}
+	
 
+Les fichiers racines des projets de notes de cours sont dans le répertoire : \textbf{/Builder} . 
 
 La syntaxe de ces fichiers est généralement \g{SEC101-Cx-title}. 
 
 Cx étant le numéro du chapitre du cours, et \g{title} le titre de la note.
 Afin d'uniformiser les notes de cours, une architecture documentaire standardisée est proposée. 
-Chaque compilation de notes de cours pour un thème donné est un article au sens LATEX. Chaque article est configuré, dans un fichier\textbf{*.art.tex} qui définit le contenu de l'article. Le corps des documents est le répertoire \textbf{/Chapters}. 
 Les images en PDF sont issues d'un fichier source (OpenDocument)
+
+Chaque compilation de notes de cours pour un thème donné est un article au sens LATEX. Chaque article est configuré, dans un fichier\textbf{*.art.tex} qui définit le contenu de l'article. Le corps des documents est le répertoire \textbf{/Chapters}. 
+\end{frame}
 
 \subsection{Utilisation de GITHUB}
 
-Veuillez vous référer au manuel d'usage de GITHUB. Le projet est sur \textbf{edufaction/CYBERDEF}.
+Veuillez vous référer au manuel d'usage de GITHUB. 
+
+Le projet est sur : \textbf{edufaction/CYBERDEF}.
 
 \subsection{Utilisation d'Overleaf}
 
@@ -40,7 +98,7 @@ Les sources des documents sont en LATEX (XeLatex précisément). Si vous souhait
 
 \input{../Tex/Contribute/contribs.tex}
 
-
 \subsection{Organisation du modèle contribution}
 
 Toute personne contribuant à l'évolution du cours CYBERDEF101 indique sa contribution dans le fichier \bf{Contribs.tex}.
+

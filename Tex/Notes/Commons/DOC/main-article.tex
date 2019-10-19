@@ -5,10 +5,20 @@
 
 \documentclass[12pt,fleqn,twoside]{article} 
 
+\usepackage{beamerarticle}
+
+\usepackage{ae}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
 \input{../Tex/template.inc/edx.article.cls.tex}
 \input{../Tex/template.inc/edx.packages.tex}
+\input{../Tex/template.inc/edx.packages.art.tex}
 \input{../Tex/template.inc/edx.command.tex}
+\input{../Tex/template.inc/edx.command.art.tex}
 \input{../Tex/template.inc/edx.styles.tex}
+
 
 %-------------------------------------------------
 %	BIBLIOGRAPHY
@@ -32,7 +42,7 @@
 %	ARTICLE INFORMATION
 %-------------------------------------------------
 
-\Abstract {\uabstract\input{../Tex/Articles/Commons/abstract-gen-article.tex} }
+\Abstract {\uabstract\input{../Tex/Notes/Commons/abstract-gen-notes.tex} }
 \JournalInfo{\uJournalInfo} % Journal information
 \Archive{Notes de cours éditées le \today} % Additional notes (e.g. copyright, DOI, review/research article)
 \PaperTitle{\utitle} % Article title
@@ -47,9 +57,13 @@
 %	Old article
 %-------------------------------------------------
 
+
 \maketitle
+
 \begin{tikzpicture}[remember picture,overlay]\node at (current page.north west)[xshift=4cm, yshift=-4cm, text opacity=1.0]{\includegraphics[width=0.1\paperwidth]{../Tex/Pictures/shield-20.pdf}}; 
 \end{tikzpicture} 
+
+
 
 %-------------------------------------------------
 \ubody % MAIN BODY defined external
@@ -66,8 +80,6 @@
 \tableofcontents 
 \listoffigures  
 %\listoftables
-
-
 
 
 \end{document}

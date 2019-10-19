@@ -1,5 +1,5 @@
 %===========================
-% EDX COMMAND
+% EDX COMMAND STANDART
 %===========================
 
 \newcommand\UKword[1]{\emph{#1}}
@@ -10,6 +10,7 @@
 \newcommand{\g}[1]{\og #1 \fg}
 \newcommand{\uload}[1] {\input{../Tex/#1}}
 \newcommand{\ucurcolor}{black}
+
 
 
 %-----------------------------------------------------
@@ -52,7 +53,7 @@
 
 %************************PACKAGE***
 
-\usepackage{tikz}% Required for drawing custom shapes
+%\usepackage{tikz}% Required for drawing custom shapes
 \usetikzlibrary{shadows}
 
 
@@ -84,18 +85,6 @@
 \end{wrapfigure}
 }
 
-
-%************************PACKAGE***
- \usepackage{fontawesome}
-  \usepackage{awesomebox}   
-%-----------------------------------------------------
-%											 \videobox 
-% Video BOX lien
-%----------------------------------------------------
-  
-%\newcommand{\videobox}[1]{%
-%\awesomebox{\faYoutubePlay}{\aweboxrulewidth}{url}{#1}}
-
 %-----------------------------------------------------
 %														\link 
 % Url et footnote du lien
@@ -105,13 +94,46 @@
   {
   \href{#1}
   {
-  #2~\raisebox{-0.2ex}{\faExternalLink}\footnote
+  #2~\raisebox{-0.2ex}{\footnote
   	{
  #1
   	}
   }
   }
+  }
   
   
-  
-  
+
+  %-----------------------------------------------------
+%														\Pframe 
+% Beamer Frame
+%-----------------------------------------------------
+
+
+
+
+%\newenvironment{Pframe}[1]{\mode<all>{\begin{frame}<presentation>\frametitle{#1}}{\end{frame}}}
+%
+%\newenvironment{Tframe}[1]{{\begin{frame}<presentation>\frametitle{#1}}{\end{frame}}
+%
+%
+%\newenvironment{Aframe}{\begin{frame}}{\end{frame}}
+%
+
+%\newcommand{\Aframetitle}[1]
+%{
+%\mode<presentation>{\frametittle{#1}}
+%}
+%
+
+
+
+
+
+
+
+
+
+
+
+
