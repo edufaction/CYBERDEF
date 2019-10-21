@@ -3,21 +3,25 @@
 % Configuration générale des articles
 %===========================
 
-
-\newcommand{\ubooktitleBefore}{Notes de synthèse}
-\newcommand{\ubooktitleMain}{Cours SEC 101 Cnam Bretagne}
-\newcommand{\ubooktitle}{UBOOKTITTLE}
-\newcommand{\ubooksubtitle}{\includegraphics[width=0.04\paperwidth]{../Tex/Pictures/shield-20.pdf} }
  %------------------------------------------
-\newcommand{\edoc}{e document\xspace}
-\newcommand{\ecours}{e cours} 
-\newcommand{\uJournalInfo}{Orange et CNAM Bretagne, Cybersécurité SEC101, eduf@ction}
-
-%
+\renewcommand{\ubooktitleBefore}{Notes de synthèse}
+\renewcommand{\ubooktitleMain}{Cours SEC 101 Cnam Bretagne}
+\renewcommand{\ubooktitle}{UBOOKTITTLE}
+\renewcommand{\ubooksubtitle}{\includegraphics[width=0.04\paperwidth]{../Tex/Pictures/shield-20.pdf} }
+ %------------------------------------------
+\renewcommand{\edoc}{e document\xspace}
+\renewcommand{\ecours}{e cours} 
+ %------------------------------------------
+ 
+ 
+%------------------------------------------
+ %     BEAMER OU ARTICLE
+ %------------------------------------------
+   
 \ifdefined\PRZMODE 
-\newcommand{\umainload}{\input{../Tex/Notes/Commons/PRZ/main-beamer.tex}}
+	\newcommand{\umainload}{\input{../Tex/Notes/Commons/PRZ/main-beamer.tex}}
 \else
-\newcommand{\umainload}{\input{../Tex/Notes/Commons/DOC/main-article.tex}}
+	\newcommand{\umainload}{\input{../Tex/Notes/Commons/DOC/main-article.tex}}
 \fi
 
 

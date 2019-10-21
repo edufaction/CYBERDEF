@@ -1,0 +1,33 @@
+
+
+%----------------------------------------------------------------------------------------
+%	4ième de COUVERTURE
+%----------------------------------------------------------------------------------------
+\newpage
+\begingroup
+\thispagestyle{empty} % Suppress headers and footers on the title page
+\color{black} 
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{\upath/Template.inc/BookPictures/background.pdf}};
+% ------CV --------------------------------------------------------------------------------------
+\draw (current page.north west) node [fill=ocre!00!white,fill opacity=0,text opacity=1,inner sep=0cm,xshift= 6 cm,  yshift=-15 cm, anchor=north west]
+{\centering\sffamily\parbox[c][][t]{13cm}{\normalsize \color{white} L'auteur est responsable  sécurité de la société Orange Cyberdefense après avoir dirigé son pôle conseil et audit.  Il a occupé différents postes dans de grandes entreprises de services numériques en tant que consultant. Ingénieur des corps techniques de l’armement du ministère des armées, il a exercé pendant plusieurs années à la Délégation Générale pour l’Armement dans les domaines du renseignement, de la lutte informatique et de la cyberdéfense.\\
+Ingénieur du Conservatoire National des Art et Métiers où il y enseigne aussi l’ingénierie et la sécurité des logiciels, il est auditeur de la 50ième session Armement et Economie de Défense de l’IHEDN [Institut des Hautes Etudes de la Défense National].
+\\}};
+% ------Descritif de l'ouvrage--------------------------------------------------------------------------------------
+\draw (current page.north west) node [fill=ocre!00!white,fill opacity=1,text opacity=1,inner sep=1cm,xshift= 2 cm,  yshift=-2 cm, anchor=north west]
+{\centering\sffamily\parbox[c][][t]{15cm}{ Aborder la sécurité des systèmes d’information sous l’angle d'une sécurité dynamique est un axe qui depuis quelques années apporte de nouvelle manière d’aborder la protection, la défense, et la résilience des systèmes d’information. La transformation digitale de l'entreprise modifie et rend plus flous les périmètres des système d’informations. Cela nécessite une approche élargie du risque numérique et des architectures de cybersécurité. Malgré la mise en place de mesures et de technologies de protection de plus en plus élaborée, l'impact d'une attaque ayant franchie ces barrières à considérablement augmenté.  C\edoc élaborer dans le cadre d'un cours introduction à la gouvernance de la cybersécurité aborde une démarche de cyberdéfense d’entreprise construite à partir de quelques éléments fondamentaux. Protéger l'ensemble de l'entreprise alors qu'il est complexe de définir ses frontières est illusoire. Identifier les actifs essentiels ou vitaux et mettre en place les moyens adaptés à leur protection et leur défense est une démarche tactique qui permet de graduellement réduire ses cyber-risques.  Issu d'un cours sur le déploiement de politiques de cyberdéfense, cet ouvrage décrit les mécanismes de sécurité opérationnelle permettant de fixer à partir d’une analyse de risque des priorités opérationnelles tant sur l'organisation des processus que des architectures de sécurité de défense et de résilience.}};
+
+% ------PHOTO--------------------------------------------------------------------------------------
+\node at (current page.north west)   [xshift= 2cm,  yshift=-15cm, anchor=north west]  {\includegraphics[width=3cm]{\upath/Pictures/authorphoto.jpg}}; 
+
+% ------EAN--------------------------------------------------------------------------------------
+\node at (current page.north west)   [xshift= 15cm,  yshift=-24cm, anchor=north west]  {\includegraphics[width=4cm]{\upath/Template.inc/BookPictures/ean-white.pdf} }; 
+
+% ------TITRE DE BAS DE PAGE --------------------------------------------------------------------------------------
+\node at (current page.center)  [xshift=0cm, yshift=-11cm, text opacity=1]  { {\centering \color{white}\bfseries\sffamily \ubooktitleMain} } ; 
+
+\end{tikzpicture} 
+\vfill
+\endgroup
+

@@ -1,0 +1,174 @@
+% Chapitre introduction de la partie 3 du cours VAR
+
+%\textbf{\Ucenter{--- Chapitre introductif de la Partie 3 du cours SEC 101 ---}}
+
+\section{Sécurité opérationnelle}
+
+
+% begin PRZ==========================
+\begin{frame}
+<presentation>\frametitle{Sécurité opérationnelle}
+\framesubtitle{Une définition}
+% end header PRZ======================
+Le terme de \g{sécurité opérationnelle}, est relativement jeune dans l’histoire de la sécurité des technologies de l’information. Le terme de SSI sécurité des systèmes d’information était né pour distinguer des disciplines qui s’attachaient à protéger l’information qui circule dans les systèmes de l’entreprise (cf protection et classification de l’information). La sécurité des réseaux et la sécurité informatique ont été les précurseurs de la cybersécurité, le cyber recouvrant en un seul terme les enjeux de sécurité liés au réseau et à l’informatique, mais plus largement la sécurité de l'économie numérique.
+\end{frame}
+% end PRZ ===========================
+
+Comme nous l’avons abordé, dans les chapitres précédents, la cybersécurité est un domaine vaste qui regroupe de nombreuses disciplines pouvant intervenir dans des cycles projets pour construire des systèmes sûrs et pour assurer la continuité d’activité dans l'entreprise.
+C’est dans ce dernier contexte que l’on parle plutôt de sécurité opérationnelle. Ces activités opérationnelles supportent en particulier le maintien en condition de sécurité au quotidien de l’entreprise. En France, au sein des armées, on parle de lutte informatique dite défensive permettant de différentier les activités des Cyberdéfense des activités de Cyber-protection. Ces activités sont à opposer à la lutte informatique\g{offensive} qui ne sera pas abordé dans c\ecours car elle relève de prérogative des états et non des entreprises.
+La sécurité opérationnelle ajoute par ailleurs à son périmètre d'action,  la surveillance de l'intérieur des périmètres de responsabilités de l'entreprise :  \g{Les murs sont épais et solides, les douaniers sont aux portes de la cité, la police doit toutefois veiller à la sécurité des biens et des citoyens dans la ville, car certains sont néanmoins des brigands. Quand à l'armée, elle veille aux frontière du pays informée pas nos agents à l'étranger}.
+
+On traitera donc cette partie avec une équivalence dans les terminologies suivantes :
+
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{Plusieurs terminologies, une dynamique}
+% end header PRZ======================
+	\begin{itemize}
+		\item Maintien en condition de sécurité (MCS);
+		\item Sécurité opérationnelle (SECOPS);
+		\item Lutte informatique défensive (LID);
+		\item Cyberdéfense au sens de la cyberdéfense d'entreprise (CYBERDEFENSE).
+	\end{itemize}
+\end{frame}
+% end PRZ ===========================
+
+Le but de cette sécurité opérationnelle est d’être au coeur de l’action de la sécurité de l’entreprise. En effet, la sécurité de l’entreprise est une propriété multiforme. Elle est d’abord statique dans la mesure où elle correspond à un niveau de confiance dans l’environnement pour conserver la disponibilité, la confidentialité et l’intégrité de l’entreprise. Cette forme statique est souvent liée à la conformité de l’entreprise aux différents référentiels sécuritaires (ISO27000, GDPR, LPM, NIS ...), mais surtout aux objectifs sécurité de l'entreprise face à ses risques et au exigences sécurité des clients souvent inscrites dans des plans d’assurance sécurité (Cf. PAS). 
+Elle est aussi dynamique car c’est aussi une propriété systémique qui mesure la capacité à anticiper les menaces, identifier les fragilités , détecter en temps réel les attaques et réagir à temps ou au pire disposer des capacités de revenir dans un état de fonctionnement compatible avec la survie de l’entreprise (Modes dégradés par exemple).
+Le système évolue, faisant apparaitre ici et là de nouvelles fragilités, l’entreprise se transforme, vit, suscitant de nouveaux potentiels d’attaques. L’entreprise doit s’organiser pour disposer de fonctions opérationnelles adaptées et dédiées à cette activité. Ces fonctions nécessitent des savoirs, des savoirs-faire et de l’outillage. C’est l’ensemble de ces techniques que nous allons tenter d’aborder dans c\edoc.
+
+\section{Lutte contre la menace}
+
+La finalité de cette défense d’entreprise est de lutter contre ces attaques qui ne sont pas qu’informatique. L’attaquant peut utiliser des scenarii utilisant de nombreux vecteurs qui peuvent utiliser des fragilités organisationnelles ou humaines. On peut dire qu’une attaque est une fonction complexe, qui peut viser ou utiliser de nombreux facteurs internes et externes à l’entreprise. Ces facteurs constituent ce que certains nomment l’environnement numérique ou digital de l’entreprise. Cet environnement est globalement constitué de l’ensemble des outils, services, moyens informatiques ou réseaux utilisés par l’entreprise.
+Mai 2017 a été un tournant dans la prise de conscience de la menace de la part des entreprises. Le Rançon-logiciel WannaCry a plus fait trembler les médias que les entreprises, mais a permis de faire comprendre au grand public les enjeux des menaces informatiques.
+
+
+\begin{nota}[Paramètres d’une attaque]
+\begin{equation}
+Attaque = Fonction \left[ Fragilit\acute{e}s\,HOT\, Entreprise\otimes Gains\,Escompt\acute{e}s\,PF \right]
+\end{equation}
+\end{nota}
+
+\begin{itemize}
+	\item Fragilités HOT : Humaines, Organisationnelles, Techniques 
+	\item Gains pour l'attaquant Idéologiques Politiques, Financiers, ...
+\end{itemize}
+
+On peut noter quatre grandes classes d’attaque informatiques \footnote{La majorité des attaques élémentaires peut être rangée dans ces classes}:
+
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{Grandes typologie des attaques numériques}
+% end header PRZ======================
+\begin{itemize}
+\item Attaques \textbf{d’interception} d’information, vols par écoutes passives ou actives dans les flux transitant entre un émetteur et un récepteur;
+\item Attaques par \textbf{déni de services}, généralement sur le réseaux : Ce type d’attaque est un atteinte à la DISPONIBILITE du système, basé souvent sur la saturation d’une capacité de traitement. Le système saturé dans l’exécution de certaines de ses fonctions, ne peut plus répondre aux demandes légitimes, car il est occupé à traiter d’autres sollicitations;
+\item Attaques par \textbf{exploitation de failles }logiciels : Ce type d’attaque va utiliser une vulnérabilité, d’un système d’exploitation ou d’un logiciel pour exécuter du code malveillant. Ce code réalisera alors sa mission;
+\item Attaques par \textbf{exploitation de défauts} de configuration : Ce type d’attaque utilise simplement un ou des défauts de configuration pour que légitimement  l’agresseur puisse dérouler un scénario, qui pourra lui donner par exemple des droits particuliers pour conduire des attaques.
+\end{itemize}
+\end{frame}
+% end PRZ==========================
+
+Nous pourrions remarquer que ce nombre est relativement faible. Toutefois, la vrai difficulté réside dans la multiplicité des vulnérabilités, et des défauts de configuration. Les développeurs réalisent des logiciels possédant des failles (vulnérabilités), les utilisateurs ou les administrateurs déploient des systèmes en faisant des erreurs de configuration, ou ne les configurent que très rarement en pensant à la malveillance.
+
+Les motivations des attaquants sont nombreuses, et leurs objectifs variés :
+
+\begin{itemize}
+\item obtenir un accès au système pour s’y maintenir en attendant un opportunité ;
+\item récupérer de l’information, secrets, données personnelles exploitables (en gros toutes information ayant de la valeurs)
+\item récupérer des données bancaires ;
+\item s'informer sur l'organisation (entreprise de l'utilisateur, etc.) ;
+\item troubler, couper, bloquer le fonctionnement d'un service (les rançongiciels entre dans cette catégories) ;
+\item utiliser le système d’un utilisateur, pour rebondir vers un autre système ;
+\item détourner les ressources du système d’un utilisateur (utiliser de la bande passante, utiliser de la capacité de calcul) ;
+\end{itemize}
+
+Bien entendu, il n’y a que très rarement un seul objectif, c’est la combinaison des méthodes d’attaques, des objectifs unitaires qui définissent globalement une mission ou un objectif final. L’exploitation de vulnérabilités au sein de l’entreprise va permettre le déploiement par l’attaquant d’un scénario.
+
+\subsection{Politiques et Stratégies}
+
+\upicture{\upath/Pictures/img-cyclevie-pol-strat}{Positionnement de la sécurité opérationnelle}{0.4}{lbl_pol-strat}
+
+A partir des risques identifiés, l’entreprise a posé des politiques de sécurité qui ont permis de mettre en place des mesures de sécurité. Ces mesures sont d’ordre techniques avec des systèmes de sécurité, ou des SI avec des architectures particulières, mais aussi d’ordre organisationnel avec des procédures et des mécanismes à respecter.
+L’ensemble de cette dynamique construit un niveau de sécurité qu’il va être nécessaire de maintenir dans le temps. Toutefois ce niveau de sécurité n’est pas suffisant pour une simple et bonne raison :  la menace évolue, les vulnérabilités apparaissent (découvertes, ou créées), la valeur\g{marchande }des actifs d’une entreprise change aussi. 
+Les occurrences de ces éléments de vie sont considérés comme des évènements qu’il convient de détecter avec suffisamment d’avance sur l’attaquant pour pouvoir le plus rapidement les prendre en compte.
+
+
+
+La gestion des événements qui peuvent être un source de mesure de l’évolution du niveau de sécurité de l’entreprise est au coeur des stratégies de cyberdéfense. Ces évènements sont corrélés avec des sources provenant de deux processus particuliers qui seront décrit dans ce c\edoc.
+
+\begin{itemize}
+\item  Recherche des vulnérabilités  : Processus qui permet de rechercher, découvrir, couvrir  les vulnérabilités ou fragilités de l’entreprise ou ayant un impact sur l’entreprise que celles-ci soient techniques, humaines ou organisationnelles ;
+\item  Prévention de la menace : Processus qui permet de connaitre les menaces directes sur l’entreprise ou potentielles afin d’anticiper et/ou se préparer à un type d’attaque.
+\end{itemize}
+
+C’est la confrontation entre les vulnérabilités, les menaces et la détection de l’activité de l’entreprise qui va permettre d’être efficace dans  le processus de réponse. Il y a de nombreuses manière d’aborder la cyberdéfense d’entreprise
+
+C\edoc présente donc une dynamique de cyberdéfense en trois\g{volets }
+
+\begin{itemize}
+\item Gestion des vulnérabilités (\textit{Vulnerability Management and CERT}) : maitriser ses vulnérabilités mais aussi surveiller l’environnement technologique. 
+\item Surveillance, Détection de la menace (\textit{Event and Threat Management}) :  Analyser en temps réel l’environnement protégé mais aussi surveiller l’écosystème lié à la menace pour anticiper 
+\item Gestion des incidents et réponse aux incidents (\textit{Incident Response – CSIRT}) : Réagir en cas d’incident et assurer la remédiation
+\end{itemize}
+
+\upicture{\upath/Pictures/img-triangle}{3 des volets de la sécurité opérationnelle}{0.6}{lbl_triptyque}
+
+Ces trois volets ne sont pas les seuls qui concourent à la cyberdéfense d’entreprise, mais ils en restent les trois faces principales. Il est à noter que ces trois volets correspondent aussi en France à trois référentiels de qualification de l’ANSSI des prestataires de services de cybersécurité au profit des entreprises. Ces labels sont obtenus par les entreprises qui respectent un cahier des charges rigoureux sur le plan de l'éthique, du professionnalisme, et de la compétence des experts intervenants. Il y trois cadres principaux de certifications sont :
+
+\begin{itemize}
+\item PASSI : Prestataire d’Audit de la sécurité des systèmes d’information ;
+\item PDIS : Prestataire de détection d’incident de sécurité ;
+\item PRIS : Prestataire de réponse à incident.
+\end{itemize}
+
+Ces trois référentiels définissent l’ensemble des exigences d’assurance pour\g{qualifier }des prestataires de services en cybersécurité sur ces trois thématiques. En effet, il serait  en effet important de confier la recherche de ses vulnérabilités, leurs remédiations à des sociétés  de confiance. 
+
+A ces 3 volets il ne faut pas oublier, le volet administration des briques informatique et de télécommunications de l’environnement de l’entreprise. C’est un volet que nous traiterons pas directement dans c\edoc pour se concentrer. sur les mécanismes de maintien en continue le niveau de sécurité de l’entreprise  avec des mécanismes de veille, d’alerte et de réaction.
+
+
+%TODO Leure et Hony Posts
+%Leurres et Pots de Miel 
+%Renseignement
+
+
+\subsection{Stratégies d'action}
+
+La cyberdéfense est aussi dans une stratégie de l'action. Les outils de cyberdéfense sont construits pour aider à surveiller l'environnement, détecter des menaces et/ou des attaques mais surtout agir et réagir pour limiter les impacts.
+On distinguera donc dans le chapitre SOC (Security Operational Center) trois grands mécanismes de Cyberdefense que les anglo-saxons appellent : 
+
+\begin{itemize}
+	\item Predictive Cyberdefense
+	\item Active  and Proactive Cyberdefense
+	\item Reactive Cyberdefense 
+\end{itemize}
+
+Il ne faut pas, par ailleurs, oublier  le renseignement (\textit{Intelligence}). qui reste une des grandes étapes de la cyberdéfense domaine que nous explorerons sous son volet cyber avec les sources de \g{threat intelligence}, mais aussi avec le Renseignement d'Origine Cyber que les anglo-saxons nomme \g{intelligence cyber}
+
+Dans les grandes organisations une autre stratégie globale de la cyberdéfense est de penser l'anticipation et la détection de manière globale à l'environnement digital de l'entreprise mais de structurer, la réaction de manière locale. 
+
+%TODO https://en.wikipedia.org/wiki/Proactive_cyber_defence
+
+Nous avons positionné l'audit technique comme une des activités fondamentale de la gestion des vulnérabilités.
+En effet les techniques d'audit font partie des méthodes de référence pour disposer d'un état des fragilités de l'entreprise. On y trouvera donc les grands basics des audits techniques que sont les tests d'intrusion, la sécurité applicative, l'audit de configuration, et le fuzzing.
+
+Par ailleurs nous explorerons rapidement, les techniques de déception et de leurre qui font partie cette défense proactive avec les honeypots qui peuvent être couplés avec le \UKword{cyber-hunting}, technique de chasse aux codes malveillants dans l'entreprise.
+ 
+\subsection{structure du cours}
+
+Notre propos restera centré sur les trois axes présentés qui nous déclinerons dans trois chapitres.
+
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{SECOPS en 3 thématiques}
+% end header PRZ =======================
+\begin{itemize}
+  \item L'anticipation avec la recherche de fragilités ou de risques cyber dans l'entreprise et leur correction;
+  \item La détection d'évènement à risque, d'attaques, de déviance dans l'environnement mais aussi à l'extérieur du périmètre de l'entreprise;
+  \item La réaction aux incidents, avec la gestion de crise et la remédiation.
+\end{itemize}
+\end{frame}
+% end PRZ ===========================
+
+

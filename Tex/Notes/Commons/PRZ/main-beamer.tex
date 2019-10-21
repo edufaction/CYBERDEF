@@ -1,28 +1,31 @@
 %===========================
 %               COURS "CYBERDEF"
-% Modèle Template des Planches Beamer
+% Template Beamer
 %===========================
-%             Dé	cembre 2019
+%             Décembre 2019
 % (c) DUPUIS Eric eric.dupuis@orange.fr
 %==========================
 
+% Use to marking Frame in Beamer mode
 
-\documentclass[ignorenonframetext, 10pt]{beamer}
+% begin PRZ==========================
 
-\usepackage{xcolor}
+% end PRZ ===========================
 
-\usepackage{ae}
-\usepackage[french]{babel}
+\documentclass[ignorenonframetext, 8pt, allowframebreaks]{beamer}
+
+
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\usepackage{lmodern}
+\usepackage[french]{babel}
 
 
-\usepackage{graphicx,hyperref,url}
 
-
+%-------------------------------------------------------
 \usepackage{../Tex/template.inc/edxbeamer}
-
-
+%-------------------------------------------------------
 
 
 \input{../Tex/template.inc/edx.packages.tex}
@@ -32,146 +35,61 @@
 
 
 
+% a charcher aprés hyperref, pouavoir les guillemets sous beamer
+\usepackage{ae}
+\usepackage{aecompl}
 
-%\newcommand{\labelitemi}{\Large{$\bullet$}}
+\renewcommand{\familydefault}{pag}
 
-%\setbeamercolor{itemize item}{fg=red}
 
-%-------------------------------------------------------
-% The title of the presentation:
-%  - first a short version which is visible at the bottom of each slide;
-%  - second the full title shown on the title slide;
-\title[SEC101]{\utitle}
 
 %-------------------------------------------------------
 % Optional: a subtitle to be dispalyed on the title slide
-\subtitle{Cours du Cnam}
-
-
+\title[\ushorttitle]{\utitle}
+%\subtitle{\utitleshort}
 
 %-------------------------------------------------------
 % The author(s) of the presentation:
 %  - again first a short version to be displayed at the bottom;
 %  - next the full list of authors, which may include contact information;
-\author[eduf@ction]{
-Eric DUPUIS \\ \medskip
-  {\small \url{eric.dupuis@cnam.fr} \and \url{eric.dupuis@orange.com}\\ 
-  {\small \url{http://www.cnam.fr}}}}
+\author[\uauthortwitter]{ \uauthor \\ \medskip {\small \url{\umaila} \and \url{\umailb}\\ {\small \url{\usitea}}}}
 
+%-------------------------------------------------------
 % The institute:
 %  - to start the name of the university as displayed on the top of each slide
 %    this can be adjusted such that you can also create a Dutch version
 %  - next the institute information as displayed on the title slide
-\institute[Conservatoire National des Arts et Métiers]{
-  Conservatoire National des Arts et Métiers \\ Chaire de Cybersécurité}
 
+\institute[\uinstituteshort]{\uinstitute \\ \uchaire}
+
+
+%-------------------------------------------------------
 % Add a date and possibly the name of the event to the slides
 %  - again first a short version to be shown at the bottom of each slide
 %  - second the full date and event name for the title slide
-\date[V2019]{
-  Version initiale du cours  \\
-  \today}
+\date[\uversion]{Date de publication\\ \today}
 
+
+%++++++++++++++++++++++++++++++++
 \begin{document}
-
 \begin{frame}[plain]
-  \titlepage
+ \titlepage
 \end{frame}
-
 \begin{frame}
-  \frametitle{Sommaire}
-  \tableofcontents
-\end{frame}
-
-
+ \frametitle{Sommaire}
+ \tableofcontents
+ \end{frame}
+ 
+% ubody main defined in *.notes.tex
 \mode<all>{\ubody}
 
-
-
-
+\begin{frame}
+ \frametitle{Contributions}
+\input{../Tex/Contribute/contrib-gen.tex}
+ \end{frame}
 
 \end{document}
-% Section titles are shown in at the top of the slides with the current section 
-% highlighted. Note that the number of sections determines the size of the top 
-% bar, and hence the university name and logo. If you do not add any sections 
-% they will not be visible.
-\section{Introduction}
+%++++++++++++++++++++++++++++++++
 
-\begin{frame}
-  \frametitle{Introduction}
-
-  \begin{itemize}
-    \item This is just a short example
-    \item The comments in the \LaTeX\ file are most important
-    \item This is just the result after running pdflatex
-    \item The style is based on the webpage \url{http://www.ru.nl/}
-  \end{itemize}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Introduction 2}
-
-  \begin{itemize}
-    \item qdsqsd
-    \item     \item Tqsdqsd
-    \item Tsqsqdqsd
-    \item exemple 
-  \end{itemize}
-\end{frame}
-
-
-\section{Background information}
-
-\begin{frame}
-  \frametitle{Background information}
-
-  \begin{block}{Slides with \LaTeX}
-    Beamer offers a lot of functions to create nice slides using \LaTeX.
-  \end{block}
-
-  \begin{block}{The basis}
-    This style uses the following default styles:
-    \begin{itemize}
-      \item split
-      \item whale
-      \item rounded
-      \item orchid
-    \end{itemize}
-  \end{block}
-\end{frame}
-
-\section{The important things}
-
-\begin{frame}
-  \frametitle{The important things}
-
-  \begin{enumerate}
-    \item This just shows the effect of the style
-    \item It is not a Beamer tutorial
-    \item Read the Beamer manual for more help
-    \item Contact me only concerning the style file
-  \end{enumerate}
-\end{frame}
-
-\section{Analysis of the work}
-
-\begin{frame}
-  \frametitle{Analysis of the work}
-
-  This style file gives your slides some nice Radboud branding.
-  When you know how to work with the Beamer package it is easy to use.
-  Just add:\\ ~~~$\backslash$usepackage$\{$ru$\}$ \\ at the top of your file.
-\end{frame}
-
-\section{Conclusion}
-
-\begin{frame}
-  \frametitle{Conclusion}
-
-  \begin{itemize}
-    \item Easy to use
-    \item Good results
-  \end{itemize}
-\end{frame}
 
 

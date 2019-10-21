@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%                                MAIN OF MY BOOK
+%                                 edupuis@cnam.fr
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+%\documentclass[20pt,fleqn,twoside,openright]{book} % Default font size and left-justified equations
+
+\documentclass[11pt,fleqn, a4paper,twoside,openright]{book}
+
+\input{../Tex/Book/config-book.tex}
+
+
+\usepackage{beamerarticle}
+
+\usepackage{ae}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%\input{../Tex/template.inc/edx.article.cls.tex}
+\input{../Tex/template.inc/edx.packages.tex}
+\input{../Tex/template.inc/edx.command.tex}
+\input{../Tex/template.inc/edx.styles.tex}
+
+
+\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+
+\addbibresource{../tex/bibliography.bib} % BibTeX bibliography file
+\defbibheading{bibempty}{}
+
+
+\usepackage{hyperref}
+
+\hypersetup{pdftitle={CYBERDEFENSE D'ENTREPRISE},pdfauthor={\uauthor}} % Uncomment and fill out to include PDF metadata for the author and title of the book
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER  OF THE BOOK (1st and 4th)
+%----------------------------------------------------------------------------------------
+
+\input{../Tex/Book/coverfront-book.tex}  % Book Cover
+
+
+
+
+\input{../Tex/Book/book.notice.tex}
+%\input{../Tex/Includes/introduction.tex}
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with 
+
+ 
+	\usechapterimagetrue
+	\chapterimage{../Tex/Template.inc/BookPictures/chapter_head_1.pdf} 
+
+\pagestyle{empty} % Disable headers and footers for the following pages
+
+\tableofcontents % Print the table of contents itself
+
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right side of the book
+
+\pagestyle{fancy} % Enable headers and footers again
+
+
+\input{../Tex/Book/MyBookCyber.tex} 
+
+\part{Références et Index}
+
+\chapter*{Bibliography}
+
+\printbibliography[]
+
+%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliographie}} % Add a Bibliography heading to the table of contents
+
+%------------------------------------------------
+
+%\section*{Articles}
+%\addcontentsline{toc}{section}{Articles}
+%\printbibliography[heading=bibempty,type=article]
+
+%------------------------------------------------
+
+%\section*{Books}
+%\addcontentsline{toc}{section}{Books}
+%\printbibliography[heading=bibempty,type=book]
+
+
+%	INDEX
+
+
+\cleardoublepage % Make sure the index starts on an odd (right side) page
+\phantomsection
+\setlength{\columnsep}{0.75cm} % Space between the 2 columns of the index
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}} % Add an Index heading to the table of contents
+\printindex % Output the index
+
+
+\input{../Tex/Book/coverback-book.tex}  
+
+\end{document}
