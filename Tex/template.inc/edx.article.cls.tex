@@ -45,25 +45,29 @@ justification=raggedright]{caption}
 %-----------------------------------------------
 \usepackage[explicit]{titlesec}
 \titleformat{\section}
-  {\color{color1}\large\sffamily\bfseries}
+  {\color{color1}\Large\sffamily\bfseries}
   {}
   {0em}
   {\colorbox{color2!10}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\centering\arabic{section}. #1}}}
   []
+  
+  
 \titleformat{name=\section,numberless}
-  {\color{color1}\large\sffamily\bfseries}
+  {\color{color1}\Large\sffamily\bfseries}
   {}
   {0em}
   {\colorbox{color2!10}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\centering#1}}}
   []  
+  
+  
 \titleformat{\subsection}
-  {\color{color1}\sffamily\bfseries}
+  {\color{color1}\sffamily\large\bfseries}
   {\thesubsection}
   {0.5em}
   {#1}
   []
 \titleformat{\subsubsection}
-  {\sffamily\small\bfseries}
+  {\sffamily\normalsize\bfseries}
   {\thesubsubsection}
   {0.5em}
   {#1}
@@ -160,10 +164,10 @@ justification=raggedright]{caption}
 \colorbox{color2!10}{%
 \parbox{\textwidth-4\fboxsep-2\fboxrule}{%
 \ifx\@Keywords\@empty%
-\sffamily\textbf{\abstractname}\\\@Abstract%
+\sffamily\textbf{\abstractname}\\ \rmfamily \@Abstract%
 \else%
-\sffamily\textbf{\abstractname}\\\@Abstract\\[4pt]%
-\textbf{\keywordname}\\\@Keywords%
+\sffamily\textbf{\abstractname}\\ \rmfamily \@Abstract\\[4pt]%
+\sffamily\textbf{\keywordname}\\ \rmfamily \@Keywords%
 \fi%
 }%
 }%
