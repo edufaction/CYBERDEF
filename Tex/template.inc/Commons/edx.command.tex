@@ -11,8 +11,7 @@
 \newcommand{\uload}[1] {\input{../Tex/#1}}
 \newcommand{\ucurcolor}{black}
 
-
-
+\newcommand{\mak}[1]{\faicon{\aArrowCircleORight} #1}
 %-----------------------------------------------------
 %										 	\upspicture 
 %---------------------------------------------------
@@ -27,13 +26,19 @@
 %---------------------------------------------------
 
 \newcommand{\upicture}[4]{
-\begin{figure}[] %h
+\begin{figure}[!h] %h
   \begin{center}
 	 \includegraphics[scale=#3]{#1.pdf}
   \end{center}
 \caption{#2 \label{#4}}
 \end{figure}
 }
+
+
+
+
+
+
 
 %-----------------------------------------------------
 %											\updfimage 
@@ -90,18 +95,29 @@
 % Url et footnote du lien
 %-----------------------------------------------------
   
-  \newcommand{\link}[2]
+%  \newcommand{\link}[2]
+%  {
+%  \href{#1}
+%  {
+%  #2~\raisebox{-0.2ex}{\footnote
+%  	{
+% #1
+%  	}
+%  }
+%  }
+%  }
+  
+  
+    \newcommand{\link}[2]
   {
   \href{#1}
   {
-  #2~\raisebox{-0.2ex}{\footnote
+  #2~\raisebox{-0.2ex}{\faExternalLink}\footnote
   	{
  #1
   	}
   }
   }
-  }
-  
   
 
   %-----------------------------------------------------

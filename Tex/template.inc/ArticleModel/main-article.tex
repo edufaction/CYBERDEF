@@ -14,12 +14,10 @@
 \usepackage{lmodern}
 
 
-\input{../Tex/template.inc/edx.article.cls.tex}
-\input{../Tex/template.inc/edx.packages.tex}
-\input{../Tex/template.inc/edx.packages.art.tex}
-\input{../Tex/template.inc/edx.command.tex}
-\input{../Tex/template.inc/edx.command.art.tex}
-\input{../Tex/template.inc/edx.styles.tex}
+\input{../Tex/template.inc/ArticleModel/edx.article.cls.tex}
+\input{../Tex/template.inc/Commons/edx.packages.tex}
+\input{../Tex/template.inc/Commons/edx.command.tex}
+\input{../Tex/template.inc/Commons/edx.styles.tex}
 
 
 %-------------------------------------------------
@@ -29,7 +27,7 @@
 \addbibresource{../tex/bibliography.bib} % BibTeX bibliography file
 \defbibheading{bibempty}{}
 
-%-------------------------------------------------
+%++++++++++++++++++++++++++++++
 
 \begin{document}
 
@@ -73,12 +71,11 @@
 
 \printbibliography
 
-
 \newpage
 
 \Ucontribute
 
-%\newpage
+\newpage
 \tableofcontents 
 \listoffigures  
 %\listoftables

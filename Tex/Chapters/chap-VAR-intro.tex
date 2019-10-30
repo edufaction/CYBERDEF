@@ -5,18 +5,27 @@
 \section{Sécurité opérationnelle}
 
 
+Après dans le cycle de vie de sécurisation de système d'information les deux démarche que nous pourrions classer suivant les termes anglo-saxons des projets :
+
+\begin{itemize}
+  \item \textbf{THINK/DESIGN} : Des risques évalués à la politique sécurité pensée ;
+  \item \textbf{BUILD}: De la politique de sécurité déployée à la construction d’une sécurité implémentée;
+\end{itemize}
+
+Il nous reste à aborder la dernière phase du cycle de vie : les activités d'exploitation de la sécurité.  \textbf{RUN} : Des évènements de sécurité gérés à la cybercrise maitrisée,   que que certains appellent \textbf{SECOPS} : Sécurité Opérationnelle.
+
 % begin PRZ==========================
 \begin{frame}
-<presentation>\frametitle{Sécurité opérationnelle}
-\framesubtitle{Une définition}
+\frametitle<presentation>{Sécurité opérationnelle}
+\framesubtitle<presentation>{Une définition}
 % end header PRZ======================
-Le terme de \g{sécurité opérationnelle}, est relativement jeune dans l’histoire de la sécurité des technologies de l’information. Le terme de SSI sécurité des systèmes d’information était né pour distinguer des disciplines qui s’attachaient à protéger l’information qui circule dans les systèmes de l’entreprise (cf protection et classification de l’information). La sécurité des réseaux et la sécurité informatique ont été les précurseurs de la cybersécurité, le cyber recouvrant en un seul terme les enjeux de sécurité liés au réseau et à l’informatique, mais plus largement la sécurité de l'économie numérique.
+ Ce terme de \g{sécurité opérationnelle}, est relativement jeune dans l’histoire de la sécurité des technologies de l’information. Le terme de SSI sécurité des systèmes d’information était né pour distinguer des disciplines qui s’attachaient à protéger l’information qui circule dans les systèmes de l’entreprise (cf protection et classification de l’information). La sécurité des réseaux et la sécurité informatique ont été les précurseurs de la cybersécurité, le cyber recouvrant en un seul terme les enjeux de sécurité liés au réseau et à l’informatique, mais plus largement la sécurité de l'économie numérique.
 \end{frame}
 % end PRZ ===========================
 
 Comme nous l’avons abordé, dans les chapitres précédents, la cybersécurité est un domaine vaste qui regroupe de nombreuses disciplines pouvant intervenir dans des cycles projets pour construire des systèmes sûrs et pour assurer la continuité d’activité dans l'entreprise.
 C’est dans ce dernier contexte que l’on parle plutôt de sécurité opérationnelle. Ces activités opérationnelles supportent en particulier le maintien en condition de sécurité au quotidien de l’entreprise. En France, au sein des armées, on parle de lutte informatique dite défensive permettant de différentier les activités des Cyberdéfense des activités de Cyber-protection. Ces activités sont à opposer à la lutte informatique\g{offensive} qui ne sera pas abordé dans c\ecours car elle relève de prérogative des états et non des entreprises.
-La sécurité opérationnelle ajoute par ailleurs à son périmètre d'action,  la surveillance de l'intérieur des périmètres de responsabilités de l'entreprise :  \g{Les murs sont épais et solides, les douaniers sont aux portes de la cité, la police doit toutefois veiller à la sécurité des biens et des citoyens dans la ville, car certains sont néanmoins des brigands. Quand à l'armée, elle veille aux frontière du pays informée pas nos agents à l'étranger}.
+La sécurité opérationnelle ajoute par ailleurs à son périmètre d'action,  la surveillance de l'intérieur des périmètres de responsabilités de l'entreprise :  \g{Les murs sont épais et solides, les douaniers sont aux portes de la cité, la police doit toutefois veiller à la sécurité des biens et des citoyens dans la ville, car certains sont néanmoins des brigands. Quand à l'armée, elle veille aux frontières du pays informée pas nos agents à l'étranger}.
 
 On traitera donc cette partie avec une équivalence dans les terminologies suivantes :
 
@@ -37,7 +46,7 @@ Le but de cette sécurité opérationnelle est d’être au coeur de l’action 
 Elle est aussi dynamique car c’est aussi une propriété systémique qui mesure la capacité à anticiper les menaces, identifier les fragilités , détecter en temps réel les attaques et réagir à temps ou au pire disposer des capacités de revenir dans un état de fonctionnement compatible avec la survie de l’entreprise (Modes dégradés par exemple).
 Le système évolue, faisant apparaitre ici et là de nouvelles fragilités, l’entreprise se transforme, vit, suscitant de nouveaux potentiels d’attaques. L’entreprise doit s’organiser pour disposer de fonctions opérationnelles adaptées et dédiées à cette activité. Ces fonctions nécessitent des savoirs, des savoirs-faire et de l’outillage. C’est l’ensemble de ces techniques que nous allons tenter d’aborder dans c\edoc.
 
-Globalement, on peut remarquer que le cycle de vie est a prendre dans le sens inverse de notre présentation. Dans les entreprises moins matures en gouvernance de la sécurité, la dynamique de cette sécurité opérationnelle est la première visible et opérée.
+Globalement, on peut remarquer que le cycle de vie est a prendre dans le sens inverse de notre présentation. Dans les entreprises moins matures en gouvernance de la sécurité, la dynamique de cette sécurité opérationnelle est la première visible et opérée. Dans l'entreprise va réagir le,plus souvent dans une dynamique de réponse immédiates aux problèmes de sécurité sans pour autant investiguer plus avant dans les fragilités globales. Les mécanismes de cybersécurité sont donc construits dans une entreprise peu mature dans le sens suivant :
 
 	\begin{itemize}
 		\item Répondre aux incidents de sécurité, tenter de répondre à la question : \g{qui nous attaque et pourquoi}; 
@@ -124,7 +133,7 @@ C\edoc présente donc une dynamique de cyberdéfense en trois\g{volets }
 \item Gestion des incidents et réponse aux incidents (\textit{Incident Response – CSIRT}) : Réagir en cas d’incident et assurer la remédiation
 \end{itemize}
 
-\upicture{\upath/Pictures/img-triangle}{3 des volets de la sécurité opérationnelle}{0.6}{lbl_triptyque}
+\upicture{\upath/Pictures/img-triangle}{Des 3 des volets de la sécurité opérationnelle}{0.6}{lbl_triptyque}
 
 Ces trois volets ne sont pas les seuls qui concourent à la cyberdéfense d’entreprise, mais ils en restent les trois faces principales. Il est à noter que ces trois volets correspondent aussi en France à trois référentiels de qualification de l’ANSSI des prestataires de services de cybersécurité au profit des entreprises. Ces labels sont obtenus par les entreprises qui respectent un cahier des charges rigoureux sur le plan de l'éthique, du professionnalisme, et de la compétence des experts intervenants. Il y trois cadres principaux de certifications sont :
 
@@ -151,8 +160,8 @@ A ces 3 volets il ne faut pas oublier, le volet administration des briques infor
 \frametitle<presentation>{Stratégies de l'action}
 
 % end header PRZ =======================
-La cyberdéfense est aussi dans une stratégie de l'action. Les outils de cyberdéfense sont construits pour aider à surveiller l'environnement, détecter des menaces et/ou des attaques mais surtout agir et réagir pour limiter les impacts.
-On distinguera donc dans le chapitre SOC (Security Operational Center) trois grands mécanismes de Cyberdefense que les anglo-saxons appellent : 
+La cyberdéfense est  un ensemble de mécanismes liés à une stratégie de l'action. Les outils de cyberdéfense sont construits pour aider à surveiller l'environnement, détecter des menaces et/ou des attaques mais surtout agir et réagir pour limiter les impacts. Si les outils de protection sont configurés à partir d'éléments de politique de sécurité (droits, accès, filtrage ...), les outils de défense sont basés sur les stratégies des attaquants.
+On distinguera donc ici trois grands mécanismes de Cyberdefense que les anglo-saxons appellent : 
 
 \begin{itemize}
 	\item Predictive Cyberdefense
@@ -160,6 +169,8 @@ On distinguera donc dans le chapitre SOC (Security Operational Center) trois gra
 	\item Reactive Cyberdefense 
 \end{itemize}
 \end{frame}
+
+Nous aborderons, en particulier ces concepts quand nous évoquerons la notion de SOC (Security Operational Center) activité qui opère ce volet de cyberdéfense.
 % End PRZ ===========================
 
 Il ne faut pas, par ailleurs, oublier  le renseignement (\textit{Intelligence}). qui reste une des grandes étapes de la cyberdéfense domaine que nous explorerons sous son volet cyber avec les sources de \g{threat intelligence}, mais aussi avec le Renseignement d'Origine Cyber que les anglo-saxons nomme \g{intelligence cyber}
@@ -182,9 +193,9 @@ Notre propos restera centré sur les trois axes présentés qui nous déclineron
 \frametitle<presentation>{SECOPS en 3 thématiques}
 % end header PRZ =======================
 \begin{itemize}
-  \item L'anticipation avec la recherche de fragilités ou de risques cyber dans l'entreprise et leur correction;
-  \item La détection d'évènement à risque, d'attaques, de déviance dans l'environnement mais aussi à l'extérieur du périmètre de l'entreprise;
-  \item La réaction aux incidents, avec la gestion de crise et la remédiation.
+  \item L'\textbf{anticipation} avec la recherche de fragilités ou de risques cyber dans l'entreprise et leur correction;
+  \item La \textbf{détection} d'évènement à risque, d'attaques, de déviance dans l'environnement mais aussi à l'extérieur du périmètre de l'entreprise;
+  \item La \textbf{réaction} aux incidents, avec la gestion de crise et la remédiation.
 \end{itemize}
 \end{frame}
 % end PRZ ===========================
