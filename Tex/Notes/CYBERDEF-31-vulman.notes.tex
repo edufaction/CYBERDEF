@@ -1,0 +1,67 @@
+%========================================
+%. CONFIGURATION NOTES  COURS  SEC 101
+%========================================
+
+% 	GESTION DES VULNERABILITES
+
+%========================================
+
+%************************************************************
+% Chargement des variables du modèle
+%************************************************************
+
+
+\input{../Tex/Notes/Commons/config-notes.tex}
+
+%========================================
+\newcommand {\ukeywords}
+%========================================
+{%---------------------------------------------------------------------
+Veille, vulnérabilités, menaces, identification
+}%
+
+%**************************************************
+% Chargement des variables dédiées à l'article
+%**************************************************
+%========================================
+\newcommand {\utitle}
+{%---------------------------------------------------------------------
+Maitriser les fragilités de l'entreprise
+}%---------------------------------------------------------------------
+
+%========================================
+\newcommand {\uabstract}
+{%---------------------------------------------------------------------
+C\edoc présente la dynamique du travail sur les fragilités de l'entreprise, de la maitrise des vulnérabilités à la surveillance des menaces de l’environnement}%---------------------------------------------------------------------
+
+
+%************************************************************
+%  variable définissant  le corps de l'article
+%************************************************************
+
+%===========================
+\newcommand {\Ucontribute}
+{
+\input{../Tex/Contribute/contrib-gen.tex}
+%\input{../Tex/Contribute/CYBERDEF-      contribs.tex}
+\input{../Tex/Contribute/contribs.tex}
+}
+
+
+%========================================
+\newcommand {\ubody}
+{%---------------------------------------------------------------------
+\mode<all>{\input{../Tex/Chapters/chap-VulMan-intro.tex}}
+\mode<all>{\input{../Tex/Chapters/chap-VulMan-vul-def.tex}}
+\mode<all>{\input{../Tex/Chapters/chap-VulMan-vul-cve.tex}}
+\mode<all>{\input{../Tex/Chapters/chap-VulMan-vul-gest.tex}}
+\mode<all>{\input{../Tex/Chapters/chap-VulMan-vul-divers.tex}}
+%\input{../Tex/Chapters/chap-VulMan-menace.tex}
+}%---------------------------------------------------------------------
+
+%************************************************************
+% Chargement  du MODELE
+%************************************************************
+
+\umainload
+

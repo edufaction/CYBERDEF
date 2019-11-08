@@ -1,0 +1,187 @@
+% Les bases sur vulnérabilités
+%------------------------------------------------------------
+\section{Les bases sur les vulnérabilités}
+
+\subsection{Fragilités HOT}
+
+Quand nous parlons de vulnérabilités, nous parlons globalement des fragilités dans l’environnement du numérique de l’entreprise. Nous pouvons distinguer trois grands classes de fragilités :
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Fragilités HOT}
+% end header PRZ =====================
+\begin{itemize}
+\item Fragilités techniques, généralement dénommé vulnérabilités au sens ou ces fragilités rendent vulnérable tout ou partie d’un système. Pour rechercher ces vulnérabilités, on utilisera des techniques d’audit, de scan , de fuzzing ... Ce sont ces vulnérabilités informatiques et réseaux que nous présenterons en détail.
+\item Fragilités humaines, généralement des déviances comportementales, détournement d’usage légitime, sensibilité à l’ingénierie sociale, vulnérabilités sociales ou physiologiques que l’attaquant pour utiliser. Ces fragilités sont détectables avec des audits (exemple tests mail phishing). Elles sont réduites par des mécanismes de formations et de sensibilisation, ainsi que dans certains cas des processus d’habilitation 
+\item Fragilités organisationnelles : Un attaquant peut utiliser des déficiences organisationnelles pour obtenir des éléments pour conduire son attaque (exemple : pas de processus de vérification d’identité lors de demande sensible par téléphone).
+\end{itemize}
+\end{frame}
+% end PRZ ===========================
+
+Un attaquant utilisera bien entendu l’ensemble de ces fragilités pour conduire sa mission.
+
+\upicture{../Tex/Pictures/img-hot}{les types de vulnérabilités}{0.8}{lbl_vulhot}
+
+Dans le domaine technique de cette sécurité numérique, une vulnérabilité ou faille est une faiblesse dans un système, permettant à un attaquant de porter atteinte à la fonction de ce système, c'est-à-dire à son fonctionnement normal, à la confidentialité et l'intégrité des données qu'il contient.
+
+Ces vulnérabilités sont la conséquence de faiblesses dans la conception, le déploiement, la mise en œuvre ou l'utilisation d'un composant matériel ou logiciel du système. 
+
+Il ya deux grandes classes de faiblesses ou vulnérabilités numériques :
+
+\begin{itemize}
+\item \textbf{Failles de configuration} ou de défaut d’usage (utilisation d’un système en dehors de ses zones de fonctionnement stable et maitrisé)
+\item \textbf{Failles Logicielles } : Failles de développement, de programmation qui conduisent généralement de l'exploitation de bugs logiciels. Il faut distinguer les logiciels développés de manière dédiée, et les logiciels dits sur étagère.`
+Les dysfonctionnements des logiciels sur étagère (éditeurs logiciels) sont en général corrigés à mesure de leurs découvertes, mais il y a un délai entre le moment de la découverte et la correction.
+\item \textbf{Failles de conception} : Failles issus de défaut de conception. Ces failles sont souvent liées à des failles protocolaires issues de faille de conception d'un protocole de communications, ou de format de données.
+\end{itemize}
+
+Nous pouvons décomposer les failles dites logicielles, en deux groupes 
+\begin{itemize}
+\item Les failles des logiciels ou codes sur mesures, développé dans l'entreprise ou par un tiers mais non édité en tant que logiciel indépendant. Nous pouvons y inclure tous les codes logiciels développés en interne.
+\item Les failles logicielles de produits ou codes connus, reconnus souvent dénommées progiciels (produit logiciel). On peut aussi y distinguer deux sous classes les logiciels ou les sources sont accessibles, et les codes dits fermés ou l'utilisateur ne dispose que du code binaire executable. Nous verrons que les démarches de recherche de failles dans ces deux types de code sont un peu différentes
+\end{itemize}
+
+% mettre un digramme sur les délais de parution des failles, et de la correction 
+%c’est pourquoi il est important de maintenir les logiciels à jour avec les correctifs fournis par les éditeurs de logiciels.
+
+\subsection{Exemples de vulnérabilités}
+
+A titre d'exemple et d'illustration je vous propose d'examiner rapidement des vulnérabilités techniques : deux failles de conception  et  une de programmation.
+Nous ne rentrerons pas dans les détails des vulnérabilités. Ce chapitre a pour objectif de présenter concrètement ce qu'est une vulnérabilité, sur la base d'exemples simples.
+
+% voir : https://beta.hackndo.com/la-faille-xss/
+
+La  majorité des failles informatiques du domaine du Web et des applications sur mesures est due à une utilisation non prévue de l'applicatif. Un utilisateur peut envoyer une information plus longue que prévue (buffer overflow), ou une valeur non gérée (négative, quand le logiciel attend une valeur positive), ou quand il ajoute des symboles non attendus (des guillemets, caractères spéciaux alors qu'il était prévu seulement des lettres), si les vérifications des données ne sont pas faites correctes, alors le logiciel, programme ou l’application peut être détournée. \\
+
+\subsubsection{Faille type XSS}
+
+\lstset{ 
+language=HTML, 
+frameround=tttt,
+texcsstyle=\color{green},
+commentstyle=\color{gray},
+identifierstyle=\color{blue},
+keywordstyle=\color{ocre}\bfseries,
+xleftmargin=2em,
+xrightmargin=2em,
+aboveskip=\topsep,
+belowskip=\topsep, 
+frame=single,
+rulecolor=\color{ocre},
+backgroundcolor=\color{ocre!5},
+breaklines,
+breakindent=1.5em,
+showspaces=false,
+showstringspaces=false,
+showtabs=false
+}
+
+Si nous prenons par exemple, un code qui affiche une image avec un titre, que ce titre d'image soit saisi par un utilisateur et qu'aucun contrôle ne soit fait. Dans l'application, l'affichage se fait par un code PHP du style : \\
+
+%---------------------------------------------------
+\begin{lstlisting} [language=php,morekeywords={readtitle,readimage}]
+<?php ...
+	$image = readimage()."png";
+	$title = readtitle();
+...
+	print '<img src="$title" title="$title" />';
+...?>
+\end{lstlisting}
+%---------------------------------------------------
+
+et permet de générer le code HTML suivant : \\
+
+%---------------------------------------------------
+\begin{lstlisting} [language=html]
+<html>...
+	<img src="../path/monimage.png" title="un titre de mon image" />
+...</html>
+\end{lstlisting}
+%---------------------------------------------------
+
+Un utilisateur malveillant pourrait avoir saisi autre chose qu'un simple titre, et faire en sorte que la variable \textbf{\$tittle} puisse contenir une chaine de caractère un peu particulière. Le pirate aura entré, par exemple, comme titre de sa photo sur ce site un peu faible, une chaine comme  : \\
+\g{\verb!un titre de mon image/"><script>...scriptmalveillant...;</script>!}
+\\
+%---------------------------------------------------
+\begin{lstlisting} [language=html]
+<html>...
+	<img src="../path/monimage.png" title="un titre de mon image/"><script>...scriptmalveillant...;</script>" 
+...
+</html>
+\end{lstlisting}
+%---------------------------------------------------
+L'exécution du script javascript malveillant se fera à la lecture de cette page générée. Si cette donnée et stockée sur un serveur, l'action sera effective pour toute les personnes qui consulteront la l'image avec son titre piégé par un script malveillant.
+
+\subsubsection{Faille type SQL Injection}
+
+Nous allons rapidement explorer un grand classique des vulnérabilités sur les application de sites Web sur Internet : l'injection SQL. Le principe est d'injecter dans une requête SQL (langage d'interrogation de base de données), utilisée dans un application PHP par exemple. Supposons que dans l'application, la requête suivante soit utilisée : \\
+%---------------------------------------------------
+\begin{lstlisting} [language=SQL]
+SELECT fieldlist
+  FROM table 
+ WHERE field = ' $EMAIL ';
+\end{lstlisting}
+%---------------------------------------------------
+Supposons que la saisie de l'utilisateur, saisisse un email avec une chaine un peu modifiée (ajout d'un silmple \g{'} en plus)  :
+\\
+%---------------------------------------------------
+\begin{lstlisting} [language=SQL,escapeinside=|| ]
+SELECT fieldlist
+  FROM table 
+ WHERE field = '  |\tikzmark{starta}|contact@test.com'|\tikzmark{enda}| ';
+\end{lstlisting}
+%---------------------------------------------------
+
+
+%---------------------------------------------------
+\begin{tikzpicture}[remember picture,overlay] 
+\draw[ocre,rounded corners] 
+    ([shift={(-3pt,2ex)}]pic cs:starta) 
+    rectangle 
+    ([shift={(3pt,-0.65ex)}]pic cs:enda); 
+\end{tikzpicture} 
+%---------------------------------------------------
+L'exécution de cette requête var générer un erreur, et en fonction de la gestion des erreurs du code PHP, l'utilisateur pourra apercevoir que cette requête a provoqué une erreur d'exécution. Ceci permet à l'utilisateur de rapidement déterminer que le code est sensible à une attaque par injection SQL. Il peut alors à loisir trouver la meilleur manière de l'exploiter, en entrant un email forgé avec une chaine plus malicieuse.\\
+%---------------------------------------------------
+\begin{lstlisting} [language=SQL,escapeinside=||]
+SELECT fieldlist
+  FROM table 
+ WHERE field = ' |\tikzmark{startb}|somebody' OU 'x' = 'x|\tikzmark{endb}| ';
+\end{lstlisting}
+\begin{tikzpicture}[remember picture,overlay] 
+\draw[ocre,rounded corners] 
+    ([shift={(-3pt,2ex)}]pic cs:startb) 
+    rectangle 
+    ([shift={(3pt,-0.65ex)}]pic cs:endb); 
+\end{tikzpicture} 
+%---------------------------------------------------
+La chaine \g{\verb!OU 'x' = 'x'! }étant toujours VRAI, on pourrait obtenir des informations complètes de certaines tables.
+Bien entendu, l'usage de vulnérabilité SQL injection n'est généralement pas trivial, mais avec un peu d'habitude, il est possible de construire des attaques sophistiquées sur des codes vulnérables.
+
+\subsubsection{vulnérabilités WEB}
+
+Vous trouverez sur le site \link{https://www.owasp.org}{Open Web Application Security Project}, le top TEN des vulnérabilités découvertes sur les sites WEB.
+et pour ceux qui souhaitent creuser un peu plus, il existe de nombreux sites présentant en détail des vulnérabilités et des manières de les exploiter (à des fins pédagogiques!). Par exemple, le site de \link{https://beta.hackndo.com}{Pixis (Hackndo)} vous donnent quelques partages particuliers d'un Ethical hacker.
+
+
+\subsection{Faille de programmation}
+
+%SMB etherblue
+
+On peut trouver des vulnérabilités dans des produits et services très connus, et déployés depuis très longtemps.
+
+\upicture{../Tex/Pictures/img-smbfaille}{Tempo faille SMB - google}{0.6}{lbl_faillesmb}
+
+Parmi les vulnérabilités les plus célèbres,, la classe de vulnérabilités du protocole SMB en version 1, est celle qui continue encore a faire des victimes.
+Le protocole SMB (Server Message Block) est un protocole permettant le partage de ressources (fichiers et imprimantes) sur des réseaux locaux avec des PC sous Windows. Sa version 1 du protocole SMB, vulnérable à la faille EternalBlue.
+
+Dans la base de données du système CVE on retrouve l’identifiant de cette vulnérabilité : \textbf{CVE-2017-0144}. 
+
+%https://blog.httpcs.com/heartbleed-openssl-explication-et-exploit/ (faille openssl) HeartBleed dans l'opensource
+
+\subsection{vulnérabilités et exploits}
+
+Il arrive que la procédure d'exploitation d'une faille d'un logiciel soit publiquement documentée et utilisable soit sous la forme d'un code logiciel et:ou de procedure descriptive détaillée appelé \g{exploit}.
+
+
+

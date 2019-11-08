@@ -1,0 +1,143 @@
+\subsection{gérer ses vulnérabilités}
+\label{CHAP_GESTVUL}
+
+
+Dans le paysage numérique de plus en plus complexe , nous sommes exposés à des terminologies variées souvent soutenues par les modes du moment. Les termes «analyse de vulnérabilités», «évaluation des vulnérabilités» et «gestion des vulnérabilités» sont souvent utilisés et restent une source de confusion pour nombre d’entre nous. Pour nous assurer de se concentrer sur les tactiques les plus efficaces pour gérer les vulnérabilités, nous donnerons les principales différences entre l’évaluation des vulnérabilités et la gestion des vulnérabilités. Mais en posant comme principe que l'important est d'agir quand sont identifiées des failles dans un système.
+
+\begin{itemize}
+\item La gestion des vulnérabilités (Vulnerability Management) est un processus cyclique et continu servant à identifier, classer, corriger et réduire les vulnérabilités, en particulier dans les logiciels. La gestion des vulnérabilités fait partie intégrante des processus de gestion de la cybersécurité dans l’entreprise. Contrairement au projet d’évaluation ponctuelle des vulnérabilités, une stratégie de gestion des vulnérabilités fait référence à un processus ou programme complet et continu qui vise à gérer les vulnérabilités d’une organisation de manière globale et continue. Nous avons rassemblé quelques caractéristiques et éléments clés d’une approche standard de la gestion des vulnérabilités.
+La gestion des vulnérabilités comprend aussi le processus par lequel  les risques associés ces vulnérabilités sont évalués. Cette évaluation conduit à corriger les vulnérabilités et éliminer le risque ou une acceptation formelle du risque par le gestion d’une organisation (par exemple, au cas où l’impact d’une attaque serait faible ou la le coût de la correction ne dépasse pas les dommages éventuels pour l’organisation).
+\item Il est souvent confondu avec l’évaluation des vulnérabilités (Vulnerability Assessment), dont l’objectif est de rechercher les fragilités d’un système ou d’une entreprise. Ces vulnérabilités connues sont recherchées sur le système. Une évaluation de vulnérabilité n'est pas une analyse, c'est un projet ponctuel avec une date de début et une date de fin définies. En règle générale, un consultant externe en sécurité de l'information examine votre environnement d'entreprise et identifie diverses vulnérabilités potentiellement exploitables auxquelles vous êtes exposé dans un rapport détaillé. Le rapport répertoriera non seulement les vulnérabilités identifiées, mais fournira également des recommandations concrètes pour la résolution. Une fois le rapport final préparé, l'évaluation de la vulnérabilité est terminée.
+Malgré le fait que les deux sont liés, il existe une différence importante entre les deux. La recherche de vulnérabilités consiste à utiliser par exemple un programme informatique pour identifier les vulnérabilités dans réseaux, infrastructure informatique ou applications. La gestion de la vulnérabilité est la processus entourant ce scan de vulnérabilités, prenant également en compte d’autres aspects tels que acceptation des risques, remédiation, etc. On vera en outre que le scan de vulnérabilités n’est qu’un sous partie de l’évaluation des vulnérabilité.
+\item L’analyse des vulnérabilités est un processus de recherche ces fragilités et des scénario qui vont permettre de les exploiter. Les tests d’intrusion sont un exemple de cette dynamique d’analyse des fragilités afin d’en définir un scénario permettant d’atteindre l’objectif que l’attaquant s’est assigné.
+\end{itemize}
+
+
+
+\subsection{ISO 27001}
+
+Un chapitre de la norme ISO27001 parle de Veille de la vulnérabilité et donne des éléments méthodologiques : 
+
+\begin{itemize}
+	\item 1. DÉCOUVRIR : Catalogage de l’existant, des actifs, des ressources du système d’information. 
+ 	\item 2. PRIORISER : Classifier et attribuer des valeurs quantifiables aux ressources, les hiérarchiser. 
+ 	\item 3. ÉVALUER : Identifier les vulnérabilités ou les menaces potentielles sur chaque ressource. 
+	 \item 4. SIGNALER : Signaler, publier les vulnérabilités découvertes. 
+ 	\item 5. CORRIGER : Éliminer les vulnérabilités les plus sérieuses des ressources les plus importantes. 
+ 	\item 6. VÉRIFIER : S’assurer que la vulnérabilité a bien été traitée. 
+\end{itemize}
+
+
+%===============================================================
+% La gestion des Vulnérabilités - patch management et co
+%--------------------------------------------------------------------------------------------------------------
+\section{Processus de gestion des vulnérabilités}
+
+% décrire le processus de gestion avec Inventiare / Analyse / ....
+La gestion des vulnérabilités est un processus continu. Elle apparait en en toile de fond du cycle de vie du Maintien en Condition de Sécurité :
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Cycle de vie VULMAN}
+% end header PRZ =======================
+\begin{itemize}
+	\item Cartographier, cataloguer l'environnement; 
+	\item Identifier les fragilités et les menaces;
+	\item Corriger, remédier, améliorer la protection et la défense;
+	\item Mesurer et suivre l'efficacité les mesures déployées.
+\end{itemize}
+\end{frame}
+
+% end PRZ ===========================
+
+
+Contrairement à l’évaluation des vulnérabilités, un programme complet de gestion des vulnérabilités n’a pas de date de début ni de fin définie, mais constitue un processus continu qui aide idéalement les entreprises à mieux gérer leurs vulnérabilités à long terme.
+La gestion des vulnérabilités est une pratique recommandée pour protéger votre organisation et vos données.
+
+	Intégration dans la gouvernance
+	Penser la gestion de vulnérabilités 
+	
+	
+Évaluation de la vulnérabilité
+Comme mentionné précédemment, une évaluation de vulnérabilité représente en elle-même un élément crucial d'un cadre de gestion des vulnérabilités et est considérée comme le premier pas vers l'amélioration de votre sécurité informatique. De nombreuses entreprises doivent encore faire face à un vaste pool d’actifs inconnus, de périphériques réseau mal configurés, d’environnements très segmentés, d’outils incompatibles ou tout simplement de trop d’informations à analyser et à traiter. Une évaluation des vulnérabilités présente de nombreux avantages et identifie les actifs clés de votre organisation, détermine les vulnérabilités qui menacent la sécurité de ces actifs, fournit des recommandations pour renforcer votre posture de sécurité et vous aide à réduire les risques, vous permettant ainsi de mieux cibler vos ressources informatiques. .
+
+L'analyse des vulnérabilités authentifiées permettra un inventaire complet de tous les logiciels et de leurs versions précises, ainsi que la possibilité de vérifier les configurations de sécurité de base et de détecter les vulnérabilités. Ces analyses de vulnérabilité doivent être annoncées pour permettre le signalement des analyses non autorisées et faciliter la visibilité des modifications apportées au réseau et aux actifs. Les processus d'analyse doivent être documentés et examinés pour favoriser leur maturité.
+
+Une fois les évaluations de vulnérabilité effectuées, il est essentiel de produire des rapports clairs et facilement compréhensibles avec des tâches de correction hiérarchisées. Quel que soit l’outil d’analyse de vulnérabilité utilisé, il devrait permettre de produire des rapports, de marquer les vulnérabilités comme ayant été corrigées ou non détectées, de suivre l’âge des vulnérabilités, etc. Avant de publier les rapports, l’organisation doit s’accorder sur le format du rapport afin de s’assurer que les éléments sont inclus / surlignés et les éléments non pertinents sont supprimés. Comme pour de nombreux autres processus de sécurité critiques, il est vivement recommandé que la direction générale adhère pleinement au processus de signalement et de correction des vulnérabilités.
+
+%===============================================================
+% Analyse / recherche des Vulnérabilités
+%--------------------------------------------------------------------------------------------------------------
+\section{Processus d’analyse/recherche des vulnérabilités}
+% TODO les techniques pour recherches les vulnérabilités techniques (Stack Overflow)
+% TODO Le secteurs éconmoique de la vulnérabilité. (les failles une business line).
+
+%===============================================================
+% Evaluation des Vulnérabilités 
+%--------------------------------------------------------------------------------------------------------------
+\section{Processus d’évaluation des vulnérabilités}
+%. Le vulnerability assessement
+
+\upicture{../Tex/Pictures/img-vulsearch}{Rechercher ses vulnérabilités}{0.8}{lbl_vulcycle}
+
+%TODO Vulanrabilité SCAN automique versus SCNA de type Audit (scan ponctuelle)
+%TODO Pacth Management
+
+\subsection{Audit sécurité des vulnérabilités}
+
+\begin{enumerate}
+	\item Scan de vulnérabilités
+	\item Audit technique et pentest
+\end{enumerate}
+
+\subsubsection{Scan de Vulnérabilités}
+Un processus nécessaire qui peut être utilisé de manière récurrente.
+
+\subsubsection{Scan de Vulnérabilités système}
+
+Les vulnérabilités peuvent être découvertes à l'aide d'un scanner de vulnérabilités, qui analyse un système informatique à la recherche de vulnérabilités connues, telles que les ports ouverts, les configurations logicielles non sécurisées et la vulnérabilité aux infections par logiciels malveillants. Des tests de fuzz peuvent permettre de détecter des vulnérabilités inconnues, telles que le jour zéro, permettant d'identifier certains types de vulnérabilités, telles qu'un débordement de mémoire tampon avec des cas de test pertinents. Une telle analyse peut être facilitée par l’automatisation des tests. 
+
+\subsubsection{Scan de Vulnérabilités logicielles}
+
+La correction des vulnérabilités peut impliquer de différentes manières l’installation d’un correctif, une modification de la stratégie de sécurité du réseau, la reconfiguration du logiciel ou la formation des utilisateurs à l’ingénierie sociale.
+
+\subsubsection{Le pentest}
+
+\subsubsection{Le bugbounty}
+
+%===============================================================
+% Le pentest et l’audit
+%--------------------------------------------------------------------------------------------------------------
+
+\section{les audits et les fragilités}
+
+\subsection{Processus d'audit}
+\subsubsection{Audit de conformité}
+\subsubsection{Audit ponctuels et campagnes}
+\subsubsection{Audit continu}
+
+
+
+\subsection{Types d'audit}
+% TODO Prendre les audits de type PASSI
+\subsubsection{Audit Organisationnelle}
+\subsubsection{Audit technique}
+
+%===============================================================
+% Le pentest et l’audit
+%--------------------------------------------------------------------------------------------------------------
+
+% Conformité ISO PCI/DSS  GDPR
+
+
+%===============================================================
+% Evaluation des Vulnérabilités 
+%--------------------------------------------------------------------------------------------------------------
+\section{La relation avec un CSIRT}
+% Analyse de malware. (Un malware utilise des vulnérabilités, et l’analyse d’une attaque donne aussi les éléments pour comber les fragilités
+
+	Une méthodologie efficace de gestion des vulnérabilités comprend une équipe d’intervention en cas d’incident de sécurité informatique (CSIRT). Le CSIRT est responsable de la publication des avis de sécurité, de la tenue de téléconférences régulières pour discuter des activités malveillantes et des dernières attaques du jour zéro, de la simplification et de la diffusion des alertes de sécurité et de l’élaboration de directives compréhensibles et efficaces en matière de réaction aux incidents pour tous les employés. De cette manière, les employés seront en mesure de réagir aux indicateurs de compromis potentiels conformément aux meilleures pratiques recommandées par l'équipe CSIRT.
+
+
+
+

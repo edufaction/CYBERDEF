@@ -8,9 +8,13 @@
 
 % Use to marking Frame in Beamer mode
 
-% begin PRZ==========================
-
-% end PRZ ===========================
+%% Begin PRZ ===========================
+%\begin{frame}
+%\frametitle<presentation>{TITRE DIAPO}
+%% end header PRZ =======================
+%
+%\end{frame}
+%% end PRZ ===========================
 
 \documentclass[ignorenonframetext, 8pt, allowframebreaks]{beamer}
 
@@ -20,7 +24,7 @@
 \usepackage{csquotes}
 \usepackage[french]{babel}
 \usepackage{lmodern}
-
+\usepackage{multicol}
 
 
 %-------------------------------------------------------
@@ -83,8 +87,13 @@
 \end{frame}
 \begin{frame}
  \frametitle{Sommaire}
- \tableofcontents
+      \begin{multicols}{2}
+         \tableofcontents[hideallsubsections]
+     \end{multicols}
  \end{frame}
+ %\tableofcontents
+
+
  
 % ubody main defined in *.notes.tex
 \mode<all>{\ubody}
@@ -96,15 +105,15 @@
 \begin{frame}
  \frametitle{Contributions}
 \begin{columns}
-		\begin{column}{0.2\textwidth}
+		\begin{column}{0.1\textwidth}
 
  					\begin{figure}
   						  \centering
-   						 \includegraphics[width=0.6\textwidth]{../Tex/Contribute/ContribPictures/github.pdf}\\
-   						 	 \includegraphics[width=0.6\textwidth]{../Tex//Contribute/ContribPictures/overleaf.pdf}
+   						 \includegraphics[width=0.9\textwidth]{../Tex/Contribute/ContribPictures/github.pdf}\\
+   						 	 \includegraphics[width=0.9\textwidth]{../Tex//Contribute/ContribPictures/overleaf.pdf}
 				  \end{figure}
 		\end{column}
-		\begin{column}{0.8\textwidth}
+		\begin{column}{0.9\textwidth}
 							\input{../Tex/Contribute/contrib-gen.tex}
 		\end{column}
 \end{columns}

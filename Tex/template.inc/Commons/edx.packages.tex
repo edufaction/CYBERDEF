@@ -8,6 +8,7 @@
 
 
 \usepackage{tikz} % Required for drawing custom shapes
+\usetikzlibrary{tikzmark} 
 \usetikzlibrary{mindmap,trees, backgrounds}
 \usepackage{verbatim}
 \usepackage{wrapfig}
@@ -17,7 +18,12 @@
 
 \usepackage{fontawesome}
 
+\usepackage{listings}
+\usepackage{upquote}
 
+
+
+\lstset{upquote=true,columns=flexible, basicstyle=\ttfamily, }
 
 %\usepackage{environ}
 
@@ -44,4 +50,13 @@
 \usepackage{makeidx} 
 
 \usepackage{xspace} 
+
+
+\usepackage{hyperref}
+
+\hypersetup{pdftitle={\utitle},pdfauthor={\uauthor},hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor=ocre,bookmarks=true,bookmarksopen=false}
+
+\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+
+\usepackage{cleveref}
 
