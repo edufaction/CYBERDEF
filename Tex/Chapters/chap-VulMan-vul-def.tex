@@ -1,5 +1,13 @@
+%-------------------------------------
+% Chapitre
+% Vulnerability Management
+% Définition
+% File : chap-Vulman-def.tex
+%--------------------------------------
+
+%----------------------------------------------------------
 % Les bases sur vulnérabilités
-%------------------------------------------------------------
+%----------------------------------------------------------
 \section{Les bases sur les vulnérabilités}
 
 \subsection{Fragilités HOT}
@@ -20,7 +28,7 @@ Quand nous parlons de vulnérabilités, nous parlons globalement des fragilités
 
 Un attaquant utilisera bien entendu l’ensemble de ces fragilités pour conduire sa mission.
 
-\upicture{../Tex/Pictures/img-hot}{les types de vulnérabilités}{0.8}{lbl_vulhot}
+\upicture{../Tex/Pictures/img-hot}{les types de vulnérabilités}{0.6}{lbl_vulhot}
 
 Dans le domaine technique de cette sécurité numérique, une vulnérabilité ou faille est une faiblesse dans un système, permettant à un attaquant de porter atteinte à la fonction de ce système, c'est-à-dire à son fonctionnement normal, à la confidentialité et l'intégrité des données qu'il contient.
 
@@ -35,10 +43,14 @@ Les dysfonctionnements des logiciels sur étagère (éditeurs logiciels) sont en
 \item \textbf{Failles de conception} : Failles issus de défaut de conception. Ces failles sont souvent liées à des failles protocolaires issues de faille de conception d'un protocole de communications, ou de format de données.
 \end{itemize}
 
+\upicture{../Tex/Pictures/img-vul-types}{Les types de vulnérabilités}{1}{lbl_vultypes}
+
+%%%%%%%%
+
 Nous pouvons décomposer les failles dites logicielles, en deux groupes 
 \begin{itemize}
 \item Les failles des logiciels ou codes sur mesures, développé dans l'entreprise ou par un tiers mais non édité en tant que logiciel indépendant. Nous pouvons y inclure tous les codes logiciels développés en interne.
-\item Les failles logicielles de produits ou codes connus, reconnus souvent dénommées progiciels (produit logiciel). On peut aussi y distinguer deux sous classes les logiciels ou les sources sont accessibles, et les codes dits fermés ou l'utilisateur ne dispose que du code binaire executable. Nous verrons que les démarches de recherche de failles dans ces deux types de code sont un peu différentes
+\item Les failles logicielles de produits ou codes connus, reconnus souvent dénommées progiciels (produits logiciels). On peut aussi y distinguer deux sous classes les logiciels ou les sources sont accessibles, et les codes dits fermés ou l'utilisateur ne dispose que du code binaire executable. Nous verrons que les démarches de recherche de failles dans ces deux types de code sont un peu différentes.
 \end{itemize}
 
 % mettre un digramme sur les délais de parution des failles, et de la correction 
@@ -55,26 +67,6 @@ La  majorité des failles informatiques du domaine du Web et des applications su
 
 \subsubsection{Faille type XSS}
 
-\lstset{ 
-language=HTML, 
-frameround=tttt,
-texcsstyle=\color{green},
-commentstyle=\color{gray},
-identifierstyle=\color{blue},
-keywordstyle=\color{ocre}\bfseries,
-xleftmargin=2em,
-xrightmargin=2em,
-aboveskip=\topsep,
-belowskip=\topsep, 
-frame=single,
-rulecolor=\color{ocre},
-backgroundcolor=\color{ocre!5},
-breaklines,
-breakindent=1.5em,
-showspaces=false,
-showstringspaces=false,
-showtabs=false
-}
 
 Si nous prenons par exemple, un code qui affiche une image avec un titre, que ce titre d'image soit saisi par un utilisateur et qu'aucun contrôle ne soit fait. Dans l'application, l'affichage se fait par un code PHP du style : \\
 
@@ -170,9 +162,9 @@ et pour ceux qui souhaitent creuser un peu plus, il existe de nombreux sites pr�
 
 On peut trouver des vulnérabilités dans des produits et services très connus, et déployés depuis très longtemps.
 
-\upicture{../Tex/Pictures/img-smbfaille}{Tempo faille SMB - google}{0.6}{lbl_faillesmb}
+\upicture{../Tex/Pictures/img-smbfaille}{Tempo faille SMB - google}{0.8}{lbl_faillesmb}
 
-Parmi les vulnérabilités les plus célèbres,, la classe de vulnérabilités du protocole SMB en version 1, est celle qui continue encore a faire des victimes.
+Parmi les vulnérabilités les plus célèbres, la classe de vulnérabilités du protocole SMB en version 1, est celle qui continue encore a faire des victimes.
 Le protocole SMB (Server Message Block) est un protocole permettant le partage de ressources (fichiers et imprimantes) sur des réseaux locaux avec des PC sous Windows. Sa version 1 du protocole SMB, vulnérable à la faille EternalBlue.
 
 Dans la base de données du système CVE on retrouve l’identifiant de cette vulnérabilité : \textbf{CVE-2017-0144}. 
@@ -181,7 +173,28 @@ Dans la base de données du système CVE on retrouve l’identifiant de cette vu
 
 \subsection{vulnérabilités et exploits}
 
-Il arrive que la procédure d'exploitation d'une faille d'un logiciel soit publiquement documentée et utilisable soit sous la forme d'un code logiciel et:ou de procedure descriptive détaillée appelé \g{exploit}.
+Il arrive que la procédure d'exploitation d'une faille d'un logiciel soit  documentée et utilisable soit sous la forme d'un code logiciel et/ou de procédure descriptive détaillée appelée \g{exploit}. Ces exploits ne sont pas systématiquement publiés.
+
+\subsection{vulnérabilités et divulgation}
+
+%%%%%%%%%
+ La divulgation publique des vulnérabilités  est soumise un modèle de divulgation de vulnérabilité dans lequel une vulnérabilité ou un problème est révélé uniquement après une période permettant à la vulnérabilité ou au problème d'être corrigée ou corrigée. Cette période distingue le modèle de la divulgation complète.
+ 
+ 
+Tout fournisseur de logiciels de sécurité, de services et de recherches de vulnérabilité, se doit de prendre des précautions vis à vis de vulnérabilités découvertes, en particulier les délais de publication. On parle généralement de \UKword{Vulnerability Disclosure Policy}.
+
+En effet , développeurs de matériel et de logiciels ont souvent besoin de temps et de ressources pour corriger ces vulnérabilités. 
+
+Dans certains cas, lorsque la découverte n'a pas été faite via une recherche commanditée (Audit, Pentest, BugBounty), la communauté sécurité et les scientifiques  estiment qu’il est de leur responsabilité sociale de sensibiliser le public aux vulnérabilités ayant un impact important en les publiant. Cacher ces problèmes pourrait créer un faux sentiment de sécurité. Pour éviter cela, les parties impliquées unissent leurs forces et s’accordent sur un délai pour réparer la vulnérabilité et prévenir tout dommage futur. En fonction de l'impact potentiel de la vulnérabilité, du temps requis pour qu'un correctif d'urgence ou une solution de contournement soit développé et appliqué, ainsi que d'autres facteurs, cette période peut varier de quelques jours à plusieurs mois. 
+
+Par ailleurs, la confidentialité des découvertes est généralement requise lors des audits. Le commanditaire et l'expert signent un accord dénommé \UKword{Vulnerability Non Disclosure Agreement}, qui permet de s'assurer que la publication des vulnérabilités restera à la main du commanditaire.
+
+Dans un mode publique avec mode de divulgation de vulnérabilités ouverts les experts en sécurité  s'attendent à être indemnisés financièrement, mais avec le risque que signaler ces vulnérabilités au fournisseur avec l'exigence d'une indemnisation soit considéré comme une extorsion. 
+
+Un marché des vulnérabilités s'est développé \link{https://zerodium.com}{Zerodium} \uref{lbl_zerodium}, mais la commercialisation des vulnérabilités reste un sujet très controversé lié au concept de divulgation des vulnérabilités.   C'est normalement dans le rôle de CERT d'assurer cette coordination des divulgations.
+
+\upicture{../Tex/Pictures/zerodium}{Le marché des failles mobiles avec Zerodium}{1}{lbl_zerodium}
+
 
 
 

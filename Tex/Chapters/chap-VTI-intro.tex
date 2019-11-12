@@ -4,8 +4,8 @@
 
 \section{Sécurité opérationnelle}
 
-
-Après avoir vu dans le cycle de vie de sécurisation de système d'information les deux démarche que nous pourrions classer suivant les termes anglo-saxons des projets :
+Après avoir construit un sécurité d'organisation cohérentes sur les aspects gestion des flux, gestion des accès et des identité, construit une gouvernance efficace sur la base de l'ISO27001, il est nécessaire de maintenir le niveau de sécurité dans l'entreprise ou du système.
+On appelle ce processus le Maintien en Condition de Sécurité que nous pourrions classer suivant les termes anglo-saxons des projets :
 
 \begin{itemize}
  \item \textbf{THINK/DESIGN} : Des risques évalués à la politique sécurité pensée ;
@@ -13,6 +13,15 @@ Après avoir vu dans le cycle de vie de sécurisation de système d'information 
 \end{itemize}
 
 Il nous reste à aborder la dernière phase du cycle de vie : les activités d'exploitation de la sécurité. \textbf{RUN} : Des évènements de sécurité gérés à la cybercrise maitrisée, que que certains appellent \textbf{SECOPS} : Sécurité Opérationnelle.
+
+
+Ce modèle se développe bien entendu en fonction des finalités de l'entreprise.
+
+\begin{itemize}
+    \item Soit nous sommes dans une entreprise et ces processus sont ceux mis en place s'assurer l'ensemble de actions pour maint riser ses vulnérabilités, détecter les menaces, et réagir pour maintenir l'activité.
+    \item  Soit nous sommes fabricant d'un produit ou d'un service, ces processus de Maintien en condition de sécurité concerne l'ensemble des actions pour maîtriser les correctifs et leur cycle de vie (communication, gestion de découverte par des tiers, rémunération de BugHunters ...)
+\end{itemize}
+
 
 % begin PRZ==========================
 \begin{frame}
@@ -110,7 +119,7 @@ Bien entendu, il n’y a que très rarement un seul objectif, c’est la combina
 
 \subsection{Politiques et Stratégies}
 
-\upicture{\upath/Pictures/img-cyclevie-pol-strat}{Positionnement de la sécurité opérationnelle}{0.4}{lbl_pol-strat}
+\upicture{\upath/Pictures/img-cyclevie-pol-strat}{Positionnement de la sécurité opérationnelle}{0.9}{lbl_pol-strat}
 
 A partir des risques identifiés, l’entreprise a posé des politiques de sécurité qui ont permis de mettre en place des mesures de sécurité. Ces mesures sont d’ordre techniques avec des systèmes de sécurité, ou des SI avec des architectures particulières, mais aussi d’ordre organisationnel avec des procédures et des mécanismes à respecter.
 L’ensemble de cette dynamique construit un niveau de sécurité qu’il va être nécessaire de maintenir dans le temps. Toutefois ce niveau de sécurité n’est pas suffisant pour une simple et bonne raison : la menace évolue, les vulnérabilités apparaissent (découvertes, ou créées), la valeur\g{marchande} des actifs d’une entreprise change aussi. 
@@ -190,12 +199,12 @@ Par ailleurs nous explorerons rapidement, les techniques de déception et de leu
 Il existe de nombreux modèles de description de l'activité de Cyberdefense dans un contexte de cybersécurité.
 Certains sont totalement intégrés au modèle de cybersécurité comme l'ISO 27K, ou le Cybersecurity FrameWork du NIST \uref{lbl_nist} avec les activités \textbf{DETECT, RESPOND et RECOVER};
 
-\upicture{\upath/Pictures/img-nist}{modèle NIST}{0.4}{lbl_nist}
+\upicture{\upath/Pictures/img-nist}{modèle NIST}{0.9}{lbl_nist}
 
 Ce que l'on peut reprocher au modèle du NIST, c'est qu'il ne possède pas explicitement la gestion des fragilités / vulnérabilités, mais il apporte toutefois un modèle très détaillé, que nous utiliserons pour partie.
 
 Dans l'environnement ISO 27000, le modèle est piloté par les risques  \uref{lbl_risk27}.
-\upicture{\upath/Pictures/img-risk27}{modèle ISO27 et risques}{0.4}{lbl_risk27}
+\upicture{\upath/Pictures/img-risk27}{modèle ISO27 et risques}{0.9}{lbl_risk27}
 
 Nous avons fait le choix de positionner la présentation du volet sécurité opérationnelle en nous éloignant un peu des modèles pour présenter les 3 grands moteurs de la sécurité opérationnelle. En effet les modèles cités sont orientée sur un axe de cycle de vie.
 En sécurité opérationnelle ou cyberdéfense, l'objectif est de conduire en continue et de frond des processus de maitrise des risques cyber opérationnels.
@@ -207,6 +216,7 @@ En sécurité opérationnelle ou cyberdéfense, l'objectif est de conduire en co
 
 \newpage
 \section{structure du cours}
+
 
 Notre propos sera donc centré sur ces trois axes  qui nous déclinerons dans trois chapitres. Le travail de fond d'une équipe de sécurité opérationnelle, ou simplement de l'activité SECOPS est de pouvoir gérer de front trois grandes tâches : 
 
@@ -224,9 +234,12 @@ Notre propos sera donc centré sur ces trois axes  qui nous déclinerons dans tr
 
 Nous aborderons aussi quelques compléments à ces processus SECOPS, comme la détection des fuites de données (Leak Detection), qui peut s'entendre comme un incident de sécurité externe, ou une détection d'évènement hors de périmètre du SI, mais dans le périmètre de surveillance.
 
-\upicture{\upath/Pictures/img-chapvar}{Synthèse des meta-processus SECOPS}{0.6}{lbl_prosecops}
+\upicture{\upath/Pictures/img-chapvar}{Synthèse des meta-processus SECOPS}{0.9}{lbl_prosecops}
 
 Des activités qui nécessitent, pour être efficace, une symbiose parfaite entre les équipes qui gèrent l'activité digitale (Systèmes d'informations, réseaux sociaux, ...) et les équipes de sécurité opérationnelle.
+
+\upicture{\upath/Pictures/img-vti}{Les différentes actions de veille}{0.9}{lbl_vti}
+
 
 
 

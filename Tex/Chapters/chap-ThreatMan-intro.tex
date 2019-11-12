@@ -1,0 +1,109 @@
+% Chapitre ALERT 
+
+\section{surveiller et anticiper la menace}
+
+Veiller sur les menaces nécessite de veiller sur deux choses : 
+
+\begin{itemize}
+  \item Les menaces génériques, ou ciblant un domaine  particulier (Santé, Industrie, Banque ...) que l'on trouve généralement en utilisant des technologies de \g{threat Intelligence} permettant 
+  \item Les menaces ciblées, dont les indices d'émergence peuvent être détecter en analysant la menace ou  en recherchant des indices de compromissions quand ces menaces sont actives dans le périmètre de l'entreprise. 
+\end{itemize}
+
+et ceci de deux manières :
+
+\begin{itemize}
+  \item Surveillance de l'écosystème de la menace (IOC,  DarkWeb, Threat Intelligence...)
+  \item Recherche de compromission, ou d'infection (Threat Hunting, ...) 
+\end{itemize}
+
+Ce sont des sujets que nous aborderons dans le processus de gestion de la menace.
+
+%TODO Tester les SIEM et les SOC et le deuxième niveau de maturité
+
+%TODO Niveau de maturité dans les processus
+
+% TODO le renseignement
+
+\subsection{Surveillance de la compromission}
+
+Un des domaine de la surveillance est donc celui de la compromission. C'est à dire la surveillance dans le fameux Darkweb de l'emergence de données volées, "\g{perdues}" par une entreprise ou par un particulier.
+
+% Mettre un exemple : adresse mail compromisse (avec le site PWND)
+
+\subsection{Surveillance du ciblage}
+
+% Threat Hunting 
+
+La surveillance du ciblage, que les anglo-saxons appelle le TARGETING est aussi un élément d'anticipation. 
+En effet, ces éléments sont souvent les premiers signaux d'un préparation d'un évènement "\g{cyber}" qui pourrait toucher l'entreprise.
+
+On y trouve l'émergence de la collecte d'information sur une cible donnée. La mise en oeuvre dans les code malveillant de targetting d'IP spécifique, etc...
+
+Il y a deux types d'outils pour ce se faire : 
+
+\begin{itemize}
+	\item La surveillance classique du web de type "cyberveille", qui permet de découvrir des éléments appartenant à l'entreprise compromis (soient les données, soient des informations permettant de déduire que l'entreprise a été compromise).
+	\item L'analyse en temps réel des codes malveillants qui peut permettre en regardant de manière détaillée l'évolution du code pour comprendre et connaitre les modalités des attaques et les nouvelles cibles.
+\end{itemize}
+
+
+\subsubsection{Que faire des ces informations}
+
+Disposer des fragilités de l'entreprise, et connaitre les scénarios potentiels permets d'évaluer un niveau de risque. 
+
+
+\section{La gestion de la menace}
+
+Gérer la menace comporte deux domaines d'activités :
+
+\begin{itemize}
+  \item La veille, au sens renseignement sur la menace (Threat Intelligence)
+  \item La détection d'attaque, ou de menaces potentielles au sein de l'environnement (Threat Detection)
+\end{itemize}
+
+%introduction sur la surveillance opérationnelle du quotidien. les outils de « visibilités » permttant de voir, percevoir ... et anticiper.
+
+
+\section{Détecter}
+
+"\g{Détecter oui, mais détecter quoi et pourquoi}" est la phrase maitresse de la première étape de réflexion autour de la gestion de la détection d'incident de sécurité.
+La première question a se poser est qu'est ce qu'un incident de sécurité pour l'entreprise. Si il est vrai qu'il existe un certain nombre de menace "\g{standard}" que l'on considère très rapidement comme un incident, le déploiement d'outil de gestion d'incident de sécurité ne serait être limite qu'à cette usage standard.
+
+Il y a de nombreuses manières de détecter des tentatives d'attaques dans un système. Les IPS/IDS (Intrusion Prevention System / Intrusion Detection System), Firewall réseaux et firewall applicatif. Toutefois l'imagination des attaquants est suffisamment grande, pour que des attaques complexes ne puisse être détecté par ces seuls outils et produits de sécurité protégeant les flux informationnels.
+
+
+Nous pouvons en effet considérer par exemple que la détection d'un rançonlogiciel dans l'entreprise est un bien un incident complexe, qu'un IPS/IDS ne détectera pas,  qui va par ailleurs nécessiter une alerte et une remédiation rapide si ce n'est immédiate.
+Toutefois une fuite d'information sur un système métier par des mécanismes discrets sera souvent étudié spécifiquement.
+Globalement le déploiement d'une fonction d'alerte va nécessiter la définition des "menaces" redoutés par l'entreprise. 
+Ces dernières sont généralement issus des analyses de risque.
+En effet, il est important au delà des menaces dits standards de revenir au source du déploiement de fonction de sécurité qui sont de gérer et couvrir les risques.
+
+En premier lieu, il convient de chercher à détecter les menaces non couvertes par les mesures de sécurité, les fameuses menaces résiduelles.
+
+Dans l'environnement de l'entreprise, les scénarios complexes issus de l'analyse de risques lors de l'étude des évènements redoutés vont donner les évènements corrélés à détecter.
+On y trouvera l'application concrète des arbres d'attaques popularisé par une des plus célèbre cyber expert Bruce Schneier \cite{schneier1999attack} qui est présentée de manière un peu plus détaillée dans le chapitre \nameref{ref_arbre_attaques}
+
+\section{Alerter}
+
+\subsubsection{Arbre d'attaques} \label{ref_arbre_attaques}
+
+%TODO a re writer
+
+Les arbres d'attaques sont une représentation des scénarios d'attaques. La racine représente le but final de l'attaque, les différents noeuds sont les buts intermédiaires et les feuilles les actions élémentaires à effectuer. Ces actions seront valuées au potentiel d'attaque des critères communs. 
+
+On distingue trois types de nœuds :
+
+\begin{itemize}
+  \item Nœud \textbf{disjonctif} OR : OU logique. Cela signifie que pour que le nœud soit réalisé, il faut qu’au moins un de ses fils soit réalisé.
+  \item Nœud \textbf{conjonctif} AND : ET logique. Pour sa réalisation, il faut que l’ensemble de ses fils soit réalisé.
+  \item Nœud \textbf{conjonctif séquentiel }SAND : Pour sa réalisation, il faut que l'ensemble de ses fils soit réalisé dans un ordre séquentiel c'est-à-dire les fils sont effectués les uns après les autres dans l’ordre indiqué.
+\end{itemize}
+
+
+En fonction de ces noeuds les valeurs des feuilles seront remontées pour obtenir le potentiel d'attaque de la racine.
+C'est sur la base de ce type de technique que sont construit un certain nombre d'outil de détection.
+ 
+%Vers ADTool http://satoss.uni.lu/members/piotr/adtool/
+%ADTool est un logiciel qui permet la création, l'édition et l'affichage de ces arbres. Il permet de valuer les feuilles et faire remonter les valeurs à la racine selon différents algorithmes
+
+

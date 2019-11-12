@@ -1,0 +1,74 @@
+%========================================
+%. CONFIGURATION ARTICLE  COURS  SEC 101
+%  utilise main-article et UStructure, UArticle
+%========================================
+
+% 		Detect & Alerte et gestion de crise
+
+%========================================
+
+%************************************************************
+% Chargement des variables du modèle
+%************************************************************
+
+\input{../Tex/Notes/Commons/config-notes.tex}
+
+%========================================
+\newcommand {\ukeywords}
+%========================================
+{%---------------------------------------------------------------------
+Évènements, attaques, détection, SIEM, SOC
+}%
+
+%************************************************************
+% Chargement des variables dédiées à l'article
+%************************************************************
+
+%========================================
+\newcommand {\utitle}
+{%---------------------------------------------------------------------
+Détecter : de la surveillance à l'évènement de sécurité
+}%---------------------------------------------------------------------
+
+% Threat Intelligence
+% Threat Detection 
+
+
+%========================================
+\newcommand {\uabstract}
+{%---------------------------------------------------------------------
+C\edoc donne les fondamentaux de la gestion de la menace et de sa détection.
+}%---------------------------------------------------------------------
+
+
+%************************************************************
+%  variable définissant  le corps de l'article
+%************************************************************
+
+%===========================
+\newcommand {\Ucontribute}
+{
+\input{../Tex/Contribute/contrib-gen.tex}
+%\input{../Tex/Contribute/CYBERDEF-      contribs.tex}
+\input{../Tex/Contribute/contribs.tex}
+}
+
+
+
+%========================================
+\newcommand {\ubody}
+{%---------------------------------------------------------------------
+\input{../Tex/Chapters/chap-ThreatMan-intro.tex}
+\input{../Tex/Chapters/chap-ThreatMan-log.tex}
+\input{../Tex/Chapters/chap-ThreatMan-leak.tex}
+\input{../Tex/Chapters/chap-ThreatMan-threatIntel.tex}
+\input{../Tex/Chapters/chap-ThreatMan-siem.tex}
+\input{../Tex/Chapters/chap-ThreatMan-CSOC.tex} % la fonction SOC est à mettre en fin ?
+}%---------------------------------------------------------------------
+
+%************************************************************
+% Chargement  du MODELE
+%************************************************************
+
+\umainload
+

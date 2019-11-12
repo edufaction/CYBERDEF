@@ -1,0 +1,65 @@
+%========================================
+%. CONFIGURATION ARTICLE  COURS  SEC 101
+%  utilise main-article et UStructure, UArticle
+%========================================
+
+% 				Gestion des Risques
+
+%========================================
+
+%************************************************************
+% Chargement des variables du modèle
+%************************************************************
+
+\input{../Tex/Notes/Commons/config-notes.tex}
+
+%========================================
+\newcommand {\ukeywords}
+%========================================
+{%---------------------------------------------------------------------
+Incidents, forensic, crise
+}%
+
+%************************************************************
+% Chargement des variables dédiées à l'article
+%************************************************************
+
+%========================================
+\newcommand {\utitle}
+{%---------------------------------------------------------------------
+Réagir : De l'incident sécurité à la crise
+}%---------------------------------------------------------------------
+
+%========================================
+\newcommand {\uabstract}
+{%---------------------------------------------------------------------
+C\edoc donne les grands principes de la gestion des incidents, et la conduite de gestion de crise.
+}%---------------------------------------------------------------------
+
+
+%************************************************************
+%  variable définissant  le corps de l'article
+%************************************************************
+
+%===========================
+\newcommand {\Ucontribute}
+{
+\input{../Tex/Contribute/contrib-gen.tex}
+%\input{../Tex/Contribute/CYBERDEF-      contribs.tex}
+\input{../Tex/Contribute/contribs.tex}
+}
+
+%========================================
+\newcommand {\ubody}
+{%---------------------------------------------------------------------
+\input{../Tex/Chapters/chap-IncidMan-intro.tex}
+\input{../Tex/Chapters/chap-IncidMan-csirt.tex}
+\input{../Tex/Chapters/chap-IncidMan-crisis.tex}
+}%---------------------------------------------------------------------
+
+%************************************************************
+% Chargement  du MODELE
+%************************************************************
+
+\umainload
+

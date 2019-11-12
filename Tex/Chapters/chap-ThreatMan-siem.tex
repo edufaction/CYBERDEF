@@ -1,0 +1,131 @@
+% Chapitre ALERT 
+
+\section{SIEM}
+
+% BEGIN PASTE
+
+%TODO Relecture
+\subsection{un peu d'histoire}
+Au dela du fait que SIEM est aussi un prénom vient de l'hébreu shim’ôn, "qui est exaucé". le SIEM est aujourd'hui l'aboutissement d'un veux très anciens des responsable sécurité qui supervise depuis bien des decenies des systèmes de contrôle périmétriques : Corréler tous les évènements arrivants sur l'ensemble  de ces équipements. 
+
+ce genre d'outillage est passer par différentes étapes de maturation avec des SIM et SEM en effin des SIEM
+
+Bien qu'outillant des processus très similaires mais distincts, les trois acronymes SEM, SIM et SIEM ont tendance à être confus ou à causer de la confusion chez ceux qui sont relativement peu familiarisés avec les processus de sécurité.
+
+La similitude entre la gestion des événements de sécurité ou SEM et la gestion des informations de sécurité ou SIM est au cœur du problème.
+
+Ces deux types de collecte d'informations concernent la collecte d'informations de journal de sécurité ou d'autres données similaires en vue d'un stockage à long terme, ou l'analyse de l'environnement de sécurité d'un réseau.
+
+La principale différence est que, 
+
+
+
+\begin{itemize}
+
+	\item dans la gestion des informations de sécurité (SIM) , la technologie consiste  à collecter des informations à partir des journaux d'équipement de sécurité, qui peut consister en différents types de données. Gloablement on peut dire qu'un SIM est immement important pour des équipes de superviusion de la sécurité pérémitrique. d'une part pour la traçabilité et le reporting de sécurité.
+	\item technologies spécialement conçues pour rechercher des authentifications suspectes, des ouvertures de session sur un compte ou des accès de gestion de haut niveau à des heures précises du jour ou de la nuit.
+\end{itemize}
+
+L'acronyme SIEM ou «gestion des informations de sécurité» fait référence à des technologies combinant à la fois la gestion des informations de sécurité et la gestion des événements de sécurité. Comme ils sont déjà très similaires, le terme générique plus large peut être utile pour décrire les outils et les ressources de sécurité modernes. Là encore, il est essentiel de différencier la surveillance des événements de la surveillance des informations générales. Un autre moyen essentiel de distinguer ces deux méthodes consiste à considérer la gestion des informations de sécurité comme une sorte de processus à long terme ou plus large, dans lequel des ensembles de données plus diversifiés peuvent être analysés de manière plus méthodique. En revanche, la gestion des événements de sécurité examine à nouveau les types d’événements utilisateur pouvant constituer des signaux d’alerte ou indiquer aux administrateurs des informations spécifiques sur l’activité du réseau.
+
+C'est souvent l'usage d'un SIEM dans une ambiguïté de gestion long terme de la sécurité en tant que propriété d'un système d'une part, et la gestion court terme de l'urgence d'une attente à la sécurité qui pose problème dans les projets et dans les opérations.
+ 
+
+% TODO Voir article sur les problèmatique SIEM
+% https://www.journaldunet.com/solutions/expert/39767/comprendre-les-raisons-de-l-echec-des-siem-et-sim.shtml
+
+La cyberprotection d'une entreprise est principalement basée sur les outils de protection périmétriques que ceux ci soit des équipements physiques ou qu'ils soient dans le cloud : systèmes de détection d’intrusion (IDS), scanners de vulnérabilités, antivirus ainsi que systèmes de gestion et corrélation d’événements sécurité (SIEM). Lorsqu’il s’agit de superviser un système informatique à grande échelle réparti sur plusieurs sites, il devient vite très difficile de corréler et analyser toutes les sources d’information disponibles en temps réel afin de détecter les anomalies et les incidents suffisamment vite pour réagir efficacement. Cette complexité est due à la quantité d’information générée, au manque d’interopérabilité entre les outils ainsi qu’à leurs lacunes en matière de visualisation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+la premiere fonction d'un SIEM est déjà de corréler les événements provenant des composants de sécurité.
+la deuxième  fonction de corréler des événement de comportement du SI
+troisième fonction de corréler avec des événements externes au SI sur la base de capteurs externes (threats intelligence de type renseignement)
+
+
+\upicture{../Tex/Pictures/img-siem}{architecture d'un SIEM}{0.9}{lbl_siem}
+
+
+\subsubsection{Analyse d'impact}
+% la complexiste de l'ananyse d'impact (si on n'a pas fait le travail <risk vers scneario, il est complexe de remonter de scénario à risque et donc impact sur l'entreprise
+
+% citer les travaux de Lagagec
+
+Un autre problème majeur dans l'usage d'un SIEM est que l'action de comprendre l’impact réel d’une vulnérabilité ou d’une alerte IDS est généralement dévolue à un analyste cybersécurité humain, qui doit lui- même faire le lien entre toutes les informations techniques et sa connaissance de tous les services ou processus liés aux incidents de sécurité détectés sur les composants concernées (serveurs, PC, smartphone, IOT,...) . 
+
+Le projet DRA est une étude complémentaire de CIAP qui vise à fournir une analyse de risque en temps réel, afin de déterminer automatiquement l’impact réel dû à la situation sécurité globale du système et du réseau. Pour cela une nouvelle méthodologie innovante a été développée en combinant un générateur automatique d’arbres d’attaque (attack trees/graphs) et un moteur d’analyse de risque « traditionnel » similaire à EBIOS.
+
+Les systèmes de gestion des informations et événements de sécurité (SIEM) font régulièrement l’objet de critiques acerbes. Complexité, besoins importants en ressources de conseil externes… de nombreuses entreprises ont été déçues par leur expérience du SIEM pour l’implémentation de la supervision de la sécurité.
+
+
+Mais la technologie n’est plus, désormais, la raison pour laquelle des entreprises peinent à réussir leurs implémentations de SIEM. Les principales plateformes de SIEM ont reçu de véritables transplantations cérébrales, se transformant en entrepôts de données taillés sur mesure pour fournir les performances et l’élasticité requises. Les connecteurs système et les aggrégateurs de logs, autrefois complexes et peu fiables, sont aujourd’hui efficaces, rendant la collecte de données relativement simple.
+
+Mais il y a une limite au SIEM, comme à toute technologie s’appuyant sur des règles : le SIEM doit savoir ce qu’il doit chercher. Aucun boîtier SIEM ne pourra identifier automatiquement, comme par magie, une attaque tirant profit d’une méthode ou d’une vulnérabilité inédite.
+
+Le SIEM joue un rôle important dans la détection d’attaques. Mais pour qu’il puisse détecter les attaques connues et inconnues, l’entreprise qui le déploie doit construire des ensembles de règles qui lui permettront d’identifier des conditions d’attaques et des indicateurs spécifiques à son environnement. Et le tout de manière cohérente. Comment donc construire ces règles ?
+
+Tout collecter
+
+Sans disposer de suffisamment de données collectées, le SIEM n’a pas grand chose à analyser. Mais la première étape est de collecter les bonnes données. Et celles-ci sont notamment les logs des équipements réseau, de sécurité  et des serveurs. Ces données sont nombreuses et faciles à obtenir. Ensuite, il faut s’intéresser aux logs de l’infrastructure applicative (bases de données, applications). Les experts du SIEM ajoutent à cela les données remontées par de nombreuses autres sources, comme celles des systèmes de gestion des identités et des accès, les flux réseau, les résultats des scans de vulnérabilités et les données de configurations.
+
+Avec les SIEM, plus il y a de données collectées, mieux c’est. Si possible, autant tout collecter. S’il est nécessaire de définir des priorités, alors mieux vaut se concentrer sur les actifs technologiques critiques, à commencer par les équipements installés dans les environnements sensibles et ceux manipulant des données soumises à régulation, ou encore ceux touchant à la propriété intellectuelle.
+
+Construire les règles
+
+Construire une règle pour SIEM est un processus itératif. Cela signifie qu’il est relativement lent et qu’il doit être affiné, précisé au fil du temps. De nombreuses personnes sont atteintes de la « paralysie de l’analyste » en début de processus, parce qu’il existe des millions de règles pouvant être définies. Ainsi, Securosis conseille de se concentrer sur les menaces les plus pressentes pour déterminer les règles à définir en premier.
+
+Dans le cadre du processus de modélisation, il convient de commencer par un actif important. Pour cela, il faut adopter le point de vue de l’attaquant et chercher ce que l’on pourrait vouloir voler.
+
+Modéliser la menace. Il faut se mettre à la place de l’attaquant et imaginer comment entrer et voler les données. C’est la modélisation de l’attaque, avec énumération de chaque vecteur avec le SIEM. Et il convient de ne pas oublier l’exfiltration car sa modélisation offre une opportunité supplémentaire de détecter l’attaque avant que les données ne se soient envolées. Dans ce processus, il s’agit d’adopter des attentes réalistes car le modèle d’attaque ne peut pas par essence être parfait ni complet. Mais il convient toutefois d’engager le processus de modélisation. Et il n’y a pas de mauvais point de départ.
+
+Affiner les règles. Il convient ensuite de lancer l’attaque contre le SI, telle que modélisée. Les outils pour cela ne manque pas. C’est l’occasion de suivre ce que fait le SIEM. Déclenche-t-il les bonnes alertes ? Au bon moment ? L’alerte fournit-elle suffisamment d’informations pour assister les personnes chargées de la réaction ? Si l’alerte n’est pas adéquate, il convient de revoir le modèle et d’ajuster les règles.
+
+Optimiser les seuils. Avec le temps, il deviendra de plus en plus clair que certaines alertes surviennent trop souvent, et d’autres pas assez. Dès lors, il convient d’ajuster finement les seuils de déclenchement. C’est toujours une question d’équilibre… un équilibre délicat.
+
+Laver, rincer, recommencer. Une fois l’ensemble initial de règles pour ce modèle d’attaque spécifique implémenté et optimisé, il convient de passer au vecteur d’attaque suivant, et ainsi de suite, en répétant le processus en modélisant chaque menace.
+
+Ce processus ne s’arrête jamais. Il y a constamment de nouvelles attaques à modéliser et de nouveaux indicateurs à surveiller. Il est toujours important de suivre les informations de sécurité pour savoir quelles attaques sont en vogue. Les rapports tels que celui de Mandiant sur le groupe APT1 intègrent désormais des indicateurs clairs que chaque organisation peut surveiller avec son SIEM. Armé de ces renseignements sur les menaces et d’un environnement de collecte de données complet, il n’y a plus d’excuse : il est temps de commencer à chercher les attaques avancées qui continuent d’émerger.
+
+Mais avec le temps, il sera nécessaire d’ajouter de nouveaux types de données au SIEM, ce qui impliquera de revoir toutes les règles. Par exemple, le trafic réseau, s’il est capturé et transmis au SIEM, fournira quantité de nouvelles informations à étudier. Mais comment ce regard sur le trafic réseau sera-t-il susceptible d’affecter la manière dont certaines attaques sont traitées ? Quelles autres règles faudrait-il ajouter pour détecter l’attaque plus vite ? Ce ne sont pas des questions triviales : il convient de revoir les règles du SIEM chaque fois qu’est ajoutée une nouvelle source de données (ou retirer, le cas échéant) ; cela peut faire la différence sur la rapidité avec laquelle une attaque est détectée… si elle l’est.
+
+Le plus important aspect de ce processus est la cohérence. Le SIEM n’est pas une technologie du type « installe et oublie ». Il requiert du temps, de l’attention, et d’être alimenté, tout au long de sa vie opérationnelle.
+
+% END PASTE
+
+
+\subsection{quelques défits des SIEM	}
+
+La problématique globale des SIEM est de corréler de l'événement, la question de fond est la collecte de ses évènements.
+La collecte de LOG est la principale sources d'événements, toutefois, toute les sources d'événements sont susceptible d'enrichir la corrélation, en particulier les vulnérabilités, les IOC, les infos de end-point  en gros corrler des inforamtions d'opératione et de renseignements.
+Cette notion de FUSION de capteurs cher au militaire est un premier pas et nécessite en parrallele aussi de l'information econimoqie, poltiques ou sociale de l'entreprise. Car ces événements peuvent "matcher" avec des attaques complexes.
+  
+\subsection{l'intelligence artificiel}
+
+Le traitement de masse permet 
+
+Mais l'important est que l'IA (ex: vectra) puisse explicquer ses propositions et décisions. 
+
+
+\section{quelques SIEM}
+
+On peut ciert ainssi quelques SIEM non pas pour en faire un publicité particuliers mais simplement pour donner quelques indications sur la provenance ...
+
+
+
+\section{L'integration dans la gestion des incidents ITIL}
