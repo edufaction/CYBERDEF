@@ -1,25 +1,32 @@
-% Chapitre introduction de la partie 3 du cours VAR
-
-%\textbf{\Ucenter{--- Chapitre introductif de la Partie 3 du cours SEC 101 ---}}
+%-------------------------------------
+% Chapitre
+% Vulnerability Management
+% Introduction
+% File : chap-VTI-intro.tex
+%--------------------------------------
+\uchap{Chapitre introductif de la Partie 3 du cours SEC 101 (VTI-INTRO) }
 
 \section{Sécurité opérationnelle}
 
-Après avoir construit un sécurité d'organisation cohérentes sur les aspects gestion des flux, gestion des accès et des identité, construit une gouvernance efficace sur la base de l'ISO27001, il est nécessaire de maintenir le niveau de sécurité dans l'entreprise ou du système.
-On appelle ce processus le Maintien en Condition de Sécurité que nous pourrions classer suivant les termes anglo-saxons des projets :
+Après avoir construit une structure sécurité cohérente sur les aspects gestion des flux, gestion des accès et des identités, et construit une gouvernance efficace sur la base de l'ISO27001, il est nécessaire maintenant de maintenir le niveau de sécurité de l'entreprise ou du système.
+On appelle quelque fois ce processus le \g{Maintien en Condition de Sécurité} que nous pourrions positionner dans le RUN en utilisant  les termes anglo-saxons définissant le cycle des projets :
 
 \begin{itemize}
  \item \textbf{THINK/DESIGN} : Des risques évalués à la politique sécurité pensée ;
  \item \textbf{BUILD}: De la politique de sécurité déployée à la construction d’une sécurité implémentée;
 \end{itemize}
 
-Il nous reste à aborder la dernière phase du cycle de vie : les activités d'exploitation de la sécurité. \textbf{RUN} : Des évènements de sécurité gérés à la cybercrise maitrisée, que que certains appellent \textbf{SECOPS} : Sécurité Opérationnelle.
+
+\upicture{../Tex/Pictures/img-thinkrun}{les phases du cycle de vie}{1}{lbl_thinkrun}
+
+Il nous reste donc à aborder la dernière phase du cycle de vie : les activités d'exploitation de la sécurité, \textbf{RUN} : Des évènements de sécurité gérés à une \textbf{cybercrise} maitrisée, que que certains appellent \textbf{SECOPS} : \g{Sécurité Opérationnelle}.
 
 
 Ce modèle se développe bien entendu en fonction des finalités de l'entreprise.
 
 \begin{itemize}
-    \item Soit nous sommes dans une entreprise et ces processus sont ceux mis en place s'assurer l'ensemble de actions pour maint riser ses vulnérabilités, détecter les menaces, et réagir pour maintenir l'activité.
-    \item  Soit nous sommes fabricant d'un produit ou d'un service, ces processus de Maintien en condition de sécurité concerne l'ensemble des actions pour maîtriser les correctifs et leur cycle de vie (communication, gestion de découverte par des tiers, rémunération de BugHunters ...)
+    \item Soit nous sommes dans une entreprise et ces processus sont ceux mis en place pour s'assurer que  l'ensemble de actions sont prises pour maitriser   ses vulnérabilités, détecter les menaces, et réagir pour maintenir l'activité.
+    \item  Soit nous sommes fabricant d'un produit ou d'un service, et au delà des engagements sécuritaire de toute entreprise (cf. ci-dessus) des processus de \g{maintien en condition de sécurité} des produits et services sont à ajouter pour maîtriser les vulnérabilités, les correctifs et leur cycle de vie  (audit, communication, gestion des découvertes de fragilités par des tiers, rémunération de BugHunters ...)
 \end{itemize}
 
 
@@ -28,13 +35,21 @@ Ce modèle se développe bien entendu en fonction des finalités de l'entreprise
 \frametitle<presentation>{Sécurité opérationnelle}
 \framesubtitle<presentation>{Une définition}
 % end header PRZ======================
- Ce terme de \g{sécurité opérationnelle}, est relativement jeune dans l’histoire de la sécurité des technologies de l’information. Le terme de SSI sécurité des systèmes d’information était né pour distinguer des disciplines qui s’attachaient à protéger l’information qui circule dans les systèmes de l’entreprise (cf protection et classification de l’information). La sécurité des réseaux et la sécurité informatique ont été les précurseurs de la cybersécurité, le cyber recouvrant en un seul terme les enjeux de sécurité liés au réseau et à l’informatique, mais plus largement la sécurité de l'économie numérique.
+ Ce terme de \g{sécurité opérationnelle}, est relativement jeune dans l’histoire de la sécurité des technologies de l’information. Le terme de SSI (Sécurité des Systèmes d’Information) était né pour distinguer des disciplines qui s’attachaient à protéger l’information qui circule dans les systèmes de l’entreprise (cf. protection et classification de l’information). La sécurité des réseaux et la sécurité informatique ont été les précurseurs de la cybersécurité, le cyber recouvrant en un seul terme, les enjeux de sécurité liés au réseau et à l’informatique, mais plus largement à la sécurité de l'économie numérique.
 \end{frame}
 % end PRZ ===========================
 
-Comme nous l’avons abordé, dans les chapitres précédents, la cybersécurité est un domaine vaste qui regroupe de nombreuses disciplines pouvant intervenir dans des cycles projets pour construire des systèmes sûrs et pour assurer la continuité d’activité dans l'entreprise.
-C’est dans ce dernier contexte que l’on parle plutôt de sécurité opérationnelle. Ces activités opérationnelles supportent en particulier le maintien en condition de sécurité au quotidien de l’entreprise. En France, au sein des armées, on parle de lutte informatique dite défensive permettant de différentier les activités des Cyberdéfense des activités de Cyber-protection. Ces activités sont à opposer à la lutte informatique\g{offensive} qui ne sera pas abordé dans c\ecours car elle relève de prérogative des états et non des entreprises.
-La sécurité opérationnelle ajoute par ailleurs à son périmètre d'action, la surveillance de l'intérieur des périmètres de responsabilités de l'entreprise : \g{Les murs sont épais et solides, les douaniers sont aux portes de la cité, la police doit toutefois veiller à la sécurité des biens et des citoyens dans la ville, car certains sont néanmoins des brigands. Quand à l'armée, elle veille aux frontières du pays informée pas nos agents à l'étranger}.
+
+
+
+\upicture{\upath/Pictures/img-vti}{Les différentes actions de veille}{0.9}{lbl_vti}
+
+
+
+
+Comme nous l’avons abordé, dans les chapitres précédents, la cybersécurité est un domaine vaste qui regroupe de nombreuses disciplines pouvant intervenir dans des cycles projets pour construire des systèmes sûrs et pour assurer la continuité d’activité et la protection des patrimoines dans l'entreprise. Il faut y ajouter aussi tout un espace de gestion des conformités (legislatives, réglementaires, normatives, contractuelles).
+C’est plutôt dans un contexte d'opération sécurité au quotidien que l’on parle de sécurité opérationnelle. Ces activités opérationnelles supportent donc le maintien en condition de sécurité au quotidien de l’entreprise. En France, au sein des armées, on parle de lutte informatique dite défensive permettant de différentier les activités des Cyberdéfense des activités de Cyber-protection. Ces activités sont à opposer à la lutte informatique\g{offensive} qui ne sera pas abordé dans c\ecours car elle relève de prérogative des états et non des entreprises.
+La sécurité opérationnelle ajoute par ailleurs à son périmètre d'action, la surveillance de l'intérieur des périmètres de responsabilités de l'entreprise, mais aussi à l'extérieur de l'entreprise via des mécanismes de veille sur la menaces et de surveillance des compromissions potentielles. Nous pourrions évoqué l'image d'une cité où \g{Les murs sont épais et solides, les douaniers sont aux portes de la cité, la police doit toutefois veiller à la sécurité des biens et des citoyens dans la ville, car certains sont néanmoins des brigands. Quand à l'armée, elle veille aux frontières du pays informée pas nos agents à l'étranger}.
 
 On traitera donc cette partie avec une équivalence dans les terminologies suivantes :
 
@@ -55,7 +70,7 @@ Le but de cette sécurité opérationnelle est d’être au coeur de l’action 
 Elle est aussi dynamique car c’est aussi une propriété systémique qui mesure la capacité à anticiper les menaces, identifier les fragilités , détecter en temps réel les attaques et réagir à temps ou au pire disposer des capacités de revenir dans un état de fonctionnement compatible avec la survie de l’entreprise (Modes dégradés par exemple).
 Le système évolue, faisant apparaitre ici et là de nouvelles fragilités, l’entreprise se transforme, vit, suscitant de nouveaux potentiels d’attaques. L’entreprise doit s’organiser pour disposer de fonctions opérationnelles adaptées et dédiées à cette activité. Ces fonctions nécessitent des savoirs, des savoirs-faire et de l’outillage. C’est l’ensemble de ces techniques que nous allons tenter d’aborder dans c\edoc.
 
-Globalement, on peut remarquer que le cycle de vie est a prendre dans le sens inverse de notre présentation. Dans les entreprises moins matures en gouvernance de la sécurité, la dynamique de cette sécurité opérationnelle est la première visible et opérée. Dans l'entreprise va réagir le,plus souvent dans une dynamique de réponse immédiates aux problèmes de sécurité sans pour autant investiguer plus avant dans les fragilités globales. Les mécanismes de cybersécurité sont donc construits dans une entreprise peu mature dans le sens suivant :
+Globalement, on peut remarquer que le cycle de vie est a prendre dans le sens inverse de notre présentation. Dans les entreprises moins matures en gouvernance de la sécurité, la dynamique de cette sécurité opérationnelle est la première visible et opérée. Dans l'entreprise va réagir le, plus souvent dans une dynamique de réponse immédiates aux problèmes de sécurité sans pour autant investiguer plus avant dans les fragilités globales. Les mécanismes de cybersécurité sont donc construits dans une entreprise peu mature dans le sens suivant :
 
 	\begin{itemize}
 		\item Répondre aux incidents de sécurité, tenter de répondre à la question : \g{qui nous attaque et pourquoi}; 
@@ -237,11 +252,6 @@ Nous aborderons aussi quelques compléments à ces processus SECOPS, comme la d�
 \upicture{\upath/Pictures/img-chapvar}{Synthèse des meta-processus SECOPS}{0.9}{lbl_prosecops}
 
 Des activités qui nécessitent, pour être efficace, une symbiose parfaite entre les équipes qui gèrent l'activité digitale (Systèmes d'informations, réseaux sociaux, ...) et les équipes de sécurité opérationnelle.
-
-\upicture{\upath/Pictures/img-vti}{Les différentes actions de veille}{0.9}{lbl_vti}
-
-
-
 
 
 

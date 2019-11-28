@@ -1,8 +1,49 @@
 % Chapitre ALERT 
 
+\section{les traces, journaux, logs}
+
+Dans le domaine informatique et télécom, le terme log est généralement un fichier, une base de données ou tout autre moyen de stocker des information, ici le stockage d'un historique d'événements qu'un logiciel ou un système souhaite "tracer". Ce mot qui est le diminutif  de logging, est traduit en français par "journal". Le log est donc un journal horodaté, qui stocke temporellement les différents événements qui se sont produits sur un un logiciel, un ordinateur, un serveur, etc. Il permet ainsi d'analyser avec une fréquence programmer (heure par heure,  minute par minute, etc) l'activité  d'un processus technique.
+
+%https://www.microfocus.com/media/white-paper/the_complete_guide_to_log_and_event_management_wp_fr.pdf
+
+Une grande majorité des équipements (réseau, serveurs, terminaux (endpoint) ), des bases de données ou des applications d’un systèmes d'information peuvent aujourd’hui générer des logs ou traces.  Ces fichiers contiennent, pour chaque équipe, la liste de tous évènements  "traçable" qui se sont déroulés pendant l'execution : réussite ou échec d’une connexion, redémarrage, utilisation des ressources (mémoire, ...).
+
+\upicture{../Tex/Pictures/img-logman}{Les logs au coeur de la détection}{1}{lbl_logman}
+
+L'exploitation de ces traces est souvent complexe car chaque équipements dispose de ses propre fonctions de gestion des traces. Il faut consulter ces logs équipements par équipements. Heureusement, il existe des outils qui permettent de centraliser et de \g{normaliser} ces traces.
+On peut citer par exemple, SYSLOG. 
+C'est un protocole qui définit comment gérer les logs systèmes. Quand un système veut conserver les traces d'un événement ),  il est possible, d'utiliser syslog pour communiquer les détails de l'événement à un daemon syslog qui va le conserver dans une base de données.
+L'intérêt d'un serveur Syslog-ng est donc de permettre une centralisation de ces journaux d'événements, permettant de repérer plus rapidement et efficacement les défaillances de machines présentes sur un réseau.
+
+
+ \section{l'usage des log}
+ 
+ 
+ % todo modifcation
+ 
+ \begin{itemize}
+
+   \item Un complément indispensable au processus de \g{détection de menace}. La gestion des logs (ou d’événements) s’avère un outil très utile pour les analyses a posteriori, mais peut aussi servir dans la détection en temps reel pour peu que les outils d'analyse puisse le faire; Nous verront cela dans la partie sur la détection de la menace.
+
+
+   \item  \g{Une couverture légale }. Confrontée à une plainte, une entreprise peut utiliser ces traces pour gérer un litige avec un tiers  en attestant de la non-implication de son système d’information ou, a contrario, assumer le litige tout en remontant jusqu’à l’utilisateur concerné. La société peut également utiliser ces traces pour fournir des éléments aux services de polices. La fourniture d'élément probant à valeur légale nécessite quelques précautions. 
+
+
+   \item  \g{Le dépistage des malversations internes ou de comportements déviants}. Les flux illégaux, les flux de données déviants (copies de fichiers en masse avant qu'un salarié quitte l'entreprise par exemple)
+ 
+   \item 
+\end{itemize}
+
+ 
+ % todo modifcation
+
 \section{Log Management}
 
 
+\section{Puits de logs}
 
+La construction d’un « puits de log » est une première brique de réponse : il s’agit de collecter, à l’aide d’un outil automatisé du marché, l’ensemble des journaux d’équipements dans un espace de stockage unique. L’un des critères de sélection de cet outil est justement sa capacité à reconnaître différents formats de logs (syslog, traps SNMP, formats propriétaires…).
 
+Le volume d’information centralisée peut vite exploser : il est important d’éviter la collecte de données inutiles. Par ailleurs, le système peut également être gourmand en puissance de calcul en fonction des périmètres de recherches effectuées.
 
+On parle de log management à partir du moment où les données contenues dans ce puits sont traitées et exploitées, par exemple pour retrouver un élément dangereux (virus, problème de sécurité…), ou un comportement malveillant (fuite d’information, suppression de données…). Il est nécessaire de cadrer en amont les finalités du projet,  qui peuvent être multiples :

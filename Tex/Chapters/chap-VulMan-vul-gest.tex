@@ -13,9 +13,9 @@
 Dans le paysage numérique de plus en plus complexe , nous sommes exposés à des terminologies variées souvent soutenues par les modes du moment. Les termes «analyse de vulnérabilités», «évaluation des vulnérabilités» et «gestion des vulnérabilités» sont souvent utilisés et restent une source de confusion pour nombre d’entre nous. Pour nous assurer de se concentrer sur les tactiques les plus efficaces pour gérer les vulnérabilités, nous donnerons les principales différences entre l’évaluation des vulnérabilités et la gestion des vulnérabilités. Mais en posant comme principe que l'important est d'agir quand sont identifiées des failles dans un système.
 
 \begin{itemize}
-\item La gestion des vulnérabilités (Vulnerability Management) est un processus cyclique et continu servant à identifier, classer, corriger et réduire les vulnérabilités, en particulier dans les logiciels. La gestion des vulnérabilités fait partie intégrante des processus de gestion de la cybersécurité dans l’entreprise. Contrairement au projet d’évaluation ponctuelle des vulnérabilités, une stratégie de gestion des vulnérabilités fait référence à un processus ou programme complet et continu qui vise à gérer les vulnérabilités d’une organisation de manière globale et continue. Nous avons rassemblé quelques caractéristiques et éléments clés d’une approche standard de la gestion des vulnérabilités.
+\item La gestion des vulnérabilités (\textbf{Vulnerability Management}) est un processus continu servant à identifier, classer, corriger et réduire les vulnérabilités, en particulier dans les logiciels. La gestion des vulnérabilités fait partie intégrante des processus de gestion de la cybersécurité dans l’entreprise. Contrairement au projet d’évaluation ponctuelle des vulnérabilités, une stratégie de gestion des vulnérabilités fait référence à un processus ou programme complet et continu qui vise à gérer les vulnérabilités d’une organisation de manière globale et continue. Nous avons rassemblé quelques caractéristiques et éléments clés d’une approche standard de la gestion des vulnérabilités.
 La gestion des vulnérabilités comprend aussi le processus par lequel  les risques associés ces vulnérabilités sont évalués. Cette évaluation conduit à corriger les vulnérabilités et éliminer le risque ou une acceptation formelle du risque par le gestion d’une organisation (par exemple, au cas où l’impact d’une attaque serait faible ou la le coût de la correction ne dépasse pas les dommages éventuels pour l’organisation).
-\item Il est souvent confondu avec l’évaluation des vulnérabilités (Vulnerability Assessment), dont l’objectif est de rechercher les fragilités d’un système ou d’une entreprise. Ces vulnérabilités connues sont recherchées sur le système. Une évaluation de vulnérabilité n'est pas une analyse, c'est un projet ponctuel avec une date de début et une date de fin définies. En règle générale, un consultant externe en sécurité de l'information examine votre environnement d'entreprise et identifie diverses vulnérabilités potentiellement exploitables auxquelles vous êtes exposé dans un rapport détaillé. Le rapport répertoriera non seulement les vulnérabilités identifiées, mais fournira également des recommandations concrètes pour la résolution. Une fois le rapport final préparé, l'évaluation de la vulnérabilité est terminée.
+\item Il est souvent confondu avec l’évaluation des vulnérabilités (\textbf{Vulnerability Assessment}), dont l’objectif est de rechercher les fragilités d’un système ou d’une entreprise. Ces vulnérabilités connues sont recherchées sur le système. Une évaluation de vulnérabilité n'est pas une analyse, c'est un projet ponctuel avec une date de début et une date de fin définies. En règle générale, un consultant externe en sécurité de l'information examine votre environnement d'entreprise et identifie diverses vulnérabilités potentiellement exploitables auxquelles vous êtes exposé dans un rapport détaillé. Le rapport répertoriera non seulement les vulnérabilités identifiées, mais fournira également des recommandations concrètes pour la résolution. Une fois le rapport final préparé, l'évaluation de la vulnérabilité est terminée.
 Malgré le fait que les deux sont liés, il existe une différence importante entre les deux. La recherche de vulnérabilités consiste à utiliser par exemple un programme informatique pour identifier les vulnérabilités dans réseaux, infrastructure informatique ou applications. La gestion de la vulnérabilité est la processus entourant ce scan de vulnérabilités, prenant également en compte d’autres aspects tels que acceptation des risques, remédiation, etc. On vera en outre que le scan de vulnérabilités n’est qu’un sous partie de l’évaluation des vulnérabilité.
 \item L’analyse des vulnérabilités est un processus de recherche ces fragilités et des scénario qui vont permettre de les exploiter. Les tests d’intrusion sont un exemple de cette dynamique d’analyse des fragilités afin d’en définir un scénario permettant d’atteindre l’objectif que l’attaquant s’est assigné.
 \end{itemize}
@@ -24,18 +24,7 @@ Malgré le fait que les deux sont liés, il existe une différence importante en
 \upicture{../Tex/Pictures/img-vul-process}{Les types de vulnérabilités}{01}{lbl_vulprocess}
 
 
-\subsection{Vulnérabilités et ISO 27001}
 
-Un chapitre de la norme ISO27001 parle de Veille de la vulnérabilité et donne des éléments méthodologiques : 
-
-\begin{itemize}
-	\item 1. DÉCOUVRIR : Catalogage de l’existant, des actifs, des ressources du système d’information. 
- 	\item 2. PRIORISER : Classifier et attribuer des valeurs quantifiables aux ressources, les hiérarchiser. 
- 	\item 3. ÉVALUER : Identifier les vulnérabilités ou les menaces potentielles sur chaque ressource. 
-	 \item 4. SIGNALER : Signaler, publier les vulnérabilités découvertes. 
- 	\item 5. CORRIGER : Éliminer les vulnérabilités les plus sérieuses des ressources les plus importantes. 
- 	\item 6. VÉRIFIER : S’assurer que la vulnérabilité a bien été traitée. 
-\end{itemize}
 
 
 %============================
@@ -57,6 +46,20 @@ La gestion des vulnérabilités est un processus continu. Elle apparait en en to
 	\item Mesurer et suivre l'efficacité les mesures déployées.
 \end{itemize}
 \end{frame}
+
+
+\subsubsection{ISO 27001}
+
+Un chapitre de la norme c parle de Veille de la vulnérabilités, que nous pouvons classer dans le domaine de la gestion des vulnérabilités et donne des éléments méthodologiques : 
+
+\begin{itemize}
+	\item 1. \textbf{DÉCOUVRIR} : Catalogage de l’existant, des actifs, des ressources du système d’information. 
+ 	\item 2. \textbf{PRIORISER} : Classifier et attribuer des valeurs quantifiables aux ressources, les hiérarchiser. 
+ 	\item 3. \textbf{ÉVALUER} : Identifier les vulnérabilités ou les menaces potentielles sur chaque ressource. 
+	 \item 4. \textbf{SIGNALER} : Signaler, publier les vulnérabilités découvertes. 
+ 	\item 5. \textbf{CORRIGER} : Éliminer les vulnérabilités les plus sérieuses des ressources les plus importantes. 
+ 	\item 6. \textbf{VÉRIFIER} : S’assurer que la vulnérabilité a bien été traitée. 
+\end{itemize}
 
 % end PRZ ============
 

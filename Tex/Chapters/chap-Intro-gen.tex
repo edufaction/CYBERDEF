@@ -7,6 +7,16 @@ Chaque jour, la presse se fait l'écho d'attaques et de piratages informatiques,
 Derrière ces incidents, nous découvrons des menaces de tout ordre, actions criminelles, étatiques, hacktivismes. Construire des systèmes surs, les protéger et les défendre, dans une société en ou d'accélérer la digitalisation est devenu un challenge quotidien pour des équipes spécialisées qui luttent contre ces menaces. 
 La cybersécurité est un domaine de mythes et de légendes. Ses activités plongent au plus profond de notre histoire avec des notions comme la course entre le méchant et le gentil, le gendarme et le voleur jusqu'au corsaire et au pirate, en n'oubliant pas les luttes secrètes entre les espions et le contre-espionnage. Une thématique qui résonne, donc comme un domaine de romans, qui se traduit toutefois par une réalité souvent moins réjouissante pour les équipes chargés de la cybersécurité dans les entreprises. Les métiers de la cybersécurité sont nombreux, pour certains très techniques, d'autres plus fonctionnels, juridiques, ou managériaux. 
 
+La cybersécurité est une discipline transverse et interdisciplinaire à plusieurs titres :
+\begin{enumerate}
+  \item nécessité de maitriser les nombreuses technologies des systèmes d'information ainsi que leurs zones de fragilités;
+  \item nécessité de maitriser de nombreuses solutions de sécurité permettant de couvrir, en n'oubliant qu'elles aussi peuvent être fragiles (Cf. Certification et Qualification de produits de sécurité et Critères communs);
+  \item nécessité de faire coopérer des métiers et des cultures différentes ;
+  \item nécessité de gérer l'entreprise dans des cadres de conformité souvent complexes et coûteux.
+\end{enumerate}
+
+\upicture{../Tex/Pictures/img-4model}{Cybersécurité : un domaine hollistique}{0.9}{lb_4model}
+
 Ces métiers concourent tous à une seule et même mission, : assurer la continuité de la mission ou du service en préservant le patrimoine de l'entreprise contre toute menace dans l'environnement numérique.
 
 %\section{les grands cyber-risques}
@@ -17,7 +27,7 @@ Ces métiers concourent tous à une seule et même mission, : assurer la continu
 
 %\section{les vecteurs cyber}
 
-\section{les 3 axes d'une cybersécurité intégrée}
+\section{les axes d'une cybersécurité intégrée}
 
 % ajouter le joke sur les corsaires et une hallebarde
 
@@ -30,7 +40,7 @@ Nous avons donc fait ce choix de structurer notre approche suivant le prisme de 
 
 
 % begin PRZ===================
-\begin{frame}{Les 3 axes de la cybersécurité}
+\begin{frame}<presentation>{Les 3 axes de la cybersécurité}
 	\begin{enumerate}
  \item \tb{l'analyse des risques} informatiques sur les actifs les plus sensibles de l'entreprise avec les difficultés d'identifier la sensibilité de ces actifs et les menaces qui pèsent sur l'environnement ;
 \item la structuration des \tb{politiques de sécurité} des systèmes d'information pour des architectures de sécurité de confiance, dans des systèmes d'informations complexes, intégrant des services dans le cloud, des technologies obsolètes et des politiques de sécurité sédimentées ;
@@ -45,7 +55,7 @@ Nous avons donc fait ce choix de structurer notre approche suivant le prisme de 
 
 % begin PRZ===================
 \begin{frame}{Politiques et stratégies}	
-\upicture{../Tex/Pictures/img-cycle3}{Processus Cyber d'entreprise}{0.4}{lbl_processus}
+\upicture{../Tex/Pictures/img-cycle3}{Processus Cyber d'entreprise}{0.9}{lbl_processus}
 La figure \ref{lbl_processus} présente la dynamique avec laquelle nous avons structuré dans c\edoc.
 \end{frame}
 % end PRZ====================
@@ -92,7 +102,7 @@ Cybers\acute{e}curit\acute{e} \cong Cyberprotection\oplus Cyberd\acute{e}fense \
 
 
 % begin PRZ====================
-\begin{frame}{Une définition de la cybersécurité}
+<presentation>\begin{frame}{Une définition de la cybersécurité}
 \begin{align}
 Cybers\acute{e}curit\acute{e} \cong Cyberprotection\oplus Cyberd\acute{e}fense \oplus Cyberr\acute{e}silience
 \end{align}
@@ -123,7 +133,7 @@ Malheureusement, malgré ces mesures de protection et de défense qui permet de 
 Il fut une époque pas si lointaine, ou dans l'évaluation de la probabilité d'une attaque, l'analyste consacrait du temps. Aujourd'hui bine que ce paramètre continue quand même à être pris en compte, l'analyste positionne cette probabilité à 100\%.  (cf. figure \ref{lbl_riskassess})
 
 % I M A G E -----------> 
-\upicture{../Tex/Pictures/img-risk-assess}{le cyber-risque}{0.4}{lbl_riskassess}
+\upicture{../Tex/Pictures/img-risk-assess}{le cyber-risque}{0.9}{lbl_riskassess}
 
  Car l'ensemble des experts du domaine est globalement en accord sur la posture que doivent prendre les entreprises et les organisations : \g{Le temps n'est plus de savoir si on sera attaqué ou pas, mais plutôt de savoir quand et comment on le sera}, qui concrètement se résume à la certitude que tout incident de sécurité peut se produire.
  
@@ -131,7 +141,7 @@ Dans les modèles d'analyse de risque et d'évaluation de la cybersécurité, l'
 
 
 % I M A G E -----------> 
-\upicture{../Tex/Pictures/img-risk-prison}{La menace : une vision de l'attaquant}{0.4}{lbl_riskjail}
+\upicture{../Tex/Pictures/img-risk-prison}{La menace : une vision de l'attaquant}{0.9}{lbl_riskjail}
 
 
 \section{Sécurité du système d'information}
@@ -244,7 +254,7 @@ La non-répudiation et l'imputation : aucun utilisateur ne doit pouvoir conteste
 
 Dans notre contexte d'activité économique dense et en perpétuel renouvellement, les conditions de sécurité sont en perpétuelle évolution, c’est pourquoi on parle d'un cycle de vie vertueux au cours duquel les nouveaux paramètres tirent profit des expériences passées.  Ainsi, l’amélioration continue également appelée \g{ lean management} dans d’autres domaines (industrie, …) travaille-t-elle sur le cycle de vie des conditions de sécurité souvent appelé PDCA pour Plan, Do, Check, Act (roue de Deming).\\
 Ce cycle de vie doit néanmoins être maitrisé par le RSSI en place avec ses équipes, il faut co-produire ces conditions de sécurité, cette maîtrise est complexe, fortement dépendante du contexte de l'entreprise, c’est pourquoi elle doit être accompagnée d'une méthodologie rigoureuse et partagée qui constitue le savoir-faire de base du RSSI et de son équipe. Par ailleurs, parmi ces conditions, certaines sont universelles et d’autres propres à chaque entreprise. \\ Comme le montre le diagramme \ref{lbl_cycledevie}, il est possible aussi d’utiliser un cycle de vie sécurité de type projet, qui se rapproche par ailleurs de la manière dont nous avons structurer c\edoc. 
-\upicture{../Tex/Pictures/img-cyclevie}{Cycle de vie sécurité dans les projets}{0.7}{lbl_cycledevie}
+\upicture{../Tex/Pictures/img-cyclevie}{Cycle de vie sécurité dans les projets}{0.9}{lbl_cycledevie}
 Dans cette optique, ce cadre méthodologie a été défini par le sous-comité 27 de l'ISO, par le bouquet de normes ISO 27x. Il s’agit également d'un ensemble de bonnes pratiques et de bon sens, que le RSSI peut suivre au travers de 3 Volets fondamentaux qui constituent les référentiels utilisés pour ce cours sur la cybersécurité. La norme 27001 est en particulier un cadre pour organiser la dynamique de la mise en condition de sécurité de l’entreprise et son maintien dans le temps. Cet environnement que le RSSI doit bâtir est le système de management de la sécurité (SMSI).\\
 Pour notre propos, nous avons soutenu méthodologiquement nos trois modules de c\edoc, par trois cadres normatifs :
  

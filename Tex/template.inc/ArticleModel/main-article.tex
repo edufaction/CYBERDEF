@@ -24,16 +24,13 @@
 %	BIBLIOGRAPHY
 %-------------------------------------------------
 
-
+\usepackage{enumitem}
 \addbibresource{../tex/bibliography.bib} % BibTeX bibliography file
 \defbibheading{bibempty}{}
 
 
 
 
-%++++++++++++++++++++++++++++++
-
-\begin{document}
 
 %-------------------------------------------------
 %	COLORS & BORDERS
@@ -41,6 +38,17 @@
 \setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
 \definecolor{color1}{RGB}{160,0,0} % Color of the article title and section
 \definecolor{color2}{RGB}{220,220,220} % Color of the boxes behind the abstract and headings
+
+%-------------------------------------------------
+% ITEMS DEFINITION
+%-------------------------------------------------
+
+%++++++++++++++++++++++++++++++
+
+\setlist [itemize,1]{label=\color{color1}\faCaretRight }
+\begin{document}
+
+
 
 %-------------------------------------------------
 %	ARTICLE INFORMATION
