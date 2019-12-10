@@ -1,7 +1,55 @@
 % Chapitre ALERT 
 
+
+% LECTURE : https://www.groupjoos.com/gdpr-17-que-faire-en-cas-de-fuite-de-donnees-gestion-des-incidents/?lang=fr
+
 \section{surveiller les fuites}
 
-% END PASTE
+J'ai ajouter un chapitre spéciale sur les fuites de données pour deux grandes raisons
+
+\begin{itemize}
+  \item La détection des fuites de données peuvent simplement se révéler par l'apparition de tout ou partie de ces données dans le Darkweb. 
+  \item Les fuites de données étant souvent des fuites de données de type "données personnelles", elles impliquent le déroulement de processus de déclaration au titre de la GDPR.
+\end{itemize}
+
+
+Je ne rentrerai pas ici dans la présentation du RGPD avec son cortège d'exigence et d'organisation à mettre en place
+Liste de traitement, déclaration, nomination de responsable, etc.
+Je ne vous propose que de regarder rapidement, la partie détection et partie réponse à incident.
+
+Le terme « fuite de données », ou « data breach » en anglais, est utilisé pour toute situation impliquant la perte, la modification injustifiée ou la publication par accident, par malveillance, de données considérées ou marquées comme confidentielles. 
+
+Il est important dans la mise en place de scénario dans les SIEM, et dans le traitement de SOC que l'évènement de fuites de données personnelles puissent être traiter avec un mécanisme précis et documenté, car ces évènements sont très contraint par la réglementation.
+A titre de remarques, les évènements touchant la fuite de données liées à la protection du secret de défense (Secret Défense) puisse aussi être traité dans un processus particulier car les ces fuites peuvent aussi faire l'objet de procédure au pénal.
+
+% TODO Relecture
+%*********************************************************************
+% LECTURE : https://www.groupjoos.com/gdpr-17-que-faire-en-cas-de-fuite-de-donnees-gestion-des-incidents/?lang=fr
+
+Le GDPR prévoit que le responsable du traitement des données à caractère personnel signale\textbf{au plus tôt} les fuites de données  pouvant constituer une atteinte à la vie privée des personnes concernées. Cette information à la CNIL et aux personnes concernées en cas d'impact important sur ces personnes.
+
+La méthodologie est assez simple pour peu que le constat de l'incident puisse être fait le plus vite possible. Cela peut se faire sur la base d'évènement provenant des équipements de sécurité (via un SIEM par exemple) ou par l'utilisation de services de veille, ou simplement par l'avertissement d'un tiers qui découvre cette fuite. 
+
+Détection
+Enrayer la fuite, Limiter l'impact 
+Analyser les sources
+
+Deuxièmement, vous devez entreprendre dès que possible les démarches pour enrayer l’incident ou en limiter l’impact. Tous les collaborateurs doivent respecter plusieurs règles. S’ils trouvent des informations à un endroit inapproprié, ils doivent les supprimer ou en informer un responsable. Il peut s’agir de supports physiques, mais aussi de fichiers sur le réseau. Ils doivent également donner l’alerte s’ils rencontrent des étrangers non accompagnés dans une zone sécurisée. Et ainsi de suite. Si des alarmes indiquent un piratage ou une infection des systèmes, les gestionnaires de ces systèmes devront les examiner au plus vite et peut-être les désactiver de manière préventive.
+
+En cas de doute, il est préférable d’arrêter un traitement ou d’empêcher le transport des données traitées jusqu’à ce que vous sachiez clairement s’il y a effectivement un problème, et dans quelle mesure les données traitées sont encore correctes. Cela permet souvent d’éviter qu’un incident ne se transforme en fuite de données. Tant que des données traitées à mauvais escient ne sont pas diffusées ou rendues publiques, il n’y a pas d’infraction, et donc pas d’impact. Au sens strict, il n’est pas encore question d’une fuite de données.
+
+Ensuite, et éventuellement en parallèle, vous pouvez lancer une analyse des faits. D’une part, il faut établir la cause du problème. Vous pourrez ensuite réfléchir aux améliorations dans l’organisation, les systèmes ou les applications, et dans le mode de travail de vos collaborateurs, pour éviter que l’incident ne se reproduise. D’autre part, il faut examiner l’impact réel ou éventuel de l’incident. Y a-t-il des risques pour la confidentialité et l’intégrité des données ? S’agit-il (en partie) de données à caractère personnel ? Quelles peuvent-être les conséquences de cette infraction ? Dans de nombreux cas, il vous faudra du temps pour savoir quelle quantité de données a été impactée et combien de personnes sont concernées. Souvent, vous ne saurez pas non plus d’emblée s’il y a véritablement un risque d’impact, ni quelle peut être l’ampleur des dommages.
+
+Ce n’est que lorsque vous aurez une réponse à toutes ces questions qu’il vous sera possible de faire le bon choix quant à la nécessité de signaler la fuite de données à la Commission de protection de la Vie Privée ou aux personnes concernées. Le quand et le comment de ce signalement seront abordés dans le prochain article.
+
+Par ailleurs, chaque incident doit être consigné dans un registre interne. Qu’il s’agisse d’une véritable infraction ou d’un quasi-accident, il faut toujours analyser l’incident. Ces informations sont importantes pour évaluer les procédures et les directives existantes, et vérifier si les mesures prises offrent une protection suffisante contre les risques éventuels. Les causes d’un incident doivent être consignées, au même titre que les actions visant une amélioration. En assurant un suivi systématique, vous améliorerez systématiquement la sécurité de votre organisation.
+
+Dans les cas extrêmes, une fuite de données peut être catastrophique. Une organisation peut être confrontée à des problèmes de communication dantesques suite à une fuite de données très sensibles à propos d’un grand nombre de personnes. Il arrive que la fuite de données sorte des murs de l’organisation et que la presse en soit informée. En pareil cas, il est bon de pouvoir retomber sur des scénarios de communication de crise préalablement établis. Si votre organisation est couverte par une assurance couvrant les risques de cyber-sécurité, votre compagnie d’assurance devrait pouvoir vous aider.
+
+Si vous soupçonnez que l’incident est d’origine criminelle, vous devez veiller à constituer un dossier juridique à temps. Il est parfois important de réaliser un back-up rapide des systèmes au moment de la découverte de l’incident ou de conserver les fichiers log, avant que ces informations ne soient perdues ou modifiées par les démarches entreprises pour résoudre l’incident. Il est évident qu’une telle étape ira parfois à l’encontre de ce qu’il convient de faire rapidement pour limiter le problème existant. Si la police ou la justice intervient, ne perdez jamais de vue ce que vous pouvez et ne pouvez pas faire de votre propre chef, surtout si vous êtes en charge du traitement des données. Faites appel au responsable dès que possible. Si les autorités vous obligent à fournir des informations, vous devez toujours veiller à les protéger au mieux et à ne pas exposer de données (par exemple d’autres personnes concernées) si cela n’est pas nécessaire à l’enquête.
+
+Il est judicieux de bien documenter ces démarches successives, afin que chacun dans l’organisation les connaisse et agisse en fonction. Cela peut également s’avérer utile pour démontrer que vous prenez le respect des obligations du GDPR très au sérieux.
+
+%*********************************************************************
 
 

@@ -21,8 +21,19 @@
 \resizebox{#2\textwidth}{!}{\input{#1}}
 }
 
+%-----------------------------------------------------
+%										 	\uchap
+%---------------------------------------------------
+\ifdefined\INTERTITLE
 \newcommand{\uchap}[1]
-{\textbf{\Ucenter{--- #1 ---}}}
+	{
+	\begin{LARGE}
+	\textbf{\Ucenter{#1 \\ -oOo-}}	
+	\end{LARGE}
+	}
+\else
+	\newcommand{\uchap}{}
+\fi
 
 %-----------------------------------------------------
 %											\uexpand

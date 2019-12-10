@@ -1,35 +1,82 @@
 % Chapitre ALERT 
 
-\section{SIEM}
+\uchap{Le SIEM - ThreatMan-Siem}
+
+\section{SIEM, une technologie}
 
 % BEGIN PASTE
 
 %TODO Relecture
 \subsection{un peu d'histoire}
-Au dela du fait que SIEM est aussi un prénom vient de l'hébreu shim’ôn, "qui est exaucé". le SIEM est aujourd'hui l'aboutissement d'un veux très anciens des responsable sécurité qui supervise depuis bien des decenies des systèmes de contrôle périmétriques : Corréler tous les évènements arrivants sur l'ensemble  de ces équipements. 
-
-ce genre d'outillage est passer par différentes étapes de maturation avec des SIM et SEM en effin des SIEM
-
-Bien qu'outillant des processus très similaires mais distincts, les trois acronymes SEM, SIM et SIEM ont tendance à être confus ou à causer de la confusion chez ceux qui sont relativement peu familiarisés avec les processus de sécurité.
-
-La similitude entre la gestion des événements de sécurité ou SEM et la gestion des informations de sécurité ou SIM est au cœur du problème.
-
-Ces deux types de collecte d'informations concernent la collecte d'informations de journal de sécurité ou d'autres données similaires en vue d'un stockage à long terme, ou l'analyse de l'environnement de sécurité d'un réseau.
-
-La principale différence est que, 
-
-
-
-\begin{itemize}
-
-	\item dans la gestion des informations de sécurité (SIM) , la technologie consiste  à collecter des informations à partir des journaux d'équipement de sécurité, qui peut consister en différents types de données. Gloablement on peut dire qu'un SIM est immement important pour des équipes de superviusion de la sécurité pérémitrique. d'une part pour la traçabilité et le reporting de sécurité.
-	\item technologies spécialement conçues pour rechercher des authentifications suspectes, des ouvertures de session sur un compte ou des accès de gestion de haut niveau à des heures précises du jour ou de la nuit.
-\end{itemize}
-
+Le SIEM est aujourd'hui l'aboutissement d'un voeux  très anciens des responsable sécurité qui supervise depuis bien des décennies des systèmes de contrôle périmétriques : Corréler tous les évènements arrivants sur l'ensemble  de ces équipements. 
 L'acronyme SIEM ou «gestion des informations de sécurité» fait référence à des technologies combinant à la fois la gestion des informations de sécurité et la gestion des événements de sécurité. Comme ils sont déjà très similaires, le terme générique plus large peut être utile pour décrire les outils et les ressources de sécurité modernes. Là encore, il est essentiel de différencier la surveillance des événements de la surveillance des informations générales. Un autre moyen essentiel de distinguer ces deux méthodes consiste à considérer la gestion des informations de sécurité comme une sorte de processus à long terme ou plus large, dans lequel des ensembles de données plus diversifiés peuvent être analysés de manière plus méthodique. En revanche, la gestion des événements de sécurité examine à nouveau les types d’événements utilisateur pouvant constituer des signaux d’alerte ou indiquer aux administrateurs des informations spécifiques sur l’activité du réseau.
 
 C'est souvent l'usage d'un SIEM dans une ambiguïté de gestion long terme de la sécurité en tant que propriété d'un système d'une part, et la gestion court terme de l'urgence d'une attente à la sécurité qui pose problème dans les projets et dans les opérations.
  
+
+ Ce genre d'outillage est passé par différentes étapes de maturation avec des SIM et SEM  et enfin des SIEM.
+Il s’agit de combiner les fonctions de gestion des informations (SIM, Security Information Management) et des évènements  (SEM, Security Event Management) en un seul système de management de sécurité.
+
+\begin{itemize}
+
+	\item dans la gestion des informations de sécurité (SIM) , la technologie consiste  à collecter des informations à partir des journaux d'équipement de sécurité, qui peut consister en différents types de données. Globalement on peut dire qu'un SIM est aimantant important pour des équipes de supervision de la sécurité périmétrique. d'une part pour la traçabilité et le reporting de sécurité.
+	\item technologies spécialement conçues pour rechercher des authentifications suspectes, des ouvertures de session sur un compte ou des accès de gestion de haut niveau à des heures précises du jour ou de la nuit.
+\end{itemize}
+
+Bien qu'outillant des processus très similaires mais distincts, les trois acronymes SEM, SIM et SIEM ont tendance à être confus ou à causer de la confusion chez ceux qui sont relativement peu familiarisés avec les processus de sécurité.
+La similitude entre la gestion des événements de sécurité ou SEM et la gestion des informations de sécurité ou SIM est au cœur du problème.
+
+Ces deux types de collecte d'informations concernent la collecte d'informations de journal de sécurité ou d'autres données similaires en vue d'un stockage à long terme, ou l'analyse de l'environnement de sécurité d'un réseau.
+
+
+
+
+
+%https://www.linkbynet.com/fr/recourir-a-un-siem
+
+Plus concrètement, un système de type SEM centralise le stockage et l’interprétation des logs en temps réel et permet une analyse. Les experts en cyber sécurité peuvent ainsi prendre des mesures défensives plus rapidement. Un système de type SIM collecte pour sa part des données et les place dans un référentiel à des fins d’analyse de tendances. Dans ce cas, la génération de rapports de conformité est automatisée et centralisée.
+
+Le SIEM, qui regroupe ces 2 systèmes, accélère donc l’identification et l’analyse des événements de sécurité, atténue les conséquences d’attaques et facilite la restauration qui s’ensuit. Pour y parvenir, il collecte les événements, les stocke (avec normalisation) et agrège des données pertinentes mais non structurées issue de plusieurs sources. L’identification des écarts possibles par rapport à la moyenne / norme nourrit la prise de décision. En outre, les tableaux de bord générés contribuent à répondre aux exigences légales de conformité de l’entreprise.
+
+En d’autres termes, avec le SIEM les équipes de sécurité opérationnelle industrialisent la surveillance tout en simplifiant l’analyse de multiples sources d’événements de sécurité (antivirus, proxy, Web Application Firewall…). La corrélation des événements provenant d’applications ou d’équipements très variés est aussi facilitée. De quoi détecter des scenarii de menaces avancées.
+
+Dans la pratique, Il existe 3 types de SIEM :
+
+\begin{itemize}
+  \item SIEM  déployé
+  \item SIEM basé dans le cloud
+  \item SIEM géré / managé
+\end{itemize}
+
+
+
+Reconnaissons-le, s’équiper d’une solution de type SIEM nécessite un investissement conséquent en raison de la complexité de sa mise en œuvre. Toutefois, bien qu’initialement destiné aux grandes entreprises, le SIEM offre des avantages à tous les types d’organisations :
+
+Détection proactive d’incidents
+Un SIEM s’avère capable de détecter des incidents de sécurité qui seraient passés inaperçus. Pour une raison simple : les nombreux hôtes qui enregistrent des événements de sécurité ne disposent pas de fonctions de détection d’incidents.
+
+Le SIEM dispose de cette faculté de détection grâce à sa capacité de corrélation des événements. Contrairement à un système de prévention d’intrusion qui identifie une attaque isolée, le SIEM regarde au-delà. Les règles de corrélations lui permettent d’identifier un événement ayant causé la génération de plusieurs autres (hack via le réseau, puis manipulation sur un équipement précis…).
+
+Dans de tels cas de figure, la plupart des solutions ont la capacité d’agir indirectement sur la menace. Le SIEM communique avec d’autres outils de sécurité mis en place dans l’entreprise (Exemple pare-feu) et pousse une modification afin de bloquer l’activité malveillante. Résultat, des attaques qui n’auraient même pas été remarquées dans l’entreprise sont contrecarrées.
+
+\begin{itemize}
+  \item la premiere fonction d'un SIEM est déjà de corréler les événements provenant des composants de sécurité.
+  \item la deuxième  fonction de corréler des événement de comportement du SI
+  \item troisième fonction de corréler avec des événements externes au SI sur la base de capteurs externes (threats intelligence de type renseignement)
+\end{itemize}
+
+
+\upicture{../Tex/Pictures/img-siem}{architecture d'un SIEM}{0.9}{lbl_siem}
+
+% insertion schéma
+
+Pour aller encore plus loin, une organisation peut choisir d’intégrer à son SIEM une Cyber Threat Intelligence (CTI ou Flux de renseignement sur les menaces). 
+
+Selon la définition de Gartner, la Cyber Threat Intelligence (CTI) est la connaissance fondée sur des preuves, y compris le contexte, les mécanismes, les indicateurs, les implications et des conseils concrets, concernant une menace nouvelle ou existante ou un risque pour les actifs d’une organisation qui peuvent être utilisés afin d’éclairer les décisions concernant la réponse du sujet à cette menace ou un danger 
+
+La CTI consiste donc à collecter et organiser toutes les informations liées aux menaces et cyber-attaques, afin de dresser un portrait des attaquants ou de mettre en exergue des tendances (secteurs d’activités visés, les méthodes d’attaque utilisées, etc.). Résultat, une meilleure anticipation des incidents aux prémices d’une attaque d’envergure.
+ 
+
 
 % TODO Voir article sur les problèmatique SIEM
 % https://www.journaldunet.com/solutions/expert/39767/comprendre-les-raisons-de-l-echec-des-siem-et-sim.shtml
@@ -39,6 +86,38 @@ La cyberprotection d'une entreprise est principalement basée sur les outils de 
 
 
 
+\subsection {de l'usage d'un siem pour la gouvernance}  
+
+À l’heure où les normes et certifications de cyber-sécurité sont de plus en plus nombreuses, le SIEM devient un élément clé de tout système d’information. C’est un moyen relativement simple de répondre à plusieurs exigences de sécurité (Exemple : historisation et suivi des logs, rapports de sécurité, alerting, …) et de prouver sa bonne foi aux autorités de certification ou de suivi. D’autant que le SIEM peut générer des rapports hautement personnalisables selon les exigences des différentes réglementations. 
+
+Ce seul bénéfice suffit à convaincre des organisations de déployer un SIEM. Et pour cause : la génération d’un rapport unique traitant tous les événements de sécurité pertinents quelle que soit la source des logs (générés en outre dans des formats propriétaires) fait gagner un temps précieux. 
+
+
+Les contreparties du SIEM
+Déployer un SIEM ne suffit pas pour autant à sécuriser complètement votre organisation. Les solutions SIEM présentent des limites qui les rendent inefficaces sans un accompagnement à la hauteur et sans solutions tierces. Contrairement à une solution de sécurité de type IDS ou Firewall, un SIEM ne surveille pas les événements de sécurité mais utilise les données de logs enregistrées par ces derniers. Il est donc essentiel de ne pas négliger la mise en place de ces solutions. 
+
+Une configuration pointue 
+Les SIEM sont des produits complexes qui appellent un accompagnement pour assurer une intégration réussie avec les contrôles de sécurité de l’entreprise et les nombreux hôtes de son infrastructure. 
+
+Il est important de ne pas se contenter d’installer un SIEM avec les configurations du constructeur et/ou par défaut, car elles sont souvent insuffisantes. Les configurations doivent être personnalisées et adaptées aux besoins des utilisateurs. De même concernant les rapports, mieux vaut créer ses propres rapports d’analyse, adaptés aux différentes menaces identifiées. À défaut, le risque est réel de ne pas pouvoir profiter des avantages d’une solution de SIEM. 
+
+Des investissements à bien anticiper 
+La collecte, le stockage et l’analyse des événements de sécurité sont des tâches qui semblent relativement simples. Cependant, leur collecte, stockage et l’exécution des rapports de conformité, l’application des correctifs et l’analyse de tous les événements de sécurité se produisant sur le réseau d’une entreprise n’est pas trivial. Taille des supports de stockage, puissance informatique pour le traitement des informations, temps d’intégration des équipements de sécurité, mise en place des alertes… L’investissement initial peut se compter en centaines de milliers d’euros auquel il faut ajouter le support annuel. 
+
+Intégrer, configurer et analyser les rapports nécessite la compétence d’experts. Pour cette raison, la plupart des SIEM sont gérés directement au sein d’un SOC souvent externalisé. Porteur de grandes promesses, le SIEM mal configuré peut apporter son lot de déceptions. Selon un sondage réalisé auprès de 234 entreprises (Source LeMagIT), 81 \% d’utilisateurs reprochent aux SIEM de produire des rapports contenant trop de bruit de fond et pour 63\% les rapports générés sont difficiles à comprendre. Faire appel à des prestataires externes disposant de l’expertise dans le domaine reste souvent la meilleure solution.  
+
+
+%TODO Voir SIEM externalisation ou chapitre sur la compétence
+
+Un grand volume d’alertes à réguler 
+Les solutions SIEM s’appuient généralement sur des règles pour analyser toutes les données enregistrées. Cependant, le réseau d’une entreprise génère un nombre très important d'alertes (en moyenne 10000 par jours) qui peuvent être positives ou non. En conséquence, l’identification de potentiels attaques est compliquée par le volume de logs non pertinents. 
+
+La solution consiste à définir des règles précises (en général rédigées par un SOC) et le périmètre à surveiller que faut-il surveiller en priorité ? Le périmétrique ? L’interne ? Réseau/système/application ? Quelle technologie à prioriser ? etc. 
+
+Une surveillance à exercer 24h/24 
+Pour fonctionner correctement, les solutions SIEM nécessitent une surveillance 24h/24 et 7j/7 des journaux et des alertes. Un personnel formé ou une équipe dédiée sont requis pour consulter les journaux, effectuer des examens réguliers et extraire les rapports pertinents.  
+
+Voilà pourquoi externaliser cette surveillance auprès d’un fournisseur de services de sécurité tel que SECURIVIEW fait sens. Il s’agit à la fois de disposer des expertises requises, de gagner en lisibilité budgétaire et, aussi, de profiter d’engagements de services. Des conditions à réunir afin que l’investissement dans une solution SIEM marque une étape clé dans la protection de votre organisation contre les menaces avancées.
 
 
 
@@ -52,14 +131,6 @@ La cyberprotection d'une entreprise est principalement basée sur les outils de 
 
 
 
-
-
-la premiere fonction d'un SIEM est déjà de corréler les événements provenant des composants de sécurité.
-la deuxième  fonction de corréler des événement de comportement du SI
-troisième fonction de corréler avec des événements externes au SI sur la base de capteurs externes (threats intelligence de type renseignement)
-
-
-\upicture{../Tex/Pictures/img-siem}{architecture d'un SIEM}{0.9}{lbl_siem}
 
 
 \subsubsection{Analyse d'impact}

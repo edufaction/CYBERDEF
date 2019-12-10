@@ -1,6 +1,37 @@
-% Chapitre ALERT 
+%-------------------------
+% Chapitre
+% Threat Management
+% Divers
+% File : chap-Vulman-inro.tex
+%--------------------------
 
-\section{surveiller et anticiper la menace}
+\uchap{Introduction à la gestion de la menace - ThreatMan Intro}
+
+\section{Menaces}
+
+Ce sont généralement les attaques externes et massives qui font le, plus l’actualité dans les média. Un grand nombre de risques quotidiens sont issus de l'intérieur même de l'entreprise,  fuites de la part de vos employés qui, de façon intentionnelle ou non, révèlent des mots de passe ou des informations sensibles, ou alors d’une opération initiée par des acteurs internes malveillants : des salariés, partenaires, clients qui cherchent à utiliser les informations à leur portée afin d’exploiter ou de porter dommage aux systèmes d'information de l’entreprise, mais plus globalement à l'entreprise dans sa globalité.
+
+Les attaquants externes sont, certes, une menace croissante : ils recherchent sans cesse des failles de sécurité afin d’accéder à vos systèmes.
+
+N’importe quelle entreprise est exposée au risque. De nos jours, les connexions diverses d’une entreprise à l’autre représentent de nombreuses voies pour les pirates informatiques, qui attaquent souvent les petites entreprises afin d’accéder à leurs plus grands partenaires, clients ou fournisseurs. Les grandes entreprises demandent donc souvent à leurs fournisseurs et partenaires, quelle que soit leur taille, de mettre en place des mesures de cybersécurité.
+
+Différents types de menaces à la cybersécurité
+
+La nature de ces menaces est en constante évolution.  On y trouve les plus courantes :
+
+\begin{itemize}
+
+\item Attaques par déni de service distribuées (DDoS). Un réseau d’ordinateurs inonde un site Web ou un logiciel avec des informations inutiles. Quand la charge sur les services est important et que le système n'est pas dimensionné ou filtré pour ce type de volume de demande, ce débordement de requètes provoque une indisponibilité du système inopérant. 
+
+\item \textbf{Codes malveillants} : Bots et virus. Un logiciel malveillant qui s’exécute à l'insu de l'utilisateur ou du propriétaire du systèl (bots), ou qui est installé par un employé qui pense avoir affaire à un fichier sain (cheval de Troie), afin de contrôler des systèmes informatiques ou de s’emparer de données. La mise à jour des logiciels et des certificats SSL, une forte protection antivirus et une sensibilisation des employés peuvent vous aider à éviter ces types de menace.
+
+\item \textbf{Piratage}. Lorsque des acteurs externes exploitent des failles de sécurité afin de contrôler vos systèmes informatiques et voler des informations. Une mise à jour régulière des mots de passe et des systèmes de sécurité est fondamentale pour déjouer ce type de complot.
+
+\item \textbf{Hameçonnage} ou dévoiement. Tentative d’obtenir des informations sensibles en se faisant passer frauduleusement pour une entité digne de confiance. Le hameçonnage se fait par e-mail, tandis que le dévoiement utilise des sites ou serveurs fictifs. Une sensibilisation des employés est indispensable afin de ne pas tomber dans ce piège.
+
+\end{itemize}
+
+\subsection{surveiller et anticiper la menace}
 
 Veiller sur les menaces nécessite de veiller sur deux choses : 
 
@@ -24,13 +55,13 @@ Ce sont des sujets que nous aborderons dans le processus de gestion de la menace
 
 % TODO le renseignement
 
-\subsection{Surveillance de la compromission}
+\subsubsection{Surveillance de la compromission}
 
 Un des domaine de la surveillance est donc celui de la compromission. C'est à dire la surveillance dans le fameux Darkweb de l'emergence de données volées, "\g{perdues}" par une entreprise ou par un particulier.
 
 % Mettre un exemple : adresse mail compromisse (avec le site PWND)
 
-\subsection{Surveillance du ciblage}
+\subsubsection{Surveillance du ciblage}
 
 % Threat Hunting 
 
@@ -52,7 +83,11 @@ Il y a deux types d'outils pour ce se faire :
 Disposer des fragilités de l'entreprise, et connaitre les scénarios potentiels permets d'évaluer un niveau de risque. 
 
 
-\section{La gestion de la menace}
+\subsection{La gestion de la menace}
+
+
+\upicture{../Tex/Pictures/img-logman}{la gestion de la menace}{1}{lbl_threatman}
+
 
 Gérer la menace comporte deux domaines d'activités :
 
@@ -61,8 +96,9 @@ Gérer la menace comporte deux domaines d'activités :
   \item La détection d'attaque, ou de menaces potentielles au sein de l'environnement (Threat Detection)
 \end{itemize}
 
-%introduction sur la surveillance opérationnelle du quotidien. les outils de « visibilités » permttant de voir, percevoir ... et anticiper.
+Ces deux domaines d'activités se base sur la remontée d'information et l'automatisation des détections d'évènements à risques. Le management des LOG des systèmes est au coeur de la détection.
 
+%introduction sur la surveillance opérationnelle du quotidien. les outils de « visibilités » permttant de voir, percevoir ... et anticiper.
 
 \section{Détecter}
 
@@ -83,15 +119,17 @@ En premier lieu, il convient de chercher à détecter les menaces non couvertes 
 Dans l'environnement de l'entreprise, les scénarios complexes issus de l'analyse de risques lors de l'étude des évènements redoutés vont donner les évènements corrélés à détecter.
 On y trouvera l'application concrète des arbres d'attaques popularisé par une des plus célèbre cyber expert Bruce Schneier \cite{schneier1999attack} qui est présentée de manière un peu plus détaillée dans le chapitre \nameref{ref_arbre_attaques}
 
-\section{Alerter}
 
-\subsubsection{Arbre d'attaques} \label{ref_arbre_attaques}
+
+\subsection{Arbre d'attaques} \label{ref_arbre_attaques}
 
 %TODO a re writer
 
-Les arbres d'attaques sont une représentation des scénarios d'attaques. La racine représente le but final de l'attaque, les différents noeuds sont les buts intermédiaires et les feuilles les actions élémentaires à effectuer. Ces actions seront valuées au potentiel d'attaque des critères communs. 
+Détecter la menace dans un système d'information c'est aussi connaitre les méthodes, stratégies des attaquants. Ces scénarios d'attaque ou d'opération peuvent être modélisés avec des outils au coeur des analyses de risques. Bien que très largement en arrière plan des méthodes et des outils de gestion de la menace, les arbres d'attaque restent au coeur des mécanismes de détection.
 
-On distingue trois types de nœuds :
+Les arbres d'attaques sont une représentation des scénarios d'attaques. La racine représente le but final de l'attaque, les différents noeuds sont les buts intermédiaires et les feuilles les actions élémentaires à effectuer. Ces actions seront évaluées par exemple avec les potentiel d'attaque des critères communs (cf.CC et ISO)
+
+Globalement, ces arbres sont basé sur trois types de nœuds :
 
 \begin{itemize}
   \item Nœud \textbf{disjonctif} OR : OU logique. Cela signifie que pour que le nœud soit réalisé, il faut qu’au moins un de ses fils soit réalisé.
@@ -99,11 +137,58 @@ On distingue trois types de nœuds :
   \item Nœud \textbf{conjonctif séquentiel }SAND : Pour sa réalisation, il faut que l'ensemble de ses fils soit réalisé dans un ordre séquentiel c'est-à-dire les fils sont effectués les uns après les autres dans l’ordre indiqué.
 \end{itemize}
 
-
 En fonction de ces noeuds les valeurs des feuilles seront remontées pour obtenir le potentiel d'attaque de la racine.
 C'est sur la base de ce type de technique que sont construit un certain nombre d'outil de détection.
  
 %Vers ADTool http://satoss.uni.lu/members/piotr/adtool/
 %ADTool est un logiciel qui permet la création, l'édition et l'affichage de ces arbres. Il permet de valuer les feuilles et faire remonter les valeurs à la racine selon différents algorithmes
+
+Gartner, et Lockheed Martin ont dérivé le concept de ces arbres d'attaque dans des modèles dit de \g{Kill Chain} issus de modèle militaire établis à l’origine pour identifier la cible, préparer l’attaque, engager l’objectif et le détruire.
+
+Ce modèle analyse un fragilité potentielle en dépistant les phases de l’attaque, de la reconnaissance précoce à l’exfiltration des données. Ce modèle de chaine ou processus cybercriminel aide à comprendre et à lutter contre les ransomware, les failles de sécurité et les menaces persistantes avancées (APT). Le modèle a évolué pour mieux anticiper et reconnaître les menaces internes, l’ingénierie sociale, les ransomware avancés et les nouvelles attaques.
+
+\subsection{le déploiement d'une menace en 8 étapes}
+
+%TODO A ré ecrire 
+
+\begin{itemize}
+  \item \textbf{Phase 1 : Reconnaissance}. Dans tout « casse », vous devez d’abord repérer les lieux. Le même principe s’applique dans un cybercasse : c’est la phase préliminaire d’une attaque, la mission de recueil d’informations. Pendant la reconnaissance, le cybercriminel recherche les indications susceptibles de révéler les vulnérabilités et les points faibles du système. Les pare-feu, les dispositifs de prévention des intrusions, les périmètres de sécurité (et même les comptes de médias sociaux) font l’objet de reconnaissance et d’examen. Les outils de repérage analysent les réseaux des entreprises pour y trouver des points d’entrée et des vulnérabilités à exploiter.
+
+ \item \textbf{Phase 2 : Intrusion.} Après avoir obtenu les renseignements, il est temps de s’infiltrer. L’intrusion constitue le moment où l’attaque devient active : les malware (y compris les ransomware, spyware et adware) peuvent être envoyés vers le système pour forcer l’entrée. C’est la phase de livraison. Celle-ci peut s’effectuer par e-mail de phishing ou prendre la forme d’un site Web compromis ou encore venir du sympathique café au coin de la rue avec sa liaison WiFi, favorable aux pirates. L’intrusion constitue le point d’entrée d’une attaque, le moment où les agresseurs pénètrent dans la place.
+
+ \item \textbf{Phase 3 : Exploitation}. Le hacker se trouve de l’autre côté de la porte et le périmètre est violé. La phase d’exploitation d’une attaque profite des failles du système, à défaut d’un meilleur terme. Les cybercriminels peuvent désormais entrer dans le système, installer des outils supplémentaires, modifier les certificats de sécurité et créer de nouveaux scripts à des fins nuisibles.
+
+ \item \textbf{Phase 4 : Escalade de privilèges}. Quel intérêt y a-t-il à entrer dans un bâtiment si vous restez coincé dans le hall d’accueil ? Les cybercriminels utilisent l’escalade de privilèges pour obtenir des autorisations élevées d’accès aux ressources. Ils modifient les paramètres de sécurité des GPO, les fichiers de configuration, les permissions et essaient d’extraire des informations d’identification.
+
+ \item \textbf{Phase 5 : Mouvement latéral}. Vous avez carte blanche, mais vous devez encore trouver la chambre forte. Les cybercriminels se déplacent de système en système, de manière latérale, afin d’obtenir d’autres accès et de trouver plus de ressources. C’est également une mission avancée d’exploration des données au cours de laquelle les cybercriminels recherchent des données critiques et des informations sensibles, des accès administrateur et des serveurs de messagerie. Ils utilisent souvent les mêmes ressources que le service informatique, tirent parti d’outils intégrés tels que PowerShell et se positionnent de manière à causer le plus de dégâts possible.
+
+ \item \textbf{Phase 6 :  Furtivité, camouflage, masquage}. Mettez les caméras de sécurité en boucle et montrez un ascenseur vide pour que personne ne voit ce qui se produit en coulisses. Les cyberattaquants font la même chose. Ils masquent leur présence et leur activité pour éviter toute détection et déjouer les investigations. Cela peut prendre la forme de fichiers et de métadonnées effacés, de données écrasées au moyen de fausses valeurs d’horodatage (timestomping) et d’informations trompeuses, ou encore d’informations critiques modifiées pour que les données semblent ne jamais avoir été touchées.
+
+ \item \textbf{Phase 7 :  Isolation et Déni de service}. Bloquez les lignes téléphoniques et coupez le courant. C’est là où les cybercriminels ciblent le réseau et l’infrastructure de données pour que les utilisateurs légitimes ne puissent obtenir ce dont ils ont besoin. L’attaque par déni de service (DoS) perturbe et interrompt les accès. Elle peut entraîner la panne des systèmes et saturer les services.
+
+ \item \textbf{Phase 8 :  Exfiltration}. Prévoyez toujours une stratégie de sortie. Les cybercriminels obtiennent les données. Ils copient, transfèrent ou déplacent les données sensibles vers un emplacement sous leur contrôle où ils pourront en faire ce qu’ils veulent : les rendre contre une rançon, les vendre sur eBay ou les envoyer à BuzzFeed. Sortir toutes les données peut prendre des jours entiers, mais une fois qu’elles se trouvent à l’extérieur, elles sont sous leur contrôle.
+
+\end{itemize}
+
+
+Différentes techniques de sécurité proposent différentes approches de la chaîne cybercriminelle. De Gartner à Lockheed Martin, chacun définit les phases de manière légèrement différente.
+
+C’est un modèle souvent critiqué pour l’attention qu’il accorde à la sécurité du périmètre et limité à la prévention des malware. Cependant, quand elle est combinée à l’analyse avancée et à la modélisation prédictive, la chaîne cybercriminelle devient essentielle à une sécurité complète.
+
+L’analyse du comportement des utilisateurs (UBA) apporte des informations détaillées sur les menaces liées à chaque phase de la chaîne criminelle. Et elle contribue à prévenir et arrêter les attaques avant que les dommages ne soient causés.
+
+
+
+\section{Surveiller et anticiper}
+
+La surveillance et le renseignement de la menace au sens général du terme devrait contenir les 3 niveaux
+
+\begin{itemize}
+  \item Le renseignement à vocation cyber qui comprend toutes les analyses et information permettant d'anticiper et de caractériser une menace qui pourrait s'exprimer dans le monde numérique,
+  \item Le renseignement d'origine Cyber, dont les données techniques liées à des attaques, menaces qui permettent de configurer des systèmes de détection et de réponse.
+
+\end{itemize}
+
+Il est vrai qu'encore aujourd'hui parler de "threat intelligence"  nous dirige systématiquement sur la deuxième assertion
 
 

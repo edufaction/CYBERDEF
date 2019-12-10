@@ -9,6 +9,8 @@
 % Recherche de vulnérabilité mais ou
 %-------------------------------------------------------------
 \section{Compléments}
+
+Pour affiner la gestion des vulnérabilités, il y a bien d'autres points à prendre en compte. Nous avons consignés ici ces points qui sont à développer. Nous ne donnons que des pistes de reflexion.
 %----------------------------------	
 % des difficultés de la cartographie 
 \subsection{Périmètre sous responsabilité de l’entreprise}
@@ -18,11 +20,35 @@
 % ajouter ici, un texte qui parle de la notion de périmètre, au sens sois périmètre de l’entreprise soit périmètre de responsabilité pour un projet et/ou pour une sous structure.
 
 \subsubsection{Inventaire des actifs}
+
+Un des vrai difficultés du déploiement d'une gestion de vulnérabilités efficaces est la maitrise des actifs vulnérables ou devant être surveillés en vulnérabilités.
+La gestion des systèmes d'information et des services informatiques (ITSM) est ainsi devenue un processus essentiel de la transformation digitale, considérée comme un outil privilégié qui va soutenir l’entreprise pour affronter sa propre complexité.
+
+Dans un projet ITSM, le référentiel des actifs s’appelle CMDB (Configuration Management DataBase).
+
+Cette base de données de gestion de configuration intègre  tous les composants d’un système d'information pour  avoir une vision d’ensemble sur l’organisation de ces composants et d’en piloter leur configuration en cas de besoin.
+Il est donc important de disposer de ce type d'outil pour pouvoir :
+
+\begin{itemize}
+  \item Connecter cette CMDB à une solution de veille en vulnérabilités pour corréler les deux et avertir les bons acteurs sur l'apparition d'une vulnérabilité,
+\item Gérer les mécanismes de remédiation et de gestion des correctifs.
+\end{itemize}
+
+Il n'en demeure pas moins complexe de disposer d'un CMDB à jour, d'autant plus que des services dans le Cloud ne sont pas encore totalement intégré dans les principes des CMDB, et que le shadow IT  sévit toujours dans les entreprises.
+
+La maitrise des actifs passe passe des outils de d'autodiscovery et d"analyse comportemental qui permet de découvrir non seulement les usage du SI mais aussi découvrir des composants actifs dans l'environnement.
+
+
 %L'une des premières étapes d'un programme de gestion des vulnérabilités est un exercice de définition du périmètre de responsabilité et d'inventaire des actifs associés. En particulier au niveau de l'entreprise, les entreprises ont tendance à passer par une multitude de fusions, d'acquisitions et de nouvelles technologies et doivent donc combiner des systèmes incompatibles de manière native ou changer de personnel. Malheureusement, ces circonstances laissent souvent les entreprises confuses quant à la qualité de leur inventaire et beaucoup sont incapables d'identifier tous leurs actifs nécessitant un niveau de protection adéquat. Trop souvent, les entreprises possèdent une multitude d'actifs inconnus dans leur environnement qui pourraient compromettre leur sécurité sur le long terme.
 %
 %Selon les meilleures pratiques en matière d’inventaire des actifs, la gestion des actifs doit être confiée à une autorité unique qui consulte des cartes réseau valides, effectue des analyses de découverte pertinentes dans tous les réseaux locaux (LAN), valide régulièrement l’inventaire des actifs et gère la gestion des modifications. cas d’actifs neufs ou d’actifs retirés. Une fonction centralisée d’inventaire des actifs peut aider à clarifier l’inventaire des actifs d’une organisation et à renforcer sa sécurité.
 %----------------------------------	
 \subsection{L’environnement digital externe}
+
+%99 ecollece, 2009 Cloud, 2019 ZTA. 2770:2019 privacy
+%NIS SP 800 145 et 800 207
+Surveiller les failles dans l'entreprise est fondamental, mais il est aussi nécessaire de surveiller les failles apparaissant dans les services Cloud et dans les réseaux sociaux. Ces failles peuvent avoir un impact sur l'entreprise.
+
 
 %----------------------------------	
 \subsection{Veille et alerte sur les vulnérabilités}
@@ -30,26 +56,21 @@
 %----------------------------------
 \subsubsection{abonnement au CERT}
 
-% s’abonner au Cert pour être informer des vulnérabilités, mais avec la difficultés de recevoir que les vulnérabilités qui nous intéresse. Le lien avec le pacth, et la disposition des solutions de corrections.
-
-	%----------------------------------
-	\subsubsection{Le marché de la vulnérabilité}
-
-	CERT,  veille en vulnérabilités
-	Une vulnérabilité et sa cotation
-
+S’abonner à un Cert pour être informer en temps réel des vulnérabilités apparaissant est devenu un besoin primordial réagir au plus vite. Il est important que ces alertes soient contextualisées.  mais avec la difficultés de recevoir que les vulnérabilités qui nous intéresse. Le lien avec le pacth, et la disposition des solutions de corrections.
 %----------------------------------	
-\subsection{La chasse aux vulnérabilités}
-	Checking versus Pentest
+%\subsection{La chasse aux vulnérabilités}
+%	Checking versus Pentest
 
+\subsubsection{Le marché de la vulnérabilité}
 
+Il existe un marché de la vulnérabilité. Les éditeurs (et les états), achètent des vulnérabilités, en gros ils payent des acteurs pour trouver de vulnérabilités.
 %==========================================
 % Recherche de vulnérabilité en amont du cycle de vie.
-Corriger une vulnérabilité au plus tot
+%Corriger une vulnérabilité au plus tot
 %--------------------------------------------------------------------------
-\subsection{Le marché de l’insécurité chronique}
-	Sécurité applicative
-	et le pire avec les DEVOPS et le WEB (Owasp co)
+%\subsection{Le marché de l’insécurité chronique}
+%	Sécurité applicative
+%	et le pire avec les DEVOPS et le WEB (Owasp co)
 
 
  
