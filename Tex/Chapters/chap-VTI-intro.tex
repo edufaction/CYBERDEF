@@ -9,25 +9,47 @@
 \section{Sécurité opérationnelle}
 
 Après avoir construit une structure de sécurité cohérente sur les aspects de gestion des flux, de gestion des accès et des identités, et construit une gouvernance efficace sur la base de l'ISO27001, il est nécessaire maintenant de maintenir le niveau de sécurité de l'entreprise ou du système.
+
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{Sécurité opérationnelle}
+\framesubtitle<presentation>{Dans le cycle de vie}
+% end header PRZ======================
 On appelle quelque fois ce processus le \g{Maintien en Condition de Sécurité} que nous pourrions positionner dans le RUN en utilisant  les termes anglo-saxons définissant le cycle des projets :
 
 \begin{itemize}
  \item \textbf{THINK/DESIGN} : Des risques évalués à la politique sécurité pensée ;
  \item \textbf{BUILD}: De la politique de sécurité déployée à la construction d’une sécurité implémentée;
 \end{itemize}
+\end{frame}
+% end PRZ ===========================
 
 
-\upicture{../Tex/Pictures/img-thinkrun}{les phases du cycle de vie}{1}{lbl_thinkrun}
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{Sécurité opérationnelle}
+\framesubtitle<presentation>{l'activité RUN}
+% end header PRZ======================
+\upicture{../Tex/Pictures/img-thinkrun}{les phases du cycle de vie}{0.7}{lbl_thinkrun}
 
 Et nous classons donc dans la dernière phase du cycle de vie : les activités d'exploitation de la sécurité, \textbf{RUN} : Des évènements de sécurité gérés à une \textbf{cybercrise} maitrisée, que que certains appellent \textbf{SECOPS} : \g{Sécurité Opérationnelle}.
+\end{frame}
+% end PRZ ===========================
 
+
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{Objectifs adapté aux finalités}
+\framesubtitle<presentation>{de l'activité de l'entreprise}
+% end header PRZ======================
 Ce modèle se développe bien entendu en fonction des finalités de l'entreprise.
 
 \begin{itemize}
     \item Soit nous sommes dans \textbf{une entreprise }et ces processus sont ceux mis en place pour s'assurer que  l'ensemble de actions sont prises pour maitriser les fragilités dont les vulnérabilités informatiques, détecter les menaces tant en anticipation que pendant des attaques (bruyantes, ou discrètes), et réagir pour maintenir l'activité et limiter l'impact.
     \item  Soit nous sommes \textbf{fabricant d'un produit ou d'un service}, et au delà des engagements sécuritaire de toute entreprise (cf. ci-dessus) des processus de \g{maintien en condition de sécurité} des produits et services sont à ajouter pour maîtriser les vulnérabilités, les correctifs et leur cycle de vie  (audit, communication, gestion des découvertes de fragilités par des tiers, rémunération de BugHunters ...)
 \end{itemize}
-
+\end{frame}
+% end PRZ ===========================
 
 % begin PRZ==========================
 \begin{frame}
@@ -67,6 +89,10 @@ Le système évolue, faisant apparaitre ici et là de nouvelles fragilités, l�
 
 Globalement, on peut remarquer que le cycle de vie est a prendre dans le sens inverse de notre présentation. Dans les entreprises moins matures en gouvernance de la sécurité, la dynamique de cette sécurité opérationnelle est la première visible et opérée. Dans l'entreprise va réagir le, plus souvent dans une dynamique de réponse immédiates aux problèmes de sécurité sans pour autant investiguer plus avant dans les fragilités globales. Les mécanismes de cybersécurité sont donc construits dans une entreprise peu mature dans le sens suivant :
 
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{Enjeux SECOPS}
+% end header PRZ======================
 	\begin{itemize}
 		\item Répondre aux incidents de sécurité, tenter de répondre à la question : \g{qui nous attaque et pourquoi}; 
 		\item Améliorer les filtrages;
@@ -77,7 +103,8 @@ Globalement, on peut remarquer que le cycle de vie est a prendre dans le sens in
 		\item Anticiper les risques sur l'information;
 		\item Anticiper la menaces.
 	\end{itemize}
-
+\end{frame}
+% end PRZ ===========================
 
 \section{Lutte contre la menace}
 
@@ -115,6 +142,11 @@ Nous pourrions remarquer que ce nombre est relativement faible. Toutefois, la vr
 
 Les motivations des attaquants sont nombreuses, et leurs objectifs variés :
 
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{Motivations de l'attaquant}
+% end header PRZ======================
+
 \begin{itemize}
 \item obtenir un accès au système pour s’y maintenir en attendant un opportunité ;
 \item récupérer de l’information, secrets, données personnelles exploitables (en gros toutes information ayant de la valeurs)
@@ -124,12 +156,22 @@ Les motivations des attaquants sont nombreuses, et leurs objectifs variés :
 \item utiliser le système d’un utilisateur, pour rebondir vers un autre système ;
 \item détourner les ressources du système d’un utilisateur (utiliser de la bande passante, utiliser de la capacité de calcul) ;
 \end{itemize}
+\end{frame}
+% end PRZ==========================
 
 Bien entendu, il n’y a que très rarement un seul objectif, c’est la combinaison des méthodes d’attaques, des objectifs unitaires qui définissent globalement une mission ou un objectif final. L’exploitation de vulnérabilités au sein de l’entreprise va permettre le déploiement par l’attaquant d’un scénario.
 
 \subsection{Politiques et Stratégies}
 
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{Politique vs stratégie}
+% end header PRZ======================
+
 \upicture{\upath/Pictures/img-cyclevie-pol-strat}{Positionnement de la sécurité opérationnelle}{0.9}{lbl_pol-strat}
+
+\end{frame}
+% end PRZ==========================
 
 A partir des risques identifiés, l’entreprise a posé des politiques de sécurité qui ont permis de mettre en place des mesures de sécurité. Ces mesures sont d’ordre techniques avec des systèmes de sécurité, ou des SI avec des architectures particulières, mais aussi d’ordre organisationnel avec des procédures et des mécanismes à respecter.
 L’ensemble de cette dynamique construit un niveau de sécurité qu’il va être nécessaire de maintenir dans le temps. Toutefois ce niveau de sécurité n’est pas suffisant pour une simple et bonne raison : la menace évolue, les vulnérabilités apparaissent (découvertes, ou créées), la valeur\g{marchande} des actifs d’une entreprise change aussi. 
@@ -137,14 +179,28 @@ Les occurrences de ces éléments de vie sont considérés comme des évènement
 
 La gestion des événements qui peuvent être un source de mesure de l’évolution du niveau de sécurité de l’entreprise est au coeur des stratégies de cyberdéfense. Ces évènements sont corrélés avec des sources provenant de deux processus particuliers qui seront décrit dans ce c\edoc.
 
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{Politique vs stratégie}
+% end header PRZ======================
+Il est à noter qu'un attaquant ne raisonne pas en politiques d'attaque face à une politique de sécurité, mais par des stratégies auxquelles il faut opposer aussi par des stratégies de défense, dont 
+
 \begin{itemize}
 \item Recherche des vulnérabilités : Processus qui permet de rechercher, découvrir, couvrir les vulnérabilités ou fragilités de l’entreprise ou ayant un impact sur l’entreprise que celles-ci soient techniques, humaines ou organisationnelles ;
 \item Prévention de la menace : Processus qui permet de connaitre les menaces directes sur l’entreprise ou potentielles afin d’anticiper et/ou se préparer à un type d’attaque.
 \end{itemize}
+\end{frame}
+% end PRZ==========================
 
 C’est la confrontation entre les vulnérabilités, les menaces et la détection de l’activité de l’entreprise qui va permettre d’être efficace dans le processus de réponse. Il y a de nombreuses manière d’aborder la cyberdéfense d’entreprise
 
 C\edoc présente donc une dynamique de cyberdéfense en trois\g{volets }
+
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{3 volets d'une cyberdéfense}
+% end header PRZ======================
+
 
 \begin{itemize}
 \item Gestion des vulnérabilités (\textit{Vulnerability Management and CERT}) : maitriser ses vulnérabilités mais aussi surveiller l’environnement technologique. 
@@ -152,10 +208,25 @@ C\edoc présente donc une dynamique de cyberdéfense en trois\g{volets }
 \item Gestion des incidents et réponse aux incidents (\textit{Incident Response – CSIRT}) : Réagir en cas d’incident et assurer la remédiation
 \end{itemize}
 
+\end{frame}
+% end PRZ==========================
+
+
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{3 volets d'une cyberdéfense}
+% end header PRZ======================
 \upicture{\upath/Pictures/img-triangle}{Des 3 des volets de la sécurité opérationnelle}{0.6}{lbl_triptyque}
+
+\end{frame}
+% end PRZ==========================
 
 Ces trois volets ne sont pas les seuls qui concourent à la cyberdéfense d’entreprise, mais ils en restent les trois faces principales. Il est à noter que ces trois volets correspondent aussi en France à trois référentiels de qualification de l’ANSSI des prestataires de services de cybersécurité au profit des entreprises. Ces labels sont obtenus par les entreprises qui respectent un cahier des charges rigoureux sur le plan de l'éthique, du professionnalisme, et de la compétence des experts intervenants. Il y trois cadres principaux de certifications sont :
 
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{Référentiels ANSSI}
+% end header PRZ======================
 \begin{itemize}
 \item PASSI : Prestataire d’Audit de la sécurité des systèmes d’information ;
 \item PDIS : Prestataire de détection d’incident de sécurité ;
@@ -163,7 +234,8 @@ Ces trois volets ne sont pas les seuls qui concourent à la cyberdéfense d’en
 \end{itemize}
 
 Ces trois référentiels définissent l’ensemble des exigences d’assurance pour\g{qualifier} des prestataires de services en cybersécurité sur ces trois thématiques. En effet, il serait en effet important de confier la recherche de ses vulnérabilités, leurs remédiations à des sociétés de confiance. 
-
+\end{frame}
+% end PRZ==========================
 A ces 3 volets il ne faut pas oublier, le volet administration des briques informatique et de télécommunications de l’environnement de l’entreprise. C’est un volet que nous traiterons pas directement dans c\edoc pour se concentrer. sur les mécanismes de maintien en continue le niveau de sécurité de l’entreprise avec des mécanismes de veille, d’alerte et de réaction.
 
 
@@ -206,15 +278,28 @@ Par ailleurs nous explorerons rapidement, les techniques de déception et de leu
 
 \subsection{les modèles Cybersécurité}
 
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{Modèle NIST}
+% end header PRZ======================
+
 Il existe de nombreux modèles de description de l'activité de Cyberdefense dans un contexte de cybersécurité.
 Certains sont totalement intégrés au modèle de cybersécurité comme l'ISO 27K, ou le Cybersecurity FrameWork du NIST \uref{lbl_nist} avec les activités \textbf{DETECT, RESPOND et RECOVER};
 
 \upicture{\upath/Pictures/img-nist}{modèle NIST}{0.9}{lbl_nist}
+\end{frame}
+% end PRZ==========================
 
+
+% begin PRZ==========================
+\begin{frame}
+\frametitle<presentation>{NIST vs ISO 27k}
+% end header PRZ======================
 Ce que l'on peut reprocher au modèle du NIST, c'est qu'il ne possède pas explicitement la gestion des fragilités / vulnérabilités, mais il apporte toutefois un modèle très détaillé, que nous utiliserons pour partie.
-
-Dans l'environnement ISO 27000, le modèle est piloté par les risques  \uref{lbl_risk27}.
 \upicture{\upath/Pictures/img-risk27}{modèle ISO27 et risques}{0.9}{lbl_risk27}
+\end{frame}
+% end PRZ==========================
+Dans l'environnement ISO 27000, le modèle est piloté par les risques \uref{lbl_risk27}.
 
 Nous avons fait le choix de positionner la présentation du volet sécurité opérationnelle en nous éloignant un peu des modèles pour présenter les 3 grands moteurs de la sécurité opérationnelle. En effet les modèles cités sont orientée sur un axe de cycle de vie.
 En sécurité opérationnelle ou cyberdéfense, l'objectif est de conduire en continue et de frond des processus de maitrise des risques cyber opérationnels.
@@ -227,12 +312,12 @@ En sécurité opérationnelle ou cyberdéfense, l'objectif est de conduire en co
 \newpage
 \section{structure du cours}
 
-Notre propos sera donc centré sur ces trois axes  qui nous déclinerons dans trois chapitres. Le travail de fond d'une équipe de sécurité opérationnelle, ou simplement de l'activité SECOPS est de pouvoir gérer de front trois grandes tâches : 
 
 % Begin PRZ ===========================
 \begin{frame}
 \frametitle<presentation>{SECOPS en 3 thématiques}
 % end header PRZ =======================
+Notre propos sera donc centré sur ces trois axes  qui nous déclinerons dans trois chapitres. Le travail de fond d'une équipe de sécurité opérationnelle, ou simplement de l'activité SECOPS est de pouvoir gérer de front trois grandes tâches : 
 \begin{itemize}
  \item maitriser les fragilités numériques de l'entreprise (\UKword{Vulnerability Management)} quelles soient au sein du SI mais aussi dans l'environnement dit digital de cette entreprise (réseaux sociaux, partenaires, ...);
  \item anticiper les menaces et les scénarios associés (\UKword{Threat Management)}, détecter les attaques et gérer au quotidien les événements de sécurité ;
@@ -243,7 +328,16 @@ Notre propos sera donc centré sur ces trois axes  qui nous déclinerons dans tr
 
 Nous aborderons aussi quelques compléments à ces processus SECOPS, comme la détection des fuites de données (Leak Detection), qui peut s'entendre comme un incident de sécurité externe, ou une détection d'évènement hors de périmètre du SI, mais dans le périmètre de surveillance.
 
-\upicture{\upath/Pictures/img-chapvar}{Synthèse des meta-processus SECOPS}{0.9}{lbl_prosecops}
+
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Les processus SECOPS}
+% end header PRZ =======================
+\upicture{\upath/Pictures/img-chapvar}{Synthèse des meta-processus SECOPS}{0.8}{lbl_prosecops}
+
+\end{frame}
+% end PRZ ===========================
 
 Des activités qui nécessitent, pour être efficace, une symbiose parfaite entre les équipes qui gèrent l'activité digitale (Systèmes d'informations, réseaux sociaux, ...) et les équipes de sécurité opérationnelle.
 
@@ -251,6 +345,12 @@ Des activités qui nécessitent, pour être efficace, une symbiose parfaite entr
 
 Au delà des métiers de l'audit de sécurité qui existent depuis de nombreuses années, la sécurité opérationnelle est le champs de développement de nombreux métiers nouveaux ou en devenir. Nous en explorerons quelques-uns dans chacune des parties qui présentent les opérations de cette SECOPS.
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Les métiers SECOPS}
+% end header PRZ =======================
 \upicture{../Tex/Pictures/img-metiersVTI}{Des métiers SECOPS}{1}{lbl_metiersVTI}
+\end{frame}
+% end PRZ ===========================
 
 
