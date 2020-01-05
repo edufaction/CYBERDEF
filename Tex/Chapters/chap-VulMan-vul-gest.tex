@@ -4,13 +4,14 @@
 % Gestion
 % File : chap-Vulman-gest.tex
 %--------------------------------------
+\uchap{Introduction sur les vulnérabilités, chapitre 3.1}
+%_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-
-\section{gérer ses vulnérabilités}
+\section{Gérer ses vulnérabilités}
 \label{CHAP_GESTVUL}
 
-
 Dans le paysage numérique de plus en plus complexe , nous sommes exposés à des terminologies variées souvent soutenues par les modes du moment. Les termes «analyse de vulnérabilités», «évaluation des vulnérabilités» et «gestion des vulnérabilités» sont souvent utilisés et restent une source de confusion pour nombre d’entre nous. Pour nous assurer de se concentrer sur les tactiques les plus efficaces pour gérer les vulnérabilités, nous donnerons les principales différences entre l’évaluation des vulnérabilités et la gestion des vulnérabilités. Mais en posant comme principe que l'important est d'agir quand sont identifiées des failles dans un système.
+ La gestion des vulnérabilités est donc un processus de gestion des risques associés à la présence de vulnérabilités qui se base sur la recherche de celles-ci, l'évaluation de leur impact et qui pilote le calendrier d’application des correctifs disponibles.
 
 \begin{itemize}
 \item La gestion des vulnérabilités (\textbf{Vulnerability Management}) est un processus continu servant à identifier, classer, corriger et réduire les vulnérabilités, en particulier dans les logiciels. La gestion des vulnérabilités fait partie intégrante des processus de gestion de la cybersécurité dans l’entreprise. Contrairement au projet d’évaluation ponctuelle des vulnérabilités, une stratégie de gestion des vulnérabilités fait référence à un processus ou programme complet et continu qui vise à gérer les vulnérabilités d’une organisation de manière globale et continue. Nous avons rassemblé quelques caractéristiques et éléments clés d’une approche standard de la gestion des vulnérabilités.
@@ -21,10 +22,13 @@ Malgré le fait que les deux sont liés, il existe une différence importante en
 \end{itemize}
 
 
-\upicture{../Tex/Pictures/img-vul-process}{Les types de vulnérabilités}{01}{lbl_vulprocess}
-
-
-
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{gestion des vulnérabilités}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-vul-process}{La gestion des vulnérabilités}{01}{lbl_vulprocess}
+\end{frame}
+% end PRZ ===========================
 
 
 %============================
@@ -32,7 +36,7 @@ Malgré le fait que les deux sont liés, il existe une différence importante en
 %--------------------------------------------------
 \subsection{Processus de gestion des vulnérabilités}
 
-% décrire le processus de gestion avec Inventiare / Analyse / ....
+% décrire le processus de gestion avec Inventaire / Analyse / ....
 La gestion des vulnérabilités est un processus continu. Elle apparait en en toile de fond du cycle de vie du Maintien en Condition de Sécurité :
 
 % Begin PRZ ============
@@ -46,12 +50,17 @@ La gestion des vulnérabilités est un processus continu. Elle apparait en en to
 	\item Mesurer et suivre l'efficacité les mesures déployées.
 \end{itemize}
 \end{frame}
+% end PRZ ============
 
 
 \subsubsection{ISO 27001}
 
 Un chapitre de la norme c parle de Veille de la vulnérabilités, que nous pouvons classer dans le domaine de la gestion des vulnérabilités et donne des éléments méthodologiques : 
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{ISO 27001}
+% end header PRZ =======================
 \begin{itemize}
 	\item 1. \textbf{DÉCOUVRIR} : Catalogage de l’existant, des actifs, des ressources du système d’information. 
  	\item 2. \textbf{PRIORISER} : Classifier et attribuer des valeurs quantifiables aux ressources, les hiérarchiser. 
@@ -61,10 +70,14 @@ Un chapitre de la norme c parle de Veille de la vulnérabilités, que nous pouvo
  	\item 6. \textbf{VÉRIFIER} : S’assurer que la vulnérabilité a bien été traitée. 
 \end{itemize}
 
-% end PRZ ============
+\end{frame}
+% end PRZ ===========================
 
 
-%Contrairement à l’évaluation des vulnérabilités, un programme complet de gestion des vulnérabilités n’a pas de date de début ni de fin définie, mais constitue un processus continu qui aide idéalement les entreprises à mieux gérer leurs vulnérabilités à long terme.
+
+
+
+%
 %
 %C'est un processus intégré à la gouvernance de la sécurité.
 
@@ -79,20 +92,85 @@ Un chapitre de la norme c parle de Veille de la vulnérabilités, que nous pouvo
 %
 %Une fois les évaluations de vulnérabilité effectuées, il est essentiel de produire des rapports clairs et facilement compréhensibles avec des tâches de correction hiérarchisées. Quel que soit l’outil d’analyse de vulnérabilité utilisé, il devrait permettre de produire des rapports, de marquer les vulnérabilités comme ayant été corrigées ou non détectées, de suivre l’âge des vulnérabilités, etc. Avant de publier les rapports, l’organisation doit s’accorder sur le format du rapport afin de s’assurer que les éléments sont inclus / surlignés et les éléments non pertinents sont supprimés. Comme pour de nombreux autres processus de sécurité critiques, il est vivement recommandé que la direction générale adhère pleinement au processus de signalement et de correction des vulnérabilités.
 
+
+\subsection{Fenêtre d'exposition}
+
 %==============
 % Analyse / recherche des Vulnérabilités
 %------------------------
 
+Dans un monde idéal où en  temps réel, on accéderait à l'apparition d'une vulnérabilité, ou on pourrait la détecter sur son SI, et patcher avec le correctif publié par l'éditeur, la gestion des vulnérabilités se cantonnerait à constater la fenêtre d’exposition générée par le temps nécessaire à l’éditeur pour publier un correctif immédiatement déployé.
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Fenêtre d'exposition idéale}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-vul-patchtimeideal}{Fenêtre d'exposition idéale}{01}{lbl_vul-patchtimeideal}
+\end{frame}
+% end PRZ ===========================
+
+L’unique décision pour un RSSI serait  serait une gestion du risque simple liée à la décision de  de déconnecter ou pas un élément vulnérable du SI pendant la fenêtre d’exposition. Tous les correctifs disponibles seraient appliqués dès qu’ils sont disponibles.
+
+Même si l’information peut être accessible en temps réel, la détection de la présence d’une vulnérabilité sur le SI dépend de la fréquence des « scans » ou des audits de l’organisation, ou la connaissance parfaite du SI via une CMDB à jour. Ainsi, la fenêtre d’exposition apparaît naturellement à plusieurs niveaux quelle que soit la réactivité du service de gestion des vulnérabilités.
+
+ L’application d’un correctif nécessite une fenêtre de maintenance et un arrêt du service. Au mieux, ces fenêtres de maintenance sont prévues et planifiées, au pire, l’application de correctifs est interdite hors mode projet (notamment sur certains réseaux opérationnels et industriels). Par ailleurs, la planification et l’application d’un correctif, même dans le meilleur des cas, est extrêmement chronophage pour les équipes techniques.
+ 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Fenêtre d'exposition}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-vul-patchtime}{Fenêtre d'exposition}{01}{lbl_vul-patchtime}
+\end{frame}
+% end PRZ ===========================
+
+Tous les correctifs  pour une même vulnérabilités ne peuvent pas être déployés au même rythme sur tous les systèmes. La gestion des vulnérabilités se structure donc autour de la gestion des priorités basée sur les risques contextuels évalués sur la base  
+
+\begin{itemize}
+  \item du niveau de criticité de la vulnérabilité (c’est à dire ce que son exploit permet de réaliser ou d’obtenir – de nombreux services de veille s’appuient sur le Framework CVSS pour classer les vulnérabilités)
+  \item du niveau de criticité pour l’organisation des systèmes et services avérés vulnérables.
+\end{itemize}
+
+
+
+
+
+Il est important de disposer d'un accès à un service  de d'information (renseignement) sur les vulnérabilités et sur les Menaces (cf. CERT commercial) afin de de collecter et d’organiser le renseignement extérieur et de le croiser avec le renseignement issu de l’interne (détections, incidents, ...) afin d’identifier l'information prioritaire, de l’enrichir et de la diffuser vers les opérations de sécurité. 
+ 
+Un tel service peut être en mesure d’associer une vulnérabilité à un adversaire, à une phase d’attaque, et à une technique particulière employée dans cette phase d’attaque (Cf. Framework MITRE ATTACK facilite notamment un tel niveau de précision et d’analyse).
+
+%TODO Lien MITRE
+
+Il est ainsi possible de mettre en exergue les vulnérabilités exploitées par les adversaires et les campagnes jugées prioritaires  ciblant l’organisation. Cette information sur l’adversaire peut être alors disséminée à des équipes de gestion des vulnérabilités et utilisée pour prioriser l’application des correctifs.
+
 
 
 \subsection{Processus d’analyse/recherche des vulnérabilités}
+
+Avant de se lancer dans la dynamique classique des audits de sécurité (qui permettent de trouver des vulnérabilité), on peut positionner des mécanismes de recherches de vulnérabilités dans le cycle de vie d'un système sous la forme des différentes étapes des cycles V et V (Vérification et validation) d'un projet.
+
 % TODO les techniques pour recherches les vulnérabilités techniques (Stack Overflow)
 % TODO Le secteurs éconmoique de la vulnérabilité. (les failles une business line).
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Quand rechercher des vulnérabilités}
+% end header PRZ =======================
+\begin{itemize}
+  \item \textbf{Phase de conception} : recherche des défauts et fragilités de conception avec des techniques d'analyse de risque, de revue de conception avec des analyses de menaces
+  \item \textbf{Phase de développement} : pendant la phase de développement il existe de nombreux outils d'audit de code statique qui offre l'assistance au développeurs pour éviter les erreurs les plus classiques,
+  \item \textbf{Phase de validation} : dans cette phase, il est possible d'utiliser des techniques et méthodologies classiques d'audit de sécurité (Pentest, analyse de code, ...)
+  \item \textbf{Phase de vérification opérationnelle} en Pré-Production ou en production : dans cette phase c'est généralement de l'audit dynamique de type scan de vulnérabilité et tests d'intrusion.
+\end{itemize}
+\end{frame}
+% end PRZ ===========================
 
-\subsection{Processus d’évaluation des vulnérabilités}
+Contrairement à l’évaluation des vulnérabilités, un programme complet de gestion des vulnérabilités n’a pas de date de début ni de fin définie, mais constitue un processus continue.
 
-L'évaluation permet de définir l'impact d'une vulnérabilités sur les risques courus par l'entreprise.
+\subsection{Processus d’évaluation des vulnérabilités (Vulnerability Assessement)}
+
+%TODO la recherche de vulérabilité SERODIUM
+
+L'évaluation permet de définir l'impact d'une vulnérabilité sur les risques courus par l'entreprise dans une dynamique d'audit ponctuelle ou récurrente?..
 
 
 %=====================
@@ -101,20 +179,30 @@ L'évaluation permet de définir l'impact d'une vulnérabilités sur les risques
 
 %. Le vulnerability assessement
 
+
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Rechercher ses vulnérabilités}
+% end header PRZ =======================
 \upicture{../Tex/Pictures/img-vulsearch}{Rechercher ses vulnérabilités}{1}{lbl_vulcycle}
+\end{frame}
+% end PRZ ===========================
 
 %TODO Vulanrabilité SCAN automique versus SCNA de type Audit (scan ponctuelle)
 %TODO Pacth Management
 
 \subsection{Audit sécurité des vulnérabilités}
 
-\begin{enumerate}
-	\item Scan de vulnérabilités, permettant de manière automatisée à rechercher les vulnérabilités sur un système donné.
-	\item Audit technique et pentest
-\end{enumerate}
+Les audits de sécurité se conduisent souvent sur une base d'audit de vulnérabilités suivi de l'exploitation des ces vulnérabilités ou fragilités pour construire des scénarios plausibles et de caractériser des risques à forte probabilités ou fort impact.
+On distingue cependant :
+\begin{itemize}
+	\item les scans de vulnérabilités, permettant de manière automatisée à rechercher les vulnérabilités sur un système donné, et qui se base sur des bases de vulnérabilités connues
+	\item les audits techniques et pentest, qui peuvent se baser en premier lieu sur des scans pour identifier les vulnérabilités connues, mais qui travaille aussi sur la recherche de vulnérabilités.
+\end{itemize}
 
-\subsubsection{Scan de Vulnérabilités}
-Un processus nécessaire qui peut être utilisé de manière récurrente.
+%\subsubsection{Scan de Vulnérabilités}
+%Un processus nécessaire qui peut être utilisé de manière récurrente.
 
 \subsubsection{Scan de Vulnérabilités système}
 
@@ -125,7 +213,7 @@ Les vulnérabilités peuvent être découvertes à l'aide d'un scanner de vulné
 La correction des vulnérabilités peut impliquer de différentes manières l’installation d’un correctif, une modification de la stratégie de sécurité du réseau, la reconfiguration du logiciel ou la formation des utilisateurs à l’ingénierie sociale.
 
 
-\section{les audits}
+\section{Les audits}
 
 %=======================
 % Le pentest et l’audit
@@ -133,7 +221,7 @@ La correction des vulnérabilités peut impliquer de différentes manières l’
 
 \subsection{Types d'audit}
 % TODO Prendre les audits de type PASSI
-\subsubsection{Audit Organisationnelle}
+\subsubsection{Audit Organisationnel}
 \subsubsection{Audit technique}
 
 \subsection{Processus d'audit}
@@ -141,17 +229,12 @@ La correction des vulnérabilités peut impliquer de différentes manières l’
 \subsubsection{Audit ponctuels et campagnes}
 \subsubsection{Audit continu}
 
-
 % Conformité ISO PCI/DSS  GDPR
-
 
 %============================
 % Evaluation des Vulnérabilités 
 %--------------------------------------------------
-\section{La relation avec un CSIRT Interne }
-% Analyse de malware. (Un malware utilise des vulnérabilités, et l’analyse d’une attaque donne aussi les éléments pour comber les fragilités
 
-	Une méthodologie efficace de gestion des vulnérabilités comprend une équipe d’intervention en cas d’incident de sécurité informatique (CSIRT). Le CSIRT est responsable de la publication des avis de sécurité, de la tenue d'information régulières pour échanger sur les activités malveillantes et des dernières attaques du jour zéro, de la simplification et de la diffusion des alertes de sécurité et de l’élaboration de directives compréhensibles et efficaces en matière de réaction aux incidents pour tous les salariés. De cette manière, chacun seront en mesure de réagir aux indicateurs de compromis potentiels conformément aux pratiques recommandées par l'équipe CSIRT.
 
 
 

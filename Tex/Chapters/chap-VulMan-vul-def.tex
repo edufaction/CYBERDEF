@@ -14,72 +14,123 @@
 
 Quand nous parlons de vulnérabilités, nous parlons globalement des fragilités dans l’environnement du numérique de l’entreprise. Nous pouvons distinguer trois grands classes de fragilités :
 
+
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Fragilités HOT}
+% end header PRZ =======================
+
+\upicture{../Tex/Pictures/img-hot}{les types de vulnérabilités}{0.6}{lbl_vulhot}
+\end{frame}
+% end PRZ ===========================
+
 % Begin PRZ ===========================
 \begin{frame}
 \frametitle<presentation>{Fragilités HOT}
 % end header PRZ =====================
 \begin{itemize}
-\item Fragilités techniques, généralement dénommé vulnérabilités au sens ou ces fragilités rendent vulnérable tout ou partie d’un système. Pour rechercher ces vulnérabilités, on utilisera des techniques d’audit, de scan , de fuzzing ... Ce sont ces vulnérabilités informatiques et réseaux que nous présenterons en détail.
+\item Fragilités techniques, généralement dénommées vulnérabilités au sens ou ces fragilités rendent vulnérable tout ou partie d’un système. Pour rechercher ces vulnérabilités, on utilisera des techniques d’audit, de scan de fuzzing ... Ce sont ces vulnérabilités informatiques et réseaux que nous présenterons en détail.
 \item Fragilités humaines, généralement des déviances comportementales, détournement d’usage légitime, sensibilité à l’ingénierie sociale, vulnérabilités sociales ou physiologiques que l’attaquant pour utiliser. Ces fragilités sont détectables avec des audits (exemple tests mail phishing). Elles sont réduites par des mécanismes de formations et de sensibilisation, ainsi que dans certains cas des processus d’habilitation 
 \item Fragilités organisationnelles : Un attaquant peut utiliser des déficiences organisationnelles pour obtenir des éléments pour conduire son attaque (exemple : pas de processus de vérification d’identité lors de demande sensible par téléphone).
 \end{itemize}
 \end{frame}
 % end PRZ ===========================
 
-\upicture{../Tex/Pictures/img-hot}{les types de vulnérabilités}{0.6}{lbl_vulhot}
+
 
 Un attaquant utilisera bien entendu l’ensemble de ces fragilités pour conduire sa mission.
 
 Dans le domaine technique de cette sécurité numérique, une vulnérabilité ou faille est une faiblesse dans un système, permettant à un attaquant de porter atteinte à la fonction de ce système, c'est-à-dire à son fonctionnement normal, à la confidentialité et l'intégrité des données qu'il contient.
 
-Ces vulnérabilités sont la conséquence de faiblesses dans la conception, le déploiement, la mise en œuvre ou l'utilisation d'un composant matériel ou logiciel du système. 
+Ces vulnérabilités sont la conséquence de faiblesses dans la conception, le développement, le déploiement, la mise en œuvre ou l'utilisation d'un composant matériel ou logiciel du système. 
 
 Il ya trois grandes classes de faiblesses ou vulnérabilités numériques :
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Zoom Fragilités TECHNIQUES}
+% end header PRZ =======================
 \begin{itemize}
 \item \textbf{Failles de configuration} ou de défaut d’usage (utilisation d’un système en dehors de ses zones de fonctionnement stable et maitrisé)
-\item \textbf{Failles Logicielles } : Failles de développement, de programmation qui conduisent généralement de l'exploitation de bugs logiciels. Il faut distinguer les logiciels développés de manière dédiée, et les logiciels dits sur étagère.`
-Les dysfonctionnements des logiciels sur étagère (éditeurs logiciels) sont en général corrigés à mesure de leurs découvertes, mais il y a un délai entre le moment de la découverte et la correction.
-\item \textbf{Failles de conception} : Failles issus de défaut de conception. Ces failles sont souvent liées à des failles protocolaires issues de faille de conception d'un protocole de communications, ou de format de données.
+\item \textbf{Failles Logicielles } : Failles de développement, de programmation qui conduisent généralement de l'exploitation de bugs logiciels. Il faut distinguer les logiciels développés de manière dédiée, et les logiciels dits sur étagère,
+Les dysfonctionnements des logiciels sur étagère (éditeurs logiciels) sont en général corrigés à mesure de leurs découvertes, mais il y a un délai entre le moment de la découverte et la correction,
+\item \textbf{Failles de conception} : Failles issues de défaut de conception. Ces failles sont souvent liées à des failles protocolaires issues de faille de conception d'un protocole de communication, ou de formats de données.
 \end{itemize}
+\end{frame}
+% end PRZ ===========================
 
 %%%%%%%%
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Groupes de failles}
+% end header PRZ =======================
 Nous pouvons décomposer les failles dites logicielles, en deux groupes 
 \begin{itemize}
-\item Les failles des logiciels ou codes sur mesures, développé dans l'entreprise ou par un tiers mais non édité en tant que logiciel indépendant. Nous pouvons y inclure tous les codes logiciels développés en interne.
-\item Les failles logicielles de produits ou codes connus, reconnus souvent dénommées progiciels (produits logiciels). On peut aussi y distinguer deux sous classes les logiciels où les sources sont accessibles, et les codes dits fermés ou l'utilisateur ne dispose que du code binaire executable. Nous verrons que les démarches de recherche de failles dans ces deux types de code sont un peu différentes.
+\item Les failles des logiciels ou \textbf{codes sur mesure}, développés dans l'entreprise ou par un tiers mais non édité en tant que logiciel indépendant. Nous pouvons y inclure tous les codes logiciels développés en interne.
+\item Les failles logicielles de produits ou codes connus, reconnus souvent dénommées \textbf{progiciels} (produits logiciels). On peut aussi y distinguer deux sous classes les logiciels où les sources sont accessibles, et les codes dits fermés ou l'utilisateur ne dispose que du code binaire executable. Nous verrons que les démarches de recherche de failles dans ces deux types de code sont un peu différentes.
 \end{itemize}
 
+\end{frame}
+% end PRZ ===========================
+
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Typologie de failles}
+% end header PRZ =======================
 \upicture{../Tex/Pictures/img-vul-types}{Les types de vulnérabilités}{1}{lbl_vultypes}
+\end{frame}
+% end PRZ ===========================
 
-Quand on parle de fragilités, il n'y pas que les failles de conception ou de développement, mais aussi des failles de configuration des systèmes d'information.
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{AllowAll vs DenyAll}
+% end header PRZ =======================
+Quand on parle de fragilités, il n'y pas que les failles de conception ou de développement. Les failles de configuration des systèmes d'information représentent encore une grande partie fragilités utilisées par les attaques.
+On trouve encore des administrateurs système qui utilisent dans les outils de filtrage la règle :
 
-La recherche et découverte de ces vulnérabilités utilisent des outillages un peu différent. On distingue donc : 
+\begin{notebox}{AllowAll vs DenyAll}
+Tout est autorisé sauf ce qui est interdit (\textbf{Allow All })
+plutôt que de respecter le concept de base de la sécurité 
+tout est interdit (\textbf{Deny All}) sauf ce qui est autorisé.
+\end{notebox}
+
+\end{frame}
+% end PRZ ===========================
+
+
+La recherche et la découverte de ces vulnérabilités utilisent donc des outillages un peu différents. On distinguera donc : 
 
 \begin{itemize}
-  \item les failles systèmes
-  \item les failles applicatives 
+  \item les failles systèmes et de configuration,
+  \item les failles dans le développement, dites failles applicatives.
  \end{itemize}
-
-
-
-% mettre un digramme sur les délais de parution des failles, et de la correction 
-%c’est pourquoi il est important de maintenir les logiciels à jour avec les correctifs fournis par les éditeurs de logiciels.
 
 \subsection{Exemples de vulnérabilités}
 
 A titre d'exemple et d'illustration je vous propose d'examiner rapidement des vulnérabilités techniques : deux failles de conception  et  une de programmation.
 Nous ne rentrerons pas dans les détails des vulnérabilités. Ce chapitre a pour objectif de présenter concrètement ce qu'est une vulnérabilité, sur la base d'exemples simples.
 
+\begin{warningbox}{Exemples et cas typiques}
+Les exemples de vulnérabilités tant en développement qu'en configuration et les moyens de les couvrir sont de bon sujets pour les fiches TECHNO dans le cadre des travaux demandées.
+\end{warningbox}
+
 % voir : https://beta.hackndo.com/la-faille-xss/
 
-La  majorité des failles informatiques du domaine du Web et des applications sur mesures est due à une utilisation non prévue de l'applicatif. Un utilisateur peut envoyer une information plus longue que prévue (buffer overflow), ou une valeur non gérée (négative, quand le logiciel attend une valeur positive), ou quand il ajoute des symboles non attendus (des guillemets, caractères spéciaux alors qu'il était prévu seulement des lettres), si les vérifications des données ne sont pas faites correctes, alors le logiciel, programme ou l’application peut être détournée. \\
+La  majorité des failles informatiques du domaine du Web et des applications sur mesures est due à une utilisation non prévue de l'applicatif. Un utilisateur peut envoyer une information plus longue que prévue (buffer overflow), ou une valeur non gérée (négative, quand le logiciel attend une valeur positive), ou quand il ajoute des symboles non attendus (des guillemets, caractères spéciaux alors qu'il était prévu seulement des lettres), si les vérifications des données ne sont pas faites correctes, alors le logiciel, programme ou l’application peut se mettre dans un état qui, dans certains cas, peut être détournée.
 
 \subsubsection{Faille type XSS}
 
 Si nous prenons par exemple, un code qui affiche une image avec un titre, que ce titre d'image soit saisi par un utilisateur et qu'aucun contrôle ne soit fait. Dans l'application, l'affichage se fait par un code PHP du style : \\
 
+
+% Begin PRZ ===========================
+\begin{frame}[containsverbatim]
+\frametitle<presentation>{Faille, type XSS}
+\framesubtitle<presentation>{Exemple}
+% end header PRZ =======================
 %---------------------------------------------------
 \begin{lstlisting} [language=php,morekeywords={readtitle,readimage}]
 <?php ...
@@ -100,7 +151,17 @@ et permet de générer le code HTML suivant : \\
 ...</html>
 \end{lstlisting}
 %---------------------------------------------------
+\end{frame}
+% end PRZ ===========================
 
+
+
+
+% Begin PRZ ===========================
+\begin{frame}[containsverbatim]
+\frametitle<presentation>{Faille, type XSS}
+\framesubtitle<presentation>{Exemple}
+% end header PRZ =======================
 Un utilisateur malveillant pourrait avoir saisi autre chose qu'un simple titre, et faire en sorte que la variable \textbf{\$tittle} puisse contenir une chaine de caractère un peu particulière. Le pirate aura entré, par exemple, comme titre de sa photo sur ce site un peu faible, une chaine comme  : \\
 \g{\verb!un titre de mon image/"><script>...scriptmalveillant...;</script>!}
 \\
@@ -112,11 +173,17 @@ Un utilisateur malveillant pourrait avoir saisi autre chose qu'un simple titre, 
 </html>
 \end{lstlisting}
 %---------------------------------------------------
+
+\end{frame}
+% end PRZ ===========================
+
+
+
 L'exécution du script javascript malveillant se fera à la lecture de cette page générée. Si cette donnée et stockée sur un serveur, l'action sera effective pour toute les personnes qui consulteront l'image avec son titre piégé par un script malveillant.
 
 \subsubsection{Faille type SQL Injection}
 
-Nous allons rapidement explorer un grand classique des vulnérabilités sur les application de sites Web sur Internet : l'injection SQL. Le principe est d'injecter dans une requête SQL (langage d'interrogation de base de données), utilisée dans un application PHP par exemple. Supposons que dans l'application, la requête suivante soit utilisée : \\
+Nous allons rapidement explorer un grand classique des vulnérabilités sur les applications de sites Web sur Internet : l'injection SQL. Le principe est d'injecter dans une requête SQL (langage d'interrogation de base de données), utilisée dans un application PHP par exemple. Supposons que dans l'application, la requête suivante soit utilisée : \\
 %---------------------------------------------------
 \begin{lstlisting} [language=SQL]
 SELECT fieldlist
@@ -143,7 +210,7 @@ SELECT fieldlist
     ([shift={(3pt,-0.65ex)}]pic cs:enda); 
 \end{tikzpicture} 
 %---------------------------------------------------
-L'exécution de cette requête var générer un erreur, et en fonction de la gestion des erreurs du code PHP, l'utilisateur pourra apercevoir que cette requête a provoqué une erreur d'exécution. Ceci permet à l'utilisateur de rapidement déterminer que le code est sensible à une attaque par injection SQL. Il peut alors à loisir trouver la meilleur manière de l'exploiter, en entrant un email forgé avec une chaine plus malicieuse.\\
+L'exécution de cette requête va générer une erreur, et en fonction de la gestion des erreurs du code PHP, l'utilisateur pourra apercevoir que cette requête a provoqué une erreur d'exécution. Ceci permet à l'utilisateur de rapidement déterminer que le code est sensible à une attaque par injection SQL. Il peut alors à loisir trouver la meilleur manière de l'exploiter, en entrant un email forgé avec une chaine plus malicieuse.\\
 
 La chaine \g{\verb!OU 'x' = 'x'! } étant toujours VRAI, on pourrait obtenir des informations complètes de certaines tables.
 Bien entendu, l'usage de vulnérabilité SQL injection n'est généralement pas trivial, mais avec un peu d'habitude, il est possible de construire des attaques sophistiquées sur des codes vulnérables.\\
@@ -167,18 +234,15 @@ SELECT fieldlist
 \subsubsection{vulnérabilités WEB}
 
 Vous trouverez sur le site \link{https://www.owasp.org}{Open Web Application Security Project}, le top TEN des vulnérabilités découvertes sur les sites WEB
-et pour ceux qui souhaitent creuser un peu plus, il existe de nombreux sites présentant en détail des vulnérabilités et des manières de les exploiter (à des fins pédagogiques!). Par exemple, le site de \link{https://beta.hackndo.com}{Pixis (Hackndo)} vous donnent quelques partages particuliers d'un Ethical hacker.
-
+et pour ceux qui souhaitent creuser un peu plus, il existe de nombreux sites présentant en détail des vulnérabilités et des manières de les exploiter (à des fins pédagogiques!). Le site de \link{https://beta.hackndo.com}{Pixis (Hackndo)}, par exemple, vous donne quelques partages particuliers d'un Ethical hacker.
 
 \subsection{Faille de programmation}
 
 %SMB etherblue
-
-On peut trouver des vulnérabilités dans des produits et services très connus, et déployés depuis très longtemps.
-
-\upicture{../Tex/Pictures/img-smbfaille}{Tempo faille SMB - google}{0.7}{lbl_faillesmb}
-Parmi les vulnérabilités les plus célèbres, la classe de vulnérabilités du protocole SMB en version 1, est celle qui continue encore a faire des victimes.
+On peut trouver des vulnérabilités dans des produits et services très connus, et déployés depuis très longtemps. 
+Parmi ces vulnérabilités les plus célèbres (voir figure~\ref{lbl_faillesmb}), la classe de vulnérabilités du protocole SMB en version 1, est celle qui continue encore a faire des victimes.
 Le protocole SMB (Server Message Block) est un protocole permettant le partage de ressources (fichiers et imprimantes) sur des réseaux locaux avec des PC sous Windows. Sa version 1 du protocole SMB, vulnérable à la faille EternalBlue.
+\upicture{../Tex/Pictures/img-smbfaille}{Tempo faille SMB - google}{0.7}{lbl_faillesmb}
 
 Dans la base de données du système CVE on retrouve l’identifiant de cette vulnérabilité : \textbf{CVE-2017-0144}. 
 
@@ -190,9 +254,7 @@ Il arrive que la procédure d'exploitation d'une faille d'un logiciel soit  docu
 
 \subsection{vulnérabilités et divulgation}
 
-%%%%%%%%%
- La divulgation publique des vulnérabilités  est soumise un modèle de divulgation de vulnérabilité dans lequel une vulnérabilité ou un problème est révélé uniquement après une période permettant à la vulnérabilité ou au problème d'être corrigée ou corrigée. Cette période distingue le modèle de la divulgation complète.
- 
+ La divulgation publique des vulnérabilités  est soumise à un modèle de divulgation de vulnérabilité dans lequel une vulnérabilité ou un problème est révélé uniquement après une période permettant à la vulnérabilité ou au problème d'être corrigée ou corrigée. Cette période distingue le modèle de la divulgation complète.
  
 Tout fournisseur de logiciels de sécurité, de services et de recherches de vulnérabilité, se doit de prendre des précautions vis à vis de vulnérabilités découvertes, en particulier les délais de publication. On parle généralement de \UKword{Vulnerability Disclosure Policy}.
 
@@ -204,9 +266,22 @@ Par ailleurs, la confidentialité des découvertes est généralement requise lo
 
 Dans un mode publique avec mode de divulgation de vulnérabilités ouverts les experts en sécurité  s'attendent à être indemnisés financièrement, mais avec le risque que signaler ces vulnérabilités au fournisseur avec l'exigence d'une indemnisation soit considéré comme une extorsion. 
 
-Un marché des vulnérabilités s'est développé \link{https://zerodium.com}{Zerodium} \uref{lbl_zerodium}, mais la commercialisation des vulnérabilités reste un sujet très controversé lié au concept de divulgation des vulnérabilités.   C'est normalement dans le rôle de CERT d'assurer cette coordination des divulgations.
+Un marché des vulnérabilités s'est développé \link{https://zerodium.com}{Zerodium} \uref{lbl_zerodium}, mais la commercialisation des vulnérabilités reste un sujet très controversé lié au concept de divulgation des vulnérabilités.   C'est normalement dans le rôle d'un CERT d'assurer cette coordination des divulgations.
 
-\upicture{../Tex/Pictures/zerodium}{Le marché des failles mobiles avec Zerodium}{1}{lbl_zerodium}
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{zerodium}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/zerodium}{Le marché des failles mobiles avec Zerodium}{0.7}{lbl_zerodium}
+\end{frame}
+% end PRZ ===========================
+
+
+\begin{warningbox}{Le marché des vulnérabilités}
+Le marché des failles de sécurité est un marché particulier dans lequel des hackers de toute natures trouvent le moyen de financer leurs activités de R\&D et de hacking. Les grands éditeurs commerciaux et libres y trouvent leur comptent. C'est un sujet interessant pour un mémoire technique. 	
+\end{warningbox}
+
 
 
 

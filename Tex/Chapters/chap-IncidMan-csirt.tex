@@ -1,13 +1,31 @@
 %TODO Rewrite
 \section{CERT et CSIRT}
 
-Dans bien des entreprise, il y a des moments où il est indispensable de faire intervenir des équipes experts externes.  Ces équipes fournissent une assistance d'expertise en fonction de l’étendue et de la gravité de l’incident et de la charge nécessaire à sa remédiation.
+\subsection{un peu d'histoire}
+un peu d'histoire, dans les années 80, au coeur du réseau IP les plus célèbre ARPANET, un étudiant de CORNELL UNIVERSITY implanta, sur le réseau, un ver  qui se propageait, se répliquait et exploitait les failles de sécurité UNIX de l’époque. Afin d’exterminer ce ver internet, une équipe d’analyse, en compagnie d’experts MIT, a été créée pour identifier et corriger les failles d’une part, et d’autre part développer des solutions d’éradication. A la suite de cet incident, le DARPA (Defense Advanced Research Projects Agency), maitrise d’ouvrage d’ARPANET, décida la mise en place d’une structure dédiée, le CERT coordination Center, pour résoudre tous types d’incidents sécurité. Le terme CERT est le plus utilisé et le plus connu mais il s’agit d’une marque américaine qui appartient à l’université Carnegie Mellon. Les CSIRT peuvent demander l’autorisation d’utiliser le nom de « CERT ». Aujourd’hui, environ 80 CSIRT sont affiliés et autorisés à utiliser cette marque CERT.
+
+Ces CSIRTs peuvent être internes à l'entreprise ou externes de type publique ou commercial.
+
+Dans bien des entreprise, il y a des moments où il est indispensable de faire intervenir des équipes experts externes généralement nécessaires pour faire face à une crise évoluant rapidement. Ces équipes fournissent une assistance d'expertise en fonction de l’étendue et de la gravité de l’incident et de la charge nécessaire à sa remédiation.
 
 Ces équipes de type CSIRT peuvent rapidement apporter les ressources et l’expertise adapté au contexte de l'incident.
 
-% Parler de la reconstrucgtion d'AD) 
+ Mais il y a beaucoup à faire par retirer tous les bénéfices de ce type de services. Et cela commence par une compréhension claire de la manière dont fonctionne le processus de réponse aux incidents, et ce que l’on attend d’une équipe externe dans une telle situation.
+ 
+ % Parler de la reconstrucgtion d'AD) 
+ 
+  \subsection{Les missions d’un CSIRT,}
+ Les missions d’un CSIRT sont nombreuses, mais il est intéressants de prendre les 5 principales définies par le CERTA (CERT de l'Administration Française).
 
-généralement nécessaires pour faire face à une crise évoluant rapidement. Mais il y a beaucoup à faire par retirer tous les bénéfices de ce type de services. Et cela commence par une compréhension claire de la manière dont fonctionne le processus de réponse aux incidents, et ce que l’on attend d’une équipe externe dans une telle situation.
+\begin{itemize}
+  \item Centralisation des demandes d’assistance suite aux incidents de sécurité (attaques) sur les réseaux et les systèmes d’informations : réception des demandes, analyse des symptômes et éventuelle corrélation des incidents ;
+  \item Traitement des alertes et réaction aux attaques informatiques : analyse technique, échange d’informations avec d’autres CSIRT, contribution à des études techniques spécifiques ;
+  \item Etablissement et maintenance d’une base de données des vulnérabilités ;
+  \item Prévention par diffusion d’informations sur les précautions à prendre pour minimiser les risques d’incident ou au pire leurs conséquences ;
+  \item Coordination éventuelle avec les autres entités (hors du domaine d’action) : centres de compétence réseaux, opérateurs et fournisseurs d’accès à Internet, CSIRT nationaux et internationaux.
+\end{itemize}
+
+
  
  \subsection{Phase d'analyse}
 
@@ -46,3 +64,24 @@ Contrôle et remédiation
 L’équipe responsable de la remédiation travaille souvent en tandem avec l’équipe chargée de l’investigation, selon Aldridge. « Nous avons deux flux de travail. Le premier est lié à l’enquête et vise à identifier quels systèmes, comptes et données ont été compromis ; le second touche à la remédiation ». Et dès que la première équipe trouve des éléments relatifs à l’incident, elle les transmet à la seconde qui travaille avec le client à la mise en œuvre des mesures correctrices.
 
 Mais discrétion peut s’avérer essentielle. Pour Strickland, il n’est pas question de laisser les attaquants savoir que l’on est sur leurs traces : « il est très important de comprendre ce qui se passe avant d’effectuer des changements drastiques ».
+
+
+
+\subsection{Création de son équipe CSIRT}
+
+Quelles sont les motivations pour créer un CSIRT dans son entreprise : 
+
+\begin{itemize}
+  \item Une augmentation exponentielle du nombre d’incidents sécurité
+  \item Une augmentation du nombre et type d’organisations affectées par des incidents sécurité
+  \item Un focus de la part des entreprises sur le besoin de politiques sécurité dans le cadre de leur management du risque
+  \item Nouvelles lois et régulations impactant les entreprises en terme de protection des données
+  \item Réaliser que les administrateurs systèmes et réseaux ne peuvent pas protéger l’entreprise à eux seuls
+\end{itemize}
+
+Un CSIRT est composé de plusieurs experts dans différents domaines de la sécurité (intrusions, forensics, malwares, crytpo, etc..) qui préviennent mais surtout réagissent en cas d’incident. Ces experts sont en constante mise à jour des nouveaux vecteurs d’attaques (nouveaux malwares, nouvelles vulnérabilités), tout ceci afin de traiter les incidents de la manière la plus aboutie qui soit. Une véritable équipe CSIRT dans une entreprise à un coût non négligeable, il convient d'en étudier les modalités de de fonctionnement et de couverture.
+
+
+\begin{notebox}{Création d'un CSIRT}
+La création d'un CSIRT dans son entreprise, n'est pas chose facile, c'est un vrai sujet de RSSI dans le sens ou des choix sont a faire tant sur les compétences, les moyens, les procédures de travail. C'est un vrai sujet de mémoire pour la fiche techno.
+\end{notebox}

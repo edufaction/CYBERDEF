@@ -7,41 +7,72 @@
 
 \section{CVE, CVSS et CWE}
 
-%TODO CVE a quoi cela sert il 
 
-\upicture{../Tex/Pictures/img-cvecwe}{Quelques concepts de gestion sur les vulnérabilités}{0.9}{lbl_cvecwe}
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Common Vulnerabilities \& Weakness}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-cvecwe}{Quelques concepts de gestion sur les vulnérabilités}{0.8}{lbl_cvecwe}
+\end{frame}
+% end PRZ ===========================
 
 
 \subsection{Common Vulnerabilities and Exposure (CVE)}
 
-De nombreuses vulnérabilités sont découvertes chaque année dans des produits et logiciels. Les informations techniques sur ces vulnérabilités permet de les détecter, et de les caractériser. il était important dans le monde des technologies de l'information qu'elles puissent être identifiées et décrites de manière unique, accessibles à tous.
+De nombreuses vulnérabilités sont découvertes chaque année dans des produits et logiciels. Les informations techniques sur ces vulnérabilités permet de les détecter, et de les caractériser. il était important dans le monde des technologies de l'information qu'elles puissent être identifiées et décrites de manière unique, et que ces caractérisations soient accessibles à tous.
 
 L’objectif fondamental de la création du CVE est de constituer un dictionnaire qui recense toutes les failles avec une description succincte de la vulnérabilité, ainsi qu’un ensemble de liens que les utilisateurs peuvent consulter pour plus d’informations. Cette base  est proposée pour consultation et reste maintenue par le Mitre Corporation.  Cet organisme à but non lucratif américaine a pour  l'objectif est de travailler dans des domaines technologique comme l'ingénierie des systèmes, les technologies de l'information, la sécurité. 
 
 
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{MITRE et codification}
+% end header PRZ =======================
 \UKword{ Common Vulnerabilities and Exposures} ou CVE est une base de données (Dictionnaire) des informations publiques relatives aux vulnérabilités de sécurité. Le dictionnaire est maintenu par l'organisme MITRE.  Les identifiants CVE sont des références de la forme CVE-AAAA-NNNN 
  
  Pour consulter les CVE,  il suffit de se rendre sur \link {https://www.cve.mitre.org}{CVE.mitre.org}
 
+\end{frame}
+% end PRZ ===========================
 
 \subsection{Common Vulnerability Scoring System (CVSS)}
 
 Bien entendu, disposer d'un identifiant d'une vulnérabilité est important, mais  un gestionnaire de sécurité dans l'entreprise, doit aussi disposer d'élément pour juger de la gravité de cette vulnérabilité. 
 
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{CVSS}
+% end header PRZ =======================
 Le  \UKword{Common Vulnerability Scoring System (CVSS) à sa version 3} issu des travaux du  \link{https://www.first.org/cvss/}{FIRST, Forum of Incident Response and Security Teams}, est un cadre méthodologique permettant d'évaluer en particulier la criticité d'une vulnérabilité.
+\end{frame}
+% end PRZ ===========================
 
 %https://www.advens.fr/fr/ressources/blog/regard-critique-sur-cvss
 
 C'est un système permettant de calculer une note évaluant la criticité d'une vulnérabilité, et de construire une chaine de caractères (un vecteur) présentant les caractéristiques de cette vulnérabilité, et les critères utilisés pour ce calcul.
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Cotation CVSS}
+\framesubtitle<presentation>{Vecteur}
+% end header PRZ =======================
 Les notes et vecteurs CVSS sont toujours le résultat de trois groupes de critères d'évaluation (\g{Base}, \g{Temporal} et \g{Environnemental}) ayant chacun leur note ainsi que leur vecteur :
 \begin{itemize}
   \item Le groupe des critères de\textbf{ \g{Base}} évalue l'impact maximum théorique de la vulnérabilité.
   \item Le groupe des critères\textbf{ \g{Temporel}  }pondère le groupe \g{Basic} en prenant en compte  l'évolution dans le temps de la menace liée à la vulnérabilité  (par exemple, l'existence d'un programme d’exploitation ou d'un correctif).
   \item Le groupe des critères\textbf{ \g{Environnemental} }pondère le groupe \g{Temporel} en prenant en compte les caractéristiques de la vulnérabilité pour un Système d'Information donné.
 \end{itemize}
+\end{frame}
+% end PRZ ===========================
 
 %https://www.cert-ist.com/public/fr/SO_detail?format=html&code=cvss%20v3
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Cotation CVSS}
+\framesubtitle<presentation>{criticité}
+% end header PRZ =======================
 La richesse du modèle apport une complexité dans sa lecture rapide, toutefois globalement, on peu lire un score CVSS en terme de criticité avec la grille de lecture suivante :
 
 \begin{itemize}
@@ -49,23 +80,26 @@ La richesse du modèle apport une complexité dans sa lecture rapide, toutefois 
   \item Un score de 4 à 6.9 correspond à une criticité moyenne
   \item Un score de 7 à 10 correspond à une criticité haute
 \end{itemize}
+\end{frame}
+% end PRZ ===========================
 
 
 \subsection{Common Weakness Enumeration (CWE)}
 
- L'Énumération des faiblesses ordinaires c'est ainsi qu'il faudrait traduire CWE publié par le \link{http://cwe.mitre.org}{MITRE} qui listent  par ailleurs, le top 25 des  erreurs de programmation dangereuses et fréquentes. 
+ L'Énumération des faiblesses ordinaires c'est ainsi qu'il faudrait traduire CWE publié par le \link{http://cwe.mitre.org}{MITRE}  est un site qui listent par ailleurs, le top 25 des  erreurs de programmation dangereuses et fréquentes. 
 En effet, les  développeurs font souvent les mêmes erreurs.
-La plupart des vulnérabilités applicatives viennent d'une poignée d'erreurs bien connues, qui reviennent régulièrement et pour lesquelles les adapter n'ont qu'à adapter des attaques existantes.
+La plupart des vulnérabilités applicatives viennent de quelques erreurs bien connues, qui reviennent régulièrement et pour lesquelles les adapter n'ont qu'à adapter des attaques existantes.
 C'est le but de la CWE (Common weakness Enumeration) que de recenser les erreurs de programmation commises. 
 On y retrouve des grands classiques, comme la validation des champs d'un formulaire, la célèbre injection SQL, les problèmes de gestion du système, les contrôles d'accès mal gérés, les tests réalisés par le client plutôt que par le serveur...
 Le but du top 25 est d'attirer l'attention des programmeurs sur leurs propres erreurs les plus courantes, mais également de faire réfléchir les formateurs : trop souvent, ces problèmes courants sont oubliés des cours de programmation et de sécurité. Après une brève présentation de chaque problème, la CWE propose des principes généraux pour l'éviter ; le tout est clarifié autant que possible et devrait être compréhensible avec un peu d'effort par la plupart des développeurs. On explorera un peu plus ces éléments dans le chapitre sur la sécurité applicative.
+
 En 2019, les 3 premières faiblesses ordinaires ont été : 
 
-\begin{enumerate}
+\begin{itemize}
   \item CWE-119	Improper Restriction of Operations within the Bounds of a Memory Buffer	à 75.56\%
   \item CWE-79	Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')	à 45.69\%
   \item CWE-20	Improper Input Validation à 43.61\%
-\end{enumerate}
+\end{itemize}
 
 
 
