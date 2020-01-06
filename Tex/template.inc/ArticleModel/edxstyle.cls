@@ -168,7 +168,7 @@
 %----------------------------------------------------------------------  
 
 \RequirePackage{enumitem}
-%\setlist{nolistsep} % Uncomment to remove spacing between items in lists (enumerate, itemize)
+%\setlist{nolistsep} % Uncomment to remove spacing between items in lists (itemize, itemize)
 
 %-----------------------------------------------
 %	ABSTRACT+AUTHOR FRAME
