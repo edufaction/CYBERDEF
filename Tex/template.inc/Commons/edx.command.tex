@@ -22,6 +22,16 @@
 }
 
 %-----------------------------------------------------
+%										 	\includer 
+%---------------------------------------------------
+
+\newcommand{\includer}[1]
+{
+\input{../Tex/Chapters/#1}
+}
+
+
+%-----------------------------------------------------
 %  command DEF : InTextx
 %-----------------------------------------------------
 \newcommand\InTexta{no text}
@@ -85,6 +95,21 @@ title=#2,#1}
 %											\upicture 
 %---------------------------------------------------
 
+
+\ifdefined\PRZMODE
+
+\newcommand{\upicture}[4]{
+\framesubtitle{#2}
+%\begin{figure}[!h] %h
+  \begin{center}
+	 \includegraphics[height=0.95\textheight, width=0.95\textwidth, keepaspectratio ]{#1.pdf}
+  \end{center}
+%  \end{figure}
+}
+
+\else
+
+
 \newcommand{\upicture}[4]{
 \begin{figure}[!h] %h
   \begin{center}
@@ -93,6 +118,9 @@ title=#2,#1}
 \caption{#2 \label{#4}}
 \end{figure}
 }
+	
+	
+\fi
 
 
 %-----------------------------------------------------

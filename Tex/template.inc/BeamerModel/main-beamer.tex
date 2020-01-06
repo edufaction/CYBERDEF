@@ -1,5 +1,5 @@
 %===========================
-%               COURS "CYBERDEF"
+% COURS "CYBERDEF"
 % Template Beamer
 %===========================
 %             Décembre 2019
@@ -34,13 +34,11 @@
 
 
 \input{../Tex/template.inc/Commons/edx.packages.tex}
-%\input{../Tex/template.inc/edx.packages.art.tex}
 \input{../Tex/template.inc/Commons/edx.command.tex}
-%\input{../Tex/template.inc/edx.command.art.tex}
 
 
 
-% a charcher aprés hyperref, pouavoir les guillemets sous beamer
+% a charger après hyperref, pour avoir les guillemets sous beamer
 \usepackage{ae}
 \usepackage{aecompl}
 
@@ -49,7 +47,7 @@
 
 
 %-------------------------------------------------------
-% Optional: a subtitle to be dispalyed on the title slide
+% Optional: a subtitle to be displayed on the title slide
 \title[\ushorttitle]{\utitle}
 %\subtitle{\utitleshort}
 
@@ -57,7 +55,8 @@
 % The author(s) of the presentation:
 %  - again first a short version to be displayed at the bottom;
 %  - next the full list of authors, which may include contact information;
-\author[\uauthortwitter]{ \uauthor \\ \medskip {\small \url{\umaila} \and \url{\umailb}\\ {\small \url{\usitea}}}}
+
+\author[\uauthortwitter]{ \LARGE{\uauthor} \\ \medskip {\small \url{\umaila} \and \url{\umailb}\\ {\small \url{\usitea}}}}
 
 %-------------------------------------------------------
 % The institute:
@@ -77,24 +76,32 @@
 
 %++++++++++++++++++++++++++++++++
 \begin{document}
-\begin{frame}[plain]
 
+
+%================================
+\begin{frame}[plain]
  					\begin{figure}
   					 \centering
    						 \includegraphics[width=0.4\textwidth]{../Tex/template.inc/Commons/CommonsPictures/cnambretagne.pdf}\\
 				  \end{figure}
-
 				  				\titlepage
 \end{frame}
+%================================
+
+
+%================================
 \begin{frame}
  \frametitle{Sommaire}
       \begin{multicols}{2}
          \tableofcontents[hideallsubsections]
      \end{multicols}
  \end{frame}
+ %================================
+ 
  %\tableofcontents
 
 % ubody main defined in *.notes.tex
+
 \mode<all>{\ubody}
 
 %-------------------------------------------------------
@@ -107,6 +114,7 @@
   					 \centering
    						 \includegraphics[width=0.2\textwidth]{../Tex/template.inc/Commons/CommonsPictures/cyberdef101.pdf}\\
 				  \end{figure}
+				 	 \centering \textit{Tous les documents publiés dans le cadre de ce cours sont perfectibles, \\ne pas hésiter à m'envoyer vos remarques !}
  \end{frame}
 %-------------------------------------------------------
 % Contributions

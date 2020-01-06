@@ -1,7 +1,10 @@
 %===========================
 % COURS "CYBERDEF"
-% Fichier de structure des articles
+% Template Article
 %===========================
+%             Décembre 2019
+% (c) DUPUIS Eric eric.dupuis@cnam.fr
+%==========================
 
 \documentclass[11pt,fleqn,twoside]{../Tex/template.inc/ArticleModel/edxstyle} 
 
@@ -13,13 +16,9 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
-
-
-%\input{../Tex/template.inc/ArticleModel/edx.article.cls.tex}
 \input{../Tex/template.inc/Commons/edx.packages.tex}
 \input{../Tex/template.inc/Commons/edx.command.tex}
 \input{../Tex/template.inc/Commons/edx.styles.tex}
-
 
 %-------------------------------------------------
 %	BIBLIOGRAPHY
@@ -28,10 +27,6 @@
 \usepackage{enumitem}
 \addbibresource{../tex/bibliography.bib} % BibTeX bibliography file
 \defbibheading{bibempty}{}
-
-
-
-
 
 %-------------------------------------------------
 %	COLORS & BORDERS
@@ -44,12 +39,10 @@
 % ITEMS DEFINITION
 %-------------------------------------------------
 
-%++++++++++++++++++++++++++++++
-
 \setlist [itemize,1]{label=\color{color1}\faCaretRight }
+
+
 \begin{document}
-
-
 
 %-------------------------------------------------
 %	ARTICLE INFORMATION
@@ -67,31 +60,27 @@
 \newcommand{\keywordname}{Mots clefs} % Defines the keywords heading name
 
 %-------------------------------------------------
-%	Old article
+%	MAKE TITLE
 %-------------------------------------------------
-
 
 \maketitle
 
 \begin{tikzpicture}[remember picture,overlay]\node at (current page.north west)[xshift=4cm, yshift=-4cm, text opacity=1.0]{\includegraphics[width=0.1\paperwidth]{../Tex/template.inc/Commons/CommonsPictures/shield-20.pdf}}; 
 \end{tikzpicture} 
 
-
-
 %-------------------------------------------------
 \ubody % MAIN BODY defined external
 %-------------------------------------------------
 
-\printbibliography
-
-\newpage
-
-\Ucontribute
-
-\newpage
-\tableofcontents 
-\listoffigures  
-%\listoftables
-
+	\printbibliography
+	\newpage
+	
+%-------------------------------------------------	
+\Ucontribute % Contribution TEXT
+%-------------------------------------------------
+	
+	\newpage
+	\tableofcontents 
+	\listoffigures  
 
 \end{document}

@@ -5,6 +5,7 @@
 % File : chap-Vulman-gest.tex
 %--------------------------------------
 \uchap{Introduction sur les vulnérabilités, chapitre 3.1}
+\uchap{\jobname}
 %_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 \section{Gérer ses vulnérabilités}
@@ -74,11 +75,6 @@ Un chapitre de la norme c parle de Veille de la vulnérabilités, que nous pouvo
 % end PRZ ===========================
 
 
-
-
-
-%
-%
 %C'est un processus intégré à la gouvernance de la sécurité.
 
 
@@ -93,7 +89,7 @@ Un chapitre de la norme c parle de Veille de la vulnérabilités, que nous pouvo
 %Une fois les évaluations de vulnérabilité effectuées, il est essentiel de produire des rapports clairs et facilement compréhensibles avec des tâches de correction hiérarchisées. Quel que soit l’outil d’analyse de vulnérabilité utilisé, il devrait permettre de produire des rapports, de marquer les vulnérabilités comme ayant été corrigées ou non détectées, de suivre l’âge des vulnérabilités, etc. Avant de publier les rapports, l’organisation doit s’accorder sur le format du rapport afin de s’assurer que les éléments sont inclus / surlignés et les éléments non pertinents sont supprimés. Comme pour de nombreux autres processus de sécurité critiques, il est vivement recommandé que la direction générale adhère pleinement au processus de signalement et de correction des vulnérabilités.
 
 
-\subsection{Fenêtre d'exposition}
+\subsubsection{Fenêtre d'exposition}
 
 %==============
 % Analyse / recherche des Vulnérabilités
@@ -131,9 +127,6 @@ Tous les correctifs  pour une même vulnérabilités ne peuvent pas être déplo
 \end{itemize}
 
 
-
-
-
 Il est important de disposer d'un accès à un service  de d'information (renseignement) sur les vulnérabilités et sur les Menaces (cf. CERT commercial) afin de de collecter et d’organiser le renseignement extérieur et de le croiser avec le renseignement issu de l’interne (détections, incidents, ...) afin d’identifier l'information prioritaire, de l’enrichir et de la diffuser vers les opérations de sécurité. 
  
 Un tel service peut être en mesure d’associer une vulnérabilité à un adversaire, à une phase d’attaque, et à une technique particulière employée dans cette phase d’attaque (Cf. Framework MITRE ATTACK facilite notamment un tel niveau de précision et d’analyse).
@@ -144,7 +137,7 @@ Il est ainsi possible de mettre en exergue les vulnérabilités exploitées par 
 
 
 
-\subsection{Processus d’analyse/recherche des vulnérabilités}
+\subsubsection{Processus d’analyse/recherche des vulnérabilités}
 
 Avant de se lancer dans la dynamique classique des audits de sécurité (qui permettent de trouver des vulnérabilité), on peut positionner des mécanismes de recherches de vulnérabilités dans le cycle de vie d'un système sous la forme des différentes étapes des cycles V et V (Vérification et validation) d'un projet.
 
@@ -166,7 +159,7 @@ Avant de se lancer dans la dynamique classique des audits de sécurité (qui per
 
 Contrairement à l’évaluation des vulnérabilités, un programme complet de gestion des vulnérabilités n’a pas de date de début ni de fin définie, mais constitue un processus continue.
 
-\subsection{Processus d’évaluation des vulnérabilités (Vulnerability Assessement)}
+\subsubsection{Processus d’évaluation des vulnérabilités (Vulnerability Assessement)}
 
 %TODO la recherche de vulérabilité SERODIUM
 
@@ -189,8 +182,6 @@ L'évaluation permet de définir l'impact d'une vulnérabilité sur les risques 
 \end{frame}
 % end PRZ ===========================
 
-%TODO Vulanrabilité SCAN automique versus SCNA de type Audit (scan ponctuelle)
-%TODO Pacth Management
 
 \subsection{Audit sécurité des vulnérabilités}
 
@@ -198,13 +189,13 @@ Les audits de sécurité se conduisent souvent sur une base d'audit de vulnérab
 On distingue cependant :
 \begin{itemize}
 	\item les scans de vulnérabilités, permettant de manière automatisée à rechercher les vulnérabilités sur un système donné, et qui se base sur des bases de vulnérabilités connues
-	\item les audits techniques et pentest, qui peuvent se baser en premier lieu sur des scans pour identifier les vulnérabilités connues, mais qui travaille aussi sur la recherche de vulnérabilités.
+	\item les audits techniques et pentests, qui peuvent se baser en premier lieu sur des scans pour identifier les vulnérabilités connues, mais qui travaille aussi sur la recherche de vulnérabilités.
 \end{itemize}
 
 %\subsubsection{Scan de Vulnérabilités}
 %Un processus nécessaire qui peut être utilisé de manière récurrente.
 
-\subsubsection{Scan de Vulnérabilités système}
+\subsubsection{Scan de Vulnérabilités du système}
 
 Les vulnérabilités peuvent être découvertes à l'aide d'un scanner de vulnérabilités, qui analyse un système informatique à la recherche de vulnérabilités connues, telles que les ports ouverts, les configurations logicielles non sécurisées et la vulnérabilité aux infections par logiciels malveillants. Des tests de fuzz peuvent permettre de détecter des vulnérabilités inconnues, telles que le jour zéro, permettant d'identifier certains types de vulnérabilités, telles qu'un débordement de mémoire tampon avec des cas de test pertinents. Une telle analyse peut être facilitée par l’automatisation des tests. 
 
@@ -213,27 +204,58 @@ Les vulnérabilités peuvent être découvertes à l'aide d'un scanner de vulné
 La correction des vulnérabilités peut impliquer de différentes manières l’installation d’un correctif, une modification de la stratégie de sécurité du réseau, la reconfiguration du logiciel ou la formation des utilisateurs à l’ingénierie sociale.
 
 
+\section{La gestion des correctifs}
+
+Le patch management est un processus permettant cette gestion des correctifs de sécurité et leur déploiement en entreprise.
+
+%TODO relecture
+
+En anglais, ce patch management consiste à industrialiser les processus de détection, d'analyse et de déploiement des mises à jours de sécurité logicielles. En effet, lorsqu'un éditeur publie un nouveau patch de sécurité relatif à son produit, ses clients ne sont pas toujours en mesure d'évaluer l'importance de ce dernier ni les risques de son installation. Les solutions de gestion des correctifs proposent alors de stocker localement les correctifs sur un serveur du client, puis d'évaluer l'impact de celui-ci avant éventuellement de le tester puis de l'installer.
+
+\subsection{de l'outillage}
+
+%TODO relecture
+
+La force d'un outil de gestion des correctifs vient d'abord de sa base de données. C'est elle qui référence le parc informatique existant et conserve l'historique de l'installation des patchs. Elle permet à tout instant de revenir en arrière après installation d'un correctif ou de déterminer précisément où doivent être installés les patchs de sécurité.
+Par cette base de connaissance, les logiciels de gestion de correctifs facilitent la détection d'incompatibilités logicielles ou matérielles avec un correctif de sécurité car chaque patch donne lieu à une validation fonctionnelle. Les correctifs installés ceux des éditeurs et dépendent donc de leurs délais de publication.
+
 \section{Les audits}
 
-%=======================
-% Le pentest et l’audit
-%-----------------------------------------
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Caractéristiques d'audit}
+% end header PRZ =======================
 
-\subsection{Types d'audit}
-% TODO Prendre les audits de type PASSI
-\subsubsection{Audit Organisationnel}
-\subsubsection{Audit technique}
+Les audits de vulnérabilités s'inscrivent généralement dans des processus de sécurité d'entreprise ou de projets
 
-\subsection{Processus d'audit}
-\subsubsection{Audit de conformité}
-\subsubsection{Audit ponctuels et campagnes}
-\subsubsection{Audit continu}
+Les audits peuvent être de natures différentes :
 
-% Conformité ISO PCI/DSS  GDPR
+\begin{itemize}
+  \item Audit Organisationnel : pour découvrir les fragilités organisationnelles et humaines
+  \item Audit technique : pour découvrir et analyser les fragilités 
+\end{itemize}
 
-%============================
-% Evaluation des Vulnérabilités 
-%--------------------------------------------------
+On peut avoir besoin de ces audits pour des enjeux différents :
+
+\begin{itemize}
+  \item Audit de conformité
+  \item Audit de vérification et de validation
+  \item Audit de contrôle et d'inspection
+\end{itemize}
+
+Avec une dynamique d'audit :  
+
+\begin{itemize}
+ 	\item  Audits ponctuels et campagnes d'audit
+	\item  Audit continu
+\end{itemize}
+
+\end{frame}
+% end PRZ ===========================
+
+\begin{warningbox}{Fiche TECHNO : Les audits}
+ Les sujets autour des techniques, méthodologies d'audit informatique liées à la sécurité sont une bonne source de réflexion pour les fiches technos.
+\end{warningbox}
 
 
 

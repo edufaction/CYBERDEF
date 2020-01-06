@@ -39,8 +39,7 @@
                 right=2cm,%
 				top=2.25cm,%
 				bottom=2.25cm,%
-				headheight=11pt,%
-				letterpaper]{geometry}%
+				headheight=11pt]{geometry}%
 				
 %----------------------------------------------------------------------
 %	FIGURES AND TABLES CAPTIONS
@@ -49,26 +48,26 @@
 \RequirePackage[labelfont={bf,sf,small},%
                 labelsep=period,%
                 justification=raggedright]{caption}
-\setlength{\abovecaptionskip}{0pt}
-\setlength{\belowcaptionskip}{0pt}
+\setlength{\abovecaptionskip}{5pt}
+\setlength{\belowcaptionskip}{5pt}
 				
 %----------------------------------------------------------------------
 %	PAGE HEADER
 %----------------------------------------------------------------------
 
-\RequirePackage{fancyhdr}  % Needed to define custom headers/footers
-\RequirePackage{lastpage}  % Number of pages in the document
-\pagestyle{fancy}          % Enables the custom headers/footers
-% Headers
-\lhead{}%
-\chead{}%
-\rhead{\small\sffamily\bfseries\@PaperTitle\  --- \thepage/\pageref{LastPage}}
-% Footers
-\lfoot{}%
-\cfoot{}%
-\rfoot{}%
-\renewcommand{\headrulewidth}{0pt}% % No header rule
-\renewcommand{\footrulewidth}{0pt}% % No footer rule
+%\RequirePackage{fancyhdr}  % Needed to define custom headers/footers
+%\RequirePackage{lastpage}  % Number of pages in the document
+%\pagestyle{fancy}          % Enables the custom headers/footers
+%% Headers
+%\lhead{}%
+%\chead{}%
+%\rhead{\small\sffamily\bfseries\@PaperTitle\  --- \thepage/\pageref{LastPage}}
+%% Footers
+%\lfoot{}%
+%\cfoot{}%
+%\rfoot{}%
+%\renewcommand{\headrulewidth}{0pt}% % No header rule
+%\renewcommand{\footrulewidth}{0pt}% % No footer rule
 
 %----------------------------------------------------------------------
 %	SECTION/SUBSECTION/PARAGRAPH SET-UP
