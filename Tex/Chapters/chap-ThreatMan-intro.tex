@@ -7,23 +7,46 @@
 
 \uchap{Introduction à la gestion de la menace - ThreatMan Intro}
 
-\section{Menaces}
 
-Ce sont généralement les attaques externes et massives qui font le, plus l’actualité dans les média. Un grand nombre de risques quotidiens sont issus de l'intérieur même de l'entreprise,  fuites de la part de vos employés qui, de façon intentionnelle ou non, révèlent des mots de passe ou des informations sensibles, ou alors d’une opération initiée par des acteurs internes malveillants : des salariés, partenaires, clients qui cherchent à utiliser les informations à leur portée afin d’exploiter ou de porter dommage aux systèmes d'information de l’entreprise, mais plus globalement à l'entreprise dans sa globalité.
+\section{Avant propos}
+
+Je vous propose d'aborder ce chapitre liée à la surveillance à l'évènement de sécurité par les quelques points fondamentaux de la gestion de la menace.
+
+\upicture{../Tex/Pictures/img-var}{Un modèle de gestion cyberdefense}{1}{lbl_threatman}
+
+Après quelques définitions et positionnement dans l'analyse de menace,  de la supervision et de l'analyse comportementale nous aborderons les grandes fonctions nécessaire à la DETECTION.
+
+\begin{itemize}
+  \item \textbf{VOIR} :  capacité de voir et de capter le comportement d'un système d'information via des sources et capteurs avec le \textit{LOG management} (Systèmes et Applicatifs). En n'oubliant pas l'assurance sécurité des Logs
+\item \textbf{COMPRENDRE - PREVOIR} : Avec le \textit{Threat Management} : Veiller, Surveiller la menace, Modélisation et scénarios redoutés
+\item \textbf{DETECTER} : Surveiller le comportement, 
+évènements, anomalies, incidents … menace avancée (APT), avec les SIEM et les SOC
+\end{itemize}
+
+
+\section{Menaces et définitions}
+
+Ce sont généralement les attaques externes et massives qui font l’actualité dans les média. Un grand nombre de risques quotidiens sont issus de l'intérieur même de l'entreprise,  fuites de la part de vos employés qui, de façon intentionnelle ou non, révèlent des mots de passe ou des informations sensibles, ou alors d’une opération initiée par des acteurs internes malveillants : des salariés, partenaires, clients qui cherchent à utiliser les informations à leur portée afin d’exploiter ou de porter dommage aux systèmes d'information de l’entreprise, mais plus globalement à l'entreprise dans sa globalité.
 
 Les attaquants externes sont, certes, une menace croissante : ils recherchent sans cesse des failles de sécurité afin d’accéder à vos systèmes.
 
 N’importe quelle entreprise est exposée au risque. De nos jours, les connexions diverses d’une entreprise à l’autre représentent de nombreuses voies pour les pirates informatiques, qui attaquent souvent les petites entreprises afin d’accéder à leurs plus grands partenaires, clients ou fournisseurs. Les grandes entreprises demandent donc souvent à leurs fournisseurs et partenaires, quelle que soit leur taille, de mettre en place des mesures de cybersécurité.
 
-Différents types de menaces à la cybersécurité
+\upicture{../Tex/Pictures/img-varmenaces}{la gestion de la menace}{1}{lbl_varmenaces}
+
+\upicture{../Tex/Pictures/img-threatrosas}{les 4 axes de la gestion de la menace}{1}{lbl_threatrosas}
+
+\upicture{../Tex/Pictures/img-threatwheel}{la gestion de la menace}{1}{lbl_threatwheel}
+
+%Différents types de menaces à la cybersécurité
 
 La nature de ces menaces est en constante évolution.  On y trouve les plus courantes :
 
 \begin{itemize}
 
-\item Attaques par déni de service distribuées (DDoS). Un réseau d’ordinateurs inonde un site Web ou un logiciel avec des informations inutiles. Quand la charge sur les services est important et que le système n'est pas dimensionné ou filtré pour ce type de volume de demande, ce débordement de requètes provoque une indisponibilité du système inopérant. 
+\item Attaques par déni de service distribuées (DDoS). Un réseau d’ordinateurs inonde un site Web ou un logiciel avec des informations inutiles. Quand la charge sur les services est important et que le système n'est pas dimensionné ou filtré pour ce type de volume de demande, ce débordement de requêtes provoque une indisponibilité du système inopérant. 
 
-\item \textbf{Codes malveillants} : Bots et virus. Un logiciel malveillant qui s’exécute à l'insu de l'utilisateur ou du propriétaire du systèl (bots), ou qui est installé par un employé qui pense avoir affaire à un fichier sain (cheval de Troie), afin de contrôler des systèmes informatiques ou de s’emparer de données. La mise à jour des logiciels et des certificats SSL, une forte protection antivirus et une sensibilisation des employés peuvent vous aider à éviter ces types de menace.
+\item \textbf{Codes malveillants} : Bots et virus. Un logiciel malveillant qui s’exécute à l'insu de l'utilisateur ou du propriétaire du système (bots), ou qui est installé par un employé qui pense avoir affaire à un fichier sain (cheval de Troie), afin de contrôler des systèmes informatiques ou de s’emparer de données. La mise à jour des logiciels et des certificats SSL, une forte protection antivirus et une sensibilisation des employés peuvent vous aider à éviter ces types de menace.
 
 \item \textbf{Piratage}. Lorsque des acteurs externes exploitent des failles de sécurité afin de contrôler vos systèmes informatiques et voler des informations. Une mise à jour régulière des mots de passe et des systèmes de sécurité est fondamentale pour déjouer ce type de complot.
 
@@ -31,9 +54,12 @@ La nature de ces menaces est en constante évolution.  On y trouve les plus cour
 
 \end{itemize}
 
+
 \subsection{surveiller et anticiper la menace}
 
-Veiller sur les menaces nécessite de veiller sur deux choses : 
+\upicture{../Tex/Pictures/img-veillecyber}{Veille cyber, une veille sur les risques}{1}{lbl_veillecyber}
+
+Dans le domaine spécifique de la menace, veiller sur les menaces nécessite de veiller sur deux choses : 
 
 \begin{itemize}
   \item Les menaces génériques, ou ciblant un domaine  particulier (Santé, Industrie, Banque ...) que l'on trouve généralement en utilisant des technologies de \g{threat Intelligence} permettant 
@@ -173,7 +199,7 @@ Ce modèle analyse un fragilité potentielle en dépistant les phases de l’att
 
 Différentes techniques de sécurité proposent différentes approches de la chaîne cybercriminelle. De Gartner à Lockheed Martin, chacun définit les phases de manière légèrement différente.
 
-C’est un modèle souvent critiqué pour l’attention qu’il accorde à la sécurité du périmètre et limité à la prévention des malware. Cependant, quand elle est combinée à l’analyse avancée et à la modélisation prédictive, la chaîne cybercriminelle devient essentielle à une sécurité complète.
+C’est un modèle souvent critiqué pour l’attention qu’il accorde à la sécurité du périmètre et limité à la prévention des malware. Cependant, quand elle est combinée à l’analyse avancée et à la modélisation prédictive, la chaîne cyber-criminelle devient essentielle à une sécurité complète.
 
 L’analyse du comportement des utilisateurs (UBA) apporte des informations détaillées sur les menaces liées à chaque phase de la chaîne criminelle. Et elle contribue à prévenir et arrêter les attaques avant que les dommages ne soient causés.
 
