@@ -7,6 +7,7 @@
 \usepackage[T1]{fontenc}
 
 
+
 \usepackage{tikz} % Required for drawing custom shapes
 \usetikzlibrary{tikzmark} 
 \usetikzlibrary{mindmap,trees, backgrounds}
@@ -61,10 +62,16 @@ showtabs=false,
 
 \usepackage{xspace} 
 
+\usepackage{titletoc} % Required for manipulating the table of contents
 
 \usepackage{hyperref}
 
 \hypersetup{pdftitle={\utitle},pdfauthor={\uauthor},hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor=ocre,bookmarks=true,bookmarksopen=false}
+
+%\pdfstringdefDisableCommands{%
+%  \def\\{}%
+%  \def\texttt#1{<#1>}%
+%}
 
 \usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
 

@@ -7,22 +7,57 @@
 
 \uchap{Introduction à la gestion de la menace - ThreatMan Intro}
 
-
 \section{Avant propos}
 
 Je vous propose d'aborder ce chapitre liée à la surveillance à l'évènement de sécurité par les quelques points fondamentaux de la gestion de la menace.
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Petit rappel}
+\framesubtitle<presentation>{XXXX}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-cycle3}{lCycle de vie : SEC 101}{1}{lbl_cycle3}
+
+\end{frame}
+% end PRZ ===========================
+
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Un modèle de gestion cyberdefense}
+\framesubtitle<presentation>{Introduction}
+% end header PRZ =======================
 \upicture{../Tex/Pictures/img-var}{Un modèle de gestion cyberdefense}{1}{lbl_threatman}
+\end{frame}
+% end PRZ ===========================
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{La gestion de la menace}
+\framesubtitle<presentation>{dans le modèle cyberdéfense}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-varmenaces}{la gestion de la menace}{1}{lbl_varmenaces}
+\end{frame}
+% end PRZ ===========================
 
 Après quelques définitions et positionnement dans l'analyse de menace,  de la supervision et de l'analyse comportementale nous aborderons les grandes fonctions nécessaire à la DETECTION.
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Déroulement}
+\framesubtitle<presentation>{présentation Gestion de la menace}
+% end header PRZ =======================
 \begin{itemize}
   \item \textbf{VOIR} :  capacité de voir et de capter le comportement d'un système d'information via des sources et capteurs avec le \textit{LOG management} (Systèmes et Applicatifs). En n'oubliant pas l'assurance sécurité des Logs
 \item \textbf{COMPRENDRE - PREVOIR} : Avec le \textit{Threat Management} : Veiller, Surveiller la menace, Modélisation et scénarios redoutés
 \item \textbf{DETECTER} : Surveiller le comportement, 
 évènements, anomalies, incidents … menace avancée (APT), avec les SIEM et les SOC
+\item \textbf{ALERTER} : mettre en place les mécanismes de remontée d'alerte et d'incident.
+
 \end{itemize}
 
+\end{frame}
+% end PRZ ===========================
 
 \section{Menaces et définitions}
 
@@ -32,32 +67,68 @@ Les attaquants externes sont, certes, une menace croissante : ils recherchent sa
 
 N’importe quelle entreprise est exposée au risque. De nos jours, les connexions diverses d’une entreprise à l’autre représentent de nombreuses voies pour les pirates informatiques, qui attaquent souvent les petites entreprises afin d’accéder à leurs plus grands partenaires, clients ou fournisseurs. Les grandes entreprises demandent donc souvent à leurs fournisseurs et partenaires, quelle que soit leur taille, de mettre en place des mesures de cybersécurité.
 
-\upicture{../Tex/Pictures/img-varmenaces}{la gestion de la menace}{1}{lbl_varmenaces}
 
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Des modèles différents}
+% end header PRZ =======================
 \upicture{../Tex/Pictures/img-threatrosas}{les 4 axes de la gestion de la menace}{1}{lbl_threatrosas}
+\end{frame}
+% end PRZ ===========================
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Le cycle du risque vs la menace}
+% end header PRZ =======================
 \upicture{../Tex/Pictures/img-threatwheel}{la gestion de la menace}{1}{lbl_threatwheel}
+\end{frame}
+% end PRZ ===========================
 
 %Différents types de menaces à la cybersécurité
 
 La nature de ces menaces est en constante évolution.  On y trouve les plus courantes :
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{les grandes menaces}
+\framesubtitle<presentation>{quelques éléments de la menace 1/2}
+% end header PRZ =======================
 \begin{itemize}
 
-\item Attaques par déni de service distribuées (DDoS). Un réseau d’ordinateurs inonde un site Web ou un logiciel avec des informations inutiles. Quand la charge sur les services est important et que le système n'est pas dimensionné ou filtré pour ce type de volume de demande, ce débordement de requêtes provoque une indisponibilité du système inopérant. 
+\item Attaques par \textbf{déni de service distribuées} (DDoS). Un réseau d’ordinateurs inonde un site Web ou un logiciel avec des informations inutiles. Quand la charge sur les services est important et que le système n'est pas dimensionné ou filtré pour ce type de volume de demande, ce débordement de requêtes provoque une indisponibilité du système inopérant. 
 
 \item \textbf{Codes malveillants} : Bots et virus. Un logiciel malveillant qui s’exécute à l'insu de l'utilisateur ou du propriétaire du système (bots), ou qui est installé par un employé qui pense avoir affaire à un fichier sain (cheval de Troie), afin de contrôler des systèmes informatiques ou de s’emparer de données. La mise à jour des logiciels et des certificats SSL, une forte protection antivirus et une sensibilisation des employés peuvent vous aider à éviter ces types de menace.
+\end{itemize}
+\end{frame}
+% end PRZ ===========================
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{les grandes menaces}
+\framesubtitle<presentation>{quelques éléments de la menace 2/2}
+% end header PRZ =======================
+\begin{itemize}
 
 \item \textbf{Piratage}. Lorsque des acteurs externes exploitent des failles de sécurité afin de contrôler vos systèmes informatiques et voler des informations. Une mise à jour régulière des mots de passe et des systèmes de sécurité est fondamentale pour déjouer ce type de complot.
 
 \item \textbf{Hameçonnage} ou dévoiement. Tentative d’obtenir des informations sensibles en se faisant passer frauduleusement pour une entité digne de confiance. Le hameçonnage se fait par e-mail, tandis que le dévoiement utilise des sites ou serveurs fictifs. Une sensibilisation des employés est indispensable afin de ne pas tomber dans ce piège.
-
 \end{itemize}
+\end{frame}
+% end PRZ ===========================
+
+
 
 
 \subsection{surveiller et anticiper la menace}
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Veille}
+% end header PRZ =======================
 \upicture{../Tex/Pictures/img-veillecyber}{Veille cyber, une veille sur les risques}{1}{lbl_veillecyber}
+\end{frame}
+% end PRZ ===========================
 
 Dans le domaine spécifique de la menace, veiller sur les menaces nécessite de veiller sur deux choses : 
 
@@ -69,11 +140,19 @@ Dans le domaine spécifique de la menace, veiller sur les menaces nécessite de 
 et ceci de deux manières :
 
 \begin{itemize}
-  \item Surveillance de l'écosystème de la menace (IOC,  DarkWeb, Threat Intelligence...)
+  \item Surveillance de l'écosystème de la menace (IOC,  DarkWeb, Threat Intelligence...) 
   \item Recherche de compromission, ou d'infection (Threat Hunting, ...) 
 \end{itemize}
 
 Ce sont des sujets que nous aborderons dans le processus de gestion de la menace.
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Les sources}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-threatvigil}{Les sources}{1}{lbl_threatvigil}
+\end{frame}
+% end PRZ ===========================
 
 %TODO Tester les SIEM et les SOC et le deuxième niveau de maturité
 
@@ -99,7 +178,7 @@ On y trouve l'émergence de la collecte d'information sur une cible donnée. La 
 Il y a deux types d'outils pour ce se faire : 
 
 \begin{itemize}
-	\item La surveillance classique du web de type "cyberveille", qui permet de découvrir des éléments appartenant à l'entreprise compromis (soient les données, soient des informations permettant de déduire que l'entreprise a été compromise).
+	\item La surveillance classique du web de type \g{cyberveille}, qui permet de découvrir des éléments appartenant à l'entreprise compromis (soient les données, soient des informations permettant de déduire que l'entreprise a été compromise).
 	\item L'analyse en temps réel des codes malveillants qui peut permettre en regardant de manière détaillée l'évolution du code pour comprendre et connaitre les modalités des attaques et les nouvelles cibles.
 \end{itemize}
 
@@ -112,8 +191,14 @@ Disposer des fragilités de l'entreprise, et connaitre les scénarios potentiels
 \subsection{La gestion de la menace}
 
 
-\upicture{../Tex/Pictures/img-logman}{la gestion de la menace}{1}{lbl_threatman}
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{La gestion de la menace}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-logman}{la gestion de la menace}{1}{lbl_logman}
 
+\end{frame}
+% end PRZ ===========================
 
 Gérer la menace comporte deux domaines d'activités :
 
@@ -134,7 +219,7 @@ La première question a se poser est qu'est ce qu'un incident de sécurité pour
 Il y a de nombreuses manières de détecter des tentatives d'attaques dans un système. Les IPS/IDS (Intrusion Prevention System / Intrusion Detection System), Firewall réseaux et firewall applicatif. Toutefois l'imagination des attaquants est suffisamment grande, pour que des attaques complexes ne puisse être détecté par ces seuls outils et produits de sécurité protégeant les flux informationnels.
 
 
-Nous pouvons en effet considérer par exemple que la détection d'un rançonlogiciel dans l'entreprise est un bien un incident complexe, qu'un IPS/IDS ne détectera pas,  qui va par ailleurs nécessiter une alerte et une remédiation rapide si ce n'est immédiate.
+Nous pouvons en effet considérer par exemple que la détection d'un rançon-logiciel dans l'entreprise est un bien un incident complexe, qu'un IPS/IDS ne détectera pas,  qui va par ailleurs nécessiter une alerte et une remédiation rapide si ce n'est immédiate.
 Toutefois une fuite d'information sur un système métier par des mécanismes discrets sera souvent étudié spécifiquement.
 Globalement le déploiement d'une fonction d'alerte va nécessiter la définition des "menaces" redoutés par l'entreprise. 
 Ces dernières sont généralement issus des analyses de risque.
@@ -146,7 +231,6 @@ Dans l'environnement de l'entreprise, les scénarios complexes issus de l'analys
 On y trouvera l'application concrète des arbres d'attaques popularisé par une des plus célèbre cyber expert Bruce Schneier \cite{schneier1999attack} qui est présentée de manière un peu plus détaillée dans le chapitre \nameref{ref_arbre_attaques}
 
 
-
 \subsection{Arbre d'attaques} \label{ref_arbre_attaques}
 
 %TODO a re writer
@@ -155,7 +239,7 @@ Détecter la menace dans un système d'information c'est aussi connaitre les mé
 
 Les arbres d'attaques sont une représentation des scénarios d'attaques. La racine représente le but final de l'attaque, les différents noeuds sont les buts intermédiaires et les feuilles les actions élémentaires à effectuer. Ces actions seront évaluées par exemple avec les potentiel d'attaque des critères communs (cf.CC et ISO)
 
-Globalement, ces arbres sont basé sur trois types de nœuds :
+Globalement, ces arbres sont basés sur trois types de nœuds :
 
 \begin{itemize}
   \item Nœud \textbf{disjonctif} OR : OU logique. Cela signifie que pour que le nœud soit réalisé, il faut qu’au moins un de ses fils soit réalisé.
@@ -175,10 +259,10 @@ Ce modèle analyse un fragilité potentielle en dépistant les phases de l’att
 
 \subsection{le déploiement d'une menace en 8 étapes}
 
-%TODO A ré ecrire 
+%TODO A ré-écrire 
 
 \begin{itemize}
-  \item \textbf{Phase 1 : Reconnaissance}. Dans tout « casse », vous devez d’abord repérer les lieux. Le même principe s’applique dans un cybercasse : c’est la phase préliminaire d’une attaque, la mission de recueil d’informations. Pendant la reconnaissance, le cybercriminel recherche les indications susceptibles de révéler les vulnérabilités et les points faibles du système. Les pare-feu, les dispositifs de prévention des intrusions, les périmètres de sécurité (et même les comptes de médias sociaux) font l’objet de reconnaissance et d’examen. Les outils de repérage analysent les réseaux des entreprises pour y trouver des points d’entrée et des vulnérabilités à exploiter.
+  \item \textbf{Phase 1 : Reconnaissance}. Dans tout « casse », vous devez d’abord repérer les lieux. Le même principe s’applique dans un cyber-casse : c’est la phase préliminaire d’une attaque, la mission de recueil d’informations. Pendant la reconnaissance, le cybercriminel recherche les indications susceptibles de révéler les vulnérabilités et les points faibles du système. Les pare-feu, les dispositifs de prévention des intrusions, les périmètres de sécurité (et même les comptes de médias sociaux) font l’objet de reconnaissance et d’examen. Les outils de repérage analysent les réseaux des entreprises pour y trouver des points d’entrée et des vulnérabilités à exploiter.
 
  \item \textbf{Phase 2 : Intrusion.} Après avoir obtenu les renseignements, il est temps de s’infiltrer. L’intrusion constitue le moment où l’attaque devient active : les malware (y compris les ransomware, spyware et adware) peuvent être envoyés vers le système pour forcer l’entrée. C’est la phase de livraison. Celle-ci peut s’effectuer par e-mail de phishing ou prendre la forme d’un site Web compromis ou encore venir du sympathique café au coin de la rue avec sa liaison WiFi, favorable aux pirates. L’intrusion constitue le point d’entrée d’une attaque, le moment où les agresseurs pénètrent dans la place.
 
@@ -188,7 +272,7 @@ Ce modèle analyse un fragilité potentielle en dépistant les phases de l’att
 
  \item \textbf{Phase 5 : Mouvement latéral}. Vous avez carte blanche, mais vous devez encore trouver la chambre forte. Les cybercriminels se déplacent de système en système, de manière latérale, afin d’obtenir d’autres accès et de trouver plus de ressources. C’est également une mission avancée d’exploration des données au cours de laquelle les cybercriminels recherchent des données critiques et des informations sensibles, des accès administrateur et des serveurs de messagerie. Ils utilisent souvent les mêmes ressources que le service informatique, tirent parti d’outils intégrés tels que PowerShell et se positionnent de manière à causer le plus de dégâts possible.
 
- \item \textbf{Phase 6 :  Furtivité, camouflage, masquage}. Mettez les caméras de sécurité en boucle et montrez un ascenseur vide pour que personne ne voit ce qui se produit en coulisses. Les cyberattaquants font la même chose. Ils masquent leur présence et leur activité pour éviter toute détection et déjouer les investigations. Cela peut prendre la forme de fichiers et de métadonnées effacés, de données écrasées au moyen de fausses valeurs d’horodatage (timestomping) et d’informations trompeuses, ou encore d’informations critiques modifiées pour que les données semblent ne jamais avoir été touchées.
+ \item \textbf{Phase 6 :  Furtivité, camouflage, masquage}. Mettez les caméras de sécurité en boucle et montrez un ascenseur vide pour que personne ne voit ce qui se produit en coulisses. Les cyber-attaquants font la même chose. Ils masquent leur présence et leur activité pour éviter toute détection et déjouer les investigations. Cela peut prendre la forme de fichiers et de métadonnées effacés, de données écrasées au moyen de fausses valeurs d’horodatage (time-stamping) et d’informations trompeuses, ou encore d’informations critiques modifiées pour que les données semblent ne jamais avoir été touchées.
 
  \item \textbf{Phase 7 :  Isolation et Déni de service}. Bloquez les lignes téléphoniques et coupez le courant. C’est là où les cybercriminels ciblent le réseau et l’infrastructure de données pour que les utilisateurs légitimes ne puissent obtenir ce dont ils ont besoin. L’attaque par déni de service (DoS) perturbe et interrompt les accès. Elle peut entraîner la panne des systèmes et saturer les services.
 
@@ -196,25 +280,30 @@ Ce modèle analyse un fragilité potentielle en dépistant les phases de l’att
 
 \end{itemize}
 
+Différentes techniques de sécurité proposent différentes approches de la chaîne cyber-criminelle. De Gartner à Lockheed Martin, chacun définit les phases de manière légèrement différente.
 
-Différentes techniques de sécurité proposent différentes approches de la chaîne cybercriminelle. De Gartner à Lockheed Martin, chacun définit les phases de manière légèrement différente.
-
-C’est un modèle souvent critiqué pour l’attention qu’il accorde à la sécurité du périmètre et limité à la prévention des malware. Cependant, quand elle est combinée à l’analyse avancée et à la modélisation prédictive, la chaîne cyber-criminelle devient essentielle à une sécurité complète.
+C’est un modèle souvent critiqué pour l’attention qu’il accorde à la sécurité du périmètre et limité à la prévention des malwares. Cependant, quand elle est combinée à l’analyse avancée et à la modélisation prédictive, la chaîne cyber-criminelle devient essentielle à une sécurité complète.
 
 L’analyse du comportement des utilisateurs (UBA) apporte des informations détaillées sur les menaces liées à chaque phase de la chaîne criminelle. Et elle contribue à prévenir et arrêter les attaques avant que les dommages ne soient causés.
 
 
 
-\section{Surveiller et anticiper}
+\section{Surveiller et anticiper : Threat Detection}
 
-La surveillance et le renseignement de la menace au sens général du terme devrait contenir les 3 niveaux
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Threat Detection}
+% end header PRZ =======================
+La surveillance et le renseignement de la menace au sens général du terme (Threat Intelligence) devrait contenir les 2 niveaux :
 
 \begin{itemize}
   \item Le renseignement à vocation cyber qui comprend toutes les analyses et information permettant d'anticiper et de caractériser une menace qui pourrait s'exprimer dans le monde numérique,
   \item Le renseignement d'origine Cyber, dont les données techniques liées à des attaques, menaces qui permettent de configurer des systèmes de détection et de réponse.
-
 \end{itemize}
 
-Il est vrai qu'encore aujourd'hui parler de "threat intelligence"  nous dirige systématiquement sur la deuxième assertion
+\end{frame}
+% end PRZ ===========================
+
+Il est vrai qu'encore aujourd'hui parler de \g{threat intelligence} nous dirige systématiquement sur la deuxième assertion
 
 

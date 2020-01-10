@@ -16,7 +16,8 @@
 
 \input{../Tex/Book/config-book.tex}
 
-
+%\PassOptionsToPackage{unicode}{hyperref}
+%\PassOptionsToPackage{naturalnames}{hyperref}
 
 \usepackage{beamerarticle}
 
@@ -25,21 +26,18 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 
-%\input{../Tex/template.inc/edx.article.cls.tex}
-\input{../Tex/template.inc/edx.packages.tex}
-\input{../Tex/template.inc/edx.command.tex}
-\input{../Tex/template.inc/edx.styles.tex}
+
+
+\input{../Tex/template.inc/Commons/edx.packages.tex}
+\input{../Tex/template.inc/Commons/edx.command.tex}
+\input{../Tex/template.inc/Commons/edx.styles.tex}
+
 
 
 \usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
-
 \addbibresource{../tex/bibliography.bib} % BibTeX bibliography file
 \defbibheading{bibempty}{}
 
-
-\usepackage{hyperref}
-
-\hypersetup{pdftitle={CYBERDEFENSE D'ENTREPRISE},pdfauthor={\uauthor}} % Uncomment and fill out to include PDF metadata for the author and title of the book
 
 \begin{document}
 
@@ -48,11 +46,8 @@
 %----------------------------------------------------------------------------------------
 
 \input{../Tex/Book/coverfront-book.tex}  % Book Cover
-
-
-
-
 \input{../Tex/Book/book.notice.tex}
+
 %\input{../Tex/Includes/introduction.tex}
 
 %----------------------------------------------------------------------------------------
@@ -63,7 +58,7 @@
 
  
 	\usechapterimagetrue
-	\chapterimage{../Tex/Template.inc/BookPictures/chapter_head_1.pdf} 
+	\chapterimage{../Tex/Template.inc/BookModel/BookPictures/chapter_head_1.pdf} 
 
 \pagestyle{empty} % Disable headers and footers for the following pages
 
@@ -80,27 +75,27 @@
 
 \chapter*{Bibliography}
 
-\printbibliography[]
+%\printbibliography[]
 
-%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliographie}} % Add a Bibliography heading to the table of contents
-
-%------------------------------------------------
-
-%\section*{Articles}
-%\addcontentsline{toc}{section}{Articles}
-%\printbibliography[heading=bibempty,type=article]
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliographie}} % Add a Bibliography heading to the table of contents
 
 %------------------------------------------------
 
-%\section*{Books}
-%\addcontentsline{toc}{section}{Books}
-%\printbibliography[heading=bibempty,type=book]
+\section*{Articles}
+\addcontentsline{toc}{section}{Articles}
+\printbibliography[heading=bibempty,type=article]
+
+%------------------------------------------------
+
+\section*{Books}
+\addcontentsline{toc}{section}{Ouvrages}
+\printbibliography[heading=bibempty,type=book]
 
 
 %	INDEX
 
 
-\cleardoublepage % Make sure the index starts on an odd (right side) page
+%\cleardoublepage % Make sure the index starts on an odd (right side) page
 \phantomsection
 \setlength{\columnsep}{0.75cm} % Space between the 2 columns of the index
 \addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}} % Add an Index heading to the table of contents

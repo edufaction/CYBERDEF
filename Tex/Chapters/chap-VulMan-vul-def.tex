@@ -137,7 +137,7 @@ Si nous prenons par exemple, un code qui affiche une image avec un titre, que ce
 	$image = readimage()."png";
 	$title = readtitle();
 ...
-	print '<img src="$title" title="$title" />';
+	print '<img src="$image" title="$title" />';
 ...?>
 \end{lstlisting}
 %---------------------------------------------------
@@ -163,7 +163,7 @@ et permet de générer le code HTML suivant : \\
 \framesubtitle<presentation>{Exemple}
 % end header PRZ =======================
 Un utilisateur malveillant pourrait avoir saisi autre chose qu'un simple titre, et faire en sorte que la variable \textbf{\$tittle} puisse contenir une chaine de caractère un peu particulière. Le pirate aura entré, par exemple, comme titre de sa photo sur ce site un peu faible, une chaine comme  : \\
-\g{\verb!un titre de mon image/"><script>...scriptmalveillant...;</script>!}
+\g{\verb!un titre de mon image/"><script>...script malveillant...;</script>!}
 \\
 %---------------------------------------------------
 \begin{lstlisting} [language=html]
@@ -212,7 +212,7 @@ SELECT fieldlist
 %---------------------------------------------------
 L'exécution de cette requête va générer une erreur, et en fonction de la gestion des erreurs du code PHP, l'utilisateur pourra apercevoir que cette requête a provoqué une erreur d'exécution. Ceci permet à l'utilisateur de rapidement déterminer que le code est sensible à une attaque par injection SQL. Il peut alors à loisir trouver la meilleur manière de l'exploiter, en entrant un email forgé avec une chaine plus malicieuse.\\
 
-La chaine \g{\verb!OU 'x' = 'x'! } étant toujours VRAI, on pourrait obtenir des informations complètes de certaines tables.
+La chaine  \g{\verb!OU 'x'='x'!} étant toujours VRAI, on pourrait obtenir des informations complètes de certaines tables.
 Bien entendu, l'usage de vulnérabilité SQL injection n'est généralement pas trivial, mais avec un peu d'habitude, il est possible de construire des attaques sophistiquées sur des codes vulnérables.\\
 %---------------------------------------------------
 \begin{lstlisting} [language=SQL,escapeinside=||]
