@@ -1,26 +1,58 @@
-% Chapitre ALERT 
+%********************************************
+% $Chapitre : Threat Management
+% $theme : CSOC
+% $File : chap-Vulman-csoc.tex
+%********************************************
+\uchap{chap-Vulman-csoc.tex}
+%********************************************
 
-\section{Le SOC}
+\subsection{Le SOC}
 
 Les SOC est au coeur du système de Veille Alerte et réponse. C'est la tour de contrôle de l'espace Cyber.
 
+Il est constitué d'une équipe d'analystes, et d'outils permettant de surveiller l'environnement.
 
-\section{le SOC de demain}
+%TODO : réaliser un schéma de la fonction SOC
+
+Il intègre l'ensemble des fonctions liées à la menace :
+
+\begin{itemize}
+  \item Veille sur la menace
+  \item Détection d'évènements à risques et gestion de ceux ci
+  \item Détection d'attaques ou de comportement critiques
+  \item Réaction aux incidents et remédiation
+
+\end{itemize}
+
+Malheureusement, dans beaucoup de cas encore, les équipes SOC et les équipes liés à la gestion des vulnérabilités sont cloisonnées, ce qui ne couvre pas de manière intégrée l'ensemble des fonctions de cyberdéfense d'entreprise.
+
+On peut aussi Intégrer dans  le SOC des fonction de  \textit{Threat Hunting }
+
+\subsubsection{Le SOC de demain}
 On peut par ailleurs s'interroger sur le fait qu'un tel système peut et doit opérer d'autres missions que les missions de sécurité pures. Si la supervision des réseaux a été longtemps au outils au services des techniciens, la supervision de l'environnement digital c'est à dire l'environnement informationnel de l'entreprise est un axe fondamental. Le SOC Security Operation Center peut devenir Cyber Operational Center opérant le suivi des risques digitaux au sens large, incluant les réseaux sociaux et leur cohorte de fausse informations et d'information pouvant être des indicateurs de crise à venir pour l'entreprise.
 
-\subsection{Evaluation d'un SOC}
+\subsubsection{Evaluation d'un SOC}
 
-L'efficacité d'un SOC, et les purples Team.
+L'efficacité d'un SOC peut être évalué. A l'image d'équipe de Pentest qui testent la résistance d'un système, des équipes de tests de SOC peuvent être déployées pour auditer le niveau d'efficacité d'un SOC.
 
-%https://www.globalsecuritymag.fr/SOC-comment-en-mesurer-l,20151005,56416.html
+%SOURCE https://www.globalsecuritymag.fr/SOC-comment-en-mesurer-l,20151005,56416.html
 
-%Integration du threats hunting dans les SOC.
-%Par exemple suivre la création de nom de domaine récent pour regarder les noms utiliser dans des requêtes.
+un SOC est efficace s’il arrive à détecter avec pertinences les attaques en cours,  Cependant, il est important, de comprendre qu’un SOC ne protègera jamais contre les attaques dont le scénario n'a pas été "programmé". On trouvera dans \link{https://clusif.fr/publications/reussir-deploiement-dun-soc/}{une publication du  CLUSIF}, les critères pour réussir le déploiement d'un SOC.
+
+Les équipes qui testent des OSC sont nommes des \textbf{\textit{Purples Team}}.
+
+\subsubsection{Les outils connexes d'un SOC}
+
+Au delà des SIEM, il semble important d'ajouter à l'outillage dun SOC un ensemble de système permettant de mesurer et d'évaluer l'impact des attaques. Un travail intéressant autour de la notion d'Echelle de RICHTER (Voir  \link{https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber}{un article du FIC 2014}) d'une attaque afin de définir des indicateurs "de cotation".
+
+\begin{itemize}
+  \item l’origine de l’attaque qui mesure la puissance potentielle de la source de menace : du hacker de base à la menace étatique ;
+  \item Le type de cible qui mesure la précision de la diffusion de la menace : de la cible au hasard à la menace ciblée ;
+  \item Le vecteur d’attaque qui mesure le niveau de sophistication de la menace : du malware « sur étagère » à l’APT élaboré ;
+   \item Le préjudice qui mesure l’impact subit par la cible : d’une perte faible à une mise en péril de la résilience même de l’organisme ;
+  \item La visibilité de la menace qui mesure de nombreux éléments comme la motivation ou durée de l’attaque : d’un DDOS immédiatement constaté à une attaque invisible ;
+  \item La persistance qui mesure la fréquence de l’attaque sur sa cible : d’une fréquence forte de type robotisé à une fréquence unitaire visant un but précis.
+\end{itemize}
 
 
-\subsection{Les outils connexes d'un SOC}
-
-au dela des SIEM, il semble important d'ajouter à l'outillage dun SOC un ensemble de système permettant de mesurer et d'évaluer l'impact des attaques.
-Echelle de RICHTER d'une attaque.
-
-https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber/
+%SOURCE https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber/

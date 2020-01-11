@@ -1,63 +1,116 @@
+%********************************************
+% $Chapitre : Threat Management
+% $theme : Threat Intelligence
+% $File : chap-Vulman-threatintel.tex
+%
+%********************************************
+\uchap{chap-Vulman-threatintel.tex}
+%********************************************
 
+\section{Threat Intelligence}
 
+\subsection{Surveiller et anticiper}
 
-\section{Gestion de la menace}
-
-Nous avons évoqué dans le chapitre sur l'anticipation, la veille sur la menace. Opérer la détection d'attaques ou de menaces dormante dans l'environnement de l'entreprise nécessite une connaissance précise des mécanismes d'exécution oui d'opération de ces menaces.
-La connaissance de ces mécanismes  d'action, de protection, de déploiement, de réplication, de survivabilité, de déplacement des codes malveillants par exemple est la base de leur détection. Il es en de même sur les scénario mixant des actions sur les réseaux ou sur les systèmes informatiques ou numériques.
-Ces connaissances sont généralement structurés dans des base de connaissances dont les sources sont gratuites ou payantes.
-
-
-\subsection{Cibles de menaces}
-
-\subsection{Sources de menaces}
-Nous parlerons ici de sources de menaces comme les indicateurs permettant d'identifier l'origine technique d'une menace. Cela peut être une adresse mail, un serveur/service de mail , une adresse IP de provenance d'un code malveillant, d'une attaque, ou d'un comportement anormal.
-
-On peut citer par exemple 
-Une adresse mail connue pour envoyer un code malveillant.
-le blacklistage d'adresse IP ou de d'adresse de serveur Mail pour Spam
-
-
-En face, il des attaquants qui bien entendue vont changer leur position pour émettre ou attaquer d'ailleurs, ou avec une autre forme (furtivité)
-
-%TODO ne pas oublier de parler des bases de donnes qui ne sont plus valable. USURE de l'information ...
-
-
-Les sources de menace dans l'environnement internet			
-
-
-\subsection{Data Lake}
-
-
-\subsection{Threats Huntings}
-
-La chasse à la menaces dormantes ou aux compromissions  mais aussi le maintien du contact entre la défense et les attaquants.
-
-La chasse aux menaces est une tactique permettant de connaître avec plus d'acuité l'environnement de la menance et donc  le degré de risque de cyberattaques auquel est soumise une entreprise. 
-
-
-La terminologie threat hunting regroupe plusieurs type de d'action et la définition de n'est pas totalement stabilisée. Globalement on y trouve deux grande classes de threat hunting
-
-Celle travaillant autour de l'environnent, de la surface d'attaque et qui oriente ses actions sur des méthodes de "recherches" permettant de débusquer des menaces latentes ou des menaces dormantes et les réveiller et de les suivre de les comprendre et Pour établir le contact avec l'attaquant.
-
-Et un autres plus active ou proactive dont l'objectif est de rester, conserver le contact avec l'attaquant lors d'une reaction à une alerte.
- 
-\subsubsection{Etablir le contact}
-
-Quand on parle d'établir contact, nous parlons d'aller au contact au sens martial du terme. c'est dire en direct de suivre, caractériser ka sources de la menace et jouer avec elle.
-
-La méthode de "hunter" consiste en premier à dresser un portrait global de la surface d’attaque, tout en identifiant les attaquants potentiels, leurs motifs et leurs façons de faire. Plus précisément, le « threat hunting » consiste en une analyse détaillée de :
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Threat Intelligence}
+% end header PRZ =======================
+La surveillance et le renseignement de la menace au sens général du terme (Threat Intelligence) devrait contenir les 2 niveaux :
 
 \begin{itemize}
-	\item La position de de l’entreprise,  notoriété, popularité sur internet, en analysant en particulier  les médias traditionnels et les médias sociaux;
-	\item l'environnement économique de l’entreprise dont ses fournisseurs, ses clients, ses partenaires, ses employés;
-	\item le corpus technologiques et physique de l'entreprise, dont les architectures techniques et les mécanismes informatique avec l'environnement économique ainsi l'environnement sécuritaire de ses relations.
+  \item Le renseignement à vocation cyber qui comprend toutes les analyses et information permettant d'anticiper et de caractériser une menace qui pourrait s'exprimer dans le monde numérique,
+  \item Le renseignement d'origine Cyber, dont les données techniques liées à des attaques, menaces qui permettent de configurer des systèmes de détection et de réponse.
+\end{itemize}
+
+\end{frame}
+% end PRZ ===========================
+
+Il est vrai qu'encore aujourd'hui parler de \g{threat intelligence} nous dirige systématiquement sur la deuxième assertion
+
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Veille}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-veillecyber}{Veille cyber, une veille sur les risques}{1}{lbl_veillecyber}
+\end{frame}
+% end PRZ ===========================
+
+Veiller et surveiller les menaces, détecter les attaques  nécessite d'analyser  deux axes : 
+
+\begin{itemize}
+  \item Les menaces génériques, ou ciblant un domaine  particulier (Santé, Industrie, Banque ...) que l'on trouve généralement en utilisant des technologies de \g{threat Intelligence} permettant 
+  \item Les menaces ciblées, dont les indices d'émergence peuvent être détecter en analysant la menace ou  en recherchant des indices de compromissions quand ces menaces sont actives dans le périmètre de l'entreprise. \g{threat Detection, Hunting ...} 
+\end{itemize}
+
+et ceci de deux manières :
+
+\begin{itemize}
+  \item Surveillance de l'écosystème de la menace (IOC,  DarkWeb, Threat Intelligence...) 
+  \item Recherche de compromission, ou d'infection (Threat Hunting, ...) 
+\end{itemize}
+
+Ce sont des sujets que nous aborderons dans le processus de gestion de la menace.
+La surveillance des menaces génériques relève d'action de veille comme cela est fait pour les vulnérabilité. Les scénarios de message sont vu comme des éléments de signature d'une attaque ou d'une tentative ou de préparation  d'attaque.
+
+Je vous propose de présenter  la gestion de la menace sous la forme de 3 thèmes  (\uref{Gestion de la menace}{lbl_logman}).
+
+\begin{itemize}
+  \item Log Management
+  \item Threat Intelligence (au sens renseignement)
+  \item Threat Detection
 \end{itemize}
 
 
-Sur la base de cette analyse globale, des SPOF (Sigle Point Of Failure) peuvent être trouvés. 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Les sources}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-threatvigil}{Les sources}{1}{lbl_threatvigil}
+\end{frame}
+% end PRZ ===========================
 
-grace à la visualisation  globale des lien il sera possible comprendre où, comment, pourquoi et potentiellement par qui (hactivistes, anciens employés, fournisseurs, etc.) la prochaine attaque pourrait être perpétrée. 
-Les « threat hunters », ne sont pas simplement en attente de répondre aux alertes du système de défense, ils cherchent activement des menaces dans leurs propres réseaux afin de prévenir ou de minimiser les dommages. Cette méthode s’avère l’une des plus proactives. 
+%TODO Tester les SIEM et les SOC et le deuxième niveau de maturité
+
+%TODO Niveau de maturité dans les processus
+
+% TODO le renseignement
+
+
+%*************************************
+\subsubsection{Surveillance de la compromission}
+
+Un des domaine de la surveillance est donc celui de la compromission. C'est à dire la surveillance dans le fameux Darkweb de l'emergence de données volées, "\g{perdues}" par une entreprise ou par un particulier.
+
+% Mettre un exemple : adresse mail compromisse (avec le site PWND)
+
+
+%*************************************
+\subsubsection{Surveillance du ciblage}
+
+% Threat Hunting 
+
+La surveillance du ciblage, que les anglo-saxons appelle le TARGETING est aussi un élément d'anticipation. 
+En effet, ces éléments sont souvent les premiers signaux d'un préparation d'un évènement "\g{cyber}" qui pourrait toucher l'entreprise.
+
+On y trouve l'émergence de la collecte d'information sur une cible donnée. La mise en oeuvre dans les code malveillant de targetting d'IP spécifique, etc...
+
+Il y a deux types d'outils pour ce se faire : 
+
+\begin{itemize}
+	\item La surveillance classique du web de type \g{cyberveille}, qui permet de découvrir des éléments appartenant à l'entreprise compromis (soient les données, soient des informations permettant de déduire que l'entreprise a été compromise).
+	\item L'analyse en temps réel des codes malveillants qui peut permettre en regardant de manière détaillée l'évolution du code pour comprendre et connaitre les modalités des attaques et les nouvelles cibles.
+\end{itemize}
+
+
+%*************************************
+\subsubsection{Que faire des ces informations}
+
+Disposer des fragilités de l'entreprise, et connaitre les scénarios potentiels permets d'évaluer un niveau de risque. 
+
+
+
+
+
 
 

@@ -119,14 +119,25 @@ title=#2,#1}
 \end{figure}
 }
 	
-	
 \fi
+
+
+
+%\newcommand{\upicture}[4]{
+%\begin{figure}[!h] %h
+%  \begin{center}
+%	 \includegraphics[width=#3\textwidth]{#1.pdf}
+%  \end{center}
+%\caption{#2 \label{#4}}
+%\end{figure}
+%}
+
 
 
 %-----------------------------------------------------
 %											\uref 
 %---------------------------------------------------
-\newcommand{\uref}[1]{(Voir~\cref{#1} page~\pageref{#1})}
+\newcommand{\uref}[2]{(Voir~#1~\cref{#2} page~\pageref{#2})}
 
 
 
@@ -198,15 +209,9 @@ title=#2,#1}
 %  }
   
   
-    \newcommand{\link}[2]
-  {
-  \href{#1}
-  {
-  #2~\raisebox{-0.2ex}{\faExternalLink}\footnote
-  	{
- #1
-  	}
-  }
+  \newcommand{\link}[2]
+  {\href{#1}
+  {#2~\raisebox{-0.2ex}{\faExternalLink}\footnote{\url{#1}}}
   }
   
 

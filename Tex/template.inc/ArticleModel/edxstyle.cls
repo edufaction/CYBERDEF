@@ -108,8 +108,8 @@
   {0em}
   {#1} 
 \titlespacing*{\section}{0pc}{1ex \@plus4pt \@minus3pt}{10pt}
-\titlespacing*{\subsection}{0pc}{1ex \@plus3pt \@minus2pt}{0pt}
-\titlespacing*{\subsubsection}{0pc}{1ex \@plus2.5pt \@minus1.5pt}{0pt}
+\titlespacing*{\subsection}{0pc}{1ex \@plus3pt \@minus2pt}{10pt}
+\titlespacing*{\subsubsection}{0pc}{1ex \@plus2.5pt \@minus1.5pt}{10pt}
 \titlespacing*{\paragraph}{0pc}{1ex \@plus2pt \@minus1pt}{10pt}
 
 %----------------------------------------------------------------------
