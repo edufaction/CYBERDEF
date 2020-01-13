@@ -14,7 +14,28 @@
 
 \subsection{SIEM, une technologie}
 
-%TODO MENACES SIEM : à relire
+
+\subsubsection{SIEM et Logs}
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{SIEM et Log}
+\framesubtitle<presentation>{Threat and leak}
+% end header PRZ =======================
+Puisque nous disposons maintenant d'une capacité de capter de l'information pertinentes pour détecter des attaques, que nous avons une architecture de collecte, de stockage et de filtrage, nous pouvons injecter des informations dans des outils de recherche (corrélation) d'attaque.
+Ceci pour peu que l'architecture et les outillages puisse suivre la charge d'analyse en temps réel.
+
+Il ne faut toutefois pas oublier que les traces informatiques et réseaux ne sont pas les seules sources d'information nécessaires à la détection d'attaques (en temps réel ou différé).
+
+\begin{itemize}
+  \item \textbf{Threat Intelligence Database }:  IOC et identifiants des sources malveillantes (IP, noms de domaine, serveur mail ...)
+  \item  \textbf{Leak} : Fuite de données détectés par la surveillance du Web et du Darknet.
+\end{itemize}
+
+\end{frame}
+% end PRZ ===========================
+
+
 
 \subsubsection{Un peu d'histoire}
 
@@ -40,7 +61,7 @@ Il s’agit de combiner les fonctions de gestion des informations (SIM, Security
 Bien qu'outillant des processus très similaires mais distincts, les trois acronymes SEM, SIM et SIEM ont tendance à être confus ou à causer de la confusion chez ceux qui sont relativement peu familiarisés avec les processus de sécurité.
 La similitude entre la gestion des événements de sécurité ou SEM et la gestion des informations de sécurité ou SIM est au cœur du problème.
 
-Ces deux types de collecte d'informations concernent la collecte d'informations de journal de sécurité ou d'autres données similaires en vue d'un stockage à long terme, ou l'analyse de l'environnement de sécurité d'un réseau.
+Ces deux types de collecte d'informations concernent la collecte d'informations de journal de sécurité ou d'autres données similaires en vue d'un stockage à long terme, ou l'analyse de l'environnement de sécurité d'un réseau. Quoi qu'il en soit, de nos jours le terme SIEM est utilisé quelque soit d'ailleurs l'usage.
 
 % SOURCE https://www.linkbynet.com/fr/recourir-a-un-siem
 
@@ -58,7 +79,7 @@ Dans la pratique, Il existe 3 types de SIEM :
   \item SIEM géré / managé
 \end{itemize}
 
-Séquiper d’une solution de type SIEM nécessite un investissement conséquent en raison de la complexité de sa mise en œuvre. Toutefois, bien qu’initialement destiné aux grandes entreprises, le SIEM peut être déployer dans tous les types d’organisations, même les plus petits. Toutefois il ne faudra pas oublier que la configration d'un SIEM (création de scénario de détection (USE CASE)) demande de la ressource et des compétences spécifique.
+S'équiper d’une solution de type SIEM nécessite un investissement conséquent en raison de la complexité de sa mise en œuvre. Toutefois, bien qu’initialement destiné aux grandes entreprises, le SIEM peut être déployer dans tous les types d’organisations, même les plus petits. Toutefois il ne faudra pas oublier que la configuration d'un SIEM (création de scénario de détection (USE CASE)) demande de la ressource et des compétences spécifique.
 Par ailleurs l'important sera par la suite de définir quel type de réaction à la suite de la détection d'un évènement à risque.
 
 
@@ -68,14 +89,26 @@ Le SIEM dispose de cette faculté de détection grâce à sa capacité de corré
 
 Dans de tels cas de figure, la plupart des solutions ont la capacité d’agir indirectement sur la menace. Le SIEM communique avec d’autres outils de sécurité mis en place dans l’entreprise (Exemple pare-feu) et pousse une modification afin de bloquer l’activité malveillante. Résultat, des attaques qui n’auraient même pas été remarquées dans l’entreprise sont contrecarrées.
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Fonction SIEM}
+% end header PRZ =======================
 \begin{itemize}
   \item la premiere fonction d'un SIEM est déjà de corréler les événements provenant des composants de sécurité.
   \item la deuxième  fonction de corréler des événement de comportement du SI
   \item troisième fonction de corréler avec des événements externes au SI sur la base de capteurs externes (threats intelligence de type renseignement)
 \end{itemize}
+\end{frame}
+% end PRZ ===========================
 
 
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{SIEM}
+% end header PRZ =======================
 \upicture{../Tex/Pictures/img-siem}{architecture d'un SIEM}{0.9}{lbl_siem}
+\end{frame}
+% end PRZ ===========================
 
 Pour aller encore plus loin, une organisation peut choisir d’intégrer à son SIEM une Cyber Threat Intelligence (CTI ou Flux de renseignement sur les menaces). 
 
@@ -89,10 +122,10 @@ La CTI consiste donc à collecter et organiser toutes les informations liées au
 % TODO Voir article sur les problèmatique SIEM
 % https://www.journaldunet.com/solutions/expert/39767/comprendre-les-raisons-de-l-echec-des-siem-et-sim.shtml
 
-La cyberprotection d'une entreprise est principalement basée sur les outils de protection périmétriques que ceux ci soit des équipements physiques ou qu'ils soient dans le cloud : systèmes de détection d’intrusion (IDS), scanners de vulnérabilités, antivirus ainsi que systèmes de gestion et corrélation d’événements sécurité (SIEM). Lorsqu’il s’agit de superviser un système informatique à grande échelle réparti sur plusieurs sites, il devient vite très difficile de corréler et analyser toutes les sources d’information disponibles en temps réel afin de détecter les anomalies et les incidents suffisamment vite pour réagir efficacement. Cette complexité est due à la quantité d’information générée, au manque d’interopérabilité entre les outils ainsi qu’à leurs lacunes en matière de visualisation.
+La cyber-protection d'une entreprise est principalement basée sur les outils de protection périmétriques que ceux ci soit des équipements physiques ou qu'ils soient dans le cloud : systèmes de détection d’intrusion (IDS), scanners de vulnérabilités, antivirus ainsi que systèmes de gestion et corrélation d’événements sécurité (SIEM). Lorsqu’il s’agit de superviser un système informatique à grande échelle réparti sur plusieurs sites, il devient vite très difficile de corréler et analyser toutes les sources d’information disponibles en temps réel afin de détecter les anomalies et les incidents suffisamment vite pour réagir efficacement. Cette complexité est due à la quantité d’information générée, au manque d’interropérabilité entre les outils ainsi qu’à leurs lacunes en matière de visualisation.
 
 
-\subsubsection {de l'usage d'un SIEM pour la gouvernance}  
+\subsubsection {De l'usage d'un SIEM pour la gouvernance}  
 
 À l’heure où les normes et certifications de cyber-sécurité sont de plus en plus nombreuses, le SIEM devient un élément clé de tout système d’information. C’est un moyen relativement simple de répondre à plusieurs exigences de sécurité (Exemple : historisation et suivi des logs, rapports de sécurité, alerting, …) et de prouver sa bonne foi aux autorités de certification ou de suivi. D’autant que le SIEM peut générer des rapports hautement personnalisables selon les exigences des différentes réglementations. 
 
@@ -126,11 +159,10 @@ La solution consiste à définir des règles précises (en général rédigées 
 \subsubsection{Une surveillance à exercer 24h/24}
 
 Pour fonctionner correctement, les solutions SIEM nécessitent une surveillance 24h/24 et 7j/7 des journaux et des alertes. Un personnel formé ou une équipe dédiée sont requis pour consulter les journaux, effectuer des examens réguliers et extraire les rapports pertinents.  
-
-Voilà pourquoi externaliser cette surveillance auprès d’un fournisseur de services de sécurité tel que SECURIVIEW fait sens. Il s’agit à la fois de disposer des expertises requises, de gagner en lisibilité budgétaire et, aussi, de profiter d’engagements de services. Des conditions à réunir afin que l’investissement dans une solution SIEM marque une étape clé dans la protection de votre organisation contre les menaces avancées.
+ Il s’agit à la fois de disposer des expertises requises, de gagner en lisibilité budgétaire et, aussi, de profiter d’engagements de services. Des conditions à réunir afin que l’investissement dans une solution SIEM marque une étape clé dans la protection de votre organisation contre les menaces avancées.
 
 \subsubsection{Analyse d'impact}
-% la complexiste de l'ananyse d'impact (si on n'a pas fait le travail <risk vers scneario, il est complexe de remonter de scénario à risque et donc impact sur l'entreprise
+% la complexiste de l'analyse d'impact (si on n'a pas fait le travail <risk vers scneario, il est complexe de remonter de scénario à risque et donc impact sur l'entreprise
 
 % citer les travaux de Lagagec
 
@@ -149,18 +181,35 @@ Le SIEM joue un rôle important dans la détection d’attaques. Mais pour qu’
 
 \subsubsection{Tout collecter}
 
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{SIEM}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-siem-method}{Cadre méthodologique}{1}{lbl_siemmethod}
+\end{frame}
+% end PRZ ===========================
+
 Sans disposer de suffisamment de données collectées, le SIEM n’a pas grand chose à analyser. Mais la première étape est de collecter les bonnes données. Et celles-ci sont notamment les logs des équipements réseau, de sécurité  et des serveurs. Ces données sont nombreuses et faciles à obtenir. Ensuite, il faut s’intéresser aux logs de l’infrastructure applicative (bases de données, applications). Les experts du SIEM ajoutent à cela les données remontées par de nombreuses autres sources, comme celles des systèmes de gestion des identités et des accès, les flux réseau, les résultats des scans de vulnérabilités et les données de configurations.
 
 Avec les SIEM, plus il y a de données collectées, mieux c’est. Si possible, autant tout collecter. S’il est nécessaire de définir des priorités, alors mieux vaut se concentrer sur les actifs technologiques critiques, à commencer par les équipements installés dans les environnements sensibles et ceux manipulant des données soumises à régulation, ou encore ceux touchant à la propriété intellectuelle.
 
 
-\subsubsection{Construire les règles}
+\subsubsection{Construire les règles (UseCase)}
 
 %TODO MENACE SIEM : Relecture
 
-% Begin DOC
+% Begin DOC`
 
-Construire une règle pour SIEM est un processus itératif. Cela signifie qu’il est relativement lent et qu’il doit être affiné, précisé au fil du temps. De nombreuses personnes sont atteintes de la « paralysie de l’analyste » en début de processus, parce qu’il existe des millions de règles pouvant être définies. Ainsi, Securosis conseille de se concentrer sur les menaces les plus pressentes pour déterminer les règles à définir en premier.
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{SIEM}
+% end header PRZ =======================
+\upicture{../Tex/Pictures/img-siem-usecase}{Construction des UseCase}{1}{lbl_siemusecase}
+\end{frame}
+% end PRZ ===========================
+
+Construire une règle pour SIEM est un processus itératif. Cela signifie qu’il est relativement lent et qu’il doit être affiné, précisé au fil du temps. De nombreuses personnes sont atteintes de la « paralysie de l’analyste » en début de processus, parce qu’il existe des millions de règles pouvant être définies. Ainsi, il est  conseiller de se concentrer sur les menaces les plus pressentes pour déterminer les règles à définir en premier.
 
 Dans le cadre du processus de modélisation, il convient de commencer par un actif important. Pour cela, il faut adopter le point de vue de l’attaquant et chercher ce que l’on pourrait vouloir voler.
 
@@ -209,28 +258,49 @@ L'évolution des SIEM sont orientée par le traitement de masse d'évènement. L
 
 On peut citer  ainsi quelques SIEM non pas pour en faire un publicité particuliers mais simplement pour donner quelques indications sur la provenance ...
 
-Le Gartner positionne régulièrement des produits et services dans son magic Quadran. en 2019, Splunk, IBM QRadar et LogRythm NextGen SIEM sont tourjours bien positionnés.
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Quelques SIEM}
+\framesubtitle<presentation>{en provenance du Gartner}
+% end header PRZ =======================
+Le Gartner positionne régulièrement des produits et services dans son magic Quadrant. en 2019, Splunk, IBM QRadar et LogRythm NextGen SIEM sont toujours bien positionnés.
 Dell Technologies (RSA NetWitness), Exabeam (Security Management Platform), McAfee (Enterprise Security Manager) et Securonix complètent le carré des Leaders.
 Toutefois des entreprises comme Microsoft challenge ces acteurs.
+\end{frame}
+% end PRZ ===========================
 
 \subsection{Threat Hunting}
+
+\subsubsection{la chasse aux menaces}
 
 La chasse aux menaces dormantes ou aux compromissions (Threat Hunting) fait partie intégrante de la gestion de la menace. 
 C'est souvent les équipes "Hunters" assure le maintien du contact entre la défense et les attaquants lors d'une attaque en cours.
 
-La chasse aux menaces est une tactique permettant de connaître avec plus d'acuité l'environnement de la menace et donc  le degré de risque de cyberattaques auquel est soumise une entreprise. 
 
-La terminologie threat hunting regroupe plusieurs type de d'action et la définition de n'est pas totalement stabilisée. Globalement on y trouve deux grande classes de threat hunting
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Threat Hunting}
+% end header PRZ =======================
+La chasse aux menaces est une tactique permettant de connaître avec plus d'acuité l'environnement de la menace et donc  le degré de risque de cyber-attaques auquel est soumise une entreprise. 
 
-Celle travaillant autour de l'environnent, de la surface d'attaque et qui oriente ses actions sur des méthodes de "recherches" permettant de débusquer des menaces latentes ou des menaces dormantes et les réveiller et de les suivre de les comprendre et Pour établir le contact avec l'attaquant.
+La terminologie threat hunting regroupe plusieurs type de d'action et la définition de n'est pas totalement stabilisée. Globalement on y trouve deux grandes classes de threat hunting :
 
-Et un autres plus active ou proactive dont l'objectif est de rester, conserver le contact avec l'attaquant lors d'une reaction à une alerte.
- 
+\begin{itemize}
+  \item Celle travaillant autour de l'environnent, de la surface d'attaque et qui oriente ses actions sur des méthodes de "recherches" permettant de débusquer des menaces latentes ou des menaces dormantes et les réveiller et de les suivre de les comprendre et Pour établir le contact avec l'attaquant.
+
+  \item Et un autres plus active ou proactive dont l'objectif est de rester, conserver le contact avec l'attaquant lors d'une reaction à une alerte.
+\end{itemize}
+
+
+\end{frame}
+% end PRZ =========================== 
+
+
 \subsubsection{Etablir le contact}
 
 Quand on parle d'établir contact, nous parlons d'aller au contact au sens martial du terme. c'est dire en direct de suivre, caractériser la sources de la menace et jouer avec elle.
 
-La méthode de "hunter" consiste en premier à dresser un portrait global de la surface d’attaque, tout en identifiant les attaquants potentiels, leurs motifs et leurs façons de faire. Plus précisément, le « threat hunting » consiste en une analyse détaillée de :
+La méthode de "hunter" consiste en premier à dresser un portrait global de la surface d’attaque, tout en identifiant les attaquants potentiels, leurs motifs et leurs façons de faire. Plus précisément, le « threat hunting » consiste en une analyse détaillée de différents éléments :
 
 \begin{itemize}
 	\item La position de de l’entreprise,  notoriété, popularité sur internet, en analysant en particulier  les médias traditionnels et les médias sociaux;
@@ -238,10 +308,9 @@ La méthode de "hunter" consiste en premier à dresser un portrait global de la 
 	\item le corpus technologiques et physique de l'entreprise, dont les architectures techniques et les mécanismes informatique avec l'environnement économique ainsi l'environnement sécuritaire de ses relations.
 \end{itemize}
 
-
 Sur la base de cette analyse globale, des SPOF (Sigle Point Of Failure) peuvent être trouvés. 
 
-grace à la visualisation  globale des lien il sera possible comprendre où, comment, pourquoi et potentiellement par qui (hactivistes, anciens employés, fournisseurs, etc.) la prochaine attaque pourrait être perpétrée. 
+Grace à la visualisation  globale des liens il sera possible comprendre où, comment, pourquoi et potentiellement par qui (hactivistes, anciens employés, fournisseurs, etc.) la prochaine attaque pourrait être perpétrée. 
 Les « threat hunters », ne sont pas simplement en attente de répondre aux alertes du système de défense, ils cherchent activement des menaces dans leurs propres réseaux afin de prévenir ou de minimiser les dommages. Cette méthode s’avère l’une des plus proactives. 
 
 
