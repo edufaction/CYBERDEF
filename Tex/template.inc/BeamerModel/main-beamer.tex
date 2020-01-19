@@ -44,7 +44,7 @@
 %-------------------------------------------------------
 % Optional: a subtitle to be displayed on the title slide
 \title[\ushorttitle]{\utitle}
-%\subtitle{\utitleshort}
+\subtitle{\tiny\uBookLongBookName}
 
 %-------------------------------------------------------
 % The author(s) of the presentation:
@@ -72,13 +72,30 @@
 %++++++++++++++++++++++++++++++++
 \begin{document}
 
-
 %================================
 \begin{frame}[plain]
  					\begin{figure}
   					 \centering
-   						 \includegraphics[width=0.4\textwidth]{../Tex/template.inc/Commons/CommonsPictures/cnambretagne.pdf}
-				  \end{figure}
+  					 \begin{columns}[c]
+  \begin{column}{0.4\textwidth}
+  
+    \begin{figure}
+        \begin{centering}
+  			\includegraphics[width=\textwidth]{../Tex/template.inc/Commons/CommonsPictures/img-sec101.pdf}
+  \end{centering}
+  \end{figure}
+      \end{column}
+  
+  \begin{column}{0.6\textwidth}
+    \begin{figure}
+        \begin{centering}
+ 		    \includegraphics[width=\textwidth]{../Tex/template.inc/Commons/CommonsPictures/cnambretagne.pdf}
+    \end{centering}
+  \end{figure}
+  \end{column}
+\end{columns}
+   							  
+   							  \end{figure}
 				  				\titlepage
 \end{frame}
 %================================

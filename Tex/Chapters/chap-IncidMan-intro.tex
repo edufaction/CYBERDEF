@@ -2,7 +2,86 @@
 
 \section{Réagir}
 
+\subsection{de l'alerte à l'incident}
+
+\subsubsection{de l'alerte à l'incident}
+
+Comme nous avons vu dans le chapitre sur la détection des attaques certains événements peuvent conduire à des alertes.  Ces alertes  doivent être analysé par les ingénieurs spécialistes analystes SOC pour caractériser si un événement passé à un niveau d'alerte doit être traité comme un incident de sécurité. L'alerte positionne les équipes dans un état de vigilance toutefois l'enregistrement d'un événement en incident engage les processus de réponse  à  incident.
+
+\subsubsection{L'incident}
+
+La problématique de la réaction à un incident dit "cyber" c'est à dire un incident qui peut mettre en doute la confiance que l'on peut avoir dans son propre système système d'information, est  de l'usage du SI lui même pour opérer la réaction.
+Dans un premier dans nous allons donc partir de principe que le système d'information dispose de mécanisme permettant d'avoir confiance dans les systèmes qui opèrent pendant la réponse à incident.
+Nous allons aborder la réaction à incident suivant les 3 volets  :
+\begin{itemize}
+  \item Remédier et reconfigurer pour limiter l’impact;
+  \item  Enquêter sur l’incident;
+  \item Neutraliser les sources de menaces;
+\end{itemize}
+
+Néanmoins avant de s'engager dans la descriptions des activités liées à la réponse à incident cybersécurité, je souhaitais évoquer les bonnes pratiques ITIL qui donnent des pistes sur l'organisation de la gestion d'incident. Il ne faut en effet pas considérer la réponse à attaque comme une activité que technique bien que l'urgence nécessite le plus souvent de passer outre les processus classiques de traçabilité.
+
 \subsection{L'integration dans la gestion des incidents ITIL}
+
+ITIL (« Information Technology Infrastructure Library » pour « Bibliothèque pour l'infrastructure des technologies de l'information ») est un ensemble d'ouvrages recensant les bonnes pratiques (« best practices ») du management du système d'information. 
+
+La Gestion des incidents vue du côté d'ITIL  inclut tout événement qui perturbe, ou pourrait perturber, un service. Ceci inclut les événements communiqués directement par les utilisateurs, via le Centre de services, une interface web ou autrement.
+Ce processus appartient au sens ITIL à l'étape Service Operation(SO) du cycle de vie d'un SI.
+
+Même si les incidents et les demandes de service sont rapportés au Centre de services, cela ne veut pas dire qu'ils sont de même type. Les demandes de service ne représentent pas une perturbation de service comme le sont les incidents. Voir le processus Exécution des requêtes pour plus d'information sur le processus qui gère le cycle de vie 
+
+Les objectifs du processus de Gestion des incidents sont :
+
+\begin{itemize}
+  \item Veiller à ce que des méthodes et des procédures normalisées soient utilisées pour répondre, analyser, documenter, gérer et suivre efficacement les incidents.
+  \item  Augmenter la visibilité et la communication des incidents à l'entreprise et aux groupes de soutien du SI.
+  \item  Améliorer la perception des utilisateurs par rapport aux TI via une approche professionnelle dans la communication et la résolution rapide des incidents lorsqu'ils se produisent.
+  \item Harmoniser les activités et les priorités de gestion des incidents avec ceux de l'entreprise.
+  \item Maintenir la satisfaction de l'utilisateur avec la qualité des services du SI.
+\end{itemize}
+
+Généralement, cette gestion d'incident s'inscrit dans une chaine d'outillage avec des processus permettant de définir l'état ou le statut de l'incident.
+
+\begin{itemize}
+  \item \textbf{Nouveau} : un incident est soumis, mais n'a pas été assigné à un groupe ou une ressource pour résolution.
+  \item \textbf{Assigné} : un incident est assigné à un groupe ou une ressource pour résolution.
+  \item \textbf{En traitement }: l'incident est en cours d'investigation pour résolution.
+  \item \textbf{Résolu} : une résolution a été mise en place.
+  \item \textbf{Fermé} : la résolution a été confirmée par l'utilisateur comme quoi le service normal est rétabli.
+\end{itemize}
+
+
+On ne peut toutefois pas oublier, que la gestion de la sécurité dans une entreprise mature, doit s'intégrer aux processus IT de l'entreprise et de remarquer que certaines activités de sécurité peuvent aussi s'intégrer dans un respect du référentiel ITIL.
+\begin{itemize}
+  \item Le centre de services (service desk) cf le niveau 1 d'un \g{Security Operation Center};
+  \item La gestion des incidents (incident management) ;
+  \item La gestion des problèmes (problem management) ;
+  \item La gestion des changements (change management) voir  les mécanismes de couverture de vulnérabilités (patch management par exemple);
+  \item La gestion des mises en production (release management) ;
+  \item La gestion des configurations (configuration management).
+\end{itemize}
+
+Dans ces processus le cycle de vie de l'incident suis un cycle connu et reconnu : 
+
+\begin{itemize}
+  \item \textbf{Identification} : détecter ou rendre compte d’un incident ;
+  \item \textbf{Enregistrement} : les incidents sont enregistrés dans le système de gestion des incidents ;
+  \item \textbf{Classement}  : les incidents sont classés par priorité ;
+  \item \textbf{Priorisation} : l’incident est classé par ordre de priorité, sur la base de son impact et de son urgence, pour une meilleure utilisation des ressources et du temps disponible par l’équipe de support ;
+  \item \textbf{Escalade}  : l’équipe de support doit-elle obtenir de l’aide de la part d’un autre service ? Si oui, on engage une procédure de demande de service sinon, la résolution de l'incident s’effectue au niveau du support initial.
+  \item \textbf{Diagnostic}  : révélation du symptôme complet de l’incident ;
+  \item \textbf{Résolution et rétablissement } : une fois que la solution est trouvée et que la correction est apportée alors l’incident est résolu ; La solution peut alors être ajoutée à la base des erreurs connues dans l'optique de résoudre plus rapidement un incident similaire dans le futur.
+  \item \textbf{Clôture de l’incident}  : l’enregistrement de l’incident dans le système de gestion du management est clôturé en appliquant le statut « terminé » à celui-ci.
+\end{itemize}
+ 
+ 
+%-------------------------------------------------------------------------
+\upicture{../Tex/Pictures/img-mtbf}{Incidents}{01}{lb:mtbf}
+%-------------------------------------------------------------------------
+
+%-------------------------------------------------------------------------
+\upicture{../Tex/Pictures/img-liovar-incidents}{Incidents}{01}{lb:mtbf}
+%-------------------------------------------------------------------------
 
 \subsection{Threats Hunting}
 
@@ -16,7 +95,7 @@ Réagir, gestion de crise, à quel moment géré t’on la crise.
 
 \subsection{Haqckback}
 
-\upicture{../Tex/Pictures/img-incidents}{Incidents}{0.5}{lbl_incident}
+\upicture{../Tex/Pictures/img-incidents}{Incidents}{1}{lbl_incident}
 
 ceci est un texte
 
@@ -29,8 +108,6 @@ ceci est un texte
 \subsection{se préparer et s'entrainer}
 
 \section{Remédiation}
-
-
 
 % Ajouter des éléments sur la 22301
 
