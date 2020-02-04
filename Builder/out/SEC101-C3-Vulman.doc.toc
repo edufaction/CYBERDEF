@@ -1,0 +1,121 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {french}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Fragilités numériques}{1}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1}Détecter les fragilités de l’entreprise}{1}{subsection.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2}Anticiper et surveiller les menaces }{2}{subsection.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Les bases sur les vulnérabilités}{3}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Fragilités HOT}{3}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Exemples de vulnérabilités}{5}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.1}Faille type XSS}{6}{subsubsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.2}Faille type SQL Injection}{7}{subsubsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.2.3}Vulnérabilités WEB}{8}{subsubsection.2.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.3}Faille de programmation}{8}{subsection.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4}Vulnérabilités et exploits}{9}{subsection.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.5}Vulnérabilités et divulgation}{9}{subsection.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}CVE, CVSS et CWE}{10}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Common Vulnerabilities and Exposure (CVE)}{10}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Common Vulnerability Scoring System (CVSS)}{12}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Common Weakness Enumeration (CWE)}{12}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Les CERTs}{13}{section.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1}Les CERTs commerciaux}{13}{subsection.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2}La relation avec un CSIRT Interne }{14}{subsection.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5}Gérer ses vulnérabilités}{14}{section.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1}Processus de gestion des vulnérabilités}{16}{subsection.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.1}ISO 27001}{16}{subsubsection.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.2}Fenêtre d'exposition}{16}{subsubsection.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.3}Processus d’analyse/recherche des vulnérabilités}{18}{subsubsection.5.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.1.4}Processus d’évaluation des vulnérabilités (Vulnerability Assessement)}{19}{subsubsection.5.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.2}Audit sécurité des vulnérabilités}{19}{subsection.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.1}Scan de Vulnérabilités du système}{19}{subsubsection.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {5.2.2}Scan de Vulnérabilités logicielles}{20}{subsubsection.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6}La gestion des correctifs}{20}{section.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1}De l'outillage}{21}{subsection.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {7}Les audits}{21}{section.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8}Les équipes}{21}{section.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {9}Les tests d'intrusion}{23}{section.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.1}Généralités}{23}{subsection.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.2}Le métier de Pentesteur}{23}{subsection.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {9.2.1} Ethical Hackers}{23}{subsubsection.9.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {9.2.2}Peut-on faire confiance à des pentesteurs ?}{23}{subsubsection.9.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.3}Les sociétés de confiance}{23}{subsection.9.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {9.3.1}Formation des Pentests}{24}{subsubsection.9.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.4}Certifications professionnelles}{24}{subsection.9.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {9.5}Les rapport d'audits, et cadre méthodologique}{24}{subsection.9.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {10}Le Bug Bounty}{24}{section.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.1}recherche de vulnérabilités}{25}{subsection.10.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {10.2}Quelques entreprises}{25}{subsection.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {11}Vulnérabilités et SEC By DESIGN}{25}{section.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {12}corriger les vulnérabilités}{26}{section.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {13}Compléments}{26}{section.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {13.1}Périmètre sous responsabilité de l’entreprise}{26}{subsection.13.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {13.1.1}la notion de responsabilité}{26}{subsubsection.13.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {13.1.2}Inventaire des actifs}{27}{subsubsection.13.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {13.1.3}L’environnement digital externe}{28}{subsubsection.13.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {13.2}Veille et alerte sur les vulnérabilités}{28}{subsection.13.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {13.2.1}Abonnement au CERT}{28}{subsubsection.13.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {13.2.2}Le marché de la vulnérabilité}{28}{subsubsection.13.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {14}Contributions}{29}{section.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.1}Comment contribuer}{29}{subsection.14.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {14.2}Les contributeurs/auteurs du cours}{29}{subsection.14.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {14.2.1}Années 2019}{29}{subsubsection.14.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {14.2.2}Années 2018}{29}{subsubsection.14.2.2}%
+\contentsfinish 

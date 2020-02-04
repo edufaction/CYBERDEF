@@ -14,7 +14,6 @@
 
 \subsection{SIEM, une technologie}
 
-
 \subsubsection{SIEM et Logs}
 
 % Begin PRZ ===========================
@@ -71,12 +70,12 @@ Le SIEM, qui regroupe ces 2 systèmes, accélère donc l’identification et l�
 
 En d’autres termes, avec le SIEM les équipes de sécurité opérationnelle industrialisent la surveillance tout en simplifiant l’analyse de multiples sources d’événements de sécurité (antivirus, proxy, Web Application Firewall…). La corrélation des événements provenant d’applications ou d’équipements très variés est aussi facilitée. De quoi détecter des scenarii de menaces avancées.
 
-Dans la pratique, Il existe 3 types de SIEM :
+Dans la pratique, Il existe 3 grandes manières d'opérer ou de faire opérer un SIEM :
 
 \begin{itemize}
-  \item SIEM  déployé
+  \item SIEM  déployé et intégré dans l'entreprise
   \item SIEM basé dans le cloud
-  \item SIEM géré / managé
+  \item SIEM géré / managé en mode MSSP
 \end{itemize}
 
 S'équiper d’une solution de type SIEM nécessite un investissement conséquent en raison de la complexité de sa mise en œuvre. Toutefois, bien qu’initialement destiné aux grandes entreprises, le SIEM peut être déployer dans tous les types d’organisations, même les plus petits. Toutefois il ne faudra pas oublier que la configuration d'un SIEM (création de scénario de détection (USE CASE)) demande de la ressource et des compétences spécifique.
@@ -102,13 +101,7 @@ Dans de tels cas de figure, la plupart des solutions ont la capacité d’agir i
 % end PRZ ===========================
 
 
-% Begin PRZ ===========================
-\begin{frame}
-\frametitle<presentation>{SIEM}
-% end header PRZ =======================
-\upicture{../Tex/Pictures/img-siem}{architecture d'un SIEM}{0.9}{lbl-siem}
-\end{frame}
-% end PRZ ===========================
+\mode<all>{\picframe{../Tex/Pictures/img-siem}{architecture d'un SIEM}{0.8}{lbl-siem}}
 
 Pour aller encore plus loin, une organisation peut choisir d’intégrer à son SIEM une Cyber Threat Intelligence (CTI ou Flux de renseignement sur les menaces). 
 
@@ -182,13 +175,10 @@ Le SIEM joue un rôle important dans la détection d’attaques. Mais pour qu’
 \subsubsection{Tout collecter}
 
 
-% Begin PRZ ===========================
-\begin{frame}
-\frametitle<presentation>{SIEM}
-% end header PRZ =======================
-\upicture{../Tex/Pictures/img-siem-method}{Cadre méthodologique}{1}{lbl-siemmethod}
-\end{frame}
-% end PRZ ===========================
+
+\mode<all>{\picframe{../Tex/Pictures/img-siem-method}{Cadre méthodologique}{0.5}{lbl-siemmethod}}
+
+
 
 Sans disposer de suffisamment de données collectées, le SIEM n’a pas grand chose à analyser. Mais la première étape est de collecter les bonnes données. Et celles-ci sont notamment les logs des équipements réseau, de sécurité  et des serveurs. Ces données sont nombreuses et faciles à obtenir. Ensuite, il faut s’intéresser aux logs de l’infrastructure applicative (bases de données, applications). Les experts du SIEM ajoutent à cela les données remontées par de nombreuses autres sources, comme celles des systèmes de gestion des identités et des accès, les flux réseau, les résultats des scans de vulnérabilités et les données de configurations.
 
@@ -201,13 +191,9 @@ Avec les SIEM, plus il y a de données collectées, mieux c’est. Si possible, 
 
 % Begin DOC`
 
-% Begin PRZ ===========================
-\begin{frame}
-\frametitle<presentation>{SIEM}
-% end header PRZ =======================
-\upicture{../Tex/Pictures/img-siem-usecase}{Construction des UseCase}{1}{lbl-siemusecase}
-\end{frame}
-% end PRZ ===========================
+
+\mode<all>{\picframe{../Tex/Pictures/img-siem-usecase}{Construction des UseCase}{1}{lbl-siemusecase}}
+
 
 Construire une règle pour SIEM est un processus itératif. Cela signifie qu’il est relativement lent et qu’il doit être affiné, précisé au fil du temps. De nombreuses personnes sont atteintes de la « paralysie de l’analyste » en début de processus, parce qu’il existe des millions de règles pouvant être définies. Ainsi, il est  conseiller de se concentrer sur les menaces les plus pressentes pour déterminer les règles à définir en premier.
 
@@ -233,7 +219,7 @@ Le plus important aspect de ce processus est la cohérence. Le SIEM n’est pas 
 \subsection{Quelques défis des SIEM	}
 
 La problématique globale des SIEM est de corréler de l'événement, la question de fond est la collecte de ses évènements. La collecte de LOG est la principale sources d'événements, toutefois, toute les sources d'événements sont susceptibles d'enrichir la corrélation, en particulier les vulnérabilités, les IOC, les infos de end-point ...
-La collecte des informations d'opérations et de renseignements nécessite de la FUSION de capteurs.  Cette fusion chère aux militaires est un premier pas qui prend compte aussi de l'information économique, politiques ou sociale de l'entreprise, car ces événements peuvent "matcher" avec des attaques complexes.
+La collecte des informations d'opérations et de renseignements nécessite de la FUSION de capteurs.  Cette fusion chère aux militaires est un premier pas qui prend compte aussi de l'information économique, politiques ou sociale de l'entreprise, car ces événements peuvent \g{matcher} avec des attaques complexes.
   
 \subsection{L'intelligence artificiel}
 
@@ -274,7 +260,7 @@ Toutefois des entreprises comme Microsoft challenge ces acteurs.
 \subsubsection{la chasse aux menaces}
 
 La chasse aux menaces dormantes ou aux compromissions (Threat Hunting) fait partie intégrante de la gestion de la menace. 
-C'est souvent les équipes "Hunters" assure le maintien du contact entre la défense et les attaquants lors d'une attaque en cours.
+C'est souvent les équipes \g{Hunters} assure le maintien du contact entre la défense et les attaquants lors d'une attaque en cours.
 
 
 % Begin PRZ ===========================
@@ -286,7 +272,7 @@ La chasse aux menaces est une tactique permettant de connaître avec plus d'acui
 La terminologie threat hunting regroupe plusieurs type de d'action et la définition de n'est pas totalement stabilisée. Globalement on y trouve deux grandes classes de threat hunting :
 
 \begin{itemize}
-  \item Celle travaillant autour de l'environnent, de la surface d'attaque et qui oriente ses actions sur des méthodes de "recherches" permettant de débusquer des menaces latentes ou des menaces dormantes et les réveiller et de les suivre de les comprendre et Pour établir le contact avec l'attaquant.
+  \item Celle travaillant autour de l'environnent, de la surface d'attaque et qui oriente ses actions sur des méthodes de \g{recherche} permettant de débusquer des menaces latentes ou des menaces dormantes et les réveiller et de les suivre de les comprendre et Pour établir le contact avec l'attaquant.
 
   \item Et un autres plus active ou proactive dont l'objectif est de rester, conserver le contact avec l'attaquant lors d'une reaction à une alerte.
 \end{itemize}
@@ -300,7 +286,7 @@ La terminologie threat hunting regroupe plusieurs type de d'action et la défini
 
 Quand on parle d'établir contact, nous parlons d'aller au contact au sens martial du terme. c'est dire en direct de suivre, caractériser la sources de la menace et jouer avec elle.
 
-La méthode de "hunter" consiste en premier à dresser un portrait global de la surface d’attaque, tout en identifiant les attaquants potentiels, leurs motifs et leurs façons de faire. Plus précisément, le « threat hunting » consiste en une analyse détaillée de différents éléments :
+La méthode de \g{hunter} consiste en premier à dresser un portrait global de la surface d’attaque, tout en identifiant les attaquants potentiels, leurs motifs et leurs façons de faire. Plus précisément, le « threat hunting » consiste en une analyse détaillée de différents éléments :
 
 \begin{itemize}
 	\item La position de de l’entreprise,  notoriété, popularité sur internet, en analysant en particulier  les médias traditionnels et les médias sociaux;
@@ -310,7 +296,7 @@ La méthode de "hunter" consiste en premier à dresser un portrait global de la 
 
 Sur la base de cette analyse globale, des SPOF (Sigle Point Of Failure) peuvent être trouvés. 
 
-Grace à la visualisation  globale des liens il sera possible comprendre où, comment, pourquoi et potentiellement par qui (hactivistes, anciens employés, fournisseurs, etc.) la prochaine attaque pourrait être perpétrée. 
+Grace à la visualisation  globale des liens il sera possible comprendre où, comment, pourquoi et potentiellement par qui (activistes, anciens employés, fournisseurs, etc.) la prochaine attaque pourrait être perpétrée. 
 Les « threat hunters », ne sont pas simplement en attente de répondre aux alertes du système de défense, ils cherchent activement des menaces dans leurs propres réseaux afin de prévenir ou de minimiser les dommages. Cette méthode s’avère l’une des plus proactives. 
 
 

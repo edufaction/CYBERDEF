@@ -23,6 +23,8 @@ __maintainer__ = "Fredrik Loch"
 __email__ = "mail@fredrikloch.me"
 __status__ = "Development"
 
+# USE PYCHARM Editor, enter in TERMINAL MODE python build.py
+
 
 import argparse
 import subprocess
@@ -167,7 +169,7 @@ args = parseCLIArguments();
 if args.clean:
     try:
         shutil.rmtree("out")
-    except FileNotFoundError:
+    except :
         logger.info("Temp folder not found")
 elif args.latex:
     folderPrep()

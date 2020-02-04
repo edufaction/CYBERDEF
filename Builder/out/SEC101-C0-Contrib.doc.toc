@@ -1,0 +1,27 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {french}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Creative Common}{1}{section.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Contributions}{2}{section.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1}Comment contribuer}{2}{subsection.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2}Organisation de l'architecture de contribution}{2}{subsection.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Architecture des projets LATEX}{2}{section.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1}Utilisation de GITHUB}{3}{subsection.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2}Utilisation d'Overleaf}{3}{subsection.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3}Latex}{3}{subsection.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4}Les contributeurs/auteurs du cours}{3}{subsection.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.1}Années 2019}{3}{subsubsection.3.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.4.2}Années 2018}{3}{subsubsection.3.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5}Organisation du modèle contribution}{4}{subsection.3.5}%
+\contentsfinish 

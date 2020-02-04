@@ -1,33 +1,30 @@
-%===========================
-% COURS "CYBERDEF"
-% Configuration générale des articles
-%===========================
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS COURSE
+%                          CONFIG NOTES File
+%          SET BEAMER or Article/book Mode
+%                    PRZMODE OR DOCMODE
+%                             2020 eduf@ction
+%-------------------------------------------------------------
 
-% \newcommand{\INTERTITLE}{OK} %insert InterTitlle for each file compose main "Notes"
-
+% insert InterTitlle for each file compose main "Notes"
+%\newcommand{\INTERTITLE}{OK}
 
  %------------------------------------------
- % Utilisation de config générale
+ % Use global project CYBERDEF 
+ %            Configuration file
  %------------------------------------------
   \input{../Tex/config.tex}
  %------------------------------------------
- 
  
 \renewcommand{\ubooktitleBefore}{Notes de synthèse}
 \renewcommand{\ubooktitleMain}{Cours SEC 101 Cnam Bretagne}
 \renewcommand{\ubooktitle}{UBOOKTITTLE}
 \renewcommand{\ubooksubtitle}{\includegraphics[width=0.04\paperwidth]{../Tex/template.inc/Commons/CommonsPictures/shield-20.pdf} }
- %------------------------------------------
-\renewcommand{\edoc}{e document\xspace}
-\renewcommand{\ecours}{e cours} 
- %------------------------------------------
- 
  
 %------------------------------------------
  %     BEAMER OU ARTICLE
  %------------------------------------------
-
-   
+  
 \ifdefined\PRZMODE 
 	\newcommand{\umainload}{\input{../Tex/template.inc/BeamerModel/main-beamer.tex}}
 \else

@@ -1,0 +1,124 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {french}{}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {1}{Avant propos}{3}{0}{1}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {2}{Modèles}{7}{0}{2}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {3}{Threat Management}{12}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{1}{Les processus de gestion de la menace}{13}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{2}{Détecter}{14}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{3}{Arbre d'attaques}{14}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{4}{Le déploiement d'une menace en 8 étapes}{14}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{5}{UBA : User Behavior Analytics}{14}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {3}{5}{1}{La surveillance des terminaux}{14}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{6}{Gestion de la menace}{14}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {3}{7}{Bases de connaissance et menaces}{14}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {3}{7}{1}{Sources identifiées menaçantes}{14}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {3}{7}{2}{Cibles de menaces}{15}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {3}{7}{3}{Threat Intelligence Database }{15}{0}{3}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {4}{Threat Intelligence}{15}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{1}{Surveiller et anticiper}{15}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {4}{1}{1}{Surveillance de la compromission}{20}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {4}{1}{2}{Surveillance du ciblage}{20}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {4}{1}{3}{Que faire des ces informations}{21}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {4}{2}{de l'outillage sur la menace}{21}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {4}{2}{1}{la gestion des menaces CTI}{21}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {4}{2}{2}{STIX}{21}{0}{4}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {5}{Log Management }{21}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{1}{Traces, journaux, logs}{21}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{2}{Services et protocole SYSLOG}{23}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {5}{3}{L'usage des LOGs}{23}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {5}{3}{1}{Puits de logs}{23}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {5}{3}{2}{Outils d'analyses}{23}{0}{5}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {6}{Threat Detection}{24}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {6}{1}{SIEM, une technologie}{24}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{1}{1}{SIEM et Logs}{24}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{1}{2}{Un peu d'histoire}{25}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {6}{2}{Détection d’incidents}{27}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{2}{1}{De l'usage d'un SIEM pour la gouvernance}{27}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{2}{2}{Les contreparties du SIEM}{27}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{2}{3}{Une configuration pointue }{27}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{2}{4}{Des investissements à bien anticiper }{27}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{2}{5}{Un grand volume d’alertes à réguler }{27}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{2}{6}{Une surveillance à exercer 24h/24}{27}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{2}{7}{Analyse d'impact}{27}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{2}{8}{Tout collecter}{27}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{2}{9}{Construire les règles (UseCase)}{28}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {6}{3}{Quelques défis des SIEM }{29}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {6}{4}{L'intelligence artificiel}{29}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {6}{5}{Quelques SIEMs}{29}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {6}{6}{Threat Hunting}{30}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{6}{1}{la chasse aux menaces}{30}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{6}{2}{Etablir le contact}{31}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {6}{7}{Le SOC}{31}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{7}{1}{Le SOC de demain}{32}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{7}{2}{Evaluation d'un SOC}{32}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {6}{7}{3}{Les outils connexes d'un SOC}{32}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {6}{8}{Les outillage d'un SOC}{33}{0}{6}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {7}{Leak Detection : surveiller les fuites}{33}{0}{7}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {8}{Au delà de la gestion de la menace}{33}{0}{8}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {8}{1}{Techniques de défense cyber}{33}{0}{8}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {8}{2}{Technique de déception (Deceptive Defense)}{33}{0}{8}
+\defcounter {refsection}{0}\relax 
+\beamer@subsubsectionintoc {8}{2}{1}{Honeypots}{33}{0}{8}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {8}{3}{La SecOps par secteur industriel}{33}{0}{8}
+\defcounter {refsection}{0}\relax 
+\beamer@sectionintoc {9}{Contributions}{34}{0}{9}
+\defcounter {refsection}{0}\relax 
+\beamer@subsectionintoc {9}{1}{Comment contribuer}{34}{0}{9}

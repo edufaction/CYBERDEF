@@ -21,21 +21,14 @@ La surveillance et le renseignement de la menace au sens général du terme (Thr
   \item Le renseignement à vocation cyber qui comprend toutes les analyses et information permettant d'anticiper et de caractériser une menace qui pourrait s'exprimer dans le monde numérique,
   \item Le renseignement d'origine Cyber, dont les données techniques liées à des attaques, menaces qui permettent de configurer des systèmes de détection et de réponse.
 \end{itemize}
-
 \end{frame}
+
 % end PRZ ===========================
 
 Il est vrai qu'encore aujourd'hui parler de \g{threat intelligence} nous dirige systématiquement sur la deuxième assertion
 
 
-% Begin PRZ ===========================
-\begin{frame}
-\frametitle<presentation>{Veille}
-% end header PRZ =======================
-\upicture{../Tex/Pictures/img-veillecyber}{Veille cyber, une veille sur les risques}{1}{lbl-veillecyber}
-\end{frame}
-% end PRZ ===========================
-
+\mode<all>{\picframe{../Tex/Pictures/img-veillecyber}{Veille cyber, une veille sur les risques}{0.7}{lbl-veillecyber}}
 
 
 
@@ -52,6 +45,7 @@ Veiller et surveiller les menaces, détecter les attaques  nécessite d'analyser
   \item Les menaces ciblées, dont les indices d'émergence peuvent être détecter en analysant la menace ou  en recherchant des indices de compromissions quand ces menaces sont actives dans le périmètre de l'entreprise. \g{threat Detection, Hunting ...} 
 \end{itemize}
 \end{frame}
+
 % end PRZ ===========================
 
 
@@ -83,13 +77,9 @@ Je vous propose de présenter  la gestion de la menace sous la forme de 3 thème
 \end{itemize}
 
 
-% Begin PRZ ===========================
-\begin{frame}
-\frametitle<presentation>{Les sources}
-% end header PRZ =======================
-\upicture{../Tex/Pictures/img-threatvigil}{Les sources}{1}{lbl-threatvigil}
-\end{frame}
-% end PRZ ===========================
+
+\mode<all>{\picframe{../Tex/Pictures/img-threatvigil}{Les sources}{0.7}{lbl-threatvigil}}
+
 
 %TODO Tester les SIEM et les SOC et le deuxième niveau de maturité
 
@@ -101,7 +91,7 @@ Je vous propose de présenter  la gestion de la menace sous la forme de 3 thème
 %*************************************
 \subsubsection{Surveillance de la compromission}
 
-Un des domaine de la surveillance est donc celui de la compromission. C'est à dire la surveillance dans le fameux Darkweb de l'emergence de données volées, "\g{perdues}" par une entreprise ou par un particulier.
+Un des domaine de la surveillance est donc celui de la compromission. C'est à dire la surveillance dans le fameux Darkweb de l'emergence de données volées, \g{perdues} par une entreprise ou par un particulier.
 
 % Mettre un exemple : adresse mail compromisse (avec le site PWND)
 
@@ -112,14 +102,14 @@ Un des domaine de la surveillance est donc celui de la compromission. C'est à d
 % Threat Hunting 
 
 La surveillance du ciblage, que les anglo-saxons appelle le TARGETING est aussi un élément d'anticipation. 
-En effet, ces éléments sont souvent les premiers signaux d'un préparation d'un évènement "\g{cyber}" qui pourrait toucher l'entreprise.
+En effet, ces éléments sont souvent les premiers signaux d'un préparation d'un évènement \g{cyber} qui pourrait toucher l'entreprise.
 
 On y trouve l'émergence de la collecte d'information sur une cible donnée. La mise en oeuvre dans les code malveillant de targetting d'IP spécifique, etc...
 
 % Begin PRZ ===========================
 \begin{frame}
 \frametitle<presentation>{Surveillance du ciblage}
-\framesubtitle<presentation>{l'outillage du "targetting"}
+\framesubtitle<presentation>{l'outillage du \g{targetting}}
 % end header PRZ =======================
 Il y a deux types d'outils pour ce se faire : 
 
@@ -136,9 +126,22 @@ Il y a deux types d'outils pour ce se faire :
 
 Disposer des fragilités de l'entreprise, et connaitre les scénarios potentiels permets d'évaluer un niveau de risque. 
 
+\subsection{de l'outillage sur la menace}
 
+\subsubsection{la gestion des menaces CTI}
 
+Le projet OpenCTI (Open Cyber Threat Intelligence), développé par l’ANSSI en partenariat avec le CERT-EU, est un outil de gestion et de partage de la connaissance en matière d’analyse de la cybermenace (Threat Intelligence). Initialement conçu pour structurer les informations de l’agence relatives à la menace informatique, la plateforme facilite aussi les interactions entre l’ANSSI et ses partenaires.
 
+L’outil, intégralement libre, est  disponible à l’usage de l’ensemble des acteurs de la « threat intelligence ». L’application permt ainsi de stocker, organiser, visualiser et partager leurs propres connaissances en la matière.
 
+Le projet OpenCTI a été initié en septembre 2018 par l’ANSSI et co-développé avec le CERT-EU en l’absence de solutions complètement appropriées pour structurer, stocker, organiser, visualiser et partager la connaissance de l’ANSSI en matière de cybermenace, à tous les niveaux.
+https://www.ssi.gouv.fr/actualite/opencti-la-solution-libre-pour-traiter-et-partager-la-connaissance-de-la-cybermenace/
 
+\subsubsection{STIX}
+
+%The structuration of the data is performed using a knowledge schema based on the STIX2 standards. It has been designed as a modern web application including a GraphQL API and an UX oriented frontend. Also, OpenCTI can be integrated with other tools and applications such as MISP, TheHive, MITRE ATT&CK, etc.
+
+Les modélisations des attaques est un large champs de recherche et d'outillage.
+Structured Threat Information Expression (STIX™) est un langage et un format de donnée permettant de modéliser et échanger des informations techniques sur les processus d'attaque cyber. 
+Je vous propose d'explorer cela sur le site \link{https://github.com/OpenCTI-Platform/opencti}{STIX sur GitHub}.
 

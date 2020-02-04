@@ -1,16 +1,137 @@
 % Chapitre REACT 
 
-\section{Réagir}
+%==================================================
+\section{Réponse à incident}
+%--------------------------------------------------------------------------------
 
-\subsection{de l'alerte à l'incident}
+% https://searchsecurity.techtarget.com/definition/incident-response
+la réponse sur incident de sécurité pose de nombreuses questions sur les aspects aussi bien techniques que juridiques ou organisationnels. Nous allons tenter d'aborder ces éléments dans ce chapitre.
 
-\subsubsection{de l'alerte à l'incident}
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\subsection{Terminologie}
 
-Comme nous avons vu dans le chapitre sur la détection des attaques certains événements peuvent conduire à des alertes.  Ces alertes  doivent être analysé par les ingénieurs spécialistes analystes SOC pour caractériser si un événement passé à un niveau d'alerte doit être traité comme un incident de sécurité. L'alerte positionne les équipes dans un état de vigilance toutefois l'enregistrement d'un événement en incident engage les processus de réponse  à  incident.
+% FRAME beamer PRZ ------------------------------------
+\mode<all>{\texframe{La réponse à incident}{quelques éléments de définition}
+{%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+La réponse à incident est le processus qui permet de déployer les moyens nécessaires pour traiter un événement de sécurité classé comme incident de sécurité.
+Un incident de sécurité peut être enregistré en provenance de systèmes de sécurité, de veille ou d'audit. Le besoin d'intervention peut être immédiat comme différé.
+La réponse peut nécessiter des équipes de compétences larges comme expertes sur un domaine donné. L'intervention peut nécessité des moyens techniques important ou pas, et mettre en isolation tout ou partie d'un système d'information.
+}} % end FRAME.........................................................
 
-\subsubsection{L'incident}
 
-La problématique de la réaction à un incident dit "cyber" c'est à dire un incident qui peut mettre en doute la confiance que l'on peut avoir dans son propre système système d'information, est  de l'usage du SI lui même pour opérer la réaction.
+La gouvernance de la réponse aux incidents consiste à planifier à l'avance et  de disposer un plan d'opération avant qu'il ne soit nécessaire. Plutôt que d'être un processus axé sur l'informatique, il s'agit d'une fonction  globale qui permet à une organisation de prendre des décisions rapides avec des informations fiables dans un contexte où la continuité d'activité ou l'image de l'entreprise est menacée. Non seulement le personnel technique des services informatiques et de sécurité est impliqué, mais aussi des représentants d'autres aspects clés de l'entreprise. La réponse à incident  interpelle  dans son mode d'opération, la gestion des plans de continuité et de reprise d'activité, la gestion de crise,  l'interaction juridique et contractuelle  ainsi que l'a gestion des relations avec les services de l'état (CNIL, ANSSI, Police et Gendarmerie ...). 
+
+Quelques éléments de terminologies avec la correspondance anglo-saxonne afin de se repérer dans les usages et trouver de l'information pertinentes lors de vos recherches sur Internet.
+
+\begin{itemize}
+		\item \edxdico{Investigations Numériques}{Digital Investigation};
+		\item\edxdico{Analyse légale}{Forensic (Inforensic)};
+		\item \edxdico{CERT}{Computer Emergency Response Team};
+		\item \edxdico{CSIRT}{Computer Security Incident Response Team};
+		\item \edxdico{Gestion des Incidents}{Incident Management}.
+\end{itemize}
+
+\subsection{Définitions}
+
+\begin{notebox}{Incident}
+Un incident de sécurité, correspond donc à la conséquence d’un ou plusieurs évènements de sécurité ou un évènement de sécurité majeur. Pour un \textbf{événement}, il n'y a pas de conséquence alors que pour un \textbf{incident} il y a un impact sur l’un des critères de sécurité DICA (Disponibilité, Intégrité, Confidentialité, Auditabilité).
+\end{notebox}
+
+Cette distinction a toujours existé, en effet l'ISO/IEC 27001 l'a reprise de l'ISO TR 18044:2004 (aujourd'hui remplacée par l'ISO/IEC 27035) qui l'avait elle-même reprise de l'ISO TR 13335-2:1997. Cela remonte donc à la création de la normalisation en sécurité informatique en 1991.
+Concrètement, un événement peut donc être :
+\begin{itemize}
+  \item soit la découverte d’une vulnérabilité,
+  \item  soit la constatation d’une non-conformité,
+  \item soit une altération, une perte ou une atteinte à l’information,
+  \item   soit une altération ou une perte d’un élément du système d’information, d’un
+élément de configuration du SI ou d’un actif non-IT.
+\end{itemize}
+
+Un événement peut donner lieu à un \textbf{traitement préventif,} dans la mesure où aucun impact n'a été identifié, par exemple la découverte d’une vulnérabilité.
+Un incident donne quant à lui obligatoirement lieu à un \g{traitement curatif }car un impact a été identifié.
+Ce qui motive la requalification d’un événement en incident doit impérativement être basé sur une décision humaine en fonction d'une estimation de l'impact.
+Néanmoins avant de s'engager dans la descriptions des activités liées à la réponse à incident cybersécurité, je souhaitais évoquer les bonnes pratiques ITIL qui donnent des pistes sur l'organisation de la gestion d'incident. Il ne faut en effet pas considérer la réponse à attaque comme une activité que technique bien que l'urgence nécessite le plus souvent de passer outre les processus classiques de traçabilité.
+
+\subsection{Sources Incidents}
+
+Il existe différents types d'incidents de sécurité et des moyens de les classer. Ce qui peut être considéré comme un incident pour une organisation peut ne pas être aussi critique pour une autre. tous les incidents ne proviennent pas de SIEM. En effet le déclenchement d'incident peut avoir différentes sources.
+
+ %-------------------------------------------------------------------------
+\upicture{../Tex/Pictures/img-incident-sources}{Les axes de la gestion des cyber-Incidents}{1}{lb:incident-sources}
+%-------------------------------------------------------------------------
+
+ %-------------------------------------------------------------------------
+\upicture{../Tex/Pictures/img-incident-cycle}{Les axes de la gestion des cyber-Incidents}{0.7}{lb:incident-cycle}
+%-------------------------------------------------------------------------
+
+Voici quelques exemples d'incidents relativement courants:
+
+\begin{itemize}
+  \item Une attaque par déni de service distribué ( DDoS ) contre les services cloud critiques;
+  \item  Infection par un logiciel malveillant ou un rançon-giciel qui a chiffré des fichiers d'entreprise critiques sur le réseau de l'entreprise;
+  \item Une tentative de phishing réussie qui a conduit à la divulgation d'informations personnelles identifiables des clients;
+  \item Perte ou vol, d'un ordinateur portable non chiffré avec des informations sensibles;
+  \item découverte sur internet (Darkweb) de données sensibles appartenant à l'entreprise.
+\end{itemize}
+
+Selon le SANS Institute, la réponse est construit autour de six phases clés d'un plan de réponse aux incidents:
+
+\begin{itemize}
+  \item \textbf{Préparation}: préparer les utilisateurs et le personnel informatique à gérer les incidents potentiels en cas de survenance;
+  \item \textbf{Identification}: déterminer si un événement peut être qualifié d'incident de sécurité.
+  \item \textbf{Confinement}: limiter les dommages de l'incident et isoler les systèmes affectés pour éviter d'autres dommages;
+  \item \textbf{Éradication}: recherche de la cause première de l'incident et suppression des systèmes affectés de l'environnement de production;
+  \item \textbf{Récupération}: autoriser les systèmes affectés à réintégrer l'environnement de production et garantir qu'aucune menace ne subsiste.;
+  \item \textbf{Leçons apprises}: Remplir la documentation de l'incident, effectuer une analyse pour tirer des leçons de l'incident et potentiellement améliorer les efforts d'intervention futurs.
+\end{itemize}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\subsection{Parcours}
+
+% Source https://en.m.wikipedia.org/wiki/Computer_security_incident_management
+
+La gestion de l'incident au quotidien 
+
+Réagir 
+	Mécanismes et processus
+	compétences
+	outils
+
+Enquêter
+
+	Mécanismes et processus
+	compétences
+	outils
+
+Anticiper
+
+Organiser sa réponse (moyens et compétences)
+
+      l'intégration dans ITIL
+
+(aller plus loin) Organiser  processus de réponse : CSIRT
+
+%========================================================
+% 											MANAGEMENT DES INCIDENTS
+%-----------------------------------------------------------------------------------------
+\section{La gestion de l'incident au quotidien} 
+%--------------------------------------------------------------------------------
+
+%- 1 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\subsection{De l'alerte à l'incident}
+
+Comme nous avons vu dans le chapitre sur la détection des attaques certains événements peuvent conduire à des alertes. Le terme alerte est ici synonyme d'alarme.  Ces alertes  doivent être analysées par des  analystes (Ingénieur SOC par exemple) pour caractériser si un événement ayant atteint à un niveau d'alerte doit être traité comme un incident de sécurité. L'alerte positionne les équipes dans un état de vigilance toutefois l'enregistrement d'un événement en incident engage les processus de réponse à  incident.
+La question majeure est de savoir qui  mobiliser pour gérer l'incident. A l'image d'une alarme incendie, l'analyse de l'évènement qui à lever cette alarme doit être rapidement effectuée afin de valider l'événement comme devant être pris en charge par un processus dédié. 
+Ce processus de vérification, est important pour éviter des FAUX POSITIF qui risquent de mobiliser des équipes de manière inadaptée.
+
+Tout incident qui n'est pas correctement confiné et traité peut, et généralement, dégénérer en un problème plus important qui peut finalement conduire à une violation de données dommageable, à des dépenses importantes ou à l'effondrement du système. Une réponse rapide à un incident aidera une organisation à minimiser les pertes, à atténuer les vulnérabilités exploitées, à restaurer les services et les processus et à réduire les risques que posent les incidents futurs.
+ 
+%TODO Insérer un schéma de traitement de l'incident
+
+%- 1 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\subsection{L'incident}
+
+La problématique de la réaction à un incident dit \g{cyber} c'est que ce type d'incident  peut mettre en doute la confiance que l'on peut avoir dans son propre système système d'information. Comme ce SI risque d'être utiliser dans les mécanismes pour opérer la réaction, il est aussi important de gérer les critères de confiance et d'usage en mode dégradé.
 Dans un premier dans nous allons donc partir de principe que le système d'information dispose de mécanisme permettant d'avoir confiance dans les systèmes qui opèrent pendant la réponse à incident.
 Nous allons aborder la réaction à incident suivant les 3 volets  :
 \begin{itemize}
@@ -19,11 +140,17 @@ Nous allons aborder la réaction à incident suivant les 3 volets  :
   \item Neutraliser les sources de menaces;
 \end{itemize}
 
-Néanmoins avant de s'engager dans la descriptions des activités liées à la réponse à incident cybersécurité, je souhaitais évoquer les bonnes pratiques ITIL qui donnent des pistes sur l'organisation de la gestion d'incident. Il ne faut en effet pas considérer la réponse à attaque comme une activité que technique bien que l'urgence nécessite le plus souvent de passer outre les processus classiques de traçabilité.
 
-\subsection{L'integration dans la gestion des incidents ITIL}
 
-ITIL (« Information Technology Infrastructure Library » pour « Bibliothèque pour l'infrastructure des technologies de l'information ») est un ensemble d'ouvrages recensant les bonnes pratiques (« best practices ») du management du système d'information. 
+%========================================================
+% 											MANAGEMENT DES INCIDENTS
+%-----------------------------------------------------------------------------------------
+\section{Processus de management} 
+%-----------------------------------------------------------------------------------------
+
+\subsection{L'intégration dans la gestion des incidents ITIL}
+
+ITIL (\g{Information Technology Infrastructure Library }pour \g{Bibliothèque pour l'infrastructure des technologies de l'information}) est un ensemble d'ouvrages recensant les bonnes pratiques (\g{best practices}) du management du système d'information. 
 
 La Gestion des incidents vue du côté d'ITIL  inclut tout événement qui perturbe, ou pourrait perturber, un service. Ceci inclut les événements communiqués directement par les utilisateurs, via le Centre de services, une interface web ou autrement.
 Ce processus appartient au sens ITIL à l'étape Service Operation(SO) du cycle de vie d'un SI.
@@ -50,8 +177,8 @@ Généralement, cette gestion d'incident s'inscrit dans une chaine d'outillage a
   \item \textbf{Fermé} : la résolution a été confirmée par l'utilisateur comme quoi le service normal est rétabli.
 \end{itemize}
 
-
 On ne peut toutefois pas oublier, que la gestion de la sécurité dans une entreprise mature, doit s'intégrer aux processus IT de l'entreprise et de remarquer que certaines activités de sécurité peuvent aussi s'intégrer dans un respect du référentiel ITIL.
+
 \begin{itemize}
   \item Le centre de services (service desk) cf le niveau 1 d'un \g{Security Operation Center};
   \item La gestion des incidents (incident management) ;
@@ -73,15 +200,151 @@ Dans ces processus le cycle de vie de l'incident suis un cycle connu et reconnu 
   \item \textbf{Résolution et rétablissement } : une fois que la solution est trouvée et que la correction est apportée alors l’incident est résolu ; La solution peut alors être ajoutée à la base des erreurs connues dans l'optique de résoudre plus rapidement un incident similaire dans le futur.
   \item \textbf{Clôture de l’incident}  : l’enregistrement de l’incident dans le système de gestion du management est clôturé en appliquant le statut « terminé » à celui-ci.
 \end{itemize}
+
+\subsection{Résilience}
+ `
+La cyber-résilience ou la résilience numérique est la capacité d’un système d’information à résister à une panne ou une cyber-attaque et à revenir à son état initial après l’incident, ou bien comme la faculté d’une structure quelconque à retrouver ses propriétés initiales après une altération significative. La notion peut s’appliquer aussi bien à un système physique ou un système d'information, qu’à un individu ou une organisation. 
+
+
+Elle se traduit pour cette organisation par sa capacité de continuer à fonctionner et de résister à des agressions internes comme externes, volontaires ou non.
+
+ Le niveau de résilience se mesure  avec des critères tels que la structure de l’organisation mise en place, les ressources humaines consacrées au fonctionnement du système, la redondance et le durcissement des systèmes et des équipements, les procédures en place, des compétences acquises à travers une formation et un entrainement dédiés, la connaissance fine de l’état de fonctionnement du système et la capacité à diagnostiquer une défaillance potentielle.
+ 
+Sur le cyber-espace, la cyber-résilience implique donc de se préparer et de prendre  les mesures adaptées pour assurer le rétablissement d’un système. Par  ailleurs, dans le monde cyber dans l'entreprise l’incertitude peut régner dans l'usage :
+\begin{itemize}
+  \item  sur la sécurité des systèmes (virus déployés dont les effets ne sont pas maîtrisés), 
+   \item l’intégrité du système n’est plus garantie, 
+  \item l’activité du système peut être dégradée (données corrompues ou altérées) ou inopérante (communications inactives), 
+  \item les risques de propagation des menaces sont augmentés si les interconnexions entre systèmes restent ouvertes, 
+    
+\end{itemize}
+
+    Cette résilience peut  nécessiter des bascules vers des modes dégradés, avec l'isolation ou l'arrêt de certaines sous-systèmes. Ce type de décision nécessite de circuit de décision rapide et court.
+   
+ \subsection{La gestion des incidents avec l'ISO 27035}
  
  
+ %https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27035
+ 
+ La mise en place d'un processus de gestion d’incidents, qu'il soit totalement intégré à la. DSI via ITIL, ou des processus ISO9001 est complexe en entreprise mais les enjeux sont toujours identiques :
+\begin{itemize}
+  \item  Améliorer la sécurité de l’information
+  \item  Réduire les impacts sur le business
+  \item  Renforcer la prévention d’incident
+  \item  Assurer le recevabilité des preuves
+  \item  Mettre à jour l’appréciation des risques
+  \item  Prévention et sensibilisation
+\end{itemize}
+
+  C'est ce que l'on retrouve dans l'ISO 27035, une norme de l'ISO qui structure  une organisation sur la réponse à incident autour d'une \textbf{politique} de gestion des incidents de sécurité
+
+Ce document de politique définit les éléments structurants. Il doit être pragmatique et adapté aux enjeux et à la taille de l’entité. Une bonne appropriation de cette  politique par les salariés est indispensable. 
+
+La norme donne un guide  des incontournables de ce document :
+
+\begin{itemize}
+  \item Organisation générale (rôles et responsabilités, processus, équipes internes et externes, service de l'état, régulateurs ou agences nationales,... );
+  \item Grandes définitions  (en particulier événement, incident, alerte et vulnérabilité);
+  \item Sources (techniques, informationnelles et humaines) de remontée d’événements;
+  \item Catégorisation et priorisation des incidents suivant des critères à préciser;
+  \item Analyse post-mortem et analyse des retours d’expérience;
+  \item Activation et fonctionnement de la cellule de réponse aux incidents (CSIRT - Cybersecurity Incident Response Team) comprenant les modalités de notification des incidents majeurs et d’activation de la cellule de crise.
+  \item Sensibilisation des collaborateurs et formations dédiées.
+\end{itemize}
+
+Les phases de qualification et de décision reposent sur des expertises techniques très diverses en fonction des incidents.
+
+Se lancer dans la construction d'un processus de gestion des incidents en interne ou pour un client en mode service, il est important d'être conscient des expertises nécessaire pour opérer :
+
+Les \textbf{expertises techniques} liées à la \textbf{\g{surveillance détection}}qui s’appuient sur les solutions et équipements disponibles (IPS/IDS : intrusion detection / Prevention System, Security Information and Event Management : SIEM, logs locaux, analyseurs réseaux, supervision…), les clients,  partenaires et fournisseurs (CERT : Computer Emergency Response Team privés ou étatiques, opérateurs...).
+
+Les expertises dépendent des caractéristiques techniques et fonctionnelles \textbf{des systèmes d’information} (technologies, logiciels, architectures, services cloud...). Le niveau de compétence des équipes internes ou externes qui assurent la maintenance conditionne la qualification  d’un événement dit incident. 
+
+Des \textbf{expertises  plus orientées vers la réaction }pour traiter la réaction nécessitent des expertises pointues en sécurité (analyse du mode de propagation d’un code malveillant, analyse « forensic » d’un poste de travail  compromis…).
+
+Le \textbf{niveau de capacité de support technique }ou de gestion de crise (Helpdesk) détermine le temps et la qualité de la réaction à l’incident et sa capacité de limiter les impacts. Les mauvaises décisions prises dans l’urgence pendant un incident sont souvent dues à un manque d’expertise ou d’organisation dans la phase d'organisation de ces plans de réaction à incidents. Ces mauvaises décisions peuvent amplifier les impacts de l’incident voire faire basculer l’entité en crise.
+
+Le  champ d’application de la norme est une approche planifiée et structurée :
+\begin{itemize}
+  \item De la détection, de l'analyse et du reporting des incidents de sécurité,
+  \item De la réponse et du management des incidents de sécurité,
+  \item De la détection, de l’analyse et du management des vulnérabilités de la sécurité de l’information,
+  \item De l’amélioration continue de la sécurité de l’information et de la gestion d’incident, dans le cadre plus global du management de « l’incidentologie » et des vulnérabilités.
+\end{itemize}
+
+
+
+
+
+\subsection{Continuité d'activité  avec l'ISO 22301}
+
+Autour de la gestion de la résilience, il existe un cadre normatif qui permet d'organiser les plans de continuité d'activité qui sont le pendant opérationnel  de la DSI de la gestion de l'incident de cybersécurité.
+ La vocation des plans de continuité d’activité (Business Continuity Plans) est donc de répondre à des situations critiques, souvent  rares mais pouvant avoir des impacts graves pour l'entreprise.  Ces plans prennent en compte (inondation, incendie, accident industriel), on  intègre de plus en plus souvent des risques de conflit social, des attaques cyber de grande ampleur, des ruptures de service d’un prestataire  ou sous-traitant. La démarche pour concevoir son système de management de la continuité d’activité est l’objet de la norme ISO 22301. Une étape initiale consiste à analyser les impacts métiers (Business Impact Analysis) pour identifier les activités critiques et les besoins de reprise. La norme ISO 22317 fournit un cadre et des bonnes pratiques pour réaliser cette analyse.
+ La norme ISO 22301 est intitulée « Sécurité sociétale — Systèmes de management de la continuité d'activité — Exigences ». Elle constitue un outil des organisations « pour anticiper et gérer la continuité de leurs activités » et « délivre des lignes directrices pour la mise en place d’un système de management spécifique et efficace  ». Elle a été publiée dans sa première version en 2012, puis révisée en 2019. Cette norme remplace des standards qui étaient jusque-là nationaux, comme celui par exemple britannique (BS-25999).
+ 
+ 
+ En effet, lorsque toutes les stratégies de défense ont échoué et que la crise survient il est important de définir une cadre de résilience :    Comment l'entreprise peut-elle continuer à fonctionner, rétablir ses activités le plus rapidement possible et essayer de minimiser son impact ?
+ 
+ C’est pour répondre à ces questions que  cette norme ISO 22301 a été construite.  Aujourd’hui encore, de nombreuses PME qui subissent une cyberattaque incapacifiante ne survivent pas . C’est  souvent  par un manque de en place d'une gestion de la continuité d’activité. La cyber résilience  encore un parent pauvre de la cybersécurité, non pas le manque travaux, mais simplement pas la non prise de conscience du risque de rupture totale de l'activité par des attaques informatiques.
+
+% TODO  releccture
+
+ La norme ISO 22301 se fixe comme objectif  de spécifier les exigences pour planifier, établir, mettre en place et en œuvre, contrôler, réviser, maintenir et améliorer de manière continue un système de management documenté afin de se protéger des incidents perturbateurs, réduire leur probabilité de survenance, s'y préparer, y répondre et de s'en rétablir lorsqu'ils surviennent. 
+
+En résumé, elle aide les organisations « à se montrer mieux préparées et plus solides face à des interruptions de toutes sortes »  grâce notamment à la création d’un système de management de la continuité d’activité. Ce système de management de la continuité permettra également de s’assurer que les objectifs de la continuité soient alignés avec ceux de l’entreprise et de la direction .
+
+Cette norme a été rédigée de façon générique pour englober le plus de situations possibles et pouvoir être appliquée dans des organisations de tous types et de toutes tailles . Les exigences spécifiées dans la norme le sont de manière « relativement brève et concise »  afin de pouvoir servir de base pour la certification. Pour avoir un peu plus de détaille, vous pouvez consulter la norme ISO 22313 donne les bonnes pratiques de la Continuité d’activité.
+
+
+%========================================================
+% 											REAGIR AUX INCIDENTS
+%-----------------------------------------------------------------------------------------
+\section{Réagir}
+
+
+
+
+Il est à noter que la norme donne des éléments d'organisation mais manque d'aspect pratique avec par exemple des fiches reflexes.
+
+\subsection{Priorisation de l'évènement}
+ Comme un événement est un changement observable du comportement normal d'un système, d'un environnement, d'un processus, d'un flux de travail, il est important de classifier ce changement dans un mécanisme de priorisation.  Il existe trois types de classification de base:
+ 
+\begin{itemize}
+  \item  \textbf{Normal}: un événement normal n'affecte pas les composants critiques ni ne nécessite de contrôle des modifications avant la mise en œuvre d'une résolution. Les événements normaux ne nécessitent pas la participation du personnel supérieur ou la notification de la direction de l'événement.
+\textbf{Escalade} - un événement escaladé affecte les systèmes de production critiques ou nécessite la mise en œuvre d'une résolution qui doit suivre un processus de contrôle des modifications. Les événements escaladés nécessitent la participation du personnel supérieur et la notification des parties prenantes de l'événement.
+\textbf{Urgence} - une urgence est un événement qui peut :
+\begin{itemize}
+  \item avoir un impact sur la santé ou la sécurité humaine;
+  \item enfreindre les contrôles primaires des systèmes critiques ou sensibles de l'entreprise;
+  \item affecter matériellement les performances des composants ou en raison de l'impact sur les systèmes de composants empêcher les activités qui protègent ou peuvent affecter la santé ou la sécurité des individus;
+  \item être considéré comme une urgence par la politique de sécurité de l'entreprise .
+\end{itemize}
+
+\end{itemize}
+
 %-------------------------------------------------------------------------
 \upicture{../Tex/Pictures/img-mtbf}{Incidents}{01}{lb:mtbf}
 %-------------------------------------------------------------------------
 
 %-------------------------------------------------------------------------
-\upicture{../Tex/Pictures/img-liovar-incidents}{Incidents}{01}{lb:mtbf}
+\upicture{../Tex/Pictures/img-liovar-incidents}{Incidents}{0.6}{lb:mtbf}
 %-------------------------------------------------------------------------
+
+%==================================================
+\section{Enquêter}
+%--------------------------------------------------------------------------------
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\subsection{Analyse de l'attaque}
+Les enquêtes sur les intrusions visent à vérifier les modes d’attaque à l’œuvre dans les cyber-incidents, à déterminer
+les activités réseau postérieures aux événements, et à détecter les points terminaux et les comptes utilisateurs additionnels qui ont été compromis. Il est essentiel à la tenue d’une enquête sur une intrusion de tenter de comprendre l’étendue potentielle d’un incident.
+
+\subsection{Evaluation détaillée des dommages}
+
+Les évaluations des dommages consistent pour l’essentiel à identifier les données qui ont été infiltrées ou exposées, ainsi qu’à tenter de comprendre les motivations des cyber-adversaires et la suite possible des événements. Les évaluations peuvent mettre en lumière des enjeux qu’il importe de soulever et renseigner votre entreprise sur les conséquences éventuelles de la perte, de la fuite ou de l’exfiltration de données.
+
+%==================================================
+\section{Techniques connexes}
+%--------------------------------------------------------------------------------
 
 \subsection{Threats Hunting}
 
@@ -95,15 +358,15 @@ Réagir, gestion de crise, à quel moment géré t’on la crise.
 
 \subsection{Haqckback}
 
+\section{Forensic}
+
 \upicture{../Tex/Pictures/img-incidents}{Incidents}{1}{lbl_incident}
 
-ceci est un texte
+%==================================================
+\section{Anticiper}
+%--------------------------------------------------------------------------------
 
-\section{de l'alerte à l'incident}`
 
-\section{de l'incident à la crise}
-
-\subsection{PCA/PRA et PCI/PRI}
 
 \subsection{se préparer et s'entrainer}
 
@@ -115,6 +378,6 @@ Une question qui se pose lors d’une reprise d’activité est la confiance que
 
 \section{Aspect juridique de la réaction}
 `
-\subsection{hackback}
 
-\section{Forensic}
+
+

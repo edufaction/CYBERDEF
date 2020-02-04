@@ -35,7 +35,7 @@ Malheureusement, dans encore beaucoup de cas, les équipes SOC et les équipes l
 
 On peut aussi Intégrer dans  le SOC des fonctions de  \textit{Threat Hunting }.
 
-Les grand principes de réussite d’un SOC sont 
+Les grand principes de réussite d’un SOC sont : 
 \begin{itemize}
   \item Une veille Cyber efficace et à large ouverture en terme de menaces,
   \item Une capacité à identifier d’une cartographie détaillée des ressourcesde l’infrastructure et de correctement identifier les menaces avec des analyses des risques,
@@ -59,13 +59,13 @@ L'efficacité d'un SOC peut être évalué. A l'image d'équipe de Pentest qui t
 
 %SOURCE https://www.globalsecuritymag.fr/SOC-comment-en-mesurer-l,20151005,56416.html
 
-un SOC est efficace s’il arrive à détecter avec pertinences les attaques en cours,  Cependant, il est important, de comprendre qu’un SOC ne protègera jamais contre les attaques dont le scénario n'a pas été "programmé". On trouvera dans \link{https://clusif.fr/publications/reussir-deploiement-dun-soc/}{une publication du  CLUSIF}, les critères pour réussir le déploiement d'un SOC.
+un SOC est efficace s’il arrive à détecter avec pertinences les attaques en cours,  Cependant, il est important, de comprendre qu’un SOC ne protègera jamais contre les attaques dont le scénario n'a pas été \g{programmé}. On trouvera dans \link{https://clusif.fr/publications/reussir-deploiement-dun-soc/}{une publication du  CLUSIF}, les critères pour réussir le déploiement d'un SOC.
 
 Les équipes qui testent des OSC sont nommés des \textbf{\textit{Purples Team}}.
 
 \subsubsection{Les outils connexes d'un SOC}
 
-Au delà des SIEM, il semble important d'ajouter à l'outillage dun SOC un ensemble de système permettant de mesurer et d'évaluer l'impact des attaques. Un travail intéressant autour de la notion d'Echelle de RICHTER (Voir  \link{https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber}{un article du FIC 2014}) d'une attaque afin de définir des indicateurs "de cotation".
+Au delà des SIEM, il semble important d'ajouter à l'outillage dun SOC un ensemble de système permettant de mesurer et d'évaluer l'impact des attaques. Un travail intéressant autour de la notion d'Echelle de RICHTER (Voir  \link{https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber}{un article du FIC 2014}) d'une attaque afin de définir des indicateurs \g{de cotation}.
 
 % Begin PRZ ===========================
 \begin{frame}
@@ -85,3 +85,12 @@ Au delà des SIEM, il semble important d'ajouter à l'outillage dun SOC un ensem
 
 
 %SOURCE https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber/
+
+
+\subsection{Les outillage d'un SOC}
+
+Au delà des SIEM, des sondes, des EDR, l'orchestration
+
+L'orchestration et l'automatisation de la sécurité  permet de réduire les délais de réponse, de  limiter l'exposition aux attaques et offrir une cohérence des processus cyberdéfense. Ces  outils d’automatisation et d’orchestration,  appelés SOAR, sont conçus pour améliorer la productivité et l’efficacité de centres des opérations de sécurité et des analystes.
+
+Ces outils automatisent les tâches de routines chronophages,  ils aident à coordonner les cycles de vie de réponse aux incidents et de gestion des incidents. Outils de  cohérence, ils permettent d'assurer reproductibilité de la discipline des opérations de cybersécurité et permet de réduire le temps nécessaire pour détecter et traiter les incidents.

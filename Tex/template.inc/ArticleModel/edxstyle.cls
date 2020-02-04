@@ -47,7 +47,7 @@
 
 \RequirePackage[labelfont={bf,sf,small},%
                 labelsep=period,%
-                justification=raggedright]{caption}
+                justification=centering]{caption}
 \setlength{\abovecaptionskip}{5pt}
 \setlength{\belowcaptionskip}{5pt}
 				
