@@ -1,0 +1,34 @@
+\subsection{Cycle de vie d'une attaque:}
+\par Pour la compréhension,il est nécessaire de comprendre les différentes étapes depuis l'infection jusqu'au fonctionnement complet du botnet.
+
+\subsubsection{Infection de la machine}
+Cette première étape a généralement pour but de télécharger la charge virale sur un serveur.
+Elle peut être initiée via les vecteurs suivants:
+	 \begin{itemize}
+		 \item Par spam(existence de spambot)
+		 \item Exploitation de faille lié à la navigation sur un site web(malvertising\footnote{exploitation de pop-up publicitaires}, waterholing\footnote{ciblage de sites web fréquentés})
+		 \item P2P
+		 \item Spear phishing\footnote{hameçonnage ciblé pour récupérer données ou identifiants}
+		 \item SMS, MMS
+		 \item Bluetooth
+		 \item TDS\footnote{Traffic Distribution Service, outil et service de redirection de trafic}
+		 \item Exploit kits\footnote{plate-forme d'exploitation supporté par un site web permettant de tester une liste d'exploits}
+	 \end{itemize}
+	
+\subsubsection{Activation}
+Après téléchargement, l'installation du malware peut établir un premier contact avec le botnet( serveur dédié, servant-bot) ayant une fonctionnalité de C\&C.
+Le téléchargement de rootkit d'installation ou de DLL complémentaire finalise la mise en place du botnet sur la machine infectée.	
+	
+\subsubsection{Mise à jour}
+Les échanges permettent l'ajout de fonctionnalité, de configurations afin que le botnet puisse identifier et s'adapter à son environnement.
+Il peut, par exemple, vouloir modifier son hash\footnote{signature numérique, ici on parle de signature virale} afin de conserver une certaine furtivité pour la continuité de l'attaque.
+
+\subsubsection{Auto-protection}
+La persistance et la dissimulation sont les facteurs clés de cette étape. L'installation de rootkit de protection, la modification du système, etc permettent de masquer l'action du botnet.
+	
+\subsubsection{Propagation}
+Cette phase d'extension est à la fois locale par du scan et distante par diffusion virale (mail avec lien ou pièce jointe).
+	
+\subsubsection{Phase opérationnelle}
+Cette dernière phase vise à accomplir les actions souhaitées de l'attaquant. 
+Déclenchées, synchronisées ou persistantes ces attaques s'adaptent aux cibles désignées.Ordonné par le C\&C elles peuvent être activées ou mises en sommeil afin de ne pas attirer l'attention.

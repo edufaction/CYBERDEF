@@ -1,0 +1,8 @@
+Nom du botnet,Storm
+nombre de bots,85000
+Infection,social engineering
+type de menace,manipulation d'informations
+type d'attaque,Spam DDoS
+présence d'obfuscation,oui(XOR)
+Hash,modification par la date du jour+checksum(32 combinaisons possibles / jour)
+Domaines/URL,P2P

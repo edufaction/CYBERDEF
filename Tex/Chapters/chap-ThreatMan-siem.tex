@@ -84,6 +84,9 @@ Par ailleurs l'important sera par la suite de définir quel type de réaction à
 
 Un SIEM s’avère capable de détecter des incidents de sécurité qui seraient passés inaperçus. Pour une raison simple : les nombreux hôtes qui enregistrent des événements de sécurité ne disposent pas de fonctions de détection d’incidents.
 
+
+
+
 Le SIEM dispose de cette faculté de détection grâce à sa capacité de corrélation des événements. Contrairement à un système de prévention d’intrusion qui identifie une attaque isolée, le SIEM regarde au-delà. Les règles de corrélations lui permettent d’identifier un événement ayant causé la génération de plusieurs autres (hack via le réseau, puis manipulation sur un équipement précis…).
 
 Dans de tels cas de figure, la plupart des solutions ont la capacité d’agir indirectement sur la menace. Le SIEM communique avec d’autres outils de sécurité mis en place dans l’entreprise (Exemple pare-feu) et pousse une modification afin de bloquer l’activité malveillante. Résultat, des attaques qui n’auraient même pas été remarquées dans l’entreprise sont contrecarrées.
@@ -103,13 +106,31 @@ Dans de tels cas de figure, la plupart des solutions ont la capacité d’agir i
 
 \mode<all>{\picframe{../Tex/Pictures/img-siem}{architecture d'un SIEM}{0.8}{lbl-siem}}
 
-Pour aller encore plus loin, une organisation peut choisir d’intégrer à son SIEM une Cyber Threat Intelligence (CTI ou Flux de renseignement sur les menaces). 
+Pour aller encore plus loin, une organisation peut choisir d’intégrer à son SIEM,  une Cyber Threat Intelligence (CTI ou Flux de renseignement sur les menaces). 
 
 Selon la définition de Gartner, la Cyber Threat Intelligence (CTI) est la connaissance fondée sur des preuves, y compris le contexte, les mécanismes, les indicateurs, les implications et des conseils concrets, concernant une menace nouvelle ou existante ou un risque pour les actifs d’une organisation qui peuvent être utilisés afin d’éclairer les décisions concernant la réponse du sujet à cette menace ou un danger .
 
 La CTI consiste donc à collecter et organiser toutes les informations liées aux menaces et cyber-attaques, afin de dresser un portrait des attaquants ou de mettre en exergue des tendances (secteurs d’activités visés, les méthodes d’attaque utilisées, etc.). Résultat, une meilleure anticipation des incidents aux prémices d’une attaque d’envergure.
  
+
  \subsection{Détection  d’incidents}
+
+
+
+\subsubsection {Collecter les logs }
+Avant toute chose, il faut alimenter le système avec les «logs» des composants du système d’information. Ici il est aussi bien question de «logs» d’outils de sécurité comme les IDS, IPS, «HoneyPot», Pare-feu, etc… que ceux des autres composants comme les équipements réseaux, les serveurs mandataires, de fichier, de mail, les services dans le nuage, etc…
+\subsubsection {Normaliser et indexer les logs}
+La normalisation des logs est un processus d’uniformisation des données collectées qui, quelque soit la source, détecte le type de donnée pour intégrer chaque information dans une base de données. Par exemple plusieurs équipements différents écrivent chacun dans un de leur journal d’activité l’adresse IP source, la date, l’heure et l’activité. Chaque équipement aura son format particulier, il va donc falloir les analyser pour détecter et labelliser chaque information utile. Sur ce point, les constructeurs d’équipement et les éditeurs de solutions SIEM travaillent ensemble afin de proposer des modules de normalisation qui couvrent la plupart des usages clients. De plus de nombreux formats de solutions de log sont nativement pris en charge par les SIEM. Les informations sont ensuite indexées pour optimiser les temps de traitement de l’information.
+\subsubsection {Corréler les logs}
+La valeur ajoutée du SIEM vis-à-vis d’un simple serveur de « log», se joue en partie sur la corrélation. En effet, ici il est question de pouvoir mettre en évidence des activités en analysant conjointement plusieurs évènements de sources différentes. Bien que ces évènements puissent paraître anodins de manière isolé, ensemble ils forment un indicateur de compromission. Cette corrélation se base sur des règles forgées à partir de cas d’usage.
+Exemple de scénario d’attaque : Plusieurs tentatives infructueuses de connexions à un service VPN de l’entreprise. Une connexion réussie sur le VPN avec le même nom d’utilisateur. Un programme suspect installé sur la ressource depuis l‘équipement connecté au VPN. Accès continue depuis cette ressource vers un serveur de base de données. Copie des données de la base de données avec un déversement dans un fichier. Séparément les évènements sont anodins, cependant une fois corrélés, cela ressemble à une tentative d’attaque par «brute force» réussie et un vol de donnée stockée dans la base de donnée.
+\subsubsection {Analyser et alerter}
+Ensuite il faut analyser le contenu corrélé pour faire le tri entre les faux positifs et les vrais positifs. Il y a aussi la détection de menace dont le but est de comparer des IOC à des listes de sources malveillantes provenant d’adresse IP, de nom de domaine, de signature de code malveillant, etc. Chaque solution propose ses propres algorithmes d’évaluation du risque lié aux évènements analysés. Une fois les analyses réalisées, des mécanismes peuvent déclencher des alertes si un seuil a été franchi. 
+\subsubsection {Réponse graduelle}
+Il est possible de proposer des actions d’isolation ou de réponse automatisée. Par exemple : Si les «logs» d’un Anti-virus analyse la présence d’un rançongiciel assimilable au logiciel malveillant «Wannacry» et que le poste en question fait des tentatives de connexions extérieures vers le port 445, il est possible de déclencher un isolement de la machine du réseau à l’aide d’un script ou de l’agent présent sur le poste. 
+
+
+
 
 
 % TODO Voir article sur les problèmatique SIEM
@@ -122,7 +143,14 @@ La cyber-protection d'une entreprise est principalement basée sur les outils de
 
 À l’heure où les normes et certifications de cyber-sécurité sont de plus en plus nombreuses, le SIEM devient un élément clé de tout système d’information. C’est un moyen relativement simple de répondre à plusieurs exigences de sécurité (Exemple : historisation et suivi des logs, rapports de sécurité, alerting, …) et de prouver sa bonne foi aux autorités de certification ou de suivi. D’autant que le SIEM peut générer des rapports hautement personnalisables selon les exigences des différentes réglementations. 
 
-Ce seul bénéfice suffit à convaincre des organisations de déployer un SIEM. Et pour cause : la génération d’un rapport unique traitant tous les événements de sécurité pertinents quelle que soit la source des logs (générés en outre dans des formats propriétaires) fait gagner un temps précieux. 
+Ce seul bénéfice suffit à convaincre des organisations de déployer un SIEM. La génération d’un rapport unique traitant tous les événements de sécurité pertinents quelle que soit la source des logs (générés en outre dans des formats propriétaires) fait gagner un temps précieux. En outre la création de tableaux de bord issus des usages de surpervision ou de surveillance du SIEM offre des outils de pilotage de la sécurité. 
+
+\subsubsection{Supervision}
+En collectant, corrélant et analysant l’activité du système d’information, le SIEM peut présenter des indicateurs clés de performance (KPI) et des indicateurs clé de risque (KRI).
+Les fonctions du SIEM ne sont pas totalement dédiées à la sécurité, on peut donc remonter des informations plus générales concernant l’usage du système d’information. Par exemple, l’outil de source ouverte Elastic Stack, peut être utilisé pour faire du «Business Intelligence» ou du «Big Data». A travers les indicateurs dynamiques et personnalisables, on peut développer un outil de gouvernance du système d’information. Par exemple, connaître l’utilisation de ses boîtes mails, la quantité de pièces jointes échangées comparativement à un service de partage de fichiers.
+\subsubsection{ Surveillance}
+Le SIEM est capable de faire de la surveillance générale. Le but est de définir des règles de corrélation en capacité de déclencher une alerte ou des règles spécifiques à destination des équipes techniques du SOC. Ces règles peuvent se baser sur l’analyse des menaces, sur des comportements anormaux, ou sur un indicateur de véracité d’une attaque. En termes de surveillance, l’atout du SIEM est de centraliser la gestion des alertes sur une seule interface. 
+L’autre atout du SIEM sur les solutions de surveillance d’infrastructure classique, c’est qu’il ne nécessite pas directement d'agent spécifique. l'arrivée de l'analyse des terminaux pour compléter l'analyse réseau  modifie les cultures et offre de nouvelles manière de détecter des codes malveillants en action. 
 
 
 \subsubsection{Les contreparties du SIEM}

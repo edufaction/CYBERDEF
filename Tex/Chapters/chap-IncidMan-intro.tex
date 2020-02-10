@@ -11,8 +11,10 @@ la réponse sur incident de sécurité pose de nombreuses questions sur les aspe
 \subsection{Terminologie}
 
 % FRAME beamer PRZ ------------------------------------
-\mode<all>{\texframe{La réponse à incident}{quelques éléments de définition}
-{%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+\mode<all>{\texframe
+{La réponse à incident}
+{quelques éléments de définition}
+{%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 La réponse à incident est le processus qui permet de déployer les moyens nécessaires pour traiter un événement de sécurité classé comme incident de sécurité.
 Un incident de sécurité peut être enregistré en provenance de systèmes de sécurité, de veille ou d'audit. Le besoin d'intervention peut être immédiat comme différé.
 La réponse peut nécessiter des équipes de compétences larges comme expertes sur un domaine donné. L'intervention peut nécessité des moyens techniques important ou pas, et mettre en isolation tout ou partie d'un système d'information.
@@ -40,11 +42,10 @@ Un incident de sécurité, correspond donc à la conséquence d’un ou plusieur
 Cette distinction a toujours existé, en effet l'ISO/IEC 27001 l'a reprise de l'ISO TR 18044:2004 (aujourd'hui remplacée par l'ISO/IEC 27035) qui l'avait elle-même reprise de l'ISO TR 13335-2:1997. Cela remonte donc à la création de la normalisation en sécurité informatique en 1991.
 Concrètement, un événement peut donc être :
 \begin{itemize}
-  \item soit la découverte d’une vulnérabilité,
-  \item  soit la constatation d’une non-conformité,
+  \item soit la découverte d’une vulnérabilité;
+  \item  soit la constatation d’une non-conformité;
   \item soit une altération, une perte ou une atteinte à l’information,
-  \item   soit une altération ou une perte d’un élément du système d’information, d’un
-élément de configuration du SI ou d’un actif non-IT.
+  \item   soit une altération ou une perte d’un élément du système d’information, d’un élément de configuration du SI ou d’un actif non-IT.
 \end{itemize}
 
 Un événement peut donner lieu à un \textbf{traitement préventif,} dans la mesure où aucun impact n'a été identifié, par exemple la découverte d’une vulnérabilité.
@@ -68,7 +69,7 @@ Voici quelques exemples d'incidents relativement courants:
 
 \begin{itemize}
   \item Une attaque par déni de service distribué ( DDoS ) contre les services cloud critiques;
-  \item  Infection par un logiciel malveillant ou un rançon-giciel qui a chiffré des fichiers d'entreprise critiques sur le réseau de l'entreprise;
+  \item  Infection par un logiciel malveillant ou un rançongiciel qui a chiffré des fichiers d'entreprise critiques sur le réseau de l'entreprise;
   \item Une tentative de phishing réussie qui a conduit à la divulgation d'informations personnelles identifiables des clients;
   \item Perte ou vol, d'un ordinateur portable non chiffré avec des informations sensibles;
   \item découverte sur internet (Darkweb) de données sensibles appartenant à l'entreprise.
@@ -148,6 +149,34 @@ Nous allons aborder la réaction à incident suivant les 3 volets  :
 \section{Processus de management} 
 %-----------------------------------------------------------------------------------------
 
+\subsection{Résilience}
+ 
+ On ne peut pas parler de réponse à incident dans un contexte d'attaque informatique sans parler de résilience.
+ 
+La cyber-résilience ou la résilience numérique est la capacité d’un système d’information à résister à une panne ou une cyber-attaque et à revenir à son état initial après l’incident, ou bien comme la faculté d’une structure quelconque à retrouver ses propriétés initiales après une altération significative. La notion peut s’appliquer aussi bien à un système physique ou un système d'information, qu’à un individu ou une organisation. 
+
+Elle se traduit pour cette organisation par sa capacité de continuer à fonctionner et de résister à des agressions internes comme externes, volontaires ou non.
+
+ Le niveau de résilience se mesure  avec des critères tels que la structure de l’organisation mise en place, les ressources humaines consacrées au fonctionnement du système, la redondance et le durcissement des systèmes et des équipements, les procédures en place, des compétences acquises à travers une formation et un entrainement dédiés, la connaissance fine de l’état de fonctionnement du système et la capacité à diagnostiquer une défaillance potentielle.
+ 
+Sur le cyber-espace, la cyber-résilience implique donc de se préparer et de prendre  les mesures adaptées pour assurer le rétablissement d’un système. Par  ailleurs, dans le monde cyber dans l'entreprise l’incertitude peut régner dans l'usage :
+\begin{itemize}
+  \item  sur la sécurité des systèmes (virus déployés dont les effets ne sont pas maîtrisés), 
+   \item l’intégrité du système n’est plus garantie, 
+  \item l’activité du système peut être dégradée (données corrompues ou altérées) ou inopérante (communications inactives), 
+  \item les risques de propagation des menaces sont augmentés si les interconnexions entre systèmes restent ouvertes, 
+    
+\end{itemize}
+
+ Cette résilience peut  nécessiter des bascules vers des modes dégradés, avec l'isolation ou l'arrêt de certaines sous-systèmes. Ce type de décision nécessite de circuit de décision rapide et court.
+
+C'est dans un cadre de cette continuité d'activité que se situent la majorité des référentiels de management de l'incident de de sécurité.
+
+\begin{notebox}{Résilience et continuité d'activité}
+La capacité d’un système  à résister à une panne ou une cyber-attaque et à revenir à son état initial après l’incident sera indifféremment appelé dans \ecours résilience ou continuité d'activité. 
+\end{notebox}
+
+
 \subsection{L'intégration dans la gestion des incidents ITIL}
 
 ITIL (\g{Information Technology Infrastructure Library }pour \g{Bibliothèque pour l'infrastructure des technologies de l'information}) est un ensemble d'ouvrages recensant les bonnes pratiques (\g{best practices}) du management du système d'information. 
@@ -201,39 +230,18 @@ Dans ces processus le cycle de vie de l'incident suis un cycle connu et reconnu 
   \item \textbf{Clôture de l’incident}  : l’enregistrement de l’incident dans le système de gestion du management est clôturé en appliquant le statut « terminé » à celui-ci.
 \end{itemize}
 
-\subsection{Résilience}
- `
-La cyber-résilience ou la résilience numérique est la capacité d’un système d’information à résister à une panne ou une cyber-attaque et à revenir à son état initial après l’incident, ou bien comme la faculté d’une structure quelconque à retrouver ses propriétés initiales après une altération significative. La notion peut s’appliquer aussi bien à un système physique ou un système d'information, qu’à un individu ou une organisation. 
-
-
-Elle se traduit pour cette organisation par sa capacité de continuer à fonctionner et de résister à des agressions internes comme externes, volontaires ou non.
-
- Le niveau de résilience se mesure  avec des critères tels que la structure de l’organisation mise en place, les ressources humaines consacrées au fonctionnement du système, la redondance et le durcissement des systèmes et des équipements, les procédures en place, des compétences acquises à travers une formation et un entrainement dédiés, la connaissance fine de l’état de fonctionnement du système et la capacité à diagnostiquer une défaillance potentielle.
- 
-Sur le cyber-espace, la cyber-résilience implique donc de se préparer et de prendre  les mesures adaptées pour assurer le rétablissement d’un système. Par  ailleurs, dans le monde cyber dans l'entreprise l’incertitude peut régner dans l'usage :
-\begin{itemize}
-  \item  sur la sécurité des systèmes (virus déployés dont les effets ne sont pas maîtrisés), 
-   \item l’intégrité du système n’est plus garantie, 
-  \item l’activité du système peut être dégradée (données corrompues ou altérées) ou inopérante (communications inactives), 
-  \item les risques de propagation des menaces sont augmentés si les interconnexions entre systèmes restent ouvertes, 
-    
-\end{itemize}
-
-    Cette résilience peut  nécessiter des bascules vers des modes dégradés, avec l'isolation ou l'arrêt de certaines sous-systèmes. Ce type de décision nécessite de circuit de décision rapide et court.
-   
  \subsection{La gestion des incidents avec l'ISO 27035}
- 
  
  %https://pecb.com/en/education-and-certification-for-individuals/iso-iec-27035
  
  La mise en place d'un processus de gestion d’incidents, qu'il soit totalement intégré à la. DSI via ITIL, ou des processus ISO9001 est complexe en entreprise mais les enjeux sont toujours identiques :
 \begin{itemize}
-  \item  Améliorer la sécurité de l’information
-  \item  Réduire les impacts sur le business
-  \item  Renforcer la prévention d’incident
-  \item  Assurer le recevabilité des preuves
-  \item  Mettre à jour l’appréciation des risques
-  \item  Prévention et sensibilisation
+  \item  Améliorer la sécurité de l’information;
+  \item  Réduire les impacts sur le business;
+  \item  Renforcer la prévention d’incident;
+  \item  Assurer le recevabilité des preuves;
+  \item  Mettre à jour l’appréciation des risques;
+  \item  Prévention et sensibilisation.
 \end{itemize}
 
   C'est ce que l'on retrouve dans l'ISO 27035, une norme de l'ISO qui structure  une organisation sur la réponse à incident autour d'une \textbf{politique} de gestion des incidents de sécurité

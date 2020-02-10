@@ -1,3 +1,8 @@
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS COURSE
+%                          TEMPLATE BASIC
+%                           2020 eduf@ction
+%-------------------------------------------------------------
 
 \usepackage{beamerarticle}
 \usepackage{ae}
@@ -22,7 +27,7 @@
 \usepackage{makeidx} 
 \usepackage{xspace} 
 
-% Police par defaut
+% Police Default
 \renewcommand{\familydefault}{pag}
 \definecolor{color1}{RGB}{160,0,0} % Color of the article title and section
 \definecolor{color2}{RGB}{220,220,220} % Color of the boxes behind the abstract
@@ -68,13 +73,8 @@
 
 % ----------------------------------------------
 
-
-
 \newcommand{\uelogo}{\begin{tikzpicture}[remember picture,overlay]\node at (current page.north west)[xshift=4cm, yshift=-4cm, text opacity=1.0]{\includegraphics[width=0.1\paperwidth]{template/MemoirePictures/shield-20.pdf}}; 
 \end{tikzpicture} }
-
-
-
 
 %-------------------------------------------------------------------------
 %	HEADERS AND FOOTERS
@@ -82,13 +82,46 @@
 
 \usepackage{fancyhdr} % Required for header and footer configuration
 \pagestyle{fancy} % Enable the custom headers and footers
-
 \fancyhf{} % Clear default headers and footers
-\fancyhead[LE,RO]{\sffamily\normalsize\thepage} % Styling for the page number in the header
-%\fancyhead[LO]{\sffamily\normalsize\rightmark} % Print the nearest section name on the left side of odd pages
-%\fancyhead[RE]{\sffamily\normalsize\leftmark} % Print the current chapter name on the right side of even pages
-%\fancyfoot[RE,LO]{\sffamily\normalsize\ubooktitleMain} % Uncomment to include a footer
-%\fancyfoot[LE,RO]{\sffamily\normalsize\ubooksubtitle} % Uncomment to include a footer
+\fancyfoot[C]{\sffamily\normalsize\thepage} 
+\fancyhead[RE,LO]{\sffamily\normalsize Cyberdef 101} % 
 
 
 
+%\pagestyle{fancy} % Enable the custom headers and footers
+%\fancyhead{}
+%\fancyfoot{}
+%\renewcommand{\headrulewidth}{1pt}
+%\fancyhead[L]{\includegraphics{logo-sec101.png}}
+%\fancyhead[C]{\textbf{SEC101  - Partie 3 : VAR  \& SECOPS – Fiche Technique}}
+%\fancyfoot[C]{\textbf{page \thepage}}
+%\setlength{\headheight}{45pt} 
+
+%-------------------------------------------------------------------------
+%	COMMANDS 
+%-------------------------------------------------------------------------
+
+
+\ifdefined\PRZMODE
+
+\newcommand{\upicture}[4]{
+\framesubtitle{#2}
+%\begin{figure}[!h] %h
+  \begin{center}
+	 \includegraphics[height=0.95\textheight, width=0.95\textwidth, keepaspectratio ]{#1.pdf}
+  \end{center}
+%  \end{figure}
+}
+
+\else
+
+\newcommand{\upicture}[4]{
+\begin{figure}[!h] %h
+  \begin{center}
+	 \includegraphics[width=#3\textwidth]{#1.pdf}
+  \end{center}
+\caption{#2 \label{#4}}
+\end{figure}
+}
+	
+\fi
