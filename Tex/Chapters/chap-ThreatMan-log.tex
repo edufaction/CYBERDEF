@@ -6,9 +6,9 @@
 \uchap{chap-Vulman-log.tex}
 %********************************************
 
-\section{Log Management }
+\subsection{Log Management }
 
-\subsection{Traces, journaux, logs}
+\subsubsection{Traces, journaux, logs}
 
 Dans le domaine informatique et télécom, le terme log (ou ses synonymes traces, journaux) est généralement un fichier, une base de données ou tout autre moyen de stocker des information, ici le stockage d'un historique d'événements qu'un logiciel ou un système souhaite \g{tracer}. 
 Ce mot qui est le diminutif  de logging, est traduit en français par \g{journal}. Le log est donc un journal horodaté, qui stocke temporellement les différents événements qui se sont produits sur un  logiciel, un ordinateur, un serveur, etc. Il permet ainsi d'analyser avec une fréquence programmée heure par heure,  minute par minute, etc) l'activité  d'un processus technique.  
@@ -37,7 +37,7 @@ L'exploitation de ces traces est souvent complexe car chaque équipements dispos
 
 On peut citer par exemple, SYSLOG., qui par ailleurs n'est pas le seul type d'outil pour assurer la collecte et la normalisation des traces. SYSLOG reste pourtant un outil de référence dans les architectures de collecte.
 
-\subsection{Services et protocole SYSLOG}
+\subsubsection{Services et protocole SYSLOG}
 
 Le protocole Syslog est un protocole réseau qui permet de transporter les messages de journalisation générés par les applications vers une machine hébergeant un serveur Syslog. 
 
@@ -56,7 +56,7 @@ Tout périphérique ou relais sera vu comme un émetteur lorsqu'il envoie un mes
 L'intérêt d'un serveur/collecteur Syslog est donc de permettre une centralisation de ces journaux d'événements, permettant de repérer plus rapidement et efficacement les défaillances de machines présentes sur un réseau. On trouvera par exemple, sur le site 
 \link{https://homputersecurity.com/2018/03/01/comment-mettre-en-place-un-serveur-syslog/}{homputersecurity.com} des éléments pour déployer un serveur SYSLOG, et une description détaillée sur le site \link{https://ram-0000.developpez.com/tutoriels/reseau/Syslog/}{Developpez.com}.
 
- \subsection{L'usage des LOGs}
+ \subsubsection{L'usage des LOGs}
  
  % todo modifcation
  
