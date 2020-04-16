@@ -1,4 +1,40 @@
 
-
-
 \section{Détecter : Threat Detection}
+
+\subsection{la détection type SYSTEM}
+
+\subsection{la détection type ENDPOINT}
+
+Un EDR (Endpoint Detection and Response) est caractérisé par ses capacités de détection, d’investigation et enfin de remédiation.
+
+Au plus prêt du terminal, la détection de la menace reste toujours un axe majeur à garder pour un responsabile sécurité
+
+Chaque jour des milliers de terminaux (endpoints) sont compromis lors d'attaque ciblées. Parmi ces attaques, les Advanced Persistent Threats (APT), ces Menaces avancées et persistantes  compromettent des machines.
+
+Des techniques permettent de passer, les solutions locales d'antivirus et de firewall personnel ou d'utiliser plus simplement la crédulité des utilisateurs pour infecter des machines ou tout simplement utiliser les faiblesses de configuration du systèmes pour ex-filtrer des données.
+
+Dans ce contexte l’EDR est un outil de sécurité complémentaire aux outils de sécurité "personnels"  avec lequel il travaille afin de bloquer les menaces (connues ou nouvelles (zero-days)). C’est un outil qui se place au niveau du système d'exploitation en complément du niveau réseau ...  Un EDR fait de l’analyse comportementale, et permet de monitorer les actions de l'utilisateur ou des applications au niveau  terminal. 
+
+\subsubsection{Détection}
+
+L’EDR est capable de surveiller l’exploitation de failles de sécurités en surveillant les appels noyaux et les différents services habituellement ciblés notamment chez Windows. Cette capacité de surveillance et la corrélation d’évènements lui permettent de reconnaître des méthodes et habitudes qu’ont les hackers et dont il est plus difficile de se prémunir.
+
+L’analyse comportementale est un autre point étudié par les EDR et qui permet de reconnaître des comportements déviant d’une norme, après une phase d’apprentissage. Grâce à cette analyse, l’EDR peut émettre des alertes qui seront vérifiées et renforceront l’apprentissage. L’intérêt de cette technique est qu’elle permet de stopper un attaquant dans son élan : si un pdf PDF contient un script qui ouvre powershell et ouvre une connexion sur un port classique d’un serveur extérieur au SI alors cette suite d’action sera considérée comme anormale et va être bloquée par l’EDR. Cette visibilité est une grande force de l’EDR car elle permet une remédiation à la source de l’infection.
+
+
+\subsubsection{Investigation}
+
+Comme mentionné plus haut, l’EDR permet d’observer des suites d’actions dont le résultat est des plus douteux. Cette visibilité sur les processus est d’une très grande aide pour faire de l’investigation : les actions sont corrélées et remontées dans une plateforme centralisée qui permet d’étendre l’apprentissage observé d’un poste à tous les autres. Ainsi, si une attaque est détectée sur 5 cinq terminaux, alors la console centralisée va faire redescendre l’information sur tous les autres.
+
+Grâce à cette plateforme, le Security Operations Center (SOC) est capable de savoir immédiatement combien de postes sont touchés et d’en remonter la piste : c’est un formidable outil d’investigation qui s’interfacera à votre Security Information and Event Management (SIEM) en offrant de la visibilité sur les terminaux. D’autant plus que votre SOC pourra se servir de l’EDR pour récupérer des artefacts de l’attaques à distance.
+
+\subsubsection{Remédiation}
+
+En ce qui concerne la remédiation, l’EDR a des capacités similaires à celles d’un antivirus next gen et peut notamment bloquer, supprimer et mettre en quarantaine des fichiers. Vos équipes de sécurité pourront aussi s’appuyer sur l’outil pour faire du nettoyage de clé de registre voire pour certains d’aller opérer de manière quasi chirurgicale en mémoire afin de corriger les actions qu’a pu entreprendre un malware.  De plus, certains EDR permettent aux analystes du SOC d’Orange Cyberdefense de prendre la main à distance sur un terminal qui nécessiterait une investigation plus poussée encore.
+
+
+L’EDR n’est pas une solution stand-alone. C’est un excellent complément qui s’intégrera parfaitement avec un antivirus classique, un SIEM et de la sécurité du réseau. Il permet d’étendre la visibilité du SI jusqu’au terminaux et ainsi d’améliorer et d’étendre la sécurité du SI ainsi que d’augmenter les capacités du SOC.
+
+\subsubsection{Quelques EDR de références}
+
+\toolsbox{Microsoft}{edr}
