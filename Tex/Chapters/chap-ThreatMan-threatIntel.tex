@@ -1,23 +1,23 @@
-%********************************************
-% $Chapitre : Threat Management
-% $theme : Threat Intelligence
-% $File : chap-Vulman-threatintel.tex
-%
-%********************************************
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS COURSE
+%              $Chapitre : Threat Management
+%                         $theme : Threat Intelligence
+%        $File :  chap-ThreatMan-threatintel.tex
+%                             2020 eduf@ction
+%-------------------------------------------------------------
 \uchap{chap-Vulman-threatintel.tex}
-%********************************************
+%-------------------------------------------------------------
 
 \section{Anticiper : Threat Intelligence}
 
 \subsection{Surveiller et anticiper}
 
-La «threat intelligence» est un service de renseignements concernant les cyber-menaces. Les solutions SIEM possèdent leurs propres sources, mais il est possible de connecter le SIEM à d’autres sources externes de «threat intelligence». Par ailleurs, il n'ya pas que les SIEM qui peuvent utiliser ces sources. De manière non exhaustive un service de «threat intelligence»  fournit des éléments comme 
+La «threat intelligence» est un service de renseignement concernant les cyber-menaces. Les solutions SIEM par exemple, possèdent leurs propres sources, il n'y a pas que les SIEM qui peuvent utiliser ces sources,  il est possible de connecter de nombreux outils de détections à d’autres sources externes de «threat intelligence». De manière non exhaustive un service de «threat intelligence»  fournit des éléments comme :
 \begin{itemize}
-  \item «Malicious / Phishing IP / URL» : une liste d’URL utilisé pour  délivrer un fichier malicieux ou procéder à une attaque par hameçonnage.
-  \item 	«Botnet C\&C URL» : une liste d’URL utilisée pour héberger des serveurs de commande et contrôle de logiciel malveillant ou de réseaux de machine zombie.  \item «Malicious Hash» : liste d’empreinte de logiciel malveillant conus et ayant déjà été analysés.
-  \item  «IP Reputation» : liste d’adresse IP suspectées dans des attaques informatiques ou en lien avec une cyber-menace (pouvant être utilisé en Black List sur les système de filtrage, comme historiquement)
+  \item \textUK{Malicious / Phishing IP / URL} : une liste d’URL utilisée pour  délivrer un fichier malicieux ou procéder à une attaque par hameçonnage;
+  \item 	\textUK{Botnet C\&C URL}» : une liste d’URL utilisée pour héberger des serveurs de commande et contrôle de logiciel malveillant ou de réseaux de machine zombie;  \item \textUK{Malicious Hash} : liste d’empreintes de logiciels malveillants connus et ayant déjà été analysés;
+  \item \textUK{IP Reputation} : liste d’adresses IP suspectées dans des attaques informatiques ou en lien avec une cyber-menace (pouvant être utilisée en Black List sur les système sde filtrage, comme historiquement).
 \end{itemize}
-
 
 
 % Begin PRZ ===========================
@@ -27,19 +27,17 @@ La «threat intelligence» est un service de renseignements concernant les cyber
 La surveillance et le renseignement de la menace au sens général du terme (Threat Intelligence) devrait contenir les 2 niveaux :
 
 \begin{itemize}
-  \item Le renseignement à vocation cyber qui comprend toutes les analyses et information permettant d'anticiper et de caractériser une menace qui pourrait s'exprimer dans le monde numérique,
-  \item Le renseignement d'origine Cyber, dont les données techniques liées à des attaques, menaces qui permettent de configurer des systèmes de détection et de réponse.
+  \item Le renseignement à \textbf{vocation} cyber qui comprend toutes les analyses et information permettant d'anticiper et de caractériser une menace qui pourrait s'exprimer dans le monde numérique;
+  \item Le renseignement \textbf{d'origine} Cyber, dont les données techniques liées à des attaques, menaces qui permettent de configurer des systèmes de détection et de réponse.
 \end{itemize}
 \end{frame}
 
 % end PRZ ===========================
 
-Il est vrai qu'encore aujourd'hui parler de \g{threat intelligence} nous dirige systématiquement sur la deuxième assertion
+Il est vrai qu'encore aujourd'hui parler de \g{threat intelligence} nous dirige systématiquement sur la deuxième assertion.
 
 
 \mode<all>{\picframe{../Tex/Pictures/img-veillecyber}{Veille cyber, une veille sur les risques}{0.7}{lbl-veillecyber}}
-
-
 
 % Begin PRZ ===========================
 \begin{frame}
@@ -47,10 +45,10 @@ Il est vrai qu'encore aujourd'hui parler de \g{threat intelligence} nous dirige 
 \framesubtitle<presentation>{2 axes}
 % end header PRZ =======================
 
-Veiller et surveiller les menaces, détecter les attaques  nécessite d'analyser  deux axes : 
+Veiller et surveiller les menaces, détecter les attaques  nécessite d'analyser deux axes : 
 
 \begin{itemize}
-  \item Les menaces génériques, ou ciblant un domaine  particulier (Santé, Industrie, Banque ...) que l'on trouve généralement en utilisant des technologies de \g{threat Intelligence} permettant 
+  \item Les menaces génériques, ou ciblant un domaine  particulier (Santé, Industrie, Banque ...) que l'on trouve généralement en utilisant des technologies de \g{threat Intelligence}; 
   \item Les menaces ciblées, dont les indices d'émergence peuvent être détecter en analysant la menace ou  en recherchant des indices de compromissions quand ces menaces sont actives dans le périmètre de l'entreprise. \g{threat Detection, Hunting ...} 
 \end{itemize}
 \end{frame}
@@ -75,17 +73,15 @@ et ceci de deux manières :
 % end PRZ ===========================
 
 Ce sont des sujets que nous aborderons dans le processus de gestion de la menace.
-La surveillance des menaces génériques relève d'action de veille comme cela est fait pour les vulnérabilité. Les scénarios de message sont vu comme des éléments de signature d'une attaque ou d'une tentative ou de préparation  d'attaque.
+La surveillance des menaces génériques relève d'action de veille comme cela est fait pour les vulnérabilité. Les scénarios de message sont vus comme des éléments de signature d'une attaque ou d'une tentative ou de préparation  d'attaque.
 
 Je vous propose de présenter  la gestion de la menace sous la forme de 3 thèmes  (\uref{Gestion de la menace}{lbl-logman}).
 
 \begin{itemize}
-  \item Log Management
-  \item Threat Intelligence (au sens renseignement)
-  \item Threat Detection
+  \item Log Management;
+  \item Threat Intelligence (au sens renseignement);
+  \item Threat Detection.
 \end{itemize}
-
-
 
 \mode<all>{\picframe{../Tex/Pictures/img-threatvigil}{Les sources}{0.7}{lbl-threatvigil}}
 
@@ -100,9 +96,19 @@ Je vous propose de présenter  la gestion de la menace sous la forme de 3 thème
 %*************************************
 \subsubsection{Surveillance de la compromission}
 
-Un des domaine de la surveillance est donc celui de la compromission. C'est à dire la surveillance dans le fameux Darkweb de l'emergence de données volées, \g{perdues} par une entreprise ou par un particulier.
+Un des domaines de la surveillance est donc celui de la compromission. C'est à dire la surveillance dans le fameux Darkweb de l'émergence de données volées, \g{perdues} par une entreprise ou par un particulier.
 
-% Mettre un exemple : adresse mail compromisse (avec le site PWND)
+Ce domaine, dénommé par certains "Leak Intelligence" ou "Leak Management", correspond à la gestion des fuites de données, au sens de leur détection et la recherche de "la source" de fuite. C'est souvent dans cette dynamique de découverte d'information \g{interne} dans des espaces \g{malveillants} ou pas que l'on découvre des compromissions techniques ou non techniques issues d'attaques.
+
+La compromission la plus connue reste encore de nos jours  la fuite du couple Utilisateur/mot de passe sur des sites hackés. Il existe des bases de données publiques qui publient ces données "compromises" comme par exemple : \link{https://haveibeenpwned.com}{Have i been pwned}, qui permettent à partir d'une adresse mail ayant servie d'identifiant de savoir si on a été compromis sur un site qui aurait été piraté.
+
+\subsubsection{Surveillance des fragilités}
+
+Comme nous l'avons vu dans le chapitre sur les vulnérabilités,  des \g{scans} de vulnérabilités sur des plages d'IP de l'entreprise permet de déterminer les fragilités de services ouverts ou accessibles. Généralement organisées dans une dynamique d'audit, ces évaluations de sécurité sont conduites avec un cadre contractuel et légal. Il existe pourtant des entreprises qui fournissent des informations de fragilités sur des entreprises ou des plages d'IP. On trouvera pas exemple sur le site de \link{https://www.shodan.io}{SHODAN} des informations intéressantes (et payantes) sur des fragilités de systèmes dont une grande partie de systèmes d'objets connectés.
+
+\begin{warningbox}{Base de données de fragilitées publiques}
+Les techniques et les sites qui propose des outils ou l'accès à des bases de données de \g{sites} vulnérables. C'est un sujet intéressant pour une fiche TECHNO de synthèse sur ce qui existe sur le marché. %sujets : https://alternativeto.net/software/shodan/
+\end{warningbox}
 
 
 %*************************************
@@ -110,10 +116,10 @@ Un des domaine de la surveillance est donc celui de la compromission. C'est à d
 
 % Threat Hunting 
 
-La surveillance du ciblage, que les anglo-saxons appelle le TARGETING est aussi un élément d'anticipation. 
+La surveillance du ciblage, que les anglo-saxons appelle le \g{TARGETING} est aussi un élément d'anticipation. 
 En effet, ces éléments sont souvent les premiers signaux d'un préparation d'un évènement \g{cyber} qui pourrait toucher l'entreprise.
 
-On y trouve l'émergence de la collecte d'information sur une cible donnée. La mise en oeuvre dans les code malveillant de targetting d'IP spécifique, etc...
+On y trouve l'émergence de la collecte d'information sur une cible donnée. La mise en oeuvre dans les codes  malveillants de ciblage d'IP spécifique, etc...
 
 % Begin PRZ ===========================
 \begin{frame}
@@ -123,7 +129,7 @@ On y trouve l'émergence de la collecte d'information sur une cible donnée. La 
 Il y a deux types d'outils pour ce se faire : 
 
 \begin{itemize}
-	\item La surveillance classique du web de type \g{cyberveille}, qui permet de découvrir des éléments appartenant à l'entreprise compromis (soient les données, soient des informations permettant de déduire que l'entreprise a été compromise).
+	\item La surveillance classique du web de type \g{cyberveille}, qui permet de découvrir des éléments compromis appartenant à l'entreprise (soient les données, soient des informations permettant de déduire que l'entreprise a été compromise).
 	\item L'analyse en temps réel des codes malveillants qui peut permettre en regardant de manière détaillée l'évolution du code pour comprendre et connaitre les modalités des attaques et les nouvelles cibles.
 \end{itemize}
 \end{frame}
@@ -139,9 +145,7 @@ Disposer des fragilités de l'entreprise, et connaitre les scénarios potentiels
 
 \subsubsection{la gestion des menaces CTI}
 
-
-
-Le projet OpenCTI (Open Cyber Threat Intelligence), développé par l’ANSSI en partenariat avec le CERT-EU, est un outil de gestion et de partage de la connaissance en matière d’analyse de la cybermenace (Threat Intelligence). Initialement conçu pour structurer les informations de l’agence relatives à la menace informatique, la plateforme facilite aussi les interactions entre l’ANSSI et ses partenaires.
+Le projet OpenCTI (Open Cyber Threat Intelligence), développé par l’ANSSI en partenariat avec le CERT-EU, est un outil de gestion et de partage de la connaissance en matière d’analyse de la cybermenace (Threat Intelligence). Initialement conçue pour structurer les informations de l’agence relatives à la menace informatique, la plateforme facilite aussi les interactions entre l’ANSSI et ses partenaires.
 
 L’outil, intégralement libre, est  disponible à l’usage de l’ensemble des acteurs de la « threat intelligence ». L’application permet ainsi de stocker, organiser, visualiser et partager leurs propres connaissances en la matière.
 
@@ -152,7 +156,6 @@ Le projet \link{https://www.ssi.gouv.fr/actualite/opencti-la-solution-libre-pour
 
 %The structuration of the data is performed using a knowledge schema based on the STIX2 standards. It has been designed as a modern web application including a GraphQL API and an UX oriented frontend. Also, OpenCTI can be integrated with other tools and applications such as MISP, TheHive, MITRE ATT&CK, etc.
 
-Les modélisations des attaques est un large champs de recherche et d'outillage.
-Structured Threat Information Expression (STIX™) est un langage et un format de donnée permettant de modéliser et échanger des informations techniques sur les processus d'attaque cyber. 
-Je vous propose d'explorer cela sur le site \link{https://github.com/OpenCTI-Platform/opencti}{STIX sur GitHub}.
+Les modélisations des attaques est un large champs de recherche et d'outillage. Juste à titre d'illustration, nous pouvons parler d'un modèle comme STIX™ (Structured Threat Information Expression) langage et format de donnée permettant de modéliser et échanger des informations techniques sur les processus d'attaque cyber. 
+Je vous propose d'explorer pour cela sur le site \link{https://github.com/OpenCTI-Platform/opencti}{STIX sur GitHub}.
 

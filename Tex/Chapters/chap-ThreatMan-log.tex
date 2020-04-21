@@ -1,18 +1,19 @@
-%********************************************
-% $Chapitre : Threat Management
-% $theme : Log management
-% $File : chap-Vulman-log.tex
-%********************************************
-\uchap{chap-Vulman-log.tex}
-%********************************************
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS COURSE
+%              $Chapitre : Threat Management
+%                   $theme : Threat Detection
+%               $File :  chap-ThreatMan-log.tex
+%                             2020 eduf@ction
+%-------------------------------------------------------------
+\uchap{chap-ThreatMan-log.tex}
+%-------------------------------------------------------------
 
 \subsection{Log Management }
 
 \subsubsection{Traces, journaux, logs}
 
-Dans le domaine informatique et télécom, le terme log (ou ses synonymes traces, journaux) est généralement un fichier, une base de données ou tout autre moyen de stocker des information, ici le stockage d'un historique d'événements qu'un logiciel ou un système souhaite \g{tracer}. 
-Ce mot qui est le diminutif  de logging, est traduit en français par \g{journal}. Le log est donc un journal horodaté, qui stocke temporellement les différents événements qui se sont produits sur un  logiciel, un ordinateur, un serveur, etc. Il permet ainsi d'analyser avec une fréquence programmée heure par heure,  minute par minute, etc) l'activité  d'un processus technique.  
-
+Dans le domaine informatique et télécom, le terme log (ou ses synonymes traces, journaux) est généralement un fichier, une base de données ou tout autre moyen de stocker des informations.  On parle  donc de stockage d'un historique d'événements qu'un logiciel ou un système souhaite \g{tracer}. 
+Ce mot qui est le diminutif  de \textit{logging}, est traduit en français par \g{journal}. Le log est donc un journal horodaté, qui stocke temporellement les différents événements qui se sont produits sur un  logiciel, un ordinateur, un serveur, etc. Il permet ainsi d'analyser avec une fréquence programmée (heure par heure,  minute par minute, etc) l'activité  d'un processus technique.  
 
 \mode<all>{\picframe{../Tex/Pictures/img-log}{Sources de log}{0.7}{lbl-log}}
 
@@ -41,13 +42,13 @@ On peut citer par exemple, SYSLOG., qui par ailleurs n'est pas le seul type d'ou
 
 Le protocole Syslog est un protocole réseau qui permet de transporter les messages de journalisation générés par les applications vers une machine hébergeant un serveur Syslog. 
 
-Quand un système veut conserver les traces d'un événement ),  il est possible, d'utiliser syslog pour communiquer les détails de l'événement à un daemon syslog qui va le conserver dans une base de données.
+Quand un système veut conserver les traces d'un événement ),  il est possible, d'utiliser syslog pour communiquer les détails de l'événement à un daemon syslog (serveur syslog) qui va le conserver dans une base de données.
 
 Le protocole Syslog est structuré autour de la notion de périphérique, de relais et de collecteur dans une architecture Syslog.
 
 \begin{itemize}
-  \item Un \textbf{périphérique} est une machine ou une application qui génère des messages Syslog.
-  \item Un \textbf{relais} est une machine ou une application qui reçoit des messages Syslog et les retransmet à une autre machine.
+  \item Un \textbf{périphérique} est une machine ou une application qui génère des messages Syslog;
+  \item Un \textbf{relais} est une machine ou une application qui reçoit des messages Syslog et les retransmet à une autre machine;
   \item Un \textbf{collecteur} est une machine ou une application qui reçoit des messages Syslog mais qui ne les retransmet pas.
 \end{itemize}
 
@@ -60,11 +61,11 @@ L'intérêt d'un serveur/collecteur Syslog est donc de permettre une centralisat
  
  % todo modifcation
  
- Dans un usage de cybersécurité, les traces, journaux et logs informatiques et réseaux structures les sources d'évènements et de stockages des informations. Ils sont donc :
+ Dans un usage de cybersécurité, les traces, journaux et logs informatiques et réseaux structurent les sources d'évènements et de stockages des informations. Ils sont donc :
  
  \begin{itemize}
 
-   \item Un outil indispensable au processus de \textbf{détection de menace}. La gestion des logs (ou d’événements) s’avère un outil primordial pour les analyses a posteriori, mais peut aussi servir dans la détection en temps reel pour peu que les outils d'analyse puisse le faire; Nous verront cela dans la partie sur la détection de la menace.
+   \item Un outil indispensable au processus de \textbf{détection de menace}. La gestion des logs (ou d’événements) s’avère en effet un outil primordial pour les analyses a posteriori, mais peut aussi servir dans la détection en temps réel pour peu que les outils d'analyse puisse le faire; Nous verront cela dans la partie sur la détection de la menace.
 
    \item  \textbf{Une couverture légale }. Confrontée à une plainte, une entreprise peut utiliser ces traces pour gérer un litige avec un tiers  en attestant de la non-implication de son système d’information ou, a contrario, assumer le litige tout en remontant jusqu’à l’utilisateur concerné. La société peut également utiliser ces traces pour fournir des éléments aux services de polices. La fourniture d'élément probant à valeur légale nécessite quelques précautions. 
 
@@ -75,7 +76,7 @@ L'intérêt d'un serveur/collecteur Syslog est donc de permettre une centralisat
  Evidement, un outil de gestion de LOG ne serait à lui seul et sans fonction de corrélation avoir la capacité de détecter des évènements liés entre eux. 
  
 \begin{warningbox}{Syslog et cybersécurité}
-	L'environnement SYSLOG possède une richesse fonctionnelle qui nécessiterait une présentation détaillée pour en appréhender les capacités et la puissance d'usage. C'est un sujet de Fiches Technos de référence. Il existe de nombreuses documentations sur internet, toutefois une présentation détaillée d'une architecture SYSLOG pour un usage de cybersécurité est sujet à explorer. 
+	L'environnement SYSLOG possède une richesse fonctionnelle qui nécessiterait une présentation détaillée pour en appréhender les capacités et la puissance d'usage. C'est un sujet de fiches TECHNO de référence. Il existe de nombreuses documentations sur internet, toutefois une présentation détaillée d'une architecture SYSLOG pour un usage de cybersécurité est sujet à explorer. 
 \end{warningbox}
 
 \subsubsection{Puits de logs}
@@ -94,7 +95,7 @@ Après avoir \textbf{collectés, stockés} des évènements dans un format compr
 \mode<all>{\picframe{../Tex/Pictures/img-log-level}{Les niveaux d'outillage}{0.7}{lbl-loglevel}}
 
 
-Je ne citerai que \link{https://www.graylog.org}{Graylog} basé sur MongoDB pour la gestion des métadonnées et Elasticsearch pour le stockage des logs et la recherche textuelle. Graylog  permet de mieux comprendre l’utilisation d'un système d'information tant dans l'amélioration la sécurité (comportements, évènements à risques, indicateurs de compromission (IOC)) que dans l'usage des applications et services.
+Nous pouvons citer par exemple \link{https://www.graylog.org}{Graylog} basé sur MongoDB pour la gestion des métadonnées et Elasticsearch pour le stockage des logs et la recherche textuelle. Graylog  permet de mieux comprendre l’utilisation d'un système d'information tant dans l'amélioration la sécurité (comportements, évènements à risques, indicateurs de compromission (IOC)) que dans l'usage des applications et services.
 
 %TODO Menaces LOG : Cas des end point
 %\subsubsection{le cas des End Point}

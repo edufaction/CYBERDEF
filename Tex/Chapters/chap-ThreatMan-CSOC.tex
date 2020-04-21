@@ -1,16 +1,18 @@
-%********************************************
-% $Chapitre : Threat Management
-% $theme : CSOC
-% $File : chap-Vulman-csoc.tex
-%********************************************
-\uchap{chap-Vulman-csoc.tex}
-%********************************************
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS COURSE
+%              $Chapitre : Threat Management
+%                         $theme : Caracterization
+%              $File : chap-ThreatMan-caract.tex
+%                             2020 eduf@ction
+%-------------------------------------------------------------
+\uchap{chap-ThreatMan-csoc.tex}
+%-------------------------------------------------------------
 
 \section{Le SOC}
 
-Les SOC est au coeur du système de Veille Alerte et réponse. C'est la tour de contrôle de l'espace Cyber.
+Le SOC (Security Operation Center) est au coeur du système de \g{Veille Alerte et réponse}. C'est une tour de contrôle sécurité de l'espace Cyber.
 
-Il est constitué d'une équipe d'analystes, et d'outils permettant de surveiller l'environnement.
+Il est constitué généralement d'une équipe d'analystes, et d'outils permettant de surveiller l'environnement. Cette surveillance s'effectue sous la forme de l'exploitation de différents outillages (SIEM, EDR....).
 
 %TODO : réaliser un schéma de la fonction SOC
 
@@ -19,6 +21,7 @@ Il est constitué d'une équipe d'analystes, et d'outils permettant de surveille
 \frametitle<presentation>{SOC}
 \framesubtitle<presentation>{Security Operation Center}
 % end header PRZ =======================
+
 Il intègre l'ensemble des fonctions liées à la menace :
 
 \begin{itemize}
@@ -26,8 +29,8 @@ Il intègre l'ensemble des fonctions liées à la menace :
   \item Détection d'évènements à risques et gestion de ceux ci
   \item Détection d'attaques ou de comportement critiques
   \item Réaction aux incidents et remédiation
-
 \end{itemize}
+
 \end{frame}
 % end PRZ ===========================
 
@@ -37,25 +40,23 @@ On peut aussi Intégrer dans  le SOC des fonctions de  \textit{Threat Hunting }.
 
 Les grand principes de réussite d’un SOC sont : 
 \begin{itemize}
-  \item Une veille Cyber efficace et à large ouverture en terme de menaces,
-  \item Une capacité à identifier d’une cartographie détaillée des ressourcesde l’infrastructure et de correctement identifier les menaces avec des analyses des risques,
-  \item Réaliser une collecte des évènements de sécurité, pour nourrir une corrélation temps réel,
-  \item Contextualisation et amélioration continue afin delimiter le nombre de faux-positifs (< 20\%)
+  \item Une veille Cyber efficace et à large ouverture en terme de menaces;
+  \item Une capacité à identifier d’une cartographie détaillée des ressourcesde l’infrastructure et de correctement identifier les menaces avec des analyses des risques;
+  \item Réaliser une collecte des évènements de sécurité, pour nourrir une corrélation temps réel;
+  \item Contextualisation et amélioration continue afin delimiter le nombre de faux-positifs;
   \item Faciliter la communication entre les niveaux opérationnels
 		\begin{itemize}
-  				\item Niveau 1 : réception des alertes en temps réel
-				\item Niveau 2 : corrélation et analyse multi-alertes pour déclenchement de l’incident
-				\item Niveau 3 : investigations poussées, forensics et découverte des indicateurs de compromission
+  				\item Niveau 1 : \textbf{réception} des alertes en temps réel;
+				\item Niveau 2 : \textbf{corrélation} et analyse multi-alertes pour déclenchement de l’incident;
+				\item Niveau 3 : \textbf{investigations} poussées, forensics et découverte des indicateurs de compromission.
 			\end{itemize}
 \end{itemize}
 
-
-
-
 \subsubsection{Le SOC de demain}
-On peut par ailleurs s'interroger sur le fait qu'un tel système peut et doit opérer d'autres missions que les missions de sécurité pures. Si la supervision des réseaux a été longtemps au outils au services des techniciens, la supervision de l'environnement digital c'est à dire l'environnement informationnel de l'entreprise est un axe fondamental. Le SOC Security Operation Center peut devenir Cyber Operational Center opérant le suivi des risques digitaux au sens large, incluant les réseaux sociaux et leur cohorte de fausse informations et d'information pouvant être des indicateurs de crise à venir pour l'entreprise.
+On peut par ailleurs s'interroger sur le fait qu'un tel système peut et doit opérer d'autres missions que les missions de sécurité pures. Si la supervision des réseaux a été longtemps au outils au services des techniciens, la supervision de l'environnement digital c'est à dire l'environnement informationnel de l'entreprise est un axe fondamental. Le SOC peut devenir \textUK{Cybersecurity Operational Center} (CSOC) opérant le suivi des risques digitaux au sens large, incluant les réseaux sociaux et leur cohorte de fausse informations et d'information pouvant être des indicateurs de crise à venir pour l'entreprise.
 
-Aujourd’hui les entreprises organisent donc leur environnement de gestion de la menace dans la sécurité informatique avec un centre opérationnel de sécurité, appelé SOC ou CSO (CyberSecurity Operation Center). Ses principales missions se structure donc autour de  : 
+Aujourd’hui les entreprises organisent donc leur environnement de gestion de la menace dans la sécurité informatique avec ce centre opérationnel de sécurité CSOC. Ses principales missions se structurent donc autour de  : 
+
 \begin{itemize}
   \item la supervision de la sécurité;
   \item du management du risque ;
@@ -74,24 +75,20 @@ Chacune de ces missions nécessite des spécialistes, des outils et une gouverna
   \item des outils de remediation, de notarisation (enregistrement des données à valeur probante).
 \end{itemize}
 
-Le SIEM répond à une partie des besoins et doit pour être efficaces être intégrés avec ces services connexes.
-Le SIEM existe depuis les années 90, sous la forme de SIM et de SEM. Le rôle du SIM est de centraliser tous les logs dans une seule base de données pour permettre des analyses et de l’archivage. Celui du SEM est de surveiller en temps réel les évènements sur le système d’information, les corréler et alerter si les conditions sont remplies. Ces 2 outils de sécurité ont fini par fusionner dans un seul produit, permettant de lier les évènements aux informations, mais il y a encore des convergences à venir.
-
-
+Le SIEM et l'EDR répondent à une partie des besoins des CSOC et doit pour être efficaces s'intégrer à des services connexes.
+Le SIEM existe depuis les années 90, sous la forme de SIM et de SEM. Le rôle du SIM est de centraliser tous les logs dans une seule base de données pour permettre des analyses et de l’archivage. Celui du SEM est de surveiller en temps réel les évènements sur le système d’information, les corréler et alerter si les conditions sont remplies. Ces deux outils de sécurité ont fini par fusionner dans un seul produit, permettant de lier les évènements aux informations, mais il y a encore des convergences à venir.
 
 \subsubsection{Evaluation d'un SOC}
 
-L'efficacité d'un SOC peut être évalué. A l'image d'équipe de Pentest qui testent la résistance d'un système, des équipes de tests de SOC peuvent être déployées pour auditer le niveau d'efficacité d'un SOC.
-
+L'efficacité d'un SOC peut être évaluée. A l'image d'équipe de Pentest qui testent la résistance d'un système, des équipes de tests de SOC peuvent être déployées pour auditer le niveau d'efficacité d'un SOC.
+Les équipes qui testent des OSC sont nommés des \textbf{\textit{Purples Team}}.
 %SOURCE https://www.globalsecuritymag.fr/SOC-comment-en-mesurer-l,20151005,56416.html
 
-un SOC est efficace s’il arrive à détecter avec pertinences les attaques en cours,  Cependant, il est important, de comprendre qu’un SOC ne protègera jamais contre les attaques dont le scénario n'a pas été \g{programmé}. On trouvera dans \link{https://clusif.fr/publications/reussir-deploiement-dun-soc/}{une publication du  CLUSIF}, les critères pour réussir le déploiement d'un SOC.
-
-Les équipes qui testent des OSC sont nommés des \textbf{\textit{Purples Team}}.
+un CSOC est efficace s’il arrive à détecter avec pertinences les attaques en cours,  Cependant, il est important, de comprendre qu’un CSOC ne détectera jamais  des attaques dont le scénario n'a pas été pensé / \g{programmé}. On trouvera dans \link{https://clusif.fr/publications/reussir-deploiement-dun-soc/}{une publication du  CLUSIF}, les critères pour réussir le déploiement d'un SOC.
 
 \subsubsection{Les outils connexes d'un SOC}
 
-Au delà des SIEM, il semble important d'ajouter à l'outillage dun SOC un ensemble de système permettant de mesurer et d'évaluer l'impact des attaques. Un travail intéressant autour de la notion d'Echelle de RICHTER (Voir  \link{https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber}{un article du FIC 2014}) d'une attaque afin de définir des indicateurs \g{de cotation}.
+Au delà des SIEM, il semble important d'ajouter à l'outillage d'un SOC un ensemble de système permettant de mesurer et d'évaluer l'impact des attaques. Un travail intéressant autour de la notion d'Echelle de RICHTER (Voir  \link{https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber}{un article du FIC 2014}) d'une attaque afin de définir des indicateurs \g{de cotation}.
 
 % Begin PRZ ===========================
 \begin{frame}
@@ -99,24 +96,44 @@ Au delà des SIEM, il semble important d'ajouter à l'outillage dun SOC un ensem
 \framesubtitle<presentation>{gérer le niveau de gravité de l'alerte}
 % end header PRZ =======================
 \begin{itemize}
-  \item l’origine de l’attaque qui mesure la puissance potentielle de la source de menace : du hacker de base à la menace étatique ;
-  \item Le type de cible qui mesure la précision de la diffusion de la menace : de la cible au hasard à la menace ciblée ;
-  \item Le vecteur d’attaque qui mesure le niveau de sophistication de la menace : du malware « sur étagère » à l’APT élaboré ;
-   \item Le préjudice qui mesure l’impact subit par la cible : d’une perte faible à une mise en péril de la résilience même de l’organisme ;
-  \item La visibilité de la menace qui mesure de nombreux éléments comme la motivation ou durée de l’attaque : d’un DDOS immédiatement constaté à une attaque invisible ;
-  \item La persistance qui mesure la fréquence de l’attaque sur sa cible : d’une fréquence forte de type robotisé à une fréquence unitaire visant un but précis.
+  \item \textbf{l’origine} de l’attaque qui mesure la puissance potentielle de la source de menace : du hacker de base à la menace étatique ;
+  \item Le type de \textbf{cible} qui mesure la précision de la diffusion de la menace : de la cible au hasard à la menace ciblée ;
+  \item Le \textbf{vecteur} d’attaque qui mesure le niveau de sophistication de la menace : du malware « sur étagère » à l’APT élaborée ;
+   \item Le \textbf{préjudice} qui mesure l’impact subit par la cible : d’une perte faible à une mise en péril de la résilience même de l’organisme ;
+  \item La \textbf{visibilité} de la menace qui mesure de nombreux éléments comme la motivation ou durée de l’attaque : d’un DDOS immédiatement constaté à une attaque invisible ;
+  \item La \textbf{persistence} qui mesure la fréquence de l’attaque sur sa cible : d’une fréquence forte de type robotisée (Bots) à  une fréquence unitaire visant un but précis, ou la furtivité.
 \end{itemize}
 \end{frame}
 % end PRZ ===========================
 
-
-%SOURCE https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber/
-
-
 \subsection{Les outillage d'un SOC}
+% $sources : SOURCE https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber/
 
-Au delà des SIEM, des sondes, des EDR, l'orchestration
+Au delà des SIEM, des sondes, des EDR, l'orchestration est au coeur de l'efficacité des fonctions d'un CSOC.
 
 L'orchestration et l'automatisation de la sécurité  permet de réduire les délais de réponse, de  limiter l'exposition aux attaques et offrir une cohérence des processus cyberdéfense. Ces  outils d’automatisation et d’orchestration,  appelés SOAR, sont conçus pour améliorer la productivité et l’efficacité de centres des opérations de sécurité et des analystes.
 
 Ces outils automatisent les tâches de routines chronophages,  ils aident à coordonner les cycles de vie de réponse aux incidents et de gestion des incidents. Outils de  cohérence, ils permettent d'assurer reproductibilité de la discipline des opérations de cybersécurité et permet de réduire le temps nécessaire pour détecter et traiter les incidents.
+
+On y trouve par exemple :
+
+\begin{itemize}
+  \item l'introduction de sources de menaces de manière automatique au base SIEM (abonnement de threat-intelligence);
+  \item la production de règles sur la base de déviances relevées;
+  \item le pilotage automatique des composants de sécurité (modification de règles, passage en mode dégradé ...);
+  \item l'exécution de tâche de conservation de traces légales (notarisation);
+  \item la gestion automatisée de patchs critiques (intégration au DEVSECOPS) ...
+\end{itemize}
+
+
+\subsubsection{DEVSECOPS}
+% $source : https://www.redhat.com/fr/topics/devops/what-is-devsecops
+
+Dans de nombreuses entreprises les processus liés à la sécurité sont encore isolés et confiés à une équipe spécifique sans s'intégrer totalement avec les chaines de développement ou dans les équipes opérationnelle, encore moins dans les chaines intégrées DEVOPS. 
+ Si une approche DevOps efficace garantit des cycles de développement rapides et fréquents, les équipes sécurité doivent de plus en plus s'intégrer dans les processus DEVOPS tant pour y apporter un volet \textit{security by design}, mais surtout intégrer des mécanismes de sécurité opérationnelle.
+ Ce sont ces dynamiques de sécurité tant de conception, que de sécurité opérationnelle que nous appelons DEVSECOPS.
+ 
+\begin{warningbox}{DEVSECOPS}
+Le domaine du DEVSECOPS est un sujet a part entière de la gestion de la sécurité dans les chaines de prise en compte de la sécurité  en DEVOPS, et l'utilisation des techniques DEVOPS dans les chaines de gestion du dynamique du changement dans la détection de menace et la réponse sur incident. Un sujet intéressant pour un fiche TECHNO.
+\end{warningbox}
+ 
