@@ -106,7 +106,7 @@ Au delà des SIEM, il semble important d'ajouter à l'outillage d'un SOC un ense
 \end{frame}
 % end PRZ ===========================
 
-\subsection{Les outillage d'un SOC}
+\subsection{Les outillages d'un SOC}
 % $sources : SOURCE https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber/
 
 Au delà des SIEM, des sondes, des EDR, l'orchestration est au coeur de l'efficacité des fonctions d'un CSOC.
@@ -115,16 +115,18 @@ L'orchestration et l'automatisation de la sécurité  permet de réduire les dé
 
 Ces outils automatisent les tâches de routines chronophages,  ils aident à coordonner les cycles de vie de réponse aux incidents et de gestion des incidents. Outils de  cohérence, ils permettent d'assurer reproductibilité de la discipline des opérations de cybersécurité et permet de réduire le temps nécessaire pour détecter et traiter les incidents.
 
-On y trouve par exemple :
 
-\begin{itemize}
+\mode<all>{\texframe{Automatisation, SOAR}{Orchestration}
+
+On y trouve par exemple dans ces outils de  \g{\textit{Security Orchestration, Automation, and Response}} (SOAR) :
+{\begin{itemize}
   \item l'introduction de sources de menaces de manière automatique au base SIEM (abonnement de threat-intelligence);
   \item la production de règles sur la base de déviances relevées;
   \item le pilotage automatique des composants de sécurité (modification de règles, passage en mode dégradé ...);
   \item l'exécution de tâche de conservation de traces légales (notarisation);
   \item la gestion automatisée de patchs critiques (intégration au DEVSECOPS) ...
 \end{itemize}
-
+}} % end frame
 
 \subsubsection{DEVSECOPS}
 % $source : https://www.redhat.com/fr/topics/devops/what-is-devsecops
@@ -137,3 +139,16 @@ Dans de nombreuses entreprises les processus liés à la sécurité sont encore 
 Le domaine du DEVSECOPS est un sujet a part entière de la gestion de la sécurité dans les chaines de prise en compte de la sécurité  en DEVOPS, et l'utilisation des techniques DEVOPS dans les chaines de gestion du dynamique du changement dans la détection de menace et la réponse sur incident. Un sujet intéressant pour un fiche TECHNO.
 \end{warningbox}
  
+ \subsection{l'efficacité du CSOC}
+ % $source : https://www.excube.fr/ressources/soc/mesurer-efficacite-soc
+ 
+\mode<all>{\texframe{Efficacité du CSOC}{métrologie}
+ Pour mesurer l’efficacité d'un CSOC, il existe plusieurs moyens de mesures  :
+{\begin{itemize}
+  \item La \textbf{couverture fonctionnelle et technique }du CSOC pour estimer l'efficacité  de l'articulation entre les stratégies de cyberdéfense, de cyber-protection et les stratégies de surveillance détection, 
+  \item La \textbf{performance de la détection } pour évaluer l’efficacité des règles de corrélation en place, basée sur les indicateurs de services (Nombre de détections, nombre d'évènement ...);
+  \item La \textbf{maturité du service CSOC}, mesurée sur le niveau d'organisation des services (ITIL par exemple), les coûts, les compétences, les services connexes ...
+\end{itemize}
+}} % end frame
+
+
