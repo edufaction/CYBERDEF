@@ -136,18 +136,35 @@ Votre travail est \textbf{à rendre} en fin de session
 % end PRZ ========================
 
 
-\subsection{Thématique produits & services}
+\subsection{Thématique produits et services}
 
-Pour les fiches produit,  vous devez livrer votre FICHE TECHNO, avec 2 fichiers supplémentaires : l'icône du produit nommé product.ico, et un fichier TEXTE nommé \textbf{product.id} contenant les éléments suivants :
+Pour les fiches produit,  vous devez livrer votre FICHE TECHNO, avec un petit dossier  supplémentaire (Fichier ZIP au nom du produit contenant)  quelques lignes et contenant l'icône du produit nommé \textbf{icon.png} . Les deux petit fichiers textes  :
 
 \begin{itemize}
-  \item  \verb|\producteditorname{Nom de l'éditeur}|
-  \item   \verb|\productname{Nom du produit}|
-  \item  \verb|\productdescription{description}|
-  \item   \verb|\productversion{version du produit}|
+
+  \item  \textbf{description.tex } : fichier contenant un description succincte d'un maximum de 5000 caractères  du produit. (Les commandes simples latex sont autorisés dans ce document (mise en forme, tableau, itemize).
+  \item  \textbf{datas.tex} : Fichier contenant quelques éléments descriptifs du produit ou système. Les éléments descriptifs sont à saisir :
+\begin{itemize}
+ \item \verb|\toolsclass{classe de l'outil}(Facultatif)|
+ \item  \item \verb|\toolsname{Nom du produit ou de l'outil}(Facultatif : par défaut le nom du fichier répertoire ou ZIP est le nom du produit)|
+ \item \verb|\toolseditor{Nom de l'éditeur}|
+\item \verb|\toolsurl{Url de l'outil}|
+\item \ \verb|\toolversion{Version du produit}(Facultatif)|
+\end{itemize}
 \end{itemize}
 
-Ces éléments permettent de présenter les produits de manière plus accessible sur le site du CNAM.
+Le fichier   \link{}{\textbf{Qradar.zip}} doit donc contenir au moins pour le produit \g{Qradar} en exemple : 
+
+\begin{lstlisting} [language={[LaTeX]TeX},morekeywords={renewcommand,toolseditor,toolsurl}]
+\renewcommand\toolseditor{IBM}
+\renewcommand\toolsurl{https://www.ibm.com/fr-fr/security/security-intelligence/qradar}
+\end{lstlisting}
+
+Ces fichiers de présentation seront mis en forme dans les supports de cours et d'exemple de produits sous la forme :
+
+\toolsbox {Qradar}{siem}
+
+Ces éléments permettent de présenter les produits de manière plus accessible sur le site du CNAM et dans les illustrations du cours.
 
 %*********************************************
 \subsection{Thématique : Vulnerability Management}
