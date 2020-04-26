@@ -146,14 +146,14 @@ Pour les fiches produit,  vous devez livrer votre FICHE TECHNO, avec un petit do
   \item  \textbf{datas.tex} : Fichier contenant quelques éléments descriptifs du produit ou système. Les éléments descriptifs sont à saisir :
 \begin{itemize}
  \item \verb|\toolsclass{classe de l'outil}(Facultatif)|
- \item  \item \verb|\toolsname{Nom du produit ou de l'outil}(Facultatif : par défaut le nom du fichier répertoire ou ZIP est le nom du produit)|
+ \item \verb|\toolsname{Nom du produit ou de l'outil}(Facultatif : nom du  répertoire ou ZIP = produit)|
  \item \verb|\toolseditor{Nom de l'éditeur}|
 \item \verb|\toolsurl{Url de l'outil}|
 \item \ \verb|\toolversion{Version du produit}(Facultatif)|
 \end{itemize}
 \end{itemize}
 
-Le fichier   \link{}{\textbf{Qradar.zip}} doit donc contenir au moins pour le produit \g{Qradar} en exemple : 
+Le fichier  exemple (téléchargeable)  \link{https://github.com/edufaction/CYBERDEF/raw/master/SecTools/classe.tool.example/siem.Qradar.zip}{\textbf{Qradar.zip}} doit donc contenir au moins pour le produit \g{Qradar} de la classe \g{SIEM} : 
 
 \begin{lstlisting} [language={[LaTeX]TeX},morekeywords={renewcommand,toolseditor,toolsurl}]
 \renewcommand\toolseditor{IBM}
@@ -164,7 +164,19 @@ Ces fichiers de présentation seront mis en forme dans les supports de cours et 
 
 \toolsbox {Qradar}{siem}
 
-Ces éléments permettent de présenter les produits de manière plus accessible sur le site du CNAM et dans les illustrations du cours.
+Ces éléments permettent de présenter les produits de manière plus accessible sur le site du CNAM et dans les illustrations du cours
+
+\subsection{Les thématiques des fiches TECHNO}
+
+Les thématiques des fiches TECHNO et METHODO, dénommées par  simplification fiches TECHNO sont classées en deux catégories :
+
+\begin{itemize}
+  \item Les\textbf{ fiches produits, outils et services }pour chacune des trois thématiques présentées dans le cours, et pour lequel l'outil peut illustrer l'usage d'une technologie ou d'un service  de cyberdéfense;
+  \item Les fiches thématiques  \textbf{méthodologies,  et concepts } dont le sujet peut être choisis dans la liste ci-aprés.
+\end{itemize}
+
+
+.
 
 %*********************************************
 \subsection{Thématique : Vulnerability Management}
@@ -172,6 +184,8 @@ Ces éléments permettent de présenter les produits de manière plus accessible
 \subsubsection{Exemples étayés de vulnérabilités}
 \subsubsection{BugBounty}
 \subsubsection{Outils au service des tests d'intrusion}
+\subsubsection{Essentiels 27001 et vulnérabilités}
+
 
 %*********************************************
 \subsection{Thématique : Threat Management}
@@ -196,16 +210,17 @@ Description d'une attaque dans le monde réel avec les mécanismes, stratégies 
 \subsubsection{Description d'une  contre attaque de ransomware} 
 \subsubsection{Description d'une recherche d'APT}
 \subsubsection{Essentiels 27035}
-
 \subsubsection{Stratégie d'enquête avec des HoneyPots}
+\subsubsection{Deceptive defense}
+\subsubsection{Essentiels 27001 et incidents}
+\subsubsection{ITIL et gestion des incidents de sécurité}
 
 %*********************************************
 \subsection{Thématique : Crisis Management}
 %----------------------------------------------------
-\subsubsection{ISO 22301}
+\subsubsection{Essentiels ISO 22301}
 \subsubsection{Annuaire de crise}
 \subsubsection{Comment Gérer une crise ransomware }
-
 
 %*********************************************
 \subsection{Thématique : Gouvernance CyberDef}
