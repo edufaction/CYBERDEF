@@ -13,7 +13,7 @@
 Je vous propose d'aborder ce chapitre lié à la surveillance de l'évènement de sécurité par les quelques points fondamentaux de la gestion de la menace.
 En effet nous partons du principe qu'au sein de périmètre de surveillance donné, la gestion de la menace peut s'organiser autour de la gestion des évènements à risques détectés dans ce périmètre.
 
-\mode<presentation>{\picframe{../Tex/Pictures/img-cycle}{Cycle de vie de gouvernance Cyberdef}{0.3}{lbl-cycle}}
+\mode<all>{\picframe{../Tex/Pictures/img-cycle}{Cycle de vie de gouvernance Cyberdef}{0.8}{lbl-cycle}}
 
 Après quelques définitions et positionnement dans l'analyse de menace,  de la supervision et de l'analyse comportementale nous aborderons donc les grandes fonctions nécessaire à la \textbf{détection} comme :
 
@@ -35,7 +35,7 @@ Après quelques définitions et positionnement dans l'analyse de menace,  de la 
 {
 \begin{description}
 	\item \textbf{Menaces=Veille et recherche} : La gestion de la menace est au coeur des stratégies de cyberdéfense de l'entreprise. Comme pour les vulnérabilités, c'est la connaissance des menaces, de leur recherche et de leur découverte qui permet de réduire les risques;
-\item  \textbf{Menaces=Évènements} : La détection d'une vulnérabilité ou d'une menace est un évènement, la question est de savoir à quel moment il est important de déclencher un mécanisme d'alerte, et comment cette alerte va devenir un incident déclenchant des mécanismes de réponse \uref{Cycle de gouvernance}{lbl-cycle3}.
+\item  \textbf{Menaces=Évènements} : La détection d'une vulnérabilité ou d'une menace est un évènement, la question est de savoir à quel moment il est important de déclencher un mécanisme d'alerte, et comment cette alerte va devenir un incident déclenchant des mécanismes de réponse \uref{Cycle de gouvernance}{lbl-cycle1}.
 \end{description}
 }}
 % end PRZ ===========================
@@ -267,10 +267,43 @@ Dans la notion de partage de l'information sur la menace, le \link{https://www.m
 
 Il ne faut pas oublier que les donnés dans ces bases peuvent être  "éphémères". (Adresse IP malveillante, machines infectées nettoyées...). Il est donc important de disposer de sources fiables et mise à jour en temps réel.
 
-
 \begin{warningbox}{Bases de Threat Intelligence}
 Le marché des bases publiques et commerciales de \textit{Threat Intelligence} est un sujet interessant pour des fiches TECHNOs. On peut rechercher les sources les plus pertinentes, celles qui fournissent des informations techniques pour les SIEM, celles spécialisées dans des menaces sectorielles ou technologiques ...
 \end{warningbox}
+
+
+\subsubsection{Exemple de TI}
+
+On peut donc trouver dans ces base de threat intelligence des données du type suivant  :
+
+% EXCEL 2 TAB https://www.tablesgenerator.com/latex_tables
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+\begin{table}[!hbtp]
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{ l|l l}
+%\begin{tabular}{l*{3}{S[table-format=2.1]}}
+\toprule
+\textbf{Nom }                 & \textbf{Command\&Control URL }                                        & \textbf{HASH : sha256}                                                            \\ \hline
+caracal.raceinspace.astronaut & http://api.lulquid.xyz                       & f1d32c17a169574369088...\\ \hline
+com.caracal.cooking           & http://api.namekitchen9.xyz/api/subscription & 46e41ef7673e34ef72fb3a9718...  \\ \hline
+com.leo.letmego               & http://api.leopardus.xyz/api/subscription    & b21cb5ebfb692a2db1c5cbbc20e00d90a... \\ \hline
+com.caculator.biscuitent      & http://api.lulquid.xyz                       & 734418efafd312e9b3e96adaac6f86cc1a... \\ \hline
+com.pantanal.aquawar          & http://api.pantanal.xyz                      & 8fec77c47421222cc754b32c60794e...\\ \hline
+com.pantanal.dressup          & http://api.pantanal.xyz                      & 64e2c905bcef400e861469e114bf...\\ \hline
+inferno.me.translator         & http://api.molatecta.icu                     & ebe3546208fd32d3f6a9e5daf21a7240...\\ \hline
+translate.travel.map          & http://api.nhudomainuong.xyz                 & f805e128b9d686170f51b1add35...  \\ \hline
+travel.withu.translate        & http://api.molatecta.icu                     & b7670b5d9a6643a54b800b4c...  \\ \hline
+allday.a24h.translate         & http://api.royalchowstudio.xyz               & 29f2fd6ccf0f632e45dd1f15ec72985... \\ \hline
+banz.stickman.runner.parkour  & http://api.lulquid.xyz/api/                  & e1027b6681e93d9763f19ea7e5ab2...  \\ 
+\bottomrule
+\end{tabular}
+}
+\caption{Exemple de  données de TI (Threat Intelligence)}
+\label{tab:ExempleTI}
+\end{table}
+
+avec le nom du package malveillant, l'url du centre de commande et de contrôle, et le Hash (empreinte) permettant de rechercher le fichier dans les données d'un système.
 
 %TODO Ajouter : THREAT TELEGRAMME 
 

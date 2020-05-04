@@ -52,7 +52,7 @@
 
 \Abstract {\uabstract\input{../Tex/Notes/Commons/abstract-gen-notes.tex} }
 \JournalInfo{\uJournalInfo} % Journal information
-\Archive{Notes de cours éditées le \today} % Additional notes (e.g. copyright, DOI, review/research article)
+\Archive{Notes de cours éditées le  \DTMnow} % Additional notes (e.g. copyright, DOI, review/research article)
 \PaperTitle{\utitle} % Article title
 \Authors{\uauthor\textsuperscript{1,}\textsuperscript{2}*} % Authors
 \affiliation{\textsuperscript{1}\textit{\uproa}} % Author affiliation
@@ -69,6 +69,21 @@
 
 \begin{tikzpicture}[remember picture,overlay]\node at (current page.north west)[xshift=4cm, yshift=-4cm, text opacity=1.0]{\includegraphics[width=0.1\paperwidth]{../Tex/template.inc/Commons/CommonsPictures/shield-20.pdf}}; 
 \end{tikzpicture} 
+
+%-------------------------------------------------	
+% Download
+\newcommand{\safeqrcode}[2][]{%
+  \qrcode[#1]{\detokenize{#2}} }
+\newcommand{\GITfilename}{https://github.com/edufaction/CYBERDEF/raw/master/Builder/\jobname.pdf}
+\begin{center}
+\setstretch{2}
+ {\link{\GITfilename}{\textbf{\jobname.pdf }sur GITHUB CYBERDEF} }   \\ 
+{{\huge\ccbyncndeu}}  \\  
+{2020 eduf@ction Publication en Creative Common BY-NC-ND }   \newline % Copyright notice
+{\safeqrcode[padding]{\GITfilename} }  
+\end{center}
+%-------------------------------------------------
+	\newpage
 
 %-------------------------------------------------
 \ubody % MAIN BODY defined external
@@ -87,6 +102,5 @@
 \iftotalfigures
   \listoffigures
 \fi
-
 
 \end{document}

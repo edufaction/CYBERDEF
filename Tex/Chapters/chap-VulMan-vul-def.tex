@@ -235,12 +235,32 @@ et pour ceux qui souhaitent creuser un peu plus, il existe de nombreux sites pr�
 \subsection{Failles de programmation}
 
 %SMB etherblue
+\subsubsection{Exemple : SMB etherblue}
 On peut trouver des vulnérabilités dans des produits et services très connus, et déployés depuis très longtemps. 
 Parmi ces vulnérabilités les plus célèbres (voir figure~\ref{lbl-faillesmb}), la classe de vulnérabilités du protocole SMB en version 1, est celle qui continue encore a faire des victimes.
 Le protocole SMB (Server Message Block) est un protocole permettant le partage de ressources (fichiers et imprimantes) sur des réseaux locaux avec des PC sous Windows. Sa version 1 du protocole SMB, vulnérable à la faille EternalBlue.
-\upicture{../Tex/Pictures/img-smbfaille}{Tempo faille SMB - google}{0.7}{lbl-faillesmb}
+\upicture{../Tex/Pictures/img-smbfaille}{Tempo faille SMB - google}{0.6}{lbl-faillesmb}
 
 Dans la base de données du système CVE on retrouve l’identifiant de cette vulnérabilité : \textbf{CVE-2017-0144}. 
+
+\subsubsection{Exemple : programmation erronée}
+
+Les célèbre débordement de pile, ou BUFFER OVERFLOW, fait partie des exemples d'erreur de programmation, en particulier avec des langages permissifs,  pouvant conduire à des situations exploitables par des codes malveillants.
+
+Si nous prenons l'exemple simple d'une fonction de copie de mémoire par indexation de tableau en C suivante :
+
+\begin{lstlisting} [language=c++]
+void *memcpy(char *dest; char *src, size_t *n)
+{  /* copie de bloc de memoire */
+// size_t : taille du tableau
+// *src : pointeur  source
+// *dest : pointeur  destination
+  for (size_t i=0; i<n; i++)
+    dst[i] = src[i];
+}
+\end{lstlisting} 
+
+Un nombre négatif (et donc incorrect en principe pour copier une zone de mémoire dans une autre) peut être passé en valeur dans 'n', et par la suite est interprété comme un grand nombre à cause du complément à 2 et de la façon dont les nombres négatifs sont codés. Ceci qui provoque un débordement de mémoire et un plantage si ce débordement touche une zone de mémoire virtuelle non liée à une zone de mémoire physique.
 
 %https://blog.httpcs.com/heartbleed-openssl-explication-et-exploit/ (faille openssl) HeartBleed dans l'opensource
 
@@ -251,6 +271,10 @@ Un des plus grands classiques de vulnérabilité système concerne  les défauts
 L'outil le plus classique et accessible est NMAP.  Cet outil est conçu pour détecter les ports ouverts, identifier les services hébergés et obtenir des informations sur le système  de l'ordinateur distant. 
 La technique de scan de port est utilisée par les administrateurs des systèmes informatiques pour contrôler la sécurité des serveurs de leurs réseaux. La même technique est aussi utilisée par les acteurs malveillants pour tenter de trouver des failles dans des systèmes informatiques. De nos jours un balayage de ports (port scan ou portscan en anglais) effectué sur un système tiers est généralement considéré comme une agression, car il préface une intrusion. Il est donc recommandé de l'utiliser de manière responsable lorsqu'on utilise ce type d'outils dans son entreprise. En effet --, 
 scan de ports est une des activités considérées comme suspectes par un système de détection d'intrusion. 
+
+
+
+
 
 \subsection{Vulnérabilités et exploits}
 
