@@ -15,7 +15,7 @@
 \section{Sécurité opérationnelle}
 %--------------------------------------------------------------
 
-Après avoir construit une structure de sécurité cohérente sur les aspects de gestion des flux, de gestion des accès et des identités, et construit une gouvernance efficace sur la base de l'ISO27001, il est maintenant nécessaire de maintenir le niveau de sécurité de l'entreprise ou du système. La dynamique de sécurité de l'entreprise est en exploitation nécessite une organisation et des politiques orientés vers l'efficience de l'anticipation, de la détection et de la réaction.
+Après avoir construit une structure de sécurité cohérente sur les aspects de gestion des flux, de gestion des accès et des identités, et construit une gouvernance efficace sur la base de l'\uindex{ISO27001}, il est maintenant nécessaire de maintenir le niveau de sécurité de l'entreprise ou du système. La dynamique de sécurité de l'entreprise est en exploitation nécessite une organisation et des politiques orientés vers l'efficience de l'anticipation, de la détection et de la réaction.
 
 % begin PRZ==========================
 \begin{frame}
@@ -39,7 +39,7 @@ Dans certains ouvrages ce processus est dénommé  \g{Maintien en Condition de s
 % end header PRZ======================
 \upicture{../Tex/Pictures/img-thinkrun}{les phases du cycle de vie}{0.7}{lbl-thinkrun}
 
-Et nous classons donc dans la dernière phase du cycle de vie : les activités d'exploitation de la sécurité, \textbf{RUN} : Des évènements de sécurité gérés à une \textbf{Cybercrise} maitrisée, ce que certains appellent \textbf{SECOPS} : \g{sécurité Opérationnelle}.
+Et nous classons donc dans la dernière phase du cycle de vie : les activités d'exploitation de la sécurité, \textbf{RUN} : Des évènements de sécurité gérés à une \textbf{Cybercrise} maitrisée, ce que certains appellent \textbf{\uindex{SECOPS}} : \g{\uindex{sécurité Opérationnelle}}.
 \end{frame}
 % end PRZ ===========================
 
@@ -63,7 +63,7 @@ Ce modèle se développe bien entendu en fonction des finalités de l'entreprise
 \frametitle<presentation>{sécurité opérationnelle}
 \framesubtitle<presentation>{Une définition}
 % end header PRZ======================
- Le terme de \g{sécurité opérationnelle}, est relativement jeune dans l’histoire de la sécurité des technologies de l’information. Le terme de SSI (sécurité des Systèmes d’Information) était né pour distinguer des disciplines qui s’attachaient à protéger l’information qui circulent dans les systèmes d'information de l’entreprise (cf. protection et classification de l’information) vis à vis de la sécurité des biens et des personnes. La sécurité des réseaux et la sécurité informatique ont été les précurseurs de la cybersécurité, le cyber recouvrant en un seul terme, les enjeux de sécurité liés au réseau et à l’informatique, mais plus largement à la sécurité de l'économie numérique.
+ Le terme de \g{sécurité opérationnelle}, est relativement jeune dans l’histoire de la sécurité des technologies de l’information. Le terme de \uindex{SSI}(sécurité des Systèmes d’Information) était né pour distinguer des disciplines qui s’attachaient à protéger l’information qui circulent dans les systèmes d'information de l’entreprise (cf. protection et classification de l’information) vis à vis de la sécurité des biens et des personnes. La sécurité des réseaux et la sécurité informatique ont été les précurseurs de la cybersécurité, le cyber recouvrant en un seul terme, les enjeux de sécurité liés au réseau et à l’informatique, mais plus largement à la sécurité de l'économie numérique.
 \end{frame}
 % end PRZ ===========================
 
@@ -282,7 +282,7 @@ En effet les techniques d'audit font partie des méthodes de référence pour di
 Par ailleurs nous explorerons rapidement, les techniques de déception et de leurre qui font partie cette défense proactive avec les honeypots qui peuvent être couplés avec le \UKword{cyber-hunting}, technique de chasse aux codes malveillants dans l'entreprise.
  
 
-\subsection{Les modèles Cybersécurité}
+\subsection{Les modèles de cybersécurité}
 
 % begin PRZ==========================
 \begin{frame}
@@ -306,7 +306,7 @@ Ce que l'on peut reprocher au modèle du NIST, c'est qu'il ne possède pas expli
 % end PRZ==========================
 Dans l'environnement ISO 27000, le modèle est piloté par les risques \uref{lbl-risk27}.
 
-Nous avons fait le choix de positionner la présentation du volet sécurité opérationnelle en nous éloignant un peu des modèles pour présenter les 3 grands moteurs de la sécurité opérationnelle. En effet les modèles cités sont orientée sur un axe de cycle de vie.
+Nous avons fait le choix de positionner la présentation du volet sécurité opérationnelle en nous éloignant un peu des modèles pour présenter les trois grands moteurs de la sécurité opérationnelle. En effet les modèles cités sont orientée sur un axe de cycle de vie.
 En sécurité opérationnelle ou cyberdéfense, l'objectif est de conduire en continue et de frond des processus de maitrise des risques cyber opérationnels.
 \begin{itemize}
   \item Les systèmes d'information évoluent en continue et des vulnérabilités peuvent s'insérer et/ou découvertes chaque jour au grès des modifications et évolutions,
@@ -331,23 +331,23 @@ Notre propos sera donc centré sur ces trois axes  qui nous déclinerons dans tr
 \end{frame}
 % end PRZ ===========================
 
-Nous aborderons aussi quelques compléments à ces processus SECOPS, comme la détection des fuites de données (Leak Detection), qui peut s'entendre comme un incident de sécurité externe, ou une détection d'évènement hors de périmètre du SI, mais dans le périmètre de surveillance.
+Nous aborderons aussi quelques compléments à ces processus SECOPS, comme la détection des fuites de données (Leak Detection), qui peut s'entendre comme un incident de sécurité externe, ou une détection d'évènements hors de périmètre du système informatique, mais dans le périmètre de surveillance.
 
 % Begin PRZ ===========================
 \begin{frame}
 \frametitle<presentation>{Les processus SECOPS}
 % end header PRZ =======================
-\upicture{\upath/Pictures/img-chapvar}{Synthèse des meta-processus SECOPS}{0.8}{lbl-prosecops}
+\upicture{\upath/Pictures/img-chapvar}{Synthèse des méta-processus SECOPS}{0.8}{lbl-prosecops}
 
 \end{frame}
 % end PRZ ===========================
 
-Des activités qui nécessitent, pour être efficace, une symbiose parfaite entre les équipes qui gèrent l'activité digitale (Systèmes d'informations, réseaux sociaux, ...) et les équipes de sécurité opérationnelle.
+Ces activités nécessitent, pour être efficace, une symbiose parfaite entre les équipes qui gèrent l'activité digitale (Systèmes d'informations, réseaux sociaux,  communication...) et les équipes de sécurité opérationnelle.
 Il ne faut pas oublier bien entendu les mécanismes de gouvernance sécurité globale (ISO 27001 par exemple) dans lesquels s'inscrit la sécurité opérationnelle. On trouve souvent dans les entreprises un RSSI dédié cette activité relevant soit du RSSI de la DSI soit d'un DSSI (Directeur de la SSI).
 
 \section{Les métiers de la SECOPS}
 
-Au delà des métiers de l'audit de sécurité qui existent depuis de nombreuses années, la sécurité opérationnelle est le champs de développement de nombreux métiers nouveaux ou en devenir. Nous en explorerons quelques-uns dans chacune des parties qui présentent les opérations de cette SECOPS.
+Au delà des métiers de l'audit de sécurité qui existent depuis de nombreuses années, la sécurité opérationnelle est le champ de développement de nombreux métiers nouveaux ou en devenir. Nous en explorerons quelques-uns dans chacune des parties qui présentent les opérations de cette SECOPS.
 
 % Begin PRZ ===========================
 \begin{frame}

@@ -74,30 +74,56 @@ belowskip=1em,
 
 \usepackage{floatflt} 
 
-%\usepackage[breaklinks, pdftex]{hyperref}
 \usepackage{hyperref}
 
+\hypersetup{
+pdftitle={\utitle},
+pdfauthor={\uauthor},
+%pdfdisplaydoctitle={\utitle}, Attention le titre ne doit pas contenir de saut de ligne
+hidelinks,
+backref=true,
+pagebackref=true,
+hyperindex=true,
+pdfcenterwindow = true,
+colorlinks=false,
+breaklinks=true,
+urlcolor=ocre,
+bookmarks=true,
+pdfsubject = {\uCoursetheme}
+pdfcreator = {\uauthorwriter TEXDEV}
+bookmarksopen=true}
 
-\hypersetup{pdftitle={\utitle},pdfauthor={\uauthor},hidelinks,backref=true,pagebackref=true,hyperindex=true,colorlinks=false,breaklinks=true,urlcolor=ocre,bookmarks=true,bookmarksopen=false}
 
 %\pdfstringdefDisableCommands{%
 %  \def\\{}%
 %  \def\texttt#1{<#1>}%
 %}
 
-\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
-
+\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
 
 \usepackage{cleveref}
 
 \usepackage{multicol}
 
+%--------------------------------------------------------
 % pour la génération du QRCODE en page de garde d'article
 \usepackage{qrcode} 
 
+%--------------------------------------------------------
 % POur la date d'impression en premiere page d'article
 \usepackage[useregional]{datetime2}
 
+%--------------------------------------------------------
+% Gestion des glossaires et acronymes
+% Un fichier acroymes.tex centralisé
+\usepackage[acronym]{glossaries}
+%\usepackage{glossaries}
+\makeglossaries
 
+%\renewcommand{\bibname}{R\'ef\'erences}
+
+%--------------------------------------------------------
+% Pour exclure des "environnement", ici techworkbox par exemple, travaux pour étudiants, non affiché dans le BOOK.
+\usepackage{comment}
 
 

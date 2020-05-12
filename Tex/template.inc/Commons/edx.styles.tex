@@ -6,6 +6,9 @@
 \setlength{\parindent}{10pt}
 \setlength{\parskip}{5pt} % 1ex plus 0.5ex minus 0.2ex}
 
+
+
+
 %---------------------------------------------------------------
 %	MARGINS
 %---------------------------------------------------------------
@@ -24,6 +27,7 @@
 %	showframe, 
 	showcrop 
 }
+
 
 
 
@@ -106,10 +110,6 @@
 %	BIBLIOGRAPHY AND INDEX
 %-------------------------------------------------------------------------
 
-%usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
-%\addbibresource{bibliography.bib} % BibTeX bibliography file
-%\defbibheading{bibempty}{}
-
 \usepackage{calc} % For simpler calculation - used for spacing the index letter headings correctly
 \usepackage{makeidx} % Required to make an index
 \makeindex % Tells LaTeX to create the files required for indexing
@@ -135,8 +135,8 @@
 \fancyhead[LE,RO]{\sffamily\normalsize\thepage} % Styling for the page number in the header
 \fancyhead[LO]{\sffamily\normalsize\rightmark} % Print the nearest section name on the left side of odd pages
 \fancyhead[RE]{\sffamily\normalsize\leftmark} % Print the current chapter name on the right side of even pages
-\fancyfoot[RE,LO]{\sffamily\normalsize\uBookname} % Uncomment to include a footer
-\fancyfoot[LE,RO]{\sffamily\normalsize\ubooksubtitle} % Uncomment to include a footer
+\fancyfoot[RE,LO]{\sffamily\normalsize\uCoursetittle} % Uncomment to include a footer
+\fancyfoot[LE,RO]{\sffamily\normalsize\uCoursetheme} % Uncomment to include a footer
 
 \renewcommand{\headrulewidth}{1.0pt} % Thickness of the rule under the header
 

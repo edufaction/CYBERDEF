@@ -31,12 +31,12 @@ Pour détecter des attaques en temps réel, il faut disposer des informations ca
 Une grande majorité des équipements (réseau, serveurs, terminaux (endpoint) ), des bases de données ou des applications d’un systèmes d'information peuvent aujourd’hui générer des logs ou traces.  Ces fichiers contiennent, pour chaque équipe, la liste de tous évènements  \g{traçables} qui se sont déroulés pendant l'execution : réussite ou échec d’une connexion, redémarrage, utilisation des ressources (mémoire, ...).
 
 
-\mode<all>{\picframe{../Tex/Pictures/img-logman}{Les logs au coeur de la détection}{0.9}{lbl-logman}}
+\mode<all>{\picframe{../Tex/Pictures/img-logman}{Les logs au coeur de la détection}{0.9}{lbl-logman2}}
 
 
 L'exploitation de ces traces est souvent complexe car chaque équipements dispose de ses propres fonctions de gestion des traces, avec encore dans de nombreux cas un format  d'enregistrement et de stockage propriétaire. Il faut consulter ces logs équipements par équipements. Heureusement, il existe des outils qui permettent de centraliser et de \g{normaliser} ces traces.
 
-On peut citer par exemple, SYSLOG., qui par ailleurs n'est pas le seul type d'outil pour assurer la collecte et la normalisation des traces. SYSLOG reste pourtant un outil de référence dans les architectures de collecte.
+On peut citer par exemple, SYSLOG, qui par ailleurs n'est pas le seul type d'outil pour assurer la collecte et la normalisation des traces. SYSLOG reste pourtant un outil de référence dans les architectures de collecte.
 
 \subsubsection{Services et protocole SYSLOG}
 
@@ -75,9 +75,9 @@ L'intérêt d'un serveur/collecteur Syslog est donc de permettre une centralisat
 
  Evidement, un outil de gestion de LOG ne serait à lui seul et sans fonction de corrélation avoir la capacité de détecter des évènements liés entre eux. 
  
-\begin{warningbox}{Syslog et cybersécurité}
-	L'environnement SYSLOG possède une richesse fonctionnelle qui nécessiterait une présentation détaillée pour en appréhender les capacités et la puissance d'usage. C'est un sujet de fiches TECHNO de référence. Il existe de nombreuses documentations sur internet, toutefois une présentation détaillée d'une architecture SYSLOG pour un usage de cybersécurité est sujet à explorer. 
-\end{warningbox}
+\begin{techworkbox}{Syslog et cybersécurité}
+	L'environnement SYSLOG possède une richesse fonctionnelle qui nécessiterait une présentation détaillée pour en appréhender les capacités et la puissance d'usage. C'est un sujet pour \fichetech de référence. Il existe de nombreuses documentations sur internet, toutefois une présentation détaillée d'une architecture SYSLOG pour un usage de cybersécurité est sujet à explorer. 
+\end{techworkbox}
 
 \subsubsection{Puits de logs}
 
@@ -101,9 +101,9 @@ Nous pouvons citer par exemple \link{https://www.graylog.org}{Graylog} basé sur
 %\subsubsection{le cas des End Point}
 %Syslog - osquery
 
-\begin{warningbox}{Analyse de logs}
-	Les outils d'indexation et d'analyse de logs sont nombreux et chacun possède des avantages et des inconvénients, des facilités d'usage de déploiement et des fonctionnalités différentes. C'est un sujet de réalisation de fiche Techno.
-\end{warningbox}
+\begin{techworkbox}{Analyse de logs}
+	Les outils d'indexation et d'analyse de logs sont nombreux et chacun possède des avantages et des inconvénients, des facilités d'usage de déploiement et des fonctionnalités différentes. C'est un sujet de réalisation pour \fichetech
+\end{techworkbox}
 
 
 

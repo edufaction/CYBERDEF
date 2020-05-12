@@ -18,6 +18,27 @@
 
 \newcommand{\mak}[1]{\faicon{\aArrowCircleORight} #1}
 
+
+%-----------------------------------------------------
+%										 	\INFOGitHub 
+%---------------------------------------------------
+
+\newcommand{\safeqrcode}[2][]{%
+\qrcode[#1]{\detokenize{#2}} }
+\newcommand{\GITfilename}{https://github.com/edufaction/CYBERDEF/raw/master/Builder/\jobname.pdf}
+
+\newcommand{\INFOGitHub}
+{
+\begin{center} 
+\setstretch{2}
+ {Vérifiez la disponibilité d'une version plus récente de} \\
+ {\link{\GITfilename}{\textbf{\jobname.pdf }sur GITHUB CYBERDEF} }   \\ 
+{{\huge\ccbyncndeu}}  \\  
+{2020 eduf@ction Publication en Creative Common BY-NC-ND }    \\  % Copyright notice
+{\safeqrcode[padding]{\GITfilename}}  
+\end{center} 
+}
+
 %-----------------------------------------------------
 %										 	\upspicture 
 %---------------------------------------------------
@@ -75,6 +96,21 @@
   title    = #2,
   #1,
 }
+
+
+\newtcolorbox{techworkbox}[2][]
+{
+sharp corners, 
+  colframe = ocre!25,
+  colback  = black!05,
+  coltitle = ocre!20!black,
+  fonttitle = \bfseries, 
+  title    =  {\textcolor{ocre}{\faFile~\small {Fiche TECHNO}}} : #2,
+  #1,
+}
+
+
+
 
 \newtcolorbox{notebox2}[2][]
 {
@@ -137,8 +173,7 @@ title=#2,#1}
 
 \newcommand{\techwork}[2]
 {
-\begin{techworkin} [righthand width=.8\textwidth]{\faCogs~\small {Fiche TECHNO} : #1}
-#2
+\begin{techworkin} [righthand width=.8\textwidth]{\faCogs~\small {Fiche TECHNO} : #1}#2
 \end{techworkin}
 }
 

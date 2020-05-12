@@ -8,12 +8,13 @@
 \uchap{chap-Vulman-intro.tex}
 %-------------------------------------------------------------
 
-\section{Avant propos}
 
-Je vous propose d'aborder ce chapitre lié à la surveillance de l'évènement de sécurité par les quelques points fondamentaux de la gestion de la menace.
+\section{GERER les menaces}
+
+Je vous propose d'aborder ce chapitre lié à la surveillance de l'évènement de sécurité avec les quelques points fondamentaux de la gestion de la menace.
 En effet nous partons du principe qu'au sein de périmètre de surveillance donné, la gestion de la menace peut s'organiser autour de la gestion des évènements à risques détectés dans ce périmètre.
 
-\mode<all>{\picframe{../Tex/Pictures/img-cycle}{Cycle de vie de gouvernance Cyberdef}{0.8}{lbl-cycle}}
+\mode<all>{\picframe{../Tex/Pictures/img-cycle}{Cycle de vie de gouvernance Cyberdef}{0.8}{lbl-cycle1}}
 
 Après quelques définitions et positionnement dans l'analyse de menace,  de la supervision et de l'analyse comportementale nous aborderons donc les grandes fonctions nécessaire à la \textbf{détection} comme :
 
@@ -21,9 +22,9 @@ Après quelques définitions et positionnement dans l'analyse de menace,  de la 
 \mode<all>{\texframe{Déroulement}{présentation Gestion de la menace}
 {
 \begin{itemize}
-  \item \textbf{VOIR} :  capacité de voir et de capter le comportement d'un système d'information via des sources et capteurs avec le \textit{LOG management} (Systèmes et Applicatifs). En n'oubliant pas d'évoquer l'assurance sécurité des Logs (intégrité, horodatage, valeur probante ...)
-\item \textbf{COMPRENDRE - PREVOIR} : Avec le \textit{Threat Management} : Veiller, surveiller la menace dans l'environnement digital de l'entreprises, modélisation de la menace et scénarios redoutés issus d'analyse de risque;
-\item \textbf{DETECTER} : Surveiller le comportement des systèmes dans le périmètre défini, faire émerger les  évènements, anomalies, incidents pouvant révéler une attaque en cours, une suspicion de compromission par des menaces avancées (APT), où des attaques furtives et discrètes. Nous aborderons l'outillage avec les SIEM et l'organisation avec les SOC;
+  \item \textbf{VOIR} :  capacité de voir et de capter le comportement d'un système d'information via des sources et capteurs avec le \textit{\uindex{LOG management}} (Systèmes et Applicatifs). En n'oubliant pas d'évoquer l'assurance sécurité des Logs (intégrité, \uindex{horodatage}, valeur probante ...)
+\item \textbf{COMPRENDRE - PREVOIR} : Avec le \textit{\uindex{Threat Management}} : Veiller, surveiller la menace dans l'environnement digital de l'entreprises, modélisation de la menace et scénarios redoutés issus d'analyse de risque;
+\item \textbf{DETECTER} : Surveiller le comportement des systèmes dans le périmètre défini, faire émerger les  évènements, anomalies, incidents pouvant révéler une attaque en cours, une suspicion de compromission par des menaces avancées (APT), où des attaques furtives et discrètes. Nous aborderons l'outillage avec les \uindex{SIEM} et l'organisation avec les \uindex{SOC};
 \item \textbf{ALERTER} : mettre en place les mécanismes de remontée d'alerte et d'incident permettant de gérer les alertes adaptées au niveau d'impact d'une attaque. 
 \end{itemize}
 }}
@@ -42,7 +43,7 @@ Après quelques définitions et positionnement dans l'analyse de menace,  de la 
 
 
 %******************************************
-\section{Modèles}
+\subsection{Modèles}
 
 Ce sont généralement les attaques externes et massives qui font l’actualité dans les médias. 
 Un grand nombre de risques cyber quotidiens sont issus de l'intérieur même de l'entreprise .
@@ -52,14 +53,14 @@ Des  fuites de la part d'employés qui, de façon intentionnelle ou non, révèl
 
 N’importe quelle entreprise est exposée au risque. De nos jours, les connexions diverses d’une entreprise représentent de nombreuses voies pour des attaques informatiques, qui ciblent souvent les petites entreprises afin d’accéder à des plus grands acteurs (partenaires,  clients ou fournisseurs). Les grandes entreprises imposent de plus en plus  souvent à leurs fournisseurs et partenaires, quelle que soit leur taille, de mettre en place des mesures de cybersécurité. Ceci est généralement structuré autour de plan d'assurance sécurité, annexé au contrat.
 
-Les attaquants externes sont, certes, des menaces croissantes car elles recherchent sans cesse des failles de sécurité afin d’accéder à vos systèmes, mais les menaces internes ne sont  pas à négliger sur le plan opérationnel. On verra d'ailleurs que pour couvrir ces menaces, la détection des évènements liés à des comportements de ses propres usagers ou salariés n'est pas chose facile (Législation sur le droit des correspondance, CNIL ...).
+Les attaquants externes sont, certes, des menaces croissantes car elles recherchent sans cesse des failles de sécurité afin d’accéder à vos systèmes, mais les menaces internes ne sont  pas à négliger sur le plan opérationnel. On verra d'ailleurs que pour couvrir ces menaces, la détection des évènements liés à des comportements de ses propres usagers ou salariés n'est pas chose facile (Législation sur le droit des correspondance, \gls{cnil} ...).
 
 Il est important toutefois de ne pas distinguer des dynamiques internes et externes en terme d'agression cyber, c'est pour cela que les modèles de Cyberdéfense ne formalisent que très peu cette notion de provenance de l'attaque.
 
 En outre, sur le triptyque \g{Vulnérabilités, Menaces, Incidents} \uref{Modèle de cyberdéfense}{lbl-threatman}. la notion d'attaque interne et/ou externe n'a de sens qu'au titre de la responsabilité du périmètre, car rien n'interdit de positionner des capteurs en dehors de son périmètre technique pour anticiper la menace. Ainsi, la veille sur internet, le renseignement cyber sont nécessairement équipés de capteurs pouvant faire remonter des événements dans des chaines d'alertes Cyber.
 Par exemple, l'attaque d'une entreprise du même secteur peut être  en soit un incident pouvant générer une alerte.
 
-Si on se focalise sur la gestion de la menace, il existe de nombreuses manières de présenter ce processus. Un modèle \uref{Threat Management Cycle}{lbl-threatrosas} issu des travaux de l'OTAN est intéressant car il propose 4 axes d'analyses, toutefois Threat Mitigation et Threat Protection sont un peu ambiguës.
+Si on se focalise sur la gestion de la menace, il existe de nombreuses manières de présenter ce processus. Un modèle \uref{Threat Management Cycle}{lbl-threatrosas} issu des travaux de l'\gls{otan} est intéressant car il propose 4 axes d'analyses, toutefois Threat Mitigation et Threat Protection sont un peu ambiguës.
 
 
 \mode<all>{\picframe{../Tex/Pictures/img-threatrosas}{les 4 axes de la gestion de la menace}{0.5}{lbl-threatrosas}}
@@ -97,7 +98,7 @@ Il est important aussi de repositionner la définition des menaces par rapport �
 
 %TODO modifier l'image ... est couvert et sont couverts / compromis
 
-\mode<all>{\picframe{../Tex/Pictures/img-threatwheel}{la gestion de la menace}{0.5}{lbl-threatwheel}
+\mode<all>{\picframe{../Tex/Pictures/img-threatwheel}{la gestion de la menace}{0.5}{lbl-threatwheel}}
 
 \begin{itemize}
   \item Des attaques \textbf{matérialisent} des menaces,
@@ -106,13 +107,13 @@ Il est important aussi de repositionner la définition des menaces par rapport �
   \item des risques\textbf{ sont converts }par des contre-mesures,
   \item des \textbf{contre-mesures }protègent des actifs,
   \item des actifs \textbf{sont  soumis }à  des menaces.
-\end{itemize}}
+\end{itemize}
 
 Nous voyons donc ici qu'il est important de ne pas séparer en terme de gouvernance et de pilotage opérationnel de la sécurité la gestion des vulnérabilités, la gestion des menaces et la gestion des risques.
 
 
 %******************************************
-\section{Threat Management}
+
 
 %*************************************
 \subsection{Les processus de gestion de la menace}
@@ -267,9 +268,9 @@ Dans la notion de partage de l'information sur la menace, le \link{https://www.m
 
 Il ne faut pas oublier que les donnés dans ces bases peuvent être  "éphémères". (Adresse IP malveillante, machines infectées nettoyées...). Il est donc important de disposer de sources fiables et mise à jour en temps réel.
 
-\begin{warningbox}{Bases de Threat Intelligence}
-Le marché des bases publiques et commerciales de \textit{Threat Intelligence} est un sujet interessant pour des fiches TECHNOs. On peut rechercher les sources les plus pertinentes, celles qui fournissent des informations techniques pour les SIEM, celles spécialisées dans des menaces sectorielles ou technologiques ...
-\end{warningbox}
+\begin{techworkbox}{Bases de Threat Intelligence}
+Le marché des bases publiques et commerciales de \textit{Threat Intelligence} est un sujet interessant pour \fichetech. On peut rechercher les sources les plus pertinentes, celles qui fournissent des informations techniques pour les SIEM, celles spécialisées dans des menaces sectorielles ou technologiques ...
+\end{techworkbox}
 
 
 \subsubsection{Exemple de TI}
