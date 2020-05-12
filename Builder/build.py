@@ -150,7 +150,7 @@ def moveresult():
     logger.info("Moving output from temp directory")
     for basename in os.listdir(os.getcwd() + "/out/"):
         if basename.endswith('.dvi') | basename.endswith('.pdf') :
-            subprocess.call(["mv", "out/" + basename, "."])
+            subprocess.call(["mv", "out/" + basename, "../Published/"])
 
     return;
 
