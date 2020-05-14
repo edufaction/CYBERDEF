@@ -81,6 +81,10 @@ def buildFileWithBib(fileName, buildCommand):
         
         err = subprocess.Popen(["bibtex","out/" + fileName[:-4]], stdout=PIPE)
         output = err.communicate()[0]
+
+        err = subprocess.Popen(["makeindex -s","out/" + fileName[:-4]], stdout=PIPE)
+        output = err.communicate()[0]
+        
         
         err = subprocess.Popen([buildCommand, "--output-directory", "out/",  fileName ], stdout=PIPE)
         output = err.communicate()[0]
