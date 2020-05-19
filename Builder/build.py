@@ -15,6 +15,8 @@
 # with this program; if not, write to the Free Software Foundation, Inc.,
 # 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
+# (c) Eduf@ction 2020: Add  makeindex -s and change output directory
+
 __author__ = "Fredrik Loch"
 __copyright__ = "Copyright 2013, CLI-Builder"
 __license__ = "GPL"
@@ -78,13 +80,24 @@ def buildFileWithBib(fileName, buildCommand):
         err = subprocess.Popen([buildCommand, "--output-directory", "out/",  fileName ], stdout=PIPE)
         output = err.communicate()[0]
         logger.info("Running bibtex")
+
+        err = subprocess.Popen([buildCommand, "--output-directory", "out/",  fileName ], stdout=PIPE)
+        output = err.communicate()[0]
         
         err = subprocess.Popen(["bibtex","out/" + fileName[:-4]], stdout=PIPE)
         output = err.communicate()[0]
 
+
+# Add eduf@cation ---------------------------------------------------
         err = subprocess.Popen(["makeindex -s","out/" + fileName[:-4]], stdout=PIPE)
         output = err.communicate()[0]
-        
+
+        err = subprocess.Popen(["makeindex -s","out/" + fileName[:-4]], stdout=PIPE)
+        output = err.communicate()[0]
+
+        err = subprocess.Popen(["makeindex -s","out/" + fileName[:-4]], stdout=PIPE)
+        output = err.communicate()[0]
+ # ------------------------------------------------------------------        
         
         err = subprocess.Popen([buildCommand, "--output-directory", "out/",  fileName ], stdout=PIPE)
         output = err.communicate()[0]
@@ -117,7 +130,7 @@ def compilePDFLatex(bib, lang, filename):
                 if(bib):
                     buildFileWithBib(basename, "pdflatex")
                 else:
-                    buildFile(basename, "pdflatex")
+                    buildFile(basename, "pdflatex")    #  Change
             except Exception as e:
                 logger.warning("Error while compiling " +  basename)
                 logger.info(e)
@@ -150,11 +163,15 @@ def compileLatex(bib, lang, filename):
                 logger.warning("Error while compiling " +  basename)
     return;
 
+
+# modif eduf@cation ---------------------------------------------------
 def moveresult():
     logger.info("Moving output from temp directory")
     for basename in os.listdir(os.getcwd() + "/out/"):
         if basename.endswith('.dvi') | basename.endswith('.pdf') :
-            subprocess.call(["mv", "out/" + basename, "../Published/"])
+            subprocess.call(["cp", "out/" + basename, "../Published/"])
+            subprocess.call(["cp", "out/" + basename, "."])
+# ???            subprocess.call(["rm -r ", "out/"])
 
     return;
 
@@ -185,3 +202,4 @@ elif args.pdflatex:
     logger.info("Using pdflatex")
     compilePDFLatex(args.bibtex , args.language, args.filename)
     moveresult()
+    

@@ -60,8 +60,17 @@
 % Add a date and possibly the name of the event to the slides
 %  - again first a short version to be shown at the bottom of each slide
 %  - second the full date and event name for the title slide
-\date[\uversion]{Date de publication\\ \DTMnow}
+\date[\uversion]{Publication \INFODistrib  du \\ \DTMnow}
 
+
+\setbeamertemplate{navigation symbols}{%
+\insertslidenavigationsymbol
+\insertframenavigationsymbol
+\insertsubsectionnavigationsymbol
+\insertsectionnavigationsymbol
+\insertdocnavigationsymbol
+\insertbackfindforwardnavigationsymbol
+}
 
 %++++++++++++++++++++++++++++++++
 \begin{document}

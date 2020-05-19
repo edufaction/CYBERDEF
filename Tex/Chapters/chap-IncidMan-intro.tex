@@ -12,7 +12,7 @@
 %--------------------------------------------------------------------------------
 
 % https://searchsecurity.techtarget.com/definition/incident-response
-la réponse sur incident de sécurité pose de nombreuses questions sur les aspects aussi bien techniques que juridiques ou organisationnels. Nous allons tenter d'aborder ces éléments dans ce chapitre. La réponse à incident, doit s'inscrire dans une organisation cohérente permettant de gérer l'ensemble de la chaine de traitement d'un incident. On parle de Gestion des incidents (Incident Management). Cette gestion des incidents est par ailleurs à cheval entre les processus de surveillance et de détection et de réponse à incident. Dans ce document nous nous focaliserons sur cette réponse à incident au sens du traitement d'un incident lié à une menace avérée.
+la réponse sur incident de sécurité pose de nombreuses problèmes d'opérationnalité tant sur les aspects techniques que juridiques ou organisationnels. Dans ce chapitre, nous allons tenter d'aborder les différentes méthodologies et outils qui permettent de répondre aux enjeux de la réactivité en cas d'incident cyber . La réponse à incident, doit s'inscrire dans une organisation cohérente permettant de gérer l'ensemble de la chaine de traitement d'un incident. On parle de \g{Gestion des incidents} (\textit{Incident Management}). Cette gestion des incidents est en outre à cheval entre les deux grands processus  de la SECOPS, la surveillance-détection et la  réponse à incident. Dans ce document nous nous focaliserons sur cette réponse à incident au sens du traitement d'un incident lié à une menace avérée ayant un impact sur les systèmes d'information, et non les évènements de sécurité qui ne réclament pas d'action immédiate. Ces derniers ne sont bien évidement pas à négliger.
 
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Terminologie}
@@ -28,9 +28,9 @@ La réponse peut nécessiter des équipes de compétences larges comme expertes 
 }} % end FRAME.........................................................
 
 
-La gouvernance de la réponse aux incidents consiste à planifier à l'avance et  de disposer un plan d'opération avant qu'il ne soit nécessaire. Plutôt que d'être un processus axé sur l'informatique, il s'agit d'une fonction  globale qui permet à une organisation de prendre des décisions rapides avec des informations fiables dans un contexte où la continuité d'activité ou l'image de l'entreprise est menacée. Non seulement le personnel technique des services informatiques et de sécurité est impliqué, mais aussi des représentants d'autres aspects clés de l'entreprise. La réponse à incident  interpelle  dans son mode d'opération, la gestion des plans de continuité et de reprise d'activité, la gestion de crise,  l'interaction juridique et contractuelle  ainsi que l'a gestion des relations avec les services de l'état (CNIL, ANSSI, Police et Gendarmerie ...). 
+La \textbf{gouvernance} de la réponse aux incidents consiste à planifier à l'avance et  de disposer un plan d'opération avant qu'il ne soit nécessaire. Plutôt que d'être un processus axé sur l'informatique, il s'agit d'une fonction  globale qui permet à une organisation de prendre des décisions rapides avec des informations fiables dans un contexte où la continuité d'activité ou l'image de l'entreprise est menacée. Non seulement le personnel technique des services informatiques et de sécurité est impliqué, mais aussi des représentants d'autres aspects clés de l'entreprise. La réponse à incident  interpelle  dans son mode d'opération, la gestion des plans de continuité et de reprise d'activité, la gestion de crise,  l'interaction juridique et contractuelle  ainsi que l'a gestion des relations avec les services de l'état (CNIL, ANSSI, Police et Gendarmerie ...). 
 
-Quelques éléments de terminologies avec la correspondance anglo-saxonne afin de se repérer dans les usages et trouver de l'information pertinentes lors de vos recherches sur Internet.
+Je vous propose quelques éléments de terminologie avec la correspondance anglo-saxonne afin de se repérer dans les usages et trouver de l'information pertinentes lors de vos recherches sur Internet :
 
 \begin{itemize}
 		\item \edxdico{Investigations Numériques}{Digital Investigation};
@@ -55,8 +55,8 @@ Concrètement, un événement peut donc être :
   \item   soit une altération ou une perte d’un élément du système d’information, d’un élément de configuration du SI ou d’un actif non-IT.
 \end{itemize}
 
-Un événement peut donner lieu à un \textbf{traitement préventif,} dans la mesure où aucun impact n'a été identifié, par exemple la découverte d’une vulnérabilité.
-Un incident donne quant à lui obligatoirement lieu à un \g{traitement curatif }car un impact a été identifié.
+Un événement peut donner lieu à un \textbf{traitement préventif} dans la mesure où aucun impact n'a été identifié, par exemple la découverte d’une vulnérabilité.
+Un \textbf{incident donne quant à lui obligatoirement lieu} à un \g{traitement curatif }car un impact a été identifié.
 Ce qui motive la requalification d’un événement en incident doit impérativement être basé sur une décision humaine en fonction d'une estimation de l'impact.
 Néanmoins avant de s'engager dans la descriptions des activités liées à la réponse à incident cybersécurité, je souhaitais évoquer les bonnes pratiques ITIL qui donnent des pistes sur l'organisation de la gestion d'incident. Il ne faut en effet pas considérer la réponse à attaque comme une activité que technique bien que l'urgence nécessite le plus souvent de passer outre les processus classiques de traçabilité.
 
@@ -66,7 +66,6 @@ Il existe différents types d'incidents de sécurité et des moyens de les class
  %-------------------------------------------------------------------------
 \mode<all>{\picframe{../Tex/Pictures/img-incident-cycle}{Les axes de la gestion des cyber-Incidents}{0.7}{lb:incident-cycle}}
 %-------------------------------------------------------------------------
-
 
 
 Voici quelques exemples d'incidents relativement courants:
@@ -99,26 +98,23 @@ Selon le SANS Institute, la réponse est construit autour de six phases clés d'
 
 % Source https://en.m.wikipedia.org/wiki/Computer_security_incident_management
 
-La gestion de l'incident au quotidien 
+Nous allons donc explorer la  gestion de l'incident au quotidien sur la base de trois actions fondamentales qui dans l'ordre correspondent au niveau de maturité d'une entreprise en terme de réponse à incident :
 
-Réagir 
-	Mécanismes et processus
-	compétences
-	outils
 
-Enquêter
+\begin{itemize}
+  \item \textbf{Réagir} : premier processus, si nous pouvons le nommer ainsi est  la réaction immédiate en cas d'incident. Une entreprise peu ou pas organisée commence par découvrir les techniques de réponse à incident par cette première action. 
 
-	Mécanismes et processus
-	compétences
-	outils
+  \item \textbf{Enquêter} : Si la réaction pour réduire l'impact ou neutraliser l'attaque est au coeur de la réponse à incident, il est nécessaire de rapidement lancer l'analyse de causes et origines de l'incident. Ce domaine d'action qui regroupe l'analyse post-morten et l'inforensic.
 
-Anticiper
+  \item \textbf{Anticiper} : Organiser ses mécanismes de réponse (moyens et compétences), intégrer le processus de réponse à incident Cyber dans les mécanisme ITIL de gestion des incidents, organiser une cellule de CSIRT.
 
-Organiser sa réponse (moyens et compétences)
+\end{itemize}
 
-      l'intégration dans ITIL
-
-(aller plus loin) Organiser  processus de réponse : CSIRT
+%  					\begin{itemize}
+%  							\item 	Mécanismes et processus
+%  							\item 	compétences
+%  							\item 		outils
+%					\end{itemize}
 
 
 
