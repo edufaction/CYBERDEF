@@ -1,4 +1,5 @@
 /Builder/.texpadtmp/*
 /Builder.local/*
+/Builder/out/*
 /Projets/MODEL/.texpadtmp/*
 .DS_Store
