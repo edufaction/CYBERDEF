@@ -152,11 +152,11 @@ title=#2,#1}
 %---------------------------------------------------
 
 
-\newcommand\toolseditor{No EDITOR in Datas.tex}
-\newcommand\toolsurl{No URL INSERTED in Datas.tex}
-\renewcommand\toolclass{No EDITOR in Datas.tex}
-\renewcommand\toolname{No NAME in Datas.tex}
-\renewcommand\toolanalyst{No EDITOR in Datas.tex}
+\newcommand\tooleditor{No EDITOR in Datas.tex}
+\newcommand\toolurl{No URL INSERTED in Datas.tex}
+\newcommand\toolclass{No EDITOR in Datas.tex}
+\newcommand\toolname{No NAME in Datas.tex}
+\newcommand\toolanalyst{No ANALYST in Datas.tex}
 
 \newcommand{\toolsbox}[2]
 {
@@ -166,10 +166,9 @@ title=#2,#1}
 \tcblower
 \input{../SecTools/#2.#1/description.tex}
 \end{toolsboxin}
-\noindent \small {\faCogs~Classe : \uppercase{\textbf{#2}}, Site de référence : \link{\toolsurl}{#1}} \\
-\small {\faGlobe~Editeur : \textbf{\toolseditor}}
-\small {\faGlobe~\toolsurl}
-\small {\faEye~\toolsurl}
+\noindent \small {\faCogs~Classe : \uppercase{\textbf{#2}}, Site de référence : \link{\toolurl}{#1}} \\
+\small {\faGlobe~Editeur : \textbf{\tooleditor}}
+\small {\faEye~\toolanalyst}
 }
 
 %\renewcommand\toolsclass{SIEM}
@@ -229,7 +228,7 @@ title=#2,#1}
 
 
 \newcommand{\upicture}[4]{
-\begin{figure}[!h] %h
+\begin{figure}[!hbtp] %h !hbtp
   \begin{center}
 	 \includegraphics[width=#3\textwidth]{#1.pdf}
   \end{center}

@@ -8,11 +8,59 @@
 %-------------------------------------------------------------
 %==================================================
 \section{GERER les incidents}
+
+
+La réponse aux incidents de sécurité informatique est devenue un axe majeur de la gestion de la sécurité en entreprise. De nouveaux types d'incidents liés à la sécurité émergent régulièrement avec des manières d'agir et de réagir différents. Les activités préventives basées sur les résultats des évaluations des risques peuvent réduire le nombre d'incidents à impact, mais tous les incidents ne peuvent pas être évités. Une capacité de réponse aux incidents est donc nécessaire pour traiter rapidement les incidents, minimiser les impacts, réduire les pertes et destructions, couvrir les faiblesses qui ont été exploitées et restaurer les services numériques. 
+
+La réponse efficace aux incidents est une entreprise complexe, l'établissement d'une capacité de réponse aux incidents réussie nécessite une planification et des ressources importante. La surveillance continue des attaques est essentielle en avant phase. Il est essentiel d'établir des procédures claires pour hiérarchiser le traitement des incidents, tout comme la mise en œuvre de méthodes efficaces de collecte, d'analyse et de communication des données. Il est également essentiel d'établir des relations et d'établir des moyens de communication appropriés avec d'autres groupes internes (par exemple, les ressources humaines, les services juridiques) et avec des groupes externes (par exemple, d'autres équipes de réponse aux incidents (CERT, CSIRT..), les forces de l'ordre).
+
+
+L'établissement d'une capacité de réponse aux incidents doit comprendre les actions suivantes :
+
+\begin{itemize}
+  \item Création d'une politique et d'un plan de réponse aux incidents;
+  \item  Élaboration de procédures pour effectuer le traitement et le signalement des incidents;
+  \item Définir des lignes directrices pour communiquer avec des tiers sur les incidents;
+   \item Sélection d'une structure d'équipe et d'un modèle de dotation;
+  \item  Établir des relations et des voies de communication entre l'équipe d'intervention en cas d'incident et d'autres groupes, à la fois internes (par exemple, le service juridique) et externes (par exemple, les forces de l'ordre);
+  \item Déterminer quels services l'équipe d'intervention en cas d'incident devrait fournir;
+  \item Recruter et former l'équipe d'intervention en cas d'incident.
+\end{itemize}
+
+
+Les organisations doivent généralement être prêtes à gérer tout incident, mais elles doivent se concentrer sur leur préparation à gérer les incidents qui utilisent des vecteurs d'attaque courants.
+Les incidents peuvent se produire de nombreuses façons, il est donc impossible d'élaborer des instructions étape par étape pour gérer chaque incident. Cette publication définit plusieurs types d'incidents, basés sur des vecteurs d'attaque courants; ces catégories ne sont pas destinées à fournir une classification définitive des incidents, mais plutôt à être utilisées comme base pour définir des procédures de manipulation plus spécifiques. Différents types d'incidents méritent différentes stratégies d'intervention. 
+
+Les vecteurs d'attaque les plus courants:
+
+\begin{itemize}
+  \item Media Support externe / amovible: attaque exécutée à partir d'un support amovible (par exemple, un lecteur flash, un CD) ou un périphérique;
+  \item Attrition: attaque qui utilise des méthodes de force brute pour compromettre, dégrader ou détruire des systèmes, des réseaux ou des services;
+  \item Web: attaque exécutée à partir d'un site Web ou d'une application Web;
+  \item Courriel: une attaque exécutée via un message électronique ou une pièce jointe;
+  \item Utilisation incorrecte: tout incident résultant d'une violation des politiques d'utilisation acceptables d'une organisation par un utilisateur autorisé, à l'exclusion des catégories ci-dessus;
+  \item  Perte ou vol d'équipement: la perte ou le vol d'un appareil informatique ou d'un support utilisé par l'organisation, tel qu'un ordinateur portable ou un smartphone;
+\end{itemize}
+
+
 \subsection{Réponse à incident}
 %--------------------------------------------------------------------------------
 
 % https://searchsecurity.techtarget.com/definition/incident-response
-la réponse sur incident de sécurité pose de nombreuses problèmes d'opérationnalité tant sur les aspects techniques que juridiques ou organisationnels. Dans ce chapitre, nous allons tenter d'aborder les différentes méthodologies et outils qui permettent de répondre aux enjeux de la réactivité en cas d'incident cyber . La réponse à incident, doit s'inscrire dans une organisation cohérente permettant de gérer l'ensemble de la chaine de traitement d'un incident. On parle de \g{Gestion des incidents} (\textit{Incident Management}). Cette gestion des incidents est en outre à cheval entre les deux grands processus  de la SECOPS, la surveillance-détection et la  réponse à incident. Dans ce document nous nous focaliserons sur cette réponse à incident au sens du traitement d'un incident lié à une menace avérée ayant un impact sur les systèmes d'information, et non les évènements de sécurité qui ne réclament pas d'action immédiate. Ces derniers ne sont bien évidement pas à négliger.
+La réponse sur incident de sécurité pose de nombreuses problèmes \g{d'opérationnalité} tant sur les aspects techniques que juridiques ou organisationnels. Dans ce chapitre, nous allons tenter d'aborder les différentes méthodologies et outils qui permettent de répondre aux enjeux de la réactivité en cas d'incident cyber . La réponse à incident, doit s'inscrire dans une organisation cohérente permettant de gérer l'ensemble de la chaine de traitement d'un incident. On parle de \g{Gestion des incidents} (\textit{Incident Management}). Cette gestion des incidents est en outre à cheval entre les deux grands processus  de la SECOPS, la surveillance-détection et la  réponse à incident. Dans ce document nous nous focaliserons sur cette réponse à incident au sens du traitement d'un incident lié à une menace avérée ayant un impact sur les systèmes d'information, et non les évènements de sécurité qui ne réclament pas d'action immédiate. Ces derniers ne sont bien évidement pas à négliger.
+
+Un événement est donc toute occurrence observable dans un système ou un réseau. Les événements incluent un utilisateur se connectant à un partage de fichiers, un serveur recevant une demande de page Web, un utilisateur envoyant un e-mail et un pare-feu bloquant une tentative de connexion. Les événements indésirables sont des événements ayant une conséquence négative, tels que les pannes du système, les inondations de paquets, l'utilisation non autorisée des privilèges système, l'accès non autorisé aux données sensibles et l'exécution de logiciels malveillants qui détruisent les données. Ce guide ne traite que des événements indésirables liés à la sécurité informatique, pas ceux causés par des catastrophes naturelles, des pannes de courant, etc.
+
+
+Un incident de sécurité informatique est une violation ou une menace imminente de violation des politiques de sécurité informatique, des politiques d'utilisation acceptable ou des pratiques de sécurité standard ou simplement une menace active ayant un impact sur l'activité de l'entreprise, on peut citer des cas classiques comme :  Exemples d'incidents2:
+
+\begin{itemize}
+  \item Un attaquant pilote botnet pour générer un DDOS sur  un site WEB important de l'entreprise;
+  \item Les utilisateurs sont amenés à ouvrir un document envoyé par e-mail contenant un malware ou utilisant une vulnérabilité pour exécuter un outil qui infecte leurs ordinateurs pour établi des connexions avec un hôte externe, ou pour chiffrer des fichiers pour réclamer une rançon;
+  \item Un attaquant obtient des données sensibles et menace que les détails soient rendus publics si l'organisation ne paie pas une somme d'argent désignée.
+  \item Un utilisateur fournit ou expose des informations sensibles à des tiers via des services de partage de fichiers poste à poste, ou en utilisant des services non déclarés (Shadow IT)
+\end{itemize}
+
 
 %- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 \subsection{Terminologie}
@@ -46,19 +94,21 @@ Je vous propose quelques éléments de terminologie avec la correspondance anglo
 Un incident de sécurité, correspond donc à la conséquence d’un ou plusieurs évènements de sécurité ou un évènement de sécurité majeur. Pour un \textbf{événement}, il n'y a pas de conséquence alors que pour un \textbf{incident} il y a un impact sur l’un des critères de sécurité DICA (Disponibilité, Intégrité, Confidentialité, Auditabilité).
 \end{notebox}
 
-Cette distinction a toujours existé, en effet l'ISO/IEC 27001 l'a reprise de l'ISO TR 18044:2004 (aujourd'hui remplacée par l'ISO/IEC 27035) qui l'avait elle-même reprise de l'ISO TR 13335-2:1997. Cela remonte donc à la création de la normalisation en sécurité informatique en 1991.
-Concrètement, un événement peut donc être :
+Cette distinction a toujours existé, en effet l'ISO/IEC 27001 l'a reprise de l'ISO TR 18044:2004 (aujourd'hui remplacée par l'ISO/IEC 27035) qui l'avait elle-même reprise de l'ISO TR 13335-2:1997. Concrètement, un événement peut donc être :
+
 \begin{itemize}
   \item soit la découverte d’une vulnérabilité;
   \item  soit la constatation d’une non-conformité;
-  \item soit une altération, une perte ou une atteinte à l’information,
-  \item   soit une altération ou une perte d’un élément du système d’information, d’un élément de configuration du SI ou d’un actif non-IT.
+  \item soit une altération, une perte ou une atteinte à l’information;
+  \item   soit une altération ou une perte d’un élément du système d’information, d’un élément de configuration du SI ou d’un actif non-IT;
+  \item  soit un ensemble corrélé d'indicateurs avertissant d'un comportement non sollicité ou malveillant;.
 \end{itemize}
 
 Un événement peut donner lieu à un \textbf{traitement préventif} dans la mesure où aucun impact n'a été identifié, par exemple la découverte d’une vulnérabilité.
 Un \textbf{incident donne quant à lui obligatoirement lieu} à un \g{traitement curatif }car un impact a été identifié.
 Ce qui motive la requalification d’un événement en incident doit impérativement être basé sur une décision humaine en fonction d'une estimation de l'impact.
 Néanmoins avant de s'engager dans la descriptions des activités liées à la réponse à incident cybersécurité, je souhaitais évoquer les bonnes pratiques ITIL qui donnent des pistes sur l'organisation de la gestion d'incident. Il ne faut en effet pas considérer la réponse à attaque comme une activité que technique bien que l'urgence nécessite le plus souvent de passer outre les processus classiques de traçabilité.
+
 
 \subsection{Sources Incidents}
 
@@ -78,6 +128,18 @@ Voici quelques exemples d'incidents relativement courants:
   \item découverte sur internet (Darkweb) de données sensibles appartenant à l'entreprise.
 \end{itemize}
 
+
+
+ %-------------------------------------------------------------------------
+\mode<all>{\picframe{../Tex/Pictures/img-incident-sources}{Les axes de la gestion des cyber-Incidents}{1}{lb:incident-sources}}
+%-------------------------------------------------------------------------
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\subsection{Parcours}
+
+% Source https://en.m.wikipedia.org/wiki/Computer_security_incident_management
+
+
 Selon le SANS Institute, la réponse est construit autour de six phases clés d'un plan de réponse aux incidents:
 
 \begin{itemize}
@@ -89,26 +151,31 @@ Selon le SANS Institute, la réponse est construit autour de six phases clés d'
   \item \textbf{Leçons apprises}: Remplir la documentation de l'incident, effectuer une analyse pour tirer des leçons de l'incident et potentiellement améliorer les efforts d'intervention futurs.
 \end{itemize}
 
- %-------------------------------------------------------------------------
-\mode<all>{\picframe{../Tex/Pictures/img-incident-sources}{Les axes de la gestion des cyber-Incidents}{1}{lb:incident-sources}}
-%-------------------------------------------------------------------------
 
-%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-\subsection{Parcours}
-
-% Source https://en.m.wikipedia.org/wiki/Computer_security_incident_management
-
-Nous allons donc explorer la  gestion de l'incident au quotidien sur la base de trois actions fondamentales qui dans l'ordre correspondent au niveau de maturité d'une entreprise en terme de réponse à incident :
+Nous allons toutefois explorer la  gestion de l'incident au quotidien sur la base de trois actions fondamentales qui dans l'ordre correspondent au niveau de maturité d'une entreprise en terme de réponse à incident :
 
 
 \begin{itemize}
-  \item \textbf{Réagir} : premier processus, si nous pouvons le nommer ainsi est  la réaction immédiate en cas d'incident. Une entreprise peu ou pas organisée commence par découvrir les techniques de réponse à incident par cette première action. 
+  \item \textbf{Réagir} : premier processus, si nous pouvons le nommer ainsi est  la réaction immédiate en cas d'incident. Une entreprise peu ou pas organisée commence par découvrir les techniques de réponse à incident par cette première action. Cette réaction peut être compléter par des mécanismes (juridiques) de \textbf{neutralisation} de la menace.
 
   \item \textbf{Enquêter} : Si la réaction pour réduire l'impact ou neutraliser l'attaque est au coeur de la réponse à incident, il est nécessaire de rapidement lancer l'analyse de causes et origines de l'incident. Ce domaine d'action qui regroupe l'analyse post-morten et l'inforensic.
 
   \item \textbf{Anticiper} : Organiser ses mécanismes de réponse (moyens et compétences), intégrer le processus de réponse à incident Cyber dans les mécanisme ITIL de gestion des incidents, organiser une cellule de CSIRT.
 
 \end{itemize}
+
+
+%-------------------------------------------------------------------------
+\mode<all>{\picframe{../Tex/Pictures/img-liovar-incidents}{Incidents}{0.6}{lb:mtbf}}
+%-------------------------------------------------------------------------
+
+
+Dans certains ouvrages, le cycle des gestions d’incidents informatiques  peut être  présenté  en sept phases : Préparation, Détection, Identification, Isolement, Éradication, Restauration et Activités Post-Incident. 
+
+Il est important de différencier les phases de Détection et d’Identification des autres.  La première étape consiste à découvrir la présence d’une cyber-attaque ce que j'ai présenté pour ma part dans la partie \g{Threat Detection}"  alors que la deuxième est composée de l’ensemble des investigations et analyses forensiques permettant de déterminer le type d’attaque et son étendue, d’identifier l’ensemble des systèmes et comptes infectés, ainsi que de préparer un plan d’action pour répondre activement à la cyber-attaque (Isolation, Éradication et Restauration). C'est ces phases que nous traiterons comme le processus de gestion des incidents.
+
+
+
 
 %  					\begin{itemize}
 %  							\item 	Mécanismes et processus

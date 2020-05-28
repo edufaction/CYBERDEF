@@ -7,12 +7,12 @@
 %                              2020 eduf@ction
 %-------------------------------------------------------------
 
-\subsection{CERT et CSIRT}
+\section{CERT et CSIRT}
 
 Idéalement, les activités de réponse aux incidents sont menées par l' équipe de réponse aux incidents de sécurité informatique de l'organisation (CSIRT), un groupe qui a été précédemment sélectionné pour inclure la sécurité de l'information et le personnel informatique général . L'équipe peut également comprendre des représentants des services juridique, des ressources humaines et de la communication. L'équipe de réponse aux incidents suit le plan de réponse aux incidents (Cyber Incident Plan) de l'organisation, qui est un ensemble d'instructions écrites qui décrivent la réponse de l'organisation aux événements du réseau, aux incidents de sécurité et aux violations confirmées.
 
 \subsubsection{Un peu d'histoire}
-un peu d'histoire, dans les années 80, au coeur du réseau IP les plus célèbre ARPANET, un étudiant de CORNELL UNIVERSITY implanta, sur le réseau, un ver  qui se propageait, se répliquait et exploitait les failles de sécurité UNIX de l’époque. Afin d’exterminer ce ver internet, une équipe d’analyse, en compagnie d’experts MIT, a été créée pour identifier et corriger les failles d’une part, et d’autre part développer des solutions d’éradication. A la suite de cet incident, le DARPA (Defense Advanced Research Projects Agency), maitrise d’ouvrage d’ARPANET, décida la mise en place d’une structure dédiée, le CERT coordination Center, pour résoudre tous types d’incidents sécurité. Le terme CERT est le plus utilisé et le plus connu mais il s’agit d’une marque américaine qui appartient à l’université Carnegie Mellon. Les CSIRT peuvent demander l’autorisation d’utiliser le nom de « CERT ». En 2019, environ 80 CSIRT sont affiliés et autorisés à utiliser cette marque CERT.
+Un peu d'histoire, dans les années 80, au coeur du réseau IP les plus célèbre ARPANET, un étudiant de CORNELL UNIVERSITY implanta, sur le réseau, un ver  qui se propageait, se répliquait et exploitait les failles de sécurité UNIX de l’époque. Afin d’exterminer ce ver internet, une équipe d’analyse, en compagnie d’experts MIT, a été créée pour identifier et corriger les failles d’une part, et d’autre part développer des solutions d’éradication. A la suite de cet incident, le DARPA (Defense Advanced Research Projects Agency), maitrise d’ouvrage d’ARPANET, décida la mise en place d’une structure dédiée, le CERT coordination Center, pour résoudre tous types d’incidents sécurité. Le terme CERT est le plus utilisé et le plus connu mais il s’agit d’une marque américaine qui appartient à l’université Carnegie Mellon. Les CSIRT peuvent demander l’autorisation d’utiliser le nom de « CERT ». En 2019, environ 80 CSIRT sont affiliés et autorisés à utiliser cette marque CERT.
 
 Ces CSIRTs peuvent être internes à l'entreprise ou externes de type publique ou commercial.
 
@@ -46,11 +46,12 @@ Le travail de fond d'un CSIRT est de centraliser la réponse à incident toutefo
 Il existe plusieurs types de CSIRT :
 
 \begin{itemize}
-  \item  Le CSIRT interne (d’entreprise ou d’une administration / université / Etat...) que l'on trouve dans de grandes entrerprises bancaires comme par exemple (Le monde bancaire ayant été précuseurs dans l'utilisation de CERT). Le CSIRT a alors un rôle d’«alerte» et de « cyber pompier », prêt à intervenir pour aider et conseiller l’ensemble du groupe, ses filiales voire ses clients en cas d’incident de sécurité.
-  \item  Les CSIRT «commerciaux». Ce sont des équipes d’experts appartenant à des prestataires de services qui  proposent des offres de veille, des réponses à incidents à leurs clients. cela peut être  considéré  un CSIRT externalisé et mutualisé.
+  \item  Le CSIRT interne (d’entreprise ou d’une administration / université / Etat...) que l'on trouve dans de grandes entreprises bancaires comme par exemple (Le monde bancaire ayant été précurseurs dans l'utilisation de CERT). Le CSIRT a alors un rôle d’«alerte» et de « cyber pompier », prêt à intervenir pour aider et conseiller l’ensemble du groupe, ses filiales voire ses clients en cas d’incident de sécurité.
+  \item  Les CSIRT «commerciaux». Ce sont des équipes d’experts appartenant à des prestataires de services qui  proposent des offres de veille, des réponses à incidents à leurs clients, cela peut être  considéré  un CSIRT externalisé et mutualisé.
 \end{itemize}
  
  \subsection{Faire intervenir un CSIRT commercial}
+ 
  \subsubsection{Phase d'analyse}
 
 La première chose à laquelle souhaite accéder un CSIRT est un présentation de situation la plus clair et concise  que possible.
@@ -59,35 +60,33 @@ La première chose à laquelle souhaite accéder un CSIRT est un présentation d
 
 Un spécialiste de la réponse à incident va vouloir des informations sur ce qui conduit son client à penser qu’il a été compromis, quand et comment il l’a découvert, et encore s’il l’a fait grâce à une source interne ou externe, des autorités locales, par exemple, ou encore un émetteur de cartes bancaires.
 
-Durant la phase d’établissement de l’étendue du problème, il est vital de disposer de personnes internes à l’organisation sachant quelles informations il est possible de fournir au prestataire, qu’il s’agisse de journaux d’activité ou de tout autre élément de preuve, explique Jim Aldridge, directeur de l’activité de conseil et Mandiant, l’unité de réponse aux incidents de FireEye.
+Durant la phase d’établissement de l’étendue du problème, il est vital de disposer de personnes internes à l’organisation sachant quelles informations il est possible de fournir au prestataire, qu’il s’agisse de journaux d’activité ou de tout autre élément de preuve.
 
-Le prestataire va utiliser l’information qui lui est fournie pour évaluer l’étendue des dégâts et déterminer le type de ressources – y compris les experts à dépêcher sur place – nécessaires. « Lorsqu’une organisation contacte un prestataire de services de réponse à incident, il faut engager une discussion sur l’étendue du problème pour s’assurer que le prestataire comprend la situation sur laquelle il va intervenir », relève Aldridge.
+Le prestataire va utiliser l’information qui lui est fournie pour évaluer l’étendue des dégâts et déterminer le type de ressources , y compris les experts à dépêcher sur place.
 
 \subsubsection{La phase de contractualisation}
 
 Une fois que le prestataire a eu l’opportunité d’évaluer la situation, il pourra fournir une estimation de ce dont il aura besoin pour son intervention. Le contrat proposer doit généralement contenir des explications détaillées des services qui seront apportés, précisant au passage s’il aidera effectivement à remédier à l’incident, ou s’il ne fera que fournir les informations permettant à son client d’assurer seul la remédiation.
 
-Dans cette phase, il est important de bien comprendre quelle documentation, accès et savoirs seront nécessaires au prestataire. Christopher Pierson, RSSI de Viewpost, une plateforme de paiement en ligne, estime qu’il est « crucial de s’assurer que les bonnes ressources seront fournies ». Les entreprises utilisant des applications et des services en mode Cloud sont parfois limitées dans le choix des tiers d’investigation qu’elles peuvent solliciter. Il est donc important d’examiner ces points avant de signer le contrat.
+Dans cette phase, il est important de bien comprendre quelle documentation, accès et savoirs seront nécessaires au prestataire.  Les entreprises utilisant des applications et des services en mode Cloud sont parfois limitées dans le choix des tiers d’investigation qu’elles peuvent solliciter. Il est donc important d’examiner ces points avant de signer le contrat.
 
 En outre, il est vital d’identifier les compétences que peut apporter le prestataire, ainsi que ses ressources technologiques, ses outils ou encore ses renseignements sur les menaces.
 
-Signer pour un engagement de longue durée avec un prestataire, avant le premier incident, peut s’avérer profitable : ainsi, il n’est pas nécessaire de consacrer un temps critique en plein incident aux détails du processus de contractualisation, ou d’expliquer ses processus internes de réponse aux incident au milieu d’une crise. De fait, souligne Bob Shaker, « en pleine crise, la personne susceptible de signer un contrat est généralement sur le pont au centre de crise ». Réussir à l’en extraire peut s’avérer difficile…
+Signer pour un engagement de longue durée avec un prestataire, avant le premier incident, peut s’avérer profitable : ainsi, il n’est pas nécessaire de consacrer un temps critique en plein incident aux détails du processus de contractualisation, ou d’expliquer ses processus internes de réponse aux incident au milieu d’une crise. 
 
 \subsubsection{Enquêter sur l’incident}
 
 Le CSIRT aura besoin de toute l’information possible : logs systèmes et réseau, diagrammes de topologie réseau, images systèmes, rapports d’analyse du trafic réseau, etc.
 
-Souvent, il est tentant de céder à la panique et d’arrêter les systèmes dans la précipitation. Mais pour Shaker, c’est une mauvaise idée : « la première chose importante est de ne pas éteindre les systèmes. Une fois qu’un système est éteint, une quantité considérable d’éléments de preuve peuvent être effacés, en particulier tout ce qui réside en mémoire vive ».
+Souvent, il est tentant de céder à la panique et d’arrêter les systèmes dans la précipitation. Mais pour Shaker, c’est une mauvaise idée :  la première chose importante est de ne pas éteindre les systèmes. Une fois qu’un système est éteint, une quantité considérable d’éléments de preuve peuvent être effacés, en particulier tout ce qui réside en mémoire vive.
 
-Les équipes d’investigation utilisent les informations fournies par les entreprises clients, ainsi que celles qu’elles collectent elles-mêmes sur leurs points de terminaison et d’autres sources, via des outils propriétaires, pour identifier des indicateurs de compromission, relève Kevin Strickland, consultant réponse à incident sénior chez Dell SecureWorks.
+Les équipes d’investigation utilisent les informations fournies par les entreprises clients, ainsi que celles qu’elles collectent elles-mêmes sur leurs points de terminaison et d’autres sources, via des outils propriétaires, pour identifier des indicateurs de compromission.
 
-C’est après cela que le prestataire est généralement en mesure d’informer son client sur ce qui s’est passé, sur la manière dont l’intrusion est susceptible d’avoir commencé, ou comment le logiciel malveillant a été introduit sur le réseau, et sur quoi faire pour contenir l’incident : « nous allons fournir cette information et indiquer où des actions sont requises », explique Stickland. Et si les options recommandées sont difficiles à mettre en œuvre, il peut y avoir alors quelques aller-retour.
+C’est après cela que le prestataire est généralement en mesure d’informer son client sur ce qui s’est passé, sur la manière dont l’intrusion est susceptible d’avoir commencé, ou comment le logiciel malveillant a été introduit sur le réseau, et sur quoi faire pour contenir l’incident.
 
 \subsubsection{Contrôle et remédiation}
 
 L’équipe responsable de la remédiation travaille souvent en tandem avec l’équipe chargée de l’investigation, selon Aldridge. « Nous avons deux flux de travail. Le premier est lié à l’enquête et vise à identifier quels systèmes, comptes et données ont été compromis ; le second touche à la remédiation ». Et dès que la première équipe trouve des éléments relatifs à l’incident, elle les transmet à la seconde qui travaille avec le client à la mise en œuvre des mesures correctrices.
-
-Mais discrétion peut s’avérer essentielle. Pour Strickland, il n’est pas question de laisser les attaquants savoir que l’on est sur leurs traces : « il est très important de comprendre ce qui se passe avant d’effectuer des changements drastiques ».
 
 
 \subsection{Création de son équipe CSIRT}
@@ -105,6 +104,6 @@ Quelles sont les motivations pour créer un CSIRT dans son entreprise :
 Un CSIRT est composé de plusieurs experts dans différents domaines de la sécurité (intrusions, forensics, malwares, crytpo, etc..) qui préviennent mais surtout réagissent en cas d’incident. Ces experts sont en constante mise à jour des nouveaux vecteurs d’attaques (nouveaux malwares, nouvelles vulnérabilités), tout ceci afin de traiter les incidents de la manière la plus aboutie qui soit. Une véritable équipe CSIRT dans une entreprise à un coût non négligeable, il convient d'en étudier les modalités de de fonctionnement et de couverture.
 
 
-\begin{notebox}{Création d'un CSIRT}
-La création d'un CSIRT dans son entreprise, n'est pas chose facile, c'est un vrai sujet de RSSI dans le sens ou des choix sont a faire tant sur les compétences, les moyens, les procédures de travail. C'est un vrai sujet de mémoire pour la fiche techno.
-\end{notebox}
+\begin{techworkbox}{CSIRT}
+La création d'un CSIRT dans son entreprise, n'est pas chose facile, c'est un vrai sujet de RSSI dans le sens ou des choix sont a faire tant sur les compétences, les moyens, les procédures de travail. C'est un vrai sujet de mémoire pour \fichetech.
+\end{techworkbox}

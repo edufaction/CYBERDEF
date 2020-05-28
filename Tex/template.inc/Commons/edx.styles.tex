@@ -1,13 +1,13 @@
-%===========================
-% EDX STYLE
-%===========================
-
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS COURSE
+%
+%                                    EDX STYLE
+%
+%                              2020 eduf@ction
+%-------------------------------------------------------------
 \usepackage{parskip}
 \setlength{\parindent}{10pt}
 \setlength{\parskip}{5pt} % 1ex plus 0.5ex minus 0.2ex}
-
-
-
 
 %---------------------------------------------------------------
 %	MARGINS
@@ -27,9 +27,6 @@
 %	showframe, 
 	showcrop 
 }
-
-
-
 
 \makeatletter
 \long\def\@makefntextFB#1{%
@@ -51,8 +48,6 @@
 
 %\usepackage{xcolor} % Required for specifying colors by name
 \definecolor{ocre}{RGB}{160,0,0}   
-%\definecolor{ocre}{RGB}{255,128,0}   
-
                  
 %-----------------------------------------------------------------------
 %	FONTS
@@ -87,7 +82,7 @@
 %ppl         Palatino
 %ptm         Times
 %put         Utopia
-
+ 
 
 \renewcommand{\rmdefault}{pag} % text 
 \renewcommand{\sfdefault}{phv} % titre
@@ -136,8 +131,8 @@
 \fancyhead[LO]{\sffamily\normalsize\rightmark} % Print the nearest section name on the left side of odd pages
 \fancyhead[RE]{\sffamily\normalsize\leftmark} % Print the current chapter name on the right side of even pages
 \fancyfoot[RE,LO]{\sffamily\normalsize\uCoursetittle} % Uncomment to include a footer
-\fancyfoot[LE,RO]{\sffamily\normalsize\uCoursetheme} % Uncomment to include a footer
-
+\fancyfoot[LE,RO]{\hyperlink{toc}{\sffamily\normalsize\uCoursetheme}} % Uncomment to include a footer
+% \hyperlink{toc}
 \renewcommand{\headrulewidth}{1.0pt} % Thickness of the rule under the header
 
 \fancypagestyle{plain}{% Style for when a plain pagestyle is specified
@@ -537,6 +532,8 @@ innerbottommargin=5pt]{cBox}
 %	CHAPTER HEADINGS
 %-------------------------------------------------%--------------------------------------
 
+
+
 % A switch to conditionally include a picture, implemented by Christian Hupfer
 \newif\ifusechapterimage
 \usechapterimagetrue
@@ -551,8 +548,12 @@ innerbottommargin=5pt]{cBox}
 \node at (current page.north west)
 {\begin{tikzpicture}[remember picture,overlay]
 \node[anchor=north west,inner sep=0pt] at (0,0) {\ifusechapterimage\includegraphics[width=\paperwidth]{\thechapterimage}\fi};
-\draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=15pt,draw=ocre,fill=white,fill opacity=0.3,inner sep=15pt]{\strut\makebox[22cm]{}};
-\draw[anchor=west] (\Gm@lmargin+.3cm,-9cm) node {\huge\sffamily\bfseries\color{white}\thechapter\autodot~#1\strut};
+\draw[anchor=west] (\Gm@lmargin,-9cm) node [line width=2pt,rounded corners=15pt,draw=ocre,fill=white,fill opacity=0.8,inner sep=15pt]{\strut\makebox[22cm]{}};
+
+%\draw[anchor=west] (\Gm@lmargin+.3cm,-9cm) node {\huge\sffamily\bfseries\color{ocre}\hyperlink{\thechapter\autodot~#1}{#1}\strut }};
+\draw[anchor=west] (\Gm@lmargin+.3cm,-9cm) node {\huge\sffamily\bfseries\color{ocre}\thechapter\autodot~#1\strut};
+
+%xxxx
 \end{tikzpicture}};
 \end{tikzpicture}
 \else
@@ -579,6 +580,8 @@ innerbottommargin=5pt]{cBox}
 \end{tikzpicture}
 \par\vspace*{270\p@}}
 \makeatother
+
+
 
 %----------------------------------------------------------------------------------------
 %	LINKS

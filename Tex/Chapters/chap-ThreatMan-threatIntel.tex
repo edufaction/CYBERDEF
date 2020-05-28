@@ -10,7 +10,7 @@
 
 \section{ANTICIPER  les menaces}
 
-\subsection{Surveiller et anticiper : Threat Intelligence}
+\subsection{Surveiller et anticiper : Cyber-Threat Intelligence (CTI)}
 
 La «threat intelligence» est un service de renseignement concernant les cyber-menaces. Les solutions SIEM par exemple, possèdent leurs propres sources, il n'y a pas que les SIEM qui peuvent utiliser ces sources,  il est possible de connecter de nombreux outils de détections à d’autres sources externes de «threat intelligence». De manière non exhaustive un service de «threat intelligence»  fournit des éléments comme :
 \begin{itemize}
@@ -18,6 +18,8 @@ La «threat intelligence» est un service de renseignement concernant les cyber-
   \item 	\textUK{Botnet C\&C URL}» : une liste d’URL utilisée pour héberger des serveurs de commande et contrôle de logiciel malveillant ou de réseaux de machine zombie;  \item \textUK{Malicious Hash} : liste d’empreintes de logiciels malveillants connus et ayant déjà été analysés;
   \item \textUK{IP Reputation} : liste d’adresses IP suspectées dans des attaques informatiques ou en lien avec une cyber-menace (pouvant être utilisée en Black List sur les systèmes de filtrage, comme historiquement).
 \end{itemize}
+
+
 
 
 % Begin PRZ ===========================
@@ -85,6 +87,12 @@ Je vous propose de présenter  la gestion de la menace sous la forme de 3 thème
 
 \mode<all>{\picframe{../Tex/Pictures/img-threatvigil}{Les sources}{0.7}{lbl-threatvigil}}
 
+\subsubsection{Quelques producteurs de CTI}
+\toolsbox{FireEye}{cti}
+
+\subsubsection{Quelques outils de CTI}
+\toolsbox{MISP}{cti}
+\toolsbox{OpenCTI}{cti}
 
 %TODO Tester les SIEM et les SOC et le deuxième niveau de maturité
 
@@ -94,13 +102,17 @@ Je vous propose de présenter  la gestion de la menace sous la forme de 3 thème
 
 
 %*************************************
+
+\subsection{Les surveillances} 
+
+
 \subsubsection{Surveillance de la compromission}
 
 Un des domaines de la surveillance est donc celui de la compromission. C'est à dire la surveillance dans le fameux Darkweb de l'émergence de données volées, \g{perdues} par une entreprise ou par un particulier.
 
-Ce domaine, dénommé par certains "Leak Intelligence" ou "Leak Management", correspond à la gestion des fuites de données, au sens de leur détection et la recherche de "la source" de fuite. C'est souvent dans cette dynamique de découverte d'information \g{interne} dans des espaces \g{malveillants} ou pas que l'on découvre des compromissions techniques ou non techniques issues d'attaques.
+Ce domaine, dénommé par certains \g{Leak Intelligence} ou \g{Leak Management}, correspond à la gestion des fuites de données, au sens de leur détection et la recherche de \g{la source} de fuite. C'est souvent dans cette dynamique de découverte d'information \g{interne} dans des espaces \g{malveillants} ou pas que l'on découvre des compromissions techniques ou non techniques issues d'attaques.
 
-La compromission la plus connue reste encore de nos jours  la fuite du couple Utilisateur/mot de passe sur des sites hackés. Il existe des bases de données publiques qui publient ces données "compromises" comme par exemple : \link{https://haveibeenpwned.com}{Have i been pwned}, qui permettent à partir d'une adresse mail ayant servie d'identifiant de savoir si on a été compromis sur un site qui aurait été piraté.
+La compromission la plus connue reste encore de nos jours  la fuite du couple Utilisateur/mot de passe sur des sites hackés. Il existe des bases de données publiques qui publient ces données \g{compromises} comme par exemple : \link{https://haveibeenpwned.com}{Have i been pwned}, qui permettent à partir d'une adresse mail ayant servie d'identifiant de savoir si on a été compromis sur un site qui aurait été piraté.
 
 \subsubsection{Surveillance des fragilités}
 
@@ -110,6 +122,9 @@ Comme nous l'avons vu dans le chapitre sur les vulnérabilités,  des \g{scans} 
 Les techniques et les sites qui propose des outils ou l'accès à des bases de données de \g{sites} vulnérables. C'est un sujet intéressant pour \fichetech de synthèse sur ce qui existe sur le marché. %sujets : https://alternativeto.net/software/shodan/
 \end{techworkbox}
 
+
+\toolsbox{Oval}{vmt}
+\toolsbox{OpenSCAP}{vmt}
 
 %*************************************
 \subsubsection{Surveillance du ciblage}
