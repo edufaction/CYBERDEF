@@ -80,7 +80,7 @@ La nature de ces menaces est en constante évolution.  On y trouve les plus cour
  \end{itemize}
 }}
 
-\mode<all>{\picframe{../Tex/Pictures/img-varmenaces}{la gestion de la menace}{0.5}{lbl-varmenaces}}
+\mode<all>{\picframe{../Tex/Pictures/img-varmenaces}{la gestion active de la menace}{0.5}{lbl-varmenaces}}
 
 % ----Begin PRZ Frame------------
 \mode<all>{\texframe{les grandes menaces}{quelques éléments de la menace 2/2}
@@ -139,7 +139,7 @@ Ces deux domaines d'activités se base sur la remontée d'information et l'autom
 \g{Détecter oui, mais détecter quoi et pourquoi} est la phrase maitresse de la première étape de réflexion autour de la gestion de la détection d'incident de sécurité.
 La première question à se poser est  de définir ce qu'est un incident de sécurité pour l'entreprise. S'il est vrai qu'il existe un certain nombre de menace \g{standard} que l'on considère très rapidement comme un incident, le déploiement d'outil de gestion d'incident de sécurité ne serait être limité qu'à cet usage standard.
 
-Il y a de nombreuses manières de détecter des tentatives d'attaques dans un système. Les IPS/IDS (\textit{Intrusion Prevention System / Intrusion Detection System}), Firewall réseaux et firewall applicatif, ...Toutefois l'imagination des attaquants est suffisamment grande, pour que des attaques complexes ne puisse être détectées par ces seuls outils et produits de sécurité protégeant les flux informationnels.
+Il y a de nombreuses manières de détecter des tentatives d'attaques dans un système. Les IPS/IDS (\textit{Intrusion Prevention System / Intrusion Detection System}), les Firewall réseaux et firewall applicatif, ...Toutefois l'imagination des attaquants est suffisamment grande, pour que des attaques complexes ne puisse être détectées par ces seuls outils et produits de sécurité protégeant les flux informationnels.
 
 Nous pouvons en effet considérer par exemple que la détection d'un rançon-logiciel dans l'entreprise est un incident complexe, qu'un IPS/IDS ne détectera pas,  qui va par ailleurs nécessiter une alerte et une remédiation rapide si ce n'est immédiate.
 Par ailleurs,  une fuite d'information sur un système métier par des mécanismes discrets sera souvent étudiée spécifiquement.
@@ -150,7 +150,7 @@ En effet, il est important au delà des menaces dites standards de revenir aux o
 En premier lieu, il convient de chercher à détecter les menaces non couvertes par les mesures de sécurité, les fameuses menaces résiduelles.
 
 Dans l'environnement de l'entreprise, les scénarios complexes issus de l'analyse de risques lors de l'étude des évènements redoutés vont donner les évènements corrélés à détecter.
-On y trouvera l'application concrète des arbres d'attaques popularisés par un des plus célèbre cyber expert Bruce Schneier \cite{schneier1999attack} qui est présentée de manière un peu plus détaillée dans le chapitre \nameref{ref_arbre_attaques}
+On y trouvera l'application concrète des arbres d'attaques popularisés par un des plus célèbre cyber expert \wikipedia{Bruce Schneier} \cite{schneier1999attack} qui est présentée de manière succincte  dans le  chapitre \nameref{ref_arbre_attaques}
 
 \subsection{Attaques}
 
@@ -169,7 +169,7 @@ Ces mécanismes sont souvent modélisés sous la forme d'arbres d'attaques ou de
 
 Détecter la menace dans un système d'information c'est aussi connaitre les méthodes, stratégies des attaquants. Ces scénarios d'attaque ou d'opération peuvent être modélisés avec des outils au coeur des analyses de risques. Bien que très largement en arrière plan des méthodes et des outils de gestion de la menace, les arbres d'attaque restent au coeur des mécanismes de détection.
 
-Les arbres d'attaques sont une représentation des scénarios d'attaques. La racine représente le but final de l'attaque, les différents noeuds sont les buts intermédiaires et les feuilles les actions élémentaires à effectuer. Ces actions seront évaluées par exemple avec les potentiel d'attaque des critères communs (cf.CC et ISO)
+Les arbres d'attaques sont une représentation des scénarios d'attaques. La racine représente le but final de l'attaque, les différents noeuds sont les buts intermédiaires et les feuilles les actions élémentaires à effectuer. Ces actions seront évaluées par exemple avec les potentiels d'attaque des \textbf{critères communs} (Ensemble de normes \wikipedia{ISO 15408})
 
 Globalement, ces arbres sont basés sur trois types de nœuds :
 
@@ -185,7 +185,7 @@ C'est sur la base de ce type de technique que sont construit un certain nombre d
 %Vers ADTool http://satoss.uni.lu/members/piotr/adtool/
 %ADTool est un logiciel qui permet la création, l'édition et l'affichage de ces arbres. Il permet de valuer les feuilles et faire remonter les valeurs à la racine selon différents algorithmes
 
-Gartner, et Lockheed Martin ont dérivé le concept de ces arbres d'attaque dans des modèles dit de \g{Kill Chain} issus de modèle militaire établis à l’origine pour identifier la cible, préparer l’attaque, engager l’objectif et le détruire.
+\wikipedia{Gartner}, et \wikipedia{Lockheed Martin} ont dérivé le concept de ces arbres d'attaque dans des modèles dit de \g{Kill Chain} issus de modèle militaire établis à l’origine pour identifier la cible, préparer l’attaque, engager l’objectif et le détruire.
 
 Ce modèle analyse une fragilité potentielle en dépistant les phases de l’attaque, de la reconnaissance précoce à l’exfiltration des données. Ce modèle de chaine ou processus cybercriminel aide à comprendre et à lutter contre les ransomware, les failles de sécurité et les menaces persistantes avancées (APT). Le modèle a évolué pour mieux anticiper et reconnaître les menaces internes, l’ingénierie sociale, les ransomware avancés et les nouvelles attaques.
 

@@ -12,6 +12,19 @@
 
 \subsection{Surveiller et anticiper : Cyber-Threat Intelligence (CTI)}
 
+Une menace informatique ou cyber se matérialise par la combinaison de trois facteurs : 
+
+\begin{itemize}
+  \item une intention de nuire, 
+  \item une capacité d’attaque et 
+  \item une opportunité à exploiter, c’est-à-dire une vulnérabilité de nature technique ou humaine. 
+\end{itemize}
+
+
+Les motivations sont différentes et susceptibles de cibler tous types d’organisations : des hacktivistes poussés par une idéologie, les cybercriminels motivés par l’appât du gain ou  des groupes sponsorisés par un État. On peux se référer à des \link{https://attack.mitre.org/groups/}{origines d'APT (Mitre)} avec les groupes à l'origine de ces menaces.
+
+
+
 La «threat intelligence» est un service de renseignement concernant les cyber-menaces. Les solutions SIEM par exemple, possèdent leurs propres sources, il n'y a pas que les SIEM qui peuvent utiliser ces sources,  il est possible de connecter de nombreux outils de détections à d’autres sources externes de «threat intelligence». De manière non exhaustive un service de «threat intelligence»  fournit des éléments comme :
 \begin{itemize}
   \item \textUK{Malicious / Phishing IP / URL} : une liste d’URL utilisée pour  délivrer un fichier malicieux ou procéder à une attaque par hameçonnage;
@@ -20,6 +33,13 @@ La «threat intelligence» est un service de renseignement concernant les cyber-
 \end{itemize}
 
 
+La Cyber Threat Intelligence est une activité possédant un double objectif  :  l’étude et la surveillance de ces cybermenaces. Pour ce faire, la majorité des fournisseurs  de flux d’information de type CTI se basent sur deux approches :
+
+
+\begin{itemize}
+  \item La première approche est l’analyse des attaques passées qui permet de caractériser ces dernières par ces marqueurs techniques. Le but pour le défenseur est de se prémunir et de bloquer au plus vite une campagne qui se renouvellerait via l’utilisation de ces marqueurs techniques. (Voir MISP)
+  \item La deuxième approche est la surveillance directe des attaquants. L’objectif est de se placer en amont d’une attaque et de détecter des éléments permettant d’identifier sa préparation (en sources ouverts, ou en infiltration dans le darkweb) : émergence de signaux faibles, objectifs , mode opératoire,  capacités, organisation de l'attaque. Cette approche nécessite un dynamique d’anticipation face à ces menaces,
+\end{itemize}
 
 
 % Begin PRZ ===========================
@@ -75,14 +95,14 @@ et ceci de deux manières :
 % end PRZ ===========================
 
 Ce sont des sujets que nous aborderons dans le processus de gestion de la menace.
-La surveillance des menaces génériques relève d'action de veille comme cela est fait pour les vulnérabilité. Les scénarios de message sont vus comme des éléments de signature d'une attaque ou d'une tentative ou de préparation  d'attaque.
+La surveillance des menaces génériques relève d'action de veille comme cela est fait pour les vulnérabilités. Les scénarios de message sont vus comme des éléments de signature d'une attaque ou d'une tentative ou de préparation  d'attaque.
 
-Je vous propose de présenter  la gestion de la menace sous la forme de 3 thèmes  (\uref{Gestion de la menace}{lbl-logman}).
+Je vous propose de présenter  la gestion de la menace sous la forme de ces trois thèmes  (\uref{Gestion de la menace}{lbl-logman}).
 
 \begin{itemize}
   \item Log Management;
-  \item Threat Intelligence (au sens renseignement);
-  \item Threat Detection.
+  \item Threat Detection;
+ \item  et en dernier lieu des élémens Threat Intelligence (au sens renseignement);
 \end{itemize}
 
 \mode<all>{\picframe{../Tex/Pictures/img-threatvigil}{Les sources}{0.7}{lbl-threatvigil}}
@@ -126,6 +146,17 @@ Les techniques et les sites qui propose des outils ou l'accès à des bases de d
 \toolsbox{Oval}{vmt}
 \toolsbox{OpenSCAP}{vmt}
 
+
+Les approches des analyses du renseignement peuvent se classer à différents niveaux :
+
+\begin{itemize}
+  \item \textbf{Niveau Stratégique} : ce sont en général des analyses de très haut niveau mais peu techniques et destinées à des décideurs. Cela peut-être par exemple des rapports d'analyses géopolitiques sur des adversaires qui ciblent un secteur donné.
+  \item \textbf{Niveau Tactique} : ce sont souvent des documents qui donnent des informations sur les outils et méthodologies utilisés par les menaces (analyse de malware, contournement d’anti-virus, outils utilisés pour mener des attaques DDoS, etc.).
+  \item \textbf{Niveau Opérationnel} : l’objectif est d’anticiper l'attaque en étant au plus près de l’attaquant (Ecoute, infiltration  des hacktivistes, cybercriminels ...).
+  \item \textbf{Niveau Technique} : il est composé d’indicateurs de compromission (IPs, URLs, noms de domaine, listes de hashs, etc.) qui permettent d’identifier et donc de bloquer directement une attaque.
+\end{itemize}
+
+
 %*************************************
 \subsubsection{Surveillance du ciblage}
 
@@ -162,15 +193,59 @@ Disposer des fragilités de l'entreprise, et connaitre les scénarios potentiels
 
 Le projet OpenCTI (Open Cyber Threat Intelligence), développé par l’ANSSI en partenariat avec le CERT-EU, est un outil de gestion et de partage de la connaissance en matière d’analyse de la cybermenace (Threat Intelligence). Initialement conçue pour structurer les informations de l’agence relatives à la menace informatique, la plateforme facilite aussi les interactions entre l’ANSSI et ses partenaires.
 
-L’outil, intégralement libre, est  disponible à l’usage de l’ensemble des acteurs de la « threat intelligence ». L’application permet ainsi de stocker, organiser, visualiser et partager leurs propres connaissances en la matière.
+L’outil, intégralement libre, est  disponible à l’usage de l’ensemble des acteurs de la « threat intelligence ». L’application permet ainsi de stocker, organiser, visualiser et partager leurs propres connaissances en la matière. L'outil est structuré autour de des méodèle de description STIX 2 et utilise un base hypergraphe.
 
 Le projet \link{https://www.ssi.gouv.fr/actualite/opencti-la-solution-libre-pour-traiter-et-partager-la-connaissance-de-la-cybermenace/}{OpenCTI} a été initié en septembre 2018 par l’ANSSI et co-développé avec le CERT-EU en l’absence de solutions complètement appropriées pour structurer, stocker, organiser, visualiser et partager la connaissance de l’ANSSI en matière de cybermenace, à tous les niveaux.
 
+OpenCTI peut être vu comme un premier outil au centre d'un \g{fusion center}.
 
-\subsubsection{STIX}
+\toolsbox{OpenCTI}{cti}
+
+
+\subsubsection{STIX et TAXII}
 
 %The structuration of the data is performed using a knowledge schema based on the STIX2 standards. It has been designed as a modern web application including a GraphQL API and an UX oriented frontend. Also, OpenCTI can be integrated with other tools and applications such as MISP, TheHive, MITRE ATT&CK, etc.
 
-Les modélisations des attaques est un large champs de recherche et d'outillage. Juste à titre d'illustration, nous pouvons parler d'un modèle comme STIX™ (Structured Threat Information Expression) langage et format de donnée permettant de modéliser et échanger des informations techniques sur les processus d'attaque cyber. 
-Je vous propose d'explorer pour cela sur le site \link{https://github.com/OpenCTI-Platform/opencti}{STIX sur GitHub}.
+Les \textbf{modélisations} des attaques est un large champs de recherche et d'outillage, elles sont au coeur de la compréhension des attaques mais surtout au coeur de la détection de celle-ci. Juste à titre d'illustration, nous pouvons parler d'un modèle comme STIX™ (Structured Threat Information Expression) langage et format de donnée permettant de modéliser et échanger des informations techniques sur les processus d'attaque cyber. 
+Je vous propose d'explorer pour cela sur le site \link{https://oasis-open.github.io/cti-documentation/}{STIX sur GitHub}.
+
+Le premier type de standard à avoir été proposé est le format de modélisation des informations. L’objectif est qu’un émetteur puisse communiquer à l’ensemble de ses destinataires les données collectées à partir d’un support et dans un format défini. Le plus connu d’entre eux, OpenIOC, standard historique créé par l'ex société MANDIANT  pour échanger des IOC. À la base, OpenIOC est un format (en XML) utilisé par les outils de la société mais qui a été rendu open-source pour permettre un usage par tous. Un fichier OpenIOC décrit les symptômes à rechercher pour identifier une menace.
+D’autres formats comme comme SNORT  ou encore YARA qui se focalise sur les caractéristiques intrinsèques d’un fichier et est particulièrement pertinent pour identifier des souches de familles de code malveillant.
+Ces formats de modélisation rencontrent cependant des limites car centrés sur l'événement et n'offre pas de vision globale de la cybermenace à l’origine de l’attaque. 
+STIX (Structured Threat Information Expression) et TAXII (Trusted Automated eXchange of Indicator Information), et auparavant CybOX (Cyber Observable eXpression), ont été développés dès 2012 aux États-Unis par le CERT-US (United States Computer Emergency Readiness Team) du Department of Homeland Security  puis repris par les organisations MITRE et OASIS. Ces langages tentent de combler les lacunes.
+
+STIX est un langage normalisé et structuré permettant de représenter les informations sur les menaces cyber, et en particulier des indicateurs de compromission (IOC) issu des analyse de Cyber Threat Intelligence (CTI).
+
+TAXII est quand à lui un protocole conçu pour améliorer la qualité des échanges des informations de type CTI, formatées dans le langage STIX.
+
+Les utilisateurs STIX peuvent en particulier décrire et modéliser les concepts  :
+
+\begin{itemize}
+  \item \textbf{Attack Pattern} : mode opératoire de l’attaquant ;
+  \item \textbf{Threat Actor }: individus, groupes ou organisations agissant avec une intention malveillante ;
+  \item \textbf{Malware} : logiciel malveillant utilisé pour compromettre la confidentialité, l'intégrité ou la disponibilité du système d’information de la cible (voir \link{https://www.virustotal.com/gui/}{VirusTotal};
+  \item \textbf{Tool} : logiciel légitime utilisé par les cyber-menaces dans le cadre de leurs attaques ;
+  \item \textbf{Vulnerability} : vulnérabilité présente dans un logiciel qui est exploitée directement par un attaquant afin de compromettre un système d’information ;
+  \item  \textbf{Indicator} : indicateur utilisé pour détecter et bloquer une activité suspecte ou malveillante sur le système d’information.
+\end{itemize}
+
+
+\subsubsection{MISP}
+
+La distribution d'informations caractérisant les attaques nécessite au delà de la modélisation des attaques des indicateurs des IOC (\UKword{Indice of compromission}) facilement détectables dans les plateformes techniques de détection que nous verront par la suite.
+
+MISP (Malware Information Sharing Platform and Threat Sharing) est une solution open-source permettant la collecte, le stockage, la distribution et le partage d’IOC liés aux malware. Cet outil permet à divers organismes de partager les indicateurs de compromission identifiés lors des activités de SOC et campagnes de réponses à incidents (CERT et CSIRT).  D’un point de vue technique, MISP est une plateforme d’échange d’IOC où chaque acteur peut entrer et organiser ses IOC afin de les publier pour les partager aux autres acteurs présents sur ce portail.  MISP fournit des fonctionnalités pour faciliter les échanges d'informations, mais aussi l’intégration de l'information par les IDS (Intrusion Detection System) et les outils de défense comme ceux d'analyse de logs et les SIEMs (Security Information and Event Management).
+
+
+\subsubsection{Vérifier une donnée par rapport à de la  CTI}
+
+Disposer de Treat Intelligence donc de renseignement  est complémentaire de la connaissance des scénario issus des analyses de risques, mais enrichissent aussi les analyses de risques par les modèles d'attaques existants.
+
+\begin{itemize}
+  \item Tester un fichier, une url (\textbf{Malveillance}) :  \link{https://www.virustotal.com/gui/}{VirusTotal};
+  \item Tester une adresse email (\textbf{Compromission})  : \link{https://haveibeenpwned.com}{haveibeenpwned};
+  \item Tester sans action une adresse IP publique ou un domaine (\textbf{Vulnérabilités Internet)} : \link{https://www.shodan.io}{Shodan};
+\end{itemize}
+
+
 

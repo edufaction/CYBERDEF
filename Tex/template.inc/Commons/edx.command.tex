@@ -6,8 +6,8 @@
 %                              2020 eduf@ction
 %-------------------------------------------------------------
 
-\newcommand\UKword[1]{\emph{#1}}
-\newcommand\textUK[1]{\textit{\textbf{#1}}}
+\newcommand\UKword[1]{\emph{#1}\xspace}
+\newcommand\textUK[1]{\textit{\textbf{#1}}\xspace}
 \newcommand\Ucenter[1]{\begin{center}{#1}\end{center}}
 
 \newcommand\head[1]{\textbf{#1}}
@@ -34,11 +34,10 @@
  {Vérifiez la disponibilité d'une version plus récente de} \\
  {\link{\GITfilename}{\textbf{\jobname.pdf }sur GITHUB CYBERDEF} }   \\ 
 {{\huge\ccbyncndeu}}  \\  
-{2020 eduf@ction Publication en Creative Common BY-NC-ND }    \\  % Copyright notice
+{2020 eduf@ction Publication en \href{https://creativecommons.org/licenses/by-nc-nd/2.0/fr/}{Creative Common BY-NC-ND} }    \\  % Copyright notice
 {\safeqrcode[padding]{\GITfilename}}  
 \end{center} 
 }
-
 
 
 %-----------------------------------------------------
@@ -58,7 +57,7 @@
 
 \newcommand{\uindex}[1]
 {
-#1\index{#1}
+#1\index{#1}\xspace
 }
 
 %-----------------------------------------------------
@@ -112,8 +111,6 @@ sharp corners,
 }
 
 
-
-
 \newtcolorbox{notebox2}[2][]
 {
 sharp corners, 
@@ -162,13 +159,14 @@ title=#2,#1}
 {
 \input{../SecTools/#2.#1/datas.tex} 
 \begin{toolsboxin}[sidebyside,righthand width=.7\textwidth]{#1}
-\includegraphics[width=0.8\textwidth]{../SecTools/#2.#1/icon.png} \\
+\includegraphics[width=0.9\textwidth]{../SecTools/#2.#1/icon.png} \\
 \tcblower
 \input{../SecTools/#2.#1/description.tex}
 \end{toolsboxin}
-\noindent \small {\faCogs~Classe : \uppercase{\textbf{#2}}, Site de référence : \link{\toolurl}{#1}} \\
+\noindent \small {\faCogs~Classe : \uppercase{\textbf{#2}}, Site de référence : \textbf{\link{\toolurl}{#1}}}
+\newline
 \small {\faGlobe~Editeur : \textbf{\tooleditor}}
-\small {\faEye~\toolanalyst}
+\small {\faEye~Analyste : \textbf{\toolanalyst}}
 }
 
 %\renewcommand\toolsclass{SIEM}
@@ -239,8 +237,6 @@ title=#2,#1}
 \fi
 
 %\newcommand{\upicture}[4]{\ulpicture{#1.pdf}{#2}{#3}{#4}}
-
-
 
 \ifdefined\PRZMODE
 
@@ -363,7 +359,6 @@ title=#2,#1}
 }
 
 
-
 %************************PACKAGE***
 
 %\usepackage{tikz}% Required for drawing custom shapes
@@ -413,15 +408,16 @@ title=#2,#1}
 %  	}
 %  }
 %  }
-%  }
+%  }\faWikipediaW
   
   
   \newcommand{\link}[2]
   {\href{#1}
-  {#2~\raisebox{-0.2ex}{\faExternalLink}\footnote{\url{#1}}}
-  }
+  {#2~\raisebox{-0.2ex}{\faExternalLink}\footnote{\url{#1}}}\xspace}
   
-
+  \newcommand{\wikipedia}[1]
+  { \href{https://fr.wikipedia.org/wiki/#1}{\textcolor{grey}{#1}}\raisebox{0.5ex}{\tiny{\textcolor{ocre}{\faWikipediaW}}}}
+  
   %-----------------------------------------------------
 %														\Pframe 
 % Beamer Frame
