@@ -1,0 +1,79 @@
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS COURSE
+%                      INCIDENT MANAGEMENT
+%
+%                                      Reaction
+%
+%                              2020 eduf@ction
+%-------------------------------------------------------------
+
+\section{REAGIR}
+
+
+%========================================================
+% 											MANAGEMENT DES INCIDENTS
+%-----------------------------------------------------------------------------------------
+\subsection{La gestion de l'incident au quotidien} 
+%--------------------------------------------------------------------------------
+
+%- 1 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+
+
+
+\subsubsection{De l'alerte à l'incident}
+
+
+
+Comme nous avons vu dans le chapitre sur la détection des attaques certains événements peuvent conduire à des alertes. Le terme alerte est ici synonyme d'alarme.  Ces alertes  doivent être analysées par des  analystes (Ingénieur SOC par exemple) pour caractériser si un événement ayant atteint à un niveau d'alerte doit être traité comme un incident de sécurité. L'alerte positionne les équipes dans un état de vigilance toutefois l'enregistrement d'un événement en incident engage les processus de réponse à  incident.
+La question majeure est de savoir qui  mobiliser pour gérer l'incident. A l'image d'une alarme incendie, l'analyse de l'évènement qui à lever cette alarme doit être rapidement effectuée afin de valider l'événement comme devant être pris en charge par un processus dédié. 
+Ce processus de vérification, est important pour éviter des FAUX POSITIF qui risquent de mobiliser des équipes de manière inadaptée.
+
+Tout incident qui n'est pas correctement confiné et traité peut, et généralement, dégénérer en un problème plus important qui peut finalement conduire à une violation de données dommageable, à des dépenses importantes ou à l'effondrement du système. Une réponse rapide à un incident aidera une organisation à minimiser les pertes, à atténuer les vulnérabilités exploitées, à restaurer les services et les processus et à réduire les risques que posent les incidents futurs.
+ 
+%TODO Insérer un schéma de traitement de l'incident
+
+%- 1 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\subsubsection{L'incident}
+
+La problématique de la réaction à un incident dit \g{cyber} c'est que ce type d'incident  peut mettre en doute la confiance que l'on peut avoir dans son propre système système d'information. Comme ce SI risque d'être utiliser dans les mécanismes pour opérer la réaction, il est aussi important de gérer les critères de confiance et d'usage en mode dégradé.
+Dans un premier dans nous allons donc partir de principe que le système d'information dispose de mécanisme permettant d'avoir confiance dans les systèmes qui opèrent pendant la réponse à incident.
+Nous allons aborder la réaction à incident suivant les 3 volets  :
+\begin{itemize}
+  \item Remédier et reconfigurer pour limiter l’impact;
+  \item  Enquêter sur l’incident;
+  \item Neutraliser les sources de menaces;
+\end{itemize}
+
+
+Il est à noter que la norme donne des éléments d'organisation mais manque d'aspect pratique avec par exemple des fiches reflexes.
+
+\subsubsection{Priorisation de l'évènement}
+ Comme un événement est un changement observable du comportement normal d'un système, d'un environnement, d'un processus, d'un flux de travail, il est important de classifier ce changement dans un mécanisme de priorisation.  Il existe trois types de classification de base:
+ 
+\begin{itemize}
+  \item  \textbf{Normal}: un événement normal n'affecte pas les composants critiques ni ne nécessite de contrôle des modifications avant la mise en œuvre d'une résolution. Les événements normaux ne nécessitent pas la participation du personnel supérieur ou la notification de la direction de l'événement.
+\textbf{Escalade} - un événement escaladé affecte les systèmes de production critiques ou nécessite la mise en œuvre d'une résolution qui doit suivre un processus de contrôle des modifications. Les événements escaladés nécessitent la participation du personnel supérieur et la notification des parties prenantes de l'événement.
+\textbf{Urgence} - une urgence est un événement qui peut :
+\begin{itemize}
+  \item avoir un impact sur la santé ou la sécurité humaine;
+  \item enfreindre les contrôles primaires des systèmes critiques ou sensibles de l'entreprise;
+  \item affecter matériellement les performances des composants ou en raison de l'impact sur les systèmes de composants empêcher les activités qui protègent ou peuvent affecter la santé ou la sécurité des individus;
+  \item être considéré comme une urgence par la politique de sécurité de l'entreprise .
+\end{itemize}
+
+\end{itemize}
+
+%-------------------------------------------------------------------------
+\mode<all>{\picframe{../Tex/Pictures/img-mtbf}{Incidents}{01}{lb:mtbf}}
+%-------------------------------------------------------------------------
+
+
+\subsection{Remédiation}
+
+% Ajouter des éléments sur la 22301
+
+Une question qui se pose lors d’une reprise d’activité est la confiance que nous avons dans le système. La difficultés après une attaque informatique ou une compromission, ou tout simplement une suspicion c’est la simple question de savoir si nous savons enlever toute la source de l’attaque. Reste-t-il des résidus.
+
+\subsection{Aspect juridique de la réaction}
+

@@ -1,0 +1,33 @@
+%% ../Tex/Template.inc/BookModel/BookPictures/chapterS : page de copyright
+
+\begingroup
+
+% Suppress headers and footers on the title page
+\thispagestyle{empty} 
+
+\color{white} 
+
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] (background) at (current page.center) {\includegraphics[width=\paperwidth]{\upath/Template.inc/BookModel/BookPictures/background.pdf}}; 
+
+\node [rotate=60,scale=5,text opacity=0.1] at (current page.center) { \textit{\color{red}\INFODistrib} };
+
+\draw (current page.center) node [fill opacity=0.0,text opacity=1,inner sep=1cm] % fill=ocre!00!
+{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}
+	{\centering \ubooktitleBefore\\[20pt] % Book title
+	\centering \ubooktitleMain\\[25pt] % Book title
+	{\Large \ubooktitleAfter}\\[20pt] % Subtitle
+	}	
+};
+\node at (current page.center)  [xshift=0cm, yshift=-8 cm, text opacity=1]  { \Large\bfseries\sffamily {\color{white}Eric DUPUIS} } ; 
+\node at (current page.center)  [xshift=0cm, yshift=-10cm, text opacity=1]  { {\color{white}\printer} } ; 
+
+\node at (current page.center)  [xshift=0cm, yshift=6cm, text opacity=1.0]  { \includegraphics[width=0.2\paperwidth]{\upath/Template.inc/BookModel/BookPictures/shield-20-white.pdf}} ; 
+
+%\node at (current page.south west) [anchor=south west, xshift=+10cm,  yshift=+25cm]  {\includegraphics[width=5cm]{../Tex/Pictures/chapter_head_1.pdf}}; 
+\end{tikzpicture} 
+
+\vfill
+\endgroup
+
+

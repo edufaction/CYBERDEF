@@ -1,0 +1,48 @@
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS COURSE
+%              $Chapitre : Threat Management
+%                   $theme : Threat Detection
+%               $File :  chap-ThreatMan-edr.tex
+%                             2020 eduf@ction
+%-------------------------------------------------------------
+\uchap{chap-ThreatMan-siem.tex}
+%-------------------------------------------------------------
+
+
+\subsection{la détection de menace sur des terminaux}
+
+La mise en place de mesures de remontées de LOGs pour les terminaux fait partie généralement des politiques de cyberdéfense, et les journaux d'évènement au sein des systèmes d'exploitation ou des applications sont utilisables pour les SIEM.
+La sécurité du poste de travail est un axe à part entière des politiques de sécurité. Dans cette sécurité, on y trouve évidement la sécurité périmètrique avec les \textit{Firewalls} personnels, les anti-virus. La détection de menace au plus prêt du terminal et donc au plus prêt de l'utilisateur, permet d'être, bien des fois, plus pertinent pour contenir des attaques ou des déviances. Cette détection peut être réalisé par un EDR (\textit{Endpoint Detection and Response}) qui est caractérisée par ses capacités de détection, d’investigation et aussi de remédiation.
+
+Etre au plus prêt de l'utilisateur, donc du terminal, est toujours un axe majeur à pour un responsable sécurité.
+
+Chaque jour des milliers de terminaux (\textit{Endpoints}) sont compromis par des attaques ciblées. Parmi ces attaques, les menaces avancées et persistantes (APT : Advanced Persistent Threats) compromettent des machines et avec les risques associés. 
+
+Des techniques d'attaques permettent de by-passer les solutions locales d'antivirus et de firewall personnel ou d'utiliser plus simplement la crédulité des utilisateurs pour infecter des machines ou tout simplement utiliser les faiblesses de configuration du systèmes pour ex-filtrer des données.
+
+Dans ce contexte l’EDR est un outil de sécurité complémentaire aux outils personnels de sécurité avec lequel il travaille afin de bloquer les menaces (connues ou nouvelles (zero-days)). C’est un outil qui se place au niveau du système d'exploitation en complément du niveau réseau ...  Un EDR fait de l’analyse comportementale, et permet de monitorer les actions de l'utilisateur ou des applications au niveau  terminal et de réagir.
+
+\subsubsection{Détection}
+
+L’EDR est capable de surveiller l’exploitation de failles de sécurités en surveillant les appels noyaux et les différents services habituellement ciblés notamment chez Windows. Cette capacité de surveillance et la corrélation d’évènements lui permettent de reconnaître des méthodes et habitudes qu’ont les hackers et dont il est plus difficile de se prémunir.
+
+L’analyse comportementale (UBA - User Behavior Analytic) est un autre point supporté par les EDR et qui permet de reconnaître des comportements déviant d’un cadre normatif, ou technique souvent après une phase d’apprentissage. Grâce à ces analyses, l’EDR peut émettre des alertes vérifiable qui renforceront l’apprentissage. 
+
+ L’intérêt de cette technique est qu’elle permet de stopper un attaquant dans son élan : si un pdf PDF contient un script qui ouvre powershell et ouvre une connexion sur un port classique d’un serveur extérieur au SI alors cette suite d’action sera considérée comme anormale et va être bloquée par l’EDR. Cette visibilité est une grande force de l’EDR car elle permet une remédiation à la source de l’infection.
+
+
+\subsubsection{Investigation}
+
+Comme mentionné plus haut, l’EDR permet d’observer des suites d’actions dont le résultat est des plus douteux. Cette visibilité sur les processus est d’une très grande aide pour faire de l’investigation : les actions sont corrélées et remontées dans une plateforme centralisée qui permet d’étendre l’apprentissage observé d’un poste à tous les autres. 
+
+Grâce à ces plateforme, un \textit{Security Operation Center} (SOC) est capable de savoir immédiatement combien de postes sont touchés et d’en remonter la piste : c’est un outil d’investigation qui peut s'interfacer à  un \textit{Security Information and Event Management} (SIEM) en offrant de la visibilité sur les terminaux. D’autant plus que votre SOC pourra se servir de l’EDR pour récupérer des artefacts de l’attaques à distance.
+
+\subsubsection{Remédiation}
+
+En ce qui concerne la remédiation, l’EDR a des capacités similaires à celles d’un antivirus de nouvelle génération et peut notamment bloquer, supprimer et mettre en quarantaine des fichiers. Les équipes de sécurité pourront aussi s’appuyer sur l’outil pour faire du nettoyage de clé de registre par exemple, ou patcher la mémoire en direct pour contrôler un malware.  De plus, certains EDR permettent aux analystes du SOC d’Orange Cyberdefense de prendre la main à distance sur un terminal qui nécessiterait une investigation plus poussée encore.
+
+L’EDR n’est généralement pas une solution stand-alone. C’est un  complément qui s’intègre à d'autres outils de sécurité locale, de SIEM ou de sécurité réseau. Il permet d’étendre la visibilité sécurité du SI jusqu’au terminaux et permet d'améliorer la pertinence et la précision de détection des scénarios.
+
+\subsubsection{Quelques EDR de références}
+
+\toolsbox{Microsoft}{edr}

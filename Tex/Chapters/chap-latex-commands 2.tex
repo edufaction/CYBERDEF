@@ -1,0 +1,111 @@
+
+\section {Commandes LATEX spécifiques}
+
+\subsection {Commandes de Texte}
+
+\subsubsection{UKword}
+
+Mise en italique du texte pour les mots anglos axons
+
+\begin{verbatim}
+  {\newcommand\UKword[1]{\emph{#1}}}
+\end{verbatim}
+
+Exemple :  \verb {\UKword{Texte}} pour :  \UKword{Texte Italique}
+
+\subsubsection{Ucenter}
+
+Centre le texte dans l'environnement
+
+\begin{verbatim}
+  \newcommand\Ucenter[1]{\begin{center}{#1}\end{center}}
+\end{verbatim}
+
+Exemple : \verb {\Ucenter} \\
+
+\Ucenter {Texte centré dans l'environnement}
+
+
+\subsubsection{}
+
+\begin{verbatim}
+
+\end{verbatim}
+
+Exemple : \verb {} \\ 
+
+
+\subsubsection{mak}
+
+\begin{verbatim}
+\newcommand{\mak}[1]{\faicon{\aArrowCircleORight} #1}
+\end{verbatim}
+
+Exemple : \verb {\mak{Texte}}  pour le texte
+
+ %\mak{Texte}
+
+
+
+%==============================================
+\subsection{Commands Box}
+%--------------------------------------------------------------------------
+\subsubsection{warningbox}
+
+Box avec titre
+
+\begin{verbatim}
+\newtcolorbox{warningbox}[2][]
+\end{verbatim}
+
+Exemple :  
+\begin{verbatim}
+ \begin{warningbox} {Titre Box} texte de la box \end {warningbox} 
+\end{verbatim} 
+
+\begin{warningbox}{Titre Box} 
+texte de la box	
+\end{warningbox}
+%--------------------------------------------------------------------------
+\subsubsection{notebox2}
+
+Box avec titre
+
+\begin{verbatim}
+\newtcolorbox{notebox2}[2][]
+\end{verbatim}
+
+Exemple :  \begin{verbatim}
+ \begin{notebox2} {Titre Box} texte de la box \end {notebox2} 
+\end{verbatim}
+
+\begin{notebox2}{Titre Box} texte de la box	
+\end{notebox2}
+
+%--------------------------------------------------------------------------
+\subsubsection{notebox}
+
+Box avec titre
+
+\begin{verbatim}
+\newtcolorbox{notebox}[2][]
+\end{verbatim}
+
+Exemple :  \begin{verbatim}
+ \begin{notebox} {Titre Box} texte de la box \end {notebox} 
+\end{verbatim}
+
+\begin{notebox}{Titre Box} texte de la box	
+\end{notebox}
+
+
+%--------------------------------------------------------------------------
+\subsubsection{toolsbox}
+
+\toolsbox{RSA-NetWitness-Orchestrator}{soar}
+\toolsbox{QRadar}{siem}
+\toolsbox{Demisto}{soar}
+
+\techwork{Part 1 titre}{contjdkjqhd qksdhjqjd k qkjhqjkshdqk qkjhqkshd kqlqsdh qkshkq kqjshd qkdshqkdjhqkshdjkqhds qsdjhjkqhd qldkqkj qls enu}
+
+
