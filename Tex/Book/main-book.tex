@@ -12,7 +12,7 @@
 \documentclass[10pt,fleqn, a4paper,twoside,openright]{book}
 
 
-\input{../Tex/Book/config-book.tex}
+\input{Tex/Book/config-book.tex}
 
 %\PassOptionsToPackage{unicode}{hyperref}
 %\PassOptionsToPackage{naturalnames}{hyperref}
@@ -29,9 +29,9 @@
 
 \usepackage{titletoc} % Required for manipulating the table of contents
 
-\input{../Tex/template.inc/Commons/edx.packages.tex}
-\input{../Tex/template.inc/Commons/edx.command.tex}
-\input{../Tex/template.inc/Commons/edx.styles.tex}
+\input{Tex/template.inc/Commons/edx.packages.tex}
+\input{Tex/template.inc/Commons/edx.command.tex}
+\input{Tex/template.inc/Commons/edx.styles.tex}
 
 % Exclure les notes pour les travaux des étudiants
 %\excludecomment{techworkbox}\let\endtechworkbox\relax
@@ -42,7 +42,7 @@
 %\usepackage{cleveref}
 
 %\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
-\addbibresource{../Tex/bibliography.bib} % BibTeX bibliography file
+\addbibresource{Tex/bibliography.bib} % BibTeX bibliography file
 \defbibheading{bibempty}{}
 
 
@@ -52,18 +52,18 @@
 
 \addtocontents{toc}{\protect\hypertarget{toc}{}}
 
-\input{../Tex/acronymes.tex}
-\input{../Tex/glossaire.tex}
+\input{Tex/acronymes.tex}
+\input{Tex/glossaire.tex}
 
 %----------------------------------------------------------------------------------------
 %	COVER  OF THE BOOK (1st and 4th)
 %----------------------------------------------------------------------------------------
 
-\input{../Tex/Book/coverfront-book.tex}  % Book Cover
-\input{../Tex/Book/book.notice.tex}
-\input{../Tex/Book/book.coauteurs.tex}
+\input{Tex/Book/coverfront-book.tex}  % Book Cover
+\input{Tex/Book/book.notice.tex}
+\input{Tex/Book/book.coauteurs.tex}
 
-%\input{../Tex/Includes/introduction.tex}
+%\input{Tex/Includes/introduction.tex}
 
 %----------------------------------------------------------------------------------------
 %	TABLE OF CONTENTS
@@ -73,7 +73,7 @@
  
 \usechapterimagetrue
 
-\chapterimage{../Tex/template.inc/BookModel/BookPictures/chapter_head_1.pdf} 
+\chapterimage{Tex/template.inc/BookModel/BookPictures/chapter_head_1.pdf} 
 
 \pagestyle{empty} % Disable headers and footers for the following pages
 
@@ -93,7 +93,7 @@
 %	 MAIN DOCUMENT
 %----------------------------------------------------------------------------------------
 
-\input{../Tex/Book/MyBookCyber.tex} 
+\input{Tex/Book/MyBookCyber.tex} 
 
 
 %----------------------------------------------------------------------------------------
@@ -131,7 +131,7 @@
 \printindex % Output the index
 
 
-\input{../Tex/Book/coverback-book.tex}  
+\input{Tex/Book/coverback-book.tex}  
 
 \end{document}
 

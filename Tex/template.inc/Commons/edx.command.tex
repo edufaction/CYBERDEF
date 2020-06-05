@@ -13,7 +13,7 @@
 \newcommand\head[1]{\textbf{#1}}
 \newcommand\tb[1]{\textbf{#1}}
 \newcommand{\g}[1]{\og #1 \fg{}}
-\newcommand{\uload}[1] {\input{../Tex/#1}}
+\newcommand{\uload}[1] {\input{Tex/#1}}
 \newcommand{\ucurcolor}{black}
 
 \newcommand{\mak}[1]{\faicon{\aArrowCircleORight} #1}
@@ -66,7 +66,7 @@
 
 \newcommand{\includer}[1]
 {
-\input{../Tex/Chapters/#1}
+\input{Tex/Chapters/#1}
 }
 
 %-----------------------------------------------------
@@ -159,9 +159,9 @@ title=#2,#1}
 {
 \input{../SecTools/#2.#1/datas.tex} 
 \begin{toolsboxin}[sidebyside,righthand width=.7\textwidth]{#1}
-\includegraphics[width=0.9\textwidth]{../SecTools/#2.#1/icon.png} \\
+\includegraphics[width=0.9\textwidth]{SecTools/#2.#1/icon.png} \\
 \tcblower
-\input{../SecTools/#2.#1/description.tex}
+\input{SecTools/#2.#1/description.tex}
 \end{toolsboxin}
 \noindent \small {\faCogs~Classe : \uppercase{\textbf{#2}}, Site de référence : \textbf{\link{\toolurl}{#1}}}
 \newline
@@ -203,7 +203,7 @@ title=#2,#1}
 %											\uexpand
 %---------------------------------------------------
 \newcommand {\uexpand}[1]{
-\mode<all>\input{../Tex/Chapters/#1}
+\mode<all>\input{Tex/Chapters/#1}
 }
 
 %-----------------------------------------------------
