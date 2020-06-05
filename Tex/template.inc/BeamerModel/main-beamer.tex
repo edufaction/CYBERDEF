@@ -22,11 +22,11 @@
 \definecolor{ocre}{RGB}{160,0,0}   
 
 %-------------------------------------------------------
-\usepackage{../Tex/template.inc/BeamerModel/edxbeamer}
+\usepackage{Tex/template.inc/BeamerModel/edxbeamer}
 %-------------------------------------------------------
 
-\input{../Tex/template.inc/Commons/edx.packages.tex}
-\input{../Tex/template.inc/Commons/edx.command.tex}
+\input{Tex/template.inc/Commons/edx.packages.tex}
+\input{Tex/template.inc/Commons/edx.command.tex}
 
 
 % a charger après hyperref, pour avoir les guillemets sous beamer
@@ -75,6 +75,9 @@
 %++++++++++++++++++++++++++++++++
 \begin{document}
 
+\input{Tex/acronymes.tex}
+\input{Tex/glossaire.tex}
+
 %================================
 \begin{frame}[plain]
  					\begin{figure}
@@ -84,7 +87,7 @@
   
     \begin{figure}
         \begin{centering}
-  			\includegraphics[width=\textwidth]{../Tex/template.inc/Commons/CommonsPictures/img-sec101.pdf}
+  			\includegraphics[width=\textwidth]{Tex/template.inc/Commons/CommonsPictures/img-sec101.pdf}
   \end{centering}
   \end{figure}
       \end{column}
@@ -92,7 +95,7 @@
   \begin{column}{0.6\textwidth}
     \begin{figure}
         \begin{centering}
- 		    \includegraphics[width=\textwidth]{../Tex/template.inc/Commons/CommonsPictures/cnambretagne.pdf}
+ 		    \includegraphics[width=\textwidth]{Tex/template.inc/Commons/CommonsPictures/cnambretagne.pdf}
     \end{centering}
   \end{figure}
   \end{column}
@@ -126,7 +129,7 @@
   \framesubtitle{contacter \umaila}
   					\begin{figure}
   					 \centering
-   						 \includegraphics[width=0.2\textwidth]{../Tex/template.inc/Commons/CommonsPictures/cyberdef101.pdf}\\
+   						 \includegraphics[width=0.2\textwidth]{Tex/template.inc/Commons/CommonsPictures/cyberdef101.pdf}\\
 				  \end{figure}
 				 	 \centering \textit{Tous les documents publiés dans le cadre de ce cours sont perfectibles, \\ne pas hésiter à m'envoyer vos remarques !}
  \end{frame}
@@ -141,12 +144,12 @@
 
  					\begin{figure}
   						  \centering
-   						 \includegraphics[width=0.9\textwidth]{../Tex/Contribute/ContribPictures/github.pdf}\\
-   						 	 \includegraphics[width=0.9\textwidth]{../Tex//Contribute/ContribPictures/overleaf.pdf}
+   						 \includegraphics[width=0.9\textwidth]{Tex/Contribute/ContribPictures/github.pdf}\\
+   						 	 \includegraphics[width=0.9\textwidth]{Tex//Contribute/ContribPictures/overleaf.pdf}
 				  \end{figure}
 		\end{column}
 		\begin{column}{0.9\textwidth}
-							\input{../Tex/Contribute/contrib-gen.tex}
+							\input{Tex/Contribute/contrib-gen.tex}
 		\end{column}
 \end{columns}
  \end{frame}

@@ -1,6 +1,4 @@
-/Builder/.texpadtmp/*
-/Builder.local/*
-/Builder/out/*
+/.texpadtmp/*
+/out/*
 /Projets/MODEL/.texpadtmp/*
 .DS_Store
-/Builder/CYBERDEF-SEC101-Edufaction.pdf

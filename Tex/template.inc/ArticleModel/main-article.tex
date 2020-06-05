@@ -4,7 +4,7 @@
 %                             2020 eduf@ction
 %-------------------------------------------------------------
 
-\documentclass[10pt,fleqn,twoside]{../Tex/template.inc/ArticleModel/edxstyle} 
+\documentclass[10pt,fleqn,twoside]{Tex/template.inc/ArticleModel/edxstyle} 
 
 \usepackage{beamerarticle}
 
@@ -18,9 +18,9 @@
 
 \usepackage{titletoc} % Required for manipulating the table of contents
 
-\input{../Tex/template.inc/Commons/edx.packages.tex}
-\input{../Tex/template.inc/Commons/edx.command.tex}
-\input{../Tex/template.inc/Commons/edx.styles.tex}
+\input{Tex/template.inc/Commons/edx.packages.tex}
+\input{Tex/template.inc/Commons/edx.command.tex}
+\input{Tex/template.inc/Commons/edx.styles.tex}
 
 \definecolor{ocre}{RGB}{160,0,0}   
 
@@ -28,7 +28,7 @@
 %	BIBLIOGRAPHY
 %-------------------------------------------------
 
-\addbibresource{../Tex/bibliography.bib} % BibTeX bibliography file
+\addbibresource{Tex/bibliography.bib} % BibTeX bibliography file
 \defbibheading{bibempty}{}
 
 %-------------------------------------------------
@@ -46,13 +46,16 @@
 
 \begin{document}
 
+\input{Tex/acronymes.tex}
+\input{Tex/glossaire.tex}
+
 \addtocontents{toc}{\protect\hypertarget{toc}{}}
 
 %-------------------------------------------------
 %	ARTICLE INFORMATION
 %-------------------------------------------------
 
-\Abstract {\uabstract\input{../Tex/Notes/Commons/abstract-gen-notes.tex} }
+\Abstract {\uabstract\input{Tex/Notes/Commons/abstract-gen-notes.tex} }
 \JournalInfo{\uJournalInfo} % Journal information
 \Archive{Notes de cours éditées le  \DTMnow} % Additional notes (e.g. copyright, DOI, review/research article)
 \PaperTitle{\utitle} % Article title
@@ -69,7 +72,7 @@
 
 \maketitle
 
-\begin{tikzpicture}[remember picture,overlay]\node at (current page.north west)[xshift=4cm, yshift=-4cm, text opacity=1.0]{\includegraphics[width=0.1\paperwidth]{../Tex/template.inc/Commons/CommonsPictures/shield-20.pdf}}; 
+\begin{tikzpicture}[remember picture,overlay]\node at (current page.north west)[xshift=4cm, yshift=-4cm, text opacity=1.0]{\includegraphics[width=0.1\paperwidth]{Tex/template.inc/Commons/CommonsPictures/shield-20.pdf}}; 
 \end{tikzpicture} 
 
 
@@ -94,7 +97,7 @@
 \INFOGitHub % Link to download file and copyright
 %-------------------------------------------------
 
-\input{../Tex/acronymes.tex}
+\input{Tex/acronymes.tex}
 
 %-------------------------------------------------
 \newpage
