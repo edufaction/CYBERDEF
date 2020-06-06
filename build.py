@@ -170,7 +170,7 @@ def moveresult():
     for basename in os.listdir(os.getcwd() + "/out/"):
         if basename.endswith('.dvi') | basename.endswith('.pdf') :
             subprocess.call(["cp", "out/" + basename, "Builder/"])
-            subprocess.call(["cp", "out/" + basename, "."])
+ #           subprocess.call(["cp", "out/" + basename, "."])
 # ???            subprocess.call(["rm -r ", "out/"])
 
     return;
