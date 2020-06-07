@@ -1,0 +1,12 @@
+Nom du botnet,carna
+nombre de bots,420 000
+Infection, Scan 
+type de menace,challenge personnel
+type d'attaque,RAT (Telnet)
+présence d'obfuscation, non
+Hash,système de floutage et du modification du hash (32000 variantes trouvées)
+Domaines/URL,kankerc.queryhost.xyz 192.69.89.173 C2 server
+Domaines/URL,kankerc.queryhost.xyz 154.16.199.34 C2 server
+Domaines/URL,report.queryhost.xyz 192.69.89.173	report server
+Domaines/URL,report.queryhost.xyz 45.32.186.11 report server
+Domaines/URL,dongs.disabled.racing 93.158.200.126 malware distribution             

@@ -9,17 +9,18 @@ La cybersécurité est un domaine de mythes et de légendes. Ses activités plon
 
 La cybersécurité est une discipline transverse et interdisciplinaire à plusieurs titres :
 \begin{itemize}
-  \item nécessité de maitriser les nombreuses technologies des systèmes d'information ainsi que leurs zones de fragilités;
+  \item nécessité de maitriser les nombreuses techniques et technologies des systèmes d'information ainsi que leurs zones de fragilités;
   \item nécessité de maitriser de nombreuses solutions de sécurité permettant de couvrir, en n'oubliant qu'elles aussi peuvent être fragiles (Cf. Certification et Qualification de produits de sécurité et Critères communs);
 % TODO : référe 
   \item nécessité de faire coopérer des métiers et des cultures différentes ;
-  \item nécessité de gérer l'entreprise dans des cadres de conformité souvent complexes et coûteux.
+  \item nécessité de gérer l'entreprise dans des cadres de conformité souvent complexes et coûteux;
+  \item nécessité d'intégrer ces démarches en tenant compte des cultures et des pratiques des nombreux métiers de l'entreprise.
 \end{itemize}
 
 
 \mode<all>{\picframe{Tex/Pictures/img-4model}{Cybersécurité : un domaine hollistique}{0.9}{lb_4model}}
 
-Ces métiers concourent tous à une seule et même mission, : assurer la continuité de la mission ou du service en préservant le patrimoine de l'entreprise contre toute menace dans l'environnement numérique.
+Ces métiers concourent tous à une seule et même mission : \g{assurer la continuité de la mission ou du service en préservant le patrimoine de l'entreprise contre toute menace dans l'environnement numérique}.
 
 %\section{les grands cyber-risques}
 
@@ -29,15 +30,34 @@ Ces métiers concourent tous à une seule et même mission, : assurer la continu
 
 %\section{les vecteurs cyber}
 
-\section{Les axes d'une cybersécurité intégrée}
+\section{Aborder la cybersécurité}
 
 % ajouter le joke sur les corsaires et une hallebarde
 
-La cybersécurité dans une entreprise est donc une co-activité d'hommes de l'art.  C'est aussi un domaine en perpétuelle évolution, soutenu et contraint par des lois, des règlements , des normes, des méthodologies, et de technologies spécialisées.  Il nécessite pour être efficace d'être orchestré pour maintenir en condition de sécurité une organisation dont le périmètre peut être complexe.
+La cybersécurité ou la sécurité du numérique\footnote{Historiquement d'autres termes utilisés comme sécurité des Systèmes d'information \gls(aSSI) ou  Sécurité Informatique}, peut être découverte par de nombreuses voies.
 
-Il y a de nombreuses manières d’aborder la cybersécurité au sein de l’entreprise, et nombreux ouvrages spécialisés en détaillent les concepts et les méthodologies. Nous avons toutefois délibérément choisi ici de confronter, si ce n'est corréler, dans un seul support, trois domaines qui apparaissent souvent dans la littérature comme des domaines d'expertise différents : la gestion des risques , la gouvernance de la cybersécurité, et la cybersécurité opérationnelle. 
+La plus courante est certainement pour les technophiles, l'aventure passionnante de découvrir ce domaine par la technique.  Longtemps abordé par le triptyque académique cryptologie,   sécurité  protocolaire des réseaux, et informatique fondamentale (compilation et théorie des langage, architecture système et bases de données), le domaine s'est vulgarisé avec une forme de gamification de l'apprentissage.
+
+On y trouve en particulier :
+
+\begin{itemize}
+  \item Les challenges \gls{aCTF}, \gls{aDTF} qui permettent de mettre le pied dans les techniques et stratégies d'intrusion pour les pentesteurs et auditeurs techniques en herbe,;
+  \item Les bug-bounty qui permette de se confronter à ses propres limites avec la recherche de failles dans les logiciels avec pour partie des rémunérations au niveau des difficultés;
+\end{itemize}
+
+Toutefois, un volet peu enseigné, qui ne mobilise pas spécialement les jeunes apprenants du domaine concerne la gouvernance de cette sécurité numérique de l'entreprise.
+
+J'ai souhaité présenter une approche globale de la sécurité du numérique pas le biais de quelques processus, en particulier ceux de la sécurité opérationnelle. L'enjeu est de fournir une trame de connaissance pour déployer des actions de cybersécurité en entreprise.
+Cette trame a pour intention fournir des points d'accroche et des modèles de compréhension des différentes compétences, actions, et outils du large domaine de la cybersécurité.
+
+Destiné à un public large, cet ouvrage tente d'offrir un niveau de lecture permettant à un expert technique de repositionner sa technicité dans un ensemble plus large, et  à un débutant de découvrir de nombreuses facettes du domaine avec quelques éclairages techniques.
+
+La cybersécurité dans une entreprise est une co-activité d'hommes de l'art.  C'est aussi un domaine en perpétuelle évolution, soutenu et contraint par des lois, des règlements , des normes, des méthodologies,  des technologies spécialisées et en particuliers des expertises.  Il nécessite pour être efficace d'être orchestré pour maintenir en condition de sécurité une organisation dont le périmètre peut être complexe face à des menaces elles aussi en perpétuelles évolutions.
+
+Il y a de nombreuses manières d’aborder le pilotage de la cybersécurité au sein de l’entreprise, et nombreux ouvrages spécialisés en détaillent les concepts et les méthodologies. Nous avons toutefois délibérément choisi ici de confronter, si ce n'est corréler, dans un seul support, trois domaines qui apparaissent souvent dans la littérature comme des domaines d'expertise différents : la gestion des risques , la gouvernance de la cybersécurité, et la cybersécurité opérationnelle. 
 
 Nous avons donc fait ce choix de structurer notre approche suivant le prisme de la cyberdéfense d'entreprise avec une analyse en trois axes majeurs qui résument les difficultés dont relève cette discipline holistique \cite{sch13}. 
+
 
 
 
@@ -85,7 +105,7 @@ Les  transformations digitales d'une grande partie des acteurs économiques appo
 
 Le législateur s'en est saisi depuis bien des années avec de nombreuses réglementations et lois permettant de protéger en particulier, le citoyen et l'Etat.
 
-On notera en particulier dans cette évolution du cadre réglementaire,  la protection des données personnelles, mais aussi la protection des systèmes sensibles stratégiques \footnote{\gls{OIV}  et \gls{OSE} } en lien avec la protection de la nation avec la dynamique de Cyberdéfense soutenue par les différentes lois de programmation militaire depuis 2008. L'entreprise se trouve quant à elle prise en sandwich entre les exigences de l'état et les désirs de liberté que défend le citoyen. Il faut aussi noter que le citoyen est souvent un salarié et son rôle dans la cybersécurité de l'entreprise peut soulever des problématiques complexes\footnote{Lanceurs d'alertes, comportements déviants des utilisateurs légitimes}.
+On notera en particulier dans cette évolution du cadre réglementaire,  la protection des données personnelles, mais aussi la protection des systèmes sensibles stratégiques \footnote{\gls{aOIV}  et \gls{aOSE} } en lien avec la protection de la nation avec la dynamique de Cyberdéfense soutenue par les différentes lois de programmation militaire depuis 2008. L'entreprise se trouve quant à elle prise en sandwich entre les exigences de l'état et les désirs de liberté que défend le citoyen. Il faut aussi noter que le salarié est souvent un citoyen et son rôle dans la cybersécurité de l'entreprise peut soulever des problématiques complexes\footnote{Lanceurs d'alertes, comportements déviants des utilisateurs légitimes}.
  
 Se sentir en sécurité dans un monde de transformation digitale c'est bien entendu disposer des moyens de se protéger et protéger son patrimoine, que ce dernier soit ou non informationnel, mais aussi de le défendre en continue. Il est moins de moins en moins accepté de le protéger, en érigeant des murs épais, solides et supposés infranchissables. L'entreprise a besoin de faire circuler rapidement les savoirs, de partager largement des informations entre les salariés, les clients, les citoyens, les fournisseurs...
 
@@ -95,7 +115,7 @@ Il est donc nécessaire de correctement définir les biens vitaux ou essentiels 
 
 Entre une maitrise des risques cyber et une capacité de se défendre et réagir, il est nécessaire de disposer déjà d'un bon niveau de protection adaptée aux enjeux du numérique. Il existe de nombreuses définitions de cette cybersécurité.
 
-Pour ma part je vous propose de poser pour la suite de mon propos, une définition simple, qui a ses détracteurs mais qui résume en une pseudo équation la manière dont nous traiterons ce domaine dans c\ecours. \\
+Pour ma part je vous propose de poser pour la suite de mon propos, une définition simple, qui fait consensus et résume en une pseudo équation la manière dont nous traiterons ce domaine dans c\ecours. \\
 \begin{nota}[Une définition de la cybersécurité]
 \begin{align}
 Cybers\acute{e}curit\acute{e} \cong Cyberprotection\oplus Cyberd\acute{e}fense \oplus Cyberr\acute{e}silience
@@ -114,7 +134,7 @@ Cybers\acute{e}curit\acute{e} \cong Cyberprotection\oplus Cyberd\acute{e}fense \
 % begin PRZ====================
 \begin{frame}
 
-La cybersécurité est l'enchainement opéré, organisé, documenté, piloté, optimisé de trois environnements d'ingénierie :
+La cybersécurité est l'enchainement opéré, organisé, documenté, piloté, optimisé de trois environnements d'actions :
 \begin{itemize}
  \item \tb{Protéger} l'environnement par les mesures et solutions technologies adaptées au niveau de risque que l'entreprise est prêt à prendre; 
  \item \tb{Défendre} les actifs les plus sensibles de l'entreprise en surveillant et combattant la menace (y compris l'image de l'entreprise);
@@ -124,22 +144,22 @@ La cybersécurité est l'enchainement opéré, organisé, documenté, piloté, o
 \end{frame}
 % end PRZ====================
 
-La Cybersécurité c’est donc avant-tout la mise en place de mécanismes de protection des biens et des processus numériques sensibles. C’est historiquement avec cette premiere dynamique que l’entreprise déploie des solutions de sécurité. 
+La Cybersécurité, est donc, avant-tout, le déploiement de mécanismes de protection des biens et des processus numériques sensibles. C’est avec cette premiere dynamique que l’entreprise déploie en premier lieu des solutions de sécurité. 
 
 Toutefois, malgré ce niveau de protection et souvent les lourds investissements réalisés dans des composants de sécurité périmètrique, l’entreprise peut se faire surprendre avec des attaques contournant ces mesures. Face à ces attaques, l’entreprise découvre que la solidité de l’entreprise n’est pas directement lié aux investissements sur les systèmes de protections. Il lui faut anticiper les menaces, les détecter non seulement sur son périmètre mais aussi dans l’écosystème de l’environnement les menaces potentielles. Ces menaces exploitent des vulnérabilités qu’il convient de détecter en amont.
 
-Malheureusement, malgré ces mesures de protection et de défense qui permet de réagir vite et efficacement, il arrive que des attaques informatiques arrivent à leur fin. La capacité de l’entreprise à revenir à une situation normale, avec un contexte assaini est un critère dont un chef d’entreprise appréciera la valeur qu’après un incident.
+Malheureusement, malgré ces mesures de protection et de défense qui permet de réagir vite et efficacement, il arrive que des attaques informatiques arrivent à leurs fins. La capacité de l’entreprise à revenir à une situation normale, avec un contexte assaini est un critère dont un chef d’entreprise appréciera la valeur\textbf{ qu’après un incident}.
 
 % ajouter l’equation du risque dans le texte du RISQUE
 
-Il fut une époque pas si lointaine, ou dans l'évaluation de la probabilité d'une attaque, l'analyste consacrait du temps. Aujourd'hui bine que ce paramètre continue quand même à être pris en compte, l'analyste positionne cette probabilité à 100\%.  (cf. figure \ref{lbl-riskassess})
+Il fut une époque pas si lointaine, ou dans l'évaluation de la probabilité d'une attaque, l'analyste consacrait du temps. Aujourd'hui bien que ce paramètre continue quand même à être pris en compte, l'analyste positionne cette probabilité ou vraisemblance à 100\%.  (cf. figure \ref{lbl-riskassess})
 
 % I M A G E -----------> 
 
 
 \mode<all>{\picframe{Tex/Pictures/img-risk-assess}{le cyber-risque}{0.9}{lbl-riskassess}}
 
- Car l'ensemble des experts du domaine est globalement en accord sur la posture que doivent prendre les entreprises et les organisations : \g{Le temps n'est plus de savoir si on sera attaqué ou pas, mais plutôt de savoir quand et comment on le sera}, qui concrètement se résume à la certitude que tout incident de sécurité peut se produire.
+L'ensemble des experts du domaine est globalement en accord sur la posture que doivent prendre les entreprises et les organisations : \g{Le temps n'est plus de savoir si on sera attaqué ou pas, mais plutôt de savoir quand et comment on le sera}, qui concrètement se résume à la certitude que tout incident de sécurité peut se produire.
  
 Dans les modèles d'analyse de risque et d'évaluation de la cybersécurité, l'analyste se positionne aujourd'hui du point de vu de l'attaquant. Ce regard lui permet de mieux comprendre la menace comme équation duale du risque, mais vu de l'énergie dépenser par l'attaquant et du risque qu'il prend. (cf. figure \ref{lbl-riskjail})
 
@@ -183,8 +203,8 @@ La mission de ce RSSI d'entreprise est de protéger son Système d'Information (
 
 \subsubsection{Le DPO}
 
-A partir de mai 2018, une responsabilité plus juridique liée à la protection des données a été rendue plus visible avec la nécessité de disposer d'un DPO en entreprise (Data Protection Officer) héritier en France  \textit{\gls{CIL}}.
-Nous n'aborderons pas la fonction, les missions et la dynamique de responsabilité du DPO ici. Il faut toutefois que cette fonction possède de nombreux recouvrements dans la chaine de gouvernance du risque \g{informatique} auprès des directions d'entreprise. Orienté vers la protection des données à caractère personnel, le tropisme de la fonction DPO peut conduire certaines structures à oublier des pans importants des risques numériques comme :
+A partir de mai 2018, une responsabilité plus juridique liée à la protection des données a été rendue plus visible avec la nécessité de disposer d'un \gls{aDPO} en entreprise (Data Protection Officer) héritier en France  \textit{\gls{aCIL}}.
+Nous n'aborderons pas la fonction, les missions et la dynamique de responsabilité du \gls{aDPO} ici. Il faut toutefois que cette fonction possède de nombreux recouvrements dans la chaine de gouvernance du risque \g{informatique} auprès des directions d'entreprise. Orienté vers la protection des données à caractère personnel, le tropisme de la fonction \gls{aDPO} peut conduire certaines structures à oublier des pans importants des risques numériques comme :
 
 \begin{itemize}
 	\item la protection du patrimoine informationnel. (Espionage industriel).
@@ -192,27 +212,27 @@ Nous n'aborderons pas la fonction, les missions et la dynamique de responsabilit
 \end{itemize}
 
 \subsubsection{L'officier de sécurité de défense}
-Pour les entreprises traitant des informations classifiées de défense ou liées aux contraintes de la classification de l'état, il est indispensable de se doter d'une fonction \g{OS} de défense. Son rôle est de s'assurer de la conformité à l'Instruction Générale Interministérielle IGI 1300 pour le \g{Confidentiel Défense} et l'instruction Interministérielle II901 pour le \g{Diffusion Restreinte}.
+Pour les entreprises traitant des informations classifiées de défense ou liées aux contraintes de la classification de l'état, il est indispensable de se doter d'une fonction \gls{aOS} de défense. Son rôle est de s'assurer de la conformité à l'Instruction Générale Interministérielle IGI 1300 pour le \g{Confidentiel Défense} et l'instruction Interministérielle II901 pour le \g{Diffusion Restreinte}.
 
 Nous resterons donc dans le cadre fonctionnel de la Cybersécurité dans son volet protection des Systèmes d'information et gestion des risques numériques.
-Quand nous aborderont des sujets en forte adhérence avec les dynamiques de la \gls{GDPR} nous donnerons les liens et les indications adaptés pour les \gls{DPO}.
-Par exemple, nous aborderons l'usage des données nominatives collectées et traitées dans les \gls{SIEM}, ou celle recueillis sur le DarkWeb etc ...
+Quand nous aborderont des sujets en forte adhérence avec les dynamiques de la \gls{aGDPR} nous donnerons les liens et les indications adaptés pour les \gls{aDPO}.
+Par exemple, nous aborderons l'usage des données nominatives collectées et traitées dans les \gls{aSIEM}, ou celle recueillis sur le DarkWeb etc ...
 \begin{remark}
 Consulter le site \url{www.cnil.fr} pour parfaire ses connaissances en matière de réglementation européenne sur la protection des données personnelles. 
 \end{remark}
 
 \subsubsection{Responsabilités SSI}
 
-Le maintien des conditions de sécurité du système d'information des grandes entreprises nécessite un \g{RSSI} Central ou une fonction semblable rattachée à un niveau plus global de l'entreprise.
-On découvre ainsi des  \g{RSSI} rattachés à la direction des risques, la direction générale, au contrôle interne …\\
+Le maintien des conditions de sécurité du système d'information des grandes entreprises nécessite un \gls{aRSSI} Central ou une fonction semblable rattachée à un niveau plus global de l'entreprise.
+On découvre ainsi des  \gls{aRSSI} rattachés à la direction des risques, la direction générale, au contrôle interne …\\
  Il n'y pas de rattachement bien définit. La couverture de responsabilité dépend grandement de la taille et de l'activité de l'entreprise, mais aussi de la maturité de celle-ci en matière de gestion de risque et de gouvernance. Il peut y avoir des RSSI par entité, par projet à l’intérieur d'une entreprise. Leur mandat est fixé en fonction des enjeux sécurité de ces entités ou ces projets. 
 
-Le fin mot de l'histoire est le \g{R} de RSSI. Son domaine de responsabilité dépendra de son mandat pour assumer ce rôle de garant d'un environnement \g{possédant } des bonnes conditions de sécurité.
-La gouvernance de la sécurité, est au coeur du métier du RSSI. La discipline que pilote un RSSI dans l’entreprise se nomme \g{GRC}.
+Le fin mot de l'histoire est le \g{R} de  \gls{aRSSI}. Son domaine de responsabilité dépendra de son mandat pour assumer ce rôle de garant d'un environnement \g{possédant } des bonnes conditions de sécurité.
+La gouvernance de la sécurité, est au coeur du métier du  \gls{aRSSI}. Cette discipline que ce dernier pilote dans l’entreprise se nomme \gls{aGRC}.
 
 La notion de système d'information a profondément évoluée ces dernières années. Le périmètre des risques digitaux inclus maintenant des systèmes et services externes à l'entreprise. Beaucoup d'entre eux sous la forme de réseaux sociaux, de services cloud ouvrant par ailleurs le domaine de supervision à la téléphonie avec les smartphones et leurs applications professionnelles ou non.
 
-Bien entendu en fonction de la taille de l'entreprise et de ses enjeux, on peut disposer au sein de l'entreprise de nombreuses personnes ayant une fonction de RSSI. 
+Bien entendu en fonction de la taille de l'entreprise et de ses enjeux, on peut disposer au sein de l'entreprise de nombreuses personnes ayant une fonction de \gls{aRSSI}. 
 
 Le métier est riche et dispose d'un spectre de responsabilité et d'activité très large en terme de poste on y trouve par exemple :
 
@@ -222,7 +242,7 @@ Le métier est riche et dispose d'un spectre de responsabilité et d'activité t
 \begin{itemize}
 \item \textbf{RSSI d'entreprise} : Responsable de la sécurité de sa structure.
 \item  \textbf{RSSI d'un département, d'une organisation intermédiaire} : A l'image d'un RSSI d'entreprise, il assure toute les taches de gouvernance, il applique et fait appliquer les directives et politique de sécurité aux équipes du département / division / structure intermédiaire, il déploie les actions décidée dans la chaine fonctionnelle sécurité
-\item   \textbf{RSSI d'un contrat, d'un projet contractualisé (Security Manager)} : Responsable de la sécurité du  déroulement d'un contrat. Souvent lié à un plan d'assurance sécurité, le RSSI contrat se doit d'assurer pour le client ou pour le fournisseur le suivi des exigences de sécurité du contrat.
+\item   \textbf{\gls{aRSSI} d'un contrat, d'un projet contractualisé (Security Manager)} : Responsable de la sécurité du  déroulement d'un contrat. Souvent lié à un plan d'assurance sécurité, le RSSI contrat se doit d'assurer pour le client ou pour le fournisseur le suivi des exigences de sécurité du contrat.
 \end{itemize}
 }} % end FRAME.........................................................
 
@@ -239,9 +259,9 @@ Le métier est riche et dispose d'un spectre de responsabilité et d'activité t
 
 \subsection{Maintien en conditions de sécurité}
 
-Les conditions de sécurité représentent les propriétés fondamentales du SI, appelées : \gls{DICT} , qui favoriseront le fonctionnement optimisé du SI et éviteront l'avènement d'incidents de sécurité irréversibles ou même gênants pour son fonctionnement. D'un certain point de vue, les conditions de sécurité représentent le paramétrage du SI pour lequel le système fonctionne bien dans des conditions de sécurité \g{connues et approuvées }
+Les conditions de sécurité représentent les propriétés fondamentales du SI, appelées : \gls{aDICT} , qui favoriseront le fonctionnement optimisé du SI et éviteront l'avènement d'incidents de sécurité irréversibles ou même gênants pour son fonctionnement. D'un certain point de vue, les conditions de sécurité représentent le paramétrage du SI pour lequel le système fonctionne bien dans des conditions de sécurité \g{connues et approuvées }
 
-Ces fameux critères \textbf{\gls{DICT}} ou propriétés de sécurité des systèmes d'information vise les objectifs suivants :
+Ces fameux critères \textbf{\gls{aDICT}} ou propriétés de sécurité des systèmes d'information vise les objectifs suivants :
 %-----------------------------------------
 \begin{nota}[DISPONIBILITE]
 le système doit fonctionner sans faille (arrêt, ou dégradation) durant les plages d'utilisation prévues et garantir l'accès aux services et ressources définies et installées avec le temps de réponse attendu.
@@ -260,14 +280,14 @@ Les données doivent être celles que l'on attend, et ne doivent pas être alté
 D'autres aspects peuvent aussi être considérés comme des objectifs de la sécurité tels que :
 %-----------------------------------------
 \begin{nota}[AUTHENTICITE]
-l'identification des utilisateurs est fondamentale pour gérer les accès aux espaces de travail pertinents et maintenir la confiance dans les relations d'échange. On voit aussi dans la littérature la terminologie \g{ critères ACID (Authentification, Confidentialité, Intégrité, Disponibilité)}.
+l'identification des utilisateurs est fondamentale pour gérer les accès aux espaces de travail pertinents et maintenir la confiance dans les relations d'échange. On voit aussi dans la littérature la terminologie \g{critères \gls{aACID} (Authentification, Confidentialité, Intégrité, Disponibilité)}.
 \end{nota}
 %-----------------------------------------
 \begin{nota}[NON-REPUDIATION]
 La non-répudiation et l'imputation : aucun utilisateur ne doit pouvoir contester les opérations qu'il a réalisées dans le cadre de ses actions autorisées et aucun tiers ne doit pouvoir s'attribuer les actions d'un autre utilisateur.
 \end{nota}
 
-Dans un contexte d'activité économique dense et en perpétuel renouvellement, les conditions de sécurité sont aussi en perpétuelle évolution, c’est pourquoi nous parlons d'un cycle de vie vertueux au cours duquel les nouveaux paramètres tirent profit des expériences passées.  Ainsi, l’amélioration continue également appelée \g{ lean management} dans d’autres domaines (industrie, …) travaille-t-elle sur le cycle de vie des conditions de sécurité souvent appelé \gls{PDCA}.\\
+Dans un contexte d'activité économique dense et en perpétuel renouvellement, les conditions de sécurité sont aussi en perpétuelle évolution, c’est pourquoi nous parlons d'un cycle de vie vertueux au cours duquel les nouveaux paramètres tirent profit des expériences passées.  Ainsi, l’amélioration continue également appelée \g{ lean management} dans d’autres domaines (industrie, …) travaille-t-elle sur le cycle de vie des conditions de sécurité souvent appelé \gls{aPDCA}.\\
 Ce cycle de vie doit néanmoins être maitrisé par le RSSI en place avec ses équipes, il faut co-produire ces conditions de sécurité, cette maîtrise est complexe, fortement dépendante du contexte de l'entreprise, c’est pourquoi elle doit être accompagnée d'une méthodologie rigoureuse et partagée qui constitue le savoir-faire de base du RSSI et de son équipe. Par ailleurs, parmi ces conditions, certaines sont universelles et d’autres propres à chaque entreprise. \\ Comme le montre le diagramme \ref{lbl-cycledevie}, il est possible aussi d’utiliser un cycle de vie sécurité de type projet, qui se rapproche par ailleurs de la manière dont nous avons structurer c\edoc. 
 
 \mode<all>{\picframe{Tex/Pictures/img-cyclevie}{Cycle de vie sécurité dans les projets}{0.9}{lbl-cycledevie}}

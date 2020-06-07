@@ -1,2 +1,0 @@
-\input{Tex/init.inc}
-\input{Tex/Notes/CYBERDEF-10-riskpol.notes}

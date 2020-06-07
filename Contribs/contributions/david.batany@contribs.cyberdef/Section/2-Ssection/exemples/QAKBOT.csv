@@ -1,0 +1,14 @@
+Nom du botnet,Qakbot
+nombre de bots,	
+Infection,trojan banker(mutant)
+type de menace,	vol de renseignement personnel
+type d'attaque, mail piégé
+type d'attaque, brute force
+présence d'obfuscation,	
+Hash,2E6AC2290F1E3D80ABC8D0D6F736D965
+Hash,651EF2DBA96011F47EED9B72BE7B4B8C
+Hash,F3CAA54DDE4056FADD52A024CF6B82ED
+Domaines/URL,hxxp://css.kbaf.myzen.co(dot)uk/TealeafTarget.php
+Domaines/URL,hxxp://projects.montgomerytech(dot)com/TealeafTarget.php
+Domaines/URL,hxxp://n.abcwd0.seed.fastsecureservers(dot)com/TealeafTarget.php
+	

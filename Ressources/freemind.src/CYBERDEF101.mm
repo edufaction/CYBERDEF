@@ -1,6 +1,6 @@
 <map version="freeplane 1.8.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1238991130" CREATED="1590745829550" MODIFIED="1591089120668"><richcontent TYPE="NODE">
+<node LOCALIZED_STYLE_REF="AutomaticLayout.level.root" FOLDED="false" ID="ID_1238991130" CREATED="1590745829550" MODIFIED="1591090469415"><richcontent TYPE="NODE">
 
 <html>
   <head>
@@ -13,8 +13,8 @@
   </body>
 </html>
 </richcontent>
-<hook NAME="MapStyle" zoom="0.6079432">
-    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_note_icons="true" fit_to_viewport="false" show_notes_in_map="true"/>
+<hook NAME="MapStyle" zoom="0.75">
+    <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_note_icons="false" fit_to_viewport="false" show_notes_in_map="false"/>
 
 <map_styles>
 <stylenode LOCALIZED_TEXT="styles.root_node" STYLE="oval" UNIFORM_SHAPE="true" VGAP_QUANTITY="24.0 pt">
@@ -78,7 +78,7 @@
 <node TEXT="Introduction" POSITION="right" ID="ID_1883841972" CREATED="1590774924077" MODIFIED="1590878496575" COLOR="#0033ff" HGAP_QUANTITY="155.0 px" VSHIFT_QUANTITY="71.0 px">
 <font NAME="SansSerif" SIZE="18"/>
 <edge STYLE="sharp_bezier" COLOR="#111111" WIDTH="8"/>
-<node TEXT="la cyberdéfense d&apos;entreprise" LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_1503703856" CREATED="1590774932752" MODIFIED="1591089144263">
+<node TEXT="la cyberdéfense d&apos;entreprise" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_1503703856" CREATED="1590774932752" MODIFIED="1591090033862">
 <font NAME="SansSerif"/>
 <edge STYLE="bezier" COLOR="#111111" WIDTH="thin"/>
 <node TEXT="des évènements redoutés à la définition des mesures " ID="ID_1112643777" CREATED="1590873546441" MODIFIED="1590874796749" COLOR="#990000">
@@ -217,7 +217,7 @@
 </node>
 </node>
 </node>
-<node TEXT="Information Security (InfoSec)" POSITION="right" ID="ID_1905015109" CREATED="1590746370326" MODIFIED="1590878532281" COLOR="#0033ff" HGAP_QUANTITY="165.0 px" VSHIFT_QUANTITY="9.0 px">
+<node TEXT="Information Security (InfoSec)" FOLDED="true" POSITION="right" ID="ID_1905015109" CREATED="1590746370326" MODIFIED="1590878532281" COLOR="#0033ff" HGAP_QUANTITY="165.0 px" VSHIFT_QUANTITY="9.0 px">
 <font NAME="SansSerif" SIZE="18"/>
 <edge STYLE="sharp_bezier" COLOR="#111111" WIDTH="8"/>
 <node TEXT="Sécurité des Systèmes d&apos;information" ID="ID_717849387" CREATED="1590750589078" MODIFIED="1590875506716" COLOR="#00b439">
@@ -245,13 +245,13 @@
 </node>
 <node TEXT="Détection" ID="ID_918408252" CREATED="1590774118724" MODIFIED="1590874796764" COLOR="#111111">
 <edge COLOR="#111111" WIDTH="thin"/>
-<node TEXT="SIM et SEM" ID="ID_439094924" CREATED="1590774220520" MODIFIED="1590874796764" COLOR="#111111">
+<node TEXT="SIM et SEM" LOCALIZED_STYLE_REF="AutomaticLayout.level,5" ID="ID_439094924" CREATED="1590774220520" MODIFIED="1591090858210">
 <edge COLOR="#111111" WIDTH="thin"/>
 </node>
 </node>
 <node TEXT="Protection" ID="ID_493220179" CREATED="1590774125154" MODIFIED="1590874796764" COLOR="#111111">
 <edge COLOR="#111111" WIDTH="thin"/>
-<node TEXT="DMZ" ID="ID_256451641" CREATED="1590774212232" MODIFIED="1590874796764" COLOR="#111111">
+<node TEXT="DMZ" LOCALIZED_STYLE_REF="AutomaticLayout.level,5" ID="ID_256451641" CREATED="1590774212232" MODIFIED="1591090858208">
 <edge COLOR="#111111" WIDTH="thin"/>
 </node>
 </node>
@@ -323,11 +323,10 @@
 <node TEXT="Cyberdéfense" ID="ID_1200319938" CREATED="1590774330417" MODIFIED="1590875631746" COLOR="#00b439">
 <font NAME="SansSerif" SIZE="16"/>
 <edge STYLE="bezier" COLOR="#111111" WIDTH="thin"/>
-<node TEXT="Entrainement à la cyberdéfense" ID="ID_1848237644" CREATED="1590759978675" MODIFIED="1590874796751" COLOR="#990000">
+<node TEXT="Stratégie de cyberdefense" ID="ID_1464832966" CREATED="1590875566891" MODIFIED="1590875575236" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
-<edge COLOR="#111111" WIDTH="thin"/>
-</node>
-<node TEXT="SECOPS" ID="ID_1537340140" CREATED="1590874128512" MODIFIED="1590874796751" COLOR="#990000">
+<node TEXT="Veille et renseignement" ID="ID_1552514622" CREATED="1591090603653" MODIFIED="1591090616209"/>
+<node TEXT="SECOPS" FOLDED="true" ID="ID_1537340140" CREATED="1590874128512" MODIFIED="1591090592091" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
 <richcontent TYPE="NOTE">
 
@@ -337,10 +336,11 @@
   </head>
   <body>
     <p>
-      <font size="1">Mod&#232;le NIST (Cybersecurity Framework)</font>
+      <font size="1">Modèle NIST (Cybersecurity Framework)</font>
     </p>
   </body>
 </html>
+
 </richcontent>
 <edge COLOR="#111111" WIDTH="thin"/>
 <node TEXT="Identifier" ID="ID_862032828" CREATED="1590874155518" MODIFIED="1590874796752" COLOR="#111111">
@@ -359,36 +359,67 @@
 <edge COLOR="#111111" WIDTH="thin"/>
 </node>
 </node>
-<node TEXT="Gestion de crise" ID="ID_110017630" CREATED="1590759971343" MODIFIED="1590874796753" COLOR="#990000">
-<font NAME="SansSerif" SIZE="14"/>
-<edge COLOR="#111111" WIDTH="thin"/>
+<node TEXT="Deceptve défense" ID="ID_1537495400" CREATED="1591105672168" MODIFIED="1591105751432"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      https://omc.ceis.eu/countercraft-la-cyber-deception-active/
+    </p>
+    <p>
+      https://omc.ceis.eu/etat-des-lieux-des-nouvelles-solutions-de-deception/
+    </p>
+    <p>
+      
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 <node TEXT="VTI (Vulns/Threats/Incidents)" ID="ID_1236301290" CREATED="1590746401217" MODIFIED="1590874796753" COLOR="#990000" HGAP_QUANTITY="21.0 px" VSHIFT_QUANTITY="1.0 px">
 <font NAME="SansSerif" SIZE="14"/>
 <edge COLOR="#111111" WIDTH="thin"/>
 </node>
-<node TEXT="Veille et renseignements" ID="ID_886924073" CREATED="1590873668412" MODIFIED="1590874796753" COLOR="#990000">
+<node TEXT="Gestion de crise" ID="ID_110017630" CREATED="1590759971343" MODIFIED="1590874796753" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
 <edge COLOR="#111111" WIDTH="thin"/>
 </node>
-<node TEXT="Stratégie de cyberdefense" ID="ID_1464832966" CREATED="1590875566891" MODIFIED="1590875575236" COLOR="#990000">
+<node TEXT="FUSION Center" ID="ID_1258504143" CREATED="1591090616515" MODIFIED="1591092741607"/>
+<node TEXT="Entrainement à la cyberdéfense" ID="ID_1848237644" CREATED="1590759978675" MODIFIED="1590874796751" COLOR="#990000">
 <font NAME="SansSerif" SIZE="14"/>
-</node>
-<node TEXT="Technologies connexes" LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_80931959" CREATED="1590875601235" MODIFIED="1591089156500">
-<font NAME="SansSerif"/>
-<edge STYLE="bezier" WIDTH="thin"/>
+<edge COLOR="#111111" WIDTH="thin"/>
 </node>
 </node>
-<node TEXT="Gestion des menaces" FOLDED="true" ID="ID_1183875584" CREATED="1590759955035" MODIFIED="1590874796756" COLOR="#00b439">
+<node TEXT="Gestion des menaces" ID="ID_1183875584" CREATED="1590759955035" MODIFIED="1590874796756" COLOR="#00b439">
 <font NAME="SansSerif" SIZE="16"/>
 <edge STYLE="bezier" COLOR="#111111" WIDTH="thin"/>
+<node TEXT="Processus" ID="ID_371994072" CREATED="1591090552758" MODIFIED="1591090556068">
+<node TEXT="Techniques et outillages" ID="ID_1713582487" CREATED="1591090538810" MODIFIED="1591090546459"/>
+<node TEXT="Métiers et Compétences" ID="ID_1425963863" CREATED="1591090531285" MODIFIED="1591090538135"/>
 <node TEXT="Menaces" ID="ID_1522402515" CREATED="1591037457731" MODIFIED="1591037463811"/>
+</node>
+<node TEXT="Deceptive defense" ID="ID_959435546" CREATED="1591105776197" MODIFIED="1591479717436" STYLE="fork">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="closed"/>
+</node>
+<node TEXT="Détection et analyse" ID="ID_1927612744" CREATED="1591105806058" MODIFIED="1591105835025">
+<node TEXT="SIEM" ID="ID_1322432997" CREATED="1591105798786" MODIFIED="1591105804154"/>
+<node TEXT="SOC" ID="ID_871410705" CREATED="1591105796536" MODIFIED="1591105797861"/>
+</node>
 </node>
 <node TEXT="Gestion des incidents" ID="ID_763123809" CREATED="1590759963358" MODIFIED="1590875528730" COLOR="#00b439">
 <font NAME="SansSerif" SIZE="16"/>
 <edge STYLE="bezier" COLOR="#111111" WIDTH="thin"/>
-<node TEXT="Etat de l&apos;art" ID="ID_825648655" CREATED="1590875331435" MODIFIED="1590875395153" COLOR="#990000">
-<font NAME="SansSerif" SIZE="14"/>
+<node TEXT="Processus" ID="ID_1640359310" CREATED="1591090358732" MODIFIED="1591090376181">
+<node TEXT="Métiers et compétence" ID="ID_1962494708" CREATED="1591090330817" MODIFIED="1591090341983"/>
+<node TEXT="Techniques et outillages" ID="ID_1074530381" CREATED="1591090315471" MODIFIED="1591090329828"/>
+<node TEXT="Etat de l&apos;art" LOCALIZED_STYLE_REF="AutomaticLayout.level,4" ID="ID_825648655" CREATED="1590875331435" MODIFIED="1591090475824">
+<font NAME="SansSerif"/>
 <richcontent TYPE="NOTE">
 
 <html>
@@ -403,6 +434,7 @@
 </html>
 </richcontent>
 <edge STYLE="bezier" WIDTH="thin"/>
+</node>
 </node>
 </node>
 <node TEXT="Gestion des vulnérabilités" ID="ID_820641223" CREATED="1590759945288" MODIFIED="1590875629205" COLOR="#00b439">
