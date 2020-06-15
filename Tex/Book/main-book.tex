@@ -37,15 +37,16 @@
 %\excludecomment{techworkbox}\let\endtechworkbox\relax
 
 \usepackage{enumitem}
-\setlist [itemize,1]{label=\color{ocre}\faCaretRight }
+\setlist [itemize,1]{label=\color{ocre}\faCaretRight}
 
 %\usepackage{cleveref}
 
 %\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
 \addbibresource{Tex/bibliography.bib} % BibTeX bibliography file
 \defbibheading{bibempty}{}
-
-
+\makeatletter
+% \g@addto@macro{\UrlBreaks}{\UrlOrds}
+% \makeatother
 
 %---------------------------------------------------------------------
 \begin{document}
@@ -87,7 +88,7 @@
  %----------------------------------------------------------------------------------------
 %	 GLOSSARIES
 %----------------------------------------------------------------------------------------
- \printglossary[type=\acronymtype]
+ %\printglossary[type=\acronymtype]
 \printglossaries
 %----------------------------------------------------------------------------------------
 %	 MAIN DOCUMENT
@@ -107,6 +108,8 @@
 \addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliographie}} % Add a Bibliography heading to the table of contents
 
 %------------------------------------------------
+\nocite{*}
+
 \section*{Articles}
 \addcontentsline{toc}{section}{Articles}
 \printbibliography[heading=bibempty,type=article]

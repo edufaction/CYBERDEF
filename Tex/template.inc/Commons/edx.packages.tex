@@ -6,7 +6,7 @@
 %                              2020 eduf@ction
 %-------------------------------------------------------------
 
-\usepackage {url}
+\usepackage[hyphens,spaces,obeyspaces]{url}
 
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
@@ -135,6 +135,13 @@ bookmarksopen=true}
 % pour filigramme sur les pages
 \usepackage{eso-pic}
 
+%--------------------------------------------------------
+% for \gappto{\UrlBreaks}{\UrlOrds}
+% rather than 
+%\makeatletter
+% \g@addto@macro{\UrlBreaks}{\UrlOrds}
+% \makeatother
 
+\usepackage{etoolbox}
 
-
+\usepackage{breakurl}

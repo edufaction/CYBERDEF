@@ -409,6 +409,21 @@ title=#2,#1}
 %														\link 
 % Url et footnote du lien
 %-----------------------------------------------------
+
+% TT every character and hyphenate after it
+\def\hyphenateAndTtWholeString #1{\xHyphenate#1$\wholeString\unskip}
+
+\def\xHyphenate#1#2\wholeString {\if#1$%
+    \else\transform{#1}%
+    \takeTheRest#2\ofTheString\fi}
+
+\def\takeTheRest#1\ofTheString\fi
+{\fi \xHyphenate#1\wholeString}
+
+\def\transform#1{\url{#1}\hskip 0pt plus 1pt}
+
+% Define the \urlx command which works like \url, but with line brakes
+\def\urlx #1{\href{#1}{\hyphenateAndTtWholeString{#1}}}
   
 %  \newcommand{\link}[2]
 %  {
@@ -430,12 +445,22 @@ title=#2,#1}
   \newcommand{\wikipedia}[1]
   { \href{https://fr.wikipedia.org/wiki/#1}{\textcolor{grey}{#1}}\raisebox{0.5ex}{\tiny{\textcolor{ocre}{\faWikipediaW}}}}
   
-  %-----------------------------------------------------
+ 
+ 
+ %-----------------------------------------------------
+%														\utodo 
+%-----------------------------------------------------
+
+  \newcommand{\utodo}{\begin{center}{\noindent \textcolor{cyan}{\faGears~{chapitre en travaux - éléments non publiés} \faGears}}\end{center}}
+  
+  \newcommand{\utocomplete}{\noindent Chapitre en cours de rédaction, à compléter}
+  
+  %{\noindent \textcolor{cyan} {\faRefreshs~Chapitre en cours de rédaction, à compléter}}
+ 
+ %-----------------------------------------------------
 %														\Pframe 
 % Beamer Frame
 %-----------------------------------------------------
-
-
 
 
 %\newenvironment{Pframe}[1]{\mode<all>{\begin{frame}<presentation>\frametitle{#1}}{\end{frame}}}
@@ -451,12 +476,6 @@ title=#2,#1}
 %\mode<presentation>{\frametittle{#1}}
 %}
 %
-
-
-
-
-
-
 
 
 

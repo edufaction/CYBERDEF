@@ -5,17 +5,17 @@
 %============================
 \section{Sécurité des systèmes }
 
-Construire des systèmes surs sur nécessite  de travailler sur deux plans :
+Construire des systèmes dits surs  nécessite  de travailler sur deux plans :
 
 \begin{itemize}
-\item Rendre plus résistants les composants mêmes des systèmes d’information ou de l’environnement digital : on parle en particulier Security by Design
+\item Rendre plus résistants les composants mêmes des systèmes d’information ou de l’environnement digital : on parle en particulier de \UKword{Security by Design}
 \item Ajouter des composants dont la fonction ajoute des mécanismes de protections.
 \end{itemize}
 
 %============================
 \subsection{Fonctions de sécurité}
 
-Les fonctions de sécurité de protection sont généralement construites pour protéger les grandes fonctions des systèmes d’information
+Les fonctions de sécurité de protection sont généralement construites pour protéger les grandes fonctions des systèmes d’information :
 \begin{itemize}
 \item Stocker : chiffrement, sauvegarde ...;
 \item Traiter : redondance...;
@@ -26,61 +26,61 @@ On peut aussi disposer de fonctions de sécurité dont la mission n’est pas de
 
 %.FW . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[Firewall Réseau]
-xxx
+\utodo
 \end{nota}
 %WAF. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[Web Application Firewall]
-xxx
+\utodo
 \end{nota}
 %PKI. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[IGC/PKI]
-xxx
+\utodo
 \end{nota}
 
 %Coffre. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[Coffre fort électronique]
-xxx
+\utodo
 \end{nota}
 
 %DMZ . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[DMZ]
-xxx
+\utodo
 \end{nota}
 
 %Coffre. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[Annuaire]
-Au coeur des systèmes d’authentification des entreprises
+Au coeur des systèmes d’authentification des entreprises \utodo
 \end{nota}
 
 
 %VPN. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[VPN]
-xxx
+\utodo
 \end{nota}
 
 
 %Signature. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[Signature]
-xxx
+\utodo
 \end{nota}
 
 %Tokne. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[Clés/token]
-xxx
+\utodo
 \end{nota}
 
 %Porxy. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[Proxy]
-xxx
+\utodo
 \end{nota}
 %Routeurs. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[Routeur]
-xxx
+\utodo
 \end{nota}
 
 %. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
 \begin{nota}[IPS/IDS]
-xxx
+\utodo
 \end{nota}
 
 %============================
@@ -90,19 +90,23 @@ xxx
 La notion de sécurité « par construction » est une notion large quand on parle de composants ou de système numérique.
 Le principe est d’introduire dès la conception des fonctions de sécurité sur la base des risques et des critères de menaces de l’environnement. (en n’oubliant pas les critères économiques).
 
-Par ailleurs des mécanismes « d’autodéfense » et des mécanismes de notifications d’alertes (pouvant être des log par exemple) peuvent être ajouté.
+Par ailleurs des mécanismes « d’autodéfense » et des mécanismes de notifications d’alertes (pouvant être des logs par exemple) peuvent être ajouté.
 
-le déploiement de ce concept au sein des projets  se révèle un peu différents en fonction de la cible :
+Le déploiement de ce concept au sein des projets  se révèle un peu différents en fonction de la cible :
 
 \begin{itemize}
 %. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-	\item  [Sécurité d’un système d’information] Dans la majorité des cas, l’entreprise possède des systèmes ayant déjà un certain degré de maturité. Les nouveaux projets s’intégrant dans le système d’information, nécessite un gouvernance plus complexe, et parler de Sécurité Intégrée et de conformité aux règles sécurité de l’entreprise. (intégration avec les services de sécurité existant, utilisation de la PKI, des services de chiffrement, coffre fort, d’authentification)
+	\item  \textbf{Sécurité d’un système d’information} : Dans la majorité des cas, l’entreprise possède des systèmes ayant déjà un certain degré de maturité. Les nouveaux projets s’intégrant dans le système d’information, nécessite un gouvernance plus complexe, et parler de Sécurité Intégrée et de conformité aux règles sécurité de l’entreprise. (intégration avec les services de sécurité existant, utilisation de la PKI, des services de chiffrement, coffre fort, d’authentification)
 %. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-	\item [Sécurité d’un produit] (en n’oubliant pas les produits de sécurité qui eux même nécessitent une prise en compte des propriété de sécurité)
+	\item \textbf{Sécurité d’un produit} : (en n’oubliant pas les produits de sécurité qui eux même nécessitent une prise en compte des propriété de sécurité)
 %. . . . . . . . . . . . . . . . . . . . . . . . . . . . 
-	\item [Sécurité d’un projet ou système intégrant des composants informatiques]
+	\item \textbf{Sécurité d’un projet} ou système intégrant des composants informatiques
 \end{itemize}
 
 \section{Défense en profondeur}
+
+\utodo
+
+\utocomplete
 
 
