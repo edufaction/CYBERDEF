@@ -6,7 +6,7 @@
 %                              2020 eduf@ction
 %-------------------------------------------------------------
 \usepackage{parskip}
-\setlength{\parindent}{10pt}
+\setlength{\parindent}{0em}
 \setlength{\parskip}{5pt} % 1ex plus 0.5ex minus 0.2ex}
 
 %---------------------------------------------------------------
@@ -24,8 +24,8 @@
 	headheight=20pt, 
 	footskip=1.4cm, 
 	headsep=10pt, 
-	showframe, 
-	showcrop 
+%	showframe, 
+%	showcrop 
 }
 
 \makeatletter
@@ -85,8 +85,9 @@
 %put         Utopia
  
 
-\renewcommand{\rmdefault}{pag} % text 
-\renewcommand{\sfdefault}{phv} % titre
+\renewcommand{\rmdefault}{phv} % text 
+\renewcommand{\sfdefault}{pag} % titre
+%\renewcommand{\sfdefault}{phv} % titre
 
 
 %-------------------------------------------------------------------------
@@ -187,6 +188,9 @@
 	{\contentslabel[\thecontentslabel]{1.25cm}} % Formatting of numbered sections of this type
 	{} % Formatting of numberless sections of this type
 	{\ \titlerule*[.5pc]{.}\;\thecontentspage} % Formatting of the filler to the right of the heading and the page number
+
+
+
 
 % Figure text styling
 \titlecontents{figure}
@@ -458,7 +462,9 @@ innerbottommargin=5pt]{cBox}
 %----------------------------------------------------------------------------------------
 
 \makeatletter
-\renewcommand{\@seccntformat}[1]{\textcolor{ocre}{\csname the#1\endcsname}\quad}   
+% \renewcommand{\@seccntformat}[1]{\textcolor{ocre}{\csname the#1\endcsname}\quad}   
+
+%\makeatother
 
 %----------------------------------------------------------------------------------------
 %	PART HEADINGS

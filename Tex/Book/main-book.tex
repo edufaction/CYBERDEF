@@ -5,9 +5,9 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%---------------------------------------------------------------------------------
+%-------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%---------------------------------------------------------------------------------
+%-------------------------------------------------------------------
 
 \documentclass[10pt,fleqn, a4paper,twoside,openright]{book}
 
@@ -17,6 +17,8 @@
 %\PassOptionsToPackage{unicode}{hyperref}
 %\PassOptionsToPackage{naturalnames}{hyperref}
 
+% load titlesec before beamerarticle
+\usepackage{titlesec}
 \usepackage{beamerarticle}
 
 \usepackage{ae}
@@ -29,12 +31,20 @@
 
 \usepackage{titletoc} % Required for manipulating the table of contents
 
+
 \input{Tex/template.inc/Commons/edx.packages.tex}
 \input{Tex/template.inc/Commons/edx.command.tex}
 \input{Tex/template.inc/Commons/edx.styles.tex}
 
 % Exclure les notes pour les travaux des étudiants
 %\excludecomment{techworkbox}\let\endtechworkbox\relax
+
+
+
+\titleformat*{\section}{\large\bfseries\sffamily\color{ocre}}
+\titleformat*{\subsection}{\bfseries\sffamily\color{black}}
+\titleformat*{\subsubsection}{\bfseries\sffamily\color{ocre}}
+
 
 \usepackage{enumitem}
 \setlist [itemize,1]{label=\color{ocre}\faCaretRight}
@@ -48,7 +58,7 @@
 % \g@addto@macro{\UrlBreaks}{\UrlOrds}
 % \makeatother
 
-%---------------------------------------------------------------------
+%-------------------------------------------------------
 \begin{document}
 
 \addtocontents{toc}{\protect\hypertarget{toc}{}}
@@ -56,9 +66,9 @@
 \input{Tex/acronymes.tex}
 \input{Tex/glossaire.tex}
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 %	COVER  OF THE BOOK (1st and 4th)
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 
 \input{Tex/Book/coverfront-book.tex}  % Book Cover
 \input{Tex/Book/book.notice.tex}
@@ -66,9 +76,9 @@
 
 %\input{Tex/Includes/introduction.tex}
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 %	TABLE OF CONTENTS
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 
 %\usechapterimagefalse % If you don't want to include a chapter image, use this to toggle images off - it can be enabled later with 
  
@@ -85,47 +95,47 @@
 \pagestyle{fancy} % Enable headers and footers again
 
  
- %----------------------------------------------------------------------------------------
+ %--------------------------------------------------------------------------
 %	 GLOSSARIES
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
  %\printglossary[type=\acronymtype]
 \printglossaries
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 %	 MAIN DOCUMENT
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 
 \input{Tex/Book/MyBookCyber.tex} 
 
 
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 %	ANNEXES et END PART
 \part{Références et Index}
-%----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------
 
-%------------------------------------------------
+%----------------------------------
 \chapter*{Références}
 %\printbibliography[]
 \addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliographie}} % Add a Bibliography heading to the table of contents
 
-%------------------------------------------------
+%----------------------------------
 \nocite{*}
 
 \section*{Articles}
 \addcontentsline{toc}{section}{Articles}
 \printbibliography[heading=bibempty,type=article]
 
-%------------------------------------------------
+%----------------------------------
 \section*{Ouvrages}
 \addcontentsline{toc}{section}{Ouvrages}
 \printbibliography[heading=bibempty,type=book]
 
-%------------------------------------------------
+%----------------------------------
 %\chapter*{Figures et index}
 \addcontentsline{toc}{chapter}{\textcolor{ocre}{Figures}}
 %\section*{Figures}
 \listoffigures
 
-%------------------------------------------------
+%----------------------------------
 %\section*{index}
 %\cleardoublepage % Make sure the index starts on an odd (right side) page
 \phantomsection
