@@ -7,7 +7,7 @@
 %-------------------------------------------------------------
 
 
-A une époque où chaque jour la presse se fait régulièrement écho de pertes ou de vols de données, où l'Europe déploie son corpus réglementaire autour de la protection des données personnelles, certains s'interrogent encore sur les moyens de protéger et partager de manière sûre son patrimoine informationnel. La cryptographie est une des disciplines de la cryptologie qui s'attache à protéger ces patrimoines en confidentialité, intégrité ou en authenticité. Au-delà des aspects mathématiques passionnants, quels sont les usages et les arcanes techniques de ces technologies ?
+A une époque où chaque jour la presse se fait régulièrement écho de pertes ou de vols de données, où l'on continue à investir dans la  protection des données personnelles, certains s'interrogent encore sur les moyens de protéger et partager de manière sûre son patrimoine informationnel. La cryptographie est une des disciplines de la cryptologie qui s'attache à protéger ces patrimoines en confidentialité, intégrité ou en authenticité. Il me paraissait intéressant de proposer en quelques mots,  le vocabulaire et les concepts. Si la cryptographie est un outil pour deployer des mesures de sécurité, c'est aussi un ensemble de techniques utilisées par les attaquant.  Au-delà des aspects mathématiques passionnants que nous ne traiterons pas ici,  seuls quelques usages et arcanes techniques sont présentés.
 
 \section{Définitions}
 
@@ -16,7 +16,7 @@ Ces techniques remontent à la nuit des temps. Historiquement militaires et dipl
 
 Elles ont envahi à grande vitesse toutes les technologies numériques.\g{Signer, protéger, imputer, authentifier... } sont devenus des termes courants de cette vie numérique. On est toutefois surpris de l'usage, quelquefois un peu\g{dévoyé }, de certaines expressions.\g{Crypter } s'oppose à\g{décrypter }, mais si décrypter, c'est\g{décoder } sans connaître les secrets, crypter est humoristiquement enterrer  mettre en\g{crypte } ! Si les expressions\g{coder } et\g{décoder } sont régulièrement utilisées, celles préconisées sont\g{chiffrer } et\g{déchiffrer }. En France, au sein des armées, les acteurs du domaine se nomment d'ailleurs des spécialistes du chiffre \footnote{ARCSI : Association des réservistes du chiffre et de la sécurité de l'information - www.arcsi.fr}. Face à un spécialiste, du mathématicien cryptologue au commercial de services numériques de confiance, de nombreux termes se bousculent dans les discussions : algorithmes robustes de niveau militaire, clefs très longues, protocoles sûrs, certificats de confiance...
 
-\section{Des concepts}
+\section{Concepts}
 Derrière ces arguments qui pourraient, au premier abord, paraître convaincants, il convient rapidement d'opposer une petite analyse terminologique et conceptuelle.
 
 \subsection{Algorithmes}
@@ -27,7 +27,7 @@ Quelques grandes révolutions ont eu lieu depuis le chiffre de César, mécanism
 utilisé dans notre enfance, et celui de la machine allemande Enigma de la dernière guerre, avec des mécanismes de substitution dits polyalphabétiques. Ces évolutions et révolutions ont lieu chaque fois que ces fameux cryptanalystes trouvent ou entrevoient une solution pour casser ce chiffre... Une longue tradition dans cette course entre la cuirasse et le canon.
 
 
-\subsubsection{Le chiffrement à clefs secrètes} 
+\subsubsection{Chiffrement à clefs secrètes} 
 Ces premiers algorithmes dits symétriques ou à clefs secrètes ont été et restent centraux, car ils se révèlent très rapides. Le principe est que pour déchiffrer, il faut simplement la clef qui a servi à chiffrer, d'où le terme\g{symétrique }.
 Une des grandes difficultés dans ces algorithmes est la combinatoire pour partager le secret. Si partager de manière sûre un secret entre deux ou trois correspondants est maîtrisable, le faire pour mille ne permet plus vraiment de parler d'une clef secrète ! L'histoire des célébrités technologiques retient des algorithmes comme DES, 3DES, IDEA, RC4 et le dernier réputé inviolé et issu d'un appel à projet du NIST\footnote{National institute of standards and technology.} et paru dans les années 2000 : AES256.
 

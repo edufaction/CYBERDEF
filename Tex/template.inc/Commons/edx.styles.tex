@@ -28,6 +28,10 @@
 %	showcrop 
 }
 
+%---------------------------------------------------------------
+%	FOOTNOTE (format)
+%---------------------------------------------------------------
+
 \makeatletter
 \long\def\@makefntextFB#1{%
     \ifx\thefootnote\ftnISsymbol
@@ -189,8 +193,19 @@
 	{} % Formatting of numberless sections of this type
 	{\ \titlerule*[.5pc]{.}\;\thecontentspage} % Formatting of the filler to the right of the heading and the page number
 
+%\titlecontents{subsubsection}
+%	[1.25cm] % Left indentation
+%	{\addvspace{1pt}\sffamily\tiny} % Spacing and font options for subsections
+%	{\contentslabel[\thecontentslabel]{1.25cm}} % Formatting of numbered sections of this type
+%	{} % Formatting of numberless sections of this type
+%	{\ \titlerule*[.5pc]{.}\;\thecontentspage} % Formatting of the filler to the right of the heading and the page number
 
-
+\titlecontents{subsubsection}
+[1.25cm]
+  {\addvspace{1pt}\sffamily\tiny}
+ {\contentslabel[\thecontentslabel]{1.25cm}}
+  {}
+  {}
 
 % Figure text styling
 \titlecontents{figure}

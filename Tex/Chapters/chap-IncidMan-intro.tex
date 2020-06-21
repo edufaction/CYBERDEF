@@ -9,11 +9,12 @@
 %==================================================
 \section{GERER les incidents}
 
-La réponse aux incidents est une approche organisée pour traiter et gérer les conséquences d'une violation de la sécurité ou d'une cyberattaque, également appelée incident informatique, incident informatique ou incident de sécurité. L'objectif est de gérer la situation de manière à limiter les dommages et à réduire le temps et les coûts de récupération.
+La réponse aux incidents est une approche organisée pour traiter et gérer les conséquences d'une violation de la sécurité ou d'une cyberattaque, également appelée incident informatique ou incident de sécurité (informatique). L'objectif d'une réponse à incident est de gérer la situation de manière à limiter les dommages et à réduire le temps et les coûts de récupération des informations, et de reprise d'activité et de revenu à la normale.
 
-La réponse aux incidents de sécurité informatique est devenue un axe majeur de la gestion de la sécurité en entreprise. De nouveaux types d'incidents liés à la sécurité émergent régulièrement avec des manières d'agir et de réagir différents. Les activités préventives basées sur les résultats des évaluations des risques peuvent réduire le nombre d'incidents à impact, mais tous les incidents ne peuvent pas être évités. Une capacité de réponse aux incidents est donc nécessaire pour traiter rapidement les incidents, minimiser les impacts, réduire les pertes et destructions, couvrir les faiblesses qui ont été exploitées et restaurer les services numériques. 
+La réponse aux incidents de sécurité informatique est devenue un axe majeur de la gestion de la sécurité en entreprise. De nouveaux types d'incidents émergent régulièrement avec des manières d'agir et de réagir différents. Il est important de distinguer les incidents liés à des phénomènes accidentels à ceux liés à des atteintes intentionnelles. Nous distingueront donc ici la notion d'incident de sécurité d'incident informatique, en nous concentrant sur le volet incident de sécurité considéré comme lié à des attaques informatique.  
+Les activités préventives basées sur les résultats des évaluations des risques peuvent réduire le nombre d'incidents de sécurité à impact, mais tous ces incidents ne peuvent pas être évités. Une capacité de réponse aux incidents de sécurité est donc nécessaire pour traiter rapidement les incidents, minimiser les impacts, réduire les pertes et destructions, couvrir les faiblesses qui ont été exploitées et restaurer les services numériques. 
 
-Idéalement, les activités de réponse aux incidents sont menées par l'équipe de réponse aux incidents de sécurité informatique de l'organisation (CSIRT), un groupe qui a été précédemment sélectionné pour inclure la sécurité de l'information et le personnel informatique général ou de la DS. L'équipe peut également comprendre des représentants des services juridique, des ressources humaines, de la communication, et des risques. L'équipe de réponse aux incidents suit normalement un plan de réponse aux incidents (IRP) de l'organisation, qui est un ensemble d'instructions écrites qui décrivent la réponse de l'organisation aux événements du réseau, aux incidents de sécurité et aux bris confirmés. 
+Idéalement pour des attaques, les activités de réponse aux incidents sont menées par l'équipe de réponse aux incidents de sécurité informatique de l'organisation (\g{aCSIRT}) car elle nécessite des postures particulières.  L'équipe peut également comprendre des représentants des services juridique, des ressources humaines, de la communication, et des risques. L'équipe de réponse aux incidents suit normalement un plan de réponse aux incidents (\gls{aIRP}) de l'organisation, qui est un ensemble d'instructions écrites qui décrivent la réponse de l'organisation aux événements du réseau, aux incidents de sécurité et aux impacts confirmés. 
 
 Cette réponse plannifiée aux incidents est une entreprise complexe, l'établissement d'une capacité de réponse aux incidents réussie nécessite une planification et des ressources importante. La surveillance continue des attaques est essentielle en avant phase. Il est essentiel d'établir des procédures claires pour hiérarchiser le traitement des incidents, tout comme la mise en œuvre de méthodes efficaces de collecte, d'analyse et de communication des données. Il est également essentiel d'établir des relations et d'établir des moyens de communication appropriés avec d'autres groupes internes (par exemple, les ressources humaines, les services juridiques) et avec des groupes externes (par exemple, d'autres équipes de réponse aux incidents (CERT, CSIRT..), les forces de l'ordre).
 
@@ -84,7 +85,7 @@ Je vous propose quelques éléments de terminologie avec la correspondance anglo
 
 \begin{itemize}
 		\item \edxdico{Investigations Numériques}{Digital Investigation};
-		\item\edxdico{Analyse légale}{Forensic (Inforensic)};
+		\item\edxdico{Analyse légale}{forensique (Inforensique)};
 		\item \edxdico{CERT}{Computer Emergency Response Team};
 		\item \edxdico{CSIRT}{Computer Security Incident Response Team};
 		\item \edxdico{Gestion des Incidents}{Incident Management}.
@@ -162,7 +163,7 @@ Nous allons toutefois explorer la  gestion de l'incident au quotidien sur la bas
 \begin{itemize}
   \item \textbf{Réagir} : premier processus, si nous pouvons le nommer ainsi est  la réaction immédiate en cas d'incident. Une entreprise peu ou pas organisée commence par découvrir les techniques de réponse à incident par cette première action. Cette réaction peut être compléter par des mécanismes (juridiques) de \textbf{neutralisation} de la menace.
 
-  \item \textbf{Enquêter} : Si la réaction pour réduire l'impact ou neutraliser l'attaque est au coeur de la réponse à incident, il est nécessaire de rapidement lancer l'analyse de causes et origines de l'incident. Ce domaine d'action qui regroupe l'analyse post-morten et l'inforensic.
+  \item \textbf{Enquêter} : Si la réaction pour réduire l'impact ou neutraliser l'attaque est au coeur de la réponse à incident, il est nécessaire de rapidement lancer l'analyse de causes et origines de l'incident. Ce domaine d'action qui regroupe l'analyse post-morten et le forensique.
 
   \item \textbf{Anticiper} : Organiser ses mécanismes de réponse (moyens et compétences), intégrer le processus de réponse à incident Cyber dans les mécanisme ITIL de gestion des incidents, organiser une cellule de CSIRT.
 
@@ -176,10 +177,7 @@ Nous allons toutefois explorer la  gestion de l'incident au quotidien sur la bas
 
 Dans certains ouvrages, le cycle des gestions d’incidents informatiques  peut être  présenté  en sept phases : Préparation, Détection, Identification, Isolement, Éradication, Restauration et Activités Post-Incident. 
 
-Il est important de différencier les phases de Détection et d’Identification des autres.  La première étape consiste à découvrir la présence d’une cyber-attaque ce que j'ai présenté pour ma part dans la partie \g{Threat Detection}"  alors que la deuxième est composée de l’ensemble des investigations et analyses forensiques permettant de déterminer le type d’attaque et son étendue, d’identifier l’ensemble des systèmes et comptes infectés, ainsi que de préparer un plan d’action pour répondre activement à la cyber-attaque (Isolation, Éradication et Restauration). C'est ces phases que nous traiterons comme le processus de gestion des incidents.
-
-
-
+Il est important de différencier les phases de Détection et d’Identification des autres.  La première étape consiste à découvrir la présence d’une cyberattaque ce que j'ai présenté pour ma part dans la partie \g{Threat Detection}  alors que la deuxième est composée de l’ensemble des investigations et analyses forensiques permettant de déterminer le type d’attaque et son étendue, d’identifier l’ensemble des systèmes et comptes infectés, ainsi que de préparer un plan d’action pour répondre activement à la cyberattaque (Isolation, Éradication et Restauration). C'est ces phases que nous traiterons comme le processus de gestion des incidents.
 
 %  					\begin{itemize}
 %  							\item 	Mécanismes et processus
