@@ -189,6 +189,10 @@ args = parseCLIArguments();
 
 if args.clean:
     try:
+        logger.info("Moving output from temp directory"+ os.getcwd())
+        for basename in os.listdir(os.getcwd()):
+            if basename.endswith('.dvi') | basename.endswith('.pdf') :
+                shutil.move(basename,os.getcwd() + "/builder/")
         shutil.rmtree("out")
     except :
         logger.info("Temp folder not found")
