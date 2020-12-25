@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+ 
+<question type="category">
+  <category>
+    <text>$module$/CYBERDEF101-Cyberedu-QUIZZ 4</text>
+  </category>
+</question>
+ 
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.1</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>De quelle famille de normes internationales, une organisation peut-elle s&rsquo;inspirer pour int&eacute;grer la s&eacute;curit&eacute; en son sein ? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>27000</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>9000</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>14000</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.2</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Citer un exemple repr&eacute;sentatif d&rsquo;une organisation devant avoir recours &agrave; une certification de s&eacute;curit&eacute;. </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>pour respecter une r&eacute;glementation</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>pour s&rsquo;am&eacute;liorer</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>pour se prot&eacute;ger contre des menaces sp&eacute;cifiques</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.3</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Tr&egrave;s souvent dans les entreprises, les informations ont toutes le m&ecirc;me niveau de confidentialit&eacute; toutes non confidentielles </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Faux.</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.4</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Pour une bonne int&eacute;gration de la s&eacute;curit&eacute; dans l&rsquo;organisation, le personnel doit &ecirc;tre sensibilis&eacute; &agrave; la s&eacute;curit&eacute; conform&eacute;ment &agrave; leurs fonctions </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Faux.</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.5</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Citer les proc&eacute;dures de gestion des d&eacute;parts du personnel indispensables impactant la s&eacute;curit&eacute; </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Retrait des acc&egrave;s</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Restitution du mat&eacute;riel fourni (badge, ordinateur, .\kern \fontdimen 3\font .\kern \fontdimen 3\font .\kern \fontdimen 3\font )</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Solde de tout compte</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.6</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>La s&eacute;curit&eacute; c&rsquo;est comme la cerise sur le g&acirc;teau elle doit &ecirc;tre prise en compte &agrave; la fin d&rsquo;un projet </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Faux.</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.7</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Le but d&rsquo;une analyse de risques est de d&eacute;terminer pour un p&eacute;rim&egrave;tre donn&eacute; (projet par exemple), les risques qui peuvent porter sur les biens non sensibles </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Faux</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.8</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>S&eacute;lectionner la phase qui r&eacute;sume le plus la d&eacute;marche d&rsquo;analyse de risques </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Identifier les agents menacants et les neutraliser</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Identifier les acteurs importants du projet</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Inventorier les biens</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>D&eacute;terminer les risques et les traiter</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.9</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Est-ce que tous les risques issus d&rsquo;une analyse de risques doivent-ils &ecirc;tre trait&eacute;s par une mesure de r&eacute;duction des risques ? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Non seuls ceux dont le niveau de criticit&eacute; est sup&eacute;rieur au seuil de tol&eacute;rance</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Oui tous les risques doivent &ecirc;tre couverts</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.10</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Choisir la (les) proposition(s) correcte(s). Au cours de l&rsquo;analyse de risques, les contre-mesures sont des mesures de r&eacute;duction de risque qui peuvent &ecirc;tre </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>techniques et organisationnelles</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>techniques uniquement</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>organisationnelles uniquement</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>d&eacute;clin&eacute;es des objectifs de s&eacute;curit&eacute; d&eacute;finis.</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.11</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Choisir la (les) proposition(s) correcte(s) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Il est plus facile d&rsquo;attaquer un syst&egrave;me que de le rendre invuln&eacute;rable</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Il est facile de cr&eacute;er un syst&egrave;me sans aucune vuln&eacute;rabilit&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Pour d&eacute;fendre un syst&egrave;me, il suffit de le prot&eacute;ger de mani&egrave;re p&eacute;rim&eacute;trique</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>La d&eacute;fense en profondeur peut &ecirc;tre appliqu&eacute;e pour prot&eacute;ger un syst&egrave;me.</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.12</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Choisir la (les) proposition(s) correcte(s). La d&eacute;fense en profondeur est un principe d&rsquo;origine militaire qui consiste &agrave; avoir plusieurs lignes de d&eacute;fense constituant des barri&egrave;res autonomes pour d&eacute;fense un syst&egrave;me </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Faux.</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.13</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Choisir la (les) proposition(s) correcte(s). Pour une organisation, l&rsquo;usage des services du Cloud doit prendre en compte </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>les exigences l&eacute;gales relatives aux donn&eacute;es h&eacute;berg&eacute;es</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>les m&eacute;canismes de s&eacute;curit&eacute; tels que le chiffrement des donn&eacute;es stock&eacute;es propos&eacute;s par le fournisseur du service</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>le devenir des donn&eacute;es h&eacute;berg&eacute;es &agrave; la fin du contrat</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>les certifications dont dispose le fournisseur du service Cloud.</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.14</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>L&rsquo;une des difficult&eacute;s de l&rsquo;int&eacute;gration de la s&eacute;curit&eacute; dans une organisation, est celle des choix &eacute;clair&eacute;s en mati&egrave;re de produits de confiance </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Faux.</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.15</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Dans une organisation, la s&eacute;curit&eacute; est critique. Elle doit &ecirc;tre impos&eacute;e &agrave; tous sans consultation </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Faux.</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.16</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Le Shadow IT ou Shadow Cloud est une pratique qui consiste pour les utilisateurs &agrave; souscrire directement aux services Cloud sans la consultation et aval de leur DSI et en souvent en d&eacute;pit de la politique de s&eacute;curit&eacute; </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Faux</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.17</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Choisir la (les) proposition(s) correcte(s). Le Big Data peut constituer une opportunit&eacute; en s&eacute;curit&eacute; car il peut permettre de </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>d&rsquo;envoyer les donn&eacute;es sensibles de l&rsquo;organisation en clair vers le Cloud</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>d&rsquo;utiliser une capacit&eacute; de traitement de mani&egrave;re &agrave; effectuer l&rsquo;analyse d&rsquo;&eacute;v&egrave;nements de s&eacute;curit&eacute; en temps r&eacute;el</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>de corr&eacute;ler les traces provenant de diff&eacute;rents &eacute;quipements r&eacute;seau pour d&eacute;tecter des menaces persistantes avanc&eacute;es (APT)</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>de surveiller le trafic r&eacute;seau en temps r&eacute;el pour d&eacute;tecter les botnets.</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.18</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Citer un m&eacute;tier, avec une principale activit&eacute; associ&eacute;e, sollicit&eacute; dans chaque phase d&rsquo;un cycle d&rsquo;un projet </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>Expression de besoin Chef de projet/consultant MOA pour d&eacute;finir les exigences de s&eacute;curit&eacute; issues d&rsquo;une analyse de risque</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>D&eacute;veloppement Chef de projet/consultant MOE, architecte, concepteur/d&eacute;veloppeur pour sp&eacute;cifier, concevoir/d&eacute;velopper les mesures de s&eacute;curit&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>Validation auditeur technique ou organisationnel pour contr\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hbox {o\global \mathchardef \accent@spacefactor \spacefactor }\let \begingroup \endgroup \relax \let \ignorespaces \relax \accent 94 o\egroup \spacefactor \accent@spacefactor ler la conformit&eacute; et l&rsquo;efficacit&eacute; des mesures de s&eacute;curit&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>Exploitation technicien ou administrateur pour maintenir en condition de s&eacute;curit&eacute; (mise &agrave; jour des patchs et des bases de signature), analyste pour faire la veille sur les vuln&eacute;rabilit&eacute;s ou d&eacute;tecter des incidents de s&eacute;curit&eacute;</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.19</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Les comp&eacute;tences recherch&eacute;es en cybers&eacute;curit&eacute; sont uniquement techniques </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Faux.</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name>
+    <text>Cyberedu-QUIZZ-ID-4.20</text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>La cybers&eacute;curit&eacute; est un secteur ayant peu de perspective d&rsquo;embauche </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.1000000</penalty>
+  <hidden>0</hidden>
+  <showstandardinstruction>0</showstandardinstruction>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="0" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Faux.</p>]]></text>
+  </answer>
+</question>
+ 
+</quiz>

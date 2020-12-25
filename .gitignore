@@ -1,5 +1,13 @@
 /.texpadtmp/*
 /out/*
 /Projets/MODEL/.texpadtmp/*
+/moodle/.texpadtmp/*
 .DS_Store
 /*.pdf
+*.bbl
+*.log
+*.blg
+*.aux
+*.run.xml
+*.toc
+
