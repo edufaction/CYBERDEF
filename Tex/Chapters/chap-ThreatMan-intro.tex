@@ -46,7 +46,7 @@ Après quelques définitions et positionnement dans l'analyse de menace,  de la 
 \subsection{Modèles}
 
 Ce sont généralement les attaques externes et massives qui font l’actualité dans les médias. 
-Un grand nombre de risques cyber quotidiens sont issus de l'intérieur même de l'entreprise .
+Un grand nombre de risques cyber quotidiens sont issus de l'intérieur même de l'entreprise.
 Des  fuites de la part d'employés qui, de façon intentionnelle ou non, révèlent des mots de passe ou des informations sensibles. Une opération initiée par des acteurs internes malveillants (salariés, partenaires, clients) qui peuvent utiliser les informations à leur portée afin d’exploiter ou de porter dommage aux systèmes d'information de l’entreprise, mais plus globalement à l'entreprise dans sa globalité.
 
 \mode<all>{\picframe{Tex/Pictures/img-var}{Un modèle de gestion cyberdéfense}{0.7}{lbl-threatman}}
@@ -57,15 +57,15 @@ Les attaquants externes sont, certes, des menaces croissantes car elles recherch
 
 Il est important toutefois de ne pas distinguer des dynamiques internes et externes en terme d'agression cyber, c'est pour cela que les modèles de Cyberdéfense ne formalisent que très peu cette notion de provenance de l'attaque.
 
-En outre, sur le triptyque \g{Vulnérabilités, Menaces, Incidents} \uref{Modèle de cyberdéfense}{lbl-threatman}. la notion d'attaque interne et/ou externe n'a de sens qu'au titre de la responsabilité du périmètre, car rien n'interdit de positionner des capteurs en dehors de son périmètre technique pour anticiper la menace. Ainsi, la veille sur internet, le renseignement cyber sont nécessairement équipés de capteurs pouvant faire remonter des événements dans des chaines d'alertes Cyber.
+En outre, sur le triptyque \g{Vulnérabilités, Menaces, Incidents} \uref{Modèle de cyberdéfense}{lbl-threatman}. la notion d'attaque interne et/ou externe n'a de sens qu'au titre de la responsabilité du périmètre, car rien n'interdit de positionner des capteurs en dehors de son périmètre technique pour anticiper la menace. Ainsi, la veille sur internet, le renseignement cyber sont nécessairement équipés de capteurs pouvant faire remonter des événements dans des chaînes d'alertes Cyber.
 Par exemple, l'attaque d'une entreprise du même secteur peut être  en soit un incident pouvant générer une alerte.
 
-Si on se focalise sur la gestion de la menace, il existe de nombreuses manières de présenter ce processus. Un modèle \uref{Threat Management Cycle}{lbl-threatrosas} issu des travaux de l'\gls{aOTAN} est intéressant car il propose 4 axes d'analyses, toutefois Threat Mitigation et Threat Protection sont un peu ambiguës.
+Si on se focalise sur la gestion de la menace, il existe de nombreuses manières de présenter ce processus. Un modèle \uref{Threat Management Cycle}{lbl-threatrosas} issu des travaux de l'\gls{aOTAN} est intéressant car il propose 4 axes d'analyses, toutefois Threat Mitigation et Threat Protection sont un peu ambigus.
 
 
 \mode<all>{\picframe{Tex/Pictures/img-threatrosas}{les 4 axes de la gestion de la menace}{0.5}{lbl-threatrosas}}
 
-Je propose de continuer d'utiliser le modèle organiser autour de quatre volets (Surveiller, Détecter, Alerter, s'entrainer) \uref{Défendre les actifs}{lbl-varmenaces}  pour structurer la présentation.
+Je propose de continuer d'utiliser le modèle organisé autour de quatre volets (Surveiller, Détecter, Alerter, s'entrainer) \uref{Défendre les actifs}{lbl-varmenaces}  pour structurer la présentation.
 
 %Différents types de menaces à la cybersécurité
 
@@ -101,15 +101,15 @@ Il est important aussi de repositionner la définition des menaces par rapport �
 \mode<all>{\picframe{Tex/Pictures/img-threatwheel}{la gestion de la menace}{0.8}{lbl-threatwheel}}
 
 \begin{itemize}
-  \item Des attaques \textbf{matérialisent} des menaces,
+  \item des attaques \textbf{matérialisent} des menaces,
   \item des menaces \textbf{exploitent} des vulnérabilités,
   \item des vulnérabilités \textbf{exposent} à des risques,
-  \item des risques\textbf{ sont converts }par des contre-mesures,
+  \item des risques\textbf{ sont couverts }par des contre-mesures,
   \item des \textbf{contre-mesures }protègent des actifs,
   \item des actifs \textbf{sont  soumis }à  des menaces.
 \end{itemize}
 
-Nous voyons donc ici qu'il est important de ne pas séparer en terme de gouvernance et de pilotage opérationnel de la sécurité la gestion des vulnérabilités, la gestion des menaces et la gestion des risques.
+Nous voyons donc ici qu'il est important de ne pas séparer en terme de gouvernance et de pilotage opérationnel la sécurité la gestion des vulnérabilités, la gestion des menaces et la gestion des risques.
 
 
 %******************************************
@@ -130,13 +130,13 @@ Gérer la menace comporte deux donc domaines d'activités :
 
 \mode<all>{\picframe{Tex/Pictures/img-logman}{la gestion de la menace}{0.8}{lbl-logman}}
 
-Ces deux domaines d'activités se base sur la remontée d'information et l'automatisation des détections d'évènements à risques.  Pour automatiser la détection d'évènement, il donc imprimant de disposer de sources d'information de type \g{évènements} que des techniques historique informatiques et réseaux  apportent grâce au \textit{LOG  Management} (gestion des traces et journaux). Les journaux informatiques des systèmes sont au coeur de la détection, mais il existe de nombreuses autres sources d'évènements (informations,  renseignements) formalisées qui peuvent apporter de l'information pertinente pour la détection ou l'anticipation d'attaques.
+Ces deux domaines d'activités se basent sur la remontée d'information et l'automatisation des détections d'évènements à risques.  Pour automatiser la détection d'évènement, il donc imprimant de disposer de sources d'information de type \g{évènements} que des techniques historiques informatiques et réseaux  apportent grâce au \textit{LOG  Management} (gestion des traces et journaux). Les journaux informatiques des systèmes sont au coeur de la détection, mais il existe de nombreuses autres sources d'évènements (informations,  renseignements) formalisées qui peuvent apporter de l'information pertinente pour la détection ou l'anticipation d'attaques.
 
 \subsection{Détecter, la surveillance du SI}
 
 % FIN DE RELECTURE
 
-\g{Détecter oui, mais détecter quoi et pourquoi} est la phrase maitresse de la première étape de réflexion autour de la gestion de la détection d'incident de sécurité.
+\g{Détecter oui, mais détecter quoi et pourquoi} est la phrase maîtresse de la première étape de réflexion autour de la gestion de la détection d'incident de sécurité.
 La première question à se poser est  de définir ce qu'est un incident de sécurité pour l'entreprise. S'il est vrai qu'il existe un certain nombre de menace \g{standard} que l'on considère très rapidement comme un incident, le déploiement d'outil de gestion d'incident de sécurité ne serait être limité qu'à cet usage standard.
 
 Il y a de nombreuses manières de détecter des tentatives d'attaques dans un système. Les IPS/IDS (\textit{Intrusion Prevention System / Intrusion Detection System}), les Firewall réseaux et firewall applicatif, ...Toutefois l'imagination des attaquants est suffisamment grande, pour que des attaques complexes ne puisse être détectées par ces seuls outils et produits de sécurité protégeant les flux informationnels.
@@ -157,17 +157,17 @@ On y trouvera l'application concrète des arbres d'attaques popularisés par un 
 Le cycle de vie d’une cyberattaque, qu’elle soit complexe ou sophistiquée, reste le même depuis des années. Elle se déroule en 3 étapes :
 \begin{itemize}
   \item la première : \textbf{la phase de reconnaissance}. Elle va permettre d’identifier sa cible et de rechercher l’ensemble des vulnérabilités. Contrairement à l’audit de sécurité, dans cette étape, l’assaillant n’a aucune contrainte de périmètre ni de cadre contractuel. Cette absence de contrainte va lui permettre d’exploiter tout type de vulnérabilité;
-  \item la seconde : l’\textbf{attaque elle-même}. Les attaques, aujourd’hui plus sophistiquées, permettent aux assaillants, une fois entré dans le système d’information de l’entreprise, d’effectuer diverses actions comme l’élévation de privilèges, la création d’une porte dérobée, la mise en sommeil des agents dormants et surtout l’effacement de toute trace de son passage;
+  \item la seconde : l’\textbf{attaque elle-même}. Les attaques, aujourd’hui plus sophistiquées, permettent aux assaillants, une fois entrés dans le système d’information de l’entreprise, d’effectuer diverses actions comme l’élévation de privilèges, la création d’une porte dérobée, la mise en sommeil des agents dormants et surtout l’effacement de toute trace de son passage;
   \item  la dernière : l’\g{atteinte de son objectif et l'action}. Cela peut se traduire par une simple perturbation des systèmes ou encore l’exfiltration d‘informations sensibles dans le but d’actes de manipulation.
 \end{itemize}
 
-Ces mécanismes sont souvent modélisés sous la forme d'arbres d'attaques ou de scénario issus d'analyses de risques.
+Ces mécanismes sont souvent modélisés sous la forme d'arbres d'attaques ou de scénarios issus d'analyses de risques.
 
 \subsubsection{Arbre d'attaques} \label{ref_arbre_attaques}
 
 %TODO a re writer
 
-Détecter la menace dans un système d'information c'est aussi connaitre les méthodes, stratégies des attaquants. Ces scénarios d'attaque ou d'opération peuvent être modélisés avec des outils au coeur des analyses de risques. Bien que très largement en arrière plan des méthodes et des outils de gestion de la menace, les arbres d'attaque restent au coeur des mécanismes de détection.
+Détecter la menace dans un système d'information c'est aussi connaître les méthodes, stratégies des attaquants. Ces scénarios d'attaque ou d'opération peuvent être modélisés avec des outils au coeur des analyses de risques. Bien que très largement en arrière plan des méthodes et des outils de gestion de la menace, les arbres d'attaque restent au coeur des mécanismes de détection.
 
 Les arbres d'attaques sont une représentation des scénarios d'attaques. La racine représente le but final de l'attaque, les différents noeuds sont les buts intermédiaires et les feuilles les actions élémentaires à effectuer. Ces actions seront évaluées par exemple avec les potentiels d'attaque des \textbf{critères communs} (Ensemble de normes \wikipedia{ISO 15408})
 
@@ -180,14 +180,14 @@ Globalement, ces arbres sont basés sur trois types de nœuds :
 \end{itemize}
 
 En fonction de ces noeuds les valeurs des feuilles seront remontées pour obtenir le potentiel d'attaque de la racine.
-C'est sur la base de ce type de technique que sont construit un certain nombre d'outil de détection.
+C'est sur la base de ce type de technique que sont construits un certain nombre d'outils de détection.
  
 %Vers ADTool http://satoss.uni.lu/members/piotr/adtool/
 %ADTool est un logiciel qui permet la création, l'édition et l'affichage de ces arbres. Il permet de valuer les feuilles et faire remonter les valeurs à la racine selon différents algorithmes
 
-\wikipedia{Gartner}, et \wikipedia{Lockheed Martin} ont dérivé le concept de ces arbres d'attaque dans des modèles dit de \g{Kill Chain} issus de modèle militaire établis à l’origine pour identifier la cible, préparer l’attaque, engager l’objectif et le détruire.
+\wikipedia{Gartner}, et \wikipedia{Lockheed Martin} ont dérivé le concept de ces arbres d'attaque dans des modèles dit de \g{Kill Chain} issus de modèles militaires établis à l’origine pour identifier la cible, préparer l’attaque, engager l’objectif et le détruire.
 
-Ce modèle analyse une fragilité potentielle en dépistant les phases de l’attaque, de la reconnaissance précoce à l’exfiltration des données. Ce modèle de chaine ou processus cybercriminel aide à comprendre et à lutter contre les ransomware, les failles de sécurité et les menaces persistantes avancées (APT). Le modèle a évolué pour mieux anticiper et reconnaître les menaces internes, l’ingénierie sociale, les ransomware avancés et les nouvelles attaques.
+Ce modèle analyse une fragilité potentielle en dépistant les phases de l’attaque, de la reconnaissance précoce à l’exfiltration des données. Ce modèle de chaîne ou processus cybercriminel aide à comprendre et à lutter contre les ransomware, les failles de sécurité et les menaces persistantes avancées (APT). Le modèle a évolué pour mieux anticiper et reconnaître les menaces internes, l’ingénierie sociale, les ransomware avancés et les nouvelles attaques.
 
 \subsubsection{Le déploiement d'une menace en 8 étapes}
 
@@ -202,7 +202,7 @@ Ce modèle analyse une fragilité potentielle en dépistant les phases de l’at
 
  \item \textbf{Phase 4 : Escalade de privilèges}. Quel intérêt y a-t-il à entrer dans un bâtiment si vous restez coincé dans le hall d’accueil ? Les cybercriminels utilisent l’escalade de privilèges pour obtenir des autorisations élevées d’accès aux ressources. Ils modifient les paramètres de sécurité des GPO, les fichiers de configuration, les permissions et essaient d’extraire des informations d’identification.
 
- \item \textbf{Phase 5 : Mouvement latéral}. Vous avez carte blanche, mais vous devez encore trouver la chambre forte. Les cybercriminels se déplacent de système en système, de manière latérale, afin d’obtenir d’autres accès et de trouver plus de ressources. C’est également une mission avancée d’exploration des données au cours de laquelle les cybercriminels recherchent des données critiques et des informations sensibles, des accès administrateur et des serveurs de messagerie. Ils utilisent souvent les mêmes ressources que le service informatique, tirent parti d’outils intégrés tels que PowerShell et se positionnent de manière à causer le plus de dégâts possible.
+ \item \textbf{Phase 5 : Mouvement latéral}. Vous avez carte blanche, mais vous devez encore trouver la chambre forte. Les cybercriminels se déplacent de système en système, de manière latérale, afin d’obtenir d’autres accès et de trouver plus de ressources. C’est également une mission avancée d’exploration des données au cours de laquelle les cybercriminels recherchent des données critiques et des informations sensibles, des accès administrateur et des serveurs de messagerie. Ils utilisent souvent les mêmes ressources que le service informatique, tirent parti d’outils intégrés tels que PowerShell et se positionnent de manière à causer le plus de dégâts possibles.
 
  \item \textbf{Phase 6 :  Furtivité, camouflage, masquage}. Mettez les caméras de sécurité en boucle et montrez un ascenseur vide pour que personne ne voit ce qui se produit en coulisses. Les cyber-attaquants font la même chose. Ils masquent leur présence et leur activité pour éviter toute détection et déjouer les investigations. Cela peut prendre la forme de fichiers et de métadonnées effacés, de données écrasées au moyen de fausses valeurs d’horodatage (time-stamping) et d’informations trompeuses, ou encore d’informations critiques modifiées pour que les données semblent ne jamais avoir été touchées.
 
@@ -220,7 +220,7 @@ C’est un modèle quelque peu critiqué pour l’attention qu’il accorde à l
 
 % SOURCE : https://www.silicon.fr/avis-expert/uba-analyser-le-comportement-des-utilisateurs-pour-contrer-le-surmenage-des-equipes-it-et-les-cybermenaces
 
-L’analyse du comportement des utilisateurs (UBA) apporte des informations détaillées sur les menaces liées à chaque phase de la chaîne criminelle. Et elle contribue à prévenir et arrêter les attaques avant que les dommages ne soient causés. En effet, le volume d’activités suspectes, dont des faux positifs, inhérents aux outils de sécurité traditionnels sont très chronophage à surveiller et donc sources d’erreurs.
+L’analyse du comportement des utilisateurs (UBA) apporte des informations détaillées sur les menaces liées à chaque phase de la chaîne criminelle. Et elle contribue à prévenir et arrêter les attaques avant que les dommages ne soient causés. En effet, le volume d’activités suspectes, dont des faux positifs, inhérents aux outils de sécurité traditionnels sont très chronophages à surveiller et donc sources d’erreurs.
 Pour y pallier, les entreprises doivent être en mesure d’analyser le comportement des utilisateurs, souvent via des outils d'apprentissage automatique, afin de donner un sens aux informations remontées par la lecture des activités sur le réseau.
 
 Cette analyse du comportement des utilisateurs (UBA : User Behavior Analytics) aide à  comprendre et hiérarchiser les alertes filtrant celles qui sont suspectes en comparaison avec des comportements habituel des utilisateurs.
@@ -235,7 +235,7 @@ La surveillance des terminaux (EndPoint) est aujourd'hui un point important dans
 \subsection{Gestion de la menace}
 
 Nous avons évoqué dans le chapitre sur l'anticipation, la veille sur la menace. 
-Opérer la détection d'attaques ou de menaces dormantes dans l'environnement de l'entreprise nécessite une connaissance précise des mécanismes d'exécution oui d'opération de ces menaces.
+Opérer la détection d'attaques ou de menaces dormantes dans l'environnement de l'entreprise nécessite une connaissance précise des mécanismes d'exécution ou d'opération de ces menaces.
 La connaissance de ces mécanismes d'action, de protection, de déploiement, de réplication, de survivabilité, de déplacement des codes malveillants par exemple est la base de leur détection. Il est en de même sur les scénarios mixant des actions sur les réseaux ou sur les systèmes informatiques ou numériques.
 Ces connaissances sont généralement structurées dans des bases de connaissances dont les sources sont gratuites ou payantes.
 
@@ -266,10 +266,10 @@ Les cibles de menace peuvent être connues à un instant T. Ces cibles peuvent �
 
 Dans la notion de partage de l'information sur la menace, le \link{https://www.misp-project.org}{projet MISP} (Open Standards For Threat Information Sharing) fournit les modèles de données et des indicateurs.
 
-Il ne faut pas oublier que les donnés dans ces bases peuvent être  \g{éphémères}". (Adresse IP malveillante, machines infectées nettoyées...). Il est donc important de disposer de sources fiables et mise à jour en temps réel.
+Il ne faut pas oublier que les données dans ces bases peuvent être  \g{éphémères}". (Adresse IP malveillante, machines infectées nettoyées...). Il est donc important de disposer de sources fiables et mise à jour en temps réel.
 
 \begin{techworkbox}{Bases de Threat Intelligence}
-Le marché des bases publiques et commerciales de \textit{Threat Intelligence} est un sujet interessant pour \fichetech. On peut rechercher les sources les plus pertinentes, celles qui fournissent des informations techniques pour les SIEM, celles spécialisées dans des menaces sectorielles ou technologiques ...
+Le marché des bases publiques et commerciales de \textit{Threat Intelligence} est un sujet intéressant pour \fichetech. On peut rechercher les sources les plus pertinentes, celles qui fournissent des informations techniques pour les SIEM, celles spécialisées dans des menaces sectorielles ou technologiques ...
 \end{techworkbox}
 
 
