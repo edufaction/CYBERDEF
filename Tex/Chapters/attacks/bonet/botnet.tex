@@ -1,7 +1,7 @@
 \section{Botnet, des codes malveillants organisés}.
 
 A titre d'illustration, je vous propose de découvrir les botnets avec les travaux de David Batany.
-Le Botnets font partis de ce que nous pourrions appelé des architectures techniques malveillantes. En effet, un Botnet en lui même est un code malveillant qui fonctionnement dans une architecture informatique complexe avec des mécanismes de pilotage, de stockage, de réplication et d'activation spécialisées. Un Botnet est peut être considéré comme un système d'arme utilisable pour des attaques.
+Les Botnets font partis de ce que nous pourrions appeler des architectures techniques malveillantes. En effet, un Botnet en lui même est un code malveillant qui fonctionne dans une architecture informatique complexe avec des mécanismes de pilotage, de stockage, de réplication et d'activation spécialisées. Un Botnet est peut être considéré comme un système d'arme utilisable pour des attaques.
 
 %\newcommand{ \localpath}{../Contribs/david.batany@contribs.cyberdef/}
 %\input{\localpath botnet.proxy.tex}
@@ -13,7 +13,7 @@ Le Botnets font partis de ce que nous pourrions appelé des architectures techni
 \par
 Le terme \textbf{botnet}, contraction de l'anglais \textbf{robot+net}, se définit par l'ensemble des programmes, machines, serveurs connectés à internet ayant un ou plusieurs processus commun de communication.
 Placé sous le contrôle d'un opérateur humain, appelé botmaster, le botnet recrute des machines en exploitant les vulnérabilités, failles, infections afin d'étendre son réseau à travers l'utilisation de canaux de Command and Control(C\&C).
-\newline Avec l'IoT\footnote{Internet of Things}, et ses appareils connectés, le réseau s'étend de plus en plus au sein de notre société. L'actuelle faiblesse en terme de sécurité lié aux objets connectés représente une menace majeure et croissante dans notre environnement.
+\newline Avec l'IoT\footnote{Internet of Things}, et ses appareils connectés, le réseau s'étend de plus en plus au sein de notre société. L'actuelle faiblesse en terme de sécurité liée aux objets connectés représente une menace majeure et croissante dans notre environnement.
 \head{Historique}
 \par
 Le concept, inventé en 1988 à l'université de Oulu en Finlande, fut développé à l'origine pour gérer les services associés au protocole IRC\footnote{Internet Relay Chat, un protocole de communication textuel}.
@@ -27,7 +27,7 @@ Les premières dérives furent notamment l'affrontement de botnet IRC (\href{htt
 \head{Motivations liées à la menace botnet}
 \begin{itemize}
 	\item L'aspect lucratif représente l'intérêt majeur pour l'utilisateur de botnet. L'automatisation d'une tâche contrôlée à distance permettant de rapporter facilement des revenus (revente d'information, fraude au clic, spam), surtout si celle-ci est réalisée de manière anonyme(réseau TOR\footnote{The Onion Routing, un réseau d'anonymisation}).
-	\item La motivation idéologique, comme par exemple, lors du conflit entre la Georgie et la Russie en 2008 ou de nombreux sites étatiques faisait l'objet de cyberattaques massives paralysaient les infrastructures.
+	\item La motivation idéologique, comme par exemple, lors du conflit entre la Georgie et la Russie en 2008 ou de nombreux sites étatiques faisant l'objet de cyberattaques massives paralysaient les infrastructures.
 	\item La motivation personnelle, à travers la vengeance ou le chantage, est également une finalité grâce notamment au caractère anonyme de l'attaque.
 \end{itemize}
 
@@ -105,7 +105,7 @@ Déclenchées, synchronisées ou persistantes ces attaques s'adaptent aux cibles
 
 \subsection{Les type de menaces}
 Les botnets représentent les outils de diffusion des attaques.
-Cet outil permet aux cybercriminels de disposer d'un grand nombre de services développé dans un environnement collaboratif. Vendus sur le web, ils instrumentalisent l'attaque quelque soit le but recherché.
+Cet outil permet aux cybercriminels de disposer d'un grand nombre de services développés dans un environnement collaboratif. Vendus sur le web, ils instrumentalisent l'attaque quelque soit le but recherché.
 \newline \textbf{Liste des menaces possibles:}
 \begin{itemize}
 	\item Relayer du spam pour du commerce illégal ou pour de la manipulation d'information (par exemple des cours de bourse) 
@@ -203,7 +203,7 @@ Ce concept représente une variante de l'architecture centralisée et peut se re
 %\end{figure}
 
 \subsubsection{Définition}
-Un ou plusieurs nœud de communication permettent aux bots d'échanger des données via un canal de communication.
+Un ou plusieurs nœuds de communication permettent aux bots d'échanger des données via un canal de communication.
 Les nœuds représentent un serveur ou serveur relais avec comme fonction le C\&C.
 
 \subsubsection{Liste des protocoles utilisés par le botnet}
@@ -283,7 +283,7 @@ Il existe plusieurs typologies de réseau overlay\footnote{réseau logique de re
 
 \subsubsection{Avantages}
 \begin{itemize}
-	\item Architecture dé centraliséee
+	\item Architecture décentralisée
 	\item Indépendant de l’architecture DNS
 	\item difficile à repérer
 	\item Connexions régulières entre les bots et le C\&C (non permanente)
@@ -381,7 +381,7 @@ Il est souvent nécessaire en présence d'algorithme chiffré d'utiliser cette m
 Au même titre que la protection contre les malwares, les recommandations en terme de SSI\href{https://www.ssi.gouv.fr/administration/bonnes-pratiques/}{recommandations ANSSI}, applicables localement, doivent s'inscrire dans nos habitudes et augmentent ainsi la probabilité de bloquer l'étape initiale de l'infection (spam, navigation non-sécurisée,etc.).
 \newline Les mises à jour logicielles et système sont essentielles pour bloquer l'exploitation de CVE\footnote{Common Vulnerabilities and Exposures} \href{https://www.cvedetails.com}{Common Vulnerabilities and Exposures}.
 \newline Au niveau du FAI, les notifications en cas de connexions malveillantes et la surveillance des adresses IP sont un frein à l'extension du botnet.
-\newline Enfin la détection d'un appel de fonctions anormal par l'antivirus, l'autorisation et l’identification des flux sortants par le firewall permettent le blocage de l'activité malveillante.
+\newline Enfin la détection d'un appel de fonctions anormales par l'antivirus, l'autorisation et l’identification des flux sortants par le firewall permettent le blocage de l'activité malveillante.
 Les fonctionnalités recherchées de l'antivirus dans ce cadre sont un firewall bidirectionnel, une protection contre le phishing, la vérification de la certification, la lutte contre le tracking, la vérification du téléchargement, le blocage des pop-ups et pages WEB malveillantes,etc. 
 
 %Demantelement-Architecture_de_BOTNET
@@ -423,7 +423,7 @@ Les différentes architectures permettent de mieux comprendre l'organisation du 
 \vspace{5mm}
 \newline Selon Nokia (\href{https://www.nokia.com/about-us/news/releases/2018/12/04/nokias-threat-intelligence-report-2019-warns-on-the-fast-growing-and-evolving-threat-of-malicious-software-targeting-internet-of-things-iot-devices/}{Nokia's Threat Intelligence Report}, l'activité des botnet sur l'IoT représente 78\% des événements de détection de malware en 2018.
 \newline La menace omniprésente de ces objets connectés (santé, domotique, médias, électroménager,...) n'est aujourd'hui pas assez prise en considération par notre société de consommation.
-Le manque de sécurité accrue de ces appareils faits apparaître ces objets connectés comme des acteurs potentiels constituant le réseau d'un botnet.
+Le manque de sécurité accrue de ces appareils fait apparaître ces objets connectés comme des acteurs potentiels constituant le réseau d'un botnet.
 \newline L'arrivée prochaine de la 5G\footnote{prévisions en moyenne 100Mbit/S en download et 50 Mbit/s en upload} sera, dans ce domaine, un vecteur majeur pour la diffusion de l'infection du malware et le nombre d'attaques associés au botnet (exemple attaques DDoS).
 
 
