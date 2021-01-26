@@ -16,7 +16,7 @@ Les activités préventives basées sur les résultats des évaluations des risq
 
 Idéalement pour des attaques, les activités de réponse aux incidents sont menées par l'équipe de réponse aux incidents de sécurité informatique de l'organisation (\g{aCSIRT}) car elle nécessite des postures particulières.  L'équipe peut également comprendre des représentants des services juridique, des ressources humaines, de la communication, et des risques. L'équipe de réponse aux incidents suit normalement un plan de réponse aux incidents (\gls{aIRP}) de l'organisation, qui est un ensemble d'instructions écrites qui décrivent la réponse de l'organisation aux événements du réseau, aux incidents de sécurité et aux impacts confirmés. 
 
-Cette réponse plannifiée aux incidents est une entreprise complexe, l'établissement d'une capacité de réponse aux incidents réussie nécessite une planification et des ressources importante. La surveillance continue des attaques est essentielle en avant phase. Il est essentiel d'établir des procédures claires pour hiérarchiser le traitement des incidents, tout comme la mise en œuvre de méthodes efficaces de collecte, d'analyse et de communication des données. Il est également essentiel d'établir des relations et d'établir des moyens de communication appropriés avec d'autres groupes internes (par exemple, les ressources humaines, les services juridiques) et avec des groupes externes (par exemple, d'autres équipes de réponse aux incidents (CERT, CSIRT..), les forces de l'ordre).
+Cette réponse planifiée aux incidents est une entreprise complexe, l'établissement d'une capacité de réponse aux incidents réussie nécessite une planification et des ressources importante. La surveillance continue des attaques est essentielle en avant phase. Il est essentiel d'établir des procédures claires pour hiérarchiser le traitement des incidents, tout comme la mise en œuvre de méthodes efficaces de collecte, d'analyse et de communication des données. Il est également essentiel d'établir des relations et d'établir des moyens de communication appropriés avec d'autres groupes internes (par exemple, les ressources humaines, les services juridiques) et avec des groupes externes (par exemple, d'autres équipes de réponse aux incidents (CERT, CSIRT..), les forces de l'ordre).
 
 L'établissement d'une capacité de réponse aux incidents doit comprendre les actions suivantes :
 
@@ -79,10 +79,18 @@ La réponse peut nécessiter des équipes de compétences larges comme expertes 
 }} % end FRAME.........................................................
 
 
+
+
 La \textbf{gouvernance} de la réponse aux incidents consiste à planifier à l'avance et  de disposer un plan d'opération avant qu'il ne soit nécessaire. Plutôt que d'être un processus axé sur l'informatique, il s'agit d'une fonction  globale qui permet à une organisation de prendre des décisions rapides avec des informations fiables dans un contexte où la continuité d'activité ou l'image de l'entreprise est menacée. Non seulement le personnel technique des services informatiques et de sécurité est impliqué, mais aussi des représentants d'autres aspects clés de l'entreprise. La réponse à incident  interpelle  dans son mode d'opération, la gestion des plans de continuité et de reprise d'activité, la gestion de crise,  l'interaction juridique et contractuelle  ainsi que la gestion des relations avec les services de l'état (CNIL, ANSSI, Police et Gendarmerie ...). 
 
 Je vous propose quelques éléments de terminologie avec la correspondance anglo-saxonne afin de se repérer dans les usages et trouver de l'information pertinente lors de vos recherches sur Internet :
 
+
+% FRAME beamer PRZ ------------------------------------
+\mode<all>{\texframe
+{La réponse à incident}
+{Terminologie}
+{%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 \begin{itemize}
 		\item \edxdico{Investigations Numériques}{Digital Investigation};
 		\item\edxdico{Analyse légale}{forensique (Inforensique)};
@@ -90,6 +98,7 @@ Je vous propose quelques éléments de terminologie avec la correspondance anglo
 		\item \edxdico{CSIRT}{Computer Security Incident Response Team};
 		\item \edxdico{Gestion des Incidents}{Incident Management}.
 \end{itemize}
+}} % end FRAME.........................................................
 
 \subsection{Définitions}
 
@@ -99,6 +108,12 @@ Un incident de sécurité, correspond donc à la conséquence d’un ou plusieur
 
 Cette distinction a toujours existé, en effet l'ISO/IEC 27001 l'a reprise de l'ISO TR 18044:2004 (aujourd'hui remplacée par l'ISO/IEC 27035) qui l'avait elle-même reprise de l'ISO TR 13335-2:1997. 
 
+
+% FRAME beamer PRZ ------------------------------------
+\mode<all>{\texframe
+{La réponse à incident}
+{Evènement de sécurité}
+{%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 Concrètement, un événement peut donc être :
 
 \begin{itemize}
@@ -108,6 +123,7 @@ Concrètement, un événement peut donc être :
   \item   soit une altération ou une perte d’un élément du système d’information, d’un élément de configuration du SI ou d’un actif non-IT;
   \item  soit un ensemble corrélé d'indicateurs avertissant d'un comportement non sollicité ou malveillant;.
 \end{itemize}
+}} % end FRAME.........................................................
 
 Un événement peut donner lieu à un \textbf{traitement préventif} dans la mesure où aucun impact n'a été identifié, par exemple la découverte d’une vulnérabilité.
 Un \textbf{incident donne quant à lui obligatoirement lieu} à un \g{traitement curatif } car un impact a été identifié.
@@ -123,6 +139,11 @@ Il existe différents types d'incidents de sécurité et des moyens de les class
 %-------------------------------------------------------------------------
 
 
+% FRAME beamer PRZ ------------------------------------
+\mode<all>{\texframe
+{La réponse à incident}
+{Incidents courants}
+{%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 Voici quelques exemples d'incidents relativement courants:
 
 \begin{itemize}
@@ -132,6 +153,7 @@ Voici quelques exemples d'incidents relativement courants:
   \item Perte ou vol, d'un ordinateur portable non chiffré avec des informations sensibles;
   \item Découverte sur internet (Darkweb) de données sensibles appartenant à l'entreprise.
 \end{itemize}
+}} % end FRAME.........................................................
 
 
 
@@ -145,6 +167,11 @@ Voici quelques exemples d'incidents relativement courants:
 % Source https://en.m.wikipedia.org/wiki/Computer_security_incident_management
 
 
+% FRAME beamer PRZ ------------------------------------
+\mode<all>{\texframe
+{La réponse à incident}
+{SANS Institute - Plan de réponse}
+{%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 Selon le SANS Institute, la réponse est construite autour de six phases clés d'un plan de réponse aux incidents:
 
 \begin{itemize}
@@ -155,20 +182,26 @@ Selon le SANS Institute, la réponse est construite autour de six phases clés d
   \item \textbf{Récupération}: autoriser les systèmes affectés à réintégrer l'environnement de production et garantir qu'aucune menace ne subsiste.;
   \item \textbf{Leçons apprises}: remplir la documentation de l'incident, effectuer une analyse pour tirer des leçons de l'incident et potentiellement améliorer les efforts d'intervention futurs.
 \end{itemize}
+}} % end FRAME.........................................................
 
 
 Nous allons toutefois explorer la  gestion de l'incident au quotidien sur la base de trois actions fondamentales qui dans l'ordre correspondent au niveau de maturité d'une entreprise en terme de réponse à incident :
 
 
+% FRAME beamer PRZ ------------------------------------
+\mode<all>{\texframe
+{La réponse à incident}
+{Evènement de sécurité}
+{%. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 \begin{itemize}
-  \item \textbf{Réagir} : premier processus, si nous pouvons le nommer ainsi est  la réaction immédiate en cas d'incident. Une entreprise peu ou pas organisée commence par découvrir les techniques de réponse à incident par cette première action. Cette réaction peut être compléter par des mécanismes (juridiques) de \textbf{neutralisation} de la menace.
+  \item \textbf{Réagir} : premier processus, si nous pouvons le nommer ainsi est  la réaction immédiate en cas d'incident. Une entreprise peu ou pas organisée commence par découvrir les techniques de réponse à incident par cette première action. Cette réaction peut être compléter par des mécanismes (juridiques) de \textbf{neutralisation} de la menace, ou par exemple le déploiement d'un EDR pendant la phase de crise.
 
   \item \textbf{Enquêter} : si la réaction pour réduire l'impact ou neutraliser l'attaque est au coeur de la réponse à incident, il est nécessaire de rapidement lancer l'analyse des causes et origines de l'incident. Ce domaine d'action qui regroupe l'analyse post-morten et le forensique.
 
   \item \textbf{Anticiper} : organiser ses mécanismes de réponse (moyens et compétences), intégrer le processus de réponse à incident Cyber dans les mécanisme ITIL de gestion des incidents, organiser une cellule de CSIRT.
 
 \end{itemize}
-
+}} % end FRAME.........................................................
 
 %-------------------------------------------------------------------------
 \mode<all>{\picframe{Tex/Pictures/img-liovar-incidents}{Incidents}{0.6}{lb:mtbf}}
