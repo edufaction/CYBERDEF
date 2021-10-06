@@ -9,6 +9,8 @@
 %\usepackage[hyphens,spaces,obeyspaces]{url}
 %\usepackage[hyphens,spaces,obeyspaces]{url}
 
+
+
 \PassOptionsToPackage{hyphens,spaces,obeyspaces}{url}
 
 \usepackage[utf8]{inputenc}
@@ -83,10 +85,11 @@ belowskip=1em,
 
 \usepackage{hyperref}
 
+%pdfdisplaydoctitle={\utitle}, Attention le titre ne doit pas contenir de saut de ligne 
+
 \hypersetup{
-pdftitle={\utitle},
+pdftitle={\uCoursetittle},
 pdfauthor={\uauthor},
-%pdfdisplaydoctitle={\utitle}, Attention le titre ne doit pas contenir de saut de ligne
 hidelinks,
 backref=true,
 pagebackref=true,
@@ -96,10 +99,9 @@ colorlinks=false,
 breaklinks=true,
 urlcolor=ocre,
 bookmarks=true,
-pdfsubject = {\uCoursetheme}
-pdfcreator = {\uauthorwriter TEXDEV}
+pdfsubject = {\udescription},
+pdfcreator = {MACTEX on TEXPAD},
 bookmarksopen=true}
-
 
 %\pdfstringdefDisableCommands{%
 %  \def\\{}%
@@ -148,5 +150,8 @@ bookmarksopen=true}
 \usepackage{etoolbox}
 
 \usepackage{breakurl}
+
+%\usepackage{pythontex} % need shell escape
+
 
 

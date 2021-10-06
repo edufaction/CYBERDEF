@@ -7,10 +7,13 @@
 %	                                 CLASS BOOK
 %-------------------------------------------------------------------
 
-\documentclass[12pt,fleqn, a4paper,twoside,openright]{book}
+%\documentclass[12pt,fleqn, a4paper,twoside,openright]{book}
+\documentclass[paper=6in:9in,pagesize=a4,
+               headinclude=on,footinclude=on,10pt]{book}
 
 
 \input{Tex/Book/config-book.tex}
+%\usepackage{showframe}
 
 %\PassOptionsToPackage{unicode}{hyperref}
 %\PassOptionsToPackage{naturalnames}{hyperref}
@@ -58,6 +61,18 @@
 
 %-------------------------------------------------------
 \begin{document}
+
+\AddToShipoutPicture{%
+\AtPageCenter{%
+\begin{tikzpicture}[remember picture,overlay]
+\node [rotate=60,scale=5,text opacity=0.1] at (current page.center) { \textit{\color{red} JP GIMENEZ ONLY} };
+\end{tikzpicture} 
+%\begin{tikzpicture}[remember picture,overlay]
+%\node [rotate=60,scale=10,text opacity=0.3]
+%at (current page.center) {moi};
+%\end{tikzpicture}
+}%
+}
 
 \addtocontents{toc}{\protect\hypertarget{toc}{}}
 
