@@ -8,4 +8,4 @@
 \RequirePackage{xstring}
 
 \IfSubStr*{\jobname}{.prz}{\newcommand{\PRZMODE}{YES}}{\newcommand{\DOCMODE}{YES}}
-
+\IfSubStr*{\jobname}{.edt}{\newcommand{\EDTMODE}{YES}}{\newcommand{\NOMODE}{YES}}

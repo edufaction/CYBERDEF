@@ -1,0 +1,125 @@
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS COURSE
+%                          ARTICLE MAIN FILE
+%                             2020 eduf@ction
+%-------------------------------------------------------------
+
+\documentclass[10pt,fleqn,twoside]{Tex/template.inc/ArticleModel/edxstyle} 
+
+\usepackage{beamerarticle}
+
+\usepackage{ae}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
+
+
+
+\usepackage{titletoc} % Required for manipulating the table of contents
+
+\input{Tex/template.inc/Commons/edx.packages.tex}
+\input{Tex/template.inc/Commons/edx.command.tex}
+\input{Tex/template.inc/Commons/edx.styles.tex}
+
+\definecolor{ocre}{RGB}{160,0,0}   
+
+%-------------------------------------------------
+%	BIBLIOGRAPHY
+%-------------------------------------------------
+
+\addbibresource{Tex/bibliography.bib} % BibTeX bibliography file
+\defbibheading{bibempty}{}
+
+%-------------------------------------------------
+%	COLORS & BORDERS
+%-------------------------------------------------
+\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
+\definecolor{color1}{RGB}{160,0,0} % Color of the article title and section
+\definecolor{color2}{RGB}{220,220,220} % Color of the boxes behind the abstract and headings
+
+%-------------------------------------------------
+% ITEMS DEFINITION
+%-------------------------------------------------
+
+\setlist [itemize,1]{label=\color{ocre}\faCaretRight }
+
+\begin{document}
+
+\input{Tex/acronymes.tex}
+\input{Tex/glossaire.tex}
+
+\addtocontents{toc}{\protect\hypertarget{toc}{}}
+
+%-------------------------------------------------
+%	ARTICLE INFORMATION
+%-------------------------------------------------
+
+\Abstract {\uabstract\input{Tex/Notes/Commons/abstract-gen-notes.tex} }
+\JournalInfo{\uJournalInfo} % Journal information
+\Archive{Notes de cours éditées le  \DTMnow} % Additional notes (e.g. copyright, DOI, review/research article)
+\PaperTitle{\utitle} % Article title
+\Authors{\uauthor\textsuperscript{1,}\textsuperscript{2}*} % Authors
+\affiliation{\textsuperscript{1}\textit{\uproa}} % Author affiliation
+\affiliation{\textsuperscript{2}\textit{\uprob}} % Author affiliation
+\affiliation{*\textbf{email}: \umaila\ -- \umailb} % Corresponding author
+\Keywords{\ukeywords} % Keywords 
+\newcommand{\keywordname}{Mots clefs} % Defines the keywords heading name
+
+%-------------------------------------------------
+%	MAKE TITLE
+%-------------------------------------------------
+
+%\maketitle
+
+%\begin{tikzpicture}[remember picture,overlay]\node at (current page.north west)[xshift=4cm, yshift=-4cm, text opacity=1.0]{\includegraphics[width=0.1\paperwidth]{Tex/template.inc/Commons/CommonsPictures/shield-20.pdf}}; 
+%\end{tikzpicture} 
+%
+%
+%\AddToShipoutPicture{%
+%\AtPageCenter{%
+%\begin{tikzpicture}[remember picture,overlay]
+%\node [rotate=60,scale=5,text opacity=0.1] at (current page.center) { \textit{\color{red}\INFODistrib} };
+%\end{tikzpicture} 
+%%\begin{tikzpicture}[remember picture,overlay]
+%%\node [rotate=60,scale=10,text opacity=0.3]
+%%at (current page.center) {moi};
+%%\end{tikzpicture}
+%}%
+%}
+
+
+%-------------------------------------------------	
+%\begin{center}
+%	\textcolor{ocre}{\textbf{\INFODistrib}} % Distribution information
+%\end{center}
+%
+%\INFOGitHub % Link to download file and copyright
+%%-------------------------------------------------
+
+%\input{Tex/acronymes.tex}
+
+%-------------------------------------------------
+\newpage
+\ubody % MAIN BODY defined external
+%-------------------------------------------------
+
+	\printbibliography
+ \printglossary[type=\acronymtype]
+%	\printglossary
+%-------------------------------------------------	
+\newpage
+\Ucontribute % Contribution TEXT
+%-------------------------------------------------
+
+
+%-------------------------------------------------
+	\newpage
+	\tableofcontents  % TOC
+	\iftotalfigures
+  			\listoffigures
+	\fi
+%-------------------------------------------------
+
+\end{document}

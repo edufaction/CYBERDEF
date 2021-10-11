@@ -25,6 +25,11 @@
 \ifdefined\PRZMODE 
 	\newcommand{\umainload}{\input{Tex/template.inc/BeamerModel/main-beamer.tex}}
 \else
+
+\ifdefined\EDTMODE 
+	\newcommand{\umainload}{\input{Tex/template.inc/ArticleModel/edt-article.tex}}
+	\else
 	\newcommand{\umainload}{\input{Tex/template.inc/ArticleModel/main-article.tex}}
+	\fi
 \fi
 
