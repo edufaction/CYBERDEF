@@ -29,7 +29,8 @@ La cybersécurité est, en effet,  une discipline transverse et interdisciplinai
 
 Les métiers de la cybersécurité concourent tous à une seule et même mission : \g{\textbf{assurer la continuité de la mission ou du service en préservant le patrimoine de l'entreprise contre toute menace dans l'environnement numérique}}.
 
-Ce sont des métiers de passion, des métiers extrêmement techniques pour partie, fortement marqués par le fonctionnel pour d'autres. S'il est vrai qu'une grande partie des experts du domaine sont issus de formations en informatique ou en électronique, les domaines d'expertises s'élargissent et font naître de nouveaux chemins d'excellence. On trouvera en particulier, des métiers issus du domaine juridique comme celui du Data Protection Officer.    
+Ce sont des métiers de passion, des métiers extrêmement techniques pour partie, fortement marqués par le fonctionnel pour d'autres. S'il est vrai qu'une grande partie des experts du domaine sont issus de formations en informatique ou en électronique, les domaines d'expertises s'élargissent et font naître de nouveaux chemins d'excellence. On trouvera en particulier, des métiers issus du domaine juridique comme celui du \uindex{Data Protection Officer}
+.    
 
 %\section{les grands cyber-risques}
 
@@ -68,10 +69,8 @@ Il y a de nombreuses manières d’aborder le pilotage de la cybersécurité au 
 Nous avons donc fait ce choix de structurer notre approche suivant le prisme de la cyberdéfense d'entreprise avec une analyse en trois axes majeurs qui résument les difficultés dont relève cette discipline holistique \cite{sch13}. 
 
 
-
-
 % begin PRZ===================
-\begin{frame}<presentation>{Les 3 axes de la cybersécurité}
+\begin{frame}{Les 3 axes de la cybersécurité}
 	\begin{itemize}
  \item \tb{l'analyse des risques} informatiques sur les actifs les plus sensibles de l'entreprise avec les difficultés d'identifier la sensibilité de ces actifs et les menaces qui pèsent sur l'environnement ;
 \item la structuration d'une gouvernance efficaces avec des \tb{politiques de sécurité} des systèmes d'information pour des architectures de sécurité de confiance, dans des systèmes d'informations complexes, intégrant des services dans le cloud, des technologies obsolètes et des politiques de sécurité sédimentées ;
@@ -84,7 +83,7 @@ Nous avons donc fait ce choix de structurer notre approche suivant le prisme de 
 \subsection {Politiques versus stratégies}
 
 \mode<all>{
-\picframe{Tex/Pictures/img-cycle}{Processus Cyber d'entreprise}{0.8}{lbl-cycle}
+\mode<all>{\picframe{Tex/Pictures/img-cycle}{Processus Cyber d'entreprise}{0.8}{lbl-cycle}}
 }
 
 La figure \ref{lbl-cycle} présente la dynamique avec laquelle nous avons structuré c\edoc. De  \head{l’analyse de risque}, nous pouvons déduire et/ou modifier des politiques de sécurité adaptées. 
@@ -158,7 +157,7 @@ Malheureusement, malgré ces mesures de protection et de défense qui permet de 
 
 % ajouter l’equation du risque dans le texte du RISQUE
 
-Il fut une époque pas si lointaine, ou dans l'évaluation de la probabilité d'une attaque, l'analyste consacrait du temps. Aujourd'hui bien que ce paramètre continue quand même à être pris en compte, l'analyste positionne cette probabilité ou vraisemblance à 100\%.  (cf. figure \ref{lbl-riskassess})
+Il fut une époque pas si lointaine, où l'analyste consacrait beaucoup de temps à l'évaluation de la probabilité d'une attaque. Aujourd'hui bien que ce paramètre continue quand même à être pris en compte, l'analyste positionne cette probabilité ou vraisemblance à 100\% car pour l'entreprise la nouvelle hypothèse n'est pas de savoir "si un attaque va avoir lieu mais plutôt quand elle aura lieu". (cf. figure \ref{lbl-riskassess})
 
 % I M A G E -----------> 
 
@@ -166,12 +165,16 @@ Il fut une époque pas si lointaine, ou dans l'évaluation de la probabilité d'
 \mode<all>{\picframe{Tex/Pictures/img-risk-assess}{le cyber-risque}{0.9}{lbl-riskassess}}
 
 L'ensemble des experts du domaine est globalement en accord sur la posture que doivent prendre les entreprises et les organisations : \g{Le temps n'est plus de savoir si on sera attaqué ou pas, mais plutôt de savoir quand et comment on le sera}, qui concrètement se résume à la certitude que tout incident de sécurité peut se produire.
- 
-Dans les modèles d'analyse de risque et d'évaluation de la cybersécurité, l'analyste se positionne aujourd'hui du point de vue de l'attaquant. Ce regard lui permet de mieux comprendre la menace comme équation duale du risque, mais vu de l'énergie dépensée par l'attaquant et du risque qu'il prend. (cf. figure \ref{lbl-riskjail})
-
-
 
 \mode<all>{\picframe{Tex/Pictures/img-risk-prison}{La menace : une vision de l'attaquant}{0.9}{lbl-riskjail}}
+
+ 
+Dans les modèles d'analyse de risque et d'évaluation de la cybersécurité, l'analyste se positionne aujourd'hui du point de vue de l'attaquant. Ce regard lui permet de mieux comprendre la menace comme équation duale du risque, mais vu de l'énergie dépensée par l'attaquant et du risque qu'il prend. (cf. figure \ref{lbl-riskjail}). La menace sera d'autant plus grand que la valeur des actifs visés est importante à ses yeux et que les vulnérabilités sont nombreuses. Elle sera d'autant plus faible que les moyens à déployer sont importants et les risques pris plus élevés.
+
+On notera que la valeur des actifs visés dépend de l'attaquant. Ils ne seront pas les mêmes si l'attaquant est un état, une groupe d'activiste, un groupe criminelle.
+Quand aux vulnérabilités, la majorité des attaques utilise les failles perpétuelles du facteur humain.
+
+
 
 
 \section{Sécurité du système d'information}
@@ -194,7 +197,7 @@ Ces activités doivent de plus en plus faire face à tout un système d'agressio
 Au sein des grandes entreprises, il existe de nombreuses fonctions ou missions pour gouverner, piloter cette sécurité numérique.
 
 %----begin FRAME-------
-\mode<presentation>{\texframe
+\mode<all>{\texframe
 {SSI : Responsabilités}
 {les métiers}
 {

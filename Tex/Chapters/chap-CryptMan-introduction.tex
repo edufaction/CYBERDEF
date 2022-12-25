@@ -58,11 +58,11 @@ Le terme\g{certificat électronique } est entré dans le langage courant du num�
 
 % TODO Correction unicode à faire sur le texte suivant
 
-%\footnote{ PKCS : Public-Key Cryptography Standards. (9) Moyen de cryptologie : Tout matériel ou logiciel conçu ou modifié pour transformer des données, qu'il s'agisse d'informations ou de signaux)}
+%\footnote{ PKCS : Public-Key Cryptography Standards. (9) Moyen de cryptologie : Tout matériel ou logiciel conçu ou modifié pour transformer des données, qu'il s'agisse d'informations ou de signaux)}
 
 
 
-%, à l'aide de conventions secrètes ou pour réaliser l'opération inverse avec ou sans convention secrète (loi n2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique art. 38).}
+%, à l'aide de conventions secrètes ou pour réaliser l'opération inverse avec ou sans convention secrète (loi n2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique art. 38).}
 
 \subsubsection{Certificats auto-signés !}
 Une clef publique\g{valide } dans un système cryptographique de confiance, doit être signée par une autorité de confiance pour être vérifiée par la suite par son\g{usager }. Disposer d'une PKI ou faire certifier sa chaîne de confiance est complexe et coûteux. Le monde informatique fait donc largement usage de l'auto-signature, c'est-à-dire de la génération des clefs, sans chaîne de confiance partagée. Lorsque les logiciels sont permissifs sur ces usages, l'ensemble du système est fragilisé.
@@ -97,6 +97,45 @@ l'implémentation des briques. Il est important que ces produits aient été ana
 
 \subsubsection{Usure ou rupture cryptographique}
 Si le temps n'est pas l'ami de l'archivage, il ne l'est pas non plus du chiffrement. Non par l'usure du support, mais simplement par la complexité d'une longue conservation des clefs, de l'érosion de la résistance des mécanismes. En outre, depuis des années, le terme\g{quantique } est apparu dans la littérature du domaine. Si la distribution quantique offre une transmission sûre de clef, l'ordinateur quantique pourrait apporter cette rupture que redoute l'industrie numérique, car capable de rompre la solidité des problèmes mathématiques sur lesquels repose une grande partie des mécanismes cryptographiques actuels.
-\subsubsection{ Bitcoin, blockchain...}
-Nous avons rapidement parcouru l'usage courant de la cryptographie en entreprise, mais de nouvelles révolutions des usages de la cryptographie sont déjà à nos portes. Après quelques années d'hésitation, la montée des\g{crypto-monnaie } comme Bitcoin donne une large expression aux mécanismes de signature pour assurer intégrité, traçabilité, imputabilité et modifie le rapport à la confiance\g{centralisée }. Dans l'émergence rapide de cette\g{décentralisation de la confiance }, quelques positions établies sont remises en cause. On notera en particulier une forme naissante d'ubérisation des chaînes de confiance, qui bouscule déjà le marché effervescent de la sécurité. 
+
+La cryptographie quantique est un espace de recherche de cryptographie qui utilise les propriétés quantiques de la matière pour sécuriser les communications et protéger les données. Elle repose sur des phénomènes quantiques tels que l'intrication et la superposition, qui permettent de réaliser des calculs et des opérations de manière beaucoup plus rapide et plus efficace que les algorithmes classiques utilisés dans la cryptographie traditionnelle.
+
+La cryptographie quantique est encore en développement et n'est pas encore largement utilisée dans les applications pratiques. Cependant, elle offre des avantages potentiels considérables en termes de sécurité et de vitesse de calcul. Par exemple, les algorithmes de cryptographie quantique pourraient être utilisés pour créer des clés de chiffrement plus sécurisées et pour effectuer des calculs complexes de manière beaucoup plus rapide que les algorithmes classiques.
+
+Il est important de noter que la cryptographie quantique est également confrontée à des défis importants, notamment en ce qui concerne la stabilité des données quantiques et la difficulté à mettre en œuvre ces algorithmes de manière pratique. En outre, il existe des inquiétudes quant à la sécurité à long terme de la cryptographie quantique, car il est possible que de futurs progrès technologiques permettent de casser la confiance dans les chaines de confiance basée sur les algorithmes actuels de manière plus efficace.
+
+En effet, si ces technologies sont pleinement mises en œuvre et deviennent largement utilisées, cela pourrait remettre en question la sécurité de nombreux systèmes de sécurité actuellement en place qui reposent sur des algorithmes de cryptographie classiques.
+
+On peut citer les risques suivants
+
+\begin{itemize}
+  \item Rupture de la sécurité de la cryptographie classique : Si les algorithmes de cryptographie quantique sont mis au point et deviennent largement utilisés, ils pourraient être utilisés pour cracker les codes de cryptographie classique, mettant ainsi en danger la sécurité de nombreux systèmes de sécurité actuels
+  \item Compromission de la confidentialité des communications : Si les algorithmes de cryptographie quantique sont utilisés pour chiffrer les communications, ils pourraient être crackés par des parties malveillantes, compromettant ainsi la confidentialité de ces communications.
+\end{itemize}
+
+
+\subsubsection{blockchain, Cyrpto-monnaies, NFT...}
+Nous avons rapidement parcouru l'usage courant de la cryptographie en entreprise, mais de nouvelles révolutions des usages de la cryptographie sont déjà à nos portes. Après quelques années d'hésitation, la montée des\g{crypto-monnaie } comme Bitcoin donne une large expression aux mécanismes de signature pour assurer intégrité, traçabilité, imputabilité et modifie le rapport à la confiance\g{centralisée }. Dans l'émergence rapide de cette\g{décentralisation de la confiance }, quelques positions établies sont remises en cause. On notera en particulier une forme naissante d'ubérisation des chaînes de confiance, qui bouscule déjà le marché effervescent de la cybersécurité. Les chaines de confiance sont de plus en plus utilisé dans les cryto-monaies et NFT.
+
+La cryptographie joue un rôle clé dans la sécurité et l'intégrité des blockchains en permettant de protéger les données et les transactions contre la modification ou la falsification.
+Ces actifs numériques à caractère authentique sont basés sur ces blockchains. Une blockchain est une base de données distribuée qui permet de stocker de manière sécurisée et transparente ces enregistrements de données. Elle est composée de blocs de données qui sont liés les uns aux autres de manière sécurisée grâce à l'utilisation de cryptographie.
+
+Chaque bloc de la chaîne contient des informations sur les transactions qui ont été effectuées, ainsi que des données sur les blocs précédents. Lorsqu'un nouveau bloc est ajouté à la chaîne, il est vérifié et validé par plusieurs ordinateurs dans le réseau, ce qui rend la blockchain très difficile à altérer ou à falsifier.
+
+Les blockchains sont principalement utilisées pour stocker et transférer des cryptomonnaies, mais elles peuvent également être utilisées pour d'autres applications, telles que la gestion de la chaîne d'approvisionnement, la gestion des actifs, la gestion de la santé, etc. Elles offrent un niveau élevé de transparence et de sécurité, ce qui les rend particulièrement utiles dans les situations où la confiance et l'intégrité des données sont importantes.
+
+Les cryptomonnaies sont des formes de monnaies numériques qui utilisent la technologie de la blockchain pour sécuriser les transactions et contrôler la création de nouvelles unités de monnaie. Elles sont décentralisées, ce qui signifie qu'elles ne sont pas émises ni gérées par une banque centrale ou tout autre organisme gouvernemental.
+
+La cryptomonnaie la plus connue est probablement le Bitcoin, qui a été créée en 2009. Depuis, de nombreuses autres cryptomonnaies ont vu le jour, chacune avec ses propres caractéristiques et utilisations. Certaines sont conçues pour être utilisées comme moyen de paiement, tandis que d'autres sont plus axées sur l'investissement.
+
+Les cryptomonnaies sont souvent utilisées comme moyen de paiement en ligne et sont acceptées par certaines entreprises et commerçants en tant que moyen de paiement. Cependant, elles restent controversées en raison de leur manque de réglementation et de leur volatilité, avec des fluctuations de prix importantes pouvant survenir en très peu de temps. En outre, leur utilisation a été associée à des activités illégales en raison de la confidentialité qu'elles offrent aux utilisateurs.
+
+Les NFT (Non-Fungible Tokens) sont en effet des tokens numériques qui représentent de manière unique des actifs numériques ou physiques. Ils sont stockés sur une chaîne de confiance basées sur des blockchains, comme la blockchain Ethereum, ce qui leur confère une certaine forme de rareté et de valeur.
+
+Les NFT sont  utilisés pour représenter des objets virtuels tels que des œuvres d'art numériques, des enregistrements de musique, des GIFs animés, des émoticônes, des personnages de jeux vidéo, etc. Ils permettent aux créateurs de ces actifs de monétiser leur travail de manière transparente et sécurisée, tout en offrant aux acheteurs la possibilité de devenir les propriétaires uniques de ces actifs.
+
+Si les NFT sont de plus en plus populaires et suscitent beaucoup d'intérêt en raison de leur capacité à représenter de manière unique des actifs numériques, il est important de noter qu'il existe également des risques liés à l'achat et à la possession de ceux-ci. On note en particulier la confiance dans la sécurité globale dans ces blockchains ainsi que la stabilité et la liquidité du marché des NFT.
+
+
+
 

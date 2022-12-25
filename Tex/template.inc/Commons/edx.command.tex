@@ -5,6 +5,10 @@
 %                            and BEAMER (.prz)
 %                              2020 eduf@ction
 %-------------------------------------------------------------
+% Attention : Use hard coded Pictures Path
+% (PicframeS)
+\newcommand{\picpath}{Tex/Pictures}
+%-------------------------------------------------------------
 
 \newcommand{\uNA}[2]
 {
@@ -50,6 +54,13 @@
 {\safeqrcode[padding]{\GITfilename}}  
 \end{center} 
 }
+
+\newcommand{\INFOGitHubS}
+{
+\noindent{\safeqrcode[height =3 cm]{\GITfilename}} \\
+\noindent {\tiny Téléchargez une version à jour}
+}
+
 
 
 %-----------------------------------------------------
@@ -222,7 +233,6 @@ title=#2,#1}
 %											\upicture 
 %---------------------------------------------------
 
-
 \ifdefined\PRZMODE
 
 \newcommand{\upicture}[4]{
@@ -235,7 +245,6 @@ title=#2,#1}
 }
 
 \else
-
 
 \newcommand{\upicture}[4]{
 \begin{figure}[!hbtp] %h !hbtp
@@ -272,6 +281,9 @@ title=#2,#1}
 }
 \fi
 
+%-----------------------------------------------------
+%	\picframe for BEAMER (Image included in Beamer Slide)
+%---------------------------------------------------
 
 \ifdefined\PRZMODE
 
@@ -295,10 +307,40 @@ title=#2,#1}
 }
 \fi
 
+%-----------------------------------------------------
+%.  for BEAMER (Image included in Beamer Slide)
+%	\picframeS Simplified with Name and Label from One Param
+%---------------------------------------------------
+
+
+\ifdefined\PRZMODE
+
+\newcommand{\picframeS}[4]
+{
+\begin{frame}
+\frametitle<presentation>{#2}
+  \begin{center}
+	 \includegraphics[height=0.95\textheight, width=0.95\textwidth, keepaspectratio ]{\picpath/img-#1.pdf}
+  \end{center}
+\end{frame}
+
+}
+\else
+\newcommand{\picframeS}[4]
+{
+\begin{figure}[!hbtp] % !hbtp ou !h 
+\centering \includegraphics[width=#3\textwidth]{\picpath/img-#1.pdf}
+\caption{(s) #2 \label{lbl-#1}}
+\end{figure}
+}
+\fi
+
+
+
 %{figure}[!h]
 %{wrapfigure}{O}{#3\textwidth}
 %-----------------------------------------------------
-%	FRAME										\wpicframe 
+%	FRAME			\wpicframe 
 %---------------------------------------------------
 
 \ifdefined\PRZMODE

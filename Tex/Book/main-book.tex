@@ -13,6 +13,9 @@
 
 
 \input{Tex/Book/config-book.tex}
+
+
+
 %\usepackage{showframe}
 
 %\PassOptionsToPackage{unicode}{hyperref}
@@ -38,7 +41,7 @@
 \input{Tex/template.inc/Commons/edx.styles.tex}
 
 % Exclure les notes pour les travaux des étudiants
-%\excludecomment{techworkbox}\let\endtechworkbox\relax
+\excludecomment{techworkbox}\let\endtechworkbox\relax
 
 
 
@@ -76,8 +79,8 @@
 
 \addtocontents{toc}{\protect\hypertarget{toc}{}}
 
-\input{Tex/acronymes.tex}
-\input{Tex/glossaire.tex}
+%\input{Tex/acronymes.tex}
+%\input{Tex/glossaire.tex}
 
 %--------------------------------------------------------------------------
 %	COVER  OF THE BOOK (1st and 4th)
@@ -110,11 +113,7 @@
 \pagestyle{fancy} % Enable headers and footers again
 
  
- %--------------------------------------------------------------------------
-%	 GLOSSARIES
-%--------------------------------------------------------------------------
- %\printglossary[type=\acronymtype]
-\printglossaries
+
 %--------------------------------------------------------------------------
 %	 MAIN DOCUMENT
 %--------------------------------------------------------------------------
@@ -127,14 +126,25 @@
 \part{Références et Index}
 %--------------------------------------------------------------------------
 
-%----------------------------------
+
+%-------------------------------------
+%	 GLOSSARIES
+%-------------------------------------
+ %\printglossary[type=\acronymtype]
+%\printglossaries
+
+\printnoidxglossary[sort=word]
+
+%-------------------------------------
+%	 REFERENCE BIBLIO
+%-------------------------------------
+
 \chapter*{Références}
 %\printbibliography[]
 \addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliographie}} % Add a Bibliography heading to the table of contents
 
 %----------------------------------
 \nocite{*}
-
 \section*{Articles}
 \addcontentsline{toc}{section}{Articles}
 \printbibliography[heading=bibempty,type=article]
@@ -144,7 +154,9 @@
 \addcontentsline{toc}{section}{Ouvrages}
 \printbibliography[heading=bibempty,type=book]
 
-%----------------------------------
+%-------------------------------------
+%	 FIGURES
+%-------------------------------------
 %\chapter*{Figures et index}
 \addcontentsline{toc}{chapter}{\textcolor{ocre}{Figures}}
 %\section*{Figures}

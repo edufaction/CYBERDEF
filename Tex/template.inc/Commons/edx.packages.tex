@@ -16,6 +16,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
 \usepackage[T1]{fontenc}
+%\usepackage{markdown}
+
 
 \usepackage{ccicons}
 
@@ -126,8 +128,13 @@ bookmarksopen=true}
 % Gestion des glossaires et acronymes
 % Un fichier acroymes.tex centralisé
 \usepackage[acronym]{glossaries}
-%\usepackage{glossaries}
-\makeglossaries
+
+%\makeglossaries
+\makenoidxglossaries 
+
+\loadglsentries{Tex/acronymes.tex}
+\loadglsentries{Tex/glossaire.tex}
+
 
 %\renewcommand{\bibname}{R\'ef\'erences}
 
