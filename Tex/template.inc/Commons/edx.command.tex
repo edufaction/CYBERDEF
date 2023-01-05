@@ -5,16 +5,11 @@
 %                            and BEAMER (.prz)
 %                              2020 eduf@ction
 %-------------------------------------------------------------
-% Attention : Use hard coded Pictures Path
-% (PicframeS)
-\newcommand{\picpath}{Tex/Pictures}
-%-------------------------------------------------------------
 
 \newcommand{\uNA}[2]
 {
 \newacronym{a#1}{#1}{#2}
 }
-
 
 \newcommand{\coauthor}[4]
 {
@@ -228,6 +223,23 @@ title=#2,#1}
 \newcommand {\uexpand}[1]{
 \mode<all>\input{Tex/Chapters/#1}
 }
+
+
+%-----------------------------------------------------
+%											\spicture 
+% direct include graphic with Scrivener
+%-----------------------------------------------------
+
+\newcommand{\spicture}[3]{
+\begin{figure}[!hbtp] %h !hbtp
+  \begin{center}
+	 \includegraphics[width=0.8\textwidth]{#1}
+  \end{center}
+\caption{#3 - (slbl-#2)\label{slbl-#2}}
+\end{figure}
+}
+
+%\StrBefore{#2}{.pdf}
 
 %-----------------------------------------------------
 %											\upicture 
@@ -467,18 +479,10 @@ title=#2,#1}
 % Define the \urlx command which works like \url, but with line brakes
 \def\urlx #1{\href{#1}{\hyphenateAndTtWholeString{#1}}}
   
-%  \newcommand{\link}[2]
-%  {
-%  \href{#1}
-%  {
-%  #2~\raisebox{-0.2ex}{\footnote
-%  	{
-% #1
-%  	}
-%  }
-%  }
-%  }\faWikipediaW
-  
+
+ %-----------------------------------------------------
+%														\link 
+%-----------------------------------------------------  
   
   \newcommand{\link}[2]
   {\href{#1}
@@ -487,7 +491,7 @@ title=#2,#1}
   \newcommand{\wikipedia}[1]
   { \href{https://fr.wikipedia.org/wiki/#1}{\textcolor{grey}{#1}}\raisebox{0.5ex}{\tiny{\textcolor{ocre}{\faWikipediaW}}}}
   
- 
+
  
  %-----------------------------------------------------
 %														\utodo 

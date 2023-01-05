@@ -1,19 +1,21 @@
+
 %-------------------------------------------------------------
 %                     MAIN BOOK CYBERDEF101
 %                          eric.dupuis@lecnam.net
 %                      (c) 2020, use CC-BY-NC-ND
 %-------------------------------------------------------------
-%-------------------------------------------------------------------
-%	                                 CLASS BOOK
-%-------------------------------------------------------------------
+%-------------------------------------------------------------
+%                          CLASS BOOK
+%-------------------------------------------------------------
 
 %\documentclass[12pt,fleqn, a4paper,twoside,openright]{book}
-\documentclass[paper=6in:9in,pagesize=a4,
-               headinclude=on,footinclude=on,10pt]{book}
+%\documentclass[paper=6in:9in,pagesize=a4,headinclude=on,footinclu==on,10pt]{book}
+               
+\documentclass[ pagesize=a4,
+               headinclude=on,footinclude=on,11pt]{book}
 
 
 \input{Tex/Book/config-book.tex}
-
 
 
 %\usepackage{showframe}
@@ -45,13 +47,17 @@
 
 
 
-\titleformat*{\section}{\large\bfseries\sffamily\color{ocre}}
+\titleformat*{\section}{\Large\bfseries\sffamily\color{ocre}}
 \titleformat*{\subsection}{\large\bfseries\sffamily\color{black}}
 \titleformat*{\subsubsection}{\large\bfseries\sffamily\color{ocre}}
 
 
 \usepackage{enumitem}
 \setlist [itemize,1]{label=\color{ocre}\faCaretRight}
+
+
+\usepackage{xstring}
+
 
 %\usepackage{cleveref}
 
@@ -158,9 +164,9 @@
 %	 FIGURES
 %-------------------------------------
 %\chapter*{Figures et index}
-\addcontentsline{toc}{chapter}{\textcolor{ocre}{Figures}}
+%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Figures}}
 %\section*{Figures}
-\listoffigures
+%\listoffigures
 
 %----------------------------------
 %\section*{index}

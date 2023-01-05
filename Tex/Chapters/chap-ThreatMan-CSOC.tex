@@ -111,11 +111,45 @@ Au delà des SIEM, il semble important d'ajouter à l'outillage d'un SOC un ense
 \subsection{Les outillages d'un SOC}
 % $sources : SOURCE https://observatoire-fic.com/prendre-la-mesure-des-cyberattaques-peut-on-definir-une-echelle-de-richter-dans-le-cyber/
 
-Au delà des SIEM, des sondes, des EDR, l'orchestration est au coeur de l'efficacité des fonctions d'un CSOC en particulier pour l'automatisation de la réponse à incidents.
+Au delà des SIEM, des sondes, des EDR, des XDR, l'orchestration est au coeur de l'efficacité des fonctions d'un CSOC en particulier pour l'automatisation de la réponse à incidents.
 
 L'orchestration et l'automatisation de la sécurité  permettent de réduire les délais de réponse, de  limiter l'exposition aux attaques et offrir une cohérence des processus cyberdéfense. Ces  outils d’automatisation et d’orchestration,  appelés SOAR, sont conçus pour améliorer la productivité et l’efficacité de centres des opérations de sécurité et des analystes.
 
 Ces outils automatisent les tâches de routines chronophages,  ils aident à coordonner les cycles de vie de réponse aux incidents et de gestion des incidents. Outils de  cohérence, ils permettent d'assurer reproductibilité de la discipline des opérations de cybersécurité et permet de réduire le temps nécessaire pour détecter et traiter les incidents.
+
+\subsubsection{Qu'est-ce que la détection-réponse des Endpoints (EDR) ?}
+
+La détection et la réponse Endpoints (EDR) est une solution de cybersécurité qui capture toute l'activité des Endpoints et s'appuie sur des analyses avancées pour fournir une visibilité en temps réel de la santé de tous ces terminaux ; détecter les activités anormales ; alerter l'équipe de sécurité (SOC par exmple) des événements ; et fournir des suggestions et des capacités de remédiation pour répondre, arrêter une attaque en cours ou limiter sa propagation.
+
+Les solutions de détection et de réponse des Endpoints ont les capacités suivantes :
+
+\begin{itemize}
+  \item Surveillance des points d'extrémité et enregistrement des événements
+  \item Recherche de données, investigation et chasse aux menaces
+  \item Triage des alertes ou validation des activités suspectes
+  \item Détection d'activités suspectes
+  \item Analyse des données
+  \item Renseignements exploitables à l'appui de la réponse
+  \item Remédiation
+\end{itemize}
+
+
+\subsubsection{Qu'est-ce que la détection-réponse étendues (XDR)}
+
+
+La détection-réponse dite étendue (XDR) rationalisent la collecte, l'analyse et les flux de données de sécurité sur l'ensemble de l'infrastructure de sécurité d'une entreprise, améliorant ainsi la visibilité des menaces de sécurité cachées et avancées et unifiant la réponse.
+
+Une plateforme XDR collecte et met en corrélation les données de l'ensemble de l'infrastructure afin d'améliorer la visibilité des menaces dans toute l'entreprise, d'accélérer les opérations de sécurité et de réduire les risques. XDR analyse, hiérarchise et rationalise ces données, afin qu'elles puissent être transmises aux équipes de sécurité dans un format normalisé via une console unique et consolidée.
+
+Les plateformes XDR offrent généralement les fonctionnalités suivantes :
+
+\begin{itemize}
+  \item Télémétrie de sécurité diversifiée et multi-domaine
+  \item Analyse des événements axée sur les menaces
+  \item Détection des menaces et hiérarchisation de la fidélité des données
+  \item Recherche de données, investigation et chasse aux menaces dans la télémétrie multi-domaine.
+  \item Réponse pour atténuer la menace et y remédier
+\end{itemize}
 
 
 \mode<all>{\texframe{Automatisation, SOAR}{Orchestration}
@@ -141,6 +175,10 @@ On y trouve par exemple dans ces outils de  \g{\textit{Security Orchestration, A
 Dans de nombreuses entreprises les processus liés à la sécurité sont encore isolés et confiés à une équipe spécifique sans s'intégrer totalement avec les chaînes de développement ou dans les équipes opérationnelles et encore moins dans les chaînes intégrées DEVOPS. 
  Si une approche DevOps efficace garantit des cycles de développement rapides et fréquents, les équipes sécurité doivent de plus en plus s'intégrer dans les processus DEVOPS tant pour y apporter un volet \textit{security by design}, mais surtout intégrer des mécanismes de sécurité opérationnelle.
  Ce sont ces dynamiques de sécurité tant de conception, que de sécurité opérationnelle que nous appelons \g{DEVSECOPS}.
+ 
+\utocomplete
+%TODO DESECOPS à compléter
+
  
 \begin{techworkbox}{DEVSECOPS}
 Le domaine du DEVSECOPS est un sujet à part entière de la gestion de la sécurité dans les chaînes de prise en compte de la sécurité  en DEVOPS, et l'utilisation des techniques DEVOPS dans les chaînes de gestion du dynamique du changement dans la détection de menace et la réponse sur incident. Un sujet intéressant pour \fichetech.

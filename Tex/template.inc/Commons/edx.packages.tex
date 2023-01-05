@@ -68,7 +68,7 @@ belowskip=1em,
 
 
 \usepackage{graphicx} % Required for including pictures
-\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
+%\graphicspath{{Pictures/}} % Specifies the directory where pictures are stored
 
 \usepackage{booktabs} % Required for nicer horizontal rules in tables
 
@@ -158,7 +158,20 @@ bookmarksopen=true}
 
 \usepackage{breakurl}
 
+
+%\usepackage[Rejne]{fncychap}
+
 %\usepackage{pythontex} % need shell escape
 
-
-
+%
+%\makeatletter
+%\DeclareRobustCommand{\afilename}[1]{%
+% \begingroup
+%  % \lstname seems to change hyphens into \textendash
+%  \def\textendash{-}%
+%  \afilename@parse{#1}%
+%  \edef\afilename@base{\detokenize\expandafter{\afilename@base}}%
+%  \texttt{\afilename@base.\afilename@ext}%
+% \endgroup
+%}
+%\makeatother

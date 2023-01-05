@@ -1,0 +1,48 @@
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS BOOK
+%              $File : MyBookCyber.tex
+%                             2020 eduf@ction
+%-------------------------------------------------------------
+% 								BOOK FILES
+%-------------------------------------------------------------
+
+%-------------------------------------------------------------
+% 								PART 0
+% 							Introduction
+%-------------------------------------------------------------
+
+\ifdefined\PARTMODEZERO{
+\part[Cyber-généralités]{Introduction à la Cyberdéfense d'entreprise}
+
+\input{Tex/Chapters/part0.tex}
+}\fi 
+%-------------------------------------------------------------
+% 								PART 1 
+% 							CyberRisk
+%-------------------------------------------------------------
+%
+%\ifdefined\PARTMODEONE{
+%\part[CyberRisques]{Des cyber-risques \\à la politique de sécurité \\de l'information}
+%\input{Tex/Chapters/part1-CyberRisk.tex}
+%}\fi 
+
+%-------------------------------------------------------------
+% 								PART 2 
+% 							INFOSEC
+%-------------------------------------------------------------
+%\ifdefined\PARTMODETWO{
+%\part[Mesures de sécurité]{De la politique de sécurité \\à la gouvernance}
+%
+%\input{Tex/Chapters/part2-InfoSec.tex}
+%}\fi 
+
+%-------------------------------------------------------------
+% 								PART 3
+% 				Sécurité Opérationnelle
+%-------------------------------------------------------------
+\ifdefined\PARTMODETHREE{
+\part[Sécurité opérationnelle]{Des stratégies de cyberdéfense \\à la gestion de crise}
+
+\input{Tex/Chapters/part3-SecOps.tex}
+}\fi 
+

@@ -11,26 +11,49 @@
 % 							Introduction
 %-------------------------------------------------------------
 
+\ifdefined\PARTMODEZERO{
 \part[Cyber-généralités]{Introduction à la Cyberdéfense d'entreprise}
 
+\usechapterimagetrue
+\chapterimage{Tex/template.inc/BookModel/BookPictures/chapter_head_0.pdf} 
+
 \input{Tex/Chapters/part0.tex}
+}\fi 
+%-------------------------------------------------------------
+% 								PART 1 
+% 							CyberRisk
+%-------------------------------------------------------------
+
+\ifdefined\PARTMODEONE{
+\part[CyberRisques]{Des cyber-risques \\à la politique de sécurité \\de l'information}
+
+\usechapterimagetrue
+\chapterimage{Tex/template.inc/BookModel/BookPictures/chapter_head_1.pdf}
+
+\input{Tex/Chapters/part1-CyberRisk.tex}
+}\fi 
 
 %-------------------------------------------------------------
-% 								PART 1 et 2 
-% 							Risques et PSSI
+% 								PART 2 
+% 							INFOSEC
 %-------------------------------------------------------------
+\ifdefined\PARTMODETWO{
+\part[Mesures de sécurité]{De la politique de sécurité \\à la gouvernance}
 
-\part[Risques et Mesures de sécurité]{Des cyber-risques \\à la politique de sécurité \\de l'information}
+\usechapterimagetrue
+\chapterimage{Tex/template.inc/BookModel/BookPictures/chapter_head_2.pdf}
 
-\input{Tex/Chapters/part1et2.tex}
-
+\input{Tex/Chapters/part2-InfoSec.tex}
+}\fi 
 
 %-------------------------------------------------------------
 % 								PART 3
-% 				Sécurité Opérationelle
+% 				Sécurité Opérationnelle
 %-------------------------------------------------------------
-
+\ifdefined\PARTMODETHREE{
 \part[Sécurité opérationnelle]{Des stratégies de cyberdéfense \\à la gestion de crise}
+\usechapterimagetrue
+\chapterimage{Tex/template.inc/BookModel/BookPictures/chapter_head_3.pdf}
+\input{Tex/Chapters/part3-SecOps.tex}
+}\fi 
 
-\input{Tex/Chapters/part3.tex}
-fiche

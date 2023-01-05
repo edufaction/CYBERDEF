@@ -5,7 +5,7 @@
 % ---------------------------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{edxstyle}[25/01/2012, v1.0]
+\ProvidesClass{edxstyle}[25/01/2012, v1.0] %edxstyle
 \RequirePackage{ifthen}
 \RequirePackage{calc}
 \AtEndOfClass{\RequirePackage{microtype}}
@@ -73,12 +73,15 @@
 %	SECTION/SUBSECTION/PARAGRAPH SET-UP
 %----------------------------------------------------------------------
 
+
+
 \RequirePackage[explicit]{titlesec}
+
 \titleformat{\section}
   {\color{color1}\Large\sffamily\bfseries}
   {}
   {0em}
-  {\colorbox{color2!10}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\centering\arabic{section}. #1}}}
+  {\colorbox{color2!30}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\centering\arabic{section}. #1}}}
   []
   
   
@@ -86,7 +89,7 @@
   {\color{color1}\Large\sffamily\bfseries}
   {}
   {0em}
-  {\colorbox{color2!10}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\centering#1}}}
+  {\colorbox{color2!20}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\centering#1}}}
   []  
   
   
