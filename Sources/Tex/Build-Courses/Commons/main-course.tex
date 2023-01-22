@@ -1,0 +1,177 @@
+
+%------------------------------------------------------
+%                     MAIN COURSE CYBERDEF101
+%                          eric.dupuis@lecnam.net
+%                      (c) 2020, use CC-BY-NC-ND
+%------------------------------------------------------
+%------------------------------------------------------
+%                          CLASS COURSE
+%------------------------------------------------------
+
+%\documentclass[12pt,fleqn, a4paper,twoside,openright]{book}
+%\documentclass[paper=6in:9in,pagesize=a4,headinclude=on,footinclu==on,10pt]{book}
+               
+\documentclass[pagesize=a4,twoside,openright,
+               headinclude=on,footinclude=on,11pt]{book}
+
+
+\input{Tex/Build-Courses/Commons/config-course.tex}
+
+
+%\usepackage{showframe}
+
+%\PassOptionsToPackage{unicode}{hyperref}
+%\PassOptionsToPackage{naturalnames}{hyperref}
+
+% load titlesec before beamerarticle
+\usepackage{titlesec}
+\usepackage{beamerarticle}
+\usepackage{afterpage}
+\usepackage{ae}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+
+\usepackage{ccicons}
+
+\usepackage{titletoc} % Required for manipulating the table of contents
+
+
+\input{Tex/template.inc/Commons/edx.packages.tex}
+\input{Tex/template.inc/Commons/edx.command.tex}
+\input{Tex/template.inc/Commons/edx.styles.tex}
+
+% Exclure les notes pour les travaux des étudiants
+%\excludecomment{techworkbox}\let\endtechworkbox\relax
+
+
+
+\titleformat*{\section}{\Large\bfseries\sffamily\color{ocre}}
+\titleformat*{\subsection}{\large\bfseries\sffamily\color{black}}
+\titleformat*{\subsubsection}{\large\bfseries\sffamily\color{ocre}}
+
+
+\usepackage{enumitem}
+\setlist [itemize,1]{label=\color{ocre}\faCaretRight}
+
+
+\usepackage{xstring}
+% BibTeX bibliography file
+\addbibresource{Tex/bibliography.bib} \defbibheading{bibempty}{}
+\makeatletter
+% \g@addto@macro{\UrlBreaks}{\UrlOrds}
+% \makeatother
+
+
+\definecolor{ocre}{RGB}{255,121,0}
+%\definecolor{ocre}{RGB}{160,0,0}  
+
+\hypersetup{colorlinks,linkcolor={grey},citecolor={ocre},urlcolor={ocre},anchorcolor ={ocre}} 
+
+
+
+%-------------------------------------------------------
+\begin{document}
+
+\AddToShipoutPicture{%
+\AtPageCenter{%
+\begin{tikzpicture}[remember picture,overlay]
+\node [rotate=60,scale=5,text opacity=0.1] at (current page.center) { \textit{\color{grey} \uDraftNotice} };
+\end{tikzpicture} 
+%\begin{tikzpicture}[remember picture,overlay]
+%\node [rotate=60,scale=10,text opacity=0.3]
+%at (current page.center) {moi};
+%\end{tikzpicture}
+}%
+}
+
+\addtocontents{toc}{\protect\hypertarget{toc}{}}
+
+%\input{Tex/acronymes.tex}
+%\input{Tex/glossaire.tex}
+
+%------------------------------------------------------
+%	COVER  OF THE BOOK (1st and 4th)
+%------------------------------------------------------
+
+\input{Tex/Build-Courses/Commons/coverfront-course.tex}  % Book Cover
+
+%------------------------------------------------------
+%	COVER  OF THE BOOK (2nd)
+%------------------------------------------------------
+\myemptypage
+%------------------------------------------------------
+%	NOTICE PAGES
+%------------------------------------------------------
+\input{Tex/Build-Courses/Commons/course.notice.tex}
+\myemptypage
+\input{Tex/Build-Courses/Commons/course.coauteurs.tex}
+%------------------------------------------------------
+%	TABLE OF CONTENTS
+%------------------------------------------------------
+\pagestyle{empty} % Disable headers and footers for the following pages
+\tableofcontents % Print the table of contents itself
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right side of the book
+\pagestyle{fancy} % Enable headers and footers again
+
+%------------------------------------------------------
+%	 MAIN DOCUMENT
+%------------------------------------------------------
+\usechapterimagetrue
+\chapterimage{Tex/template.inc/CourseModel/CoursePictures/chapter_head_course.pdf} 
+\ubody % Body of document (defined in Config file)
+%------------------------------------------------------
+%	ANNEXES et END PART
+\part{Références et Index}
+%------------------------------------------------------
+
+%-------------------------------------
+%	 GLOSSARIES
+%-------------------------------------
+ %\printglossary[type=\acronymtype]
+%\printglossaries
+
+\printnoidxglossary[sort=word]
+
+%-------------------------------------
+%	 REFERENCE BIBLIO
+%-------------------------------------
+
+\chapter*{Références}
+%\printbibliography[]
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliographie}} % Add a Bibliography heading to the table of contents
+
+%----------------------------------
+\nocite{*}
+\section*{Articles}
+\addcontentsline{toc}{section}{Articles}
+\printbibliography[heading=bibempty,type=article]
+
+%----------------------------------
+\section*{Ouvrages}
+\addcontentsline{toc}{section}{Ouvrages}
+\printbibliography[heading=bibempty,type=book]
+
+%-------------------------------------
+%	 FIGURES
+%-------------------------------------
+%\chapter*{Figures et index}
+%\addcontentsline{toc}{chapter}{\textcolor{ocre}{Figures}}
+%\section*{Figures}
+%\listoffigures
+
+%----------------------------------
+\section*{index}
+\cleardoublepage % Make sure the index starts on an odd (right side) page
+%\phantomsection
+\setlength{\columnsep}{0.75cm} % Space between the 2 columns of the index
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Index}} % Add an Index heading to the table of contents
+\printindex % Output the index
+
+
+\input{Tex/Build-Courses/Commons/coverback-course.tex}  
+
+\end{document}
+
+

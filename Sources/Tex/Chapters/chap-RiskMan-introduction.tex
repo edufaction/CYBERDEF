@@ -1,0 +1,104 @@
+%----------------------------------------
+% FR CYBERDEF 101 COURSE PART 1
+% chap-RiskMan-Introductionl.tex
+%----------------------------------------
+\section{La gestion du risque numérique}
+
+Avant de parler de gestion des risques, il convient de rappeler la simple définition du risque.
+
+Le risque est la probabilité qu'un évènement ayant un impact négatif se produise. Il peut être lié à différents domaines, tels que l'investissement, la santé, la sécurité, etc. Dans le contexte de l'investissement, le risque peut être défini comme la possibilité de perdre de l'argent en raison de fluctuations imprévues des marchés financiers. Dans le domaine de la santé, le risque peut être lié à la probabilité de contracter une maladie ou d'avoir un accident. Dans le domaine de la sécurité, le risque peut être lié à la probabilité d'un incident ou d'une catastrophe. En général, le risque peut être considéré comme la possibilité d'une perte ou d'un dommage.
+
+Le petit Robert nous donne 3 définitions :
+\begin{itemize}
+  \item (1) Danger éventuel plus ou moins prévisible
+  \item Éventualité d’un événement ne dépendant pas exclusivement de la volonté des parties et pouvant causer la perte d’un objet ou tout autre dommage.
+  \item Fait de s’exposer à un danger.
+\end{itemize}
+
+
+% parler de la gestion du risque, et que maintenant on parle d’impact surtout
+
+La gestion du risque numérique est un enjeu à large spectre dans l'entreprise. Il inclut les processus de planification et de mise en œuvre de mesures pour gérer et minimiser les risques de sécurité liés à l'utilisation de systèmes et technologies numériques. Il faut y inclure les systèmes internes (Systèmes d'information d'entreprise, produits et services vendus, et les services externes utilisées qu'ils soient des services dans le cloud, ou des services de communication ou de réseaux sociaux).
+Elle implique de prendre en compte les risques potentiels sur toutes les dimensions de d'usage auxquels une organisation peut être exposée en raison de l'utilisation de ces technologies  et de déterminer les mesures de sécurité appropriées pour les gérer.
+
+La gestion du risque numérique implique généralement trois grandes étapes :
+
+
+\begin{itemize}
+  \item Identification des risques : Identifier les menaces et les vulnérabilités potentielles auxquelles une organisation peut être exposée en raison de l'utilisation du numérique;
+  \item Évaluation des risques : Déterminer l'impact potentiel et la probabilité de chaque risque identifié;
+  \item Gestion des risques : Décider des mesures de sécurité appropriées pour gérer les risques identifiés, en fonction de leur impact et de leur probabilité.
+\end{itemize}
+
+
+\section{L'analyse des risques}
+
+\begin{nota}[avec une rappel de la définition du risque]
+\begin{equation}
+Risque = \frac{Ev\grave{e}nement\,redout\acute{e}\otimes Fragilit\acute{e}s\otimes Gain\,pour\,attaquant}{Moyens\otimes Risques\,pour\,attaquant}
+\end{equation}
+\end{nota}
+
+On ne peut démarrer sur la cyberdéfense d’entreprise sans se poser la question des enjeux de cette défense. Les premiers pas d’une démarche de cybersécurité est de passer  par l’identification de ces risques  que l’on appelle généralement \g{management par les risques}.
+L’identification des actifs les plus sensibles de l’organisation ou de l’entreprise nécessite de bien identifier les fondamentaux de l’organisation.
+Il ne faut surtout pas se focaliser sur les problématiques techniques ou technologiques lorsque l’on souhaite sécuriser ces systèmes d’information. En effet les activités techniques   ne représentent qu’un aspect de la  démarche qui, pour réussir, doit couvrir l’ensemble du spectre des  activités de l'entreprise.
+Avant donc de mettre en proposer des processus décrits dans des procédures ou des mesures techniques, il est indispensable de conduire une analyse des risques (gestion des risques) qui permettra de rédiger par la suite une politique de sécurité sur la base des éléments les « plus » importants pour la continuité de l’entreprise.
+Il existe un corpus normatif sur la gestion de risque au sein de l’ISO quoi se concrétise par la norme ISO/CEI~27005 publiée initialement en 2008. Cette norme adresse la gestion des risques dans le domaine de la Sécurité des Systèmes d'information.
+Cette norme a été structurée pour aider à déployer une approche méthodique de gestion du risque. Son usage s’inscrit dans un cadre plus large du déploiement du \g{Système de Management de la Sécurité de l'information},  où cette norme vient directement en appui des concepts généraux énoncés dans la norme ISO 27001, dont elle complète le chapitre 4.2.
+La norme ISO~27005 ne décrit qu'une démarche et un vocabulaire de référence, c’est pour cela qu’ont émergé des méthodes plus opérationnelle pour conduire les analyses de risques de manière guidées et plus détaillées. En France, la méthode \gls{aEBIOS} soutenue par l’ANSSI est celle la plus largement utilisée, mais certains utilisent des méthodes comme CRAMM, MEHARI etc...
+
+Cette partie est un condensé très rapide des éléments sur l'analyse de risque. Pour disposer des méthodes précises et des outils techniques pour pratiquer des analyses de risques lisibles et compréhensibles par tous les acteurs de la sécurité, le lecteur pourra se référer au site de l’ANSSI ou l’ensemble de la méthode \ulink{https://www.ssi.gouv.fr/guide/EBIOS-2010-expression-des-besoins-et-identification-des-objectifs-de-securite/}{\gls{aEBIOS}} est décrite.\\
+
+La méthode  \gls{aEBIOS}, est une méthode qui permet à la fois d’identifier les risques et de les hiérarchiser dans le but de proposer des contre-mesures à ceux ci. 
+\gls{aEBIOS} se compose de cinq modules. Les axes importants de cette méthodologie sont :
+
+\begin{itemize}
+  \item Etude du contexte fonctionnel et technique;
+  \item Expression des besoins de sécurité;
+  \item Étude des menaces (fonctionnelles et techniques) pesant sur le périmètre audité;
+  \item Expression des objectifs de sécurité;
+  \item Détermination des exigences de sécurité.
+\end{itemize}
+
+Le premier module, étude du contexte, consiste à définir le contexte de travail avec le client. Ce dernier délimite un périmètre pour l’analyse de risques, qui pourra être redéfini avec la société d’étude grâce à son expérience afin de vérifier et d’ajuster le périmètre pour qu’il soit en adéquation avec l’étude. Le premier module est la principale force de la méthode \gls{aEBIOS} car il permet à la démarche de s’adapter au contexte de l’entreprise et d’être ajustée à ses outils.
+
+Le second module, événements redoutés, se concentre uniquement sur les biens essentiels(information, service,....) que l’on cherche à protéger. Ce besoin de sécurité s’exprime selon des critères de sécurités suivants : la confidentialité, l’intégrité et la disponibilité (CID). Il faut ainsi identifier ces biens essentiels, estimer leurs valeurs, mettre en évidence les sources de menaces (gravité et vraisemblance) et montrer les impacts (économique, juridique....) sur l’organisme si les besoins ne sont pas respectés.
+
+Le troisième module, les scénarios de menace, de la méthodologie \gls{aEBIOS} se concentre sur les biens supports. Ce sont les composants “réels/physiques” qui portent les biens essentiels. Les biens supports sont analysés concrètement à travers leur architecture, leur flux,... et les menaces et leurs sources sont identifiées.
+
+Le quatrième module, les risques, a pour but de lister les risques qui sont des événements redoutés lié à des scénarios.
+
+Le but du dernier module, les mesures de sécurités, est de proposer des contre-mesures aux risques identifiés précédemment, afin de réduire la vraisemblance des risques et leurs impacts.
+
+\section{L'analyse de risque au coeur de l'architecture de gouvernance}
+
+
+\utodo
+
+%Mesures de sécurité posée, amélioration continue
+
+%Plan daction (mesure organique et technique)
+%
+%ftramewrok
+%
+%Gouervnance, Protection, défense, résilience .
+%
+%un PSSI n'est pas le pacth, management des capacité
+%
+%en amaon
+%capacité de protectetion Capidét de défense
+%Capacité de résiliance et notaent de gestion des crises
+%
+%Un framework ...
+%
+%La méthode \gls{aEBIOS} RM
+%
+%Scénario , mesure de l'impact sur le scénaori
+%
+%Graphe D'attaques, cyber kill chaine.
+%Chemin le plus facile ... chemin de monidre effot pour l'attaquant.
+%La vraisemble (en pourcentage) manque un peu de concret ...
+%
+%
+%Maitrise du risque numérique l'atout confiance (la maré: ssociaion des risques maagers)) dans l'organisaiton.  Au corus de l'atout confiance, \gls{aEBIOS} RM
+

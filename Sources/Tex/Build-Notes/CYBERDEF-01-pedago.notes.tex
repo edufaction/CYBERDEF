@@ -1,0 +1,60 @@
+%===========================
+%. CONFIGURATION ARTICLE  COURS  SEC 101
+%  utilise main-article et UStructure, UArticle
+%===========================
+
+% 				PEDAGO
+
+%===========================
+
+%****************************************
+% Chargement des variables du modèle
+%****************************************
+
+\input{Tex/Build-Notes/Commons/config-notes.tex} 
+
+%****************************************
+% Chargement des variables dédiées à l'article
+%****************************************
+
+%===========================
+\newcommand {\ukeywords}
+%===========================
+{%----------------------------------------------
+Pédagogie, Organisation, Méthode
+}%
+
+%===========================
+\newcommand {\utitle}
+{%----------------------------------------------
+Enjeux pédagogiques du cours SEC 101
+}%----------------------------------------------
+
+%===========================
+\newcommand {\uabstract}
+{%----------------------------------------------
+C\edoc   fournit les éléments du contexte pédagogique du du cours. Il introduit les enjeux  qui ont été à l’origine de la constitution de ce cours. Il cerne les connaissances cybersécurité à acquérir au titre de cet enseignement ainsi que les limites de celles-ci.
+}%----------------------------------------------
+
+
+
+
+%****************************************
+%  variable définissant  le corps de l'article
+%****************************************
+
+%===========================
+\newcommand {\ubody}
+{%----------------------------------------------
+%$BEGIN_UBODY
+\input{Tex/Chapters/chap-Intro-pedago.tex}
+%$END_UBODY
+}%----------------------------------------------
+
+%****************************************
+% Chargement  du MODELE
+%****************************************
+
+\umainload
+
+

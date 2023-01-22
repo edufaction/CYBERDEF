@@ -1,0 +1,81 @@
+
+%\usepackage{showframe}
+
+%\PassOptionsToPackage{unicode}{hyperref}
+%\PassOptionsToPackage{naturalnames}{hyperref}
+
+% load titlesec before beamerarticle
+%\usepackage{titlesec}
+%\usepackage{beamerarticle}
+
+\usepackage{booktabs} % pour l'amélioration des Tables et Tabular
+
+\usepackage{graphicx} % Required for including pictures
+\usepackage{tikz} % Required for drawing custom shapes
+\usetikzlibrary{tikzmark} 
+\usetikzlibrary{mindmap,trees, backgrounds}
+
+%\usepackage{ae}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+
+\usepackage{amsmath}
+\usepackage{fontawesome}
+\usepackage{listings}
+
+\usepackage{hyperref}
+
+\usepackage{csquotes}
+
+\usepackage[acronym]{glossaries}
+
+\usepackage{makeidx}
+
+%\makeglossaries
+
+\makenoidxglossaries 
+\loadglsentries{Tex/acronymes.tex}
+\loadglsentries{Tex/glossaire.tex}
+
+
+
+
+%\usepackage{ccicons}
+
+%\usepackage{titletoc} % Required for manipulating the table of contents
+
+
+%\input{Tex/template.inc/Commons/edx.packages.tex}
+%\input{Tex/template.inc/HtmlModel/edx.command.html.tex}
+%\input{Tex/template.inc/Commons/edx.command.tex}
+%\input{Tex/template.inc/HtmlModel/edx.styles.html.tex}
+
+% Exclure les notes pour les travaux des étudiants
+%\excludecomment{techworkbox}\let\endtechworkbox\relax
+
+
+
+%\titleformat*{\section}{\Large\bfseries\sffamily\color{ocre}}
+%\titleformat*{\subsection}{\large\bfseries\sffamily\color{ocre}}
+%\titleformat*{\subsubsection}{\large\bfseries\sffamily\color{ocre}}
+
+
+%\usepackage{enumitem}
+%\setlist [itemize,1]{label=\color{ocre}\faCaretRight}
+
+
+%\usepackage{xstring}
+
+
+%\usepackage{cleveref}
+
+\usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+
+\addbibresource{Tex/bibliography.bib} % BibTeX bibliography file
+\defbibheading{bibempty}{}
+
+%\makeatletter
+% \g@addto@macro{\UrlBreaks}{\UrlOrds}
+% \makeatother

@@ -1,0 +1,183 @@
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS COURSE
+%                          BEAMER MAIN FILE
+%                             2020 eduf@ction
+%-------------------------------------------------------------
+
+%\begin{frame}
+%\frametitle<presentation>{TITRE DIAPO}
+% frame text
+%\end{frame}
+
+%-------------------------------------------------------------
+\documentclass[ignorenonframetext, 8pt, allowframebreaks]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\usepackage[french]{babel}
+\usepackage{lmodern}
+\usepackage{multicol}
+
+\definecolor{ocre}{RGB}{160,0,0}   
+
+
+\input{Tex/template.inc/Commons/edx.packages.tex}
+\input{Tex/template.inc/Commons/edx.command.tex}
+
+%-------------------------------------------------------
+\usepackage{Tex/template.inc/BeamerModel/edxbeamer}
+%-------------------------------------------------------
+
+
+% a charger après hyperref, pour avoir les guillemets sous beamer
+\usepackage{ae}
+\usepackage{aecompl}
+
+\renewcommand{\familydefault}{pag}
+
+%-------------------------------------------------------
+% Optional: a subtitle to be displayed on the title slide
+\title[\ushorttitle]{\utitle}
+\subtitle{\tiny\uCourseLongName}
+
+%-------------------------------------------------------
+% The author(s) of the presentation:
+%  - again first a short version to be displayed at the bottom;
+%  - next the full list of authors, which may include contact information;
+
+\author[\uauthorwriter]{ \LARGE{\uauthor} \\ \medskip {\small \url{\umaila} \and \url{\umailb}\\ {\small \url{\usitea}}}}
+
+%-------------------------------------------------------
+% The institute:
+%  - to start the name of the university as displayed on the top of each slide
+%    this can be adjusted such that you can also create a Dutch version
+%  - next the institute information as displayed on the title slide
+
+\institute[\uinstituteshort]{{\uinstitute \\ \uchaire}}
+
+
+%-------------------------------------------------------
+% Add a date and possibly the name of the event to the slides
+%  - again first a short version to be shown at the bottom of each slide
+%  - second the full date and event name for the title slide
+\date[\uversion]{\tiny{Publication \INFODistrib ~du \\ \DTMnow}}
+
+
+\setbeamertemplate{navigation symbols}{%
+\insertslidenavigationsymbol
+\insertframenavigationsymbol
+\insertsubsectionnavigationsymbol
+\insertsectionnavigationsymbol
+\insertdocnavigationsymbol
+\insertbackfindforwardnavigationsymbol
+}
+
+%\mode<all>{
+%\input{Tex/acronymes.tex}
+%\input{Tex/glossaire.tex}
+%}
+
+%++++++++++++++++++++++++++++++++
+\begin{document}
+
+
+
+%================================
+\begin{frame}[plain]
+ 					\begin{figure}
+  					 \centering
+  					 \begin{columns}[c]
+  \begin{column}{0.4\textwidth}
+  
+    \begin{figure}
+        \begin{centering}
+  			\includegraphics[width=\textwidth]{Tex/template.inc/Commons/CommonsPictures/img-sec101.pdf}
+  \end{centering}
+  \end{figure}
+      \end{column}
+  
+  \begin{column}{0.6\textwidth}
+    \begin{figure}
+        \begin{centering}
+ 		    \includegraphics[width=\textwidth]{Tex/template.inc/Commons/CommonsPictures/cnambretagne.pdf}
+    \end{centering}
+  \end{figure}
+  \end{column}
+\end{columns}
+   							  
+   							  \end{figure}
+				  				\titlepage
+\end{frame}
+%================================
+
+
+%================================
+\begin{frame}
+ \frametitle{Sommaire}
+      \begin{multicols}{2}
+         \tableofcontents[hideallsubsections]
+     \end{multicols}
+ \end{frame}
+ %================================
+
+%-------------------------------------------------------
+%  BEAMER MAIN TEX configured with ubody
+%-------------------------------------------------------
+\mode<all>{\ubody}
+
+%-------------------------------------------------------
+% Last Frame
+%-------------------------------------------------------
+\begin{frame}
+ \frametitle{des questions ?}
+  \framesubtitle{contacter \umaila}
+  					\begin{figure}
+  					 \centering
+   						 \includegraphics[width=0.2\textwidth]{Tex/template.inc/Commons/CommonsPictures/cyberdef101.pdf}\\
+				  \end{figure}
+				 	 \centering \textit{Tous les documents publiés dans le cadre de ce cours sont perfectibles, \\ne pas hésiter à m'envoyer vos remarques !}
+ \end{frame}
+
+%-------------------------------------------------------
+% Contributions
+%-------------------------------------------------------
+\begin{frame}
+ \frametitle{Contributions}
+\begin{columns}
+		\begin{column}{0.1\textwidth}
+
+ 					\begin{figure}
+  						  \centering
+   						 \includegraphics[width=0.9\textwidth]{Tex/Contribs/contribute/ContribPictures/github.pdf}\\
+   						 	 \includegraphics[width=0.9\textwidth]{Tex/Contribs/contribute/ContribPictures/overleaf.pdf}
+				  \end{figure}
+		\end{column}
+		\begin{column}{0.9\textwidth}
+							\input{Tex/Contribs/contribute/contrib-gen.tex}
+		\end{column}
+\end{columns}
+ \end{frame}
+ 
+ %-------------------------------------------------------
+% Link to download file and copyright
+%-------------------------------------------------------
+\begin{frame}
+\frametitle{Mises à jour régulières}
+\framesubtitle{Eduf@ction~\umaila}
+%\INFOGitHub
+{\begin{center} 
+\setstretch{2}
+ {Vérifiez la disponibilité d'une version plus récente de} \\
+ {\ulink{\GITfilename}{\textbf{\jobname.pdf }sur GITHUB CYBERDEF} }   \\ 
+{{\huge\ccbyncndeu}}  \\  
+{2020 eduf@ction Publication en Creative Common BY-NC-ND }    \\  % Copyright notice
+{\safeqrcode[padding]{\GITfilename}}  
+\end{center} }
+\end{frame}
+
+\end{document}
+
+
+
+

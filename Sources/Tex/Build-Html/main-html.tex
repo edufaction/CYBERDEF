@@ -1,0 +1,90 @@
+
+%-------------------------------------------------------------
+%                     MAIN HTML BOOK CYBERDEF101
+%                       eric.dupuis@lecnam.net
+%                      (c) 2020, use CC-BY-NC-ND
+%-------------------------------------------------------------
+%-------------------------------------------------------------
+%                          CLASS BOOK HTML
+%-------------------------------------------------------------
+               
+\documentclass[pagesize=a4,
+               headinclude=on,footinclude=on,11pt]{book}
+
+
+\input{Tex/Build-Html/config-html.tex}
+%\input{Tex/Build-Book/config-book.tex}
+
+
+\input{Tex/template.inc/HtmlModel/edx.packtml.tex}
+\input{Tex/template.inc/HtmlModel/edx.html.tex}
+
+%-------------------------------------
+
+
+\begin{document}
+
+\title{\etitle}
+
+\maketitle
+
+%\input{Tex/acronymes.tex}
+%\input{Tex/glossaire.tex}
+
+%-------------------------------------
+%	TABLE OF CONTENTS
+%-------------------------------------
+
+\usechapterimagefalse
+
+%\pagestyle{empty} % Disable headers and footers for the following pages
+
+\frontmatter
+\setcounter{tocdepth}{3}
+
+\tableofcontents % Print the table of contents itself
+
+%-------------------------------------
+%	 MAIN DOCUMENT
+%-------------------------------------
+\mainmatter
+
+\input{Tex/Build-Html/MyHtmlCyber.tex} 
+
+\backmatter
+
+%-------------------------------------
+%	 GLOSSARIES
+%-------------------------------------
+ %\printglossary[type=\acronymtype]
+%\printglossaries
+
+\chapter*{Glossaire}
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Glossaire}} 
+\printnoidxglossary[sort=word]
+\printglossary[type=\acronymtype]
+\printglossaries
+
+%-------------------------------------
+%	 REFERENCES, INDEX et BIBLIO
+%-------------------------------------
+\chapter*{Références}
+\addcontentsline{toc}{chapter}{\textcolor{ocre}{Bibliographie}} 
+%----------------------------------
+\nocite{*}
+\section*{Articles}
+\addcontentsline{toc}{section}{Articles}
+\printbibliography[heading=bibempty,type=article]
+
+%----------------------------------
+\section*{Ouvrages}
+\addcontentsline{toc}{section}{Ouvrages}
+\printbibliography[heading=bibempty,type=book]
+
+\section*{Index}
+\addcontentsline{toc}{chapter}{Index} 
+\printindex  
+
+\end{document}
+
+

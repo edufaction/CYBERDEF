@@ -1,0 +1,66 @@
+%========================================
+%. CONFIGURATION NOTES COURS SEC 101
+%========================================
+
+% 	GESTION DES VULNERABILITES
+
+%========================================
+
+%************************************************************
+% Chargement des variables du modèle
+%************************************************************
+
+\input{Tex/Build-Notes/Commons/config-notes.tex}
+
+%========================================
+\newcommand {\ukeywords}
+%========================================
+{%---------------------------------------------------------------------
+Veille, vulnérabilités, menaces, identification
+}%
+
+%**************************************************
+% Chargement des variables dédiées à l'article
+%**************************************************
+%========================================
+\newcommand {\utitle}
+{%---------------------------------------------------------------------
+VEILLER : des risques identifiés aux vulnérabilités exploitables
+}%---------------------------------------------------------------------
+
+%========================================
+\newcommand {\uabstract}
+{%---------------------------------------------------------------------
+C\edoc présente la dynamique du travail sur les fragilités de l'entreprise, de la maitrise technique à la surveillance des vulnérabilités apparaissant dans l’environnement}
+%---------------------------------------------------------------------
+
+%************************************************************
+% variable définissant le corps de l'article
+%************************************************************
+
+
+
+%========================================
+\newcommand {\ubody}
+{%---------------------------------------------------------------------
+%$BEGIN_UBODY
+\mode<all>{\input{Tex/Chapters/chap-VulMan-intro.tex}}
+\mode<all>{\input{Tex/Chapters/chap-VulMan-vul-def.tex}}
+\mode<all>{\input{Tex/Chapters/chap-VulMan-vul-cve.tex}}
+\mode<all>{\input{Tex/Chapters/chap-VulMan-CERT.tex}}
+\mode<all>{\input{Tex/Chapters/chap-VulMan-vul-gest.tex}}
+%---------------------------------------------------------------------
+\mode<all>{\input{Tex/Chapters/chap-VulMan-pentest-intro.tex}}
+\mode<all>{\input{Tex/Chapters/chap-VulMan-vul-bugbounty.tex}}
+\mode<all>{\input{Tex/Chapters/chap-VulMan-secbydesign.tex}}
+\mode<all>{\input{Tex/Chapters/chap-VulMan-vul-divers.tex}}
+%$END_UBODY
+}%---------------------------------------------------------------------
+
+
+%************************************************************
+% Chargement du MODELE
+%************************************************************
+
+\umainload
+

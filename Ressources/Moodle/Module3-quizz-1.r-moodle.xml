@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- This file was generated on 2023-01-11 by pdfLaTeX -->
+<!-- running on *NIX with the package moodle v0.9 -->
+
+<quiz>
+ 
+<question type="category">
+  <category>
+    <text>$course$/top/CYBERDEF101-MODULE 3-QUIZZ</text>
+  </category>
+</question>
+ 
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q1]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Quand on parle de gestion de vuln&eacute;rabilit&eacute;s dans l&rsquo;entreprise on parle ? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-100" format="html">
+    <text><![CDATA[<p>de r&eacute;pertorier les vuln&eacute;rabilit&eacute;s informatiques sur internet</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>de constituer une base de donn&eacute;es de ses propres fragilit&eacute;s pour plus tard</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>d&rsquo;identifier ses vuln&eacute;rabilit&eacute;s et de les corriger au plus t&ocirc;t</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q2]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Dans la gestion de l&rsquo;&eacute;v&egrave;nement de s&eacute;curit&eacute; d&rsquo;un SIEM, donner le premier et le dernier des processus de gestion de l&rsquo;&eacute;v&egrave;nement : </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>d&eacute;tection</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>corr&eacute;lation</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>collecte</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>alerte</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q3]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>La norme ISO 27035 traite en particulier de : </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>gestion des vuln&eacute;rabilit&eacute;s</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>gestion des incidents</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>gestion des menaces informatiques</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>gestion de crise</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q4]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Le Forensic dans la r&eacute;ponse &agrave; incident comprend : </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>l&rsquo;analyse de traces dans les r&eacute;seaux</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>l&rsquo;analyse de documents cach&eacute;s dans une machine</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>la recherche d&rsquo;indices de compromission</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>l&rsquo;identification de l&rsquo;attaquant</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q5]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>La s&eacute;curit&eacute; op&eacute;rationnelle comporte : </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>le maintien en condition de s&eacute;curit&eacute; au sein de la DSI</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>le pilotage les audits techniques (pentests) sur l&rsquo;environnement</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>les op&eacute;rations du SOC : Security Operation Center</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>la gestion de la continuit&eacute; d&rsquo;activit&eacute; de l&rsquo;entreprise</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>la construction des politiques de s&eacute;curit&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>la supervision du fonctionnement du syst&egrave;me d&rsquo;information</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q6]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Quelle la signification dans le domaine des syst&egrave;mes d&rsquo;information du terme MTTR </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>le temps moyen entre deux attaques</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>le temps moyen entre deux bugs</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>le temps moyen pour r&eacute;parer</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>la gestion de la continuit&eacute; d&rsquo;activit&eacute;</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q7]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Un CERT priv&eacute; peu fournir moyennant paiement des services sur : </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>des vuln&eacute;rabilit&eacute;s pour faire des tests d&rsquo;entreprise</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>des bases de donn&eacute;es d&rsquo;applications sures</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>des attaques informatiques rendues inoffensives pour les pentests</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>des alertes li&eacute;es &agrave; la s&eacute;curit&eacute; informatique</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q8]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>A quoi peut-on associer le terme : WannaCry </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Un ransonware</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Un spyware</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Un antivirus</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Un r&eacute;seau social</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q9]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Un plan de cyberd&eacute;fense comporte </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>Le p&eacute;rim&egrave;tre de certification ISO 27001</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>La liste des actifs critiques</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>Les &eacute;v&egrave;nements les plus redout&eacute;s</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>Un annuaire de crise</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>La liste des politiques de s&eacute;curit&eacute; de l&rsquo;entreprise</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q10]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Un SIEM int&egrave;gre les &eacute;v&egrave;nements de d&eacute;tection de </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>IPS / IDS</p>]]></text>
+  </answer>
+  <answer fraction="-100" format="html">
+    <text><![CDATA[<p>AD</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>WAF</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>Proxy</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q11]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>L&rsquo;orchestration dans la gestion de vuln&eacute;rabilit&eacute;s comporte </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-100" format="html">
+    <text><![CDATA[<p>L&rsquo;automatisation des patchs</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>La gestion et le suivi des vuln&eacute;rabilit&eacute;s des actifs</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>La gestion des scans de vuln&eacute;rabilit&eacute;s</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q12]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>La recherche r&eacute;currente hebdo de vuln&eacute;rabilit&eacute;s passe principalement par </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Le scan de vuln&eacute;rabilit&eacute;s</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>Les tests d&rsquo;intrusion (Pentest)</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>Le bug-bounty</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>L&rsquo;analyse statique de code source</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q13]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Quelles sont les deux priorit&eacute;s d&rsquo;un RSSI en SECOPS </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>D&eacute;ployer la gestion de vuln&eacute;rabilit&eacute;s</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Mettre en place une fonction de d&eacute;tection</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>Mettre &agrave; jour ses Firewalls</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>D&eacute;ployer un VPN pour l&rsquo;acc&egrave;s &agrave; distance</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q14]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Que signifie l&rsquo;acronyme APT ? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Array Processor Tampering</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Advanced Persistent Threat</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Advanced Programming Theory</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Agnostic Programming Threat</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q15]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Une faille 0 day est une faille ? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Qui a &eacute;t&eacute; corrig&eacute;e depuis moins de 24h</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Qui a &eacute;t&eacute; d&eacute;couverte depuis moins de 24h</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Qui n&rsquo;a pas encore de correctif de s&eacute;curit&eacute; disponible</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Qui n&rsquo;a pas encore &eacute;t&eacute; exploit&eacute;e</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q16]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Qu&rsquo;est qu&rsquo;un outil SIEM ne fait pas ou n&rsquo;est pas dans son scope &agrave; ce jour </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-25" format="html">
+    <text><![CDATA[<p>Identification de la menace</p>]]></text>
+  </answer>
+  <answer fraction="-25" format="html">
+    <text><![CDATA[<p>Enregistrement de l&rsquo;incident</p>]]></text>
+  </answer>
+  <answer fraction="-25" format="html">
+    <text><![CDATA[<p>Classement de l&rsquo;incident</p>]]></text>
+  </answer>
+  <answer fraction="-25" format="html">
+    <text><![CDATA[<p>Escalade d&rsquo;un incident</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Diagnostic d&rsquo;impact</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>R&eacute;solution et r&eacute;tablissement du service</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q17]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>En cybers&eacute;curit&eacute;, le terme SOAR veut dire </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Strength Orchestration, for Automation and Response</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Strengths, Opportunities , Aspirations, Results</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Security Orchestration, Automation and Response</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Security Organisation, Automation and Reaction</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q18]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Une &eacute;quipe CSIRT conduit dans </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>L&rsquo;investigation sur incident</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>La rem&eacute;diation sur le syst&egrave;me attaqu&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>L&rsquo;anticipation par recherche de vuln&eacute;rabilit&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Le hunting (chasse &agrave; la menace)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q19]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>La norme 22301 doit &ecirc;tre utilis&eacute;e dans </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>L&rsquo;organisation de la gestion de crise</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>La gestion des incidents non critiques</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>La mise en place du SMSI (Syst&egrave;me de management syst&egrave;me de gestion de la s&eacute;curit&eacute;)</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[CD101-Mod3-Q20]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Dans la gestion des incidents de s&eacute;curit&eacute;, l&rsquo;&eacute;quipe SECOPS Incidents doit g&eacute;rer </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>La d&eacute;tection et l&rsquo;enregistrement des incidents</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>L&rsquo;exploitation de l&rsquo;IT</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>La classification et l&rsquo;aide initiale</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>L&rsquo;enqu&ecirc;te et le diagnostic</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>La restauration des donn&eacute;es</p>]]></text>
+  </answer>
+  <answer fraction="25" format="html">
+    <text><![CDATA[<p>La cloture de l&rsquo;incident</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>La communication de crise</p>]]></text>
+  </answer>
+</question>
+ 
+</quiz>

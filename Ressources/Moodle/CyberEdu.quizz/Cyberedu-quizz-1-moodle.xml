@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- This file was generated on 2023-01-10 by pdfLaTeX -->
+<!-- running on *NIX with the package moodle v0.9 -->
+
+<quiz>
+ 
+<question type="category">
+  <category>
+    <text>$course$/top/CYBERDEF101-Cyberedu-QUIZZ 1</text>
+  </category>
+</question>
+ 
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.1]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Entourer les exemples d&rsquo;enjeu de la cybers&eacute;curit&eacute; ? (Slide 7 - Les enjeux de la s&eacute;curit&eacute; des S.I.) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Augmenter les risques pesant sur le Syst&egrave;me d&rsquo;information</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>R&eacute;v&eacute;ler les secrets</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Rendre difficile la vie des utilisateurs en ajoutant plusieurs contraintes comme les mots de passe longs et complexes</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Prot&eacute;ger le syst&egrave;me d&rsquo;information</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.2]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Impacts sur la vie priv&eacute;e ? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Impact sur l&rsquo;image / le caract&egrave;re / la vie priv&eacute;e : Diffamation de caract&egrave;re , Divulgation d&rsquo;informations personnelles (photos d&eacute;nud&eacute;es) Harc&egrave;lement</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Impact sur l&rsquo;identit&eacute;: Usurpation d&rsquo;identit&eacute;</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.3]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Quels sont les trois principaux besoins de s&eacute;curit&eacute; (Voir slide 23 - 24) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>D: Disponibilit&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>I : Int&eacute;grit&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>C : Confidentialit&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>P : Prouvabilit&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>A : InputAbilit&eacute;</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.4]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Entourer la (ou les) phrase(s) correcte(s) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>Le chiffrement permet de garantir que la donn&eacute;e sera toujours disponible/accessible</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>La s&eacute;curit&eacute; physique permet d&rsquo;assurer la disponibilit&eacute; des &eacute;quipements et des donn&eacute;es</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>La signature &eacute;lectronique permet de garantir la confidentialit&eacute; de la donn&eacute;e</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Les d&eacute;nis de service distribu&eacute;s (DDoS) portent atteinte&agrave; la disponibilit&eacute; des donn&eacute;es</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.5]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Vous d&eacute;veloppez un site web www.asso-etudiants-touristes.org pour une association qui regroupe les &eacute;tudiants souhaitant effectuer des voyages ensemble&agrave; l&rsquo;&eacute;tranger. Sur ce site on retrouve les informations concernant les voyages propos&eacute;s telles que : le pays, les villes&agrave; visiter, le prix du transport, les conditions d&rsquo;h&eacute;bergement, les dates potentielles du voyage. Ces informations ont un besoin en confidentialit&eacute; : </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Faible</p>]]></text>
+  </answer>
+  <answer fraction="-100" format="html">
+    <text><![CDATA[<p>Fort</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.6]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Je viens de d&eacute;velopper un site web pour une association qui regroupe les &eacute;tudiants souhaitant effectuer des voyages en groupe&agrave; l&rsquo;&eacute;tranger. Les informations relatives aux &eacute;tudiants inscrits sur le site (login et mot de passe, nom, pr&eacute;nom, num&eacute;ro de t&eacute;l&eacute;phone, adresse), ont un besoin en confidentialit&eacute; : </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-100" format="html">
+    <text><![CDATA[<p>Faible</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Fort</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.6]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Je peux r&eacute;ussir une attaque sur un bien qui n&rsquo;a aucune vuln&eacute;rabilit&eacute; (voir Slide 34 - Notions de vuln&eacute;rabilit&eacute;, menace, attaque - attaque): </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-100" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Faux</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.7]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Toutes les organisations et tous les individus font face aux m&ecirc;mes menaces (voir slide 40 - Exemples de sources de menaces): </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-100" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Faux</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.8]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Entourer les attaques g&eacute;n&eacute;ralement de type cibl&eacute;e (slide 42 - 52: Panorama de quelques menaces): </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>Phishing ou hame\{(}c)onnage</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>Ransomware ou ran\{(}c)ongiciel</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Social engineering ou ing&eacute;nierie sociale</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Spear phishing ou l&rsquo;arnaque au pr&eacute;sident</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.9]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Entourer les attaques g&eacute;n&eacute;ralement de type non cibl&eacute;e (slide 42 - 52: Panorama de quelques menaces): </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>Intrusion informatique</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Virus informatique</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>D&eacute;ni de service distribu&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Phishing ou hame&ccedil;onnage</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.10]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Quels sont les &eacute;l&eacute;ments facilitateurs de fraudes internes (Slide 47 - Panorama de quelques menaces : Fraude interne) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Des comptes utilisateurs partag&eacute;s entre plusieurs personnes</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>L&rsquo;existence de proc&eacute;dures de contr&ocirc;le interne</p>]]></text>
+  </answer>
+  <answer fraction="50" format="html">
+    <text><![CDATA[<p>Peu ou pas de supervision des actions internes</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>Une gestion stricte et revue des habilitations</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.11]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Entourer les &eacute;l&eacute;ments qui peuvent r&eacute;duire ou emp&ecirc;cher des fraudes internes </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>Une gestion stricte et une revue des habilitations</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>Une s&eacute;paration des r\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hbox {o\global \mathchardef \accent@spacefactor \spacefactor }\let \begingroup \let \typeout \protect \begingroup \def \MessageBreak {(Font) }\let \protect \immediate \write \m@ne {LaTeX Font Info: on input line 118.}\endgroup \endgroup \let \ignorespaces \accent 94 o\egroup \spacefactor \accent@spacefactor les des utilisateurs</p>]]></text>
+  </answer>
+  <answer fraction="-100" format="html">
+    <text><![CDATA[<p>Peu ou pas de surveillance interne</p>]]></text>
+  </answer>
+  <answer fraction="33.33333" format="html">
+    <text><![CDATA[<p>Des comptes utilisateurs individuels pour chacun</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.12]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Citer les vecteurs d&rsquo;infection de virus </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="20" format="html">
+    <text><![CDATA[<p>Une pi&egrave;ce jointe attach&eacute;&agrave; un message &eacute;lectronique</p>]]></text>
+  </answer>
+  <answer fraction="20" format="html">
+    <text><![CDATA[<p>Un support amovible infect&eacute; par exemple une cl&eacute; USB</p>]]></text>
+  </answer>
+  <answer fraction="20" format="html">
+    <text><![CDATA[<p>Un site web malveillant ou ayant des pages web corrompues</p>]]></text>
+  </answer>
+  <answer fraction="20" format="html">
+    <text><![CDATA[<p>Un partage r&eacute;seau ouvert</p>]]></text>
+  </answer>
+  <answer fraction="20" format="html">
+    <text><![CDATA[<p>Un syst&egrave;me vuln&eacute;rable</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.13]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Qu&rsquo;est-ce qu&rsquo;un botnet? (Slide - Panorama de quelques menaces : D&eacute;ni de service distribu&eacute;) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>un r&eacute;seau d&rsquo;ordinateurs infect&eacute;s et contr\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hbox {o\global \mathchardef \accent@spacefactor \spacefactor }\let \begingroup \let \typeout \protect \begingroup \def \MessageBreak {(Font) }\let \protect \immediate \write \m@ne {LaTeX Font Info: on input line 136.}\endgroup \endgroup \let \ignorespaces \accent 94 o\egroup \spacefactor \accent@spacefactor l&eacute;s par une personne malveillante.</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>un logiciel maveillant s&rsquo;autorepliquant sur internet</p>]]></text>
+  </answer>
+  <answer fraction="-50" format="html">
+    <text><![CDATA[<p>un syst\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hbox {e\global \mathchardef \accent@spacefactor \spacefactor }\let \begingroup \let \typeout \protect \begingroup \def \MessageBreak {
+(Font)              }\let \protect \immediate\write \m@ne {LaTeX Font Info:     on input line 136.}\endgroup \endgroup \relax \let \ignorespaces \relax \accent 18 e\egroup \spacefactor \accent@spacefactor me control\unhbox \voidb@x \bgroup \let \unhbox \voidb@x \setbox \@tempboxa \hbox {e\global \mathchardef \accent@spacefactor \spacefactor }\let \begingroup \let \typeout \protect \begingroup \def \MessageBreak {
+(Font)              }\let \protect \immediate\write \m@ne {LaTeX Font Info:     on input line 136.}\endgroup \endgroup \relax \let \ignorespaces \relax \accent 19 e\egroup \spacefactor \accent@spacefactor &agrave; distance par un logiciel malveillant</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.14]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Vous devez syst&eacute;matiquement donner votre accord avant de faire partir d&rsquo;un r&eacute;seau de botnets? (Slide 52 - Panorama de quelques menaces : D&eacute;ni de service distribu&eacute; - illustration d&rsquo;un botnet) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-100" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Faux</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.15]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>En France, la cybers&eacute;curit&eacute; ne concerne que les entreprises du secteur priv&eacute; et les individus (Slide 54 : L&rsquo;organisation de la s&eacute;curit&eacute; en France) </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-100" format="html">
+    <text><![CDATA[<p>Vrai</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Faux</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.16]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>L&rsquo;usage d&rsquo;outils pour obtenir les cl&eacute;s Wifi et acc&eacute;der au r&eacute;seau Wifi du voisin tombe sous le coup de la loi (Slide 58 - Dispositif juridique fran&ccedil;ais de lutte contre la cybercriminalit&eacute;): </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Vigipirate</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>Godfrain</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Hadopi</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Patriot act</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.17]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Mon r&eacute;seau wifi personnel est mal s&eacute;curis&eacute;, par exemple par l&rsquo;usage d&rsquo;une cl&eacute; Wifi faible (exemple: 12345678). Une personne (intrus) se connecte&agrave; mon r&eacute;seau pour effectuer des actions malveillantes comme attaquer un site gouvernemental : </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>J&rsquo;encours des sanctions</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Seul l&rsquo;intrus encourt des sanctions</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>L&rsquo;intrus et moi encourons des sanctions.</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Aucune sanction n&rsquo;est encourue</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.18]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Donn&eacute;es&agrave; caract&egrave;re personnel lesquels ? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="12.5" format="html">
+    <text><![CDATA[<p>Nom, pr&eacute;nom</p>]]></text>
+  </answer>
+  <answer fraction="12.5" format="html">
+    <text><![CDATA[<p>Nom, t&eacute;l&eacute;phone</p>]]></text>
+  </answer>
+  <answer fraction="12.5" format="html">
+    <text><![CDATA[<p>Date de naissance et commune</p>]]></text>
+  </answer>
+  <answer fraction="12.5" format="html">
+    <text><![CDATA[<p>Lieu de naissance</p>]]></text>
+  </answer>
+  <answer fraction="12.5" format="html">
+    <text><![CDATA[<p>Nationalit&eacute; ou pays de naissance des parents ou des grands parents</p>]]></text>
+  </answer>
+  <answer fraction="12.5" format="html">
+    <text><![CDATA[<p>Adresse</p>]]></text>
+  </answer>
+  <answer fraction="12.5" format="html">
+    <text><![CDATA[<p>No carte d&rsquo;identit&eacute; / No de passeport / No de permis de conduire, .\kern \fontdimen 3\font .\kern \fontdimen 3\font .\kern \fontdimen 3\font </p>]]></text>
+  </answer>
+  <answer fraction="12.5" format="html">
+    <text><![CDATA[<p>Empreinte digitale</p>]]></text>
+  </answer>
+</question>
+<question type="multichoice">
+  <name format="html">
+    <text><![CDATA[Cyberedu-QUIZZ-ID-1.20]]></text>
+  </name>
+  <questiontext format="html">
+    <text><![CDATA[<p>Lors de la cr&eacute;ation du site Web de notre association &eacute;tudiante, si vous stockez les informations suivantes pour chaque membre : nom, pr&eacute;nom, adresse, adresse email. Aupr&egrave;s de quel organisme devez-vous faire une d&eacute;claration (Slide 60 - 64 : Droit de protection des donn&eacute;es&agrave; caract&egrave;re personnel)? </p>]]></text>
+  </questiontext>
+  <defaultgrade>1.0</defaultgrade>
+  <generalfeedback format="html"><text/></generalfeedback>
+  <penalty>0.10</penalty>
+  <hidden>0</hidden>
+  <single>false</single>
+  <shuffleanswers>1</shuffleanswers>
+  <answernumbering>abc</answernumbering>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Gendarmerie</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Universit&eacute;</p>]]></text>
+  </answer>
+  <answer fraction="100" format="html">
+    <text><![CDATA[<p>CNIL</p>]]></text>
+  </answer>
+  <answer fraction="-33.33333" format="html">
+    <text><![CDATA[<p>Hadopi</p>]]></text>
+  </answer>
+</question>
+ 
+</quiz>

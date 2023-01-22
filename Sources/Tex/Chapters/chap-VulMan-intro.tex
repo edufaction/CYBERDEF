@@ -1,0 +1,68 @@
+%-------------------------------------------------------------
+%               FR CYBERDEF SECOPS COURSE
+%                                        SECOPS
+%                    Vulnerability/Threat/Incident
+%.           $Chapitre : Vulnerabilty Management
+%                                $theme : Intro
+%                    $File : chap-Vulman-into.tex
+%                             2020 eduf@ction
+%-------------------------------------------------------------
+\uchap{Introduction sur les vulnérabilités, chapitre 3.1}
+%-------------------------------------------------------------
+
+\section{Fragilités numériques}
+
+Nous avons vu dans l'équation d'évaluation simple du risque, que ce dernier dépendait directement des fragilités de l'entreprise. C'est par l'exploitation de ces failles que l'attaquant va pouvoir déployer toutes ses ambitions.
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Fragilités et Vulnérabilités}
+% end header PRZ =======================
+La notion de fragilité numérique ou digitale de l'entreprise est à prendre au sens large. Elle comprend les fragilités \textbf{humaines}, \textbf{organisationnelles} et \textbf{techniques} mais aussi la sensibilité à des scénarios d'attaques. C'est en effet la susceptibilité d’une organisation à subir des défaillances dans le temps que l'on nomme vulnérabilités.
+\end{frame}
+% end PRZ ===========================
+
+\subsection{Détecter les fragilités de l’entreprise}
+
+La première tâche de fond en cybersécurité pour une équipe dédiée est d'identifier les fragilités de l'ensemble de l'environnement numérique \footnote{systèmes d'information de l'entreprise, services dans les cloud, réseaux sociaux...} de l'entreprise. Elle s'inscrit dans la dynamique de l'\textbf{anticipation} avec la recherche de fragilités ou de risques cyber dans l'entreprise et leur correction. Généralement les tâches associées à la couverture des vulnérabilités se déploient avant la \textbf{détection} d'évènement à risque, d'attaques, de déviance dans l'environnement mais aussi à l'extérieur du périmètre de l'entreprise.
+Elle se positionne néanmoins comme une activité qui peut déclencher des mécanismes de la \textbf{réaction} aux incidents, de la gestion de crise, par la nécessaire remédiation en cas de vulnérabilité critique.
+De multiples notions sont liées à la gestion des vulnérabilités, telles que le « scan » de vulnérabilités, l’évaluation de vulnérabilités (vulnerability assessment en anglais) ou l’application de correctifs (vulnerability patching ou patch management en anglais). On trouvera ces concepts bien décrits dans le livre blanc \ulink{https://www.sans.org/reading-room/whitepapers/threats/implementing-vulnerability-management-process-34180}{du SANS Institute Implementing a Vulnerability Management Process}.
+
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Identifier ses vulnérabilités}
+% end header PRZ =======================
+On peut distinguer deux grandes typologies d'actions pour identifier ces fragilités :
+\begin{itemize}
+	\item l'audit de sécurité, qui permet de détecter des fragilités exploitables. Ce type d'audit peut se dérouler sous la forme de scénario exécuté par des équipes de \g{tests d'intrusion} soit sous la forme de campagne exécutée avec des scanners de vulnérabilités.
+	\item la veille en vulnérabilités associée à la cartographie de l'environnement technique permettent de déclencher une alerte de sécurité si une vulnérabilité apparaissait sur un des produits, services ou logiciel surveillés.
+\end{itemize}
+\end{frame}
+% end PRZ ===========================
+
+La difficulté principale de ces activités est de bien définir les périmètres techniques et de responsabilité sur lesquelles elles portent.
+
+Si l'audit de sécurité permet d'évaluer les fragilités des éléments (composants) de l'entreprise en se mettant dans la peau de l'attaquant, afin de découvrir les scénarios potentiellement actifs sur l'environnement digital de l'entreprise, il n'en demeure pas moins important de mettre en place des mécanismes complémentaires et continus pour la veille, la recherche, la détection, la correction de ces vulnérabilités.
+
+
+\subsection{Anticiper et surveiller les menaces }
+
+Comme nous l'avons vu, une grande partie des attaques sur l'entreprise est liée à l'exploitation de fragilités de celle-ci, ces fragilités étant dans la plupart des cas connues.  
+
+% Begin PRZ ===========================
+\begin{frame}
+\frametitle<presentation>{Exploitation des vulnérabilités}
+L'exploitation de ces fragilités, sont de deux grandes natures :
+% end header PRZ =======================
+\begin{itemize}
+	\item attaques exploitant de manière \textbf{opportuniste} des fragilités non cataloguées  avec ou sans ciblage particulier de l'attaqué;
+	\item attaques \textbf{ciblées} exploitant de manière spécifique des fragilités connues mais pas corrigées ou des fragilités non encore connues par les défenseurs.
+\end{itemize}
+\end{frame}
+% end PRZ ===========================
+
+On trouvera dans le chapitre \ref{chap:GESTVUL}, une description plus précise de ces notions de vulnérabilités connues et non connues. Les menaces sont généralement des scénarios, des codes malveillants, des mécanismes d'agression ...
+Le principe de gestion de la menace relève de la même dynamique de gestion que celle liée aux vulnérabilités. 
+
+

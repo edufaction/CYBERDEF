@@ -1,5 +1,5 @@
 /.texpadtmp/*
-/out/*
+/Sources/out/*
 /Projets/MODEL/.texpadtmp/*
 /moodle/.texpadtmp/*
 .DS_Store
