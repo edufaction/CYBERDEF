@@ -7,7 +7,7 @@
 \contentsline {section}{\numberline {1.2}Aborder la cybersécurité}{15}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Politiques versus stratégies}{17}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Transformation numérique}{18}{subsection.1.2.2}%
-\contentsline {section}{\numberline {1.3}Sécurité du système d'information}{22}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Sécurité du système d'information}{21}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Gouvernance et conformité}{22}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}SECOPS et lutte contre la malveillance}{22}{subsection.1.3.2}%
 \contentsline {subsection}{\numberline {1.3.3}Les fonctions SSI de gouvernance}{22}{subsection.1.3.3}%
@@ -17,252 +17,252 @@
 \contentsline {subsubsection}{Responsabilités SSI}{24}{subsubsection*.5}%
 \contentsline {subsection}{\numberline {1.3.4}Maintien en condition de sécurité}{26}{subsection.1.3.4}%
 \contentsline {section}{\numberline {1.4}Enjeux légaux}{29}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Quelques cadres législatifs d'influence}{30}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.1}Quelques cadres législatifs d'influence}{29}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Le cadre de certification européen}{30}{subsection.1.4.2}%
 \contentsline {subsection}{\numberline {1.4.3}Cyberdefense et loi de programmation militaire}{30}{subsection.1.4.3}%
-\contentsline {section}{\numberline {1.5}Quelques organismes de référence}{31}{section.1.5}%
+\contentsline {section}{\numberline {1.5}Quelques organismes de référence}{30}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}International et Etats-Unis}{31}{subsection.1.5.1}%
-\contentsline {subsubsection}{Le NIST}{32}{subsubsection*.6}%
-\contentsline {subsubsection}{SEI - Université de Carnegie Mellon}{32}{subsubsection*.7}%
+\contentsline {subsubsection}{Le NIST}{31}{subsubsection*.6}%
+\contentsline {subsubsection}{SEI - Université de Carnegie Mellon}{31}{subsubsection*.7}%
 \contentsline {subsubsection}{l'ISO : International Organization for Standardization }{32}{subsubsection*.8}%
-\contentsline {subsection}{\numberline {1.5.2}Europe}{33}{subsection.1.5.2}%
-\contentsline {subsection}{\numberline {1.5.3}France}{34}{subsection.1.5.3}%
-\contentsline {section}{\numberline {1.6}Quelques associations et groupements professionnels}{34}{section.1.6}%
-\contentsline {chapter}{\numberline {2}Enjeux pédagogiques}{37}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Objectifs pédagogiques}{37}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Les compétences à acquérir}{38}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Métiers et compétences }{39}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Compétences et certifications}{41}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Certifications éditeurs}{43}{subsection.2.1.4}%
-\contentsline {subsection}{\numberline {2.1.5}Certifications professionelles}{43}{subsection.2.1.5}%
-\contentsline {subsection}{\numberline {2.1.6}Certifications Hacking}{44}{subsection.2.1.6}%
-\contentsline {section}{\numberline {2.2}Structure pédagogique du cours}{45}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Structure}{47}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Pour s'engager plus rapidement}{48}{subsection.2.2.2}%
-\contentsline {subsubsection}{Pour le niveau BAC +3}{49}{subsubsection*.9}%
-\contentsline {subsubsection}{Pour le niveau Bac + 5}{49}{subsubsection*.10}%
-\contentsline {part}{\@mypartnumtocformat {II}{SECOPS SEC101}}{51}{part.2}%
+\contentsline {subsection}{\numberline {1.5.2}Europe}{32}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}France}{33}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}Quelques associations et groupements professionnels}{33}{section.1.6}%
+\contentsline {chapter}{\numberline {2}Enjeux pédagogiques}{35}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Objectifs pédagogiques}{35}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Les compétences à acquérir}{36}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Métiers et compétences }{37}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Compétences et certifications}{40}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Certifications éditeurs}{40}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Certifications professionelles}{41}{subsection.2.1.5}%
+\contentsline {subsection}{\numberline {2.1.6}Certifications Hacking}{42}{subsection.2.1.6}%
+\contentsline {section}{\numberline {2.2}Structure pédagogique du cours}{43}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Structure}{45}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Pour s'engager plus rapidement}{46}{subsection.2.2.2}%
+\contentsline {subsubsection}{Pour le niveau BAC +3}{46}{subsubsection*.9}%
+\contentsline {subsubsection}{Pour le niveau Bac + 5}{46}{subsubsection*.10}%
+\contentsline {part}{\@mypartnumtocformat {II}{SECOPS SEC101}}{49}{part.2}%
 \ttl@stoptoc {default@1}
 \ttl@starttoc {default@2}
-\contentsline {chapter}{\numberline {3}Introduction à la SECOPS}{53}{chapter.3}%
-\contentsline {section}{\numberline {3.1}SECOPS et cyberdéfense}{53}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Des opérations de cyberdéfense d'entreprise}{53}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Veille et renseignement}{54}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}VTI(Vulnerabilty/Threat/Incident)}{54}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Fusion Center}{55}{subsection.3.1.4}%
-\contentsline {subsection}{\numberline {3.1.5}Entrainement à la cyberdéfense}{57}{subsection.3.1.5}%
-\contentsline {subsection}{\numberline {3.1.6}Gestion de crise}{58}{subsection.3.1.6}%
-\contentsline {section}{\numberline {3.2}Range et Simulation}{59}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Sécurité opérationnelle}{63}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Lutte contre la menace}{66}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Politiques et Stratégies}{67}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Stratégies d'action}{70}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Les modèles de cybersécurité}{72}{subsection.3.4.3}%
-\contentsline {section}{\numberline {3.5}Processus SECOPS}{76}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Les métiers de la SECOPS}{77}{section.3.6}%
-\contentsline {section}{\numberline {3.7}Eléments Communs}{77}{section.3.7}%
-\contentsline {chapter}{\numberline {4}Surveiller et Anticiper}{79}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Fragilités numériques}{79}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Détecter les fragilités de l’entreprise}{79}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Anticiper et surveiller les menaces }{80}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Les basics sur les vulnérabilités HOT}{81}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Exemples de vulnérabilités}{83}{subsection.4.1.4}%
-\contentsline {subsubsection}{Faille type XSS}{84}{subsubsection*.11}%
-\contentsline {subsubsection}{Faille type SQL Injection}{85}{subsubsection*.12}%
-\contentsline {subsubsection}{Vulnérabilités WEB}{86}{subsubsection*.13}%
-\contentsline {subsection}{\numberline {4.1.5}Failles de programmation}{86}{subsection.4.1.5}%
-\contentsline {subsubsection}{Exemple : SMB etherblue}{86}{subsubsection*.14}%
-\contentsline {subsubsection}{Exemple : programmation erronée}{87}{subsubsection*.15}%
-\contentsline {subsection}{\numberline {4.1.6}Vulnérabilités et configuration}{88}{subsection.4.1.6}%
-\contentsline {subsection}{\numberline {4.1.7}Vulnérabilités et exploits}{88}{subsection.4.1.7}%
-\contentsline {subsection}{\numberline {4.1.8}Vulnérabilités et divulgation}{88}{subsection.4.1.8}%
-\contentsline {subsection}{\numberline {4.1.9}CVE, CVSS et CWE}{89}{subsection.4.1.9}%
-\contentsline {subsection}{\numberline {4.1.10}Common Vulnerabilities and Exposure (CVE)}{89}{subsection.4.1.10}%
-\contentsline {subsection}{\numberline {4.1.11}Common Vulnerability Scoring System (CVSS)}{92}{subsection.4.1.11}%
-\contentsline {subsection}{\numberline {4.1.12}Common Weakness Enumeration (CWE)}{93}{subsection.4.1.12}%
-\contentsline {subsection}{\numberline {4.1.13}Les services de veille en vulnérabilités}{94}{subsection.4.1.13}%
-\contentsline {subsubsection}{Les CERT de l'ANSSI}{94}{subsubsection*.16}%
-\contentsline {subsubsection}{Les CERTs commerciaux}{94}{subsubsection*.17}%
-\contentsline {subsubsection}{La relation avec un CSIRT Interne }{94}{subsubsection*.18}%
-\contentsline {subsection}{\numberline {4.1.14}les agences de notation/cotation Cyber}{95}{subsection.4.1.14}%
-\contentsline {section}{\numberline {4.2}GERER les fragilités}{95}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Processus de gestion des vulnérabilités}{96}{subsection.4.2.1}%
-\contentsline {subsubsection}{ISO 27001}{97}{subsubsection*.19}%
-\contentsline {subsubsection}{Fenêtre d'exposition}{98}{subsubsection*.20}%
-\contentsline {subsubsection}{Processus d’analyse/recherche des vulnérabilités}{100}{subsubsection*.21}%
-\contentsline {subsubsection}{Processus d’évaluation des vulnérabilités (Vulnerability Assessement)}{100}{subsubsection*.22}%
-\contentsline {subsection}{\numberline {4.2.2}Audit sécurité des vulnérabilités}{102}{subsection.4.2.2}%
-\contentsline {subsubsection}{Scan de Vulnérabilités du système}{102}{subsubsection*.23}%
-\contentsline {subsubsection}{Scan de Vulnérabilités logicielles}{102}{subsubsection*.24}%
-\contentsline {subsection}{\numberline {4.2.3}La gestion des correctifs}{102}{subsection.4.2.3}%
-\contentsline {subsubsection}{De l'outillage}{103}{subsubsection*.25}%
-\contentsline {subsection}{\numberline {4.2.4}Les audits}{103}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}RECHERCHER des vulnérabilités}{104}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Les tests d'intrusion}{104}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Généralités}{104}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}Le métier de Pentesteur}{105}{subsection.4.3.3}%
-\contentsline {subsubsection}{ Ethical Hackers}{105}{subsubsection*.26}%
-\contentsline {subsubsection}{Peut-on faire confiance à des pentesteurs ?}{105}{subsubsection*.27}%
-\contentsline {subsection}{\numberline {4.3.4}Les sociétés de confiance}{106}{subsection.4.3.4}%
-\contentsline {subsubsection}{Formation des Pentests}{106}{subsubsection*.28}%
-\contentsline {subsection}{\numberline {4.3.5}Certifications professionnelles}{106}{subsection.4.3.5}%
-\contentsline {subsection}{\numberline {4.3.6}Les rapport d'audits, et cadre méthodologique}{107}{subsection.4.3.6}%
-\contentsline {subsection}{\numberline {4.3.7}Le Bug Bounty}{107}{subsection.4.3.7}%
-\contentsline {subsection}{\numberline {4.3.8}Quelques entreprises}{107}{subsection.4.3.8}%
-\contentsline {section}{\numberline {4.4}ANTICIPER et construire solide}{108}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Produits de confiance}{108}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Les critères communs}{108}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Périmètre sous responsabilité de l’entreprise}{109}{subsection.4.5.2}%
-\contentsline {subsubsection}{la notion de responsabilité}{109}{subsubsection*.29}%
-\contentsline {subsubsection}{Inventaire des actifs}{109}{subsubsection*.30}%
-\contentsline {subsubsection}{L’environnement digital externe}{110}{subsubsection*.31}%
-\contentsline {subsection}{\numberline {4.5.3}Veille et alerte sur les vulnérabilités}{111}{subsection.4.5.3}%
-\contentsline {subsubsection}{Abonnement au CERT}{111}{subsubsection*.32}%
-\contentsline {subsubsection}{Le marché de la vulnérabilité}{111}{subsubsection*.33}%
-\contentsline {chapter}{\numberline {5}Détecter et alerter}{113}{chapter.5}%
-\contentsline {section}{\numberline {5.1}GERER les menaces}{113}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Modèles}{115}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Les processus de gestion de la menace}{119}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Détecter, la surveillance du SI}{120}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}Attaques}{121}{subsection.5.1.4}%
-\contentsline {subsubsection}{Arbre d'attaques}{121}{subsubsection*.34}%
-\contentsline {subsubsection}{Le déploiement d'une menace en 8 étapes}{122}{subsubsection*.35}%
-\contentsline {subsubsection}{UBA : User Behavior Analytics}{124}{subsubsection*.36}%
-\contentsline {subsubsection}{La surveillance des terminaux}{124}{subsubsection*.37}%
-\contentsline {subsubsection}{La surveillance de l'IOT}{124}{subsubsection*.38}%
-\contentsline {subsection}{\numberline {5.1.5}Gestion de la menace}{125}{subsection.5.1.5}%
-\contentsline {subsection}{\numberline {5.1.6}Bases de connaissance et menaces}{125}{subsection.5.1.6}%
-\contentsline {subsubsection}{Sources identifiées menaçantes}{125}{subsubsection*.39}%
-\contentsline {subsubsection}{Cibles de menaces}{125}{subsubsection*.40}%
-\contentsline {subsubsection}{Threat Intelligence Database }{125}{subsubsection*.41}%
-\contentsline {subsubsection}{Exemple de TI}{126}{subsubsection*.42}%
-\contentsline {section}{\numberline {5.2}ANTICIPER les menaces}{126}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Surveiller et anticiper : Cyber-Threat Intelligence (CTI)}{126}{subsection.5.2.1}%
-\contentsline {subsubsection}{Quelques producteurs de CTI}{129}{subsubsection*.43}%
-\contentsline {subsubsection}{Quelques outils de CTI}{130}{subsubsection*.44}%
-\contentsline {subsection}{\numberline {5.2.2}Les surveillances}{131}{subsection.5.2.2}%
-\contentsline {subsubsection}{Surveillance de la compromission}{131}{subsubsection*.45}%
-\contentsline {subsubsection}{Surveillance des fragilités}{131}{subsubsection*.46}%
-\contentsline {subsubsection}{Surveillance du ciblage}{133}{subsubsection*.47}%
-\contentsline {subsubsection}{Que faire des ces informations}{133}{subsubsection*.48}%
-\contentsline {subsection}{\numberline {5.2.3}de l'outillage sur la menace}{133}{subsection.5.2.3}%
-\contentsline {subsubsection}{la gestion des menaces CTI}{133}{subsubsection*.49}%
-\contentsline {subsubsection}{STIX et TAXII}{134}{subsubsection*.50}%
-\contentsline {subsubsection}{MISP}{135}{subsubsection*.51}%
-\contentsline {subsubsection}{Vérifier une donnée par rapport à de la CTI}{136}{subsubsection*.52}%
-\contentsline {section}{\numberline {5.3}DETECTER les attaques}{136}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Log Management }{137}{subsection.5.3.1}%
-\contentsline {subsubsection}{Traces, journaux, logs}{137}{subsubsection*.53}%
-\contentsline {subsubsection}{Services et protocole SYSLOG}{139}{subsubsection*.54}%
-\contentsline {subsubsection}{L'usage des LOGs}{140}{subsubsection*.55}%
-\contentsline {subsubsection}{Puits de logs}{140}{subsubsection*.56}%
-\contentsline {subsubsection}{Outils d'analyses}{141}{subsubsection*.57}%
-\contentsline {subsection}{\numberline {5.3.2}SIEM, une technologie}{142}{subsection.5.3.2}%
-\contentsline {subsubsection}{SIEM et Logs}{142}{subsubsection*.58}%
-\contentsline {subsubsection}{Un peu d'histoire}{142}{subsubsection*.59}%
-\contentsline {subsection}{\numberline {5.3.3}la détection d'incidents}{146}{subsection.5.3.3}%
-\contentsline {subsubsection}{Collecter les logs }{146}{subsubsection*.60}%
-\contentsline {subsubsection}{Normaliser et indexer les logs}{146}{subsubsection*.61}%
-\contentsline {subsubsection}{Corréler les logs}{146}{subsubsection*.62}%
-\contentsline {subsubsection}{Analyser et alerter}{146}{subsubsection*.63}%
-\contentsline {subsubsection}{Réponse graduelle}{147}{subsubsection*.64}%
-\contentsline {subsection}{\numberline {5.3.4}De l'usage d'un SIEM pour la gouvernance}{147}{subsection.5.3.4}%
-\contentsline {subsubsection}{Supervision}{147}{subsubsection*.65}%
-\contentsline {subsubsection}{ Surveillance}{148}{subsubsection*.66}%
-\contentsline {subsubsection}{Les contreparties du SIEM}{148}{subsubsection*.67}%
-\contentsline {subsubsection}{Une configuration pointue }{148}{subsubsection*.68}%
-\contentsline {subsubsection}{Des investissements à bien anticiper }{149}{subsubsection*.69}%
-\contentsline {subsubsection}{Un grand volume d’alertes à réguler }{149}{subsubsection*.70}%
-\contentsline {subsubsection}{Une surveillance à exercer 24h/24}{149}{subsubsection*.71}%
-\contentsline {subsubsection}{Analyse d'impact}{150}{subsubsection*.72}%
-\contentsline {subsubsection}{Tout collecter}{150}{subsubsection*.73}%
-\contentsline {subsection}{\numberline {5.3.5}Construire les règles (UseCase)}{151}{subsection.5.3.5}%
-\contentsline {subsection}{\numberline {5.3.6}Quelques défis des SIEM }{154}{subsection.5.3.6}%
-\contentsline {subsubsection}{L'intelligence artificiel}{154}{subsubsection*.74}%
-\contentsline {subsubsection}{Quelques SIEMs}{155}{subsubsection*.75}%
-\contentsline {subsection}{\numberline {5.3.7}Threat Hunting}{156}{subsection.5.3.7}%
-\contentsline {subsubsection}{la chasse aux menaces}{156}{subsubsection*.76}%
-\contentsline {subsubsection}{Etablir le contact}{156}{subsubsection*.77}%
-\contentsline {subsection}{\numberline {5.3.8}la détection de menace sur des terminaux}{157}{subsection.5.3.8}%
-\contentsline {subsubsection}{Détection}{158}{subsubsection*.78}%
-\contentsline {subsubsection}{Investigation}{158}{subsubsection*.79}%
-\contentsline {subsubsection}{Remédiation}{158}{subsubsection*.80}%
-\contentsline {subsubsection}{Quelques EDR de références}{159}{subsubsection*.81}%
-\contentsline {subsection}{\numberline {5.3.9}Caractérisation de la menace}{159}{subsection.5.3.9}%
-\contentsline {subsection}{\numberline {5.3.10}De l'usage d'un CSIRT}{160}{subsection.5.3.10}%
-\contentsline {section}{\numberline {5.4}(SOC) Security Operation Center}{160}{section.5.4}%
-\contentsline {subsubsection}{Le SOC de demain}{161}{subsubsection*.82}%
-\contentsline {subsubsection}{Evaluation d'un SOC}{162}{subsubsection*.83}%
-\contentsline {subsubsection}{Les outils connexes d'un SOC}{162}{subsubsection*.84}%
-\contentsline {subsection}{\numberline {5.4.1}Les outillages d'un SOC}{163}{subsection.5.4.1}%
-\contentsline {subsubsection}{Qu'est-ce que la détection-réponse des Endpoints (EDR) ?}{163}{subsubsection*.85}%
-\contentsline {subsubsection}{Qu'est-ce que la détection-réponse étendues (XDR)}{164}{subsubsection*.86}%
-\contentsline {subsubsection}{DEVSECOPS}{166}{subsubsection*.87}%
-\contentsline {subsection}{\numberline {5.4.2}l'efficacité du CSOC}{166}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Leak : surveiller les fuites}{166}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Technologies et Organismes connexes}{168}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Stratégie de cyberdéfense et de surveillance}{168}{subsection.5.5.1}%
-\contentsline {subsubsection}{Technique de déception (Deceptive Defense)}{168}{subsubsection*.88}%
-\contentsline {subsubsection}{Honeypots}{169}{subsubsection*.89}%
-\contentsline {section}{\numberline {5.6}Quelques éléments techniques des attaques}{170}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Malware}{171}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Malware industriel : citadel}{171}{subsection.5.7.1}%
-\contentsline {chapter}{\numberline {6}Réagir et remédier}{173}{chapter.6}%
-\contentsline {section}{\numberline {6.1}GERER les incidents}{173}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Réponse à incident}{175}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Terminologie}{176}{subsection.6.1.2}%
-\contentsline {subsection}{\numberline {6.1.3}Définitions}{177}{subsection.6.1.3}%
-\contentsline {subsection}{\numberline {6.1.4}Sources Incidents}{178}{subsection.6.1.4}%
-\contentsline {subsection}{\numberline {6.1.5}Parcours}{179}{subsection.6.1.5}%
-\contentsline {section}{\numberline {6.2}ANTICIPER}{181}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Les bons reflexes}{181}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Etablir un processus de management}{181}{subsection.6.2.2}%
-\contentsline {subsubsection}{Résilience}{181}{subsubsection*.90}%
-\contentsline {subsection}{\numberline {6.2.3}L'intégration dans la gestion des incidents ITIL}{182}{subsection.6.2.3}%
-\contentsline {subsection}{\numberline {6.2.4}La gestion des incidents avec l'ISO 27035}{185}{subsection.6.2.4}%
-\contentsline {subsection}{\numberline {6.2.5}Et avec la NIST 800-61}{186}{subsection.6.2.5}%
-\contentsline {subsection}{\numberline {6.2.6}Continuité d'activité avec l'ISO 22301}{187}{subsection.6.2.6}%
-\contentsline {section}{\numberline {6.3}REAGIR}{189}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}La gestion de l'incident au quotidien}{189}{subsection.6.3.1}%
-\contentsline {subsubsection}{De l'alerte à l'incident}{189}{subsubsection*.91}%
-\contentsline {subsubsection}{L'incident}{189}{subsubsection*.92}%
-\contentsline {subsubsection}{Priorisation de l'évènement}{190}{subsubsection*.93}%
-\contentsline {subsection}{\numberline {6.3.2}Remédiation}{190}{subsection.6.3.2}%
-\contentsline {subsection}{\numberline {6.3.3}Aspect juridique de la réaction}{190}{subsection.6.3.3}%
-\contentsline {section}{\numberline {6.4}ENQUETER}{191}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Analyse de l'attaque}{191}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Evaluation détaillée des dommages}{191}{subsection.6.4.2}%
-\contentsline {subsection}{\numberline {6.4.3}forensique}{192}{subsection.6.4.3}%
-\contentsline {subsubsection}{Cadre juridique}{192}{subsubsection*.94}%
-\contentsline {subsubsection}{Cadre non-juridique}{192}{subsubsection*.95}%
-\contentsline {subsubsection}{Outillage}{192}{subsubsection*.96}%
-\contentsline {section}{\numberline {6.5}Méthodes et techniques connexes}{193}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}Sécurité Offensive vs Défensive}{193}{subsection.6.5.1}%
-\contentsline {subsection}{\numberline {6.5.2}Threats Hunting}{194}{subsection.6.5.2}%
-\contentsline {subsection}{\numberline {6.5.3}HoneyPots}{194}{subsection.6.5.3}%
-\contentsline {subsection}{\numberline {6.5.4}Hackback}{195}{subsection.6.5.4}%
-\contentsline {section}{\numberline {6.6}CERT et CSIRT}{196}{section.6.6}%
-\contentsline {subsubsection}{Un peu d'histoire}{196}{subsubsection*.97}%
-\contentsline {subsubsection}{Les missions d’un CSIRT,}{197}{subsubsection*.98}%
-\contentsline {subsection}{\numberline {6.6.1}Faire intervenir un CSIRT commercial}{198}{subsection.6.6.1}%
-\contentsline {subsubsection}{Phase d'analyse}{198}{subsubsection*.99}%
-\contentsline {subsubsection}{La phase de contractualisation}{198}{subsubsection*.100}%
-\contentsline {subsubsection}{Enquêter sur l’incident}{199}{subsubsection*.101}%
-\contentsline {subsubsection}{Contrôle et remédiation}{199}{subsubsection*.102}%
-\contentsline {subsection}{\numberline {6.6.2}Création de son équipe CSIRT}{200}{subsection.6.6.2}%
-\contentsline {subsection}{\numberline {6.6.3}Gestion de crises}{200}{subsection.6.6.3}%
-\contentsline {subsection}{\numberline {6.6.4}Anticiper les crises}{200}{subsection.6.6.4}%
-\contentsline {chapter}{\numberline {7}A retenir}{201}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Une synthèse des fondamentaux}{201}{section.7.1}%
-\contentsline {section}{\numberline {7.2}La réponse aux incidents}{202}{section.7.2}%
-\contentsline {section}{\numberline {7.3}La détection des attaques}{205}{section.7.3}%
-\contentsline {section}{\numberline {7.4}La couverture des fragilités}{206}{section.7.4}%
-\contentsline {section}{\numberline {7.5}La veille et l'anticiaption}{207}{section.7.5}%
-\contentsline {part}{\@mypartnumtocformat {III}{Références et Index}}{211}{part.3}%
+\contentsline {chapter}{\numberline {3}Introduction à la SECOPS}{51}{chapter.3}%
+\contentsline {section}{\numberline {3.1}SECOPS et cyberdéfense}{51}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Des opérations de cyberdéfense d'entreprise}{51}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Veille et renseignement}{52}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}VTI(Vulnerabilty/Threat/Incident)}{53}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Fusion Center}{54}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}Entrainement à la cyberdéfense}{55}{subsection.3.1.5}%
+\contentsline {subsection}{\numberline {3.1.6}Gestion de crise}{56}{subsection.3.1.6}%
+\contentsline {section}{\numberline {3.2}Range et Simulation}{56}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Sécurité opérationnelle}{60}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Lutte contre la menace}{63}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Politiques et Stratégies}{64}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Stratégies d'action}{67}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Les modèles de cybersécurité}{68}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Processus SECOPS}{71}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Les métiers de la SECOPS}{72}{section.3.6}%
+\contentsline {section}{\numberline {3.7}Eléments Communs}{72}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Surveiller et Anticiper}{73}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Fragilités numériques}{73}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Détecter les fragilités de l’entreprise}{73}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Anticiper et surveiller les menaces }{74}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Les basics sur les vulnérabilités HOT}{75}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.4}Exemples de vulnérabilités}{77}{subsection.4.1.4}%
+\contentsline {subsubsection}{Faille type XSS}{78}{subsubsection*.11}%
+\contentsline {subsubsection}{Faille type SQL Injection}{79}{subsubsection*.12}%
+\contentsline {subsubsection}{Vulnérabilités WEB}{80}{subsubsection*.13}%
+\contentsline {subsection}{\numberline {4.1.5}Failles de programmation}{80}{subsection.4.1.5}%
+\contentsline {subsubsection}{Exemple : SMB etherblue}{80}{subsubsection*.14}%
+\contentsline {subsubsection}{Exemple : programmation erronée}{81}{subsubsection*.15}%
+\contentsline {subsection}{\numberline {4.1.6}Vulnérabilités et configuration}{81}{subsection.4.1.6}%
+\contentsline {subsection}{\numberline {4.1.7}Vulnérabilités et exploits}{82}{subsection.4.1.7}%
+\contentsline {subsection}{\numberline {4.1.8}Vulnérabilités et divulgation}{82}{subsection.4.1.8}%
+\contentsline {subsection}{\numberline {4.1.9}CVE, CVSS et CWE}{84}{subsection.4.1.9}%
+\contentsline {subsection}{\numberline {4.1.10}Common Vulnerabilities and Exposure (CVE)}{84}{subsection.4.1.10}%
+\contentsline {subsection}{\numberline {4.1.11}Common Vulnerability Scoring System (CVSS)}{85}{subsection.4.1.11}%
+\contentsline {subsection}{\numberline {4.1.12}Common Weakness Enumeration (CWE)}{86}{subsection.4.1.12}%
+\contentsline {subsection}{\numberline {4.1.13}Les services de veille en vulnérabilités}{87}{subsection.4.1.13}%
+\contentsline {subsubsection}{Les CERT de l'ANSSI}{87}{subsubsection*.16}%
+\contentsline {subsubsection}{Les CERTs commerciaux}{88}{subsubsection*.17}%
+\contentsline {subsubsection}{La relation avec un CSIRT Interne }{88}{subsubsection*.18}%
+\contentsline {subsection}{\numberline {4.1.14}les agences de notation/cotation Cyber}{88}{subsection.4.1.14}%
+\contentsline {section}{\numberline {4.2}GERER les fragilités}{88}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Processus de gestion des vulnérabilités}{90}{subsection.4.2.1}%
+\contentsline {subsubsection}{ISO 27001}{90}{subsubsection*.19}%
+\contentsline {subsubsection}{Fenêtre d'exposition}{91}{subsubsection*.20}%
+\contentsline {subsubsection}{Processus d’analyse/recherche des vulnérabilités}{93}{subsubsection*.21}%
+\contentsline {subsubsection}{Processus d’évaluation des vulnérabilités (Vulnerability Assessement)}{93}{subsubsection*.22}%
+\contentsline {subsection}{\numberline {4.2.2}Audit sécurité des vulnérabilités}{95}{subsection.4.2.2}%
+\contentsline {subsubsection}{Scan de Vulnérabilités du système}{95}{subsubsection*.23}%
+\contentsline {subsubsection}{Scan de Vulnérabilités logicielles}{95}{subsubsection*.24}%
+\contentsline {subsection}{\numberline {4.2.3}La gestion des correctifs}{95}{subsection.4.2.3}%
+\contentsline {subsubsection}{De l'outillage}{96}{subsubsection*.25}%
+\contentsline {subsection}{\numberline {4.2.4}Les audits}{96}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}RECHERCHER des vulnérabilités}{96}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Les tests d'intrusion}{98}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Généralités}{98}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Le métier de Pentesteur}{98}{subsection.4.3.3}%
+\contentsline {subsubsection}{ Ethical Hackers}{98}{subsubsection*.26}%
+\contentsline {subsubsection}{Peut-on faire confiance à des pentesteurs ?}{98}{subsubsection*.27}%
+\contentsline {subsection}{\numberline {4.3.4}Les sociétés de confiance}{99}{subsection.4.3.4}%
+\contentsline {subsubsection}{Formation des Pentests}{99}{subsubsection*.28}%
+\contentsline {subsection}{\numberline {4.3.5}Certifications professionnelles}{99}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Les rapport d'audits, et cadre méthodologique}{99}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}Le Bug Bounty}{100}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Quelques entreprises}{100}{subsection.4.3.8}%
+\contentsline {section}{\numberline {4.4}ANTICIPER et construire solide}{100}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Produits de confiance}{101}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Les critères communs}{101}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Périmètre sous responsabilité de l’entreprise}{101}{subsection.4.5.2}%
+\contentsline {subsubsection}{la notion de responsabilité}{101}{subsubsection*.29}%
+\contentsline {subsubsection}{Inventaire des actifs}{102}{subsubsection*.30}%
+\contentsline {subsubsection}{L’environnement digital externe}{103}{subsubsection*.31}%
+\contentsline {subsection}{\numberline {4.5.3}Veille et alerte sur les vulnérabilités}{103}{subsection.4.5.3}%
+\contentsline {subsubsection}{Abonnement au CERT}{103}{subsubsection*.32}%
+\contentsline {subsubsection}{Le marché de la vulnérabilité}{103}{subsubsection*.33}%
+\contentsline {chapter}{\numberline {5}Détecter et alerter}{105}{chapter.5}%
+\contentsline {section}{\numberline {5.1}GERER les menaces}{105}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Modèles}{106}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Les processus de gestion de la menace}{111}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Détecter, la surveillance du SI}{112}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Attaques}{112}{subsection.5.1.4}%
+\contentsline {subsubsection}{Arbre d'attaques}{113}{subsubsection*.34}%
+\contentsline {subsubsection}{Le déploiement d'une menace en 8 étapes}{114}{subsubsection*.35}%
+\contentsline {subsubsection}{UBA : User Behavior Analytics}{115}{subsubsection*.36}%
+\contentsline {subsubsection}{La surveillance des terminaux}{116}{subsubsection*.37}%
+\contentsline {subsubsection}{La surveillance de l'IOT}{116}{subsubsection*.38}%
+\contentsline {subsection}{\numberline {5.1.5}Gestion de la menace}{116}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}Bases de connaissance et menaces}{116}{subsection.5.1.6}%
+\contentsline {subsubsection}{Sources identifiées menaçantes}{116}{subsubsection*.39}%
+\contentsline {subsubsection}{Cibles de menaces}{117}{subsubsection*.40}%
+\contentsline {subsubsection}{Threat Intelligence Database }{117}{subsubsection*.41}%
+\contentsline {subsubsection}{Exemple de TI}{117}{subsubsection*.42}%
+\contentsline {section}{\numberline {5.2}ANTICIPER les menaces}{117}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Surveiller et anticiper : Cyber-Threat Intelligence (CTI)}{117}{subsection.5.2.1}%
+\contentsline {subsubsection}{Quelques producteurs de CTI}{121}{subsubsection*.43}%
+\contentsline {subsubsection}{Quelques outils de CTI}{121}{subsubsection*.44}%
+\contentsline {subsection}{\numberline {5.2.2}Les surveillances}{122}{subsection.5.2.2}%
+\contentsline {subsubsection}{Surveillance de la compromission}{122}{subsubsection*.45}%
+\contentsline {subsubsection}{Surveillance des fragilités}{123}{subsubsection*.46}%
+\contentsline {subsubsection}{Surveillance du ciblage}{124}{subsubsection*.47}%
+\contentsline {subsubsection}{Que faire des ces informations}{125}{subsubsection*.48}%
+\contentsline {subsection}{\numberline {5.2.3}de l'outillage sur la menace}{125}{subsection.5.2.3}%
+\contentsline {subsubsection}{la gestion des menaces CTI}{125}{subsubsection*.49}%
+\contentsline {subsubsection}{STIX et TAXII}{125}{subsubsection*.50}%
+\contentsline {subsubsection}{MISP}{126}{subsubsection*.51}%
+\contentsline {subsubsection}{Vérifier une donnée par rapport à de la CTI}{127}{subsubsection*.52}%
+\contentsline {section}{\numberline {5.3}DETECTER les attaques}{127}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Log Management }{128}{subsection.5.3.1}%
+\contentsline {subsubsection}{Traces, journaux, logs}{128}{subsubsection*.53}%
+\contentsline {subsubsection}{Services et protocole SYSLOG}{130}{subsubsection*.54}%
+\contentsline {subsubsection}{L'usage des LOGs}{131}{subsubsection*.55}%
+\contentsline {subsubsection}{Puits de logs}{132}{subsubsection*.56}%
+\contentsline {subsubsection}{Outils d'analyses}{132}{subsubsection*.57}%
+\contentsline {subsection}{\numberline {5.3.2}SIEM, une technologie}{133}{subsection.5.3.2}%
+\contentsline {subsubsection}{SIEM et Logs}{133}{subsubsection*.58}%
+\contentsline {subsubsection}{Un peu d'histoire}{133}{subsubsection*.59}%
+\contentsline {subsection}{\numberline {5.3.3}la détection d'incidents}{136}{subsection.5.3.3}%
+\contentsline {subsubsection}{Collecter les logs }{137}{subsubsection*.60}%
+\contentsline {subsubsection}{Normaliser et indexer les logs}{137}{subsubsection*.61}%
+\contentsline {subsubsection}{Corréler les logs}{137}{subsubsection*.62}%
+\contentsline {subsubsection}{Analyser et alerter}{137}{subsubsection*.63}%
+\contentsline {subsubsection}{Réponse graduelle}{137}{subsubsection*.64}%
+\contentsline {subsection}{\numberline {5.3.4}De l'usage d'un SIEM pour la gouvernance}{138}{subsection.5.3.4}%
+\contentsline {subsubsection}{Supervision}{138}{subsubsection*.65}%
+\contentsline {subsubsection}{ Surveillance}{139}{subsubsection*.66}%
+\contentsline {subsubsection}{Les contreparties du SIEM}{139}{subsubsection*.67}%
+\contentsline {subsubsection}{Une configuration pointue }{139}{subsubsection*.68}%
+\contentsline {subsubsection}{Des investissements à bien anticiper }{139}{subsubsection*.69}%
+\contentsline {subsubsection}{Un grand volume d’alertes à réguler }{140}{subsubsection*.70}%
+\contentsline {subsubsection}{Une surveillance à exercer 24h/24}{140}{subsubsection*.71}%
+\contentsline {subsubsection}{Analyse d'impact}{140}{subsubsection*.72}%
+\contentsline {subsubsection}{Tout collecter}{141}{subsubsection*.73}%
+\contentsline {subsection}{\numberline {5.3.5}Construire les règles (UseCase)}{142}{subsection.5.3.5}%
+\contentsline {subsection}{\numberline {5.3.6}Quelques défis des SIEM }{144}{subsection.5.3.6}%
+\contentsline {subsubsection}{L'intelligence artificiel}{145}{subsubsection*.74}%
+\contentsline {subsubsection}{Quelques SIEMs}{145}{subsubsection*.75}%
+\contentsline {subsection}{\numberline {5.3.7}Threat Hunting}{146}{subsection.5.3.7}%
+\contentsline {subsubsection}{la chasse aux menaces}{146}{subsubsection*.76}%
+\contentsline {subsubsection}{Etablir le contact}{147}{subsubsection*.77}%
+\contentsline {subsection}{\numberline {5.3.8}la détection de menace sur des terminaux}{147}{subsection.5.3.8}%
+\contentsline {subsubsection}{Détection}{148}{subsubsection*.78}%
+\contentsline {subsubsection}{Investigation}{148}{subsubsection*.79}%
+\contentsline {subsubsection}{Remédiation}{149}{subsubsection*.80}%
+\contentsline {subsubsection}{Quelques EDR de références}{150}{subsubsection*.81}%
+\contentsline {subsection}{\numberline {5.3.9}Caractérisation de la menace}{150}{subsection.5.3.9}%
+\contentsline {subsection}{\numberline {5.3.10}De l'usage d'un CSIRT}{151}{subsection.5.3.10}%
+\contentsline {section}{\numberline {5.4}(SOC) Security Operation Center}{151}{section.5.4}%
+\contentsline {subsubsection}{Le SOC de demain}{152}{subsubsection*.82}%
+\contentsline {subsubsection}{Evaluation d'un SOC}{153}{subsubsection*.83}%
+\contentsline {subsubsection}{Les outils connexes d'un SOC}{153}{subsubsection*.84}%
+\contentsline {subsection}{\numberline {5.4.1}Les outillages d'un SOC}{154}{subsection.5.4.1}%
+\contentsline {subsubsection}{Qu'est-ce que la détection-réponse des Endpoints (EDR) ?}{154}{subsubsection*.85}%
+\contentsline {subsubsection}{Qu'est-ce que la détection-réponse étendues (XDR)}{155}{subsubsection*.86}%
+\contentsline {subsubsection}{DEVSECOPS}{156}{subsubsection*.87}%
+\contentsline {subsection}{\numberline {5.4.2}l'efficacité du CSOC}{157}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Leak : surveiller les fuites}{157}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Technologies et Organismes connexes}{159}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Stratégie de cyberdéfense et de surveillance}{159}{subsection.5.5.1}%
+\contentsline {subsubsection}{Technique de déception (Deceptive Defense)}{159}{subsubsection*.88}%
+\contentsline {subsubsection}{Honeypots}{159}{subsubsection*.89}%
+\contentsline {section}{\numberline {5.6}Quelques éléments techniques des attaques}{161}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Malware}{162}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Malware industriel : citadel}{162}{subsection.5.7.1}%
+\contentsline {chapter}{\numberline {6}Réagir et remédier}{163}{chapter.6}%
+\contentsline {section}{\numberline {6.1}GERER les incidents}{163}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Réponse à incident}{165}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Terminologie}{166}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.3}Définitions}{167}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.4}Sources Incidents}{168}{subsection.6.1.4}%
+\contentsline {subsection}{\numberline {6.1.5}Parcours}{169}{subsection.6.1.5}%
+\contentsline {section}{\numberline {6.2}ANTICIPER}{170}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Les bons reflexes}{171}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Etablir un processus de management}{171}{subsection.6.2.2}%
+\contentsline {subsubsection}{Résilience}{171}{subsubsection*.90}%
+\contentsline {subsection}{\numberline {6.2.3}L'intégration dans la gestion des incidents ITIL}{172}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}La gestion des incidents avec l'ISO 27035}{174}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Et avec la NIST 800-61}{176}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.6}Continuité d'activité avec l'ISO 22301}{177}{subsection.6.2.6}%
+\contentsline {section}{\numberline {6.3}REAGIR}{178}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}La gestion de l'incident au quotidien}{178}{subsection.6.3.1}%
+\contentsline {subsubsection}{De l'alerte à l'incident}{178}{subsubsection*.91}%
+\contentsline {subsubsection}{L'incident}{179}{subsubsection*.92}%
+\contentsline {subsubsection}{Priorisation de l'évènement}{179}{subsubsection*.93}%
+\contentsline {subsection}{\numberline {6.3.2}Remédiation}{180}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}Aspect juridique de la réaction}{180}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}ENQUETER}{181}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Analyse de l'attaque}{181}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Evaluation détaillée des dommages}{181}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}forensique}{181}{subsection.6.4.3}%
+\contentsline {subsubsection}{Cadre juridique}{181}{subsubsection*.94}%
+\contentsline {subsubsection}{Cadre non-juridique}{181}{subsubsection*.95}%
+\contentsline {subsubsection}{Outillage}{182}{subsubsection*.96}%
+\contentsline {section}{\numberline {6.5}Méthodes et techniques connexes}{182}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}Sécurité Offensive vs Défensive}{182}{subsection.6.5.1}%
+\contentsline {subsection}{\numberline {6.5.2}Threats Hunting}{183}{subsection.6.5.2}%
+\contentsline {subsection}{\numberline {6.5.3}HoneyPots}{184}{subsection.6.5.3}%
+\contentsline {subsection}{\numberline {6.5.4}Hackback}{184}{subsection.6.5.4}%
+\contentsline {section}{\numberline {6.6}CERT et CSIRT}{185}{section.6.6}%
+\contentsline {subsubsection}{Un peu d'histoire}{185}{subsubsection*.97}%
+\contentsline {subsubsection}{Les missions d’un CSIRT,}{186}{subsubsection*.98}%
+\contentsline {subsection}{\numberline {6.6.1}Faire intervenir un CSIRT commercial}{187}{subsection.6.6.1}%
+\contentsline {subsubsection}{Phase d'analyse}{187}{subsubsection*.99}%
+\contentsline {subsubsection}{La phase de contractualisation}{188}{subsubsection*.100}%
+\contentsline {subsubsection}{Enquêter sur l’incident}{188}{subsubsection*.101}%
+\contentsline {subsubsection}{Contrôle et remédiation}{189}{subsubsection*.102}%
+\contentsline {subsection}{\numberline {6.6.2}Création de son équipe CSIRT}{189}{subsection.6.6.2}%
+\contentsline {subsection}{\numberline {6.6.3}Gestion de crises}{189}{subsection.6.6.3}%
+\contentsline {subsection}{\numberline {6.6.4}Anticiper les crises}{190}{subsection.6.6.4}%
+\contentsline {chapter}{\numberline {7}A retenir}{191}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Une synthèse des fondamentaux}{191}{section.7.1}%
+\contentsline {section}{\numberline {7.2}La réponse aux incidents}{192}{section.7.2}%
+\contentsline {section}{\numberline {7.3}La détection des attaques}{194}{section.7.3}%
+\contentsline {section}{\numberline {7.4}La couverture des fragilités}{195}{section.7.4}%
+\contentsline {section}{\numberline {7.5}La veille et l'anticiaption}{196}{section.7.5}%
+\contentsline {part}{\@mypartnumtocformat {III}{Références et Index}}{199}{part.3}%
 \ttl@stoptoc {default@2}
 \ttl@starttoc {default@3}
-\contentsline {chapter}{\leavevmode {\color {ocre}Bibliographie}}{213}{chapter*.103}%
-\contentsline {section}{Articles}{213}{chapter*.103}%
-\contentsline {section}{Ouvrages}{214}{chapter*.103}%
-\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{214}{chapter*.103}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Bibliographie}}{201}{chapter*.103}%
+\contentsline {section}{Articles}{201}{chapter*.103}%
+\contentsline {section}{Ouvrages}{202}{chapter*.103}%
+\contentsline {chapter}{\leavevmode {\color {ocre}Index}}{202}{chapter*.103}%
 \contentsfinish 
