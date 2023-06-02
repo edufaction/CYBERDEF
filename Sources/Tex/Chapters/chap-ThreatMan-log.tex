@@ -15,7 +15,7 @@
 Dans le domaine informatique et télécom, le terme log (ou ses synonymes traces, journaux) est généralement un fichier, une base de données ou tout autre moyen de stocker des informations.  On parle  donc de stockage d'un historique d'événements qu'un logiciel ou un système souhaite \g{tracer}. 
 Ce mot qui est le diminutif  de \textit{logging}, est traduit en français par \g{journal}. Le log est donc un journal horodaté, qui stocke temporellement les différents événements qui se sont produits sur un  logiciel, un ordinateur, un serveur, etc. Il permet ainsi d'analyser avec une fréquence programmée (heure par heure,  minute par minute, etc) l'activité  d'un processus technique.  
 
-\mode<all>{\picframe{Tex/Pictures/img-log}{Sources de log}{0.7}{lbl:log}}
+\mode<all>{\picframe{Tex/Pictures/img-log}{Sources de log}{0.7}{lbllog}}
 
 Vous trouverez des éléments très intéressants  dans le 
 \ulink {https://www.microfocus.com/media/white-paper/the_complete_guide_to_log_and_event_management_wp_fr.pdf}{Guide LOG MANAGEMENT} édité par NetIQ.
@@ -31,7 +31,7 @@ Pour détecter des attaques en temps réel, il faut disposer des informations ca
 Une grande majorité des équipements (réseau, serveurs, terminaux (endpoint), des bases de données ou des applications d’un systèmes d'information peuvent aujourd’hui générer des logs ou traces.  Ces fichiers contiennent, pour chaque équipe, la liste de tous les évènements  \g{traçables} qui se sont déroulés pendant l'execution : réussite ou échec d’une connexion, redémarrage, utilisation des ressources (mémoire, ...).
 
 
-\mode<all>{\picframe{Tex/Pictures/img-logman}{Les logs au coeur de la détection}{0.9}{lbl:logman2}}
+\mode<all>{\picframe{Tex/Pictures/img-logman}{Les logs au coeur de la détection}{0.9}{lbllogman2}}
 
 
 L'exploitation de ces traces est souvent complexe car chaque équipement dispose de ses propres fonctions de gestion des traces, avec encore dans de nombreux cas un format  d'enregistrement et de stockage propriétaire. Il faut consulter ces logs équipement par équipement. Heureusement, il existe des outils qui permettent de centraliser et de \g{normaliser} ces traces.
@@ -92,7 +92,7 @@ On parle de log management à partir du moment où les données contenues dans c
 Après avoir \textbf{collectés, stockés} des évènements dans un format compréhensible (structuré ou non), il est nécessaire de disposer d'outils de recherche et d'analyses de ces logs. Il existe de nombreux outils  dont beaucoup de codes open source pour se faire.
 
 
-\mode<all>{\picframe{Tex/Pictures/img-log-level}{Les niveaux d'outillage}{0.7}{lbl:loglevel}}
+\mode<all>{\picframe{Tex/Pictures/img-log-level}{Les niveaux d'outillage}{0.7}{lblloglevel}}
 
 
 Nous pouvons citer par exemple \ulink{https://www.graylog.org}{Graylog} basé sur MongoDB pour la gestion des métadonnées et Elasticsearch pour le stockage des logs et la recherche textuelle. Graylog  permet de mieux comprendre l’utilisation d'un système d'information tant dans l'amélioration la sécurité (comportements, évènements à risques, indicateurs de compromission (IOC)) que dans l'usage des applications et services.

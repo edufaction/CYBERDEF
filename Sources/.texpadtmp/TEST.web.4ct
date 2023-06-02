@@ -1,0 +1,296 @@
+\expandafter\ifx\csname doTocEntry\endcsname\relax \expandafter\endinput\fi 
+\doTocEntry\tocchapter{1}{\csname a:TocLink\endcsname{1}{x1-10001}{QQ2-1-1}{Introduction}}{3}\relax 
+\doTocEntry\tocsection{1.1}{\csname a:TocLink\endcsname{1}{x1-20001.1}{QQ2-1-2}{Avant propos}}{3}\relax 
+\doTocEntry\tocsection{1.2}{\csname a:TocLink\endcsname{1}{x1-30001.2}{QQ2-1-3}{Aborder la cybersécurité}}{4}\relax 
+\doTocEntry\tocsubsection{1.2.1}{\csname a:TocLink\endcsname{1}{x1-40001.2.1}{QQ2-1-4}{Politiques versus stratégies}}{6}\relax 
+\doTocEntry\tocsubsection{1.2.2}{\csname a:TocLink\endcsname{1}{x1-50001.2.2}{QQ2-1-5}{Transformation numérique}}{7}\relax 
+\doTocEntry\tocsection{1.3}{\csname a:TocLink\endcsname{1}{x1-60001.3}{QQ2-1-6}{Sécurité du système d'information}}{11}\relax 
+\doTocEntry\tocsubsection{1.3.1}{\csname a:TocLink\endcsname{1}{x1-70001.3.1}{QQ2-1-7}{Gouvernance et conformité}}{11}\relax 
+\doTocEntry\tocsubsection{1.3.2}{\csname a:TocLink\endcsname{1}{x1-80001.3.2}{QQ2-1-8}{SECOPS et lutte contre la malveillance}}{12}\relax 
+\doTocEntry\tocsubsection{1.3.3}{\csname a:TocLink\endcsname{1}{x1-90001.3.3}{QQ2-1-9}{Les fonctions SSI de gouvernance}}{12}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-100001.3.3}{QQ2-1-10}{Les DSSI et RSSI}}{13}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-110001.3.3}{QQ2-1-11}{Le DPO}}{13}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-120001.3.3}{QQ2-1-12}{L'officier de sécurité de défense}}{14}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-130001.3.3}{QQ2-1-13}{Responsabilités SSI}}{14}\relax 
+\doTocEntry\tocsubsection{1.3.4}{\csname a:TocLink\endcsname{1}{x1-140001.3.4}{QQ2-1-14}{Maintien en condition de sécurité}}{16}\relax 
+\doTocEntry\tocsection{1.4}{\csname a:TocLink\endcsname{1}{x1-150001.4}{QQ2-1-15}{Enjeux légaux}}{19}\relax 
+\doTocEntry\tocsubsection{1.4.1}{\csname a:TocLink\endcsname{1}{x1-160001.4.1}{QQ2-1-16}{Quelques cadres législatifs d'influence}}{19}\relax 
+\doTocEntry\tocsubsection{1.4.2}{\csname a:TocLink\endcsname{1}{x1-170001.4.2}{QQ2-1-17}{Le cadre de certification européen}}{20}\relax 
+\doTocEntry\tocsubsection{1.4.3}{\csname a:TocLink\endcsname{1}{x1-180001.4.3}{QQ2-1-18}{Cyberdefense et loi de programmation militaire}}{20}\relax 
+\doTocEntry\tocsection{1.5}{\csname a:TocLink\endcsname{1}{x1-190001.5}{QQ2-1-19}{Quelques organismes de référence}}{20}\relax 
+\doTocEntry\tocsubsection{1.5.1}{\csname a:TocLink\endcsname{1}{x1-200001.5.1}{QQ2-1-20}{International et Etats-Unis}}{21}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-210001.5.1}{QQ2-1-21}{Le NIST}}{21}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-220001.5.1}{QQ2-1-22}{SEI - Université de Carnegie Mellon}}{21}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-230001.5.1}{QQ2-1-23}{l'ISO : International Organization for Standardization }}{22}\relax 
+\doTocEntry\tocsubsection{1.5.2}{\csname a:TocLink\endcsname{1}{x1-240001.5.2}{QQ2-1-24}{Europe}}{23}\relax 
+\doTocEntry\tocsubsection{1.5.3}{\csname a:TocLink\endcsname{1}{x1-250001.5.3}{QQ2-1-25}{France}}{24}\relax 
+\doTocEntry\tocsection{1.6}{\csname a:TocLink\endcsname{1}{x1-260001.6}{QQ2-1-26}{Quelques associations et groupements professionnels}}{24}\relax 
+\doTocEntry\tocchapter{2}{\csname a:TocLink\endcsname{1}{x1-270002}{QQ2-1-27}{Enjeux pédagogiques}}{27}\relax 
+\doTocEntry\tocsection{2.1}{\csname a:TocLink\endcsname{1}{x1-280002.1}{QQ2-1-28}{Objectifs pédagogiques}}{27}\relax 
+\doTocEntry\tocsubsection{2.1.1}{\csname a:TocLink\endcsname{1}{x1-290002.1.1}{QQ2-1-29}{Les compétences à acquérir}}{27}\relax 
+\doTocEntry\tocsubsection{2.1.2}{\csname a:TocLink\endcsname{1}{x1-300002.1.2}{QQ2-1-30}{Métiers et compétences }}{28}\relax 
+\doTocEntry\tocsubsection{2.1.3}{\csname a:TocLink\endcsname{1}{x1-310002.1.3}{QQ2-1-31}{Compétences et certifications}}{31}\relax 
+\doTocEntry\tocsubsection{2.1.4}{\csname a:TocLink\endcsname{1}{x1-320002.1.4}{QQ2-1-32}{Certifications éditeurs}}{31}\relax 
+\doTocEntry\tocsubsection{2.1.5}{\csname a:TocLink\endcsname{1}{x1-330002.1.5}{QQ2-1-33}{Certifications professionelles}}{31}\relax 
+\doTocEntry\tocsubsection{2.1.6}{\csname a:TocLink\endcsname{1}{x1-340002.1.6}{QQ2-1-34}{Certifications Hacking}}{32}\relax 
+\doTocEntry\tocsection{2.2}{\csname a:TocLink\endcsname{1}{x1-350002.2}{QQ2-1-35}{Structure pédagogique du cours}}{33}\relax 
+\doTocEntry\tocsubsection{2.2.1}{\csname a:TocLink\endcsname{1}{x1-360002.2.1}{QQ2-1-36}{Structure}}{36}\relax 
+\doTocEntry\tocsubsection{2.2.2}{\csname a:TocLink\endcsname{1}{x1-370002.2.2}{QQ2-1-37}{Pour s'engager plus rapidement}}{37}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-380002.2.2}{QQ2-1-38}{Pour le niveau BAC +3}}{37}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-390002.2.2}{QQ2-1-39}{Pour le niveau Bac + 5}}{38}\relax 
+\doTocEntry\tocchapter{3}{\csname a:TocLink\endcsname{1}{x1-400003}{QQ2-1-40}{La gestion des risques}}{39}\relax 
+\doTocEntry\tocsection{3.1}{\csname a:TocLink\endcsname{1}{x1-410003.1}{QQ2-1-41}{La gestion du risque numérique}}{39}\relax 
+\doTocEntry\tocsection{3.2}{\csname a:TocLink\endcsname{1}{x1-420003.2}{QQ2-1-42}{L'analyse des risques}}{40}\relax 
+\doTocEntry\tocsection{3.3}{\csname a:TocLink\endcsname{1}{x1-430003.3}{QQ2-1-43}{L'analyse de risque au coeur de l'architecture de gouvernance}}{43}\relax 
+\doTocEntry\tocchapter{4}{\csname a:TocLink\endcsname{1}{x1-440004}{QQ2-1-44}{Politiques et architectures de sécurité}}{45}\relax 
+\doTocEntry\tocsection{4.1}{\csname a:TocLink\endcsname{1}{x1-450004.1}{QQ2-1-45}{Gouvernance de la sécurité}}{45}\relax 
+\doTocEntry\tocsubsection{4.1.1}{\csname a:TocLink\endcsname{1}{x1-460004.1.1}{QQ2-1-46}{Politique de sécurité}}{45}\relax 
+\doTocEntry\tocsection{4.2}{\csname a:TocLink\endcsname{1}{x1-470004.2}{QQ2-1-47}{Architectures de sécurité}}{45}\relax 
+\doTocEntry\tocsubsection{4.2.1}{\csname a:TocLink\endcsname{1}{x1-480004.2.1}{QQ2-1-48}{Systèmes Cryptographiques}}{46}\relax 
+\doTocEntry\tocsubsection{4.2.2}{\csname a:TocLink\endcsname{1}{x1-490004.2.2}{QQ2-1-49}{Filtrages}}{46}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-500004.2.2}{QQ2-1-50}{Par signatures}}{46}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-510004.2.2}{QQ2-1-51}{Par règles}}{46}\relax 
+\doTocEntry\tocsubsection{4.2.3}{\csname a:TocLink\endcsname{1}{x1-520004.2.3}{QQ2-1-52}{DMZ}}{46}\relax 
+\doTocEntry\tocsection{4.3}{\csname a:TocLink\endcsname{1}{x1-530004.3}{QQ2-1-53}{Sécurité des systèmes }}{46}\relax 
+\doTocEntry\tocsubsection{4.3.1}{\csname a:TocLink\endcsname{1}{x1-540004.3.1}{QQ2-1-54}{Fonctions de sécurité}}{47}\relax 
+\doTocEntry\tocsubsection{4.3.2}{\csname a:TocLink\endcsname{1}{x1-550004.3.2}{QQ2-1-55}{Sécurité par construction}}{48}\relax 
+\doTocEntry\tocsection{4.4}{\csname a:TocLink\endcsname{1}{x1-560004.4}{QQ2-1-56}{Défense en profondeur}}{49}\relax 
+\doTocEntry\tocsection{4.5}{\csname a:TocLink\endcsname{1}{x1-570004.5}{QQ2-1-57}{les 4 critères de la sécurité}}{49}\relax 
+\doTocEntry\tocsection{4.6}{\csname a:TocLink\endcsname{1}{x1-580004.6}{QQ2-1-58}{Politiques de sécurité}}{49}\relax 
+\doTocEntry\tocsection{4.7}{\csname a:TocLink\endcsname{1}{x1-590004.7}{QQ2-1-59}{Gouvernance de la sécurité}}{50}\relax 
+\doTocEntry\tocsubsection{4.7.1}{\csname a:TocLink\endcsname{1}{x1-600004.7.1}{QQ2-1-60}{Système de management de la sécurité}}{50}\relax 
+\doTocEntry\tocsection{4.8}{\csname a:TocLink\endcsname{1}{x1-610004.8}{QQ2-1-61}{l'assurance de la sécurité}}{50}\relax 
+\doTocEntry\tocchapter{5}{\csname a:TocLink\endcsname{1}{x1-620005}{QQ2-1-62}{Eléments de Cryptologie}}{51}\relax 
+\doTocEntry\tocsection{5.1}{\csname a:TocLink\endcsname{1}{x1-630005.1}{QQ2-1-63}{Définitions}}{51}\relax 
+\doTocEntry\tocsection{5.2}{\csname a:TocLink\endcsname{1}{x1-640005.2}{QQ2-1-64}{Concepts}}{52}\relax 
+\doTocEntry\tocsubsection{5.2.1}{\csname a:TocLink\endcsname{1}{x1-650005.2.1}{QQ2-1-65}{Algorithmes}}{52}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-660005.2.1}{QQ2-1-66}{Chiffrement à clefs secrètes}}{52}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-670005.2.1}{QQ2-1-67}{Cryptographie à clefs publiques}}{53}\relax 
+\doTocEntry\tocsubsection{5.2.2}{\csname a:TocLink\endcsname{1}{x1-680005.2.2}{QQ2-1-68}{Fonction de hashage}}{53}\relax 
+\doTocEntry\tocsubsection{5.2.3}{\csname a:TocLink\endcsname{1}{x1-690005.2.3}{QQ2-1-69}{Clefs}}{53}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-700005.2.3}{QQ2-1-70}{Taille de clefs}}{54}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-710005.2.3}{QQ2-1-71}{Aléas et générateur d'aléas}}{54}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-720005.2.3}{QQ2-1-72}{Protocoles et formats}}{55}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-730005.2.3}{QQ2-1-73}{Certificats}}{55}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-740005.2.3}{QQ2-1-74}{Certificats auto-signés !}}{55}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-750005.2.3}{QQ2-1-75}{IGC ou PKI}}{56}\relax 
+\doTocEntry\tocsection{5.3}{\csname a:TocLink\endcsname{1}{x1-760005.3}{QQ2-1-76}{De la confiance aux usages en entreprise}}{56}\relax 
+\doTocEntry\tocsubsection{5.3.1}{\csname a:TocLink\endcsname{1}{x1-770005.3.1}{QQ2-1-77}{De l'usure électronique au partage de confiance}}{58}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-780005.3.1}{QQ2-1-78}{Usure ou rupture cryptographique}}{58}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-790005.3.1}{QQ2-1-79}{blockchain, Cyrpto-monnaies, NFT...}}{59}\relax 
+\doTocEntry\tocchapter{6}{\csname a:TocLink\endcsname{1}{x1-800006}{QQ2-1-80}{Introduction à la SECOPS}}{63}\relax 
+\doTocEntry\tocsection{6.1}{\csname a:TocLink\endcsname{1}{x1-810006.1}{QQ2-1-81}{SECOPS et cyberdéfense}}{63}\relax 
+\doTocEntry\tocsubsection{6.1.1}{\csname a:TocLink\endcsname{1}{x1-820006.1.1}{QQ2-1-82}{Des opérations de cyberdéfense d'entreprise}}{63}\relax 
+\doTocEntry\tocsubsection{6.1.2}{\csname a:TocLink\endcsname{1}{x1-830006.1.2}{QQ2-1-83}{Veille et renseignement}}{64}\relax 
+\doTocEntry\tocsubsection{6.1.3}{\csname a:TocLink\endcsname{1}{x1-840006.1.3}{QQ2-1-84}{VTI(Vulnerabilty/Threat/Incident)}}{64}\relax 
+\doTocEntry\tocsubsection{6.1.4}{\csname a:TocLink\endcsname{1}{x1-850006.1.4}{QQ2-1-85}{Fusion Center}}{65}\relax 
+\doTocEntry\tocsubsection{6.1.5}{\csname a:TocLink\endcsname{1}{x1-860006.1.5}{QQ2-1-86}{Entrainement à la cyberdéfense}}{66}\relax 
+\doTocEntry\tocsubsection{6.1.6}{\csname a:TocLink\endcsname{1}{x1-870006.1.6}{QQ2-1-87}{Gestion de crise}}{67}\relax 
+\doTocEntry\tocsection{6.2}{\csname a:TocLink\endcsname{1}{x1-880006.2}{QQ2-1-88}{Range et Simulation}}{68}\relax 
+\doTocEntry\tocsection{6.3}{\csname a:TocLink\endcsname{1}{x1-890006.3}{QQ2-1-89}{Sécurité opérationnelle}}{69}\relax 
+\doTocEntry\tocsection{6.4}{\csname a:TocLink\endcsname{1}{x1-900006.4}{QQ2-1-90}{Lutte contre la menace}}{73}\relax 
+\doTocEntry\tocsubsection{6.4.1}{\csname a:TocLink\endcsname{1}{x1-910006.4.1}{QQ2-1-91}{Politiques et Stratégies}}{76}\relax 
+\doTocEntry\tocsubsection{6.4.2}{\csname a:TocLink\endcsname{1}{x1-920006.4.2}{QQ2-1-92}{Stratégies d'action}}{79}\relax 
+\doTocEntry\tocsubsection{6.4.3}{\csname a:TocLink\endcsname{1}{x1-930006.4.3}{QQ2-1-93}{Les modèles de cybersécurité}}{80}\relax 
+\doTocEntry\tocsection{6.5}{\csname a:TocLink\endcsname{1}{x1-940006.5}{QQ2-1-94}{Processus SECOPS}}{82}\relax 
+\doTocEntry\tocsection{6.6}{\csname a:TocLink\endcsname{1}{x1-950006.6}{QQ2-1-95}{Les métiers de la SECOPS}}{82}\relax 
+\doTocEntry\tocsection{6.7}{\csname a:TocLink\endcsname{1}{x1-960006.7}{QQ2-1-96}{Eléments Communs}}{83}\relax 
+\doTocEntry\tocchapter{7}{\csname a:TocLink\endcsname{1}{x1-970007}{QQ2-1-97}{Surveiller et Anticiper}}{85}\relax 
+\doTocEntry\tocsection{7.1}{\csname a:TocLink\endcsname{1}{x1-980007.1}{QQ2-1-98}{Fragilités numériques}}{85}\relax 
+\doTocEntry\tocsubsection{7.1.1}{\csname a:TocLink\endcsname{1}{x1-990007.1.1}{QQ2-1-99}{Détecter les fragilités de l’entreprise}}{85}\relax 
+\doTocEntry\tocsubsection{7.1.2}{\csname a:TocLink\endcsname{1}{x1-1000007.1.2}{QQ2-1-100}{Anticiper et surveiller les menaces }}{86}\relax 
+\doTocEntry\tocsubsection{7.1.3}{\csname a:TocLink\endcsname{1}{x1-1010007.1.3}{QQ2-1-101}{Les basics sur les vulnérabilités HOT}}{87}\relax 
+\doTocEntry\tocsubsection{7.1.4}{\csname a:TocLink\endcsname{1}{x1-1020007.1.4}{QQ2-1-102}{Exemples de vulnérabilités}}{89}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1030007.1.4}{QQ2-1-103}{Faille type XSS}}{90}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1040007.1.4}{QQ2-1-104}{Faille type SQL Injection}}{91}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1050007.1.4}{QQ2-1-105}{Vulnérabilités WEB}}{92}\relax 
+\doTocEntry\tocsubsection{7.1.5}{\csname a:TocLink\endcsname{1}{x1-1060007.1.5}{QQ2-1-106}{Failles de programmation}}{92}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1070007.1.5}{QQ2-1-107}{Exemple : SMB etherblue}}{92}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1080007.1.5}{QQ2-1-108}{Exemple : programmation erronée}}{93}\relax 
+\doTocEntry\tocsubsection{7.1.6}{\csname a:TocLink\endcsname{1}{x1-1090007.1.6}{QQ2-1-109}{Vulnérabilités et configuration}}{93}\relax 
+\doTocEntry\tocsubsection{7.1.7}{\csname a:TocLink\endcsname{1}{x1-1100007.1.7}{QQ2-1-110}{Vulnérabilités et exploits}}{94}\relax 
+\doTocEntry\tocsubsection{7.1.8}{\csname a:TocLink\endcsname{1}{x1-1110007.1.8}{QQ2-1-111}{Vulnérabilités et divulgation}}{94}\relax 
+\doTocEntry\tocsubsection{7.1.9}{\csname a:TocLink\endcsname{1}{x1-1120007.1.9}{QQ2-1-112}{CVE, CVSS et CWE}}{95}\relax 
+\doTocEntry\tocsubsection{7.1.10}{\csname a:TocLink\endcsname{1}{x1-1130007.1.10}{QQ2-1-113}{Common Vulnerabilities and Exposure (CVE)}}{96}\relax 
+\doTocEntry\tocsubsection{7.1.11}{\csname a:TocLink\endcsname{1}{x1-1140007.1.11}{QQ2-1-114}{Common Vulnerability Scoring System (CVSS)}}{97}\relax 
+\doTocEntry\tocsubsection{7.1.12}{\csname a:TocLink\endcsname{1}{x1-1150007.1.12}{QQ2-1-115}{Common Weakness Enumeration (CWE)}}{98}\relax 
+\doTocEntry\tocsubsection{7.1.13}{\csname a:TocLink\endcsname{1}{x1-1160007.1.13}{QQ2-1-116}{Les services de veille en vulnérabilités}}{99}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1170007.1.13}{QQ2-1-117}{Les CERT de l'ANSSI}}{100}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1180007.1.13}{QQ2-1-118}{Les CERTs commerciaux}}{100}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1190007.1.13}{QQ2-1-119}{La relation avec un CSIRT Interne }}{101}\relax 
+\doTocEntry\tocsubsection{7.1.14}{\csname a:TocLink\endcsname{1}{x1-1200007.1.14}{QQ2-1-120}{les agences de notation/cotation Cyber}}{101}\relax 
+\doTocEntry\tocsection{7.2}{\csname a:TocLink\endcsname{1}{x1-1210007.2}{QQ2-1-121}{GERER les fragilités}}{101}\relax 
+\doTocEntry\tocsubsection{7.2.1}{\csname a:TocLink\endcsname{1}{x1-1220007.2.1}{QQ2-1-122}{Processus de gestion des vulnérabilités}}{103}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1230007.2.1}{QQ2-1-123}{ISO 27001}}{104}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1240007.2.1}{QQ2-1-124}{Fenêtre d'exposition}}{104}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1250007.2.1}{QQ2-1-125}{Processus d’analyse/recherche des vulnérabilités}}{106}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1260007.2.1}{QQ2-1-126}{Processus d’évaluation des vulnérabilités (Vulnerability Assessement)}}{107}\relax 
+\doTocEntry\tocsubsection{7.2.2}{\csname a:TocLink\endcsname{1}{x1-1270007.2.2}{QQ2-1-127}{Audit sécurité des vulnérabilités}}{107}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1280007.2.2}{QQ2-1-128}{Scan de Vulnérabilités du système}}{108}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1290007.2.2}{QQ2-1-129}{Scan de Vulnérabilités logicielles}}{108}\relax 
+\doTocEntry\tocsubsection{7.2.3}{\csname a:TocLink\endcsname{1}{x1-1300007.2.3}{QQ2-1-130}{La gestion des correctifs}}{108}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1310007.2.3}{QQ2-1-131}{De l'outillage}}{108}\relax 
+\doTocEntry\tocsubsection{7.2.4}{\csname a:TocLink\endcsname{1}{x1-1320007.2.4}{QQ2-1-132}{Les audits}}{109}\relax 
+\doTocEntry\tocsection{7.3}{\csname a:TocLink\endcsname{1}{x1-1330007.3}{QQ2-1-133}{RECHERCHER des vulnérabilités}}{110}\relax 
+\doTocEntry\tocsubsection{7.3.1}{\csname a:TocLink\endcsname{1}{x1-1340007.3.1}{QQ2-1-134}{Les tests d'intrusion}}{110}\relax 
+\doTocEntry\tocsubsection{7.3.2}{\csname a:TocLink\endcsname{1}{x1-1350007.3.2}{QQ2-1-135}{Généralités}}{110}\relax 
+\doTocEntry\tocsubsection{7.3.3}{\csname a:TocLink\endcsname{1}{x1-1360007.3.3}{QQ2-1-136}{Le métier de Pentesteur}}{111}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1370007.3.3}{QQ2-1-137}{ Ethical Hackers}}{111}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1380007.3.3}{QQ2-1-138}{Peut-on faire confiance à des pentesteurs ?}}{111}\relax 
+\doTocEntry\tocsubsection{7.3.4}{\csname a:TocLink\endcsname{1}{x1-1390007.3.4}{QQ2-1-139}{Les sociétés de confiance}}{112}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1400007.3.4}{QQ2-1-140}{Formation des Pentests}}{112}\relax 
+\doTocEntry\tocsubsection{7.3.5}{\csname a:TocLink\endcsname{1}{x1-1410007.3.5}{QQ2-1-141}{Certifications professionnelles}}{112}\relax 
+\doTocEntry\tocsubsection{7.3.6}{\csname a:TocLink\endcsname{1}{x1-1420007.3.6}{QQ2-1-142}{Les rapport d'audits, et cadre méthodologique}}{112}\relax 
+\doTocEntry\tocsubsection{7.3.7}{\csname a:TocLink\endcsname{1}{x1-1430007.3.7}{QQ2-1-143}{Le Bug Bounty}}{113}\relax 
+\doTocEntry\tocsubsection{7.3.8}{\csname a:TocLink\endcsname{1}{x1-1440007.3.8}{QQ2-1-144}{Quelques entreprises}}{113}\relax 
+\doTocEntry\tocsection{7.4}{\csname a:TocLink\endcsname{1}{x1-1450007.4}{QQ2-1-145}{ANTICIPER et construire solide}}{114}\relax 
+\doTocEntry\tocsection{7.5}{\csname a:TocLink\endcsname{1}{x1-1460007.5}{QQ2-1-146}{Produits de confiance}}{115}\relax 
+\doTocEntry\tocsubsection{7.5.1}{\csname a:TocLink\endcsname{1}{x1-1470007.5.1}{QQ2-1-147}{Les critères communs}}{115}\relax 
+\doTocEntry\tocsubsection{7.5.2}{\csname a:TocLink\endcsname{1}{x1-1480007.5.2}{QQ2-1-148}{Périmètre sous responsabilité de l’entreprise}}{115}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1490007.5.2}{QQ2-1-149}{la notion de responsabilité}}{115}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1500007.5.2}{QQ2-1-150}{Inventaire des actifs}}{116}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1510007.5.2}{QQ2-1-151}{L’environnement digital externe}}{117}\relax 
+\doTocEntry\tocsubsection{7.5.3}{\csname a:TocLink\endcsname{1}{x1-1520007.5.3}{QQ2-1-152}{Veille et alerte sur les vulnérabilités}}{118}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1530007.5.3}{QQ2-1-153}{Abonnement au CERT}}{118}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1540007.5.3}{QQ2-1-154}{Le marché de la vulnérabilité}}{118}\relax 
+\doTocEntry\tocchapter{8}{\csname a:TocLink\endcsname{1}{x1-1550008}{QQ2-1-155}{Détecter et alerter}}{119}\relax 
+\doTocEntry\tocsection{8.1}{\csname a:TocLink\endcsname{1}{x1-1560008.1}{QQ2-1-156}{GERER les menaces}}{119}\relax 
+\doTocEntry\tocsubsection{8.1.1}{\csname a:TocLink\endcsname{1}{x1-1570008.1.1}{QQ2-1-157}{Modèles}}{120}\relax 
+\doTocEntry\tocsubsection{8.1.2}{\csname a:TocLink\endcsname{1}{x1-1580008.1.2}{QQ2-1-158}{Les processus de gestion de la menace}}{123}\relax 
+\doTocEntry\tocsubsection{8.1.3}{\csname a:TocLink\endcsname{1}{x1-1590008.1.3}{QQ2-1-159}{Détecter, la surveillance du SI}}{123}\relax 
+\doTocEntry\tocsubsection{8.1.4}{\csname a:TocLink\endcsname{1}{x1-1600008.1.4}{QQ2-1-160}{Attaques}}{124}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1610008.1.4}{QQ2-1-161}{Arbre d'attaques}}{125}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1620008.1.4}{QQ2-1-162}{Le déploiement d'une menace en 8 étapes}}{126}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1630008.1.4}{QQ2-1-163}{UBA : User Behavior Analytics}}{129}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1640008.1.4}{QQ2-1-164}{La surveillance des terminaux}}{129}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1650008.1.4}{QQ2-1-165}{La surveillance de l'IOT}}{129}\relax 
+\doTocEntry\tocsubsection{8.1.5}{\csname a:TocLink\endcsname{1}{x1-1660008.1.5}{QQ2-1-166}{Gestion de la menace}}{130}\relax 
+\doTocEntry\tocsubsection{8.1.6}{\csname a:TocLink\endcsname{1}{x1-1670008.1.6}{QQ2-1-167}{Bases de connaissance et menaces}}{130}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1680008.1.6}{QQ2-1-168}{Sources identifiées menaçantes}}{130}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1690008.1.6}{QQ2-1-169}{Cibles de menaces}}{131}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1700008.1.6}{QQ2-1-170}{Threat Intelligence Database }}{131}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1710008.1.6}{QQ2-1-171}{Exemple de TI}}{131}\relax 
+\doTocEntry\toclot{8.1}{\csname a:TocLink\endcsname{1}{x1-1710011}{}{\ignorespaces Exemple de données de TI (Threat Intelligence)}}{table}\relax 
+\doTocEntry\tocsection{8.2}{\csname a:TocLink\endcsname{1}{x1-1720008.2}{QQ2-1-173}{ANTICIPER les menaces}}{134}\relax 
+\doTocEntry\tocsubsection{8.2.1}{\csname a:TocLink\endcsname{1}{x1-1730008.2.1}{QQ2-1-174}{Surveiller et anticiper : Cyber-Threat Intelligence (CTI)}}{134}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1740008.2.1}{QQ2-1-175}{Quelques producteurs de CTI}}{137}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1750008.2.1}{QQ2-1-176}{Quelques outils de CTI}}{137}\relax 
+\doTocEntry\tocsubsection{8.2.2}{\csname a:TocLink\endcsname{1}{x1-1760008.2.2}{QQ2-1-177}{Les surveillances}}{137}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1770008.2.2}{QQ2-1-178}{Surveillance de la compromission}}{137}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1780008.2.2}{QQ2-1-179}{Surveillance des fragilités}}{138}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1790008.2.2}{QQ2-1-180}{Surveillance du ciblage}}{139}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1800008.2.2}{QQ2-1-181}{Que faire des ces informations}}{140}\relax 
+\doTocEntry\tocsubsection{8.2.3}{\csname a:TocLink\endcsname{1}{x1-1810008.2.3}{QQ2-1-182}{de l'outillage sur la menace}}{140}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1820008.2.3}{QQ2-1-183}{la gestion des menaces CTI}}{140}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1830008.2.3}{QQ2-1-184}{STIX et TAXII}}{141}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1840008.2.3}{QQ2-1-185}{MISP}}{142}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1850008.2.3}{QQ2-1-186}{Vérifier une donnée par rapport à de la CTI}}{143}\relax 
+\doTocEntry\tocsection{8.3}{\csname a:TocLink\endcsname{1}{x1-1860008.3}{QQ2-1-187}{DETECTER les attaques}}{143}\relax 
+\doTocEntry\tocsubsection{8.3.1}{\csname a:TocLink\endcsname{1}{x1-1870008.3.1}{QQ2-1-188}{Log Management }}{144}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1880008.3.1}{QQ2-1-189}{Traces, journaux, logs}}{144}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1890008.3.1}{QQ2-1-190}{Services et protocole SYSLOG}}{145}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1900008.3.1}{QQ2-1-191}{L'usage des LOGs}}{146}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1910008.3.1}{QQ2-1-192}{Puits de logs}}{147}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1920008.3.1}{QQ2-1-193}{Outils d'analyses}}{148}\relax 
+\doTocEntry\tocsubsection{8.3.2}{\csname a:TocLink\endcsname{1}{x1-1930008.3.2}{QQ2-1-194}{SIEM, une technologie}}{148}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1940008.3.2}{QQ2-1-195}{SIEM et Logs}}{149}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1950008.3.2}{QQ2-1-196}{Un peu d'histoire}}{149}\relax 
+\doTocEntry\tocsubsection{8.3.3}{\csname a:TocLink\endcsname{1}{x1-1960008.3.3}{QQ2-1-197}{la détection d'incidents}}{153}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1970008.3.3}{QQ2-1-198}{Collecter les logs }}{153}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1980008.3.3}{QQ2-1-199}{Normaliser et indexer les logs}}{153}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-1990008.3.3}{QQ2-1-200}{Corréler les logs}}{154}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2000008.3.3}{QQ2-1-201}{Analyser et alerter}}{154}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2010008.3.3}{QQ2-1-202}{Réponse graduelle}}{154}\relax 
+\doTocEntry\tocsubsection{8.3.4}{\csname a:TocLink\endcsname{1}{x1-2020008.3.4}{QQ2-1-203}{De l'usage d'un SIEM pour la gouvernance}}{155}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2030008.3.4}{QQ2-1-204}{Supervision}}{155}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2040008.3.4}{QQ2-1-205}{ Surveillance}}{156}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2050008.3.4}{QQ2-1-206}{Les contreparties du SIEM}}{156}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2060008.3.4}{QQ2-1-207}{Une configuration pointue }}{156}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2070008.3.4}{QQ2-1-208}{Des investissements à bien anticiper }}{157}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2080008.3.4}{QQ2-1-209}{Un grand volume d’alertes à réguler }}{157}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2090008.3.4}{QQ2-1-210}{Une surveillance à exercer 24h/24}}{158}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2100008.3.4}{QQ2-1-211}{Analyse d'impact}}{158}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2110008.3.4}{QQ2-1-212}{Tout collecter}}{159}\relax 
+\doTocEntry\tocsubsection{8.3.5}{\csname a:TocLink\endcsname{1}{x1-2120008.3.5}{QQ2-1-213}{Construire les règles (UseCase)}}{159}\relax 
+\doTocEntry\tocsubsection{8.3.6}{\csname a:TocLink\endcsname{1}{x1-2130008.3.6}{QQ2-1-214}{Quelques défis des SIEM }}{161}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2140008.3.6}{QQ2-1-215}{L'intelligence artificiel}}{161}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2150008.3.6}{QQ2-1-216}{Quelques SIEMs}}{162}\relax 
+\doTocEntry\tocsubsection{8.3.7}{\csname a:TocLink\endcsname{1}{x1-2160008.3.7}{QQ2-1-217}{Threat Hunting}}{163}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2170008.3.7}{QQ2-1-218}{la chasse aux menaces}}{163}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2180008.3.7}{QQ2-1-219}{Etablir le contact}}{163}\relax 
+\doTocEntry\tocsubsection{8.3.8}{\csname a:TocLink\endcsname{1}{x1-2190008.3.8}{QQ2-1-220}{la détection de menace sur des terminaux}}{164}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2200008.3.8}{QQ2-1-221}{Détection}}{165}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2210008.3.8}{QQ2-1-222}{Investigation}}{166}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2220008.3.8}{QQ2-1-223}{Remédiation}}{166}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2230008.3.8}{QQ2-1-224}{Quelques EDR de références}}{167}\relax 
+\doTocEntry\tocsubsection{8.3.9}{\csname a:TocLink\endcsname{1}{x1-2240008.3.9}{QQ2-1-225}{Caractérisation de la menace}}{167}\relax 
+\doTocEntry\tocsubsection{8.3.10}{\csname a:TocLink\endcsname{1}{x1-2250008.3.10}{QQ2-1-226}{De l'usage d'un CSIRT}}{167}\relax 
+\doTocEntry\tocsection{8.4}{\csname a:TocLink\endcsname{1}{x1-2260008.4}{QQ2-1-227}{(SOC) Security Operation Center}}{168}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2270008.4}{QQ2-1-228}{Le SOC de demain}}{169}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2280008.4}{QQ2-1-229}{Evaluation d'un SOC}}{171}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2290008.4}{QQ2-1-230}{Les outils connexes d'un SOC}}{171}\relax 
+\doTocEntry\tocsubsection{8.4.1}{\csname a:TocLink\endcsname{1}{x1-2300008.4.1}{QQ2-1-231}{Les outillages d'un SOC}}{172}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2310008.4.1}{QQ2-1-232}{Qu'est-ce que la détection-réponse des Endpoints (EDR) ?}}{173}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2320008.4.1}{QQ2-1-233}{Qu'est-ce que la détection-réponse étendues (XDR)}}{173}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2330008.4.1}{QQ2-1-234}{DEVSECOPS}}{175}\relax 
+\doTocEntry\tocsubsection{8.4.2}{\csname a:TocLink\endcsname{1}{x1-2340008.4.2}{QQ2-1-235}{l'efficacité du CSOC}}{175}\relax 
+\doTocEntry\tocsubsection{8.4.3}{\csname a:TocLink\endcsname{1}{x1-2350008.4.3}{QQ2-1-236}{Leak : surveiller les fuites}}{176}\relax 
+\doTocEntry\tocsection{8.5}{\csname a:TocLink\endcsname{1}{x1-2360008.5}{QQ2-1-237}{Technologies et Organismes connexes}}{178}\relax 
+\doTocEntry\tocsubsection{8.5.1}{\csname a:TocLink\endcsname{1}{x1-2370008.5.1}{QQ2-1-238}{Stratégie de cyberdéfense et de surveillance}}{178}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2380008.5.1}{QQ2-1-239}{Technique de déception (Deceptive Defense)}}{179}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2390008.5.1}{QQ2-1-240}{Honeypots}}{179}\relax 
+\doTocEntry\tocsection{8.6}{\csname a:TocLink\endcsname{1}{x1-2400008.6}{QQ2-1-241}{Quelques éléments techniques des attaques}}{181}\relax 
+\doTocEntry\tocsection{8.7}{\csname a:TocLink\endcsname{1}{x1-2410008.7}{QQ2-1-242}{Malware}}{181}\relax 
+\doTocEntry\tocsubsection{8.7.1}{\csname a:TocLink\endcsname{1}{x1-2420008.7.1}{QQ2-1-243}{Malware industriel : citadel}}{181}\relax 
+\doTocEntry\tocchapter{9}{\csname a:TocLink\endcsname{1}{x1-2430009}{QQ2-1-244}{Réagir et remédier}}{183}\relax 
+\doTocEntry\tocsection{9.1}{\csname a:TocLink\endcsname{1}{x1-2440009.1}{QQ2-1-245}{GERER les incidents}}{183}\relax 
+\doTocEntry\tocsubsection{9.1.1}{\csname a:TocLink\endcsname{1}{x1-2450009.1.1}{QQ2-1-246}{Réponse à incident}}{185}\relax 
+\doTocEntry\tocsubsection{9.1.2}{\csname a:TocLink\endcsname{1}{x1-2460009.1.2}{QQ2-1-247}{Terminologie}}{187}\relax 
+\doTocEntry\tocsubsection{9.1.3}{\csname a:TocLink\endcsname{1}{x1-2470009.1.3}{QQ2-1-248}{Définitions}}{188}\relax 
+\doTocEntry\tocsubsection{9.1.4}{\csname a:TocLink\endcsname{1}{x1-2480009.1.4}{QQ2-1-249}{Sources Incidents}}{189}\relax 
+\doTocEntry\tocsubsection{9.1.5}{\csname a:TocLink\endcsname{1}{x1-2490009.1.5}{QQ2-1-250}{Parcours}}{190}\relax 
+\doTocEntry\tocsection{9.2}{\csname a:TocLink\endcsname{1}{x1-2500009.2}{QQ2-1-251}{ANTICIPER}}{192}\relax 
+\doTocEntry\tocsubsection{9.2.1}{\csname a:TocLink\endcsname{1}{x1-2510009.2.1}{QQ2-1-252}{Les bons reflexes}}{192}\relax 
+\doTocEntry\tocsubsection{9.2.2}{\csname a:TocLink\endcsname{1}{x1-2520009.2.2}{QQ2-1-253}{Etablir un processus de management}}{193}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2530009.2.2}{QQ2-1-254}{Résilience}}{193}\relax 
+\doTocEntry\tocsubsection{9.2.3}{\csname a:TocLink\endcsname{1}{x1-2540009.2.3}{QQ2-1-255}{L'intégration dans la gestion des incidents ITIL}}{194}\relax 
+\doTocEntry\tocsubsection{9.2.4}{\csname a:TocLink\endcsname{1}{x1-2550009.2.4}{QQ2-1-256}{La gestion des incidents avec l'ISO 27035}}{198}\relax 
+\doTocEntry\tocsubsection{9.2.5}{\csname a:TocLink\endcsname{1}{x1-2560009.2.5}{QQ2-1-257}{Et avec la NIST 800-61}}{200}\relax 
+\doTocEntry\tocsubsection{9.2.6}{\csname a:TocLink\endcsname{1}{x1-2570009.2.6}{QQ2-1-258}{Continuité d'activité avec l'ISO 22301}}{202}\relax 
+\doTocEntry\tocsection{9.3}{\csname a:TocLink\endcsname{1}{x1-2580009.3}{QQ2-1-259}{REAGIR}}{203}\relax 
+\doTocEntry\tocsubsection{9.3.1}{\csname a:TocLink\endcsname{1}{x1-2590009.3.1}{QQ2-1-260}{La gestion de l'incident au quotidien}}{203}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2600009.3.1}{QQ2-1-261}{De l'alerte à l'incident}}{204}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2610009.3.1}{QQ2-1-262}{L'incident}}{204}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2620009.3.1}{QQ2-1-263}{Priorisation de l'évènement}}{205}\relax 
+\doTocEntry\tocsubsection{9.3.2}{\csname a:TocLink\endcsname{1}{x1-2630009.3.2}{QQ2-1-264}{Remédiation}}{206}\relax 
+\doTocEntry\tocsubsection{9.3.3}{\csname a:TocLink\endcsname{1}{x1-2640009.3.3}{QQ2-1-265}{Aspect juridique de la réaction}}{206}\relax 
+\doTocEntry\tocsection{9.4}{\csname a:TocLink\endcsname{1}{x1-2650009.4}{QQ2-1-266}{ENQUETER}}{206}\relax 
+\doTocEntry\tocsubsection{9.4.1}{\csname a:TocLink\endcsname{1}{x1-2660009.4.1}{QQ2-1-267}{Analyse de l'attaque}}{206}\relax 
+\doTocEntry\tocsubsection{9.4.2}{\csname a:TocLink\endcsname{1}{x1-2670009.4.2}{QQ2-1-268}{Evaluation détaillée des dommages}}{207}\relax 
+\doTocEntry\tocsubsection{9.4.3}{\csname a:TocLink\endcsname{1}{x1-2680009.4.3}{QQ2-1-269}{forensique}}{207}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2690009.4.3}{QQ2-1-270}{Cadre juridique}}{207}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2700009.4.3}{QQ2-1-271}{Cadre non-juridique}}{207}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2710009.4.3}{QQ2-1-272}{Outillage}}{208}\relax 
+\doTocEntry\tocsection{9.5}{\csname a:TocLink\endcsname{1}{x1-2720009.5}{QQ2-1-273}{Méthodes et techniques connexes}}{208}\relax 
+\doTocEntry\tocsubsection{9.5.1}{\csname a:TocLink\endcsname{1}{x1-2730009.5.1}{QQ2-1-274}{Sécurité Offensive vs Défensive}}{209}\relax 
+\doTocEntry\tocsubsection{9.5.2}{\csname a:TocLink\endcsname{1}{x1-2740009.5.2}{QQ2-1-275}{Threats Hunting}}{209}\relax 
+\doTocEntry\tocsubsection{9.5.3}{\csname a:TocLink\endcsname{1}{x1-2750009.5.3}{QQ2-1-276}{HoneyPots}}{210}\relax 
+\doTocEntry\tocsubsection{9.5.4}{\csname a:TocLink\endcsname{1}{x1-2760009.5.4}{QQ2-1-277}{Hackback}}{211}\relax 
+\doTocEntry\tocsection{9.6}{\csname a:TocLink\endcsname{1}{x1-2770009.6}{QQ2-1-278}{CERT et CSIRT}}{212}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2780009.6}{QQ2-1-279}{Un peu d'histoire}}{212}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2790009.6}{QQ2-1-280}{Les missions d’un CSIRT,}}{213}\relax 
+\doTocEntry\tocsubsection{9.6.1}{\csname a:TocLink\endcsname{1}{x1-2800009.6.1}{QQ2-1-281}{Faire intervenir un CSIRT commercial}}{215}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2810009.6.1}{QQ2-1-282}{Phase d'analyse}}{215}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2820009.6.1}{QQ2-1-283}{La phase de contractualisation}}{215}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2830009.6.1}{QQ2-1-284}{Enquêter sur l’incident}}{216}\relax 
+\doTocEntry\tocsubsubsection{}{\csname a:TocLink\endcsname{1}{x1-2840009.6.1}{QQ2-1-285}{Contrôle et remédiation}}{216}\relax 
+\doTocEntry\tocsubsection{9.6.2}{\csname a:TocLink\endcsname{1}{x1-2850009.6.2}{QQ2-1-286}{Création de son équipe CSIRT}}{217}\relax 
+\doTocEntry\tocsubsection{9.6.3}{\csname a:TocLink\endcsname{1}{x1-2860009.6.3}{QQ2-1-287}{Gestion de crises}}{218}\relax 
+\doTocEntry\tocsubsection{9.6.4}{\csname a:TocLink\endcsname{1}{x1-2870009.6.4}{QQ2-1-288}{Anticiper les crises}}{218}\relax 
+\doTocEntry\tocchapter{10}{\csname a:TocLink\endcsname{1}{x1-28800010}{QQ2-1-289}{A retenir}}{219}\relax 
+\doTocEntry\tocsection{10.1}{\csname a:TocLink\endcsname{1}{x1-28900010.1}{QQ2-1-290}{Une synthèse des fondamentaux}}{219}\relax 
+\doTocEntry\tocsection{10.2}{\csname a:TocLink\endcsname{1}{x1-29000010.2}{QQ2-1-291}{La réponse aux incidents}}{220}\relax 
+\doTocEntry\tocsection{10.3}{\csname a:TocLink\endcsname{1}{x1-29100010.3}{QQ2-1-292}{La détection des attaques}}{221}\relax 
+\doTocEntry\tocsection{10.4}{\csname a:TocLink\endcsname{1}{x1-29200010.4}{QQ2-1-293}{La couverture des fragilités}}{223}\relax 
+\doTocEntry\tocsection{10.5}{\csname a:TocLink\endcsname{1}{x1-29300010.5}{QQ2-1-294}{La veille et l'anticiaption}}{224}\relax 
+\par 

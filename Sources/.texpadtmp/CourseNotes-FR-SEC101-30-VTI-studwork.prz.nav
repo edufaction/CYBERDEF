@@ -1,0 +1,108 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Travaux personnels}{3}{Travaux personnels}{0}}
+\headcommand {\beamer@subsectionpages {3}{2}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{3}{généralités}}
+\headcommand {\slideentry {1}{1}{1}{3/3}{généralités}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{1}{2}{4/4}{généralités}{0}}
+\headcommand {\beamer@framepages {4}{4}}
+\headcommand {\slideentry {1}{1}{3}{5/5}{généralités}{0}}
+\headcommand {\beamer@framepages {5}{5}}
+\headcommand {\slideentry {1}{1}{4}{6/6}{généralités}{0}}
+\headcommand {\beamer@framepages {6}{6}}
+\headcommand {\slideentry {1}{1}{5}{7/7}{généralités}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@subsectionpages {3}{7}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{8}{Méthode de notation}}
+\headcommand {\slideentry {1}{2}{1}{8/8}{Méthode de notation}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\slideentry {1}{2}{2}{9/9}{Méthode de notation}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\slideentry {1}{2}{3}{10/10}{Méthode de notation}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\beamer@subsectionpages {8}{10}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{11}{Format}}
+\headcommand {\beamer@subsectionpages {11}{10}}
+\headcommand {\beamer@subsectionentry {0}{1}{4}{11}{Remise de Fiches}}
+\headcommand {\beamer@sectionpages {3}{10}}
+\headcommand {\beamer@subsectionpages {11}{10}}
+\headcommand {\sectionentry {2}{Sujets}{11}{Sujets}{0}}
+\headcommand {\slideentry {2}{0}{1}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{12}{Sélection des sujets}}
+\headcommand {\slideentry {2}{1}{1}{12/12}{Sélection des sujets}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{13}{Thématique produits et services}}
+\headcommand {\beamer@subsectionpages {13}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{13}{Les thématiques des fiches TECHNO}}
+\headcommand {\slideentry {2}{3}{1}{13/13}{Les thématiques des fiches TECHNO}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\beamer@subsectionpages {13}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{14}{Thématique : Vulnerability Management}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{4}{1}{14}{Exemples étayés de vulnérabilités}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{4}{2}{14}{BugBounty}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{4}{3}{14}{Outils au service des tests d'intrusion}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{4}{4}{14}{Essentiels 27001 et vulnérabilités}}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{5}{14}{Thématique : Threat Management}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{5}{1}{14}{Description d'une attaque virale}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{5}{2}{14}{Architecture d'un BOTNET}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{5}{3}{14}{Organisation des bugbounty}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{5}{4}{14}{Description attaque DDOS}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{5}{5}{14}{Description du fonctionnement d'un ransomware}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{5}{6}{14}{Technique de recherche de LEAK dans le darkweb}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{5}{7}{14}{Sondes de sécurité}}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{6}{14}{Thématique : Exemples attaques et traitement}}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{7}{14}{Thématique : Incident Management}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{7}{1}{14}{Description d'une contre attaque DDOS}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{7}{2}{14}{Description d'une contre attaque de ransomware}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{7}{3}{14}{Description d'une recherche d'APT}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{7}{4}{14}{Essentiels 27035}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{7}{5}{14}{Stratégie d'enquête avec des HoneyPots}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{7}{6}{14}{Deceptive defense}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{7}{7}{14}{Essentiels 27001 et incidents}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{7}{8}{14}{ITIL et gestion des incidents de sécurité}}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{8}{14}{Thématique : Crisis Management}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{8}{1}{14}{Essentiels ISO 22301}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{8}{2}{14}{Annuaire de crise}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{8}{3}{14}{Comment Gérer une crise ransomware }}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{9}{14}{Thématique : Gouvernance CyberDef}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{9}{1}{14}{Architecture d'un SOC}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{9}{2}{14}{Tableau de Bord Vulnerability Management}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{9}{3}{14}{Tableau de Bord Incident Management}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{9}{4}{14}{Tableau de Bord SIEM et SIC}}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{10}{14}{Thématique : Stratégies CyberDef}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{10}{1}{14}{Concepts de Deceptive cyberdefense}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{10}{2}{14}{Utilisation des Honeypots dans la réaction }}
+\headcommand {\beamer@subsectionpages {14}{13}}
+\headcommand {\beamer@subsectionentry {0}{2}{11}{14}{Thématiques Transverses}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{11}{1}{14}{Bibliographie et book de références par chapitre}}
+\headcommand {\beamer@subsubsectionentry {0}{2}{11}{2}{14}{Compilation avec abstract d'éléments de lectures}}
+\headcommand {\slideentry {2}{11}{1}{14/14}{Thématiques Transverses}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@sectionpages {11}{14}}
+\headcommand {\beamer@subsectionpages {14}{14}}
+\headcommand {\sectionentry {3}{Contributions}{15}{Contributions}{0}}
+\headcommand {\beamer@subsectionpages {15}{14}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{15}{Comment contribuer}}
+\headcommand {\slideentry {3}{1}{0}{15/15}{Thématiques Transverses}{0}}
+\headcommand {\beamer@framepages {15}{15}}
+\headcommand {\slideentry {3}{1}{1}{16/16}{Thématiques Transverses}{0}}
+\headcommand {\beamer@framepages {16}{16}}
+\headcommand {\beamer@partpages {1}{16}}
+\headcommand {\beamer@subsectionpages {14}{16}}
+\headcommand {\beamer@sectionpages {11}{16}}
+\headcommand {\beamer@documentpages {16}}
+\headcommand {\gdef \inserttotalframenumber {16}}

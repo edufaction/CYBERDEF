@@ -50,7 +50,8 @@
 %	COLOR
 %-----------------------------------------------------
 %\usepackage{xcolor} % Required for specifying colors by name
-\definecolor{ocre}{RGB}{160,0,0}  
+\definecolor{ocre}{RGB}{160,0,0} 
+\definecolor{edxcolorcover}{RGB}{160,0,0} 
 \definecolor{grey}{RGB}{50,80,80}
 \definecolor{cnam}{RGB}{128, 0, 32} 
                  
@@ -576,6 +577,7 @@ innerbottommargin=5pt]{cBox}
 			
 			\draw[anchor=west] (\Gm@lmargin+.3cm,-9cm) node {\fontsize{20}{30}\selectfont\sffamily\bfseries\color{ocre}~#1\strut};
 			%{\Huge\sffamily\bfseries\color{ocre}\thechapter\autodot~#1\strut};
+			\node at (current page.north east)  [xshift=-3.95cm, yshift=-4.05cm, text opacity=1]  {{\color{white}\centering\fontsize{200}{30}\selectfont \bfseries\sffamily\thechapter\strut} };
 			\node at (current page.north east)  [xshift=-4cm, yshift=-4cm, text opacity=1]  {{\color{ocre}\centering\fontsize{200}{30}\selectfont \bfseries\sffamily\thechapter\strut} };
 			
 			\end{tikzpicture}};

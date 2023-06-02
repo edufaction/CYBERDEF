@@ -1,0 +1,41 @@
+% !TeX root
+%-------------------------------------------------------------
+% FR CYBERDEF BOOK
+% CYBERDEF101 COURSE
+% (c) eduf@ction
+%-------------------------------------------------------------
+% 				                 MAIN FILE 
+%-------------------------------------------------------------
+
+\documentclass[pagesize=a4,
+               headinclude=on,footinclude=on,11pt]{book}
+
+\input{Tex/template.inc/HtmlModel/edx.packtml.tex}
+\input{Tex/config.tex}
+\input{Tex/Build-Html/config-html.tex}
+\input{Tex/template.inc/HtmlModel/edx.html.tex}
+
+\begin{document}
+
+\title{\etitle}
+\author{\uauthor}
+
+\maketitle
+
+%\part{Introduction}
+\input{Tex/Chapters/part0.tex}
+%\part{CyberRisk}
+\input{Tex/Chapters/part1-CyberRisk.tex}
+%\part{InfoSec}
+\input{Tex/Chapters/part2-InfoSec.tex}
+%\part{Secops}
+\input{Tex/Chapters/part3-SecOps.tex}
+
+\printnoidxglossary
+
+\end{document}
+
+
+
+
+

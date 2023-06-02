@@ -1,0 +1,21 @@
+#!/bin/sh
+rm *.toc
+rm *.xref
+rm *.tmp
+rm *.ps
+rm *.pdf
+rm *.out
+rm *.dvi
+rm *.bcf
+rm *.4ct
+rm *.4tc 
+rm *.aux
+rm *.bbl
+rm *.nav
+rm *.snm
+rm *.out
+rm *.toc
+rm *.ptc
+rm *.xml
+rm *.css
+rm *.log

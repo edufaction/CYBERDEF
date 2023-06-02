@@ -27,7 +27,9 @@ La cybersécurité est, en effet,  une discipline transverse et interdisciplinai
   \item d'intégrer ces démarches en tenant compte des cultures et des pratiques des nombreux métiers de l'entreprise.
 \end{itemize}
 
-\mode<all>{\picframe{Tex/Pictures/img-4model}{Cybersécurité : un domaine hollistique}{0.9}{lbl:4model}}
+\mode<all>{\picframe{Tex/Pictures/img-4model}{Cybersécurité, un domaine hollistique}{0.9}{lbli4model}}
+
+%\includegraphics{Tex/Pictures/img-4model}
 
 Les métiers de la cybersécurité concourent tous à une seule et même mission : \g{\textbf{assurer la continuité de la mission ou du service en préservant le patrimoine de l'entreprise contre toute menace dans l'environnement numérique}}.
 
@@ -83,11 +85,11 @@ Nous avons donc fait ce choix de structurer notre approche suivant le prisme de 
 %\rem{Politiques : le monde de la reflexion, Stratégies le monde l'action}
 \subsection {Politiques versus stratégies}
 
-\mode<all>{
-\mode<all>{\picframe{Tex/Pictures/img-cycle}{Processus Cyber d'entreprise}{0.8}{lbl:cycle}}
-}
 
-La figure \ref{lbl:cycle} présente la dynamique avec laquelle nous avons structuré c\edoc. 
+\mode<all>{\picframe{Tex/Pictures/img-cycle}{Processus Cyber d'entreprise}{0.8}{lblcycle}}
+
+
+Nous avons structuré la dynamique des processus d'entreprise dans c\edoc suivant un schéma simple\ uref{processus}{lblcycle}.
 De  \head{l’analyse de risque}, nous pouvons déduire et/ou modifier des politiques de sécurité adaptées au contexte de l'entreprise. 
 Sur la base de l’existant, il est alors possible d’adapter ou simplement de mieux utiliser ou configurer les architectures techniques et organisationnelles pour définir un niveau de protection attendu.
 Il y a malheureusement toujours un écart entre les mesures de sécurité souhaitées et la réalité des mesures déployées. Que ce soit à cause de défauts de configuration, de délais de mise en place plus longs que prévu, le système n’est que très rarement au niveau décrit dans les éléments de spécification ou les documents d'assurance sécurité.
@@ -134,7 +136,7 @@ FORMULE RISQUE  MATH STYLE A MODIFIER
 % begin PRZ====================
 \begin{frame}<presentation>{Une définition de la cybersécurité}
 \begin{align}
-%Cybers\acute{e}curit\acute{e} \cong Cyberprotection\oplus Cyberd\acute{e}fense \oplus Cyberr\acute{e}silience
+Cybers\acute{e}curit\acute{e} \cong Cyberprotection\oplus Cyberd\acute{e}fense \oplus Cyberr\acute{e}silience
 \end{align}
 \end{frame}
 % end PRZ====================
@@ -161,19 +163,19 @@ Malheureusement, malgré ces mesures de protection et de défense qui permet de 
 % ajouter l’equation du risque dans le texte du RISQUE
 
 Il fut une époque pas si lointaine, où l'analyste consacrait beaucoup de temps à l'évaluation de la probabilité d'une attaque. Aujourd'hui bien que ce paramètre continue quand même à être pris en compte, l'analyste positionne cette probabilité ou \uindex{vraisemblance}
- à 100\% car pour l'entreprise la nouvelle hypothèse n'est pas de savoir "si un attaque va avoir lieu mais plutôt quand elle aura lieu". (cf. figure \ref{lbl:riskassess})
+ à 100\% car pour l'entreprise la nouvelle hypothèse n'est pas de savoir "si un attaque va avoir lieu mais plutôt quand elle aura lieu" \uref{figure}{lblriskassess}.
 
 % I M A G E -----------> 
 
 
-\mode<all>{\picframe{Tex/Pictures/img-risk-assess}{le cyber-risque}{0.9}{lbl:riskassess}}
+\mode<all>{\picframe{Tex/Pictures/img-risk-assess}{le cyber-risque}{0.9}{lblriskassess}}
 
 L'ensemble des experts du domaine est globalement en accord sur la posture que doivent prendre les entreprises et les organisations : \g{Le temps n'est plus de savoir si on sera attaqué ou pas, mais plutôt de savoir quand et comment on le sera}, qui concrètement se résume à la certitude que tout incident de sécurité peut se produire.
 
-\mode<all>{\picframe{Tex/Pictures/img-risk-prison}{La menace : une vision de l'attaquant}{0.9}{lbl:riskjail}}
+\mode<all>{\picframe{Tex/Pictures/img-risk-prison}{La menace, une vision de l'attaquant}{0.9}{lblriskjail}}
 
  
-Dans les modèles d'analyse de risque et d'évaluation de la cybersécurité, l'analyste se positionne aujourd'hui du point de vue de l'attaquant. Ce regard lui permet de mieux comprendre la menace comme équation duale du risque, mais vu de l'énergie dépensée par l'attaquant et du risque qu'il prend. (cf. figure \ref{lbl:riskjail}). La menace sera d'autant plus grand que la valeur des actifs visés est importante à ses yeux et que les vulnérabilités sont nombreuses. Elle sera d'autant plus faible que les moyens à déployer sont importants et les risques pris plus élevés.
+Dans les modèles d'analyse de risque et d'évaluation de la cybersécurité, l'analyste se positionne aujourd'hui du point de vue de l'attaquant. Ce regard lui permet de mieux comprendre la menace comme équation duale du risque, mais vu de l'énergie dépensée par l'attaquant et du risque qu'il prend \uref{figure}{lblriskjail}. La menace sera d'autant plus grand que la valeur des actifs visés est importante à ses yeux et que les vulnérabilités sont nombreuses. Elle sera d'autant plus faible que les moyens à déployer sont importants et les risques pris plus élevés.
 
 On notera que la valeur des actifs visés dépend de l'attaquant. Ils ne seront pas les mêmes si l'attaquant est un état, une groupe d'activiste, un groupe criminelle.
 Quand aux vulnérabilités, la majorité des attaques utilise les failles perpétuelles du facteur humain.
@@ -183,7 +185,7 @@ Quand aux vulnérabilités, la majorité des attaques utilise les failles perpé
 
 \section{Sécurité du système d'information}
 
-Le système d'information est au coeur de ce \g{monde digital }, et il est le lieu d'activités humaines très denses, permettant à des utilisateurs de réaliser leurs activités, professionnelles ou privées, à l'aide de processus informatiques et de services. 
+Le système d'information est au coeur de ce \g{monde digital}, et il est le lieu d'activités humaines très denses, permettant à des utilisateurs de réaliser leurs activités, professionnelles ou privées, à l'aide de processus informatiques et de services. 
 
 Ces activités doivent de plus en plus faire face à tout un système d'agression orchestré par des attaquants non seulement humains mais aussi \g{automatiques}. On observe aujourd'hui une multitude de situations critiques, incertaines dont l'occurrence quasi quotidienne provient de phénomènes variés, humains (isolés, en réseau, …), physiques et/ou technologiques. Parmi ces difficultés qui profitent aux pirates informatiques il y a de nombreuses failles ou fragilités que nous découvrirons, provenant des systèmes du SI sans lesquelles ils ne pourraient exploiter leurs attaques. Ces phénomènes sont une menace pour les conditions de sécurité du système d'information.
 
@@ -312,9 +314,9 @@ La non-répudiation et l'imputation : aucun utilisateur ne doit pouvoir conteste
 \end{nota}
 
 Dans un contexte d'activité économique dense et en perpétuel renouvellement, les conditions de sécurité sont aussi en perpétuelle évolution, c’est pourquoi nous parlons d'un cycle de vie vertueux au cours duquel les nouveaux paramètres tirent profit des expériences passées.  Ainsi, l’amélioration continue également appelée \g{ lean management} dans d’autres domaines (industrie, …) travaille elle sur le cycle de vie des conditions de sécurité souvent appelé \ugls{aPDCA}.\\
-Ce cycle de vie doit néanmoins être maitrisé par le RSSI en place avec ses équipes, il faut co-produire ces conditions de sécurité, cette maîtrise est complexe, fortement dépendante du contexte de l'entreprise, c’est pourquoi elle doit être accompagnée d'une méthodologie rigoureuse et partagée qui constitue le savoir-faire de base du RSSI et de son équipe. Par ailleurs, parmi ces conditions, certaines sont universelles et d’autres propres à chaque entreprise. \\ Comme le montre le diagramme \ref{lbl:cycledevie}, il est possible aussi d’utiliser un cycle de vie sécurité de type projet, qui se rapproche par ailleurs de la manière dont nous avons structuré c\edoc. 
+Ce cycle de vie doit néanmoins être maitrisé par le RSSI en place avec ses équipes, il faut co-produire ces conditions de sécurité, cette maîtrise est complexe, fortement dépendante du contexte de l'entreprise, c’est pourquoi elle doit être accompagnée d'une méthodologie rigoureuse et partagée qui constitue le savoir-faire de base du RSSI et de son équipe. Par ailleurs, parmi ces conditions, certaines sont universelles et d’autres propres à chaque entreprise. \\ Comme le montre le cycle de vie. \uref{diagramme}{lblcycledevie}, il est possible aussi d’utiliser un cycle de vie sécurité de type projet, qui se rapproche par ailleurs de la manière dont nous avons structuré c\edoc. 
 
-\mode<all>{\picframe{Tex/Pictures/img-cyclevie}{Cycle de vie sécurité dans les projets}{0.9}{lbl:cycledevie}}
+\mode<all>{\picframe{Tex/Pictures/img-cyclevie}{Cycle de vie sécurité dans les projets}{0.9}{lblcycledevie}}
 
 
 Dans cette optique, ce cadre méthodologie a été défini par le sous-comité 27 de l'ISO, par l'ensemble de normes ISO 27x. Il s’agit également d'un ensemble de bonnes pratiques, qu'un RSSI peut suivre au travers de trois volets fondamentaux qui constituent les référentiels utilisés pour ce cours sur la cybersécurité. La norme 27001 est en particulier un cadre pour organiser la dynamique de la mise en condition de sécurité de l’entreprise et son maintien dans le temps. Cet environnement que le \g{RSSI} doit bâtir est le système de management de la sécurité (\g{SMSI}).\\

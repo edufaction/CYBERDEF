@@ -1,0 +1,53 @@
+
+\documentclass[pagesize=a4,
+               headinclude=on,footinclude=on,11pt]{book}
+               
+\usepackage{booktabs} % pour l'amélioration des Tables et Tabular
+
+%-----------------------------EDU--
+% for DVI latex - (No bounding box error)
+% Produce bbl
+% https://tex.stackexchange.com/questions/17734/cannot-determine-size-of-graphic
+% option : dvipdfm for graphicx package
+%---------------------------------
+%\usepackage[dvipdfm]{graphicx} 
+
+\usepackage{graphicx} 
+
+%\usepackage{bmpsize}
+
+\usepackage{tikz} % Required for drawing custom shapes
+\usetikzlibrary{tikzmark} 
+\usetikzlibrary{mindmap,trees, backgrounds}
+
+%\usepackage{ae}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage{lmodern}
+
+\usepackage{amsmath}
+\usepackage{fontawesome}
+\usepackage{listings}
+
+%\usepackage [tex4ht]{hyperref}
+\usepackage{hyperref}
+
+%\usepackage{beamerarticle}
+
+\usepackage{csquotes}
+
+\usepackage[acronym]{glossaries}
+
+\usepackage{makeidx}
+
+\begin{document}
+
+\title{Un bon titre}
+\author{Eric Dupuis}
+\chapter{Introduction}
+\section{section titre}
+ceci est un graphique.
+\includegraphics{Tex/Pictures/img-4model.eps}
+
+\end{document}

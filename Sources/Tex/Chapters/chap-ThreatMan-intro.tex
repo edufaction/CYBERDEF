@@ -14,7 +14,7 @@
 Je vous propose d'aborder ce chapitre lié à la surveillance de l'évènement de sécurité avec les quelques points fondamentaux de la gestion de la menace.
 En effet nous partons du principe qu'au sein de périmètre de surveillance donné, la gestion de la menace peut s'organiser autour de la gestion des évènements à risques détectés dans ce périmètre.
 
-\mode<all>{\picframe{Tex/Pictures/img-cycle}{Cycle de vie de gouvernance Cyberdef}{0.8}{lbl:cycle1}}
+\mode<all>{\picframe{Tex/Pictures/img-cycle}{Cycle de vie de gouvernance Cyberdef}{0.8}{lblcycle1}}
 
 Après quelques définitions et positionnement dans l'analyse de menace,  de la supervision et de l'analyse comportementale nous aborderons donc les grandes fonctions nécessaire à la \textbf{détection} comme :
 
@@ -36,7 +36,7 @@ Après quelques définitions et positionnement dans l'analyse de menace,  de la 
 {
 \begin{description}
 	\item \textbf{Menaces=Veille et recherche} : La gestion de la menace est au coeur des stratégies de cyberdéfense de l'entreprise. Comme pour les vulnérabilités, c'est la connaissance des menaces, de leur recherche et de leur découverte qui permet de réduire les risques;
-\item  \textbf{Menaces=Évènements} : La détection d'une vulnérabilité ou d'une menace est un évènement, la question est de savoir à quel moment il est important de déclencher un mécanisme d'alerte, et comment cette alerte va devenir un incident déclenchant des mécanismes de réponse \uref{Cycle de gouvernance}{lbl:cycle1}.
+\item  \textbf{Menaces=Évènements} : La détection d'une vulnérabilité ou d'une menace est un évènement, la question est de savoir à quel moment il est important de déclencher un mécanisme d'alerte, et comment cette alerte va devenir un incident déclenchant des mécanismes de réponse \uref{Cycle de gouvernance}{lblcycle1}.
 \end{description}
 }}
 % end PRZ ===========================
@@ -49,7 +49,7 @@ Ce sont généralement les attaques externes et massives qui font l’actualité
 Un grand nombre de risques cyber quotidiens sont issus de l'intérieur même de l'entreprise.
 Des  fuites de la part d'employés qui, de façon intentionnelle ou non, révèlent des mots de passe ou des informations sensibles. Une opération initiée par des acteurs internes malveillants (salariés, partenaires, clients) qui peuvent utiliser les informations à leur portée afin d’exploiter ou de porter dommage aux systèmes d'information de l’entreprise, mais plus globalement à l'entreprise dans sa globalité.
 
-\mode<all>{\picframe{Tex/Pictures/img-var}{Un modèle de gestion cyberdéfense}{0.7}{lbl:threatman}}
+\mode<all>{\picframe{Tex/Pictures/img-var}{Un modèle de gestion cyberdéfense}{0.7}{lblthreatman}}
 
 N’importe quelle entreprise est exposée au risque. De nos jours, les connexions diverses d’une entreprise représentent de nombreuses voies pour des attaques informatiques, qui ciblent souvent les petites entreprises afin d’accéder à des plus grands acteurs (partenaires,  clients ou fournisseurs). Les grandes entreprises imposent de plus en plus  souvent à leurs fournisseurs et partenaires, quelle que soit leur taille, de mettre en place des mesures de cybersécurité. Ceci est généralement structuré autour de plan d'assurance sécurité, annexé au contrat.
 
@@ -57,15 +57,15 @@ Les attaquants externes sont, certes, des menaces croissantes car elles recherch
 
 Il est important toutefois de ne pas distinguer des dynamiques internes et externes en terme d'agression cyber, c'est pour cela que les modèles de Cyberdéfense ne formalisent que très peu cette notion de provenance de l'attaque.
 
-En outre, sur le triptyque \g{Vulnérabilités, Menaces, Incidents} \uref{Modèle de cyberdéfense}{lbl:threatman}. la notion d'attaque interne et/ou externe n'a de sens qu'au titre de la responsabilité du périmètre, car rien n'interdit de positionner des capteurs en dehors de son périmètre technique pour anticiper la menace. Ainsi, la veille sur internet, le renseignement cyber sont nécessairement équipés de capteurs pouvant faire remonter des événements dans des chaînes d'alertes Cyber.
+En outre, sur le triptyque \g{Vulnérabilités, Menaces, Incidents} \uref{Modèle de cyberdéfense}{lblthreatman}. la notion d'attaque interne et/ou externe n'a de sens qu'au titre de la responsabilité du périmètre, car rien n'interdit de positionner des capteurs en dehors de son périmètre technique pour anticiper la menace. Ainsi, la veille sur internet, le renseignement cyber sont nécessairement équipés de capteurs pouvant faire remonter des événements dans des chaînes d'alertes Cyber.
 Par exemple, l'attaque d'une entreprise du même secteur peut être  en soit un incident pouvant générer une alerte.
 
-Si on se focalise sur la gestion de la menace, il existe de nombreuses manières de présenter ce processus. Un modèle \uref{Threat Management Cycle}{lbl:threatrosas} issu des travaux de l'\gls{aOTAN} est intéressant car il propose 4 axes d'analyses, toutefois Threat Mitigation et Threat Protection sont un peu ambigus.
+Si on se focalise sur la gestion de la menace, il existe de nombreuses manières de présenter ce processus. Un modèle \uref{Threat Management Cycle}{lblthreatrosas} issu des travaux de l'\gls{aOTAN} est intéressant car il propose 4 axes d'analyses, toutefois Threat Mitigation et Threat Protection sont un peu ambigus.
 
 
-\mode<all>{\picframe{Tex/Pictures/img-threatrosas}{les 4 axes de la gestion de la menace}{0.5}{lbl:threatrosas}}
+\mode<all>{\picframe{Tex/Pictures/img-threatrosas}{les 4 axes de la gestion de la menace}{0.5}{lblthreatrosas}}
 
-Je propose de continuer d'utiliser le modèle organisé autour de quatre volets (Surveiller, Détecter, Alerter, s'entrainer) \uref{Défendre les actifs}{lbl:varmenaces}  pour structurer la présentation.
+Je propose de continuer d'utiliser le modèle organisé autour de quatre volets (Surveiller, Détecter, Alerter, s'entrainer), \uref{Défendre les actifs}{lblvarmenaces} pour structurer la présentation.
 
 %Différents types de menaces à la cybersécurité
 
@@ -80,7 +80,7 @@ La nature de ces menaces est en constante évolution.  On y trouve les plus cour
  \end{itemize}
 }}
 
-\mode<all>{\picframe{Tex/Pictures/img-varmenaces}{la gestion active de la menace}{0.5}{lbl:varmenaces}}
+\mode<all>{\picframe{Tex/Pictures/img-varmenaces}{la gestion active de la menace}{0.5}{lblvarmenaces}}
 
 % ----Begin PRZ Frame------------
 \mode<all>{\texframe{les grandes menaces}{quelques éléments de la menace 2/2}
@@ -94,11 +94,11 @@ La nature de ces menaces est en constante évolution.  On y trouve les plus cour
 
 C'est la combinaison d'actions élémentaires, d'attaques élémentaires qui font des scénarios de menaces. 
 
-Il est important aussi de repositionner la définition des menaces par rapport à la notion d'attaque, mais aussi la notion de risques et de vulnérabilités \uref{Cycle du risque}{lbl:threatwheel}.
+Il est important aussi de repositionner la définition des menaces par rapport à la notion d'attaque, mais aussi la notion de risques et de vulnérabilités \uref{Cycle du risque}{lblthreatwheel}.
 
 %TODO modifier l'image ... est couvert et sont couverts / compromis
 
-\mode<all>{\picframe{Tex/Pictures/img-threatwheel}{la gestion de la menace}{0.8}{lbl:threatwheel}}
+\mode<all>{\picframe{Tex/Pictures/img-threatwheel}{la gestion de la menace}{0.8}{lblthreatwheel}}
 
 \begin{itemize}
   \item des attaques \textbf{matérialisent} des menaces,
@@ -128,7 +128,7 @@ Gérer la menace comporte deux donc domaines d'activités :
 \end{itemize}
 }}% end PRZ ===========================
 
-\mode<all>{\picframe{Tex/Pictures/img-logman}{la gestion de la menace}{0.8}{lbl:logman}}
+\mode<all>{\picframe{Tex/Pictures/img-logman}{la gestion de la menace}{0.8}{lbllogman}}
 
 Ces deux domaines d'activités se basent sur la remontée d'information et l'automatisation des détections d'évènements à risques.  Pour automatiser la détection d'évènement, il donc imprimant de disposer de sources d'information de type \g{évènements} que des techniques historiques informatiques et réseaux  apportent grâce au \textit{LOG  Management} (gestion des traces et journaux). Les journaux informatiques des systèmes sont au coeur de la détection, mais il existe de nombreuses autres sources d'évènements (informations,  renseignements) formalisées qui peuvent apporter de l'information pertinente pour la détection ou l'anticipation d'attaques.
 
@@ -150,7 +150,7 @@ En effet, il est important au delà des menaces dites standards de revenir aux o
 En premier lieu, il convient de chercher à détecter les menaces non couvertes par les mesures de sécurité, les fameuses menaces résiduelles.
 
 Dans l'environnement de l'entreprise, les scénarios complexes issus de l'analyse de risques lors de l'étude des évènements redoutés vont donner les évènements corrélés à détecter.
-On y trouvera l'application concrète des arbres d'attaques popularisés par un des plus célèbre cyber expert \wikipedia{Bruce Schneier} \ucite{schneier1999attack} qui est présentée de manière succincte  dans le  chapitre \nameref{sec:arbreattaques}
+On y trouvera l'application concrète des arbres d'attaques popularisés par un des plus célèbre cyber expert \wikipedia{Bruce Schneier} \ucite{schneier1999attack} qui est présentée de manière succincte  dans le  chapitre \ref{sec:arbreattaques}
 
 \subsection{Attaques}
 
@@ -163,7 +163,9 @@ Le cycle de vie d’une cyberattaque, qu’elle soit complexe ou sophistiquée, 
 
 Ces mécanismes sont souvent modélisés sous la forme d'arbres d'attaques ou de scénarios issus d'analyses de risques.
 
-\subsubsection{Arbre d'attaques} \label{sec:arbreattaques}
+\subsubsection{Arbre d'attaques} 
+
+\label{sec:arbreattaques}
 
 %TODO a re writer
 

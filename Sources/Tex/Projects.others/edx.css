@@ -1,0 +1,22 @@
+html *
+{
+   font-size: 1em !important;
+   color: rgb(49, 48, 48) ;
+   font-family: Verdana, sans-serif !important;
+}
+  /* lien non visité */
+  a:link {
+    color: rgb(144, 21, 21);
+  }
+  /* lien visité */
+  a:visited {
+    color: #d41515;
+  }
+  /* souris sur le lien */
+  a:hover {
+    color: #c97878;
+  }
+  /* lien sélectionné */
+  a:active {
+    color: #800000;
+  }

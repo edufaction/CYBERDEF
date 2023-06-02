@@ -10,7 +10,18 @@
 
 \usepackage{booktabs} % pour l'amélioration des Tables et Tabular
 
-\usepackage{graphicx} % Required for including pictures
+%-----------------------------EDU--
+% for DVI latex - (No bounding box error)
+% Produce bbl
+% https://tex.stackexchange.com/questions/17734/cannot-determine-size-of-graphic
+% option : dvipdfm for graphicx package
+%---------------------------------
+%\usepackage[dvipdfm]{graphicx} 
+
+\usepackage{graphicx} 
+
+%\usepackage{bmpsize}
+
 \usepackage{tikz} % Required for drawing custom shapes
 \usetikzlibrary{tikzmark} 
 \usetikzlibrary{mindmap,trees, backgrounds}
@@ -25,7 +36,10 @@
 \usepackage{fontawesome}
 \usepackage{listings}
 
+%\usepackage [tex4ht]{hyperref}
 \usepackage{hyperref}
+
+%\usepackage{beamerarticle}
 
 \usepackage{csquotes}
 
@@ -38,8 +52,6 @@
 \makenoidxglossaries 
 \loadglsentries{Tex/acronymes.tex}
 \loadglsentries{Tex/glossaire.tex}
-
-
 
 
 %\usepackage{ccicons}
@@ -66,10 +78,13 @@
 %\setlist [itemize,1]{label=\color{ocre}\faCaretRight}
 
 
+
+
+
 %\usepackage{xstring}
 
 
-%\usepackage{cleveref}
+\usepackage{cleveref}
 
 \usepackage[style=numeric,citestyle=numeric,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
 

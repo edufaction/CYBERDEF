@@ -1,5 +1,8 @@
 \newcommand{\usechapterimagefalse}{}
 
+\newcommand{\graphicxextension}{}
+
+
 % XCOLOR Package
 \definecolor{ocre}{RGB}{160,0,0}  
 \definecolor{grey}{RGB}{50,80,80}
@@ -13,56 +16,94 @@
 
 \newcommand{\picframe}[4]
 {
-include graphicx #1 #2 #3 #4
+\begin{figure}[!hbtp] % !hbtp ou !h 
+\begin{center}
+	\includegraphics[width=#3\textwidth]{#1}
+\end{center}
+\caption{#2}
+\label{#4}
+\end{figure}
 }
 
-\newcommand{\picframeS}[4]
+%\newcommand{\picframe}[4]{\includegraphics{#1}}
+%\newcommand{\picframe}[4]{Picframe #1}
+
+%\label{#4}
+\newcommand{\picframeS}[2]
 {
-include graphicx #1 #2 #3 #4
+\begin{figure}[!hbtp] % !hbtp ou !h 
+\begin{center}
+\includegraphics[width=0.9\textwidth]{\picpath/img-#1}	
+\end{center}
+\caption{#2}\label{lbl#1}
+\end{figure}
 }
+
+%\newcommand{\picframeS}[2]{PICFRAME Simplified : #1 #2}
+
+%\newcommand{\upicture}[4]{UPICTURE : #1 #2 #3 #4 \\ }
 
 \newcommand{\upicture}[4]
 {
-include graphicx #1 #2 #3 #4
+\begin{figure}[!hbtp] %h !hbtp
+  \begin{center}
+	 \includegraphics[width=#3\textwidth]{#1}
+  \end{center}
+\caption{#2}\label{#4}
+\end{figure}
 }
 
+ 
+\newcommand{\g}[1]{\og #1 \fg{}}
 
-\newcommand{\g}[1]{G*#1*G}
+\newcommand{\uindex}[1]
+{
+#1 \index{#1}\xspace
+}
+\newcommand{\ulindex}[1]{\index{#1}}
 
-\newcommand{\uindex}[1]{\index{#1}}
 
 \newcommand{\UKword}[1]{\textit{#1}}
 \newcommand{\textUK}[1]{\textit{#1}}
 \newcommand{\ugls}[1]{\gls{#1}}
 
+%\gls{#1}
 
 \newcommand{\tb}[1]{#1}
 
 \newcommand{\head}[1]{#1}
 
-\newcommand{\ulink}[2]{(\href{#1}{#2}}
+\newcommand{\ulink}[2]{\href{#1}{#2}}
+
+%\newcommand{\ucite}[1]{\cite{#1}}
 
 \newcommand{\ucite}[1]{\cite{#1}}
 
 
-
-\newcommand{\texframe}[1]{TEXFRAME #1}
+\newcommand{\texframe}[1]{#1}
 \newcommand{\uchap}[1]{UCHAP #1}
 %Original BOOK
 \newcommand{\ubg}[1]{
 \textbf{\g{\uppercase{#1}}}
 }
-\newcommand{\uref}[2]{(Voir~#1~cref{#2} page~pageref{#2})}
 
-\newcommand{\utodo}{TODO}
-\newcommand{\utocomplete}{A COMPLETER ...}
+\newcommand{\uref}[2]{~#1~(\ref{#2} page~ \pageref{#2})}
 
-\newcommand{\edxdico}[2] {\textbf{#1}:\textit{ #2}}
+
+%\newcommand{\uref}[2]{(REF #1 #2)}
+
+\newcommand{\utodo}{** rédaction réservée **}
+\newcommand{\utocomplete}{*** partie à compléter ***}
+
+\newcommand{\edxdico}[2] {\textbf{#1}:\textit{#2}}
 
 % BEAMER Package
-\newcommand{\frametitle}[1]{Frametitle #1}
-\newcommand{\wikipedia}[1]{Wikipedia #1}
-\newcommand{\framesubtitle}[1]{Framesubtitle #1}
+\newcommand{\frametitle}[1]{}
+\newcommand{\framesubtitle}[1]{}
+% BEAMER Null Proxy
+\newcommand{\mode}{.}
+
+\newcommand{\wikipedia}[1]{href{https://fr.wikipedia.org/wiki/#1}{#1 (Wikipédia)}}
 
 
 \newenvironment{techworkbox}[1]
@@ -86,8 +127,3 @@ include graphicx #1 #2 #3 #4
 
 
 
-
-
-
-% BEAMER Null Proxy
-\newcommand{\mode}{MODE:}

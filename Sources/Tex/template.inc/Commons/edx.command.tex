@@ -6,6 +6,7 @@
 %                              2020 eduf@ction
 %-------------------------------------------------------------
 
+\newcommand{\graphicxextension}{pdf}
 
 \newcommand\myemptypage{
    
@@ -90,6 +91,8 @@
 #1\index{#1}\xspace
 }
 
+\newcommand{\ulindex}[1]{\index{#1}}
+
 %-----------------------------------------------------
 %										 	\includer 
 %---------------------------------------------------
@@ -103,7 +106,7 @@
 %										 	\edxdico 
 %---------------------------------------------------
 
-\newcommand{\edxdico}[2] {\textbf{#1} :\textit{ #2} \index{#1}}
+\newcommand{\edxdico}[2] {\textbf{#1}:\textit{#2} \index{#1}}
 
 %-----------------------------------------------------
 %  command DEF : InTextx
@@ -339,26 +342,26 @@ title=#2,#1}
 
 \ifdefined\PRZMODE
 
-\providecommand{\picframeS}[4]
+\providecommand{\picframeS}[2]
 {
 \begin{frame}
 \frametitle<presentation>{#2}
   \begin{center}
-	 \includegraphics[height=0.95\textheight, width=0.95\textwidth, keepaspectratio ]{\picpath/img-#1.pdf}
+	 \includegraphics[height=0.95\textheight, width=0.95\textwidth, keepaspectratio ]{\picpath/img-#1.\graphicxextension}
   \end{center}
 \end{frame}
 
 }
 \else
-\providecommand{\picframeS}[4]
+\providecommand{\picframeS}[2]
 {
 \begin{figure}[!hbtp] % !hbtp ou !h 
-\centering \includegraphics[width=#3\textwidth]{\picpath/img-#1.pdf}
+\centering \includegraphics[width=0.9\textwidth]{\picpath/img-#1.\graphicxextension}
 \caption{(s) #2 \label{lbl:#1}}
 \end{figure}
 }
-\fi
 
+\fi
 
 
 %{figure}[!h]
@@ -374,7 +377,7 @@ title=#2,#1}
 \begin{frame}
 \frametitle<presentation>{#2}
   \begin{center}
-	 \includegraphics[height=0.95\textheight, width=0.95\textwidth, keepaspectratio ]{#1.pdf}
+	 \includegraphics[height=0.95\textheight, width=0.95\textwidth, keepaspectratio ]{#1.\graphicxextension}
   \end{center}
 \end{frame}
 
@@ -383,7 +386,7 @@ title=#2,#1}
 \providecommand{\wpicframe}[4]
 {
 \begin{wrapfigure}{O}{#3\textwidth}
-\centering \includegraphics[width=#3\textwidth]{#1.pdf}
+\centering \includegraphics[width=#3\textwidth]{#1.\graphicxextension}
 \caption{#2 \label{#4}}
 \end{wrapfigure}
 }
